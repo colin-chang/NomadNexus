@@ -1,0 +1,7 @@
+@use "backend" as *;
+// Sidebar Panel
+#{c(main visualRefresh)}:is(#{c(main light)},#{c(main dark)}) {
+	#{c(sidebar panel panels)} {
+		background: cv('colors.main');
+	}
+}

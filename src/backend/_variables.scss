@@ -8,9 +8,9 @@
 @function cv($id) {
 	$p: 'settings';
 	$s: $id;
-	@if string.index($id, ':') {
-		$p: string.slice($id, 0, string.index($id, ':') - 1);
-		$s: string.slice($id, string.index($id, ':') + 1);
+	@if string.index($id, '.') {
+		$p: string.slice($id, 0, string.index($id, '.') - 1);
+		$s: string.slice($id, string.index($id, '.') + 1);
 	}
 	// @if $p == 'const' {
 	// 	$p: 'constants';

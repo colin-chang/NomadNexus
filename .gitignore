@@ -102,3 +102,7 @@ typings/
 
 # TernJS port file
 .tern-port
+
+# Manually held back
+public-unminified/
+*.css
