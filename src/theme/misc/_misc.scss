@@ -1,5 +1,28 @@
 @use "start" as *;
 @use "backend" as *;
+// Background Image
+#{c(main visualRefresh)} {
+	#{c(main bg)} {
+		background: transparent center/cover no-repeat;
+		background-image: cv('bg.app.img');
+		background-attachment: cv('bg.app.attach');
+		filter: cv('bg.app.filter');
+	}
+}
+
+// To allow for full transparency
+#{c(main visualRefresh)} {
+	:is(
+		html, // might be needed for injectors
+		body,
+		#{c(main appMount)},
+		#{c(main appInner)} // doesn't *need* visual refresh but here nonetheless
+	) {
+		background: none;
+	}
+}
+
+// Watermark
 #{c(userSettings sidebarInfo)} {
 	&::after {
 		content: $themeName " " $version;

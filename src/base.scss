@@ -57,7 +57,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 	--live-color: #593695;
 	--offline-color: #83838b;
 
-	--background-image: none;
+	--background-image: url(https://clearvision.github.io/images/sapphire.jpg);
 	--background-attachment: fixed;
 	--user-popout-image: var(--background-image);
 	--user-popout-attachment: var(--background-attachment);
