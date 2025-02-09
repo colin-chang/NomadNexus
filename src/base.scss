@@ -57,7 +57,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 	--live-color: #593695;
 	--offline-color: #83838b;
 
-	--background-image: none;
+	--background-image: url(https://clearvision.github.io/images/sapphire.jpg);
 	--background-attachment: fixed;
 	--user-popout-image: var(--background-image);
 	--user-popout-attachment: var(--background-attachment);
@@ -109,7 +109,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 #{c(main light)} #{c(main darker)} {
 	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
 	--card-shading: #fff;
-	--side-shading: #fff;
+	--side-shading: rgba(0, 0, 0, 0.8);
 	--middle-shading: #fff;
 	--top-shading: #fff;
 	// ALSO EDITABLE
@@ -120,8 +120,8 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 }
 
 /* Midnight Theme */
-#{c(main darker)},
-#{c(main light)} #{c(main darker)} {
+#{c(main midnight)},
+#{c(main light)} #{c(main midnight)} {
 	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
 	--card-shading: #fff;
 	--side-shading: #fff;

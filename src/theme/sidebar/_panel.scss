@@ -1,6 +1,14 @@
 @use "backend" as *;
 // Sidebar Panel
-#{c(main visualRefresh)}:is(#{c(main light)},#{c(main dark)}) {
+#{c(main visualRefresh)} {
+	&:is(#{c(main light)},#{c(main dark)}) {
+		
+		#{c(sidebar panel activity panel)} {
+			background: transparent;
+			border-radius: 0;
+		}
+			
+	}
 	#{c(sidebar panel panels)} {
 		background: cv('colors.main');
 	}

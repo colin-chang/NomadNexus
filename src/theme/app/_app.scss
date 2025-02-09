@@ -1,0 +1,13 @@
+@use "backend" as *;
+#{c(main visualRefresh)} {
+    #{c(main appMount)} {
+        background: transparent;
+    #{c(main bg)} {
+        background: cv('bg.app.img');
+    }
+}
+
+}
+#{c(main appInner)} {
+    background: transparent;
+}
