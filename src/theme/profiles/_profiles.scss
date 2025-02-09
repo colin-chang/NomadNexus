@@ -1,0 +1,18 @@
+@use 'backend' as *;
+
+// SIDE PANEL
+#{c(profile panel panel)} {
+    &#{c(profile outer)} {
+        width: var(--custom-member-list-width);
+        margin-right: 6px;
+        margin-top: calc( 0px - var(--custom-channel-header-height));
+        height: calc(100% + var(--custom-channel-header-height) - var(--spacing-8));
+        border-radius: 10px;
+        &:not(#{c(main customTheme)}) {
+            background: cv('shading.side');
+        }
+    }
+    &#{c(profile inner)} {
+        border-radius: 10px;
+    }
+}

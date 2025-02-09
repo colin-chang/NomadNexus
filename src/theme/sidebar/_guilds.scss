@@ -1,0 +1,11 @@
+@use "backend" as *;
+#{c(main visualRefresh)} {
+
+    // GUILDS
+    #{c(serverList servers)} {
+        margin: 0 5px calc(var(--custom-app-panels-height) + 15px) 5px;
+        border-radius: 10px;
+        background: cv('shading.side');
+        padding: 10px 0;
+    }
+}

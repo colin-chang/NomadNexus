@@ -1,0 +1,14 @@
+@use 'backend' as *;
+
+.subtitleContainer_f75fb0 {
+    margin-right: 5px;
+    &:has(+ #{c(chat chatContent)} :is(#{c(memberList container)}, #{c(profile panel panel)})) {
+    width: calc(100% - var(--custom-member-list-width) - 11px );
+    }
+}
+:is(#{c(main dark)}, #{c(main light)}) {
+    #{c(header headerTitle)} {
+        border-radius: 10px 10px 0 0;
+        background: cv('shading.middle')
+    }   
+}
