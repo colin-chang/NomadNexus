@@ -37,6 +37,8 @@ always give reason for using `!important`
 plugin support in extra files for respective client mods
 
 sulfide :3
+
+addons???
 -->
 
 <!-- v7 not in theme editor
