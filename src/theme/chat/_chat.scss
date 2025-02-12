@@ -6,9 +6,9 @@
         background: transparent;
     }
     #{c(chat chatContentInner)} {
-    height: calc(100% - var(--spacing-8));
-    border-radius: 0 0 10px 10px;
-    background: cv('shading.middle');
-    margin-right: 5px;
+        height: calc(100% - var(--spacing-8));
+        border-radius: 0 0 10px 10px;
+        background: cv('shading.middle');
+        margin-right: 5px;
     }
 }
