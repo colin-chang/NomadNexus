@@ -42,14 +42,15 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 	--hsl-side-shading: hsl(from var(--side-shading) #{$calc});
 	--hsl-middle-shading: hsl(from var(--middle-shading) #{$calc});
 	--hsl-top-shading: hsl(from var(--top-shading) #{$calc});
+	--hsl-bottom-shading: hsl(from var(--bottom-shading) #{$calc});
 	// other stuff that the theme sets
 
 	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
-	--main-color: #fff;
-	--hover-color: #fff;
-	--success-color: #fff;
+	--main-color: #2780e6;
+	--hover-color: #1e63b3;
+	--success-color: #43b581;
 	--warning-color: #fff;
-	--danger-color: #fff;
+	--danger-color: #982929;
 	--info-color: #fff;
 	--online-color: #44a25b;
 	--idle-color: #c99656;
@@ -66,8 +67,8 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 	--home-icon: none;
 
 	// Advanced users only kinda thing
-	--main-font: Wingdings;
-	--code-font: "Comic Sans MS";
+	--main-font: Inter, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
 	--background-filter: saturate(calc(#{$sf} * 1));
 	--user-popout-filter: var(--background-filter);
 	--user-modal-filter: var(--background-filter);
@@ -94,9 +95,10 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 #{c(main light)} #{c(main dark)} {
 	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
 	--card-shading: #fff;
-	--side-shading: rgba(0, 0, 0, 0.5);
-	--middle-shading: rgba(0, 0, 0, 0.5);
-	--top-shading: rgba(0, 0, 0, 0.5);
+	--side-shading: rgba(0, 0, 0, 0.35);
+	--middle-shading: rgba(0, 0, 0, 0.4);
+	--top-shading: rgba(0, 0, 0, 0.45);
+	--bottom-shading: rgba(0, 0, 0, 0.5);
 	// ALSO EDITABLE
 	--normal-text: #d8d8db;
 	--muted-text: #aeaeb4;
@@ -109,9 +111,10 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 #{c(main light)} #{c(main darker)} {
 	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
 	--card-shading: #fff;
-	--side-shading: rgba(0, 0, 0, 0.6);
+	--side-shading: rgba(0, 0, 0, 0.55);
 	--middle-shading: rgba(0, 0, 0, 0.6);
-	--top-shading: rgba(0, 0, 0, 0.6);
+	--top-shading: rgba(0, 0, 0, 0.65);
+	--bottom-shading: rgba(0, 0, 0, 0.7);
 	// ALSO EDITABLE
 	--normal-text: #fbfbfb;
 	--muted-text: #94949c;
@@ -124,9 +127,10 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 #{c(main light)} #{c(main midnight)} {
 	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
 	--card-shading: #fff;
-	--side-shading: rgba(0, 0, 0, 0.8);
+	--side-shading: rgba(0, 0, 0, 0.75);
 	--middle-shading: rgba(0, 0, 0, 0.8);
-	--top-shading: rgba(0, 0, 0, 0.8);
+	--top-shading: rgba(0, 0, 0, 0.85);
+	--bottom-shading: rgba(0, 0, 0, 0.95);
 	// ALSO EDITABLE
 	--normal-text: #dcdcde;
 	--muted-text: #86868e;

@@ -1,14 +1,7 @@
 @use 'backend' as *;
-#{c(chat subtitleContainer)} {
-    margin-right: 5px;
-    // :has used for making header bubble work with hide user profile
-    &:has(+ #{c(chat chatContent)} :is(#{c(memberList container)}, #{c(profile panel panel)})) {
-        width: calc(100% - var(--custom-member-list-width) - 11px );
-    }
-}
+
 :is(#{c(main dark)}, #{c(main light)}) {
     #{c(header headerTitle)} {
-        border-radius: 10px 10px 0 0;
         background: cv('shading.middle')
     }   
 }

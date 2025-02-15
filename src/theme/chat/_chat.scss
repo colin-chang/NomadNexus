@@ -4,11 +4,16 @@
 #{c(main visualRefresh)} {
     #{c(chat chat)} {
         background: transparent;
+        &[data-has-border=true] {
+            border: none
+        }
+    }
+    &#{c(main midnight)} {
+        #{c(chat chatContent)} {
+            border: none;   // Only midnight theme has this??????
+        }
     }
     #{c(chat chatContentInner)} {
-        height: calc(100% - var(--spacing-8));
-        border-radius: 0 0 10px 10px;
         background: cv('shading.middle');
-        margin-right: 5px;
     }
 }

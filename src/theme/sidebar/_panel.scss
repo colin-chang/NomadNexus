@@ -2,6 +2,11 @@
 // Sidebar Panel
 #{c(main visualRefresh)} {
 	#{c(sidebar panel panels)} {
-		background: cv('shading.middle');
+		background: cv('shading.bottom');
+		border-radius: 0;
+		border: none;
+		width: var(--custom-guild-sidebar-width);
+    	left: 0;
+		bottom: 0;
 	}
 }

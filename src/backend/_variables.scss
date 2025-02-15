@@ -41,7 +41,7 @@ $cv: (
 	// These colors are the hidden "backend" colors.
 	// The default values for these contain calculations involving `var(--saturation-factor,1)`.
 	// Exposed "frontend" values are simply a hex code.
-	colors: (
+	color: (
 		main: var(--hsl-main-color), // main accent color, obviously
 		hover: var(--hsl-hover-color), // secondary accent color, used when hovering over (some) things with main accent color
 		success: var(--hsl-success-color), // mainly used for green buttons
@@ -59,7 +59,8 @@ $cv: (
 		card: var(--hsl-card-shading), // mainly used for embeds, most modals, random things
 		side: var(--hsl-side-shading), // side bars like the channel list and member list
 		middle: var(--hsl-middle-shading), // main chat area
-		top: var(--hsl-top-shading), // header bar
+		top: var(--hsl-top-shading), // title bar, guild list
+		bottom: var(--hsl-bottom-shading), // user panel
 	),
 	// TEXT COLORS - ALSO TO BE USED IN .theme-light AND .theme-dark
 	text: (
