@@ -45,3 +45,37 @@
 		font-family: var(--font-primary);
 	}
 }
+
+
+// SCROLLBAR
+#{c(scroller auto)} {
+	&::-webkit-scrollbar {
+		width: 14px;
+	}
+	&::-webkit-scrollbar-thumb,
+	&::-webkit-scrollbar-track {
+		border: 3px solid transparent;
+		border-radius: 7px;
+	}	
+}
+#{c(scroller thin)} {
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+	&::-webkit-scrollbar-thumb,
+	&::-webkit-scrollbar-track {
+		border: 3px solid transparent;
+		border-radius: 5px;
+	}	
+}
+:is(
+	#{c(scroller auto)},
+	#{c(scroller thin)} 
+){
+	&::-webkit-scrollbar-thumb {
+		background-color: cv('color.main');
+		&:active {
+		background-color: cv('color.hover');
+		}
+	}
+}
