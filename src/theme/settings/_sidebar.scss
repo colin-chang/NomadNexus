@@ -1,0 +1,13 @@
+@use 'backend' as *;
+
+// SETTINGS SIDEBARr
+#{c(main visualRefresh)} {
+    #{c(userSettings standardSidebarView)} {
+        background: transparent;
+    }
+    #{c(userSettings sidebarRegionScroller)} {
+        background-color: cv('shading.side');
+        margin-top: var(--custom-app-top-bar-height);
+        padding: 20px 8px 60px 20px
+    }
+}

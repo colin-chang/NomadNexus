@@ -1,5 +1,6 @@
 @use "backend" as *;
-// Sidebar Panel
+
+// ACCOUNT PANEL
 #{c(main visualRefresh)} {
 	#{c(sidebar panel panels)} {
 		background: cv('shading.bottom');
@@ -8,5 +9,15 @@
 		width: var(--custom-guild-sidebar-width);
     	left: 0;
 		bottom: 0;
+	}
+}
+
+// ACTIVITY
+:is(
+	#{c(main light)},
+	#{c(main dark)}
+) {
+	#{c(sidebar panel activity panel)} {
+		background-color: transparent;
 	}
 }

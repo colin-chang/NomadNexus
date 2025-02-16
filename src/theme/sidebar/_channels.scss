@@ -2,7 +2,7 @@
 
 #{c(main visualRefresh)} {
 
-    // CHANNELS
+    // CHANNELS BACKGROUND
     #{c(sidebar list)} {
         margin-bottom: var(--custom-app-panels-height);
         border-radius: 0;
@@ -12,4 +12,13 @@
         background: cv('shading.side');
         padding-bottom: 10px;
     }
+
+    // HEADER
+    #{c(sidebar server header clickable)} {
+        background: transparent;
+    }
+    #{c(sidebar server header header)} {
+        background: transparent;
+    }
+
 }

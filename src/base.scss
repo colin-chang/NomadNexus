@@ -76,65 +76,93 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 }
 
 /* Light Theme */
-#{c(main light)},
-#{c(main dark)} #{c(main light)} {
-	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
-	--card-shading: rgba(252, 252, 252, 0.05);
-	--side-shading: rgba(252, 252, 252, 0.2);
-	--middle-shading: rgba(252, 252, 252, 0.2);
-	--top-shading: rgba(252, 252, 252, 0.2);
-	--bottom-shading: rgba(252, 252, 252, 0.2);
-	// ALSO EDITABLE
-	--normal-text: #36363c;
-	--muted-text: #75757e;
-	--primary-text: #303035;
-	--secondary-text: #60606a;
+#{c(main visualRefresh)} {  // overides discord defaults
+	&:is(
+		#{c(main light)},
+		#{c(main dark)} #{c(main light)}
+	) {
+		// THESE VARIABLES ARE TO BE EDITED BY THE END USER
+		--card-shading: rgba(252, 252, 252, 0.05);
+		--side-shading: rgba(252, 252, 252, 0.3);
+		--middle-shading: rgba(252, 252, 252, 0.4);
+		--top-shading: rgba(252, 252, 252, 0.45);
+		--bottom-shading: rgba(252, 252, 252, 0.5);
+		// ALSO EDITABLE
+		--normal-text: #36363c;
+		--muted-text: #75757e;
+		--primary-text: #303035;
+		--secondary-text: #60606a;	
+		--interactive-normal: rgba(0, 0, 0, .7);
+		--interactive-hover: rgba(0, 0, 0, .9);
+		--interactive-active: rgba(0, 0, 0, .9);
+	}
 }
 
 /* Grey Theme */
-#{c(main dark)},
-#{c(main light)} #{c(main dark)} {
-	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
-	--card-shading: rgba(0, 0, 0, 0.2);
-	--side-shading: rgba(0, 0, 0, 0.35);
-	--middle-shading: rgba(0, 0, 0, 0.4);
-	--top-shading: rgba(0, 0, 0, 0.45);
-	--bottom-shading: rgba(0, 0, 0, 0.5);
-	// ALSO EDITABLE
-	--normal-text: #d8d8db;
-	--muted-text: #aeaeb4;
-	--primary-text: #ffffff;
-	--secondary-text: #c8c8cd;
+#{c(main visualRefresh)} {
+	&:is(
+		#{c(main dark)},
+		#{c(main light)} #{c(main dark)} 
+	) {
+		// THESE VARIABLES ARE TO BE EDITED BY THE END USER
+		--card-shading: rgba(0, 0, 0, 0.2);
+		--side-shading: rgba(0, 0, 0, 0.35);
+		--middle-shading: rgba(0, 0, 0, 0.4);
+		--top-shading: rgba(0, 0, 0, 0.45);
+		--bottom-shading: rgba(0, 0, 0, 0.5);
+		// ALSO EDITABLE
+		--normal-text: #d8d8db;
+		--muted-text: #aeaeb4;
+		--primary-text: #ffffff;
+		--secondary-text: #c8c8cd;
+		--interactive-normal: rgba(255, 255, 255, .7);
+		--interactive-hover: rgba(255, 255, 255, .9);
+		--interactive-active: rgba(255, 255, 255, .9);
+	}
 }
 
 /* Darker Theme */
-#{c(main darker)},
-#{c(main light)} #{c(main darker)} {
-	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
-	--card-shading: rgba(0, 0, 0, 0.3);
-	--side-shading: rgba(0, 0, 0, 0.55);
-	--middle-shading: rgba(0, 0, 0, 0.6);
-	--top-shading: rgba(0, 0, 0, 0.65);
-	--bottom-shading: rgba(0, 0, 0, 0.7);
-	// ALSO EDITABLE
-	--normal-text: #fbfbfb;
-	--muted-text: #94949c;
-	--primary-text: #fbfbfb;
-	--secondary-text: #aeaeb4;
+#{c(main visualRefresh)} {
+	&:is(
+		#{c(main darker)},
+		#{c(main light)} #{c(main darker)}
+	) {
+		// THESE VARIABLES ARE TO BE EDITED BY THE END USER
+		--card-shading: rgba(0, 0, 0, 0.3);
+		--side-shading: rgba(0, 0, 0, 0.55);
+		--middle-shading: rgba(0, 0, 0, 0.6);
+		--top-shading: rgba(0, 0, 0, 0.65);
+		--bottom-shading: rgba(0, 0, 0, 0.7);
+		// ALSO EDITABLE
+		--normal-text: #fbfbfb;
+		--muted-text: #94949c;
+		--primary-text: #fbfbfb;
+		--secondary-text: #aeaeb4;
+		--interactive-normal: rgba(255, 255, 255, .7);
+		--interactive-hover: rgba(255, 255, 255, .9);
+		--interactive-active: rgba(255, 255, 255, .9);
+	}
 }
 
 /* Midnight Theme */
-#{c(main midnight)},
-#{c(main light)} #{c(main midnight)} {
-	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
-	--card-shading: rgba(0, 0, 0, 0.4);
-	--side-shading: rgba(0, 0, 0, 0.75);
-	--middle-shading: rgba(0, 0, 0, 0.8);
-	--top-shading: rgba(0, 0, 0, 0.85);
-	--bottom-shading: rgba(0, 0, 0, 0.95);
-	// ALSO EDITABLE
-	--normal-text: #dcdcde;
-	--muted-text: #86868e;
-	--primary-text: #e7e7e9;
-	--secondary-text: #9c9ca3;
+#{c(main visualRefresh)} {
+	&:is(
+		#{c(main midnight)},
+		#{c(main light)} #{c(main midnight)}
+	) {
+		// THESE VARIABLES ARE TO BE EDITED BY THE END USER
+		--card-shading: rgba(0, 0, 0, 0.4);
+		--side-shading: rgba(0, 0, 0, 0.75);
+		--middle-shading: rgba(0, 0, 0, 0.8);
+		--top-shading: rgba(0, 0, 0, 0.85);
+		--bottom-shading: rgba(0, 0, 0, 0.95);
+		// ALSO EDITABLE
+		--normal-text: #dcdcde;
+		--muted-text: #86868e;
+		--primary-text: #e7e7e9;
+		--secondary-text: #9c9ca3;
+		--interactive-normal: rgba(255, 255, 255, .7);
+		--interactive-hover: rgba(255, 255, 255, .9);
+		--interactive-active: rgba(255, 255, 255, .9);
+	}
 }
