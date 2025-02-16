@@ -1,0 +1,9 @@
+@use "backend" as *;
+// Vencord stuff
+#{c(vencord quickActions pill)} {
+	&,
+	&:hover {
+		background: cv("shading.card");
+		box-shadow: none;
+	}
+}

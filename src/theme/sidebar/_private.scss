@@ -1,0 +1,19 @@
+@use "backend" as *;
+// Private DMs Sidebar
+#{c(main visualRefresh)} {
+	#{c(sidebar private channels)} {
+		background: cv("shading.side");
+	}
+	#{c(sidebar private scroller)} {
+		background: none;
+		margin-bottom: 0;
+	}
+}
+
+// big blue button in visual refresh looks ugly, make it transparent
+#{c(sidebar private searchBar)} {
+	#{c(button lookFilled)}#{c(button colorPrimary)} {
+		background: transparent;
+		color: cv("text.default");
+	}
+}

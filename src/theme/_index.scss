@@ -1,7 +1,9 @@
 // This is where the extra SCSS files are loaded from
 @forward "misc"; // best have this first
+@forward 'general'; // general things across the app go in here (ie buttons)
 @forward "chat";
-@forward 'general';
+@forward "friends";
+@forward 'header';
 @forward "memberList";
 @forward 'profiles';
 @forward "sidebar";

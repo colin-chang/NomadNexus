@@ -1,7 +1,1 @@
 @use 'backend' as *;
-
-:is(#{c(main dark)}, #{c(main light)}) {
-    #{c(header headerTitle)} {
-        background: cv('shading.middle')
-    }   
-}

@@ -13,7 +13,10 @@
             border: none;   // Only midnight theme has this??????
         }
     }
-    #{c(chat chatContentInner)} {
+    :is(
+        #{c(chat chatScrollerNSFW)},
+        #{c(chat chatContentInner)}
+    ) {
         background: cv('shading.middle');
     }
 }

@@ -79,10 +79,11 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 #{c(main light)},
 #{c(main dark)} #{c(main light)} {
 	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
-	--card-shading: #fff;
+	--card-shading: rgba(252, 252, 252, 0.05);
 	--side-shading: rgba(252, 252, 252, 0.2);
 	--middle-shading: rgba(252, 252, 252, 0.2);
 	--top-shading: rgba(252, 252, 252, 0.2);
+	--bottom-shading: rgba(252, 252, 252, 0.2);
 	// ALSO EDITABLE
 	--normal-text: #36363c;
 	--muted-text: #75757e;
@@ -94,7 +95,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 #{c(main dark)},
 #{c(main light)} #{c(main dark)} {
 	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
-	--card-shading: #fff;
+	--card-shading: rgba(0, 0, 0, 0.2);
 	--side-shading: rgba(0, 0, 0, 0.35);
 	--middle-shading: rgba(0, 0, 0, 0.4);
 	--top-shading: rgba(0, 0, 0, 0.45);
@@ -110,7 +111,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 #{c(main darker)},
 #{c(main light)} #{c(main darker)} {
 	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
-	--card-shading: #fff;
+	--card-shading: rgba(0, 0, 0, 0.3);
 	--side-shading: rgba(0, 0, 0, 0.55);
 	--middle-shading: rgba(0, 0, 0, 0.6);
 	--top-shading: rgba(0, 0, 0, 0.65);
@@ -126,7 +127,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 #{c(main midnight)},
 #{c(main light)} #{c(main midnight)} {
 	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
-	--card-shading: #fff;
+	--card-shading: rgba(0, 0, 0, 0.4);
 	--side-shading: rgba(0, 0, 0, 0.75);
 	--middle-shading: rgba(0, 0, 0, 0.8);
 	--top-shading: rgba(0, 0, 0, 0.85);

@@ -1,0 +1,27 @@
+@use "backend" as *;
+// friends list
+#{c(main visualRefresh)} {
+	#{c(friends container)} {
+		background: none;
+		border-top: none;
+	}
+	#{c(friends tabBody)} {
+		background: none;
+	}
+	#{c(friends peopleColumn)} {
+		background: cv("shading.middle");
+	}
+	#{c(friends itemCardOuter)} {
+		&,
+		&#{c(friends itemCardInteractive)}:hover {
+			@include card;	
+		}
+	}
+}
+
+#{c(friends nowPlayingColumn)} {
+	background: none;
+}
+#{c(friends nowPlayingContainer)} {
+	background: cv("shading.side");
+}
