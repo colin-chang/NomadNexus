@@ -1,7 +1,7 @@
 @use 'backend' as *;
 
 // FIXES BG
-@error Explain the important next to the important, Leo;
+@warn Explain the important next to the important, Leo;
 #{c(main options fullMotion)} #{c(modals translate)} {
     transform: unset !important;
 }
