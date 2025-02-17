@@ -1,18 +1,12 @@
-@use "backend" as *;
+@use 'backend' as *;
 // Header bar with buttons and stuff; not visual refresh's top bar thing
 :is(#{c(main dark)}, #{c(main light)}) {
-	#{c(header themed)} {
-		background: cv("shading.middle");
-	}
+    #{c(header themed)} {
+        background: cv('shading.middle');
+    }
 }
 #{c(header children)} {
 	&::after {
 		content: none;
-	}
-}
-#{c(main visualRefresh)} {
-	// hide the border in search bar
-	#{c(header searchBar)} {
-		border: none;
 	}
 }

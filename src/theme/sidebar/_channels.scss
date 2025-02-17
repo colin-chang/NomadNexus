@@ -1,22 +1,24 @@
-@use "backend" as *;
+@use 'backend' as *;
 
 #{c(main visualRefresh)} {
-	// CHANNELS BACKGROUND
-	#{c(sidebar list)} {
-		margin-bottom: var(--custom-app-panels-height);
-		border-radius: 0;
-		border: none;
-	}
-	#{c(sidebar server container)} {
-		background: cv("shading.side");
-		padding-bottom: 10px;
-	}
 
-	// HEADER
-	#{c(sidebar server header clickable)} {
-		background: transparent;
-	}
-	#{c(sidebar server header header)} {
-		background: transparent;
-	}
+    // CHANNELS BACKGROUND
+    #{c(sidebar list)} {
+        margin-bottom: var(--custom-app-panels-height);
+        border-radius: 0;
+        border: none
+    }
+    #{c(sidebar server container)} {
+        background: cv('shading.side');
+        padding-bottom: 10px;
+    }
+
+    // HEADER
+    #{c(sidebar server header clickable)} {
+        background: transparent;
+    }
+    #{c(sidebar server header header)} {
+        background: transparent;
+    }
+
 }

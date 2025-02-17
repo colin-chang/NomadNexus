@@ -4,9 +4,9 @@
 #{c(main visualRefresh)} {
 	#{c(main bg)} {
 		background: transparent center/cover no-repeat;
-		background-image: cv("bg.app.img");
-		background-attachment: cv("bg.app.attach");
-		filter: cv("bg.app.filter");
+		background-image: cv('bg.app.img');
+		background-attachment: cv('bg.app.attach');
+		filter: cv('bg.app.filter');
 	}
 }
 
@@ -23,27 +23,29 @@
 }
 
 // UI DESIGN
-#{c(main base)} {
+#{c(main base)} {	
 	margin: 10px;
 	border-radius: 10px;
 }
 
 // TITLE - likely to be moved to another file soon
 #{c(topBar bar)} {
-	background-color: var(--hsl-top-shading);
+    background-color: var(--hsl-top-shading);
 }
+
 
 // Watermark
 #{c(userSettings sidebarInfo)} {
 	&::after {
 		content: $themeName " " $version;
-		color: cv("text.muted");
+		color: cv('text.muted');
 		font-size: 12px;
-		line-height: calc(4 / 3);
+		line-height: calc(4/3);
 		font-weight: 400;
 		font-family: var(--font-primary);
 	}
 }
+
 
 // SCROLLBAR
 #{c(scroller auto)} {
@@ -54,7 +56,7 @@
 	&::-webkit-scrollbar-track {
 		border: 3px solid transparent;
 		border-radius: 7px;
-	}
+	}	
 }
 #{c(scroller thin)} {
 	&::-webkit-scrollbar {
@@ -64,13 +66,16 @@
 	&::-webkit-scrollbar-track {
 		border: 3px solid transparent;
 		border-radius: 5px;
-	}
+	}	
 }
-:is(#{c(scroller auto)}, #{c(scroller thin)}) {
+:is(
+	#{c(scroller auto)},
+	#{c(scroller thin)} 
+){
 	&::-webkit-scrollbar-thumb {
-		background-color: cv("color.main");
+		background-color: cv('color.main');
 		&:active {
-			background-color: cv("color.hover");
+		background-color: cv('color.hover');
 		}
 	}
 }

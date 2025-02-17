@@ -1,43 +1,45 @@
-@use "backend" as *;
+@use 'backend' as *;
 
 #{c(main visualRefreshChatInput)} {
-	#{c(chatForm formWithLoadedChatInput)} {
-		&:before {
-			display: none;
-		}
-	}
-	#{c(chatForm channelBottomBarArea)} {
-		margin-bottom: 0;
-	}
-	// Separate input with buttons
-	#{c(chatForm channelTextAreaMain)} {
-		background: transparent;
-		border: 2px solid transparent;
-	}
-	#{c(chatForm themedBackground)} {
-		@warn forced colour;
-		background-color: rgba(255, 255, 255, 0.1);
-		border-radius: 8px;
-	}
-	#{c(chatForm accessoryBar)} {
-		border: none;
-		margin-left: 0;
-	}
-	#{c(chatForm attachButton)} {
-		background-color: cv("color.main");
-		padding: 4px 12px;
-		margin-left: -8px;
-		border-radius: 4px;
-		&:hover {
-			background-color: cv("color.hover");
-			color: var(--interactive-hover);
-		}
-		&::after {
-			// See "/theme/misc/_i18n.scss" for more.
-			content: var(--__i18n-attachment);
-			width: fit-content;
-			font-size: 1em;
-			margin-left: 0.5em;
-		}
-	}
+    @debug temp class;
+    .formWithLoadedChatInput_f75fb0 {
+        &:before {
+            display: none
+        }
+    }
+    @debug temp class;
+    .channelBottomBarArea_f75fb0 {
+        margin-bottom: 0;
+    }
+    #{c(chatForm channelTextAreaMain)} { // Seperate input with buttons
+        background: transparent;
+        border: 2px solid transparent;
+    }
+    #{c(chatForm themedBackground)} {
+        @error forced colour;
+        background-color: rgba(255, 255, 255, .1);
+        border-radius: 8px;
+    }
+    @debug temp class;
+    .accessoryBar__74017 {
+        border: none;
+        margin-left: 0
+    }
+    #{c(chatForm attachButton)} {
+        background-color: cv('color.main');
+        padding: 4px 12px;
+        margin-left: -8px;
+        border-radius: 4px;
+        &:hover {
+            background-color: cv('color.hover');
+            color: var(--interactive-hover);
+        }
+        &::after {
+            // See "/theme/misc/_i18n.scss" for more.
+            content: var(--__i18n-attachment);
+            width: fit-content;
+            font-size: 1em;
+            margin-left: 0.5em;
+        }
+    }
 }

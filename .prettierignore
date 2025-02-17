@@ -1,9 +1,0 @@
-classes/
-dist/
-node_modules/
-/*.css
-/*.md
-
-# Explicitly ignored files
-**/_tags.scss
-**/_variables.scss

@@ -1,18 +1,18 @@
-@use "backend" as *;
+@use 'backend' as *;
 
 #{c(main visualRefresh)} {
-	#{c(memberList container)} {
-		background: cv("shading.side");
-		border: none;
-	}
+    #{c(memberList container)} {
+        background: cv('shading.side');
+        border: none;
+    }
 }
 #{c(memberList members)},
 #{c(memberList memberBackground)} {
-	background: none;
+    background: none;
 }
 
 #{c(memberList placeholderUsernameMultiple)},
 #{c(memberList placeholderAvatar)},
 #{c(memberList placeholderUsername)} {
-	background: cv("shading.card");
+    background: cv("shading.card");
 }

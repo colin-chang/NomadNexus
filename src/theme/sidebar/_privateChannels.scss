@@ -1,40 +1,43 @@
-@use "backend" as *;
+@use 'backend' as *;
 
 #{c(main visualRefresh)} {
-	#{c(sidebar private channels)} {
-		background: cv("shading.side");
-	}
-	#{c(sidebar private scroller)} {
-		background: transparent;
-		margin-bottom: 10px;
-	}
+    #{c(sidebar private channels)} {
+        background: cv('shading.side');
+    }
+    #{c(sidebar private scroller)} {
+        background: transparent;
+        margin-bottom: 10px;
+    }
 }
 
 // HEADER
 #{c(sidebar private headerText)} {
-	display: flex;
-	color: cv("color.main");
-	text-transform: uppercase;
-	font-size: 13px;
-	font-weight: 700;
-	align-items: center;
-	&::after {
-		content: "";
-		height: 2px;
-		flex-grow: 1;
-		transition: all 0.3s ease-in-out;
-		background: linear-gradient(to right, cv("color.main") 50%, transparent 100%);
-		margin-left: 6px;
-		filter: drop-shadow(0 0 2px cv("color.main"));
-	}
+    display: flex;
+    color: cv('color.main');
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    align-items: center;
+    &::after {
+        content:'';
+        height: 2px;
+        flex-grow: 1;
+        transition: all 0.3s ease-in-out;
+        background: linear-gradient(to right, cv('color.main') 50%, transparent 100%);
+        margin-left: 6px;
+        filter: drop-shadow(0 0 2px cv('color.main'));
+    }
 }
 #{c(main visualRefresh)} {
-	:is(#{c(sidebar private recentActivities plusIcon)}, #{c(sidebar private inviteButtonIcon)}) {
-		margin: 0 -4px 0 0;
-		#{c(header icon)} {
-			color: cv("color.main");
-		}
-	}
+    :is(
+        .plusIcon__675e5,
+        #{c(sidebar private inviteButtonIcon)}
+    ) {
+        margin: 0 -4px 0 0;
+        #{c(header icon)} {
+            color: cv('color.main');
+        }
+    }
 }
 
 // big blue button in visual refresh looks ugly, make it transparent

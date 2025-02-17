@@ -1,14 +1,14 @@
-@use "backend" as *;
+@use 'backend' as *;
 
 // SETTINGS BACKGROUND
 #{c(main appLayer)} {
-	background-color: transparent;
+    background-color: transparent;
 }
 #{c(userSettings contentRegion)} {
-	background-color: transparent;
+    background-color: transparent;
 }
-#{c(main visualRefresh)} {
-	#{c(userSettings contentRegionScroller)} {
-		background-color: cv("shading.middle");
-	}
+#{c(main visualRefresh)}  {
+    #{c(userSettings contentRegionScroller)} {
+        background-color: cv('shading.middle');
+    }
 }

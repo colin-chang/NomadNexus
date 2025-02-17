@@ -1,13 +1,13 @@
-@use "backend" as *;
+@use 'backend' as *;
 #{c(os win platform)} {
-	#{c(sidebar sidebar)} {
-		border-radius: 0;
-	}
+    #{c(sidebar sidebar)} {
+        border-radius: 0;
+    }
 }
 #{c(main visualRefresh)} {
 	#{c(sidebar sidebar)} {
-		&:after {
-			display: none;
-		}
-	}
+        &:after {
+            display: none;
+        }
+    }
 }
