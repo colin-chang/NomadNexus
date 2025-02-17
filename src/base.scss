@@ -8,13 +8,13 @@
 @use "theme";
 
 /* Default Variables */
-$sf: var(--saturation-factor,1);
+$sf: var(--saturation-factor, 1);
 $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 // DO NOT DISTRIBUTE THESE; BACKEND ONLY STUFF.
 #{c(main visualRefresh)} {
-	&:is(#{c(main light)},#{c(main dark)}) {
+	&:is(#{c(main light)}, #{c(main dark)}) {
 		&,
-		& :is(#{c(main light)},#{c(main dark)}) {
+		& :is(#{c(main light)}, #{c(main dark)}) {
 			// DO NOT EDIT THESE -- VARIABLES ARE NOT TO BE DISTRIBUTED TO END USER.
 			--text-normal: hsl(from var(--normal-text) #{$calc});
 			--text-muted: hsl(from var(--muted-text) #{$calc});
@@ -44,6 +44,9 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 	--hsl-top-shading: hsl(from var(--top-shading) #{$calc});
 	--hsl-bottom-shading: hsl(from var(--bottom-shading) #{$calc});
 	// other stuff that the theme sets
+	--font-code: var(--code-font);
+	--font-display: var(--main-font);
+	--font-primary: var(--main-font);
 
 	// THESE VARIABLES ARE TO BE EDITED BY THE END USER
 	--main-color: #2780e6;
@@ -67,20 +70,18 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 	--home-icon: none;
 
 	// Advanced users only kinda thing
-	--main-font: Inter, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
-	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
+	--main-font: Inter, Whitney, "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--code-font: Hack, Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace;
 	--background-filter: saturate(calc(#{$sf} * 1));
 	--user-popout-filter: var(--background-filter);
 	--user-modal-filter: var(--background-filter);
-
 }
 
 /* Light Theme */
-#{c(main visualRefresh)} {  // overides discord defaults
-	&:is(
-		#{c(main light)},
-		#{c(main dark)} #{c(main light)}
-	) {
+// I'd advice against :is() here as css specificity messes with it. ~ Leaf
+#{c(main visualRefresh)} {
+	&#{c(main light)},
+	&#{c(main dark)} #{c(main light)} {
 		// THESE VARIABLES ARE TO BE EDITED BY THE END USER
 		--card-shading: rgba(252, 252, 252, 0.05);
 		--side-shading: rgba(252, 252, 252, 0.3);
@@ -91,19 +92,17 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 		--normal-text: #36363c;
 		--muted-text: #75757e;
 		--primary-text: #303035;
-		--secondary-text: #60606a;	
-		--interactive-normal: rgba(0, 0, 0, .7);
-		--interactive-hover: rgba(0, 0, 0, .9);
-		--interactive-active: rgba(0, 0, 0, .9);
+		--secondary-text: #60606a;
+		--interactive-normal: rgba(0, 0, 0, 0.7);
+		--interactive-hover: rgba(0, 0, 0, 0.9);
+		--interactive-active: rgba(0, 0, 0, 0.9);
 	}
 }
 
 /* Grey Theme */
 #{c(main visualRefresh)} {
-	&:is(
-		#{c(main dark)},
-		#{c(main light)} #{c(main dark)} 
-	) {
+	&#{c(main dark)},
+	&#{c(main light)} #{c(main dark)} {
 		// THESE VARIABLES ARE TO BE EDITED BY THE END USER
 		--card-shading: rgba(0, 0, 0, 0.2);
 		--side-shading: rgba(0, 0, 0, 0.35);
@@ -115,18 +114,16 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 		--muted-text: #aeaeb4;
 		--primary-text: #ffffff;
 		--secondary-text: #c8c8cd;
-		--interactive-normal: rgba(255, 255, 255, .7);
-		--interactive-hover: rgba(255, 255, 255, .9);
-		--interactive-active: rgba(255, 255, 255, .9);
+		--interactive-normal: rgba(255, 255, 255, 0.7);
+		--interactive-hover: rgba(255, 255, 255, 0.9);
+		--interactive-active: rgba(255, 255, 255, 0.9);
 	}
 }
 
 /* Darker Theme */
 #{c(main visualRefresh)} {
-	&:is(
-		#{c(main darker)},
-		#{c(main light)} #{c(main darker)}
-	) {
+	&#{c(main darker)},
+	&#{c(main light)} #{c(main darker)} {
 		// THESE VARIABLES ARE TO BE EDITED BY THE END USER
 		--card-shading: rgba(0, 0, 0, 0.3);
 		--side-shading: rgba(0, 0, 0, 0.55);
@@ -138,18 +135,16 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 		--muted-text: #94949c;
 		--primary-text: #fbfbfb;
 		--secondary-text: #aeaeb4;
-		--interactive-normal: rgba(255, 255, 255, .7);
-		--interactive-hover: rgba(255, 255, 255, .9);
-		--interactive-active: rgba(255, 255, 255, .9);
+		--interactive-normal: rgba(255, 255, 255, 0.7);
+		--interactive-hover: rgba(255, 255, 255, 0.9);
+		--interactive-active: rgba(255, 255, 255, 0.9);
 	}
 }
 
 /* Midnight Theme */
 #{c(main visualRefresh)} {
-	&:is(
-		#{c(main midnight)},
-		#{c(main light)} #{c(main midnight)}
-	) {
+	&#{c(main midnight)},
+	&#{c(main light)} #{c(main midnight)} {
 		// THESE VARIABLES ARE TO BE EDITED BY THE END USER
 		--card-shading: rgba(0, 0, 0, 0.4);
 		--side-shading: rgba(0, 0, 0, 0.75);
@@ -161,8 +156,8 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 		--muted-text: #86868e;
 		--primary-text: #e7e7e9;
 		--secondary-text: #9c9ca3;
-		--interactive-normal: rgba(255, 255, 255, .7);
-		--interactive-hover: rgba(255, 255, 255, .9);
-		--interactive-active: rgba(255, 255, 255, .9);
+		--interactive-normal: rgba(255, 255, 255, 0.7);
+		--interactive-hover: rgba(255, 255, 255, 0.9);
+		--interactive-active: rgba(255, 255, 255, 0.9);
 	}
 }

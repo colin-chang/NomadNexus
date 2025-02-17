@@ -1,13 +1,15 @@
-@use 'backend' as *;
+@use "backend" as *;
 
 // SETTINGS SIDEBARr
 #{c(main visualRefresh)} {
-    #{c(userSettings standardSidebarView)} {
-        background: transparent;
-    }
-    #{c(userSettings sidebarRegionScroller)} {
-        background-color: cv('shading.side');
-        margin-top: var(--custom-app-top-bar-height);
-        padding: 20px 8px 60px 20px
-    }
+	#{c(userSettings standardSidebarView)} {
+		background: transparent;
+	}
+	#{c(userSettings sidebarRegionScroller)} {
+		background-color: cv("shading.side");
+		padding: 20px 8px 60px 20px;
+		:is(#{c(os win platform)}, #{c(os mac platform)}) & {
+			margin-top: var(--custom-app-top-bar-height);
+		}
+	}
 }

@@ -72,7 +72,7 @@ $tagged: (
 	// Former CV Team Members
 	"Former CV Team": (
 		"335677038830682112",	// Snow
-	),
+	)
 );
 
 // OUTPUT
@@ -98,16 +98,16 @@ $tagged: (
 		@if list.length($user) > 1 {
 			$k: ":is("; // start :is(
 			@for $i from 1 through list.length($user) {
-				$k: string.insert($k,"[src*=\"" + list.nth($user,$i) + "\"],",-1);
+				$k: string.insert($k, '[src*="' + list.nth($user, $i) + '"],', -1);
 			}
 			// remove extra comma, add closing )
-			$k: string.slice($k,0,-2) + ")";
+			$k: string.slice($k, 0, -2) + ")";
 		} @else {
-			$k: "[src*=\"" + list.nth($user,1) + "\"]";
+			$k: '[src*="' + list.nth($user, 1) + '"]';
 		}
 	} @else {
-	// and for single strings
-		$k: "[src*=\"#{$user}\"]";
+		// and for single strings
+		$k: '[src*="#{$user}"]';
 	}
 	#{c(chat chatAvatar)}#{$k} ~ #{c(chat chatHeaderUsername)} {
 		--tag: "#{$group}";
