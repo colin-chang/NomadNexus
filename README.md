@@ -7,7 +7,7 @@ IMAGE OUTDATED NEEDS UPDATING
 
 </div>
 
-<!-- 
+<div>
 Default presets:
 Pearl - Pinkish theme, primarily for light mode
 Garnet - Magenta theme, primarily for dark mode
@@ -23,9 +23,7 @@ Emerald - Green | Art: Work from "Guild Wars" or "Guild Wars 2" ; http://www.kek
 Amethyst - Magenta | Art (tinted purple): https://www.deviantart.com/vityar83/art/gulls-149920115 ; https://www.deviantart.com/vityar83
 Halloween - Orange, for festivity | Art: https://www.deviantart.com/unidcolor/art/Halloween-2014-491224711 ; https://www.deviantart.com/unidcolor/
 Winter - Light blue, for festivity | Art: https://wall.alphacoders.com/big.php?i=114938 ; unknown artist.
--->
 
-<!--
 Goals:
 only supports visual refresh
 supports both light and dark, along with dark variants
@@ -36,12 +34,9 @@ avoid usage of :has() without a good reason
 always give reason for using `!important`
 plugin support in extra files for respective client mods
 
-sulfide :3
-
 addons???
--->
+</div>
 
-<!-- v7 not in theme editor
 ## Theme Editor
 
 You can now customize the theme with a preview before downloading it to your computer.
@@ -51,9 +46,7 @@ Please keep in mind that **we do not manage the theme editor**, and cannot help 
 > [Theme Editor](https://bdeditor.dev/theme/clearvision)
 
 _Thank you to @Gibbu to providing this._
--->
 
-<!-- links need updating
 ## Installing
 
 Note: ClearVision doesn't actively support plugins (as in, we don't seek out and actively theme fixes to every new plugin). However, when a plugin is widely used, we try our best to stay compatible.
@@ -77,7 +70,6 @@ For customizing the theme from there, you'll want to use custom css and add any 
 	--hover-color: yellow;
 }
 ```
--->
 
 ## Building from source
 
