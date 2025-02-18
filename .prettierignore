@@ -1,0 +1,9 @@
+dist/
+node_modules/
+/*.css
+/*.md
+public/
+test/
+
+# Breaks something
+_tags.scss

@@ -1,0 +1,37 @@
+@use 'backend' as *;
+
+/* TAB */
+// TOP 
+/*
+#{c(tab top)} {
+  #{c(tab themed)} {
+    &#{c(tab item)} {
+      &:hover {
+        border-bottom-color: cv('color.hover');
+      }
+      &#{c(tab selected)},
+      &:active {
+        border-bottom-color: cv('color.main');
+      }
+    }
+  }
+}*/ //unsure for now
+
+// PILL
+#{c(main visualRefresh)} {
+  :is(#{c(tab topPill)}, #{c(tab side)}) {
+    #{c(tab themed)} {
+      &#{c(tab item)} {
+        &:hover:not(#{c(tab disabled)}) {
+          background-color: cv('color.hover');
+        }        
+        &#{c(tab selected)} {
+          background-color: cv('color.main');
+          &:hover:not(#{c(tab disabled)}) {
+            background-color: cv('color.main');
+          }
+        }
+      }
+    }
+  }
+}

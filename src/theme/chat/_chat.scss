@@ -2,27 +2,24 @@
 
 // BACKGROUND
 #{c(main visualRefresh)} {
-    #{c(chat chat)} {
-        background: transparent;
-        &[data-has-border=true] {
-            border: none
-        }
+  #{c(chat chat)} {
+    background: transparent;
+    &[data-has-border='true'] {
+      border: none;
     }
-    &#{c(main midnight)} {
-        #{c(chat chatContent)} {
-            border: none;   // Only midnight theme has this??????
-        }
+  }
+  &#{c(main themeMidnight)} {
+    #{c(chat chatContent)} {
+      border: none; // Only midnight theme has this??????
     }
-    :is(
-        #{c(chat chatScrollerNSFW)},
-        #{c(chat chatContentInner)}
-    ) {
-        background: cv('shading.middle');
-    }
+  }
+  :is(#{c(chat chatScrollerNSFW)}, #{c(chat chatContentInner)}) {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.35));
+  }
 }
 
 // CHAT LOADING
 #{c(chat chatLoadingWrapper)},
 #{c(chat messageLoadingWrapper)} {
-    background-color: transparent;
+  background-color: transparent;
 }

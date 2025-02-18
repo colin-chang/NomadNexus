@@ -1,22 +1,19 @@
 @use 'backend' as *;
 
 #{c(button button)} {
-    color: cv('text.normal'); // might be useless
+  border-radius: 4px;
 }
 #{c(button lookFilled)} {
-    &:is(
-        #{c(button colorBrand)},
-        #{c(button colorPrimary)}
-    ){        
-        background-color: cv('color.main');
-        &:hover {
-            background-color: cv('color.hover');
-        }
+  &:is(#{c(button colorBrand)}, #{c(button colorPrimary)}) {
+    background-color: cv('color.main');
+    &:hover {
+      background-color: cv('color.hover');
     }
-    &#{c(button colorGreen)} {
-        background-color: cv('color.success');
-        &:hover {
-            background-color: hsl(from cv('color.success') h s l/.8);
-        }
+  }
+  &#{c(button colorGreen)} {
+    background-color: cv('color.success');
+    &:hover {
+      background-color: hsl(from cv('color.success') h s l/.8);
     }
+  }
 }

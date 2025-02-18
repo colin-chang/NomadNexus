@@ -1,0 +1,25 @@
+@use 'backend' as *;
+
+// TRANSPARENT BG
+#{c(main visualRefresh)} {
+  :is(
+		html, // might be needed for injectors
+		body,
+		#{c(main appMount)}
+	) {
+    background: none;
+  }
+}
+
+// BACKGROUND IMAGE
+#{c(main appInner)} {
+  background: transparent center/cover no-repeat;
+  background-image: cv('bg.app.img');
+  background-attachment: cv('bg.app.attach');
+  filter: cv('bg.app.filter');
+}
+#{c(main visualRefresh)} {
+  #{c(main bg)} {
+    background: cv('shading.bg');
+  }
+}

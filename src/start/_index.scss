@@ -1,15 +1,15 @@
 // These get left in a nice, neat location.
-$version: "7.0.0";
-$themeName: "ClearVision";
-$author: "ClearVision Team";
-$desc: "Highly customizable theme";
-$desc_bd: "for BetterDiscord."; // BetterDiscord will use the default preset.
-$desc_vc: "for Vencord."; // Vencord will use the default preset.
-$desc_generic: "for BetterDiscord and Vencord."; // "Generic" to be used for preset distributables.
-$src: "https://github.com/ClearVision/ClearVision-v7";
-$website: "https://clearvision.github.io"; // also css @import host
-$invite: "dHaSxn3";
+$version: '7.0.0 pre';
+$themeName: 'ClearVision';
+$author: 'ClearVision Team';
+$desc: 'Highly customizable theme';
+$desc_bd: 'for BetterDiscord.'; // BetterDiscord will use the default preset.
+$desc_vc: 'for Vencord.'; // Vencord will use the default preset.
+$desc_generic: 'for BetterDiscord and Vencord.'; // "Generic" to be used for preset distributables.
+$src: 'https://github.com/ClearVision/ClearVision-v7';
+$website: 'https://clearvision.github.io'; // also css @import host
+$invite: 'dHaSxn3';
 
-$main_import: "base.css"; // Base import filename
-$bd_import: "betterdiscord.css"; // BetterDiscord's import filename
-$vc_import: "vencord.css"; // Vencord's import filename
+$main_import: 'main.css'; // Base import filename
+$bd_import: 'betterdiscord.css'; // BetterDiscord's import filename
+$vc_import: 'vencord.css'; // Vencord's import filename

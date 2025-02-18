@@ -1,27 +1,81 @@
-@use "backend" as *;
+@use 'backend' as *;
 // friends list
 #{c(main visualRefresh)} {
-	#{c(friends container)} {
-		background: none;
-		border-top: none;
-	}
-	#{c(friends tabBody)} {
-		background: none;
-	}
-	#{c(friends peopleColumn)} {
-		background: cv("shading.middle");
-	}
-	#{c(friends itemCardOuter)} {
-		&,
-		&#{c(friends itemCardInteractive)}:hover {
-			@include card;	
-		}
-	}
+  #{c(friends container)} {
+    background: none;
+    border-top: none;
+  }
+  #{c(friends tabBody)} {
+    background: none;
+  }
+  #{c(friends peopleColumn)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.35));
+  }
 }
 
+// Looking for accounts you’ve blocked or ignored?
+#{c(friends blockedIgnoredSettingsNotice)} {
+  @include card;
+}
+
+// SEARCHBAR
+#{c(friends searchbar)} {
+  background-color: cv('shading.input.bg');
+  border: none;
+  box-shadow: 0 0 0 2px cv('shading.input.border');
+  &:focus-within {
+    box-shadow: 0 0 0 2px cv('color.main');
+  }
+}
+
+// ADD FRIEND BUTTON
+#{c(main visualRefresh)} {
+  #{c(header tabBar)} {
+    #{c(header addFriend)}#{c(header addFriend)}#{c(header addFriend)} { // Yes this is how it is on discord as of 18/2
+      background-color: transparent;
+      color: cv('text.secondary');
+      border: none;
+      &:hover {
+        background-color: cv('color.hover');
+      }
+      &[aria-selected=true] {
+        background-color: cv('color.main');
+        color: cv('text.primary');
+      }
+    }
+  }
+}
+
+
+// ADD FRIEND SEARCHBAR
+#{c(friends addFriendInputWrapper)} {
+  background-color: cv('shading.input.bg');
+  border: none;
+  box-shadow: 0 0 0 2px cv('shading.input.border');
+  &:focus-within {
+    box-shadow: 0 0 0 2px cv('color.main');
+  }
+  #{c(input input)} {
+    background-color: transparent;
+    box-shadow: none;
+    &:focus-within {
+      box-shadow: none;
+    }
+  }
+}
+
+// ACTIVE NOW
 #{c(friends nowPlayingColumn)} {
-	background: none;
+  background: none;
 }
 #{c(friends nowPlayingContainer)} {
-	background: cv("shading.side");
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
+}
+#{c(main visualRefresh)} {
+  #{c(friends itemCardOuter)} {
+    &,
+    &#{c(friends itemCardInteractive)}:hover {
+      background-color: cv('shading.card');
+    }
+  }
 }

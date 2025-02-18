@@ -1,23 +1,20 @@
-@use "backend" as *;
+@use 'backend' as *;
 
 // ACCOUNT PANEL
 #{c(main visualRefresh)} {
-	#{c(sidebar panel panels)} {
-		background: cv('shading.bottom');
-		border-radius: 0;
-		border: none;
-		width: var(--custom-guild-sidebar-width);
-    	left: 0;
-		bottom: 0;
-	}
+  #{c(sidebar panel panels)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.6));
+    border-radius: 0;
+    border: none;
+    width: var(--custom-guild-sidebar-width);
+    left: 0;
+    bottom: 0;
+  }
 }
 
 // ACTIVITY
-:is(
-	#{c(main light)},
-	#{c(main dark)}
-) {
-	#{c(sidebar panel activity panel)} {
-		background-color: transparent;
-	}
+:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+  #{c(sidebar panel activity panel)} {
+    background-color: transparent;
+  }
 }

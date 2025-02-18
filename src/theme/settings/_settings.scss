@@ -2,13 +2,13 @@
 
 // SETTINGS BACKGROUND
 #{c(main appLayer)} {
-    background-color: transparent;
+  background-color: transparent;
 }
-#{c(userSettings contentRegion)} {
-    background-color: transparent;
+#{c(settings contentRegion)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
 }
-#{c(main visualRefresh)}  {
-    #{c(userSettings contentRegionScroller)} {
-        background-color: cv('shading.middle');
-    }
+#{c(main visualRefresh)} {
+  #{c(settings contentRegionScroller)} {
+    background: transparent;
+  }
 }

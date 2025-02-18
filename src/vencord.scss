@@ -1,8 +1,8 @@
-@use "start" as *;
+@use 'start' as *;
 /*! ClearVision - Vencord Addon v#{$version} by #{$author} */
 
 // Import Functions, Variables, Mixins and Class list functionality.
-@use "backend" as *;
+@use 'backend' as *;
 
 // Contains the theme proper.
-@use "vencord-theme";
+@use 'vencord-theme';

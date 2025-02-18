@@ -1,0 +1,15 @@
+@use 'backend' as *;
+
+/* NOTICE */
+#{c(notice base)} {
+  border-radius: 4px;
+  background: hsl(from var(--custom-notice-background) h s l/.8);
+}
+
+// CUSTOM COLOURS
+#{c(notice colorDanger)} {
+  --custom-notice-background: var(--hsl-danger-color); // doesnt work the normal way idk
+}
+#{c(notice colorStreamerMode)} {
+  --custom-notice-background: var(--hsl-streaming-color);
+}

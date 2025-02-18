@@ -1,45 +1,41 @@
 @use 'backend' as *;
 
 // FIXES BG
-@warn Explain the important next to the important, Leo;
 #{c(main options fullMotion)} #{c(modals translate)} {
-    transform: unset !important;
+  transform: unset !important;
 }
 
 // NO NITRO
 #{c(profile outer)} {
-    &:not(#{c(profile themed)}) {
-        background-color: transparent;
-        #{c(profile inner)} {
-            &:is(
-            #{c(profile biteSize)},
-            #{c(profile fullSize)}
-            ) {
-                background-color: cv('shading.top');
-                &:before {
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    background: transparent center/cover no-repeat;
-                    background-image: cv('bg.popout.img');
-                    background-attachment: cv('bg.popout.attach');
-                    filter: cv('bg.popout.filter');
-                    z-index: -1;
-                }
-            }
+  &:not(#{c(profile themed)}) {
+    background-color: transparent;
+    #{c(profile inner)} {
+      &:is(#{c(profile biteSize)}, #{c(profile fullSize)}) {
+        background-color: cv('shading.bg');
+        &:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: transparent center/cover no-repeat;
+          background-image: cv('bg.popout.img');
+          background-attachment: cv('bg.popout.attach');
+          filter: cv('bg.popout.filter');
+          z-index: -1;
         }
+      }
     }
+  }
 }
-
-
-
+#{c(profile overlay)} {
+  background-color: cv('shading.card');
+}
 
 // DM SIDE PROFILE
 #{c(profile panel panel)} {
-    &#{c(profile outer)} {
-        &:not(#{c(main customTheme)}) {
-            background: cv('shading.side');
-        }
+  &#{c(profile outer)} {
+    &:not(#{c(main customTheme)}) {
+      background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
     }
+  }
 }

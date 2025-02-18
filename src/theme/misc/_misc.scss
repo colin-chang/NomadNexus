@@ -1,81 +1,35 @@
-@use "start" as *;
-@use "backend" as *;
-// Background Image
-#{c(main visualRefresh)} {
-	#{c(main bg)} {
-		background: transparent center/cover no-repeat;
-		background-image: cv('bg.app.img');
-		background-attachment: cv('bg.app.attach');
-		filter: cv('bg.app.filter');
-	}
-}
-
-// To allow for full transparency
-#{c(main visualRefresh)} {
-	:is(
-		html, // might be needed for injectors
-		body,
-		#{c(main appMount)},
-		#{c(main appInner)} // doesn't *need* visual refresh but here nonetheless
-	) {
-		background: none;
-	}
-}
-
-// UI DESIGN
-#{c(main base)} {	
-	margin: 10px;
-	border-radius: 10px;
-}
-
-// TITLE - likely to be moved to another file soon
-#{c(topBar bar)} {
-    background-color: var(--hsl-top-shading);
-}
-
+@use 'start' as *;
+@use 'backend' as *;
 
 // Watermark
-#{c(userSettings sidebarInfo)} {
-	&::after {
-		content: $themeName " " $version;
-		color: cv('text.muted');
-		font-size: 12px;
-		line-height: calc(4/3);
-		font-weight: 400;
-		font-family: var(--font-primary);
-	}
+#{c(settings sidebarInfo)} {
+  &::after {
+    content: $themeName ' ' $version;
+    color: cv('text.muted');
+    font-size: 12px;
+    line-height: calc(4 / 3);
+    font-weight: 400;
+    font-family: var(--font-primary);
+  }
 }
 
-
-// SCROLLBAR
-#{c(scroller auto)} {
-	&::-webkit-scrollbar {
-		width: 14px;
-	}
-	&::-webkit-scrollbar-thumb,
-	&::-webkit-scrollbar-track {
-		border: 3px solid transparent;
-		border-radius: 7px;
-	}	
-}
-#{c(scroller thin)} {
-	&::-webkit-scrollbar {
-		width: 8px;
-	}
-	&::-webkit-scrollbar-thumb,
-	&::-webkit-scrollbar-track {
-		border: 3px solid transparent;
-		border-radius: 5px;
-	}	
-}
-:is(
-	#{c(scroller auto)},
-	#{c(scroller thin)} 
-){
-	&::-webkit-scrollbar-thumb {
-		background-color: cv('color.main');
-		&:active {
-		background-color: cv('color.hover');
-		}
-	}
+#{c(title title container)} {
+  &::before {
+    content: $themeName;
+    position: absolute;
+    left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: cv('text.normal');
+    filter: drop-shadow(0 0 5px cv('color.main'));
+  }
+  &::after {
+    content: $version;
+    position: absolute;
+    left: 95px;
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    color: cv('text.muted');
+  }
 }

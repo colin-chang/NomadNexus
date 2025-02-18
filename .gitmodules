@@ -1,5 +1,0 @@
-[submodule "classes"]
-	path = classes
-	url = https://github.com/LeafyLuigi/sulfide
-	shallow = true
-	branch = master

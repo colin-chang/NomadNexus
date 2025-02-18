@@ -1,10 +1,60 @@
-@use "backend" as *;
+@use 'backend' as *;
 #{c(main visualRefresh)} {
+  // GUILD LIST
+  #{c(guildList guilds)} {
+    margin-bottom: var(--custom-app-panels-height);
+    background: transparent;
+    padding: 10px 0;
+  }
 
-    // GUILDS
-    #{c(serverList servers)} {
-        margin-bottom: var(--custom-app-panels-height);
-        background: cv('shading.top');
-        padding: 10px 0;
+  // HOME BUTTON
+  #{c(guildList homeWrapper)} {
+    background-color: cv('shading.card');
+    background-image: cv('home.icon');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    svg {
+      display: none;
     }
+  }
+}
+#{c(guildList iconWrapper)} {
+  &:hover {
+    #{c(guildList homeWrapper)} {
+      background-color: cv('color.hover');
+    }
+  }
+  &#{c(guildList selected)} {
+    #{c(guildList homeWrapper)} {
+      background-color: cv('color.main');
+    }
+  }
+}
+
+// GUILD ICON
+#{c(guildList guildIcon)} {
+  background-color: cv('shading.card');
+}
+
+// FOLDER
+#{c(main visualRefresh)} {
+  #{c(guildList expandedFolderBackground)} {
+    background-color: cv('shading.card');
+  }
+}
+
+// ADD GUILD/DISCOVER BUTTONS
+#{c(guildList bottomButton)} {
+  background-color: cv('shading.card');
+  &#{c(guildList bottomButtonSelected)} {
+    background-color: cv('color.main');
+  }
+  #{c(main visualRefresh)} & {
+    &:hover {
+      &:not(#{c(guildList bottomButtonDisabled)}) {
+        background-color: cv('color.hover');
+      }
+    }
+  }
 }
