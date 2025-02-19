@@ -5,13 +5,13 @@
   transform: unset !important;
 }
 
-// NO NITRO
+// NO NITRO PROFILE
 #{c(profile outer)} {
   &:not(#{c(profile themed)}) {
     background-color: transparent;
     #{c(profile inner)} {
       &:is(#{c(profile biteSize)}, #{c(profile fullSize)}) {
-        background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.35));
+        background: cv('shading.bg');
         &:before {
           content: '';
           position: absolute;
@@ -29,6 +29,41 @@
 }
 #{c(profile overlay)} {
   background-color: cv('shading.card');
+}
+
+
+// POPOUT SEND MESSAGE
+#{c(main visualRefreshChatInput)} {
+  #{c(chatForm channelTextAreaInline)} {
+    background-color: cv('shading.input.bg');
+    border: none;
+    box-shadow: 0 0 2px cv('shading.input.border');
+    &:focus-within {
+      box-shadow: 0 0 2px 2px cv('color.main');
+    }
+  }
+  // NITRO PROFILE
+  #{c(profile themed)} {
+    #{c(chatForm channelTextAreaInline)} {
+      &:focus-within {
+        box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
+      }
+    }
+  }
+}
+
+// NITRO PROFILE MODAL
+#{c(profile themed)} {
+  #{c(profile overlayScroller)} {
+    &::-webkit-scrollbar-thumb {
+      background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-secondary-color))
+    }
+  }
+  #{c(profile noteTextarea)} {
+    &:focus {
+      box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
+    }
+  }
 }
 
 // DM SIDE PROFILE

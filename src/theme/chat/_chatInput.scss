@@ -6,17 +6,17 @@
       display: none;
     }
   }
-  #{c(chatForm channelTextAreaMain)} {
+  #{c(chatForm channelTextAreaMainChat)} {
     // Seperate input with buttons
     background: transparent;
     border: 2px solid transparent;
-  }
-  #{c(chatForm themedBackground)} {
-    background-color: cv('shading.input.bg');
-    box-shadow: 0 0 0 2px cv('shading.input.border');
-    border-radius: 8px;
-    &:focus-within {
-      box-shadow: 0 0 2px 2px cv('color.main');
+    #{c(chatForm themedBackground)} {
+      background-color: cv('shading.input.bg');
+      box-shadow: 0 0 0 2px cv('shading.input.border');
+      border-radius: 8px;
+      &:focus-within {
+        box-shadow: 0 0 2px 2px cv('color.main');
+      }
     }
   }
   #{c(chatForm channelBottomBarArea)} {
@@ -51,4 +51,9 @@
       margin-left: 0.5em;
     }
   }
+}
+
+
+#{c(chatForm typing)} {
+  margin-left: 10px;
 }

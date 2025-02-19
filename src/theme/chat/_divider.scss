@@ -1,0 +1,42 @@
+@use 'backend' as *;
+
+
+#{c(chat divider divider)} {
+  --divider-color: var(--hsl-main-color); // cv('color.main) doesnt work idk why
+
+// ALLOWS NO BACKGROUND WITH DATE
+  &#{c(chat divider hasContent)} {
+    border-color: transparent;
+  }
+}
+#{c(main visualRefresh)} {
+  #{c(chat divider content)} {
+    display: flex;
+    flex: 1;
+    background-color: transparent;
+    align-items: center;
+    font-weight: 700;
+  }
+}
+#{c(chat divider content)} {
+  &::before,
+  &::after {
+    content: '';
+    height: 1px;
+    flex-grow: 1;
+    background: var(--background-modifier-accent);
+  }
+  &::before {
+    margin-right: 10px;
+  }
+  &::after {
+    margin-left: 10px;
+  }
+  #{c(chat divider isUnread)} & {
+    &::before,
+    &::after {
+      background: var(--divider-color);
+    }
+  }
+}
+

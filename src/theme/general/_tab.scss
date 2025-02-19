@@ -2,7 +2,6 @@
 
 /* TAB */
 // TOP 
-/*
 #{c(tab top)} {
   #{c(tab themed)} {
     &#{c(tab item)} {
@@ -15,7 +14,7 @@
       }
     }
   }
-}*/ //unsure for now
+}
 
 // PILL
 #{c(main visualRefresh)} {
@@ -23,7 +22,7 @@
     #{c(tab themed)} {
       &#{c(tab item)} {
         &:hover:not(#{c(tab disabled)}) {
-          background-color: cv('color.hover');
+          background-color: var(--background-modifier-accent);
         }        
         &#{c(tab selected)} {
           background-color: cv('color.main');

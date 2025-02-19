@@ -23,3 +23,10 @@
     background: cv('shading.bg');
   }
 }
+
+// LOADING
+#{c(main visualRefresh)} {
+  #{c(loading container)} {
+    background: cv('shading.bg');
+  }
+}

@@ -1,0 +1,63 @@
+@use 'backend' as *;
+
+// HEADER
+#{c(chat chatAvatar)} {
+  transition: all 0.3s ease-in-out, transform 0.1s ease-in-out;
+  &#{c(chat chatHeaderClickable)}:active {
+    transform: scale(0.9);
+  }
+}
+
+// REPLY
+#{c(chat replied spine)} {
+  border-color: cv('color.main');
+  #{c(chat replied contentHovered)} {
+    border-color: cv('color.hover');
+  }
+}
+#{c(chat replied textPreview)} {
+  color: cv('text.normal');
+  opacity: 0.7;
+  #{c(chat chatHeaderClickable)}:hover,
+  #{c(chat replied spineHovered)} {
+    opacity: 1;
+  }
+}
+
+// EXECUTE COMMAND
+#{c(chat replied executedCommand)} {
+  #{c(chat replied commandName)} {
+    color: cv('color.main');
+    background: transparent;
+    &:hover {
+      color: cv('color.hover');
+      background: transparent;
+    }
+  }
+}
+
+
+// LINKS
+#{c(main anchorLink)} {
+  #{c(chat systemMessageContent)} &,
+  #{c(chat markup)} &,
+  & {
+    color: cv('color.main');
+  }
+}
+
+// QUOTES
+#{c(chat quoteContainer)} {
+  #{c(chat quoteDivider)} {
+    border-radius: 0;
+  }
+}
+
+// EMBEDS
+#{c(main visualRefresh)} {
+  #{c(embeds embedFull)} {
+    background: cv('shading.card');
+    border: none;
+    border-left: 4px solid var(--border-normal);
+  }
+}

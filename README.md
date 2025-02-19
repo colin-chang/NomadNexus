@@ -78,7 +78,7 @@ To build the theme from source, first install npm from the dependencies below, t
 ### Dependencies
 
 - [NodeJS/npm](https://nodejs.org/)
-- [pnpm](https://www.npmjs.com/packages/pnpm)
+- [pnpm](https://www.npmjs.com/package/pnpm)
 - [sass](https://www.npmjs.com/package/sass)
 - [PostCSS Autoprefixer](https://www.npmjs.com/package/autoprefixer)
 - [PostCSS CLI](https://www.npmjs.com/package/postcss-cli)

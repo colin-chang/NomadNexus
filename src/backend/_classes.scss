@@ -1076,23 +1076,22 @@ $classes: (
     'buttonWrapper': 'wrapper_f7ecac',
     'button': 'button_f7ecac',
     'buttonSelected': 'selected_f7ecac',
-    'divider': 'divider__5126c',
-    'divider2': 'divider__908e2',
-    // paired with above, also used in chat form unpaired with attached file
-    'dividerHasContent': 'hasContent__908e2',
-    'dividerContent': 'content__908e2',
-    'dividerUnread': 'isUnread__908e2',
-    'unreadPill': 'unreadPill__908e2',
-    'unreadPillCap': 'unreadPillCap__908e2',
-    'unreadPillCapStroke': 'unreadPillCapStroke__908e2',
+
+    'divider': (
+      'divider': 'divider__5126c',
+      'divider2': 'divider__908e2',
+      'hasContent': 'hasContent__908e2',
+      'content': 'content__908e2',
+      'isUnread': 'isUnread__908e2',
+      'unreadPill': 'unreadPill__908e2',
+      'unreadPillCap': 'unreadPillCap__908e2',
+      'unreadPillCapStroke': 'unreadPillCapStroke__908e2',
+    ),
+    
     'newMessagesBar': 'newMessagesBar__0f481',
-    'repliedMessage': 'repliedMessage_c19a55',
-    'repliedTextPreview': 'repliedTextPreview_c19a55',
-    'repliedTextContent': 'repliedTextContent_c19a55',
-    'replyBadge': 'replyBadge_c19a55',
 
     'blockedSystemMessage': 'blockedSystemMessage__7a70a',
-    'blockedContent': 'content__235ca',
+    'systemMessageContent': 'content__235ca',
 
     'chatHeader': 'container__00de6',
     'chatHeaderH1': 'header__00de6',
@@ -1102,6 +1101,22 @@ $classes: (
     'chatHeaderButton': 'button__6e3f1',
     'emptyChannelIcon': 'emptyChannelIcon__00de6',
     'chatHeaderMembers': 'members__1ee8c',
+
+    'replied': (
+      'message': 'repliedMessage_c19a55',
+      'textPreview': 'repliedTextPreview_c19a55',
+      'textContent': 'repliedTextContent_c19a55',
+      'badge': 'replyBadge_c19a55',
+      'spine': 'repliedMessageClickableSpine_c19a55',
+      'contentHovered': 'repliedMessageContentHovered_c19a55',
+      'spineHovered': 'repliedMessageClickableSpineHovered_c19a55',
+      'textPlaceholder': 'repliedTextPlaceholder_c19a55',
+      'executedCommand': 'executedCommand_c19a55',
+      'appLauncherCommandName': 'appLauncherOnboardingCommandName_c19a55',
+      'commandName': 'commandName_c19a55',
+    ),
+            
+
     'allowedAvatars': 'avatars__1ee8c',
     'allowedRoleButton': 'role__1ee8c',
     // element kind button
@@ -1123,7 +1138,7 @@ $classes: (
     'chatTimestampInline': 'timestampInline_c19a55',
     'chatEdited': 'edited_c19a55',
     'chatUsername': 'username_c19a55',
-    'chatUsernameClickable': 'clickable_c19a55',
+    'chatHeaderClickable': 'clickable_c19a55',
     'chatUsernameTimedOut': 'communicationDisabled_c19a55',
     'zalgoBlocker': 'zalgo_c19a55',
     'messageContent': 'messageContent_c19a55',
@@ -1164,8 +1179,8 @@ $classes: (
     'gifFavoriteShowPulse': 'showPulse__43deb',
     'gifFavoriteIcon': 'icon__43deb',
 
-    'blockquoteContainer': 'blockquoteContainer__75297',
-    'blockquoteDivider': 'blockquoteDivider__75297',
+    'quoteContainer': 'blockquoteContainer__75297',
+    'quoteDivider': 'blockquoteDivider__75297',
 
     'containerExpanded': 'containerExpanded__7ff28',
     // send wave sticker large
@@ -1686,12 +1701,14 @@ $classes: (
     'formWithLoadedChatInput': 'formWithLoadedChatInput_f75fb0',
     // the two below were both applied on a disabled chat and an enabled one. second one has the background. still unsure about it.
     'channelBottomBarArea': 'channelBottomBarArea_f75fb0',
-    'channelTextAreaBase': 'channelTextArea__74017',
+    'channelTextArea': 'channelTextArea__74017',
     // base being applied to *every* form
-    'channelTextAreaMain': 'channelTextArea_f75fb0',
+    'channelTextAreaMainChat': 'channelTextArea_f75fb0',
     // used at bottom of text channels
     'channelTextAreaDisabled': 'channelTextAreaDisabled__74017',
     // you can't type into this channel
+    'channelTextAreaInline': 'inlineContainer__74017',
+    // in user profiles
     'themedBackground': 'themedBackground__74017',
     // has background
     'stackedBars': 'stackedBars__74017',
@@ -1760,8 +1777,6 @@ $classes: (
     'codeLine': 'codeLine_ada32f',
     'codeBlockText': 'codeBlockText_ada32f',
 
-    'uploadDivider': 'divider__908e2',
-    // before uploading a file, this shows up between uploads and main bar
     'inlineUpload': 'upload_aa605f',
     'inlineUploadContainer': 'uploadContainer_aa605f',
     'inlineActionBarIcon': 'actionBarIcon_a7e304',
@@ -2544,9 +2559,6 @@ $classes: (
     'iconBadge': 'iconBadge__650eb',
     'participating': 'isCurrentUserConnected__650eb',
     // also used in header for some reason?
-    'unreadMentionsBar': 'unreadMentionsBar_ef3116',
-    'unreadMentionsBarTop': 'unreadMentionsIndicatorTop_ef3116',
-    'unreadMentionsBarBottom': 'unreadMentionsIndicatorBottom_ef3116',
 
     'folderParentWrapper': 'wrapper__48112',
     'folderParentWrapperCollapsed': 'collapsed',
@@ -2579,6 +2591,18 @@ $classes: (
     'dragFolderEndWrapper': 'folderEndWrapper_d144f8',
     'dragWrapperOver': 'wrapperOver_d144f8',
     'dragFolderTarget': 'folderTarget_d144f8',
+
+    'mention': (
+        'top': 'unreadMentionsIndicatorTop_ef3116',
+        'bottom': 'unreadMentionsIndicatorBottom_ef3116',
+
+        'bar': 'bar__3b95d',
+        'hidden': 'hidden__3b95d',
+        'active': 'active__3b95d',
+        'unread': 'unreadMentionsBar_ef3116',
+        'mention': 'mention__3b95d',
+        'text': 'text__3b95d',
+      ),
 
     // separated "discover" button - kinda unsure about most of these classes ngl
     'discover': (
@@ -2820,25 +2844,6 @@ $classes: (
 
             // Old style that lacks an arrow. Shares classes with serverList.
             // Placed under "positionedContainer" above.
-            'old': (
-                'container': 'container__3b95d',
-                'unreadParent': 'unread__629e4',
-                // "parent" as it's the parent of the below "unread" class
-                'top': 'unreadTop__629e4',
-                'bottom': 'unreadBottom__629e4',
-
-                'bar': 'bar__3b95d',
-                'hidden': 'hidden__3b95d',
-                'active': 'active__3b95d',
-                // it appears ig?
-                'unread': 'unread__3b95d',
-                'mention': 'mention__3b95d',
-                // ping!
-                'text': 'text__3b95d',
-                'icon': 'icon_edf32f',
-
-                // no idea honestly
-              ),
           ),
         'scroller': 'scroller__629e4',
 
@@ -3517,6 +3522,9 @@ $classes: (
   'profile': (
       // Generic-ish classes
       // default colours are now provided with inline styling.
+      
+      'badgeList': 'container__8061a',
+      'note': 'note_fcb628',
       'noteTextarea': 'textarea_dde0a8',
 
       // seems to be used on all of them
@@ -3529,6 +3537,10 @@ $classes: (
       'fullSize': 'fullSize_c0bea0',
       'outer': 'outer_c0bea0',
       'inner': 'inner_c0bea0',
+
+      // status
+      'userProfileStatusBubbleOuter': 'statusBubbleOuter_d0a252',
+      'userProfileStatusBubble': 'statusBubble_d0a252',
 
       // Banners are in their own line. The SVG Wrapper is in its own line.
       'banner': (
@@ -3587,6 +3599,9 @@ $classes: (
           'focusRing': 'focusRing__75742',
         ),
 
+      
+      'overlayScroller': 'scroller_fcb628',  
+
       // actually used on the modal!
       'memberSince': (
           'wrapper': 'memberSinceWrapper_c4eb81',
@@ -3594,7 +3609,7 @@ $classes: (
           'discordIcon': 'discordIcon_c4eb81',
           'divider': 'divider_c4eb81',
         ),
-
+      
       // only here because Yes
       // what classes are actually used i have no fucking idea.
       // this was all from ONE line. it's horrible.
@@ -6723,12 +6738,7 @@ $classes: (
           'playerMediaBarWrapper': 'mediaBarWrapperVolume_b26b79',
           'playerMediaDownload': 'hoverButtonGroup__06ab4',
           'messageGroupBlockedExpanded': 'expanded__7a70a',
-          'messageTimestampAlt': 'alt_c19a55',
-          'messageRepliedSpine': 'repliedMessageSpine_f9f2ca',
-          'messageRepliedTextPlaceholder': 'repliedTextPlaceholder_c19a55',
-          'messageRepliedExecutedCommand': 'executedCommand_c19a55',
-          'messageRepliedAppLauncherCommandName': 'appLauncherOnboardingCommandName_c19a55',
-          'messageRepliedCommandName': 'commandName_c19a55',
+          'messageTimestampAlt': 'alt_c19a55',          
           'messageInlineMediaEmbed': 'inlineMediaEmbed__623de',
           'messageSystemIcon': 'icon__235ca',
           'mention': 'mention',
@@ -6779,11 +6789,6 @@ $classes: (
           'botInviteModalContent': 'contentBackground__3d3b0',
           'authModalInApp': 'inApp_c5a065',
           'authModalScopeTimes': 'iconWrapper_cf14a8',
-          'userProfileStatusBubbleOuter': 'statusBubbleOuter_d0a252',
-          'userProfileStatusBubble': 'statusBubble_d0a252',
-          'userProfileBadgeList': 'container__8061a',
-          'userProfileOverlayScroller': 'scroller_fcb628',
-          'userProfileNote': 'note_fcb628',
           'discoverSearchBox': 'searchBox_d727b3',
           'discoverSearchBoxInput': 'searchBoxInput_d727b3',
           'discoverSearchBoxIconSearch': 'searchIcon_d727b3',
@@ -7340,8 +7345,6 @@ $classes: (
           'searchResultHighlight': 'highlight',
           'questPanelContentExpanded': 'contentExpanded__636a2',
           'upsellTooltipCaretRightCenter': 'caretRightCenter__675aa',
-          'messageRepliedContentHovered': 'repliedMessageContentHovered_c19a55',
-          'messageRepliedSpineHovered': 'repliedMessageClickableSpineHovered_c19a55',
           'pollCheckbox': 'checkbox_f4f0eb',
           'pollCheckboxSelected': 'checkboxSelected_f4f0eb',
           'pollVotesPopoutAnswerScroller': 'scroller__01c8c',

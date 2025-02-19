@@ -58,3 +58,13 @@
     }
   }
 }
+
+// PINGS
+#{c(guildList numberBadge)} {
+  background-color: cv('color.main') !important; // inline style
+}
+
+// NEW MENTION
+#{c(guildList mention mention)} {
+  background-color: cv('color.main');
+}
