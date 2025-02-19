@@ -27,7 +27,13 @@
   #{c(chatForm accessoryBar)} {
     border: none;
     margin-left: 0;
+    pointer-events: none ;
   }
+  #{c(chatForm accessoryBarLeft)},
+  #{c(chatForm accessoryBarRight)} {
+    pointer-events: initial;
+  }
+
   #{c(chatForm attachButton)} {
     background-color: cv('color.main');
     padding: 4px 12px;

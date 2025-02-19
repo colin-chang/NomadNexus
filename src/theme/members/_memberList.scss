@@ -1,0 +1,125 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+  #{c(memberList container)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
+    border: none;
+  }
+}
+#{c(memberList members)} {
+  background: none;
+}
+
+// PLACEHOLDER
+#{c(memberList placeholderUsernameMultiple)},
+#{c(memberList placeholderAvatar)},
+#{c(memberList placeholderUsername)} {
+  background: cv('shading.card');
+}
+
+// HEADER
+
+
+// MEMBER
+#{c(memberList member)} {
+  background: transparent;
+  backface-visibility: hidden;
+}
+#{c(memberList memberInner)} {
+  position: relative;
+  background: transparent;
+  transition: all 0.15s ease-in-out, transform 0.1s ease-in-out;
+  z-index: 1;
+  &:active {
+    transform: scale(0.9);
+  }
+}
+#{c(memberList usernameInner)} {
+  max-width: 100%;
+  overflow: visible;
+  transition: all 0.15s ease-in-out;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--background-modifier-accent) 90%, transparent);
+    border-radius: 3px;
+    opacity: 0;
+    transition: all 0.15s ease-in-out;
+    z-index: -1;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, cv('color.main') 90%, transparent);
+    border-radius: 3px;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+  &[style^='color:'] {
+    &:before,
+    &:after {
+      background: linear-gradient(to right, currentColor 90%, transparent);
+    }
+  }
+}
+
+// ACTIVITY
+#{c(main visualRefresh)} {
+  #{c(memberList activity)} {
+    color: cv('text.muted');
+    transition: all 0.15s ease-in-out;
+    strong {
+      color: cv('color.main');
+      font-weight: 700;
+      transition: all 0.15s ease-in-out;
+    }
+  }
+}
+
+// HOVER
+#{c(memberList member)} {
+  &:hover {
+    #{c(memberList memberInner)} {
+      background: transparent;
+    }
+    #{c(memberList usernameInner)} {
+      &:before {
+        opacity: 1;
+      }
+      &[style^='color:']:before {
+        opacity: 0.07;
+      }
+    }
+  }
+}
+
+// SELECTED
+#{c(memberList selected)} {
+  #{c(memberList memberInner)} {
+    background-color: transparent;
+  }
+  #{c(memberList usernameInner)} {
+    -webkit-text-fill-color: cv('text.normal');
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+    &:after {
+      right: 0;
+    }
+  }
+  #{c(memberList activity)},
+  strong {
+    color: cv('text.normal');
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+  }
+  #{c(memberList ownerIcon)} {
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
+  }
+}

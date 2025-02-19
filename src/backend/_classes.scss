@@ -1318,21 +1318,6 @@ $classes: (
         'close': 'close_a2c9e8',
         'tooltipPill': 'tooltipPill_a2c9e8',
       ),
-
-    // deprecated
-    'channelsDismissable': (
-        // TYPO IN CATEGORY NAME
-        'container': '@alias pages channelsDismissible container',
-        // background
-        'nuxContent': '@alias pages channelsDismissible nuxContent',
-        'adminUpsell': '@alias pages channelsDismissible adminUpsell',
-        // combined with container has background
-        'closeButton': '@alias pages channelsDismissible closeButton',
-        'image': '@alias pages channelsDismissible image',
-        'heading': '@alias pages channelsDismissible heading',
-        'tip': '@alias pages channelsDismissible tip',
-        'checkItOut': '@alias pages channelsDismissible checkItOut'
-      ),
   ),
   'forums': (
     // Named so because aria-label for the chat bubble icon is "Forum" in English
@@ -1347,7 +1332,7 @@ $classes: (
     'postTitle': 'forumPostTitle_f75fb0',
 
     'mainCard': 'mainCard_f369db',
-    'collapsed': 'collapsed_d9be46',
+    'cardCollapsed': 'collapsed_d9be46',
     // css rule also applies to .collapsed(this) .title(below) input
     'formContainer': 'formContainer_d9be46',
     'form': 'form_d9be46',
@@ -1476,15 +1461,15 @@ $classes: (
         // background-color: var(--brand-260);
         'textContentUnread': 'textContentUnread__9a337',
         'textContentRead': 'textContentRead__9a337',
-        'tagPill': 'tagPill__9a337',
+        'tag': 'tagPill__9a337',
       ),
 
     // list posts (though a few classes do show up under grid)
     'list': (
         'list': 'list_f369db',
         'card': 'container_faa96b',
-        'dots': 'dots_faa96b',
         'isOpen': 'isOpen_faa96b',
+        'dots': 'dots_faa96b',
         'focusTarget': 'focusTarget_faa96b',
         'left': 'left_faa96b',
         'body': 'body_faa96b',
@@ -1638,7 +1623,7 @@ $classes: (
     // deprecated
     'listScroller': '@alias forums list list',
   ),
-  'threads': (
+  'thread': (
     'jump': 'jump__5126c',
     'msgHasThread': 'hasThread_c19a55',
     // in here despite probably better in chat
@@ -1717,6 +1702,10 @@ $classes: (
     'scrollableContainer': 'scrollableContainer__74017',
     'inner': 'inner__74017',
     'sansAttachButton': 'sansAttachButton__74017',
+    // buttons bar
+    'accessoryBar': 'accessoryBar__74017',
+    'accessoryBarLeft': 'accessoryBarLeft__74017',
+    'accessoryBarRight': 'accessoryBarRight__74017',
     // always on the main bar for some reason
     'uploadInput': 'uploadInput__0923f',
     'attachWrapper': 'attachWrapper__0923f',
@@ -1793,9 +1782,6 @@ $classes: (
     'sendButtonIcon': 'sendIcon_aa63ab',
 
     'appsButton': 'button_e6e74f',
-
-    // BUTTONS BAR
-    'accessoryBar': 'accessoryBar__74017',
   ),
   // kinda going through a rewrite on discord's end so i'm leaving this alone :)
   'discover': (
@@ -2331,23 +2317,19 @@ $classes: (
     'memberContainer': 'container__91a9d',
     'selected': 'selected__91a9d',
     'layout': 'layout__91a9d',
+    'memberInner': 'memberInner__5d473',
     'muted': 'muted__91a9d',
     'avatar': 'avatar__91a9d',
     'contentName': 'content__91a9d',
     'ownerIcon': 'ownerIcon__5d473',
     'name': 'name__91a9d',
+    'usernameInner': 'username__703b9',
     'offline': 'offline__5d473',
-    'activity': 'activity__5d473',
+    'activity': 'activityText__5d473',
     'placeholderMemberGroups': 'memberGroupsPlaceholder_c8ffbb',
     'placeholderAvatar': 'placeholderAvatar__27cc6',
     'placeholderUsername': 'placeholderUsername__27cc6',
     'placeholderUsernameMultiple': 'mulitplePlaceholderUsername__27cc6',
-
-    // discord typo in class name
-    // deprecated
-    'avatarWrapper': '@alias avatar wrapper',
-    'avatarMask': '@alias avatar mask',
-    'status': '@alias avatar pointerEvents',
   ),
   // this area doesn't show up if you don't have any pending requests.
   // it can be accessed by going to https://discord.com/message-requests
@@ -6483,8 +6465,6 @@ $classes: (
       // Random stuff found while attempting to convert ClearVision 6 to this class format. Comments show where the selector is used.
       // This category **WILL** be removed over time and without warning.
       'cv': (
-          'repluggedInstallWrapper': 'wrapper__124c8',
-          // src/injectors/rp/rpSettings.scss
           'bdSettingsSidebar': '#bd-settings-sidebar',
           // src/injectors/bd/sidebar.scss
           'bdSettingsSidebarHeader': 'ui-tab-bar-header',
@@ -6531,8 +6511,6 @@ $classes: (
           // src/channels/panels.scss
           'privateChannelActivityContainer': 'container__9fa5a',
           // src/channels/privateChannels.scss
-          'privateChannelActivityIcon': 'icon_ad923e',
-          // src/channels/privateChannels.scss; src/??/members.scss by means of "memberActivityIcon"
           'callInviteButton': 'button_c6e099',
           // src/chat/call.scss
           'gifPickerSearchInput': 'input_a45028',
@@ -6684,16 +6662,6 @@ $classes: (
           'libraryPlayButton': 'playButton__0cb56',
           'libraryPlayButtonContents': 'playButtonContents__0cb56',
           'membersNotices': 'membersListNotices__0bcb6',
-          'memberLayout': 'memberInner__5d473',
-          'memberNameAndDecorators': 'nameAndDecorators__91a9d',
-          'memberUsername': 'username__5d473',
-          'memberSubText': 'subText__91a9d',
-          'memberActivityContainer': 'container__0f2e8',
-          'memberActivityEmoji': 'activityEmoji__5d473',
-          'memberActivityText': 'activityText__5d473',
-          'memberPlaceholder': 'placeholder__27cc6',
-          'memberPlaceholderMultiple': 'multiplePlaceholder__27cc6',
-          'memberPlaceholderUsername': 'placeholderUsername__74df5',
           'memberActivityContentWrapper': 'popoutContentWrapper_af3b89',
           'memberActivityInteractionsContainer': 'interactionsContainer_af3b89',
           'memberActivityShareToChannelButton': 'shareToChannelButton_af3b89',

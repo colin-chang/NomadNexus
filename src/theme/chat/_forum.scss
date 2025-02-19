@@ -1,0 +1,42 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+  #{c(forums container)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
+  }
+
+
+  // HEADER
+  #{c(forums header)} {
+    background-color: cv('shading.input.bg');
+    border: none;
+    box-shadow: 0 0 2px cv('shading.input.border');
+    #{c(input input)} {
+      background: none;
+      box-shadow: none;
+    }
+  }
+
+  // TAGS
+  #{c(pages tags pill)} {
+    @include card
+  }
+
+  // CARD
+  :is(#{c(forums grid card)}, #{c(forums list card)}) {
+    background-color: cv('shading.card');
+    border: 2px solid transparent;
+    &:hover {
+      background-color: cv('shading.card');
+      border-color: cv('color.hover');
+    }
+    &:is(#{c(forums grid isOpen)}, #{c(forums list isOpen)}) {
+      background-color: cv('shading.card');
+      border-color: cv('color.main');
+    }
+  }
+}
+#{c(forum grids contentPreview)} {
+  background-color: cv('shading.card');
+  border: none;
+}

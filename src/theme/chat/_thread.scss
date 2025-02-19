@@ -1,0 +1,12 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+  #{c(thread resizeHandle)} {
+    background: transparent;
+  }
+  #{c(thread container)} {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+  }
+}

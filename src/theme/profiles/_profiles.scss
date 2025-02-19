@@ -11,7 +11,7 @@
     background-color: transparent;
     #{c(profile inner)} {
       &:is(#{c(profile biteSize)}, #{c(profile fullSize)}) {
-        background-color: cv('shading.bg');
+        background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.35));
         &:before {
           content: '';
           position: absolute;
