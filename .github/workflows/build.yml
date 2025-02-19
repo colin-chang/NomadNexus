@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 18
       - name: Install
-        run: npm ci
+        run: pnpm install
       - name: Build
         run: pnpm run build
       - name: Deploy
