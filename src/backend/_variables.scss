@@ -74,9 +74,12 @@ $cv: (
       card: var(--hsl-card-shading),
       // mainly used for embeds, most modals, random things
       input: (
-        bg: var(--input-background),
-        border: var(--input-border),
-      )
+          bg: var(--input-background),
+          border: var(--input-border),
+        ),
+
+      // discord default
+      hover: var(--background-modifier-accent),
     ),
   // TEXT COLORS - ALSO TO BE USED IN .theme-light AND .theme-dark
   text: (
@@ -128,6 +131,6 @@ $cv: (
     ),
   // HOME BUTTON - BUTTON ABOVE YOUR SERVERS
   home: (
-    icon: var(--home-icon),
-  )
+      icon: var(--home-icon),
+    )
 );

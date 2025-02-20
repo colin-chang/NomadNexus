@@ -1,0 +1,68 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+  #{c(popouts menus menu)} {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+  }
+  #{c(popouts menus colorDefault)} {
+    &#{c(popouts menus itemFocused)} {
+      background-color: cv('color.hover');
+    }
+  }
+  #{c(popouts menus colorDanger)} {
+    &,
+    #{c(popouts menus label)} {
+      color: cv('color.danger');
+    }
+    &#{c(popouts menus itemFocused)} {
+      background-color: cv('color.danger');
+      &:not(#{c(popouts menus checkboxContainer)}) {
+        // discord does it this way
+        path {
+          fill: var(--header-primary);
+        }
+      }
+    }
+  }
+  #{c(popouts menus item)} {
+    &#{c(popouts menus itemFocused)} {
+      #{c(popouts menus label)} {
+        color: var(--header-primary);
+      }
+    }
+  }
+}
+
+// STATUS PICKER
+// inline styles
+#{c(popouts menus status)} {
+  &[style*='rgb(131, 131, 139)'] {
+    background-color: cv('color.offline') !important;
+  }
+  &[style*='rgb(68, 162, 91)'] {
+    background-color: cv('color.online') !important;
+  }
+  &[style*='rgb(201, 150, 86)'] {
+    background-color: cv('color.idle') !important;
+  }
+  &[style*='rgb(216, 58, 66)'] {
+    background-color: cv('color.dnd') !important;
+  }
+}
+#{c(main visualRefresh)} {
+  #{c(popouts menus itemFocused)} {
+    &#set-status-submenu-online {
+      background-color: cv('color.online');
+    }
+    &#set-status-submenu-idle {
+      background-color: cv('color.idle');
+    }
+    &#set-status-submenu-dnd {
+      background-color: cv('color.dnd');
+    }
+    &#set-status-submenu-invisible {
+      background-color: cv('color.offline');
+    }
+  }
+}

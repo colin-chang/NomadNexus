@@ -31,7 +31,6 @@
   background-color: cv('shading.card');
 }
 
-
 // POPOUT SEND MESSAGE
 #{c(main visualRefreshChatInput)} {
   #{c(chatForm channelTextAreaInline)} {
@@ -53,11 +52,21 @@
 }
 
 // NITRO PROFILE MODAL
-#{c(profile themed)} {
-  #{c(profile overlayScroller)} {
-    &::-webkit-scrollbar-thumb {
-      background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-secondary-color))
+#{c(main visualRefresh)} {
+  #{c(profile themed)} {
+    #{c(tab top)} {
+      #{c(tab item)} {
+        --selected-tab-item-color: var(--profile-gradient-secondary-color);
+        &#{c(tab selected)} {
+          --selected-tab-item-color: var(--profile-gradient-primary-color);
+        }
+      }
     }
+  }
+}
+#{c(profile themed)} {
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--profile-gradient-primary-color);
   }
   #{c(profile noteTextarea)} {
     &:focus {

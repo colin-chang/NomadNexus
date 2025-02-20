@@ -3,6 +3,8 @@
 #{c(button button)} {
   border-radius: 4px;
 }
+
+// BUTTON FILLED
 #{c(button lookFilled)} {
   &:is(#{c(button colorBrand)}, #{c(button colorPrimary)}) {
     background-color: cv('color.main');
@@ -14,6 +16,12 @@
     background-color: cv('color.success');
     &:hover {
       background-color: hsl(from cv('color.success') h s l/.8);
+    }
+  }
+  &#{c(button colorWhite)} {
+    color: cv('color.main');
+    &:hover {
+      color: cv('color.hover');
     }
   }
 }

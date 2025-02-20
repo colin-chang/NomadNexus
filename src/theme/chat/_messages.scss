@@ -2,7 +2,9 @@
 
 // HEADER
 #{c(chat chatAvatar)} {
-  transition: all 0.3s ease-in-out, transform 0.1s ease-in-out;
+  transition:
+    all 0.3s ease-in-out,
+    transform 0.1s ease-in-out;
   &#{c(chat chatHeaderClickable)}:active {
     transform: scale(0.9);
   }
@@ -35,7 +37,6 @@
     }
   }
 }
-
 
 // LINKS
 #{c(main anchorLink)} {

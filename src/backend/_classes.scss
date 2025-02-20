@@ -383,7 +383,7 @@ $classes: (
     'input': 'input__87bf1',
   ),
   'checkbox': (
-    // Some of these may not be *JUST* checkboxes.
+    // checkboxes
     'wrapper': 'checkboxWrapper_f525d3',
     'wrapperDisabled': 'checkboxWrapperDisabled_f525d3',
     'checkbox': 'checkbox_f525d3',
@@ -410,6 +410,17 @@ $classes: (
     'row': 'row_f525d3',
     'alignTop': 'alignTop_f525d3',
     'alignCenter': 'alignCenter_f525d3',
+  ),
+  'radio': (
+    'item': 'item__001a7',
+    'itemDisabled': 'disabled__001a7',
+    'bar': 'radioBar__001a7',
+    'barInfo': 'info__001a7',
+    'iconForeground': 'radioIconForeground__001a7',
+    'indicatorChecked': 'radioIndicatorChecked__001a7',
+    'refreshIconFill': 'refreshIconFill__001a7',
+    'refreshIconStroke': 'refreshIconStroke__001a7',
+    'refreshIcon': 'refreshIcon__001a7',
   ),
   'text': (
     // These are within the same group but not with the rest. not sure where to put these
@@ -1087,7 +1098,7 @@ $classes: (
       'unreadPillCap': 'unreadPillCap__908e2',
       'unreadPillCapStroke': 'unreadPillCapStroke__908e2',
     ),
-    
+
     'newMessagesBar': 'newMessagesBar__0f481',
 
     'blockedSystemMessage': 'blockedSystemMessage__7a70a',
@@ -1115,7 +1126,6 @@ $classes: (
       'appLauncherCommandName': 'appLauncherOnboardingCommandName_c19a55',
       'commandName': 'commandName_c19a55',
     ),
-            
 
     'allowedAvatars': 'avatars__1ee8c',
     'allowedRoleButton': 'role__1ee8c',
@@ -2191,6 +2201,8 @@ $classes: (
     'title': 'title__9293f',
     'spacer': 'spacer__488b1',
     // no nick nor channel desc, has zero width
+    'dot': 'dot__9293f',
+    // space between channel name and description
     'akaBadge': 'akaBadge__488b1',
     'input': 'input__4f074',
     'toolbar': 'toolbar__9293f',
@@ -2326,6 +2338,7 @@ $classes: (
     'hiddenMembers': 'hiddenMembers_c8ffbb',
     'members': 'members_c8ffbb',
     'group': 'membersGroup_c8ffbb',
+    'activityHeader': 'header__095fe',
     'member': 'member__5d473',
     'memberBackground': 'member_c8ffbb',
     'memberClickable': 'clickable__91a9d',
@@ -2559,7 +2572,6 @@ $classes: (
     'iconBadge': 'iconBadge__650eb',
     'participating': 'isCurrentUserConnected__650eb',
     // also used in header for some reason?
-
     'folderParentWrapper': 'wrapper__48112',
     'folderParentWrapperCollapsed': 'collapsed',
     // class found in JS
@@ -2593,16 +2605,16 @@ $classes: (
     'dragFolderTarget': 'folderTarget_d144f8',
 
     'mention': (
-        'top': 'unreadMentionsIndicatorTop_ef3116',
-        'bottom': 'unreadMentionsIndicatorBottom_ef3116',
+      'top': 'unreadMentionsIndicatorTop_ef3116',
+      'bottom': 'unreadMentionsIndicatorBottom_ef3116',
 
-        'bar': 'bar__3b95d',
-        'hidden': 'hidden__3b95d',
-        'active': 'active__3b95d',
-        'unread': 'unreadMentionsBar_ef3116',
-        'mention': 'mention__3b95d',
-        'text': 'text__3b95d',
-      ),
+      'bar': 'bar__3b95d',
+      'hidden': 'hidden__3b95d',
+      'active': 'active__3b95d',
+      'unread': 'unreadMentionsBar_ef3116',
+      'mention': 'mention__3b95d',
+      'text': 'text__3b95d',
+    ),
 
     // separated "discover" button - kinda unsure about most of these classes ngl
     'discover': (
@@ -2696,8 +2708,10 @@ $classes: (
         'headerContainer': 'privateChannelsHeaderContainer__99e7c',
         // Similar to category for servers
         'headerText': 'headerText__99e7c',
+        'startActivityIcon': 'plusIcon__675e5',
+        // with play again - might need to start an activity prior
         'inviteButtonIcon': 'privateChannelRecipientsInviteButtonIcon__99e7c',
-        // Create new message button; can be used to create group dms. Appears to be nested: div.$this.$clickable.$iconWrapper > svg.$this.$icon
+        // new dm plus icon
         'channel': 'channel__972a0',
         // used for groups, individuals, friends+nitro+shop
         'fullWidth': 'fullWidth__972a0',
@@ -2843,7 +2857,7 @@ $classes: (
             'voiceChannelUsers': 'voiceChannelsUsers__7aaec',
 
             // Old style that lacks an arrow. Shares classes with serverList.
-            // Placed under "positionedContainer" above.
+             // Placed under "positionedContainer" above.
           ),
         'scroller': 'scroller__629e4',
 
@@ -2873,7 +2887,7 @@ $classes: (
             'muted': 'muted__29444',
 
             'mainContent': 'mainContent__29444',
-            'icon': 'icon__29444',
+            'collapseIcon': 'icon__29444',
 
             // hide/unhide toggle
             'name': 'name__29444',
@@ -3346,147 +3360,6 @@ $classes: (
       'joinButton': 'joinButton_e2d7b8',
       'closeIcon': 'closeIcon_e2d7b8',
     ),
-
-    // deprecated
-    'panelAvatarSpeaking': '@alias avatar speaking',
-    'scroller': '@alias sidebar private scroller',
-    // turns out this was private only
-    'privateChannels': '@alias sidebar private channels',
-    'searchBar': '@alias sidebar private searchBar',
-    'searchBarComponent': '@alias sidebar private searchBarComponent',
-    'privateChannelsHeaderContainer': '@alias sidebar private headerContainer',
-    'privateChannelsHeader': '@alias sidebar private headerText',
-    'privateChannelRecipientsInviteButtonIcon': '@alias sidebar private inviteButtonIcon',
-    'privateChannel': '@alias sidebar private channel',
-    'privateChannelInteractive2': '@alias sidebar private interactive',
-    // swapped to other prefix
-    'privateChannelInteractive': '@alias sidebar private interactiveBG',
-    'privateChannelSelected': '@alias sidebar private selectedBG',
-    'privateChannelMuted': '@alias sidebar private mutedBG',
-    'privateChannelLink': '@alias sidebar private link',
-    'privateChannelActivity': '@alias sidebar private activity',
-    'privateChannelSubtext': '@alias sidebar private subtextLayout',
-    'privateChannelAvatar': '@alias sidebar private avatar',
-    'privateChannelLayout': '@alias sidebar private layout',
-    'privateChannelName': '@alias sidebar private name',
-    'privateChannelHighlighted': '@alias sidebar private highlighted',
-    'privateChannelLinkButton': '@alias sidebar private linkButton',
-    'privateChannelInteractiveSelected': '@alias sidebar private interactiveSelected',
-    'privateChannelLoadingEmpty': '@alias sidebar private loadingEmpty',
-    'privateChannelBadgeIcon': '@alias sidebar private channelBadgeIcon',
-    'channelsContainer': '@alias sidebar server container',
-    'channelsScroller': '@alias sidebar server scroller',
-    'channelsHeaderContainer': '@alias sidebar server header container',
-    'channelsHeaderClickable': '@alias sidebar server header clickable',
-    'channelsHeaderContainerSelected': '@alias sidebar server header selected',
-    'channelsHeader': '@alias sidebar server header header',
-    'communityInfoVisible': '@alias sidebar server header communityInfoVisible',
-    'serverName': '@alias sidebar server name',
-    'serverNameButton': '@alias sidebar server header headerButton',
-    'hasBanner': '@alias sidebar server header hasBanner',
-    'bannerVisible': '@alias sidebar server header bannerVisible',
-    'animatedContainer': '@alias sidebar server header bannerContainer',
-    'bannerImage': '@alias sidebar server header bannerImage',
-    'containerDragAfter': '@alias sidebar server dragAfter',
-    'containerDragBefore': '@alias sidebar server dragBefore',
-    'categoryContainerDefault': '@alias sidebar server category container',
-    'categoryWrapper': '@alias sidebar server category wrapper',
-    'categoryClickable': '@alias sidebar server category clickable',
-    'categoryMainContent': '@alias sidebar server category mainContent',
-    'categoryMuted': '@alias sidebar server category muted',
-    'categoryCollapsed': '@alias sidebar server category collapsed',
-    'categoryName': '@alias sidebar server category name',
-    'categoryOverflow': '@alias sidebar server overflow',
-    'categoryChildren': '@alias sidebar server category children',
-    'categoryArrow': '@alias sidebar server category icon',
-    'categoryAddButtonIcon': '@alias sidebar server category addButtonIcon',
-    'channelUnreadBanners': '@alias sidebar unreadBar old unreadParent',
-    'channelContainerDefault': '@alias sidebar server channel container',
-    'channelContainerSelected': '@alias sidebar server channel selected',
-    'channelWrapper': '@alias sidebar server channel wrapper',
-    'channelModeMuted': '@alias sidebar server channel modeMuted',
-    'channelModeSelected': '@alias sidebar server channel modeSelected',
-    'channelModeUnreadImportant': '@alias sidebar server channel modeUnreadImportant',
-    'channelModeConnected': '@alias sidebar server channel modeConnected',
-    'channelModeLocked': '@alias sidebar server channel modeLocked',
-    'channelLink': '@alias sidebar server channel link',
-    'channelLinkTop': '@alias sidebar server channel linkTop',
-    'channelIconContainer': '@alias sidebar server channel iconContainer',
-    'channelIcon': '@alias sidebar server channel icon',
-    'channelName': '@alias sidebar server channel name',
-    'channelChildren': '@alias sidebar server channel children',
-    'channelItemIcon': '@alias sidebar server channel iconItem',
-    'channelActionIcon': '@alias sidebar server channel actionIcon',
-    'channelStatusText': '@alias sidebar server channel statusText',
-    'channelStatusPencilIcon': '@alias sidebar server channel pencilIcon',
-    'channelUserLimitWrapper': '@alias sidebar server channel voiceLimitWrapper',
-    'channelUsers': '@alias sidebar server channel voiceLimitUsers',
-    'channelTotal': '@alias sidebar server channel voiceLimitTotal',
-    'channelUnreadBlob': '@alias sidebar server channel unreadBlob',
-    'channelUnreadBlobImportant': '@alias sidebar server channel unreadBlobImportant',
-    'channelDragBefore': '@alias sidebar server channel dragBefore',
-    'channelDragAfter': '@alias sidebar server channel dragAfter',
-    'channelDragOver': '@alias sidebar server channel userOver',
-    'threadsTypeThread': '@alias sidebar server channel typeThread',
-    'voiceListDefault': '@alias sidebar server channel voice listDefault',
-    'voiceListCollapse': '@alias sidebar server channel voice listCollapse',
-    'voiceList': '@alias sidebar server channel voice listGeneric',
-    'voiceCollapsed': '@alias sidebar server channel voice collapsed',
-    'voiceUserDraggable': '@alias sidebar server channel voice userDraggable',
-    'voiceUser': '@alias sidebar server channel voice user',
-    'voiceUserClickable': '@alias sidebar server channel voice clickable',
-    'voiceUserOverlap': '@alias sidebar server channel voice overlap',
-    'voiceUserSelected': '@alias sidebar server channel voice selected',
-    'voiceUserContent': '@alias sidebar server channel voice userContent',
-    'voiceAvatarContainer': '@alias sidebar server channel voice avatarContainer',
-    'voiceAvatar': '@alias sidebar server channel voice avatar',
-    'voiceSpeaking': '@alias sidebar server channel voice avatarSpeaking',
-    'voiceUsername': '@alias sidebar server channel voice username',
-    'voiceUsernameSpeaking': '@alias sidebar server channel voice usernameSpeaking',
-    'loadingSidebar': '@alias sidebar channelsContainer',
-    'panels': '@alias sidebar server panel panels',
-    'panelWrapper': '@alias sidebar server panel voice wrapper',
-    'panelUsername': '@alias sidebar server panel username',
-    'panelVoiceContainer': '@alias sidebar server panel voice container',
-    'panelChannel': '@alias sidebar server panel voice channel',
-    'panelActivityContainer': '@alias sidebar server panel activity activityPanel',
-    'panelActivityActions': '@alias sidebar server panel activityActions',
-    'panelInner': '@alias sidebar server panel voice inner',
-    'panelContainer': '@alias sidebar server panel container',
-    'panelButtons': '@alias sidebar server panel buttons buttons',
-    'panelButton': '@alias sidebar server panel buttons button',
-    'panelButtonEnabled': '@alias sidebar server panel buttons enabled',
-    'panelButtonDisabled': '@alias sidebar server panel buttons disabled',
-    'panelButtonRedIcon': '@alias sidebar server panel buttons redIcon',
-    'panelAvatarWrapper': '@alias sidebar server panel avatarWrapper',
-    'panelAvatar': '@alias sidebar server panel avatar',
-    'panelNameTag': '@alias sidebar server panel nameTag',
-    'panelStatusSubtext': '@alias sidebar server panel statusSubtext',
-    'panelActionButtons': '@alias sidebar server panel voice actionButtons actionButtons',
-    'panelStreaming': '@alias sidebar server panel activity panel',
-    'noiseCancellationPopout': '@alias sidebar server panel voice noiseCancellationPopout',
-    'noiseCancellationTooltip': '@alias sidebar server panel voice noiseCancellationTooltip',
-    'krispLogo': '@alias sidebar server panel voice krispLogo',
-    'krispLink': '@alias sidebar server panel voice krispLink',
-    'micTestButton': '@alias sidebar server panel voice micTestButton',
-    'panelConnection': '@alias sidebar server panel voice connection',
-    'panelVoiceUsers': '@alias sidebar server panel voice voiceUsers',
-    'panelActionButton': '@alias sidebar server panel voice actionButtons button',
-    'panelButtonColor': '@alias sidebar server panel voice actionButtons color',
-    'panelButtonActive': '@alias sidebar server panel voice actionButtons active',
-    'panelFauxDisabled': '@alias sidebar server panel voice actionButtons fauxDisabled',
-    'panelButtonContents': '@alias sidebar server panel voice actionButtons contents',
-    'panelButtonIcon': '@alias sidebar server panel voice actionButtons icon',
-    'panelWithText': '@alias sidebar server panel voice withText',
-    'panelVoicePanelIntroductionHeader': '@alias sidebar server panel voice voicePanelIntroductionHeader',
-    'panelVoicePanelIntroductionText': '@alias sidebar server panel voice voicePanelIntroductionText',
-    'panelVoicePanelIntroductionButton': '@alias sidebar server panel voice voicePanelIntroductionButton',
-    'panelVoicePanelIntroductionWrapper': '@alias sidebar server panel voice voicePanelIntroductionWrapper',
-    'panelViewAsRolesWarning': '@alias sidebar server panel voice viewAsRolesWarning',
-    'panelViewAsRolesWarningText': '@alias sidebar server panel voice viewAsRolesWarningText',
-    'panelViewAsRolesWarningButton': '@alias sidebar server panel voice viewAsRolesWarningButton',
-    'panelLottieIcon': '@alias sidebar server panel buttons lottieIcon',
-    // used by animated icons such as "noise suppression by kirsp"
   ),
   'store': (
     'store': 'applicationStore_f07d62',
@@ -3522,7 +3395,6 @@ $classes: (
   'profile': (
       // Generic-ish classes
       // default colours are now provided with inline styling.
-      
       'badgeList': 'container__8061a',
       'note': 'note_fcb628',
       'noteTextarea': 'textarea_dde0a8',
@@ -3599,8 +3471,7 @@ $classes: (
           'focusRing': 'focusRing__75742',
         ),
 
-      
-      'overlayScroller': 'scroller_fcb628',  
+      'overlayScroller': 'scroller_fcb628',
 
       // actually used on the modal!
       'memberSince': (
@@ -3609,7 +3480,7 @@ $classes: (
           'discordIcon': 'discordIcon_c4eb81',
           'divider': 'divider_c4eb81',
         ),
-      
+
       // only here because Yes
       // what classes are actually used i have no fucking idea.
       // this was all from ONE line. it's horrible.
@@ -3827,12 +3698,6 @@ $classes: (
           'guildAvatar': 'guildAvatar_aafe31',
           'guildAvatarWithoutIcon': 'guildAvatarWithoutIcon_aafe31',
           'guildNick': 'guildNick_aafe31',
-
-          // deprecated
-          'overlay': '@alias profile overlay',
-          'outer': '@alias profile outer',
-          'inner': '@alias profile inner',
-          'noteTextarea': '@alias profile noteTextarea',
         ),
 
       // Panel: Go to the DMs of someone while your screen is larger than
@@ -3864,9 +3729,6 @@ $classes: (
           'collapseButton': 'collapseBtn_a4a127',
           'collapseButtonContent': 'collapseBtnContent_a4a127',
           'collapseButtonIcon': 'iconWrapper_a4a127',
-
-          // deprecated
-          'avatar': '@alias profile avatar panel',
         ),
 
       // Popoout: click on user in chat or member list
@@ -3889,90 +3751,6 @@ $classes: (
             ),
 
           'desaturateUserColors': 'desaturateUserColors__41f68',
-
-          // deprecated
-          'overlayBackground': '@alias profile overlay',
-          'outer': '@alias profile outer',
-          'banner': '@alias profile banner banner',
-          'avatarClickable': '@alias profile avatar clickable',
-          'nameTag': '@alias nameTag nameTag',
-          'username': '@alias nameTag username',
-          'memberSinceContainer': '@alias profile memberSince container',
-          'discordIcon': '@alias profile memberSince discordIcon',
-          'memberSinceDivider': '@alias profile memberSince divider',
-          'rolesRoot': '@alias role root',
-          'role': '@alias role role',
-          'roleRemoveButton': '@alias role removeButton',
-          'roleName': '@alias role name',
-          'roleAddButton': '@alias role addButton',
-          'roleActionButton': '@alias role actionButton',
-          'addButtonIcon': '@alias role addButtonIcon',
-          'noteTextarea': '@alias profile noteTextarea',
-        ),
-
-      // for status picker, has a bit of overlap with popout
-      // some classes apply to the panel containing mute/deafen/settings icons
-      // redIcon class is in one of the rules but is under a different area in this file. it's applied to icons when server muted/deafend
-      'status': (
-          'menu': 'menu_ad5fac',
-          'menuItemFocused': 'menuItemFocused_ad5fac',
-          'submenuIcon': 'subMenuIcon_ad5fac',
-
-          'mainStatusIcon': 'mainStatusIcon_ad5fac',
-          // >foreignObject>div has inline style
-          'divider': 'divider_ad5fac',
-
-          // used after about me/joined discord
-          // submenu for picking status
-          'statusItem': 'statusItem_af7fb7',
-          'icon': 'icon_af7fb7',
-          // >foreignObject>div has inline style
-          'status': 'status_af7fb7',
-          // contains text
-          'description': 'description_af7fb7',
-
-          // used with do not disturb and invis
-          'accountSwitcher': (
-              'focused': 'focused_d40c56',
-              // put on a parent class, one actually with an "item-" class
-              'item': 'userMenuItem_d40c56',
-              // nested inside *another* item
-              'username': 'userMenuUsername_d40c56',
-              'text': 'userMenuText_d40c56',
-              'discriminator': 'userMenuDiscriminator_d40c56',
-              'activeIcon': 'activeIcon_d40c56',
-              // child "circle" changes fill via js
-            ),
-
-          // other classes without any idea as to where they exist
-          // in "panel" rule
-          'hasBuildOverride': 'hasBuildOverride_b2ca13',
-          'buildOverrideButton': 'buildOverrideButton_b2ca13',
-
-          'strikethrough': 'strikethrough__37e49',
-          'accountProfilePopoutWrapper': 'accountProfilePopoutWrapper__37e49',
-
-          // in other rules
-          'statusPickerModalMenu': 'statusPickerModalMenu_af7fb7',
-          'modal': 'modal_ad5fac',
-
-          // deprecated
-          'dividier': '@alias profile status divider',
-          // TYPO
-          'popoutWrapper': '@alias profile status accountProfilePopoutWrapper',
-          'redIcon': '@alias sidebar server panel buttons redIcon',
-          'panelTitleContainer': '@alias sidebar server panel titleContainer',
-          'panelSubtextContainer': '@alias sidebar server panel subtextContainer',
-          'panel': (
-            'container': '@alias sidebar server panel container',
-            'avatarWrapper': '@alias sidebar server panel avatarWrapper',
-            // applies to whole thing
-            'avatar': '@alias sidebar server panel avatar',
-            'nameTag': '@alias sidebar server panel nameTag',
-            'canCopy': '@alias sidebar server panel canCopy',
-            'customStatus': '@alias sidebar server panel customStatus',
-            'customStatusEmoji': '@alias sidebar server panel customStatusEmoji',
-          ),
         ),
 
       // Within settings, it's in Profiles. Chances are overlap with popout exist here.
@@ -4031,11 +3809,6 @@ $classes: (
       'accountSettingsSecurity': 'userSettingsSecurity__2666b',
 
       'profileImageUploader': 'imageUploader_e4d0bf',
-
-      'radioGroupItem': 'item__001a7',
-      'radioBar': 'radioBar__001a7',
-      'radioBarInfo': 'info__001a7',
-      'radioIconForeground': 'radioIconForeground__001a7',
 
       // selected radio button's circle inner
       'formNotice': 'formNotice_f43ba5',
@@ -4242,6 +4015,237 @@ $classes: (
       'premiumIcon': 'premiumIcon_f8896c',
       'sparkles': 'sparkles_f8896c',
     ),
+
+  'popouts': (
+    'menus': (
+      'menu': 'menu_c1e9c4',
+      'flexible': 'flexible_c1e9c4',
+      // mostly elsewhere
+      'fixed': 'fixed_c1e9c4',
+      // click server name
+      'scroller': 'scroller_c1e9c4',
+      'separator': 'separator_c1e9c4',
+      'customItem': 'customItem_c1e9c4',
+      // found in quick react
+      'item': 'item_c1e9c4',
+      'labelContainer': 'labelContainer_c1e9c4',
+      'itemDisabled': 'disabled_c1e9c4',
+      'itemFocused': 'focused_c1e9c4',
+      'itemHideInteraction': 'hideInteraction_c1e9c4',
+      // best seen in the css rules with :not(), banner in status has it
+      'label': 'label_c1e9c4',
+      'subtext': 'subtext_c1e9c4',
+      // "muted until $time" for easiest way of bringing this up
+      'iconContainer': 'iconContainer_c1e9c4',
+      'iconContainerLeft': 'iconContainerLeft_c1e9c4',
+      // change status has this
+      'icon': 'icon_c1e9c4',
+
+      'caret': 'caret_c1e9c4',
+      'checkboxContainer': 'checkboxContainer_c1e9c4',
+      'checkbox': 'checkbox_c1e9c4',
+      'checkboxCheck': 'check_c1e9c4',
+      'radioSelection': 'radioSelection_c1e9c4',
+
+      'colorDefault': 'colorDefault_c1e9c4',
+      'colorBrand': 'colorBrand_c1e9c4',
+      // invite people
+      'colorDanger': 'colorDanger_c1e9c4',
+      // leave server, report raid, server mute/deaf, kick, ban, disconnect, timeout etc
+      'colorPremium': 'colorPremium_c1e9c4',
+      // sets icon to boost color
+      'colorPremiumGradient': 'colorPremiumGradient_c1e9c4',
+      // gradient to focused and :active:not(:hideInteraction)
+      'colorSuccess': 'colorSuccess_c1e9c4',
+
+      // if you can find greens...
+      'submenuPaddingContainer': 'submenuPaddingContainer_c1e9c4',
+      // change status for easiest
+      'submenu': 'submenu_c1e9c4',
+
+      'hintContainer': 'hintContainer_c1e9c4',
+
+      // this is the remove custom status thing
+      'groupLabel': 'groupLabel_c1e9c4',
+      // no idea where
+      'loader': 'loader_c1e9c4',
+      // no idea where
+      'sparkles': 'sparkles_c1e9c4',
+
+      // no idea where
+      // Right click a message in a channel you can add reactions to
+      'quickReactWrapper': 'wrapper_f563df',
+      'quickReactionButton': 'button_f563df',
+
+      // Change status
+      'mainStatusIcon': 'mainStatusIcon_ad5fac',
+      'statusItem': 'statusItem_af7fb7',
+      // within submenu
+      'statusMask': 'mask_a423bd',
+      'status': 'status_a423bd',
+      // inline background color
+      'statusicon': 'icon_af7fb7',
+      // >foreignObject>div has inline style
+      'statusText': 'status_af7fb7',
+      // contains text
+      'statusDescription': 'description_af7fb7',
+
+      // used with do not disturb and invis
+      'accountSwitcher': (
+          'focused': 'focused_d40c56',
+          // put on a parent class, one actually with an "item-" class
+          'item': 'userMenuItem_d40c56',
+          // nested inside *another* item
+          'username': 'userMenuUsername_d40c56',
+          'text': 'userMenuText_d40c56',
+          'discriminator': 'userMenuDiscriminator_d40c56',
+          'activeIcon': 'activeIcon_d40c56',
+          // child "circle" changes fill via js
+        ),
+    ),
+
+    // Best seen in Voice + Video settings, right at the top there's two
+    'dropdown': (
+        'wrapper': 'wrapper__3f413',
+        'select': 'select__3f413',
+        'filled': 'lookFilled__3f413',
+
+        'open': 'open__3f413',
+
+        'value': 'value__3f413',
+        'icons': 'icons__3f413',
+
+        'popout': 'popout__3f413',
+        'measurement': 'measurement__3f413',
+        // there's a hidden one next to the popout???
+        'option': 'option__3f413',
+        'selectedIcon': 'selectedIcon__3f413',
+        // checkmark
+        'focused': 'focused__3f413',
+        // hover over item
+        'multi': 'multi__3f413',
+
+        // i can't find this class but it's in a rule
+        // idk where lmao
+        'searchable': 'searchable__3f413',
+        'searchInput': 'searchInput__3f413',
+        'editing': 'editing__3f413',
+        'label': 'label_f6639d',
+        'selectPositionTop': 'selectPositionTop__3f413',
+        'disabled': 'disabled__3f413',
+        'hidden': 'hidden_f6639d',
+        'iconsContainer': 'iconsContainer__3f413',
+        'iconsCenter': 'iconsCenter__3f413',
+        'placeholder': 'placeholder__3f413',
+        'popoutPositionTop': 'popoutPositionTop__3f413',
+        'clear': 'clear__3f413',
+        'dropdownIcon': 'dropdownIcon__3f413',
+        'noResults': 'noResults__3f413',
+        'loading': 'loading__3f413',
+        'loadingSpinner': 'loadingSpinner__3f413',
+        'searchableSelect': 'searchableSelect__3f413',
+        'prefix': 'prefix__3f413',
+        'suffix': 'suffix__3f413',
+        'content': 'content__3f413',
+        'optionPillWrapper': 'optionPillWrapper_f6639d',
+        'optionPillContainer': 'optionPillContainer__3f413',
+        'optionPillItem': 'optionPillItem__3f413',
+        'optionPill': 'optionPill__3f413',
+        'optionPillBtn': 'optionPillBtn__3f413',
+        'deleteOptionIcon': 'deleteOptionIcon__3f413',
+        'noScrollbar': 'noScrollbar__3f413',
+        'multiSelectCheckbox': 'multiSelectCheckbox__3f413',
+        'unchecked': 'unchecked__3f413',
+        'checked': 'checked__3f413',
+        'multiSelectCheck': 'multiSelectCheck__3f413',
+      ),
+
+    // Inbox, Pinned and Threads dropdowns.
+    // You can also think of these as "Has a distinct header"
+    // There seriously might be NOTHING shared
+    'headerDropdown': (
+        'messagesPopoutWrap': 'messagesPopoutWrap__45690',
+        // INBOX + PINNED
+        'messagesPopout': 'messagesPopout__45690',
+        // INBOX + PINNED
+        'header': 'header__45690',
+        // INBOX + UNREAD + PINNED
+      ),
+
+    'inbox': (
+      'popout': 'recentMentionsPopout__95796',
+      'header': 'header_ab6641',
+      'tabBar': 'tabBar_ab6641',
+      'tab': 'tab_ab6641',
+      'tabActive': 'active_f0cd33',
+      'controls': 'controls_ab6641',
+      'roundButton': 'button__06eda',
+      'secondary': 'secondary__06eda',
+      // background secondary, hover primary
+      'tertiary': 'tertiary__06eda',
+      // background tertiary, hover floating
+      'buttonDisabled': 'disabled__06eda',
+      'size32': 'size32__06eda',
+      'channelHeader': 'channelHeader__35a7e',
+      'guildIcon': 'guildIcon__35a7e',
+      'dmIcon': 'dmIcon__35a7e',
+      'channelNameSection': 'channelNameSection__35a7e',
+      'channelNameHeader': 'channelNameHeader__35a7e',
+      'channelName': 'channelName__35a7e',
+      'channelNameSpan': 'channelNameSpan__35a7e',
+      'subtextContainer': 'subtextContainer__35a7e',
+      'subtext': 'subtext__35a7e',
+      'guildName': 'guildName__35a7e',
+      'jumpButton': 'jumpButton_ed0c8c',
+      'jumpButtonText': 'text_ed0c8c',
+      'emptyContainer': 'container_d404a3',
+      'emptyIconContainer': 'iconContainer_d404a3',
+      'emptyIcon': 'icon_d404a3',
+      'emptyStars': 'stars_d404a3',
+      'emptyHeader': 'header_d404a3',
+      'emptyProtip': 'protip_d404a3',
+
+      // inline color
+      'friendRequestsButton': 'friendRequestsButton__523aa',
+
+      'forYou': (
+        'container': 'container_fc561d',
+        'bodyContainer': 'container__0f711',
+      ),
+      'mentions': (
+        'scroller': 'scroller__95796',
+        'container': 'container__95796',
+        'close': 'closeButton__95796',
+        'messageContainer': 'messageContainer__95796',
+        'message': 'message__95796',
+        'scrollingFooterWrap': 'scrollingFooterWrap__45690',
+      ),
+
+      'unread': (
+        'popout': 'container__2692d',
+        'scroller': 'scroller__2692d',
+        'tutorial': 'tutorial__2692d',
+        // "Stay up to date with the latest messages"
+        'tutorialIcon': 'tutorialIcon__2692d',
+        'channel': 'channel__427f0',
+        'mentionBadge': 'badge__35a7e',
+        'markRead': 'markReadButton__427f0',
+        'collapseButton': 'collapseButton__427f0',
+        'collapsed': 'collapsed__427f0',
+        'messages': 'messages__1ccd1',
+        'messageContainer': 'messageContainer__1ccd1',
+        'jumpButton': 'jumpButton__1ccd1',
+        'message': 'message__1ccd1',
+        'divider': 'divider__1ccd1',
+
+        // Click the "mark inbox as read" button and another modal pops up
+        'markAll': (
+            'content': 'content__1688d',
+          ),
+      ),
+    ),
+  ),
+
   'modals': (
     'layer': 'layer_bc663c',
     'hidden': 'hidden_bc663c',
@@ -5198,222 +5202,7 @@ $classes: (
             'upsellContainer': 'upsellContainer_a3bc57',
             // "Unlock these emojis with Nitro" shows up when reacting
           ),
-
-        // deprecated
-        'inExpressionPicker': '@alias modals emoji hasTabWrapper',
       ),
-
-    // Right click!
-    // Other menu types may do other funky things, such as changing your status
-    'menus': (
-        'menu': 'menu_c1e9c4',
-        'flexible': 'flexible_c1e9c4',
-        // mostly elsewhere
-        'fixed': 'fixed_c1e9c4',
-        // click server name
-        'scroller': 'scroller_c1e9c4',
-        'separator': 'separator_c1e9c4',
-        'customItem': 'customItem_c1e9c4',
-        // found in quick react
-        'item': 'item_c1e9c4',
-        'labelContainer': 'labelContainer_c1e9c4',
-        'itemDisabled': 'disabled_c1e9c4',
-        'itemFocused': 'focused_c1e9c4',
-        'itemHideInteraction': 'hideInteraction_c1e9c4',
-        // best seen in the css rules with :not(), banner in status has it
-        'label': 'label_c1e9c4',
-        'subtext': 'subtext_c1e9c4',
-        // "muted until $time" for easiest way of bringing this up
-        'iconContainer': 'iconContainer_c1e9c4',
-        'iconContainerLeft': 'iconContainerLeft_c1e9c4',
-        // change status has this
-        'icon': 'icon_c1e9c4',
-
-        'caret': 'caret_c1e9c4',
-        'checkbox': 'checkbox_c1e9c4',
-        'checkboxCheck': 'check_c1e9c4',
-        'radioSelection': 'radioSelection_c1e9c4',
-
-        'colorDefault': 'colorDefault_c1e9c4',
-        'colorBrand': 'colorBrand_c1e9c4',
-        // invite people
-        'colorDanger': 'colorDanger_c1e9c4',
-        // leave server, report raid, server mute/deaf, kick, ban, disconnect, timeout etc
-        'colorPremium': 'colorPremium_c1e9c4',
-        // sets icon to boost color
-        'colorPremiumGradient': 'colorPremiumGradient_c1e9c4',
-        // gradient to focused and :active:not(:hideInteraction)
-        'colorSuccess': 'colorSuccess_c1e9c4',
-
-        // if you can find greens...
-        'submenuPaddingContainer': 'submenuPaddingContainer_c1e9c4',
-        // change status for easiest
-        'submenu': 'submenu_c1e9c4',
-
-        'hintContainer': 'hintContainer_c1e9c4',
-
-        // this is the remove custom status thing
-        'groupLabel': 'groupLabel_c1e9c4',
-        // no idea where
-        'loader': 'loader_c1e9c4',
-        // no idea where
-        'sparkles': 'sparkles_c1e9c4',
-
-        // no idea where
-        // Right click a message in a channel you can add reactions to
-        'quickReactWrapper': 'wrapper_f563df',
-        'quickReactionButton': 'button_f563df',
-
-        // Change status
-        'mainStatusIcon': 'mainStatusIcon_ad5fac',
-        'statusItem': 'statusItem_af7fb7',
-        // within submenu
-        'statusMask': 'mask_a423bd',
-        'status': 'status_a423bd',
-        // inline background color
-      ),
-
-    // Best seen in Voice + Video settings, right at the top there's two
-    'dropdown': (
-        'wrapper': 'wrapper__3f413',
-        'select': 'select__3f413',
-        'filled': 'lookFilled__3f413',
-
-        'open': 'open__3f413',
-
-        'value': 'value__3f413',
-        'icons': 'icons__3f413',
-
-        'popout': 'popout__3f413',
-        'measurement': 'measurement__3f413',
-        // there's a hidden one next to the popout???
-        'option': 'option__3f413',
-        'selectedIcon': 'selectedIcon__3f413',
-        // checkmark
-        'focused': 'focused__3f413',
-        // hover over item
-        'multi': 'multi__3f413',
-
-        // i can't find this class but it's in a rule
-        // idk where lmao
-        'searchable': 'searchable__3f413',
-        'searchInput': 'searchInput__3f413',
-        'editing': 'editing__3f413',
-        'label': 'label_f6639d',
-        'selectPositionTop': 'selectPositionTop__3f413',
-        'disabled': 'disabled__3f413',
-        'hidden': 'hidden_f6639d',
-        'iconsContainer': 'iconsContainer__3f413',
-        'iconsCenter': 'iconsCenter__3f413',
-        'placeholder': 'placeholder__3f413',
-        'popoutPositionTop': 'popoutPositionTop__3f413',
-        'clear': 'clear__3f413',
-        'dropdownIcon': 'dropdownIcon__3f413',
-        'noResults': 'noResults__3f413',
-        'loading': 'loading__3f413',
-        'loadingSpinner': 'loadingSpinner__3f413',
-        'searchableSelect': 'searchableSelect__3f413',
-        'prefix': 'prefix__3f413',
-        'suffix': 'suffix__3f413',
-        'content': 'content__3f413',
-        'optionPillWrapper': 'optionPillWrapper_f6639d',
-        'optionPillContainer': 'optionPillContainer__3f413',
-        'optionPillItem': 'optionPillItem__3f413',
-        'optionPill': 'optionPill__3f413',
-        'optionPillBtn': 'optionPillBtn__3f413',
-        'deleteOptionIcon': 'deleteOptionIcon__3f413',
-        'noScrollbar': 'noScrollbar__3f413',
-        'multiSelectCheckbox': 'multiSelectCheckbox__3f413',
-        'unchecked': 'unchecked__3f413',
-        'checked': 'checked__3f413',
-        'multiSelectCheck': 'multiSelectCheck__3f413',
-      ),
-
-    // Inbox, Pinned and Threads dropdowns.
-    // You can also think of these as "Has a distinct header"
-    // There seriously might be NOTHING shared
-    'headerDropdown': (
-        'messagesPopoutWrap': 'messagesPopoutWrap__45690',
-        // INBOX + PINNED
-        'messagesPopout': 'messagesPopout__45690',
-        // INBOX + PINNED
-        'header': 'header__45690',
-        // INBOX + UNREAD + PINNED
-      ),
-
-    'inbox': (
-      'popout': 'recentMentionsPopout__95796',
-      'header': 'header_ab6641',
-      'tabBar': 'tabBar_ab6641',
-      'tab': 'tab_ab6641',
-      'tabActive': 'active_f0cd33',
-      'controls': 'controls_ab6641',
-      'roundButton': 'button__06eda',
-      'secondary': 'secondary__06eda',
-      // background secondary, hover primary
-      'tertiary': 'tertiary__06eda',
-      // background tertiary, hover floating
-      'buttonDisabled': 'disabled__06eda',
-      'size32': 'size32__06eda',
-      'channelHeader': 'channelHeader__35a7e',
-      'guildIcon': 'guildIcon__35a7e',
-      'dmIcon': 'dmIcon__35a7e',
-      'channelNameSection': 'channelNameSection__35a7e',
-      'channelNameHeader': 'channelNameHeader__35a7e',
-      'channelName': 'channelName__35a7e',
-      'channelNameSpan': 'channelNameSpan__35a7e',
-      'subtextContainer': 'subtextContainer__35a7e',
-      'subtext': 'subtext__35a7e',
-      'guildName': 'guildName__35a7e',
-      'jumpButton': 'jumpButton_ed0c8c',
-      'jumpButtonText': 'text_ed0c8c',
-      'emptyContainer': 'container_d404a3',
-      'emptyIconContainer': 'iconContainer_d404a3',
-      'emptyIcon': 'icon_d404a3',
-      'emptyStars': 'stars_d404a3',
-      'emptyHeader': 'header_d404a3',
-      'emptyProtip': 'protip_d404a3',
-
-      // inline color
-      'friendRequestsButton': 'friendRequestsButton__523aa',
-
-      'forYou': (
-        'container': 'container_fc561d',
-        'bodyContainer': 'container__0f711',
-      ),
-
-      'mentions': (
-        'scroller': 'scroller__95796',
-        'container': 'container__95796',
-        'close': 'closeButton__95796',
-        'messageContainer': 'messageContainer__95796',
-        'message': 'message__95796',
-        'scrollingFooterWrap': 'scrollingFooterWrap__45690',
-      ),
-
-      'unread': (
-        'popout': 'container__2692d',
-        'scroller': 'scroller__2692d',
-        'tutorial': 'tutorial__2692d',
-        // "Stay up to date with the latest messages"
-        'tutorialIcon': 'tutorialIcon__2692d',
-        'channel': 'channel__427f0',
-        'mentionBadge': 'badge__35a7e',
-        'markRead': 'markReadButton__427f0',
-        'collapseButton': 'collapseButton__427f0',
-        'collapsed': 'collapsed__427f0',
-        'messages': 'messages__1ccd1',
-        'messageContainer': 'messageContainer__1ccd1',
-        'jumpButton': 'jumpButton__1ccd1',
-        'message': 'message__1ccd1',
-        'divider': 'divider__1ccd1',
-
-        // Click the "mark inbox as read" button and another modal pops up
-        'markAll': (
-            'content': 'content__1688d',
-          ),
-      ),
-    ),
 
     'pinned': (
       'messageGroup': 'messageGroupWrapper__45690',
@@ -5839,15 +5628,6 @@ $classes: (
         ),
 
         'keybindHint': 'keybindHint__46002',
-
-        // I cannot target this using Vesktop. Classes are likely not complete for it.
-        // deprecated
-        'soundboardButton': '@alias modals soundboard sound button button',
-        'soundboardSoundName': '@alias modals soundboard sound button name',
-        'soundboardAdd': '@alias modals soundboard sound add button',
-        'soundboardAddText': '@alias modals soundboard sound add text',
-        'soundboardSecondaryButton': '@alias modals soundboard sound secondary button',
-        'soundboardHint': '@alias modals soundboard keybindHint',
       ),
   ),
   // holy shit end of modals
@@ -6738,7 +6518,7 @@ $classes: (
           'playerMediaBarWrapper': 'mediaBarWrapperVolume_b26b79',
           'playerMediaDownload': 'hoverButtonGroup__06ab4',
           'messageGroupBlockedExpanded': 'expanded__7a70a',
-          'messageTimestampAlt': 'alt_c19a55',          
+          'messageTimestampAlt': 'alt_c19a55',
           'messageInlineMediaEmbed': 'inlineMediaEmbed__623de',
           'messageSystemIcon': 'icon__235ca',
           'mention': 'mention',
@@ -6987,7 +6767,6 @@ $classes: (
           'loading': 'loading__6ef4d',
           'replyCloseButton': 'closeButton_e876a8',
           'replySeperator': 'separator__841c8',
-          'radioItemDisabled': 'disabled__001a7',
           'userSettingsProfilePreview': 'container_ba7f98',
           'userSettingsProfilePremiumBackground': 'premiumBackground__65c15',
           'userSettingsPrivacyStandingContainer': 'container_d878e7',

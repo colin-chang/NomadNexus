@@ -27,7 +27,7 @@
   #{c(chatForm accessoryBar)} {
     border: none;
     margin-left: 0;
-    pointer-events: none ;
+    pointer-events: none;
   }
   #{c(chatForm accessoryBarLeft)},
   #{c(chatForm accessoryBarRight)} {
@@ -39,7 +39,7 @@
     padding: 4px 12px;
     margin-left: -8px;
     border-radius: 4px;
-    color: var(--button-filled-brand-text);    
+    color: var(--button-filled-brand-text);
     &:hover {
       background-color: cv('color.hover');
       color: var(--button-filled-brand-text);
@@ -51,9 +51,11 @@
       margin-left: 0.5em;
     }
   }
-}
 
-
-#{c(chatForm typing)} {
-  margin-left: 10px;
+  // TYPING
+  #{c(chatForm typing)} {
+    margin-left: 20px;
+    font-size: 14px;
+    opacity: 0.9;
+  }
 }

@@ -5,7 +5,6 @@
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
   }
 
-
   // HEADER
   #{c(forums header)} {
     background-color: cv('shading.input.bg');
@@ -19,7 +18,7 @@
 
   // TAGS
   #{c(pages tags pill)} {
-    @include card
+    @include card;
   }
 
   // CARD

@@ -5,9 +5,12 @@
   #{c(header themed)} {
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
   }
+  #{c(header dot)} {
+    visibility: hidden;
+  }
 }
 #{c(header children)} {
   &::after {
-    content: none;
+    display: none;
   }
 }
