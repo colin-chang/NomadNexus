@@ -10,10 +10,12 @@
   // HOME BUTTON
   #{c(guildList homeWrapper)} {
     background-color: cv('shading.card');
-    background-image: cv('home.icon');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 40px;
+    &:not(#{c(guildList acronym)}) {
+      background-image: cv('home.icon');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 40px;
+    }
     svg {
       display: none;
     }

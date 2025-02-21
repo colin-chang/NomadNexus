@@ -73,12 +73,14 @@ $cv: (
       // shading amount
       card: var(--hsl-card-shading),
       // mainly used for embeds, most modals, random things
+      popout: var(--hsl-popout-shading),
+      modal: var(--hsl-popout-shading),
+
+      // discord vars
       input: (
           bg: var(--input-background),
           border: var(--input-border),
         ),
-
-      // discord default
       hover: var(--background-modifier-accent),
     ),
   // TEXT COLORS - ALSO TO BE USED IN .theme-light AND .theme-dark

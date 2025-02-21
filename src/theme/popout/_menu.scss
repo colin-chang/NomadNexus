@@ -2,7 +2,8 @@
 
 #{c(main visualRefresh)} {
   #{c(popouts menus menu)} {
-    background: rgba(0, 0, 0, 0.7);
+    background: cv('shading.popout');
+    border: none;
     border-radius: 5px;
   }
   #{c(popouts menus colorDefault)} {

@@ -29,9 +29,13 @@
     border: none;
   }
 
-  // NEW MENTION
-  #{c(sidebar server unreadBar mentionsBar)} {
+  // UNREAD BAR
+  #{c(sidebar server unreadBar bar)} {
     background-color: cv('color.main');
     border-color: cv('color.main');
+  }
+  #{c(sidebar server unreadBar unreadIcon)},
+  #{c(sidebar server unreadBar text)} {
+    color: var(--button-filled-brand-text) !important; //inline style
   }
 }
