@@ -1,7 +1,6 @@
 @use 'backend' as *;
 
 /* CATEGORY */
-
 #{c(main visualRefresh)} {
   #{c(sidebar server category wrapperCommon)} {
     #{c(sidebar server category mainContent)} {
@@ -35,6 +34,12 @@
       margin-left: 5px;
     }
   }
+  #{c(sidebar server category children)} {
+    margin-left: 6px;
+  }
+  #{c(sidebar server category addButtonIcon)} {
+    color: cv('color.main');
+  }
 }
 // COLLAPSED
 #{c(sidebar server category collapsed)} {
@@ -49,7 +54,7 @@
 #{c(sidebar server category wrapper)} {
   // MUTED
   &#{c(sidebar server category muted)} {
-    #{c(sidebar server category name)} {
+    :is(#{c(sidebar server category name)}, #{c(sidebar server category addButtonIcon)}) {
       color: cv('color.main');
       opacity: 0.5;
     }
@@ -66,6 +71,9 @@
         &::after {
           background: linear-gradient(to right, cv('color.hover') 50%, transparent);
         }
+      }
+      #{c(sidebar server category addButtonIcon)} {
+        color: cv('color.hover');
       }
     }
   }

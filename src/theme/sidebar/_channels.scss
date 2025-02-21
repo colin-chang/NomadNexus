@@ -39,3 +39,85 @@
     color: var(--button-filled-brand-text) !important; //inline style
   }
 }
+
+
+
+
+// CHANNEL CONTENT
+#{c(sidebar server channel link)} {
+  transition: all 0.15s ease-in-out;
+  &::before {
+    top: 0px;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    transition: all 0.15s ease-in-out;
+    z-index: -1;
+    border-radius: 4px;
+  }
+}
+#{c(sidebar server channel icon)} {
+  width: 18px;
+  height: 18px;
+  margin-right: 3px;
+  transition: all 0.15s ease-in-out;
+}
+#{c(sidebar server channel name)},
+%channelActionIcon {
+  transition: all 0.15s ease-in-out;
+}
+#{c(sidebar server channel wrapper)} {
+  // HOVER
+  &:hover {
+    #{c(sidebar server channel link)} {
+      background: cv('shading.hover');
+    }
+  }
+  // UNREAD
+  &#{c(sidebar server channel unread)} {
+    #{c(sidebar server channel name)} {
+      color: cv('color.main');
+      text-shadow: 0 0 3px;
+    }
+    #{c(sidebar server channel icon)} {
+      color: cv('color.main');
+      filter: drop-shadow(0 0 3px);
+    }
+    &:hover {
+      :is(#{c(sidebar server channel name)}, #{c(sidebar server channel icon)}) {
+        color: cv('color.hover');
+      }
+    }
+  }
+  // SELECTED
+  &#{c(sidebar server channel selected)} {
+    #{c(sidebar server channel link)} {
+      background-color: transparent;
+      &::before {
+        right: 0;
+        background: cv('color.main');
+        animation: cv-channel-select 0.3s ease-in-out;
+      }
+    }
+  }
+
+  // CONNECTED
+  &#{c(sidebar server channel connected)} {
+    #{c(sidebar server channel name)} {
+      color: var(--channel-unread);
+      text-shadow: 0 0 3px;
+    }
+    #{c(sidebar server channel icon)} {
+      color: var(--channel-unread);
+      filter: drop-shadow(0 0 3px);
+    }
+  }
+}
+@keyframes cv-channel-select {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0;
+  }
+}

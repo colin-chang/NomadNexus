@@ -1719,6 +1719,8 @@ $classes: (
     // you can't type into this channel
     'channelTextAreaInline': 'inlineContainer__74017',
     // in user profiles
+    'channelTextAreaEdit': 'channelTextArea__5126c',
+    // editing
     'themedBackground': 'themedBackground__74017',
     // has background
     'stackedBars': 'stackedBars__74017',
@@ -1753,10 +1755,8 @@ $classes: (
 
     'emojiButton': 'emojiButton__04eed',
 
-    'xmasGiftButton': 'container_dfb455',
+    'toolbar': 'toolbar_bba883',
 
-    // Make sure to remove this if it yk gets removed
-    'buttonActive': 'active__24af7',
     'jumpToPresentBar': 'jumpToPresentBar__0f481',
     'messagesErrorBar': 'messagesErrorBar__0f481',
     'hasMore': 'hasMore_cf58b5',
@@ -1786,10 +1786,11 @@ $classes: (
     'afterInlineCode': 'after_inlineCode_ada32f',
     'codeLine': 'codeLine_ada32f',
     'codeBlockText': 'codeBlockText_ada32f',
-
-    'inlineUpload': 'upload_aa605f',
-    'inlineUploadContainer': 'uploadContainer_aa605f',
-    'inlineActionBarIcon': 'actionBarIcon_a7e304',
+    
+    'attachmentArea': 'channelAttachmentArea_b77158',
+    'upload': 'upload_aa605f',
+    'uploadContainer': 'uploadContainer_aa605f',
+    'uploadActionBarIcon': 'actionBarIcon_a7e304',
 
     'typingBase': 'base_b88801',
     'typing': 'typing_b88801',
@@ -2923,8 +2924,6 @@ $classes: (
             // These can all be found on the same element, <ul> > <li>
             'container': 'containerDefault_c69b6d',
             // default class on channel
-            'selected': 'selected_c69b6d',
-            // select a channel; used by the icons (settings, invite, open chat)
             'disabled': 'disabled_c69b6d',
             // usually spotted when dragging categories or on voice channels when dragging text channels
             'userOver': 'containerUserOver_c69b6d',
@@ -2943,13 +2942,13 @@ $classes: (
             'typeVoice': 'typeVoice__2ea32',
             // voice + stage channels
             // These "mode" classes change the text and icon color.
-            'modeMuted': 'modeMuted__2ea32',
+            'muted': 'modeMuted__2ea32',
             // mute a channel
-            'modeSelected': 'modeSelected__2ea32',
+            'selected': 'modeSelected__2ea32',
             // select a channel
-            'modeUnreadImportant': 'modeUnreadImportant__2ea32',
+            'unread': 'modeUnreadImportant__2ea32',
             // get pinged
-            'modeConnected': 'modeConnected__2ea32',
+            'connected': 'modeConnected__2ea32',
             // join a voice call
             'modeLocked': 'modeLocked__2ea32',
 
@@ -4571,11 +4570,6 @@ $classes: (
         'content': 'content_be95d0',
         'header': 'header_be95d0',
         'footer': 'footer_be95d0',
-      ),
-
-    // Write a message and select some text
-    'formattingToolbar': (
-        'toolbar': 'toolbar_bba883',
       ),
 
     // On a message with reactions, right click and click "Show reactions"

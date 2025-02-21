@@ -26,3 +26,12 @@
 #{c(chat messageLoadingWrapper)} {
   background-color: transparent;
 }
+
+// TOOLBAR
+#{c(main visualRefresh)} {
+  #{c(chat buttonWrapper)} {
+    background-color: cv('shading.popout');
+    border-color: cv('shading.popout');
+    box-shadow: none;
+  }
+}

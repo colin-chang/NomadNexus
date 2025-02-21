@@ -6,10 +6,12 @@
       display: none;
     }
   }
-  #{c(chatForm channelTextAreaMainChat)} {
+  #{c(chatForm channelTextArea)} {
     // Seperate input with buttons
     background: transparent;
     border: 2px solid transparent;
+  }
+  :is(#{c(chatForm channelTextAreaMainChat)}, #{c(chatForm channelTextAreaEdit)}) {
     #{c(chatForm themedBackground)} {
       background-color: cv('shading.input.bg');
       box-shadow: 0 0 0 2px cv('shading.input.border');
@@ -23,6 +25,23 @@
     margin-bottom: 0;
   }
 
+  // TOOLBAR
+  #{c(chatForm toolbar)} {
+    background-color: cv('shading.popout');
+    &::before {
+      border-top-color: cv('shading.popout');
+    }
+  }
+
+  // ATTACHMENTS
+  #{c(chatForm attachmentArea)} {
+    background: transparent;
+  }
+  #{c(chatForm upload)} {
+    background: cv('shading.card');
+    border: none;
+  }
+
   //  BUTTONS
   #{c(chatForm accessoryBar)} {
     border: none;
@@ -33,7 +52,6 @@
   #{c(chatForm accessoryBarRight)} {
     pointer-events: initial;
   }
-
   #{c(chatForm attachButton)} {
     background-color: cv('color.main');
     padding: 4px 12px;

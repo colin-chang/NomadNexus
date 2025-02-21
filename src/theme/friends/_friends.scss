@@ -37,7 +37,7 @@
       color: cv('text.secondary');
       border: none;
       &:hover {
-        background-color: cv('color.hover');
+        background-color: cv('shading.hover');
       }
       &[aria-selected='true'] {
         background-color: cv('color.main');
@@ -76,7 +76,11 @@
     &,
     &#{c(friends itemCardInteractive)}:hover {
       background-color: cv('shading.card');
+      border: none;
     }
+  }
+  #{c(friends itemCardBodySection)} {
+    border: none;
   }
 }
 
