@@ -1,0 +1,52 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+  #{c(popouts expressionPicker contentWrapper)} {
+    background: cv('shading.popout');
+    border: none;
+  }
+  #{c(popouts expressionPicker inspector)} {
+    background: transparent;
+    border: none;
+  }
+  #{c(popouts expressionPicker navButton)} {
+    border-radius: 5px;
+    &:hover {
+      background: cv('shading.hover');
+    }
+  }
+  #{c(popouts expressionPicker navButtonActive)} {
+    background: cv('color.main');
+    &:hover {
+      background: cv('color.main');
+    }
+  }
+
+  // EMOJI
+  #{c(popouts expressionPicker emoji hasTabWrapper)} {
+    :is(#{c(popouts expressionPicker emoji picker)}, #{c(popouts expressionPicker emoji header)}) {
+      background: transparent;
+    }
+  }
+  #{c(popouts expressionPicker emoji categoryHeaderWrapper)} {
+    background: hsl(from cv('color.main') h s l/.8);
+  }
+
+  // EMOJI REACT
+  :is(#{c(popouts expressionPicker emoji picker)}, #{c(popouts expressionPicker emoji header)}) {
+    background: cv('shading.popout');
+    border: none;
+  }
+
+  // STICKER
+  #{c(popouts expressionPicker sticker packHeader)} {
+    margin-right: -12px;
+  }
+
+  // GIF
+  #{c(popouts expressionPicker gif container)},
+  #{c(popouts expressionPicker gif header)} {
+    background: transparent;
+    border: none;
+  }
+}

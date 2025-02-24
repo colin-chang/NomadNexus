@@ -38,6 +38,16 @@
   }
 }
 
+// MENTION
+#{c(chat mentionWrapper)} {
+  background-color: cv('color.main');
+  color: cv('text.normal');
+  border-radius: 5px;
+  &:hover {
+    background-color: cv('color.hover');
+  }
+}
+
 // LINKS
 #{c(main anchorLink)} {
   #{c(chat systemMessageContent)} &,

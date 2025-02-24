@@ -6,7 +6,7 @@
   }
   #{c(sidebar private scroller)} {
     background: transparent;
-    margin-bottom: 10px;
+    margin: 0;
   }
 }
 
@@ -34,8 +34,7 @@
   }
 }
 #{c(main visualRefresh)} {
-  // TEMP
-  :is(.plusIcon__675e5, #{c(sidebar private inviteButtonIcon)}) {
+  :is(#{c(sidebar private startActivityIcon)}, #{c(sidebar private inviteButtonIcon)}) {
     margin: 0 -4px 0 0;
     #{c(header icon)} {
       color: cv('color.main');
@@ -52,4 +51,37 @@
 #{c(sidebar private loadingEmpty)} {
   fill: cv('text.normal');
   opacity: 0.15;
+}
+
+// CONTENT
+#{c(main visualRefresh)} {
+  #{c(sidebar private interactive)} {
+    transition: all 0.15s ease-in-out;
+    border-radius: 4px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      left: 0;
+      transition: all 0.15s ease-in-out;
+      z-index: -1;
+      border-radius: 4px;
+    }
+    // HOVER
+    &:hover {
+      background: cv('shading.hover');
+    }
+    // SELECTED
+    &#{c(sidebar private selected)} {
+      background-color: transparent;
+      color: cv('text.default');
+      &::before {
+        right: 0;
+        background: cv('color.main');
+        animation: cv-channel-select 0.3s ease-in-out;
+      }
+    }
+  }
 }

@@ -1099,7 +1099,11 @@ $classes: (
       'unreadPillCapStroke': 'unreadPillCapStroke__908e2',
     ),
 
-    'newMessagesBar': 'newMessagesBar__0f481',
+    'bar': (
+      'newMessages': 'newMessagesBar__0f481',
+      'jumpToPresent': 'jumpToPresentBar__0f481',
+      'messagesError': 'messagesErrorBar__0f481',
+    ),
 
     'blockedSystemMessage': 'blockedSystemMessage__7a70a',
     'systemMessageContent': 'content__235ca',
@@ -1200,7 +1204,7 @@ $classes: (
     // send wave sticker
     'welcomeCTA': 'welcomeCTA_f5d1e2',
 
-    'channelLinkUserMentionWrapper': 'wrapper_f61d60',
+    'mentionWrapper': 'wrapper_f61d60',
 
     'ephemeral': 'ephemeral__5126c',
     'ephemeralAccessories': 'ephemeralAccessories_b7ab2c',
@@ -1757,8 +1761,6 @@ $classes: (
 
     'toolbar': 'toolbar_bba883',
 
-    'jumpToPresentBar': 'jumpToPresentBar__0f481',
-    'messagesErrorBar': 'messagesErrorBar__0f481',
     'hasMore': 'hasMore_cf58b5',
     'attachedBars': 'attachedBars_bdf0de',
     'clipContainer': 'clipContainer__841c8',
@@ -2723,7 +2725,7 @@ $classes: (
         // appears on same element as channel; seems to be unique.
         'interactive': 'interactive__972a0',
         // private only interactive; does not have color+background attached to it, use other interactive for that.
-        'interactiveSelected': 'interactiveSelected__972a0',
+        'selected': 'interactiveSelected__972a0',
         // selected channel, applied on interactive
         'linkButton': 'linkButton__972a0',
 
@@ -2788,314 +2790,316 @@ $classes: (
 
     // Stuff found in servers
     'server': (
-        'container': 'container__2637a',
-        // Header button containing server name, arrow and other stuff. These do not disappear from HTML tree when scrolling channel list
-        'header': (
-            'container': 'container_f37cb1',
-            'clickable': 'clickable_f37cb1',
-            'selected': 'selected_f37cb1',
-            // click it!
-            'hasBanner': 'hasBanner_f37cb1',
-            'bannerVisible': 'bannerVisible_f37cb1',
+      'container': 'container__2637a',
+      // Header button containing server name, arrow and other stuff. These do not disappear from HTML tree when scrolling channel list
+      'header': (
+          'container': 'container_f37cb1',
+          'clickable': 'clickable_f37cb1',
+          'selected': 'selected_f37cb1',
+          // click it!
+          'hasBanner': 'hasBanner_f37cb1',
+          'bannerVisible': 'bannerVisible_f37cb1',
 
-            'header': 'header_f37cb1',
+          'header': 'header_f37cb1',
 
-            // child to above
-            'headerContent': 'headerContent_f37cb1',
-            'primaryInfo': 'primaryInfo_f37cb1',
+          // child to above
+          'headerContent': 'headerContent_f37cb1',
+          'primaryInfo': 'primaryInfo_f37cb1',
 
-            'guildIconV2Container': 'guildIconV2Container__85d16',
-            // holds a flower star thing
-            'guildBadge': 'guildBadge__85d16',
+          'guildIconV2Container': 'guildIconV2Container__85d16',
+          // holds a flower star thing
+          'guildBadge': 'guildBadge__85d16',
 
-            // paired with flowerStar container
-            'communityInfoVisible': 'communityInfoVisible_f37cb1',
+          // paired with flowerStar container
+          'communityInfoVisible': 'communityInfoVisible_f37cb1',
 
-            // unsure if used?
-            'headerButton': 'headerButton_f37cb1',
+          // unsure if used?
+          'headerButton': 'headerButton_f37cb1',
 
-            'headerChildren': 'headerChildren_f37cb1',
+          'headerChildren': 'headerChildren_f37cb1',
 
-            // hold the dropdown arrow
-            'button': 'button__353c4',
-            // might be used elsewhere?
-            'buttonOpen': 'open__353c4',
-            // click the header!
-            'buttonWithHighlight': 'withHighlight__353c4',
-            // i don't know where this is used!
-            'dropdownButton': 'dropdownButton__2637a',
+          // hold the dropdown arrow
+          'button': 'button__353c4',
+          // might be used elsewhere?
+          'buttonOpen': 'open__353c4',
+          // click the header!
+          'buttonWithHighlight': 'withHighlight__353c4',
+          // i don't know where this is used!
+          'dropdownButton': 'dropdownButton__2637a',
 
-            'bannerContainer': 'animatedContainer_f37cb1',
-            // uses inline styling to animate
-            'bannerImage': 'bannerImage_f37cb1',
-            // wrapper, uses inline to animate
-            'bannerImg': 'bannerImg_f37cb1',
-            // <img>
+          'bannerContainer': 'animatedContainer_f37cb1',
+          // uses inline styling to animate
+          'bannerImage': 'bannerImage_f37cb1',
+          // wrapper, uses inline to animate
+          'bannerImg': 'bannerImg_f37cb1',
+          // <img>
+        ),
+      'name': 'name_f37cb1',
+
+      // it's in the header but here feels better
+      // "NEW UNREADS" with arrow
+      // Certain servers will have an older style of bar without the arrow. That style is under "old" in this category.
+      'unreadBar': (
+          'positionedContainer': 'positionedContainer__629e4',
+          // always exists on top and bottom
+          'container': 'container__7aaec',
+          // has top and bottom classes attached to this element
+          'containerPadding': 'containerPadding__7aaec',
+          'bar': 'bar__7aaec',
+          'mentionsBar': 'mentionsBar__7aaec',
+          // ping!
+          'unreadIcon': 'unreadIcon__7aaec',
+          // arrow
+          'text': 'barText__7aaec',
+
+          'top': 'top__7aaec',
+          'bottom': 'bottom__7aaec',
+
+          // no idea where these are used
+          'empty': 'emptyBar__7aaec',
+          'voiceChannelUsers': 'voiceChannelsUsers__7aaec',
+
+          // Old style that lacks an arrow. Shares classes with serverList.
+            // Placed under "positionedContainer" above.
+        ),
+      'scroller': 'scroller__629e4',
+
+      'divider': 'sectionDivider__629e4',
+
+      // placed above channel list if "Events", "Browse Channels", "Members", "Channels & Roles" etc exist
+      // Shared classes with Category and Channel
+      'overflow': 'overflow__82b15',
+      // child for name
+      'dragBefore': 'containerDragBefore__29444',
+      // used when dragging a channel/category to a place BEFORE it was originally
+      'dragAfter': 'containerDragAfter__29444',
+
+      // same as dragBefore but after
+      // The collapsable thing that will hide channels. Not every server has these.
+      'category': (
+          // Used for channel categories (like "Text Channels"
+          'container': 'containerDefault__29444',
+
+          // main container that
+          // classes in group below can all appear on the same element
+          'iconVisibility': 'iconVisibility__29444',
+          'wrapper': 'wrapper__29444',
+          'wrapperCommon': 'wrapperCommon__29444',
+          'clickable': 'clickable__29444',
+          'collapsed': 'collapsed__29444',
+          'muted': 'muted__29444',
+
+          'mainContent': 'mainContent__29444',
+          'collapseIcon': 'icon__29444',
+
+          // hide/unhide toggle
+          'name': 'name__29444',
+
+          // shares container__13cf1 and text__13cf1 with memberList
+          'children': 'children__29444',
+          // extra icons
+          'addButton': 'addButton__29444',
+          // add channel to category
+          'forceVisible': 'forceVisible__29444',
+          // without it, addButton is display none
+          'addButtonIcon': 'addButtonIcon__29444',
+
+          // unknown, appears with same suffix
+          'containerUserOver': 'containerUserOver_a08117',
+          'disableClick': 'disableClick_a08117',
+          'dismissWrapper': 'dismissWrapper__29444',
+          'dismissButton': 'dismissButton__29444',
+          'dismiss': 'dismiss__29444',
+          'voiceChannelsButton': 'voiceChannelsButton__29444',
+          'voiceChannelsButtonRefresh': 'refreshVoiceChannelsButton__29444',
+          'voiceChannelsButtonInnerRefresh': 'refreshVoiceChannelsButtonInner__29444',
+          'voiceChannelsToggleIcon': 'voiceChannelsToggleIcon__29444',
+        ),
+      // Text channels, threads, forums, voice channels, etc.
+      'channel': (
+          // Used for individual channels (like #general)
+          'dragBefore': 'containerDragBefore_c69b6d',
+          // drag either channel or category header
+          'dragAfter': 'containerDragAfter_c69b6d',
+
+          // no idea how to get this one, probably something similar
+          // These can all be found on the same element, <ul> > <li>
+          'container': 'containerDefault_c69b6d',
+          // default class on channel
+          'disabled': 'disabled_c69b6d',
+          // usually spotted when dragging categories or on voice channels when dragging text channels
+          'userOver': 'containerUserOver_c69b6d',
+
+          // a user in voice is hovered over channel
+          // These can all be found on the same element, <div> child to above group
+          'wrapper': 'wrapper__2ea32',
+          'iconVisibility': 'iconVisibility_c69b6d',
+          // why are there so many classes
+          'selectedChannel': 'selectedChannel_c69b6d',
+          // select a channel
+          'typeDefault': 'typeDefault__2ea32',
+          // regular text channels, forums,
+          'typeThread': 'typeThread__2ea32',
+          // in-channel thread or forum thread;
+          'typeVoice': 'typeVoice__2ea32',
+          // voice + stage channels
+          // These "mode" classes change the text and icon color.
+          'muted': 'modeMuted__2ea32',
+          // mute a channel
+          'selected': 'modeSelected__2ea32',
+          // select a channel
+          'unread': 'modeUnreadImportant__2ea32',
+          // get pinged
+          'connected': 'modeConnected__2ea32',
+          // join a voice call
+          'modeLocked': 'modeLocked__2ea32',
+
+          // Inaccessible voice channel (or locked channel using something like show hidden channels on Vencord)
+          'unreadPill': 'unread__2ea32',
+          // blob on side to indicate a new message
+          'unreadPillImportant': 'unreadImportant__2ea32',
+
+          // this is always there
+          'link': 'link__2ea32',
+
+          // <a href=""> element
+          'linkTop': 'linkTop__2ea32',
+          // holds channel name, icons, etc.
+          'linkBottom': 'linkBottom__2ea32',
+
+          // stage description, voice status; can have "withGuildIcon" class
+          'iconContainer': 'iconContainer__2ea32',
+          'icon': 'icon__2ea32',
+
+          'name': 'name__2ea32',
+
+          'children': 'children__2ea32',
+
+          // holds extra icons. settings, invite, open chat, voice limits
+          // UNRELATED TO THE ICON ON LEFT. THESE ARE FOR THE EXTRA ICONS. "Edit Channel", "Create Invite", etc.
+          'iconItem': 'iconItem_c69b6d',
+          'iconBase': 'iconBase_c69b6d',
+          'iconChannelInfo': 'iconNoChannelInfo_c69b6d',
+
+          // appears on "Edit Channel", "Create Invite"
+          'actionIcon': 'actionIcon_c69b6d',
+
+          'channelInfo': 'channelInfo_c69b6d',
+          // limited slot voice channels - ( $connected / $max )
+          'voiceLimitWrapper': 'wrapper__260e1',
+          'voiceLimitUsers': 'users__260e1',
+          'voiceLimitVideo': 'video__260e1',
+          // applied to users when someone has webcam on
+          'voiceLimitVideoIcon': 'videoIcon__260e1',
+          'voiceLimitTotal': 'total__260e1',
+
+          'subtitle': 'subtitle__2ea32',
+          // container for channel status. stage has "overflow" as child, voice has "statusText" as child.
+          'statusText': 'statusText__5cda9',
+          // voice only
+          'pencilIcon': 'pencilIcon__5cda9',
+
+          // threads
+          'threadsContainer': 'container__5b40b',
+          'threadsSpine': 'spine__5b40b',
+
+          // voice only
+          // unknown, appears with same suffix
+          'unreadBlobWithHangStatus': 'unreadWithHangStatus_d8bfb3',
+          // no idea what this class is but it's with unreadBlob
+          'withGuildIcon': 'withGuildIcon__2ea32',
+
+          // appears on same element as linkBottom (from css)
+          // other classes related to "Voice Limit" stuff, no idea on usage
+          'voiceLimitPopoutHeaderContainer': 'popoutHeaderContainer__260e1',
+          'voiceLimitExtraLong': 'extraLong__260e1',
+
+          // appears on same element as voiceLimitUsers and voiceLimitTotal
+          // specific stuff for voice channels, excluding "voice limit" thing.
+          // mainly for when you're in voice.
+          'voice': (
+            // these do something? they seem kinda generic weirdly enough.
+            'listGeneric': 'list_c3cd7d',
+            // listGeneric because it *SEEMS* generic
+            'collapsed': 'collapsed_c3cd7d',
+            'withGuildIcon': 'withGuildIcon_c3cd7d',
+            'disableInteraction': 'disableInteraction_a478e5',
+
+            'list': 'list__07f91',
+            'listDefault': 'listDefault__07f91',
+            'listCollapse': 'listCollapse__07f91',
+
+            'userDraggable': 'draggable__55bab',
+
+            // for users that are draggable
+            'user': 'voiceUser__07f91',
+            'overlap': 'overlap__07f91',
+            // for collapsed/hide names
+            'clickable': 'clickable__07f91',
+            'selected': 'selected__07f91',
+            // click a user
+            'userSmall': 'userSmall__07f91',
+
+            'userContent': 'content__07f91',
+
+            'avatarSpeaking': 'avatarSpeaking__07f91',
+            'userAvatar': 'userAvatar__55bab',
+            // appears to be related to stage audience stuff
+            'avatar': 'avatar__07f91',
+            'avatarSmall': 'avatarSmall__07f91',
+
+            'container': 'container__91e7c',
+            // contains usernameContainer + chipletParent
+            'usernameContainer': 'usernameContainer__91e7c',
+            'usernameFont': 'usernameFont__07f91',
+            'username': 'username__07f91',
+            'usernameSpeaking': 'usernameSpeaking__07f91',
+            'chipletParent': 'chipletParent__91e7c',
+            'chipletContainer': 'chipletContainer__91e7c',
+
+            'icons': 'icons__07f91',
+            'iconsGroup': 'iconGroup__07f91',
+            'iconSpacing': 'iconSpacing__07f91',
+            'icon': 'icon__07f91',
+            'iconServer': 'iconServer__07f91',
+            // server muted
+            'liveIconSpacing': 'liveIconSpacing__07f91',
+
+            'avatarContainer': 'avatarContainer__07f91',
+
+            // other stuff, no idea how to get these
+            'flipped': 'flipped__07f91',
+            'userLarge': 'userLarge__07f91',
+            'avatarLarge': 'avatarLarge__07f91',
+            'clanTagBadgeContainer': 'clanTagBadgeContainer_d80634',
+            'clanTagBadge': 'clanTagBadge_d80634',
+            'iconTooltipContainer': 'iconTooltipContainer_d80634',
+            'iconTooltip': 'iconTooltip_d80634',
+            'iconPriortySpeaker': 'iconPriortySpeaker__07f91',
+            // discord typo lol
+            'strikethrough': 'strikethrough__07f91',
+            'hangStatusIcon': 'hangStatusIcon__07f91',
+            'selfHangStatus': 'selfHangStatus_d80634',
+            'clanTag': 'clanTag__07f91',
+            'isOverlay': 'isOverlay__07f91',
+            'liveIcon': 'liveIcon_d80634',
+            'iconPriortySpeakerSpeaking': 'iconPriortySpeakerSpeaking__07f91',
+            // discord typo lol
+            'disabled': 'disabled__07f91',
+            'guestSuffix': 'guestSuffix__07f91'
           ),
-        'name': 'name_f37cb1',
+        ),
 
-        // it's in the header but here feels better
-        // "NEW UNREADS" with arrow
-        // Certain servers will have an older style of bar without the arrow. That style is under "old" in this category.
-        'unreadBar': (
-            'positionedContainer': 'positionedContainer__629e4',
-            // always exists on top and bottom
-            'container': 'container__7aaec',
-            // has top and bottom classes attached to this element
-            'containerPadding': 'containerPadding__7aaec',
-            'bar': 'bar__7aaec',
-            'mentionsBar': 'mentionsBar__7aaec',
-            // ping!
-            'unreadIcon': 'unreadIcon__7aaec',
-            // arrow
-            'text': 'barText__7aaec',
-
-            'top': 'top__7aaec',
-            'bottom': 'bottom__7aaec',
-
-            // no idea where these are used
-            'empty': 'emptyBar__7aaec',
-            'voiceChannelUsers': 'voiceChannelsUsers__7aaec',
-
-            // Old style that lacks an arrow. Shares classes with serverList.
-             // Placed under "positionedContainer" above.
-          ),
-        'scroller': 'scroller__629e4',
-
-        'divider': 'sectionDivider__629e4',
-
-        // placed above channel list if "Events", "Browse Channels", "Members", "Channels & Roles" etc exist
-        // Shared classes with Category and Channel
-        'overflow': 'overflow__82b15',
-        // child for name
-        'dragBefore': 'containerDragBefore__29444',
-        // used when dragging a channel/category to a place BEFORE it was originally
-        'dragAfter': 'containerDragAfter__29444',
-
-        // same as dragBefore but after
-        // The collapsable thing that will hide channels. Not every server has these.
-        'category': (
-            // Used for channel categories (like "Text Channels"
-            'container': 'containerDefault__29444',
-
-            // main container that
-            // classes in group below can all appear on the same element
-            'iconVisibility': 'iconVisibility__29444',
-            'wrapper': 'wrapper__29444',
-            'wrapperCommon': 'wrapperCommon__29444',
-            'clickable': 'clickable__29444',
-            'collapsed': 'collapsed__29444',
-            'muted': 'muted__29444',
-
-            'mainContent': 'mainContent__29444',
-            'collapseIcon': 'icon__29444',
-
-            // hide/unhide toggle
-            'name': 'name__29444',
-
-            // shares container__13cf1 and text__13cf1 with memberList
-            'children': 'children__29444',
-            // extra icons
-            'addButton': 'addButton__29444',
-            // add channel to category
-            'forceVisible': 'forceVisible__29444',
-            // without it, addButton is display none
-            'addButtonIcon': 'addButtonIcon__29444',
-
-            // unknown, appears with same suffix
-            'containerUserOver': 'containerUserOver_a08117',
-            'disableClick': 'disableClick_a08117',
-            'dismissWrapper': 'dismissWrapper__29444',
-            'dismissButton': 'dismissButton__29444',
-            'dismiss': 'dismiss__29444',
-            'voiceChannelsButton': 'voiceChannelsButton__29444',
-            'voiceChannelsButtonRefresh': 'refreshVoiceChannelsButton__29444',
-            'voiceChannelsButtonInnerRefresh': 'refreshVoiceChannelsButtonInner__29444',
-            'voiceChannelsToggleIcon': 'voiceChannelsToggleIcon__29444',
-          ),
-        // Text channels, threads, forums, voice channels, etc.
-        'channel': (
-            // Used for individual channels (like #general)
-            'dragBefore': 'containerDragBefore_c69b6d',
-            // drag either channel or category header
-            'dragAfter': 'containerDragAfter_c69b6d',
-
-            // no idea how to get this one, probably something similar
-            // These can all be found on the same element, <ul> > <li>
-            'container': 'containerDefault_c69b6d',
-            // default class on channel
-            'disabled': 'disabled_c69b6d',
-            // usually spotted when dragging categories or on voice channels when dragging text channels
-            'userOver': 'containerUserOver_c69b6d',
-
-            // a user in voice is hovered over channel
-            // These can all be found on the same element, <div> child to above group
-            'wrapper': 'wrapper__2ea32',
-            'iconVisibility': 'iconVisibility_c69b6d',
-            // why are there so many classes
-            'selectedChannel': 'selectedChannel_c69b6d',
-            // select a channel
-            'typeDefault': 'typeDefault__2ea32',
-            // regular text channels, forums,
-            'typeThread': 'typeThread__2ea32',
-            // in-channel thread or forum thread;
-            'typeVoice': 'typeVoice__2ea32',
-            // voice + stage channels
-            // These "mode" classes change the text and icon color.
-            'muted': 'modeMuted__2ea32',
-            // mute a channel
-            'selected': 'modeSelected__2ea32',
-            // select a channel
-            'unread': 'modeUnreadImportant__2ea32',
-            // get pinged
-            'connected': 'modeConnected__2ea32',
-            // join a voice call
-            'modeLocked': 'modeLocked__2ea32',
-
-            // Inaccessible voice channel (or locked channel using something like show hidden channels on Vencord)
-            'unreadBlob': 'unread__2ea32',
-            // blob on side to indicate a new message
-            'unreadBlobImportant': 'unreadImportant__2ea32',
-
-            // this is always there
-            'link': 'link__2ea32',
-
-            // <a href=""> element
-            'linkTop': 'linkTop__2ea32',
-            // holds channel name, icons, etc.
-            'linkBottom': 'linkBottom__2ea32',
-
-            // stage description, voice status; can have "withGuildIcon" class
-            'iconContainer': 'iconContainer__2ea32',
-            'icon': 'icon__2ea32',
-
-            'name': 'name__2ea32',
-
-            'children': 'children__2ea32',
-
-            // holds extra icons. settings, invite, open chat, voice limits
-            // UNRELATED TO THE ICON ON LEFT. THESE ARE FOR THE EXTRA ICONS. "Edit Channel", "Create Invite", etc.
-            'iconItem': 'iconItem_c69b6d',
-            'iconBase': 'iconBase_c69b6d',
-            'iconChannelInfo': 'iconNoChannelInfo_c69b6d',
-
-            // appears on "Edit Channel", "Create Invite"
-            'actionIcon': 'actionIcon_c69b6d',
-
-            'channelInfo': 'channelInfo_c69b6d',
-            // limited slot voice channels - ( $connected / $max )
-            'voiceLimitWrapper': 'wrapper__260e1',
-            'voiceLimitUsers': 'users__260e1',
-            'voiceLimitVideo': 'video__260e1',
-            // applied to users when someone has webcam on
-            'voiceLimitVideoIcon': 'videoIcon__260e1',
-            'voiceLimitTotal': 'total__260e1',
-
-            'subtitle': 'subtitle__2ea32',
-            // container for channel status. stage has "overflow" as child, voice has "statusText" as child.
-            'statusText': 'statusText__5cda9',
-            // voice only
-            'pencilIcon': 'pencilIcon__5cda9',
-
-            // voice only
-            // unknown, appears with same suffix
-            'unreadBlobWithHangStatus': 'unreadWithHangStatus_d8bfb3',
-            // no idea what this class is but it's with unreadBlob
-            'withGuildIcon': 'withGuildIcon__2ea32',
-
-            // appears on same element as linkBottom (from css)
-            // other classes related to "Voice Limit" stuff, no idea on usage
-            'voiceLimitPopoutHeaderContainer': 'popoutHeaderContainer__260e1',
-            'voiceLimitExtraLong': 'extraLong__260e1',
-
-            // appears on same element as voiceLimitUsers and voiceLimitTotal
-            // specific stuff for voice channels, excluding "voice limit" thing.
-            // mainly for when you're in voice.
-            'voice': (
-                // these do something? they seem kinda generic weirdly enough.
-                'listGeneric': 'list_c3cd7d',
-                // listGeneric because it *SEEMS* generic
-                'collapsed': 'collapsed_c3cd7d',
-                'withGuildIcon': 'withGuildIcon_c3cd7d',
-                'disableInteraction': 'disableInteraction_a478e5',
-
-                'list': 'list__07f91',
-                'listDefault': 'listDefault__07f91',
-                'listCollapse': 'listCollapse__07f91',
-
-                'userDraggable': 'draggable__55bab',
-
-                // for users that are draggable
-                'user': 'voiceUser__07f91',
-                'overlap': 'overlap__07f91',
-                // for collapsed/hide names
-                'clickable': 'clickable__07f91',
-                'selected': 'selected__07f91',
-                // click a user
-                'userSmall': 'userSmall__07f91',
-
-                'userContent': 'content__07f91',
-
-                'avatarSpeaking': 'avatarSpeaking__07f91',
-                'userAvatar': 'userAvatar__55bab',
-                // appears to be related to stage audience stuff
-                'avatar': 'avatar__07f91',
-                'avatarSmall': 'avatarSmall__07f91',
-
-                'container': 'container__91e7c',
-                // contains usernameContainer + chipletParent
-                'usernameContainer': 'usernameContainer__91e7c',
-                'usernameFont': 'usernameFont__07f91',
-                'username': 'username__07f91',
-                'usernameSpeaking': 'usernameSpeaking__07f91',
-                'chipletParent': 'chipletParent__91e7c',
-                'chipletContainer': 'chipletContainer__91e7c',
-
-                'icons': 'icons__07f91',
-                'iconsGroup': 'iconGroup__07f91',
-                'iconSpacing': 'iconSpacing__07f91',
-                'icon': 'icon__07f91',
-                'iconServer': 'iconServer__07f91',
-                // server muted
-                'liveIconSpacing': 'liveIconSpacing__07f91',
-
-                'avatarContainer': 'avatarContainer__07f91',
-
-                // other stuff, no idea how to get these
-                'flipped': 'flipped__07f91',
-                'userLarge': 'userLarge__07f91',
-                'avatarLarge': 'avatarLarge__07f91',
-                'clanTagBadgeContainer': 'clanTagBadgeContainer_d80634',
-                'clanTagBadge': 'clanTagBadge_d80634',
-                'iconTooltipContainer': 'iconTooltipContainer_d80634',
-                'iconTooltip': 'iconTooltip_d80634',
-                'iconPriortySpeaker': 'iconPriortySpeaker__07f91',
-                // discord typo lol
-                'strikethrough': 'strikethrough__07f91',
-                'hangStatusIcon': 'hangStatusIcon__07f91',
-                'selfHangStatus': 'selfHangStatus_d80634',
-                'clanTag': 'clanTag__07f91',
-                'isOverlay': 'isOverlay__07f91',
-                'liveIcon': 'liveIcon_d80634',
-                'iconPriortySpeakerSpeaking': 'iconPriortySpeakerSpeaking__07f91',
-                // discord typo lol
-                'disabled': 'disabled__07f91',
-                'guestSuffix': 'guestSuffix__07f91'
-              ),
-          ),
-
-        // Weird "other" stuff that kinda doesn't fit with "Category" and "Channel".
-        // "Events", "Browse Channels", "Members", "Channels & Roles" etc above start of channel list
-        // The overall container can likely be targeted as #{c(sidebar server scroller)}>ul>:is(li,div):not([class],[style]) {}
-        // Weirdly enough "Members" is that lone <div> which wraps around <li>
-        'extras': (
-            'focusTarget': 'focusTarget__89030',
-            'basicChannelRowLink': 'basicChannelRowLink__2ea32',
-            'content': 'content__65844',
-          ),
-
-        // UNKNOWNS
+      // Weird "other" stuff that kinda doesn't fit with "Category" and "Channel".
+      // "Events", "Browse Channels", "Members", "Channels & Roles" etc above start of channel list
+      // The overall container can likely be targeted as #{c(sidebar server scroller)}>ul>:is(li,div):not([class],[style]) {}
+      // Weirdly enough "Members" is that lone <div> which wraps around <li>
+      'extras': (
+        'focusTarget': 'focusTarget__89030',
+        'basicChannelRowLink': 'basicChannelRowLink__2ea32',
+        'content': 'content__65844',
       ),
+    ),
 
     // Panels include your avatar, username, mic, headphones and settings icons
     // as well as voice related stuff
@@ -3317,10 +3321,6 @@ $classes: (
     'boostProgressBar': 'progressBar_eff079',
     // boost background
     'boostProgressBarContainer': 'progressBarContainer_eff079',
-
-    // dark background
-    'threadsContainer': 'container__5b40b',
-    'threadsSpine': 'spine__5b40b',
 
     'loadingAnimationContainer': 'container__3b43f',
     // container has animation tag on it
@@ -3733,25 +3733,25 @@ $classes: (
 
       // Popoout: click on user in chat or member list
       'popout': (
-          'bitesize': (
-            'header': 'header__5be3e',
-            'body': 'body__5be3e',
-            'footer': 'footer__5be3e',
+        'bitesize': (
+          'header': 'header__5be3e',
+          'body': 'body__5be3e',
+          'footer': 'footer__5be3e',
+        ),
+
+        // i've thrown everything under there because i don't know where other ones are. all on same line
+        // these appear to be for a11y "show role colours next to names" option
+        'roleCircle': (
+            'svg': 'svg__4f569',
+            'background': 'background__4f569',
+            'dot': 'dot__4f569',
+            'dotBorderColor': 'dotBorderColor__4f569',
+            'roleCircle': 'roleCircle__4f569',
+            'dotBorderBase': 'dotBorderBase__4f569',
           ),
 
-          // i've thrown everything under there because i don't know where other ones are. all on same line
-          // these appear to be for a11y "show role colours next to names" option
-          'roleCircle': (
-              'svg': 'svg__4f569',
-              'background': 'background__4f569',
-              'dot': 'dot__4f569',
-              'dotBorderColor': 'dotBorderColor__4f569',
-              'roleCircle': 'roleCircle__4f569',
-              'dotBorderBase': 'dotBorderBase__4f569',
-            ),
-
-          'desaturateUserColors': 'desaturateUserColors__41f68',
-        ),
+        'desaturateUserColors': 'desaturateUserColors__41f68',
+      ),
 
       // Within settings, it's in Profiles. Chances are overlap with popout exist here.
       'settings': (
@@ -4092,85 +4092,253 @@ $classes: (
 
       // used with do not disturb and invis
       'accountSwitcher': (
-          'focused': 'focused_d40c56',
-          // put on a parent class, one actually with an "item-" class
-          'item': 'userMenuItem_d40c56',
-          // nested inside *another* item
-          'username': 'userMenuUsername_d40c56',
-          'text': 'userMenuText_d40c56',
-          'discriminator': 'userMenuDiscriminator_d40c56',
-          'activeIcon': 'activeIcon_d40c56',
-          // child "circle" changes fill via js
-        ),
+        'focused': 'focused_d40c56',
+        // put on a parent class, one actually with an "item-" class
+        'item': 'userMenuItem_d40c56',
+        // nested inside *another* item
+        'username': 'userMenuUsername_d40c56',
+        'text': 'userMenuText_d40c56',
+        'discriminator': 'userMenuDiscriminator_d40c56',
+        'activeIcon': 'activeIcon_d40c56',
+        // child "circle" changes fill via js
+      ),
     ),
 
     // Best seen in Voice + Video settings, right at the top there's two
     'dropdown': (
-        'wrapper': 'wrapper__3f413',
-        'select': 'select__3f413',
-        'filled': 'lookFilled__3f413',
+      'wrapper': 'wrapper__3f413',
+      'select': 'select__3f413',
+      'filled': 'lookFilled__3f413',
 
-        'open': 'open__3f413',
+      'open': 'open__3f413',
 
-        'value': 'value__3f413',
-        'icons': 'icons__3f413',
+      'value': 'value__3f413',
+      'icons': 'icons__3f413',
 
-        'popout': 'popout__3f413',
-        'measurement': 'measurement__3f413',
-        // there's a hidden one next to the popout???
-        'option': 'option__3f413',
-        'selectedIcon': 'selectedIcon__3f413',
-        // checkmark
-        'focused': 'focused__3f413',
-        // hover over item
-        'multi': 'multi__3f413',
+      'popout': 'popout__3f413',
+      'measurement': 'measurement__3f413',
+      // there's a hidden one next to the popout???
+      'option': 'option__3f413',
+      'selectedIcon': 'selectedIcon__3f413',
+      // checkmark
+      'focused': 'focused__3f413',
+      // hover over item
+      'multi': 'multi__3f413',
 
-        // i can't find this class but it's in a rule
-        // idk where lmao
-        'searchable': 'searchable__3f413',
-        'searchInput': 'searchInput__3f413',
-        'editing': 'editing__3f413',
-        'label': 'label_f6639d',
-        'selectPositionTop': 'selectPositionTop__3f413',
-        'disabled': 'disabled__3f413',
-        'hidden': 'hidden_f6639d',
-        'iconsContainer': 'iconsContainer__3f413',
-        'iconsCenter': 'iconsCenter__3f413',
-        'placeholder': 'placeholder__3f413',
-        'popoutPositionTop': 'popoutPositionTop__3f413',
-        'clear': 'clear__3f413',
-        'dropdownIcon': 'dropdownIcon__3f413',
-        'noResults': 'noResults__3f413',
-        'loading': 'loading__3f413',
-        'loadingSpinner': 'loadingSpinner__3f413',
-        'searchableSelect': 'searchableSelect__3f413',
-        'prefix': 'prefix__3f413',
-        'suffix': 'suffix__3f413',
-        'content': 'content__3f413',
-        'optionPillWrapper': 'optionPillWrapper_f6639d',
-        'optionPillContainer': 'optionPillContainer__3f413',
-        'optionPillItem': 'optionPillItem__3f413',
-        'optionPill': 'optionPill__3f413',
-        'optionPillBtn': 'optionPillBtn__3f413',
-        'deleteOptionIcon': 'deleteOptionIcon__3f413',
-        'noScrollbar': 'noScrollbar__3f413',
-        'multiSelectCheckbox': 'multiSelectCheckbox__3f413',
-        'unchecked': 'unchecked__3f413',
-        'checked': 'checked__3f413',
-        'multiSelectCheck': 'multiSelectCheck__3f413',
+      // i can't find this class but it's in a rule
+      // idk where lmao
+      'searchable': 'searchable__3f413',
+      'searchInput': 'searchInput__3f413',
+      'editing': 'editing__3f413',
+      'label': 'label_f6639d',
+      'selectPositionTop': 'selectPositionTop__3f413',
+      'disabled': 'disabled__3f413',
+      'hidden': 'hidden_f6639d',
+      'iconsContainer': 'iconsContainer__3f413',
+      'iconsCenter': 'iconsCenter__3f413',
+      'placeholder': 'placeholder__3f413',
+      'popoutPositionTop': 'popoutPositionTop__3f413',
+      'clear': 'clear__3f413',
+      'dropdownIcon': 'dropdownIcon__3f413',
+      'noResults': 'noResults__3f413',
+      'loading': 'loading__3f413',
+      'loadingSpinner': 'loadingSpinner__3f413',
+      'searchableSelect': 'searchableSelect__3f413',
+      'prefix': 'prefix__3f413',
+      'suffix': 'suffix__3f413',
+      'content': 'content__3f413',
+      'optionPillWrapper': 'optionPillWrapper_f6639d',
+      'optionPillContainer': 'optionPillContainer__3f413',
+      'optionPillItem': 'optionPillItem__3f413',
+      'optionPill': 'optionPill__3f413',
+      'optionPillBtn': 'optionPillBtn__3f413',
+      'deleteOptionIcon': 'deleteOptionIcon__3f413',
+      'noScrollbar': 'noScrollbar__3f413',
+      'multiSelectCheckbox': 'multiSelectCheckbox__3f413',
+      'unchecked': 'unchecked__3f413',
+      'checked': 'checked__3f413',
+      'multiSelectCheck': 'multiSelectCheck__3f413',
+    ),
+
+    // Click on the emoji, sticker or gif within the chatbar
+    'expressionPicker': (
+      'positionLayer': 'positionLayer__08434',
+      // has relevant theme-[dark/light] class applied to it
+      'positionContainer': 'positionContainer__08434',
+      'drawerSizingWrapper': 'drawerSizingWrapper__08434',
+      'resizeHandle': 'resizeHandle__08434',
+      'contentWrapper': 'contentWrapper__08434',
+      'nav': 'nav__08434',
+      'navItem': 'navItem__08434',
+      'navButton': 'navButton__08434',
+      'navButtonActive': 'navButtonActive__08434',
+
+      'inspector': 'inspector_aeaaeb',
+
+      // Emoji within charbar combined popout
+      'emoji': (
+        'wrapper': 'wrapper_c0e32c',
+        // want just floating? :not( below ). has ID
+        'hasTabWrapper': 'emojiPickerHasTabWrapper_c0e32c',
+        'picker': 'emojiPicker_c0e32c',
+
+        'header': 'header_c0e32c',
+        'searchBar': 'searchBar_c0e32c',
+        'skinSelector': 'diversitySelector_c0e32c',
+        'skinSelectorButton': 'diversitySelectorButton_a45a2a',
+        'skinSelectorImage': 'diversityEmojiItemImage_a45a2a',
+        // uses style for image, asset will likely change with each update though
+        // click the clapping emoji for these
+        'skinOptions': 'diversitySelectorOptions_a45a2a',
+        'skinOptionsEmojiItem': 'diversityEmojiItem_a45a2a',
+        // if you wish to select one skin type, the above class has `data-list-item-id="diversity___item-n"`
+        // where n is 0-5; 0 being yellow, 1 being lightest and 5 being darkest
+        'body': 'bodyWrapper_c0e32c',
+        'pickerListWrapper': 'emojiPickerListWrapper_c0e32c',
+        'listWrapper': 'listWrapper_c656ac',
+        'list': 'list_c656ac',
+        'categorySection': 'categorySection_c656ac',
+        'categoryHeader': 'header_c656ac',
+        'categoryHeaderWrapper': 'wrapper__14245',
+        'categoryHeaderInner': 'header__14245',
+        'listRowLarge': 'emojiListRowLargeSize_fc7141',
+        // widen the modal above 400px wide for rows
+
+        'item': 'emojiItem_fc7141',
+        'itemLarge': 'emojiItemLarge_fc7141',
+        'itemSelected': 'emojiItemSelected_fc7141',
+        'imageLoading': 'imageLoading__1859b',
+
+        'inspectorGrid': 'inspector_c0e32c',
+        // bar at bottom should use the class under expressionPicker.
+        'graphicPrimary': 'graphicPrimary_aeaaeb',
+        'emoji': 'emoji__045fa',
+        'textWrapper': 'textWrapper_aeaaeb',
+        'titlePrimary': 'titlePrimary_aeaaeb',
+        'favorite': 'favorite_aeaaeb',
+        // it's a star~
+        'titleSecondary': 'titleSecondary_aeaaeb',
+        'graphicSecondary': 'graphicSecondary_aeaaeb',
+
+        'categoryList': 'categoryList_c0e32c',
+
+        'categoryItem': 'categoryItem_b9ee0c',
+        'defaultCategory': 'categoryItemDefaultCategory_b9ee0c',
+        'defaultCategorySelected': 'categoryItemDefaultCategorySelected_b9ee0c',
+        'categoryIcon': 'categoryIcon_b9ee0c',
+        'categorySeparator': 'guildCategorySeparator_b9ee0c',
+        'unicodeShortcut': 'unicodeShortcut_b9ee0c',
+        // for all the non-server emotes
+        'unicodeShortcutInvisible': 'unicodeShortcutInvisible_b9ee0c',
+
+        'premiumRetention': 'premiumRetentionNotice_a606ef',
+
+        // When you're hoving over a message, click the add reaction button. This also includes "super" reactions.
+        'floating': (
+          'sparkleStar': 'sparkleStar__24af7',
+          'sparklePlus': 'sparklePlus__24af7',
+
+          // only named so as it's the dumb preview thing that begs for the user to buy nitro
+          'nonNitroBlocker': (
+            'wrapper': 'wrapper__97f37',
+            'banner': 'banner__97f37',
+            // video, with autoplay in the tag.
+            'hasTrialOffer': 'hasTrialOffer__97f37',
+            'content': 'content__97f37',
+            'header': 'header__97f37',
+              'headerText': 'headerText__97f37',
+              'subheaderText': 'subheaderText__97f37',
+              'ctaActionWrapper': 'ctaActionWrapper__97f37',
+            ),
+
+            'upsellContainer': 'upsellContainer_a3bc57',
+            // "Unlock these emojis with Nitro" shows up when reacting
+          ),
+        ),
+
+      // Gif within chatbar combined popout
+      'gif': (
+        'container': 'container_fed6d3',
+        // has ID on it
+        'header': 'header_fed6d3',
+        'searchBar': 'searchBar_fed6d3',
+        'content': 'content_fed6d3',
+        'scroller': 'container_d02962',
+        'resultPlaceholder': 'placeholder__2dc39',
+        'result': 'result__2dc39',
+        'resultFocused': 'focused_bad108',
+        'favoritesFade': 'categoryFadeBlurple_d02962',
+        'categoryFade': 'categoryFade_d02962',
+        'categoryText': 'categoryText_d02962',
+        'categoryIcon': 'categoryIcon_d02962',
+        'categoryName': 'categoryName_d02962',
+        'endContainer': 'endContainer__2dc39',
+        'results': 'results__2dc39',
+        'noResultsWrapper': 'wrapper__29ebd',
+        'sadImage': 'sadImage__29ebd',
+
+        // search "hentai" or something
+        // shown in favourites when they're empty or something. i used a plugin that allowed for searching and it brought these up.
+        'emptyHintCard': 'emptyHintCard__2dc39',
+        'emptyHintFavourite': 'emptyHintFavorite__2dc39',
+        // star
       ),
+
+      // Sticker within chatbar combined popout
+      'sticker': (
+        'wrapper': 'wrapper__8ef02',
+        // has ID on it
+        'header': 'header__8ef02',
+        'searchWrapper': 'wrapper_cdf8a9',
+        // for the bar, use child of above
+        'listWrapper': 'listWrapper__8ef02',
+        'gridWrapper': 'wrapper_e94b8c',
+
+        // holds stickers in grid
+        'packHeader': 'packHeader_e94b8c',
+        // has a pos sticky and top 0
+        'packRow': 'row_c6367b',
+        'sticker': 'sticker_c6367b',
+        // border radius and padding, doesn't apply to in-chat sticker
+        'stickerCursor': 'sticker_e94b8c',
+        // only cursor, doesn't apply to in-chat sticker
+        'inspected': 'stickerInspected_c6367b',
+        'inspectedIndicator': 'inspectedIndicator_c6367b',
+        // hover over a sticker
+        'upsell': 'upsell_ac65bb',
+        // In a server you can manage stickers on with at least 1 free slot
+        'emptyGuildUpsell': 'emptyGuildUpsell_e94b8c',
+        // also above but zero stickers
+        // bar at bottom should be under GSE
+        'categoryList': 'categoryList__3ad28',
+        'categorySeparator': 'guildCategorySeparator__3ad28',
+        'category': 'stickerCategory__3ad28',
+        'categoryGeneric': 'stickerCategoryGeneric__3ad28',
+        // used on freq used
+        'categoryGenericSelected': 'stickerCategoryGenericSelected__3ad28',
+
+        'stickerSearchSuggestion': 'searchSuggestion_e94b8c',
+
+        // search result empty
+        'standardStickerShortcut': 'standardStickerShortcut__3ad28',
+
+        // removed from tree once scrolled past. fun.
+        // deprecated
+        'listGuildIcon': '@alias modals sidebarList guildIcon',
+      ),
+    ),
 
     // Inbox, Pinned and Threads dropdowns.
     // You can also think of these as "Has a distinct header"
     // There seriously might be NOTHING shared
     'headerDropdown': (
-        'messagesPopoutWrap': 'messagesPopoutWrap__45690',
-        // INBOX + PINNED
-        'messagesPopout': 'messagesPopout__45690',
-        // INBOX + PINNED
-        'header': 'header__45690',
-        // INBOX + UNREAD + PINNED
-      ),
+      'messagesPopoutWrap': 'messagesPopoutWrap__45690',
+      // INBOX + PINNED
+      'messagesPopout': 'messagesPopout__45690',
+      // INBOX + PINNED
+      'header': 'header__45690',
+      // INBOX + UNREAD + PINNED
+    ),
 
     'inbox': (
       'popout': 'recentMentionsPopout__95796',
@@ -4795,9 +4963,6 @@ $classes: (
         'iconContainer': 'iconContainer_a45028',
         'iconVisible': 'visible_a45028',
         'iconClear': 'clear_a45028',
-
-        // deprecated
-        'icon': '@alias friends searchIcon',
       ),
 
     // Within server settings, click "members" and then "prune" at the top
@@ -4998,206 +5163,41 @@ $classes: (
 
     // Ctrl+N or click the green + at the bottom of the server list
     'addServer': (
-        'modal': 'container__024d4',
+      'modal': 'container__024d4',
 
-        // first screen "Create a server"
-        'templateButton': 'container_eb2cd2',
-        'templateIcon': 'icon_eb2cd2',
-        'templateButtonText': 'text_eb2cd2',
-        'templateArrow': 'arrow_eb2cd2',
-        'createAServerHeader': 'header_c04f35',
-        'createAServerTitle': 'title_c04f35',
-        'createAServerCloseButton': 'closeButton_c04f35',
-        'createAServerSubtitle': 'subtitle_c04f35',
-        'createAServerTemplatesList': 'templatesList_c04f35',
-        'footerTitle': 'footerTitle_c04f35',
+      // first screen "Create a server"
+      'templateButton': 'container_eb2cd2',
+      'templateIcon': 'icon_eb2cd2',
+      'templateButtonText': 'text_eb2cd2',
+      'templateArrow': 'arrow_eb2cd2',
+      'createAServerHeader': 'header_c04f35',
+      'createAServerTitle': 'title_c04f35',
+      'createAServerCloseButton': 'closeButton_c04f35',
+      'createAServerSubtitle': 'subtitle_c04f35',
+      'createAServerTemplatesList': 'templatesList_c04f35',
+      'footerTitle': 'footerTitle_c04f35',
 
-        // second screen "Tell us more about your server"
-        'tellUsMoreHeader': 'header__78f69',
-        'tellUsMoreTitle': 'title__78f69',
-        'tellUsMoreSubtitle': 'subtitle__78f69',
-        'tellUsMoreBackButton': 'backButton__78f69',
-        'tellUsMoreOptionsList': 'optionsList__78f69',
-        'tellUsMoreCloseButton': 'closeButton__78f69',
-        'tellUsMoreSkip': 'skip__78f69',
+      // second screen "Tell us more about your server"
+      'tellUsMoreHeader': 'header__78f69',
+      'tellUsMoreTitle': 'title__78f69',
+      'tellUsMoreSubtitle': 'subtitle__78f69',
+      'tellUsMoreBackButton': 'backButton__78f69',
+      'tellUsMoreOptionsList': 'optionsList__78f69',
+      'tellUsMoreCloseButton': 'closeButton__78f69',
+      'tellUsMoreSkip': 'skip__78f69',
 
-        // third screen "Customise your server"
-        'customiseHeader': 'header_b917ac',
-        'customiseTitle': 'title_b917ac',
-        'customiseCreateServer': 'createGuild_b917ac',
-        'customiseUploadIcon': 'uploadIcon_b917ac',
+      // third screen "Customise your server"
+      'customiseHeader': 'header_b917ac',
+      'customiseTitle': 'title_b917ac',
+      'customiseCreateServer': 'createGuild_b917ac',
+      'customiseUploadIcon': 'uploadIcon_b917ac',
 
-        // alternate second screen "Join a server" - click already have an invite button
-        'joinAServerHeader': 'header__991a0',
-        'joinAServerInput': 'input__991a0',
-        'joinAServerRowContainer': 'rowContainer__991a0',
-        // used as pointer to discovery
-      ),
-
-    // Click on the emoji, sticker or gif within the chatbar
-    'expressionPicker': (
-        'positionLayer': 'positionLayer__08434',
-        // has relevant theme-[dark/light] class applied to it
-        'positionContainer': 'positionContainer__08434',
-        'drawerSizingWrapper': 'drawerSizingWrapper__08434',
-        'resizeHandle': 'resizeHandle__08434',
-        'contentWrapper': 'contentWrapper__08434',
-        'nav': 'nav__08434',
-        'navItem': 'navItem__08434',
-        'navButton': 'navButton__08434',
-        'navButtonActive': 'navButtonActive__08434',
-
-        'inspector': 'inspector_aeaaeb',
-      ),
-
-    // Gif within chatbar combined popout
-    'gif': (
-        'container': 'container_fed6d3',
-        // has ID on it
-        'header': 'header_fed6d3',
-        'searchBar': 'searchBar_fed6d3',
-        'content': 'content_fed6d3',
-        'scroller': 'container_d02962',
-        'resultPlaceholder': 'placeholder__2dc39',
-        'result': 'result__2dc39',
-        'resultFocused': 'focused_bad108',
-        'favoritesFade': 'categoryFadeBlurple_d02962',
-        'categoryFade': 'categoryFade_d02962',
-        'categoryText': 'categoryText_d02962',
-        'categoryIcon': 'categoryIcon_d02962',
-        'categoryName': 'categoryName_d02962',
-        'endContainer': 'endContainer__2dc39',
-        'results': 'results__2dc39',
-        'noResultsWrapper': 'wrapper__29ebd',
-        'sadImage': 'sadImage__29ebd',
-
-        // search "hentai" or something
-        // shown in favourites when they're empty or something. i used a plugin that allowed for searching and it brought these up.
-        'emptyHintCard': 'emptyHintCard__2dc39',
-        'emptyHintFavourite': 'emptyHintFavorite__2dc39',
-        // star
-      ),
-
-    // Sticker within chatbar combined popout
-    'sticker': (
-        'wrapper': 'wrapper__8ef02',
-        // has ID on it
-        'header': 'header__8ef02',
-        'searchWrapper': 'wrapper_cdf8a9',
-        // for the bar, use child of above
-        'listWrapper': 'listWrapper__8ef02',
-        'gridWrapper': 'wrapper_e94b8c',
-
-        // holds stickers in grid
-        'packHeader': 'packHeader_e94b8c',
-        // has a pos sticky and top 0
-        'packRow': 'row_c6367b',
-        'sticker': 'sticker_c6367b',
-        // border radius and padding, doesn't apply to in-chat sticker
-        'stickerCursor': 'sticker_e94b8c',
-        // only cursor, doesn't apply to in-chat sticker
-        'inspected': 'stickerInspected_c6367b',
-        'inspectedIndicator': 'inspectedIndicator_c6367b',
-        // hover over a sticker
-        'upsell': 'upsell_ac65bb',
-        // In a server you can manage stickers on with at least 1 free slot
-        'emptyGuildUpsell': 'emptyGuildUpsell_e94b8c',
-        // also above but zero stickers
-        // bar at bottom should be under GSE
-        'categoryList': 'categoryList__3ad28',
-        'categorySeparator': 'guildCategorySeparator__3ad28',
-        'category': 'stickerCategory__3ad28',
-        'categoryGeneric': 'stickerCategoryGeneric__3ad28',
-        // used on freq used
-        'categoryGenericSelected': 'stickerCategoryGenericSelected__3ad28',
-
-        'stickerSearchSuggestion': 'searchSuggestion_e94b8c',
-
-        // search result empty
-        'standardStickerShortcut': 'standardStickerShortcut__3ad28',
-
-        // removed from tree once scrolled past. fun.
-        // deprecated
-        'listGuildIcon': '@alias modals sidebarList guildIcon',
-      ),
-
-    // Emoji within charbar combined popout
-    'emoji': (
-        'wrapper': 'wrapper_c0e32c',
-        // want just floating? :not( below ). has ID
-        'hasTabWrapper': 'emojiPickerHasTabWrapper_c0e32c',
-        'picker': 'emojiPicker_c0e32c',
-
-        'header': 'header_c0e32c',
-        'searchBar': 'searchBar_c0e32c',
-        'skinSelector': 'diversitySelector_c0e32c',
-        'skinSelectorButton': 'diversitySelectorButton_a45a2a',
-        'skinSelectorImage': 'diversityEmojiItemImage_a45a2a',
-        // uses style for image, asset will likely change with each update though
-        // click the clapping emoji for these
-        'skinOptions': 'diversitySelectorOptions_a45a2a',
-        'skinOptionsEmojiItem': 'diversityEmojiItem_a45a2a',
-        // if you wish to select one skin type, the above class has `data-list-item-id="diversity___item-n"`
-        // where n is 0-5; 0 being yellow, 1 being lightest and 5 being darkest
-        'body': 'bodyWrapper_c0e32c',
-        'pickerListWrapper': 'emojiPickerListWrapper_c0e32c',
-        'listWrapper': 'listWrapper_c656ac',
-        'list': 'list_c656ac',
-        'categorySection': 'categorySection_c656ac',
-        'categoryHeader': 'header_c656ac',
-        'listRowLarge': 'emojiListRowLargeSize_fc7141',
-        // widen the modal above 400px wide for rows
-        'item': 'emojiItem_fc7141',
-        'itemLarge': 'emojiItemLarge_fc7141',
-        'itemSelected': 'emojiItemSelected_fc7141',
-        'imageLoading': 'imageLoading__1859b',
-
-        'inspectorGrid': 'inspector_c0e32c',
-        // bar at bottom should use the class under expressionPicker.
-        'graphicPrimary': 'graphicPrimary_aeaaeb',
-        'emoji': 'emoji__045fa',
-        'textWrapper': 'textWrapper_aeaaeb',
-        'titlePrimary': 'titlePrimary_aeaaeb',
-        'favorite': 'favorite_aeaaeb',
-        // it's a star~
-        'titleSecondary': 'titleSecondary_aeaaeb',
-        'graphicSecondary': 'graphicSecondary_aeaaeb',
-
-        'categoryList': 'categoryList_c0e32c',
-
-        'categoryItem': 'categoryItem_b9ee0c',
-        'defaultCategory': 'categoryItemDefaultCategory_b9ee0c',
-        'defaultCategorySelected': 'categoryItemDefaultCategorySelected_b9ee0c',
-        'categoryIcon': 'categoryIcon_b9ee0c',
-        'categorySeparator': 'guildCategorySeparator_b9ee0c',
-        'unicodeShortcut': 'unicodeShortcut_b9ee0c',
-        // for all the non-server emotes
-        'unicodeShortcutInvisible': 'unicodeShortcutInvisible_b9ee0c',
-
-        'premiumRetention': 'premiumRetentionNotice_a606ef',
-
-        // When you're hoving over a message, click the add reaction button. This also includes "super" reactions.
-        'floating': (
-            'sparkleStar': 'sparkleStar__24af7',
-            'sparklePlus': 'sparklePlus__24af7',
-
-            // only named so as it's the dumb preview thing that begs for the user to buy nitro
-            'nonNitroBlocker': (
-                'wrapper': 'wrapper__97f37',
-                'banner': 'banner__97f37',
-                // video, with autoplay in the tag.
-                'hasTrialOffer': 'hasTrialOffer__97f37',
-                'content': 'content__97f37',
-                'header': 'header__97f37',
-                'headerText': 'headerText__97f37',
-                'subheaderText': 'subheaderText__97f37',
-                'ctaActionWrapper': 'ctaActionWrapper__97f37',
-              ),
-
-            'upsellContainer': 'upsellContainer_a3bc57',
-            // "Unlock these emojis with Nitro" shows up when reacting
-          ),
-      ),
+      // alternate second screen "Join a server" - click already have an invite button
+      'joinAServerHeader': 'header__991a0',
+      'joinAServerInput': 'input__991a0',
+      'joinAServerRowContainer': 'rowContainer__991a0',
+      // used as pointer to discovery
+    ),
 
     'pinned': (
       'messageGroup': 'messageGroupWrapper__45690',
@@ -6596,14 +6596,6 @@ $classes: (
           'connectionDebugTextDetails': 'popoutTextDetails_effb26',
           'connectionDebugBottom': 'popoutBottom_effb26',
           'connectionDebugSecured': 'secured_effb26',
-          'emojiPickerSuperReactionButton': 'label__0d242',
-          'emojiPickerCategoryHeaderWrapper': 'wrapper__14245',
-          'emojiPickerCategoryHeader': 'header__14245',
-          'emojiPickerItemDisabled': 'emojiItemDisabled__843ea',
-          'emojiCategoryGuildItem': 'categoryItemGuildCategory_b9ee0c',
-          'emojiPickerPremiumPromo': 'premiumPromo__3a1b6',
-          'emojiPickerPremiumPromoClose': 'premiumPromoClose__3a1b6',
-          'emojiPickerPremiumPromoTitle': 'premiumPromoTitle__3a1b6',
           'groupInvitePopoutFriendWrapper': 'friendWrapper_bbd192',
           'groupInvitePopoutFriend': 'friend_bbd192',
           'groupInvitePopoutFriendSelected': 'friendSelected_bbd192',

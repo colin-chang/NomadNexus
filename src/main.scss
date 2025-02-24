@@ -93,7 +93,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --input-shading: rgba(0, 0, 0, 0.3);
   // ALSO EDITABLE
   --normal-text: #36363c;
-  --text-muted: #75757e;
+  --muted-text: #75757e;
   --primary-text: #303035;
   --secondary-text: #60606a;
   }
@@ -109,7 +109,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --input-shading: rgba(255, 255, 255, 0.05);
   // ALSO EDITABLE
   --normal-text: #d8d8db;
-  --text-muted: #aeaeb4;
+  --muted-text: #aeaeb4;
   --primary-text: #ffffff;
   --secondary-text: #c8c8cd;
   }
@@ -125,7 +125,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --input-shading: rgba(255, 255, 255, 0.05);
   // ALSO EDITABLE
   --normal-text: #fbfbfb;
-  --text-muted: #94949c;
+  --muted-text: #94949c;
   --primary-text: #fbfbfb;
   --secondary-text: #aeaeb4;
   }
@@ -141,7 +141,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --input-shading: rgba(255, 255, 255, 0.05);
   // ALSO EDITABLE
   --normal-text: #dcdcde;
-  --text-muted: #86868e;
+  --muted-text: #86868e;
   --primary-text: #e7e7e9;
   --secondary-text: #9c9ca3;
 }

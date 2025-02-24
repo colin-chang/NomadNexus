@@ -4,10 +4,17 @@
   #{c(guildList guilds)} {
     margin-bottom: var(--custom-app-panels-height);
     background: transparent;
-    padding: 10px 0;
+    padding-top: 10px;
   }
+}
 
-  // HOME BUTTON
+// PILL
+#{c(guildList pillItem)} {
+  filter: drop-shadow(0.5px 0 3px cv('color.main'));
+}
+
+// HOME BUTTON
+#{c(main visualRefresh)} {
   #{c(guildList homeWrapper)} {
     background-color: cv('shading.card');
     &:not(#{c(guildList acronym)}) {

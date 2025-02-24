@@ -18,10 +18,45 @@
       background-color: hsl(from cv('color.success') h s l/.8);
     }
   }
+  &#{c(button colorRed)} {
+    background-color: cv('color.danger');
+    &:hover {
+      background-color: hsl(from cv('color.danger') h s l/.8);
+    }
+  }
   &#{c(button colorWhite)} {
     color: cv('color.main');
     &:hover {
       color: cv('color.hover');
+    }
+  }
+}
+
+
+// BUTTON OUTLINE
+#{c(button lookOutlined)} {
+  &:is(#{c(button colorBrand)}, #{c(button colorPrimary)}) {
+    border-color: cv('color.main');
+    &:hover {
+      border-color: cv('color.hover');
+      background-color: cv('color.hover');
+    }
+  }
+  &#{c(button colorGreen)} {
+    border-color: cv('color.success');
+    &:hover {
+      border-color: hsl(from cv('color.success') h s l/.8);
+      background-color: hsl(from cv('color.success') h s l/.8);
+    }
+  }
+  &#{c(button colorRed)} {
+    background-color: transparent;
+    border-color: cv('color.danger');
+    color: var(--button-outline-brand-text);
+    &:hover {
+      border-color: hsl(from cv('color.danger') h s l/.8);
+      background-color: hsl(from cv('color.danger') h s l/.8);
+      color: var(--button-outline-brand-text);
     }
   }
 }
