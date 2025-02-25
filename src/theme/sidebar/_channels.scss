@@ -51,7 +51,18 @@
   color: cv('color.main');
 }
 
-// CHANNEL CONTENT
+// CHANNEL
+// hidden vars
+:root {
+  --channel-default: var(--text-tertiary);
+  --channel-muted: var(--interactive-muted);
+  --channel-hover: var(--interactive-hover);
+  --channel-selected: var(--interactive-active);
+  --channel-selected-bg: var(--hsl-main-color);
+  --channel-unread: var(--hsl-main-color);
+  --channel-unread-hover: var(--hsl-hover-color);
+}
+
 #{c(sidebar server channel link)} {
   transition: all 0.15s ease-in-out;
   margin-left: 4px;
@@ -70,43 +81,63 @@
   height: 18px;
   margin-right: 3px;
   transition: all 0.15s ease-in-out;
+  color: var(--channel-default);
 }
-#{c(sidebar server channel name)},
-%channelActionIcon {
+#{c(sidebar server channel name)} {
   transition: all 0.15s ease-in-out;
+  color: var(--channel-default);
 }
 #{c(sidebar server channel wrapper)} {
+  
+  // MUTED
+  &#{c(sidebar server channel muted)} {
+    #{c(sidebar server channel link)} {
+      color: var(--channel-muted);
+    }
+  }
+
   // HOVER
-  &:hover {
+  &:hover,
+  &#{c(sidebar server channel muted)}:hover {
     #{c(sidebar server channel link)} {
       background: cv('shading.hover');
     }
+    #{c(sidebar server channel name)},
+    #{c(sidebar server channel icon)} {
+      color: var(--channel-hover);
+    }
   }
+
   // UNREAD
   &#{c(sidebar server channel unread)} {
     #{c(sidebar server channel name)} {
-      color: cv('color.main');
+      color: var(--channel-unread);
       text-shadow: 0 0 3px;
     }
     #{c(sidebar server channel icon)} {
-      color: cv('color.main');
+      color: var(--channel-unread);
       filter: drop-shadow(0 0 3px);
     }
     &:hover {
       :is(#{c(sidebar server channel name)}, #{c(sidebar server channel icon)}) {
-        color: cv('color.hover');
+        color: var(--channel-unread-hover);
       }
     }
   }
+
   // SELECTED
   &#{c(sidebar server channel selected)} {
     #{c(sidebar server channel link)} {
       background-color: transparent;
       &::before {
         right: 0;
-        background: cv('color.main');
+        background: var(--channel-selected-bg);
         animation: cv-channel-select 0.3s ease-in-out;
       }
+    }
+    #{c(sidebar server channel name)},
+    #{c(sidebar server channel icon)} {
+      color: var(--channel-selected);
     }
   }
 

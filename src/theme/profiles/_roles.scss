@@ -1,0 +1,26 @@
+@use 'backend' as *;
+
+#{c(profile outer)}:not(#{c(profile themed)}) #{c(role role)} { //to not hit custom themes
+  background: transparent;
+  border-color: transparent;
+  position: relative;
+  #{c(role removeButton)} {
+    position: static;
+  }
+  #{c(role removeIcon)} {
+    left: 15px;
+  }
+  #{c(role circle)} {
+    &::before {
+      content: '';
+      top: -1px;
+      right: -1px;
+      bottom: -1px;
+      left: -1px;
+      position: absolute;
+      background: inherit;
+      opacity: .2;
+      border-radius: 4px;
+    }
+  }
+}

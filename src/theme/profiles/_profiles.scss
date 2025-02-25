@@ -25,25 +25,26 @@
         }
       }
     }
+    
+    // STATUS BUBBLE
+    #{c(profile statusBubbleOuter)} {
+      background: cv('shading.popout');
+    }
+    #{c(profile statusBubbleOuter)} {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+    #{c(profile statusBubbleInner)} {
+      background: transparent;
+    }
   }
 }
 #{c(profile overlay)} {
   background-color: cv('shading.card');
 }
 
-// STATUS BUBBLE
-#{c(profile statusBubbleContainer)} {
-  --custom-status-bubble-background: var(--hsl-card-shading);
-}
-#{c(profile statusBubbleOuter)} {
-  &::before,
-  &::after {
-    display: none;
-  }
-}
-#{c(profile statusBubbleInner)} {
-  background: transparent;
-}
 
 // POPOUT SEND MESSAGE
 #{c(main visualRefreshChatInput)} {

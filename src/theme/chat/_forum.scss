@@ -21,6 +21,12 @@
     @include card;
   }
 
+  // NEW POST
+  #{c(forums newPostsPopout)} {
+    background-color: cv('shading.popout');
+    border-color: transparent;
+  }
+
   // CARD
   :is(#{c(forums grid card)}, #{c(forums list card)}) {
     background-color: cv('shading.card');

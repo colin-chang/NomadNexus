@@ -43,8 +43,18 @@
   background-color: cv('color.main');
   color: cv('text.normal');
   border-radius: 5px;
+  padding: 0 4px;
   &:hover {
     background-color: cv('color.hover');
+  }
+}
+
+// MENTIONED BG
+#{c(chat mentioned)} {
+  --background-mentioned: hsl(from var(--hsl-main-color) h s l/.15);
+  --background-mentioned-hover: hsl(from var(--hsl-hover-color) h s l/.15);
+  &:before {
+    background-color: cv('color.main');
   }
 }
 

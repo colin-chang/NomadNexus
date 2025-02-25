@@ -669,18 +669,7 @@ $classes: (
       'pointer': 'pointer__44b0c',
       'status': 'status_c51b4e',
     ),
-  // // boost page has been redone so many times that... ugh. consider these deprecated for now.
-  // "boost": (
-  // 	"modal": "perksModal-CLcR1c",
-  // 	"ctaBar": "ctaBar-Nhk8yY",
-  // 	"guildIcon": "guildIcon-2xKEtM",
-  // 	"barBackground": "barBackground-unEPDT",
-  // 	"tierMarkerBackground": "tierMarkerBackground-G8FoN4",
-  // 	"tierMarker": "tierMarker-Vw1C95",
-  // 	"tierBody": "tierBody-3ju-rc",
-  // 	"tierHeaderLocked": "tierHeaderLocked-3ItHYn",
-  // 	"perk": "perk-19D_HN",
-  // ),
+
   'button': (
       'button': 'button__201d5',
       'contents': 'contents__201d5',
@@ -733,10 +722,6 @@ $classes: (
       'colorRed': 'colorRed__201d5',
       'colorTransparent': 'colorTransparent__201d5',
       'colorWhite': 'colorWhite__201d5',
-
-      // deprecated
-      'sizeSmal': '@alias button sizeSmall',
-      // i made a typo before...
     ),
   'call': (
     // There's a bit of overlap with "stage". feel free to jump down to there.
@@ -863,14 +848,6 @@ $classes: (
 
     // invisible class to the right side of the call. 0 width.
     'chatButtonContainer': 'buttonContainer_ffab0d',
-
-    // deprecated
-    'crossBase': '@alias modals upload pop base',
-    'cross': '@alias modals upload pop cross',
-    'crossBlurple': '@alias modals upload pop crossBlurple',
-    'crossGrey': '@alias modals upload pop crossGrey',
-    'crossWhite': '@alias modals upload pop crossWhite',
-    'live': '@alias friends live',
   ),
   'stage': (
     // heavily relates to call
@@ -986,9 +963,6 @@ $classes: (
     'participantsButton': 'participantsButton__211d1',
     'rtsButtonContainer': 'buttonContainer__664ff',
     'active': 'active_f1ceac',
-
-    // deprecated
-    'channelNotice': '@alias sidebar eventNotice notice',
   ),
   'card': (
     // These are likely all over the app but are best found in settings.
@@ -1038,9 +1012,6 @@ $classes: (
     'webhookAvatarUploader': 'avatarUploaderInner_eafb9c',
 
     'followedChannelCard': 'card_ebafdd',
-
-    // deprecated
-    'inviteDefault': '@alias removeButton default',
   ),
   'chat': (
     'cozy': 'cozy_c19a55',
@@ -1082,6 +1053,7 @@ $classes: (
     'messageWrapper': 'wrapper_c19a55',
     'replying': 'replying__5126c',
     'mentioned': 'mentioned__5126c',
+    'mentionWrapper': 'wrapper_f61d60',
     'messageSelected': 'selected__5126c',
     'buttons': 'buttons__5126c',
     'buttonWrapper': 'wrapper_f7ecac',
@@ -1104,6 +1076,16 @@ $classes: (
       'jumpToPresent': 'jumpToPresentBar__0f481',
       'messagesError': 'messagesErrorBar__0f481',
     ),
+
+    // also applies to blocked
+    'followWrapper': 'wrapper__44df5',
+    'followImage': 'image__44df5',
+    'followAnimation': 'animation__44df5',
+    'followText': 'text__44df5',
+    'followTitle': 'title__44df5',
+    'followButton': 'button__44df5',
+    'followButtonContainer': 'buttonContainer__44df5',
+    'followCountdown': 'countdown__44df5',
 
     'blockedSystemMessage': 'blockedSystemMessage__7a70a',
     'systemMessageContent': 'content__235ca',
@@ -1174,10 +1156,6 @@ $classes: (
       'markdownContent': 'spoilerMarkdownContent__54ab5',
       'obscuredTextContent': 'obscuredTextContent__54ab5',
       'obscuredTextContentInner': 'obscuredTextContentInner__54ab5',
-
-      // deprecated
-      'sensitiveContentWarning': '@alias chat spoiler explicitContentWarning',
-      // class was renamed
     ),
 
     'chatWelcomeContainer': 'container__235ca',
@@ -1203,8 +1181,6 @@ $classes: (
     'compactButton': 'compactButton__7ff28',
     // send wave sticker
     'welcomeCTA': 'welcomeCTA_f5d1e2',
-
-    'mentionWrapper': 'wrapper_f61d60',
 
     'ephemeral': 'ephemeral__5126c',
     'ephemeralAccessories': 'ephemeralAccessories_b7ab2c',
@@ -1371,6 +1347,8 @@ $classes: (
     'searchIcon': 'searchIcon_d9be46',
     'closeIcon': 'closeIcon_d9be46',
     'submitButton': 'submitButton_d9be46',
+    
+    'newPostsPopout': 'newPostsButton_f369db',
 
     // tags on their own can apply outside the container
     'tags': (
@@ -1614,13 +1592,7 @@ $classes: (
           'unknown': 'unknown__41ea0',
           'video': 'video__41ea0',
           'webcode': 'webcode__41ea0',
-
-          // deprecated
-          'image': '@alias forums upload media',
         ),
-
-        // deprecated
-        'imageContainer': '@alias forums upload mediaContainer',
       ),
 
     // post has been opened, this is the chat
@@ -1648,9 +1620,6 @@ $classes: (
             'active': 'active__34c2c',
           ),
       ),
-
-    // deprecated
-    'listScroller': '@alias forums list list',
   ),
   'thread': (
     'jump': 'jump__5126c',
@@ -1772,16 +1741,6 @@ $classes: (
     'threadSuggestionBar': 'threadSuggestionBar__841c8',
 
     'inlineLink': 'fakeLink_ada32f',
-
-    // also applies to blocked
-    'followWrapper': 'wrapper__44df5',
-    'followImage': 'image__44df5',
-    'followAnimation': 'animation__44df5',
-    'followText': 'text__44df5',
-    'followTitle': 'title__44df5',
-    'followButton': 'button__44df5',
-    'followButtonContainer': 'buttonContainer__44df5',
-    'followCountdown': 'countdown__44df5',
 
     'beforeInlineCode': 'before_inlineCode_ada32f',
     'inlineCode': 'inlineCode_ada32f',
@@ -2008,10 +1967,6 @@ $classes: (
       'victorStyles': 'victorStyles_a1443c',
       'votedStyles': 'votedStyles_a1443c',
     ),
-
-    // deprecated
-    'gameCoverImageBlured': '@alias embeds gameCoverImageBlurred',
-    // TYPO
   ),
   // heavily related to embeds
   'media': (
@@ -2123,10 +2078,6 @@ $classes: (
     'explorePublicIcon': 'icon_a14595',
     'explorePublicText': 'text_a14595',
     'explorePublicArrow': 'arrow_a14595',
-
-    // deprecated
-    'itemCardSeperator': '@alias friends itemCardSeparator',
-    // TYPO
   ),
   // kinda bad name. in desktop visual refresh, appears at the top as the first child under #{c(main base)}.
   'title': (
@@ -2228,10 +2179,6 @@ $classes: (
     'addFriend': 'addFriend__133bf',
     'tabBarItem': 'item__133bf',
     'followButton': 'followButton_f75fb0',
-
-    // deprecated
-    'status': '@alias avatar pointerEvents',
-    'searchIcon': '@alias modals searchBar icon',
   ),
   'hljs': (
     // The usage of the hljs-[type] variables varies depending on language and will probably be best
@@ -2432,21 +2379,16 @@ $classes: (
     'viewServerAsRole': 'notice_c9e42f',
     // contents: "You are viewing this server as $count role(s)."
     'previewServerNotice': 'notice_c5cd6a',
-
-    // contents: "You are currently in preview mode. Join this server to start chatting!"
-    // deprecated
-    'colorPlaystation': '@alias notice colorPlayStation',
-    // typo on my end
   ),
   // These appear to be shared between profile popout and server settings. likely used elsewhere too.
   // DOES NOT APPLY TO TOP OF CHAT CHANNEL AREA.
   'role': (
       'root': 'root__48c1c',
       'role': 'role_dfa8b6',
-      'removeButton': 'roleRemoveButton__48c1c',
-      'dot': 'roleDot__48c1c',
+      'removeButton': 'roleRemoveButton_dfa8b6',
+      'removeIcon': 'roleRemoveIcon_dfa8b6',
+      'circle': 'roleCircle__4f569',
       'flowerStar': 'roleFlowerStar__48c1c',
-      'removeIcon': 'roleRemoveIcon__48c1c',
       'verifiedIcon': 'roleVerifiedIcon__48c1c',
       'name': 'roleName__48c1c',
       'nameOverflow': 'roleNameOverflow__48c1c',
@@ -2467,6 +2409,13 @@ $classes: (
           'headerText': 'overflowRolesPopoutHeaderText__48c1c',
         ),
       ),
+
+      // Show role colours next to names
+      'svg': 'svg__4f569',
+      'background': 'background__4f569',
+      'dot': 'dot__4f569',
+      'dotBorderColor': 'dotBorderColor__4f569',
+      'dotBorderBase': 'dotBorderBase__4f569',
     ),
   'scroller': (
     // There's two because pain.
@@ -2521,10 +2470,6 @@ $classes: (
     'noResultsImage': 'noResultsImage_a9e706',
     'emptyResultsText': 'emptyResultsText_a9e706',
     'noResults': 'noResults_a9e706',
-
-    // paired with above
-    // deprecated
-    'channel': '@alias search channelNameText',
   ),
   'guildList': (
     'guilds': 'guilds_c48ade',
@@ -2684,12 +2629,6 @@ $classes: (
     'enableCommunityFeatureCard': 'featureCard_bebc5b',
     'enableCommunityFeatureIcon': 'featureIcon_bebc5b',
     'enableCommunityGuildDetails': 'guildDetails_bebc5b',
-
-    // deprecated
-    'roleSearch': '@alias modals searchPopup container',
-    'rolePageScroller': '@alias userSettings customScroller',
-    'emojiRemoveDefault': '@alias removeButton default',
-    'auditScroller': '@alias userSettings customScroller',
   ),
   'sidebar': (
     'sidebar': 'sidebar_c48ade',
@@ -3739,17 +3678,6 @@ $classes: (
           'footer': 'footer__5be3e',
         ),
 
-        // i've thrown everything under there because i don't know where other ones are. all on same line
-        // these appear to be for a11y "show role colours next to names" option
-        'roleCircle': (
-            'svg': 'svg__4f569',
-            'background': 'background__4f569',
-            'dot': 'dot__4f569',
-            'dotBorderColor': 'dotBorderColor__4f569',
-            'roleCircle': 'roleCircle__4f569',
-            'dotBorderBase': 'dotBorderBase__4f569',
-          ),
-
         'desaturateUserColors': 'desaturateUserColors__41f68',
       ),
 
@@ -3910,17 +3838,6 @@ $classes: (
       'closeButtonContainer': 'container_c2b141',
       'closeButton': 'closeButton_c2b141',
       'closeButtonKeybind': 'keybind_c2b141',
-
-      // deprecated
-      'nitroMarketingRefreshTeir1Graphic': '@alias userSettings nitroMarketingRefreshTier1Graphic',
-      // TYPO
-      'sessionsDecription': '@alias userSettings sessionsDescription',
-      // TYPO
-      'subscriptionsSectionDescroption': '@alias userSettings subscriptionsSectionDescription',
-      // TYPO
-      'cardPrimary': '@alias card primary',
-      'cardPrimaryEditable': '@alias card primaryEditable',
-      'cardPrimaryOutline': '@alias card primaryOutline',
     ),
   // subset of userSettings
   'appSettings': (
@@ -3984,9 +3901,6 @@ $classes: (
       'addGamePopout': 'addGamePopout_cc46f0',
 
       'contentTransitionWrap': 'contentTransitionWrap__23e6b',
-
-      // deprecated
-      'appearencePreview': '@alias appSettings appearancePreview',
       // TYPO
       'keybindRemoveFilled': '@alias removeButton filled',
     ),
@@ -4321,10 +4235,6 @@ $classes: (
 
         // search result empty
         'standardStickerShortcut': 'standardStickerShortcut__3ad28',
-
-        // removed from tree once scrolled past. fun.
-        // deprecated
-        'listGuildIcon': '@alias modals sidebarList guildIcon',
       ),
     ),
 
@@ -4583,10 +4493,6 @@ $classes: (
         'header': 'container__4efb4',
         'guildIcon': 'guildIcon__88264',
         'rsvpCount': 'rsvpCount_b5010b',
-
-        // deprecated
-        'warning': '@alias card warning',
-        // also applies when changing another's username
       ),
 
     // Clicking on an invite in your browser while not signed in and being redirect to the app
@@ -4908,9 +4814,6 @@ $classes: (
             'navigation--next': 'react-datepicker__navigation--next',
             'navigation--previous': 'react-datepicker__navigation--previous',
             'navigation-icon': 'react-datepicker__navigation-icon',
-
-            // deprecated
-            'currnetMonth': '@alias modals calendar react currentMonth',
           ),
 
         'datePickerHint': 'datePickerHint__56fec',
@@ -5415,9 +5318,6 @@ $classes: (
             'art': 'art__3ec70',
             'sparkleBadge': 'sparkleBadge__3ec70',
             'newBadge': 'newBadge__3ec70',
-
-            // deprecated
-            'hedaer': '@alias modals upload fail header',
             // typo
           ),
       ),
@@ -6746,11 +6646,6 @@ $classes: (
           'guildSettingsSubsViewServerButton': 'viewServerButton_adff39',
           'botTag': 'botTag__82f07',
           'botTagInvert': 'botTagInvert__82f07',
-          'roleCircle': 'roleCircle_dfa8b6',
-          'roleRemoveIcon': 'roleRemoveIcon_dfa8b6',
-          'roleRemoveButton': 'roleRemoveButton_dfa8b6',
-          'roleName': 'roleName_dfa8b6',
-          'roleAddButton': 'button__7d7f7',
           'loading': 'loading__6ef4d',
           'replyCloseButton': 'closeButton_e876a8',
           'replySeperator': 'separator__841c8',
@@ -6882,7 +6777,6 @@ $classes: (
           'activityItemDisabled': 'disabled__18da2',
           'activityTag': 'activityTag__18da2',
           'forumFirstIcon': 'icon__93db4',
-          'forumIncreasedCard': 'increasedActivityMainCard_e53744',
           'forumSetupContainer': 'container_a68543',
           'forumSetupStepContainer': 'stepContainer_a68543',
           'forumSetupStepStatus': 'stepStatus_a68543',
@@ -6903,7 +6797,6 @@ $classes: (
           'forumIncreasedTag': 'increasedActivityPill__2620e',
           'forumTagSelectedCount': 'countContainer_f369db',
           'forumChatStartBox': 'box_ee23ac',
-          'forumNewPosts': 'newPostsButton_f369db',
           'forumSettingsGuidelinesToolbar': 'staticToolbar_bba883',
           'forumSettingsGuidelinesAddTags': 'addTags__3f6df',
           'directoryContainer': 'directoryContainer_da3f59',
