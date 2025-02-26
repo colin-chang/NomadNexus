@@ -154,3 +154,16 @@
     }
   }
 }
+
+
+// VC USER LIMIT
+#{c(main visualRefresh)} {
+  #{c(sidebar server channel voiceLimitWrapper)},
+  #{c(sidebar server channel voiceLimitUsers)} {
+    background: transparent;
+  }
+  #{c(sidebar server channel voiceLimitUsers)},
+  #{c(sidebar server channel voiceLimitUsers)} {
+    padding: 0;
+  }
+}

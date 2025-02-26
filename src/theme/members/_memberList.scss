@@ -43,6 +43,32 @@
   }
 }
 
+// ACTIVITY
+#{c(main visualRefresh)} {
+  #{c(memberList activityContainer)} {
+    background: cv('shading.card');
+    border-radius: 8px;
+    border-width: 2px;
+    padding-left: 10px;
+  }
+}
+#{c(memberList activityContainerSelected)} {
+  &,
+  &:hover {
+    background: cv('shading.card');
+    border-color: cv('color.main');
+  }
+}
+
+// ACITIVITY POPOUT
+#{c(memberList activityPopoutWrapper)},
+#{c(memberList activityPopoutInteractions)} {
+  background: cv('shading.popout');
+}
+#{c(memberList activityPopoutInteractionsHeader)} {
+  border: none;
+}
+
 // MEMBER
 #{c(memberList member)} {
   background: transparent;

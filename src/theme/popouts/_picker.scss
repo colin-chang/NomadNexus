@@ -30,6 +30,7 @@
   }
   #{c(popouts expressionPicker emoji categoryHeaderWrapper)} {
     background: hsl(from cv('color.main') h s l/.8);
+    margin-bottom: 10px;
   }
 
   // EMOJI REACT
@@ -39,8 +40,12 @@
   }
 
   // STICKER
+  #{c(popouts expressionPicker sticker header)} {
+    background: transparent;
+  }
   #{c(popouts expressionPicker sticker packHeader)} {
-    margin-right: -12px;
+    margin-left: -12px;
+    margin-bottom: 10px;
   }
 
   // GIF

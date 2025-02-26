@@ -1,0 +1,11 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+  #{c(modals root)} {
+    background: cv('shading.modal');
+    border: none;
+  }
+  #{c(modals footer)} {
+    background: transparent;
+  }
+}

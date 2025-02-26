@@ -374,14 +374,6 @@ $classes: (
     'multiField': 'multiInputField_b404ff',
     'copy': 'copyInput_cedfaf',
   ),
-  'slider': (
-    // Checkbox with extra steps
-    'container': 'container__87bf1',
-    'slider': 'slider__87bf1',
-    'checked': 'checked__87bf1',
-    'disabled': 'disabled__87bf1',
-    'input': 'input__87bf1',
-  ),
   'checkbox': (
     // checkboxes
     'wrapper': 'checkboxWrapper_f525d3',
@@ -410,6 +402,15 @@ $classes: (
     'row': 'row_f525d3',
     'alignTop': 'alignTop_f525d3',
     'alignCenter': 'alignCenter_f525d3',
+    
+    'slider': (
+      // Checkbox with extra steps
+      'container': 'container__87bf1',
+      'slider': 'slider__87bf1',
+      'checked': 'checked__87bf1',
+      'disabled': 'disabled__87bf1',
+      'input': 'input__87bf1',
+    ),
   ),
   'radio': (
     'item': 'item__001a7',
@@ -2289,6 +2290,12 @@ $classes: (
     'members': 'members_c8ffbb',
     'group': 'membersGroup_c8ffbb',
     'activityHeader': 'header__095fe',
+    'activityContainer': 'container__0f2e8',
+    'activityContainerSelected': 'selected__0f2e8',
+    'activityPopoutWrapper': 'popoutContentWrapper_af3b89',
+    'activityPopoutInteractionsHeader': 'interactionsContainerHeader_af3b89',
+    'activityPopoutInteractions': 'interactionsContainer_af3b89',
+    'activityPopoutShareToChannelButton': 'shareToChannelButton_af3b89',
     'member': 'member__5d473',
     'memberBackground': 'member_c8ffbb',
     'memberClickable': 'clickable__91a9d',
@@ -3727,6 +3734,7 @@ $classes: (
       'contentRegion': 'contentRegion__23e6b',
       'contentRegionScroller': 'contentRegionScroller__23e6b',
       'contentColumn': 'contentColumn__23e6b',
+      'contentColumnDefault': 'contentColumnDefault__23e6b',
       'contentColumnWide': 'contentColumnWide__23e6b',
 
       'accountProfile': 'accountProfileCard__1fed1',
@@ -3931,6 +3939,24 @@ $classes: (
     ),
 
   'popouts': (
+    // Shoody name? Yes. Multiple modals use it? Also yes, sadly.
+    // It's in the Emojis, Command Autocomplete and Stickers. Open any of them.
+    'categoryList': (
+        'wrapper': 'wrapper__4e6ce',
+        'list': 'list_b1e4f3',
+        'scroller': 'scroller_affa7e',
+        // maybe? it appears in soundboard at the least. can also appear as main scroller
+        'listItems': 'listItems_affa7e',
+        'listHeight': 'listHeight_affa7e',
+
+        // WILL ALWAYS HAVE INLINE STYLE FOR HEIGHT
+        // these few appear elsewhere
+        'svg': 'svg__2338f',
+        'mask': 'mask__0fa6d',
+        'guildIcon': 'guildIcon__0fa6d',
+        'lockedCategory': 'categoryItemLockIconContainer__0fa6d',
+      ),
+
     'menus': (
       'menu': 'menu_c1e9c4',
       'flexible': 'flexible_c1e9c4',
@@ -4540,31 +4566,32 @@ $classes: (
 
     // Get an incoming call
     'incomingCall': (
-        'root': 'root__2dbe1',
-      ),
+      'root': 'root__2dbe1',
+    ),
 
     // Ctrl+/ (CMD on Mac) to pull this modal up
-    'keybinds': (
-        'shortcuts': 'keybind-shortcuts',
+    'keyboard': (
+      'shortcuts': 'keybind-shortcuts',
 
-        // class found in JS
-        'modal': 'keyboardShortcutsModal_f061f6',
-        'title': 'modalTitle_f061f6',
-        'subtitle': 'modalSubtitle_f061f6',
-        'list': 'keyboardShortcutList_f061f6',
-        'group': 'keyboardShortcutListGroup_f061f6',
-        'firstGroup': 'firstGroup_f061f6',
-        'groupDescription': 'keybindGroupDescription_f061f6',
-        'key': 'keybindKey_f061f6',
+      'modal': 'keyboardShortcutsModal_f061f6',
+      'title': 'modalTitle_f061f6',
+      'subtitle': 'modalSubtitle_f061f6',
+      'list': 'keyboardShortcutList_f061f6',
+      'group': 'keyboardShortcutListGroup_f061f6',
+      'firstGroup': 'firstGroup_f061f6',
+      'groupDescription': 'keybindGroupDescription_f061f6',
+      'keybindGroup': 'keybindGroup_f061f6',
+      'keybindkey': 'keybindKey_f061f6',
+      'key': 'key_fcddc1',
 
-        'ddrArrows': 'ddrArrows_f061f6',
-        'arrow': 'arrow_f061f6',
-        'active': 'active_f061f6',
-        'left': 'left_f061f6',
-        'down': 'down_f061f6',
-        'up': 'up_f061f6',
-        'right': 'right_f061f6',
-      ),
+      'ddrArrows': 'ddrArrows_f061f6',
+      'arrow': 'arrow_f061f6',
+      'active': 'active_f061f6',
+      'left': 'left_f061f6',
+      'down': 'down_f061f6',
+      'up': 'up_f061f6',
+      'right': 'right_f061f6',
+    ),
 
     // Join a server with the "Rules Screening" set up but not onboarding. It's got a checkbox at the bottom. Rules are on a few lines.
     'rulesScreening': (
@@ -4691,24 +4718,6 @@ $classes: (
         'option': 'option_a19535',
         'optionError': 'error_a19535',
         'optionActive': 'active_a19535',
-      ),
-
-    // Shoody name? Yes. Multiple modals use it? Also yes, sadly.
-    // It's in the Emojis, Command Autocomplete and Stickers. Open any of them.
-    'sidebarList': (
-        'wrapper': 'wrapper__4e6ce',
-        'list': 'list_b1e4f3',
-        'scroller': 'scroller_affa7e',
-        // maybe? it appears in soundboard at the least. can also appear as main scroller
-        'listItems': 'listItems_affa7e',
-        'listHeight': 'listHeight_affa7e',
-
-        // WILL ALWAYS HAVE INLINE STYLE FOR HEIGHT
-        // these few appear elsewhere
-        'svg': 'svg__2338f',
-        'mask': 'mask__0fa6d',
-        'guildIcon': 'guildIcon__0fa6d',
-        'lockedCategory': 'categoryItemLockIconContainer__0fa6d',
       ),
 
     // Emoji wants to be special
@@ -6351,10 +6360,6 @@ $classes: (
           'libraryDefaultIndicator': 'defaultIndicator_a6f654',
           'libraryPlayButton': 'playButton__0cb56',
           'libraryPlayButtonContents': 'playButtonContents__0cb56',
-          'membersNotices': 'membersListNotices__0bcb6',
-          'memberActivityContentWrapper': 'popoutContentWrapper_af3b89',
-          'memberActivityInteractionsContainer': 'interactionsContainer_af3b89',
-          'memberActivityShareToChannelButton': 'shareToChannelButton_af3b89',
           'addMembersIcon': 'addMembersIcon_d9b498',
           'activityInviteArtworkNotActionable': 'artworkNotActionable__4d3fa',
           'activityInviteArtworkSessionEnded': 'artworkSpotifySessionEnded__4d3fa',
@@ -6432,8 +6437,6 @@ $classes: (
           'messageAutomodFooterAction': 'footerAction__44492',
           'messageAutomodFooterIcon': 'footerIcon__44492',
           'reactionAddForceShow': 'forceShowLook_ec6b19',
-          'keybindGroup': 'keybindGroup_f061f6',
-          'modal': 'modal__487be',
           'formFieldWrapper': 'formFieldWrapper_ff716d',
           'settingsFormFieldWrapper': 'settingsFormFieldWrapper__3ff83',
           'messageReportOption': 'childButton__3ed08',

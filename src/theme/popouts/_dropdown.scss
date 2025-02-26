@@ -1,0 +1,25 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+  #{c(popouts dropdown popout)} {
+    background: cv('shading.popout');
+  }
+  #{c(popouts dropdown option)} {
+    border-radius: 8px;
+    margin: 0 8px;
+    &:hover {
+      background: cv('shading.hover');
+    }
+    &[aria-selected=true] {
+      &:not(#{c(popouts dropdown option)}#{c(popouts dropdown multi)}) {
+        background: cv('color.main');
+      }
+    }
+  }
+}
+#{c(popouts dropdown selectedIcon)} {
+  color: var(--interactive-active);
+  circle {
+    fill: cv('color.main');
+  }
+}
