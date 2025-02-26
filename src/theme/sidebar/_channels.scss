@@ -91,7 +91,8 @@
   
   // MUTED
   &#{c(sidebar server channel muted)} {
-    #{c(sidebar server channel link)} {
+    #{c(sidebar server channel name)},
+    #{c(sidebar server channel icon)} {
       color: var(--channel-muted);
     }
   }
