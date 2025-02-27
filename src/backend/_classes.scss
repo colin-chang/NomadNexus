@@ -402,7 +402,7 @@ $classes: (
     'row': 'row_f525d3',
     'alignTop': 'alignTop_f525d3',
     'alignCenter': 'alignCenter_f525d3',
-    
+
     'slider': (
       // Checkbox with extra steps
       'container': 'container__87bf1',
@@ -575,6 +575,11 @@ $classes: (
     'childContainer': 'childContainer__3e3b0',
     'redesignIconChildContainer': 'redesignIconChildContainer__3e3b0',
   ),
+  'badges' (
+    'base': 'base__2b1f5',
+    'number': 'numberBadge__2b1f5',
+    'text': 'textBadge__2b1f5',
+  )
   'login': (
     'wrapper': 'wrapper_d4fa29',
     'characterBackground': 'characterBackground_eb4069',
@@ -821,7 +826,6 @@ $classes: (
     'liveIndicator': 'liveIndicator__2f4f7',
     'liveIndicatorChild': 'liveIndicator__30845',
     'liveLarge': 'liveLarge_a7acae',
-    'liveBase': 'base__2b1f5',
     'liveShapeRound': 'liveShapeRound_a7acae',
     'tileOverlay': 'overlay_ba4b17',
     'tileOverlayTitle': 'overlayTitle__2f4f7',
@@ -2080,6 +2084,42 @@ $classes: (
     'explorePublicText': 'text_a14595',
     'explorePublicArrow': 'arrow_a14595',
   ),
+
+  'shop': (
+    'shop': 'shop__6db1d',
+    'scroller': 'shopScroll__6db1d',
+    'header': 'headerBar__80679',
+
+    // featured
+    'featured': 'shop__08415',
+    'shopAllButton': 'shopAll__08415',
+
+    //shop all
+    'pageWrapper': 'pageWrapper__6db1d',
+
+    'shopWhatsNew': 'whatsNewSectionBackground_c880e8',
+    
+    'loadingSkeleton': 'skeleton__72fa0',
+    'loadingBanner': 'bannerBody__72fa0',
+    'loadingCard': 'cardBody__72fa0',
+
+    'loadingCardContent': 'cardAvatar__72fa0' 'cardTitle__72fa0' 'cardDescription__72fa0' 'cardSummary__72fa0',
+
+    'card': 'shopCard_c3d04b',
+    'cardNitro': 'shopCard_b37971',
+    'cardDarkBackground': 'darkCardBackground_c3d04b',
+    'cardDarkBackgroundNitro': 'darkCardBackground_b37971',
+    'cardText': 'cardText_c3d04b',
+    'cardTextLight': 'lightCardBackground_c3d04b',
+    'cardTextDark': 'darkCardBackground_c3d04b',
+
+    // preview
+    'previewModal': 'modalContent_c50f62',
+    'previewInfo': 'collectibleInfoContainer_c50f62',
+    'chatPreview': 'chatPreview_c50f62',
+    'mockInput': 'mockInput_c50f62',
+  ),
+
   // kinda bad name. in desktop visual refresh, appears at the top as the first child under #{c(main base)}.
   'title': (
       'bar': 'bar_c38106',
@@ -2522,7 +2562,6 @@ $classes: (
     'bottomButtonDisabled': 'disabled__5bc7e',
     'bottomButtonIcon': 'circleIcon__5bc7e',
     'lowerBadge': 'lowerBadge_cc5dd2',
-    'numberBadge': 'numberBadge__2b1f5',
     'upperBadge': 'upperBadge_cc5dd2',
     'iconBadge': 'iconBadge__650eb',
     'participating': 'isCurrentUserConnected__650eb',
@@ -2699,6 +2738,7 @@ $classes: (
         // paired with "layout" class-wise. shows when user is playing game or has custom status, always shows with group.
         'subtext': 'subtext__972a0',
         // child to subtextLayout
+        'subtextText': 'text__8ac07',
         'activity': 'activity__972a0',
 
         // shows for user when they're doing something, use subtext:not(activity) to only target group
@@ -6250,7 +6290,6 @@ $classes: (
           'autocompleteOptionPillKey': 'optionPillKey__1464f',
           'autocompleteUpsellEmoji': 'premiumEmoji_d4ce86',
           'autocompleteUpsellHeader': 'premiumHeader_f73c14',
-          'textBadge': 'textBadge__2b1f5',
           'flex': 'flex_abf706',
           'flexAlignStart': 'alignStart_abf706',
           'flexAlignEnd': 'alignEnd_abf706',
@@ -6293,12 +6332,6 @@ $classes: (
           'newGuildTooltip': 'container_be6a5c',
           'newGuildTooltipPointer': 'tooltipPointer_be6a5c',
           'newGuildTooltipCard': 'container_cfbfb9',
-          'guildsFooter': 'footer_f8ec41',
-          'guildBadgeIcon': 'icon__2b1f5',
-          'guildFolderIcon': 'icon_f34534',
-          'guildFolderIconSizeSmol': 'iconSizeSmol_f34534',
-          'guildFolderGuildNoIcon': 'noIcon_f34534',
-          'guildsError': 'guildsError__32e67',
           'breadcrumbs': 'breadcrumbs_bac619',
           'breadcrumbWrapper': 'breadcrumbWrapper__75797',
           'breadcrumbClickWrapper': 'breadcrumbClickWrapper__6bef1',
@@ -6859,25 +6892,6 @@ $classes: (
           'profileEffectDescription': 'effectDescriptionNoGradient__92e52',
           'profileEffectDescriptionUpsell': 'effectDescriptionBorderWithGradient__92e52',
           'profileEffectDescriptionContainer': 'effectDescriptionContainer__92e52',
-          'shopAll': 'shop__6db1d',
-          'popularPicksShopAll': 'shopAll__08415',
-          'shopPreview': 'shop__08415',
-          'shopBackground': 'shopScroll__6db1d',
-          'shopPageWrapper': 'pageWrapper__6db1d',
-          'shopHeader': 'headerBar__80679',
-          'shopWhatsNew': 'whatsNewSectionBackground_c880e8',
-          'shopLoadingSkeleton': 'skeleton__72fa0',
-          'shopLoadingBanner': 'bannerBody__72fa0',
-          'shopLoadingCard': 'cardBody__72fa0',
-          'shopLoadingCardContent': 'cardAvatar__72fa0' 'cardTitle__72fa0' 'cardDescription__72fa0' 'cardSummary__72fa0',
-          'shopCard': 'shopCard_c3d04b',
-          'shopCardNitro': 'shopCard_b37971',
-          'shopCardDarkBackgroundNitro': 'darkCardBackground_b37971',
-          'shopCardDarkBackground': 'darkCardBackground_c3d04b',
-          'shopModal': 'modalContent_c50f62',
-          'shopPreviewInfo': 'collectibleInfoContainer_c50f62',
-          'shopChatPreview': 'chatPreview_c50f62',
-          'shopMockInput': 'mockInput_c50f62',
           'messageReqSpam': 'selected_dcc822',
           'messageReqSpamCheck': 'hamBanner__6a41e',
           'sidebarPFPUpsell': 'editor__2a891',

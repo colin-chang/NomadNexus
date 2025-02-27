@@ -9,13 +9,40 @@
     background: none;
   }
   #{c(friends peopleColumn)} {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.35));
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
   }
 }
 
 // Looking for accounts you’ve blocked or ignored?
 #{c(friends blockedIgnoredSettingsNotice)} {
   @include card;
+}
+
+
+// BUTTONS
+#{c(friends actionButton)} {
+  background-color: cv('shading.card');
+  &#{c(friends highlight)} {
+    background-color: cv('shading.card');
+    color: var(--interactive-active);
+  }
+  &:hover {
+    background: cv('color.hover');
+  }
+  &#{c(friends actionButtonAccept)} {
+    color: cv('color.success');
+    &:hover {
+      background: cv('color.success');
+      color: var(--interactive-active);
+    }
+  }
+  &#{c(friends actionButtonDeny)} {
+    color: cv('color.danger');
+    &:hover {
+      background: cv('color.danger');
+      color: var(--interactive-active);
+    }
+  }
 }
 
 // SEARCHBAR

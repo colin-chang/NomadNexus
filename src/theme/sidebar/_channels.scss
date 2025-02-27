@@ -8,7 +8,7 @@
     border: none;
   }
   #{c(sidebar server container)} {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.25));
     padding: 0;
   }
 
@@ -162,8 +162,10 @@
   #{c(sidebar server channel voiceLimitUsers)} {
     background: transparent;
   }
-  #{c(sidebar server channel voiceLimitUsers)},
   #{c(sidebar server channel voiceLimitUsers)} {
-    padding: 0;
+    padding: 0 8px 0 6px;
+  }
+  #{c(sidebar server channel voiceLimitUsers)} {
+    padding: 0 6px 0 1px;
   }
 }

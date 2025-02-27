@@ -1,0 +1,28 @@
+@use 'backend' as *;
+
+#{c(shop shop)},
+#{c(shop scroller)} {
+  background: transparent;
+}
+
+#{c(shop featured)},
+#{c(shop pageWrapper)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+
+// CARD
+#{c(shop card)} {
+  background: cv('shading.card');
+  border-color: transparent;
+  &:hover {
+    border-color: cv('color.main');
+  }
+}
+#{c(shop cardText)} {
+  background: transparent;
+}
+
+// PREVIEW
+#{c(shop previewInfo)} {
+  background: transparent;
+}

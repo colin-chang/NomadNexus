@@ -17,7 +17,7 @@
     }
   }
   :is(#{c(chat chatScrollerNSFW)}, #{c(chat chatContentInner)}) {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.35));
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
   }
 }
 

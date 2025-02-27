@@ -11,6 +11,9 @@
     &:hover {
       background-color: cv('color.hover');
     }
+    &:disabled {
+      background-color: cv('color.main');
+    }
   }
   &#{c(button colorGreen)} {
     background-color: cv('color.success');
