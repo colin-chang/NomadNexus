@@ -1,13 +1,12 @@
 @use 'backend' as *;
 
-#{c(shop shop)},
-#{c(shop scroller)} {
-  background: transparent;
+#{c(shop shop)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
 }
-
+#{c(shop scroller)},
 #{c(shop featured)},
 #{c(shop pageWrapper)} {
-  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+  background: transparent;
 }
 
 // CARD

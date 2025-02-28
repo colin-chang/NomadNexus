@@ -9,8 +9,11 @@
 }
 
 // PILL
+#{c(guildList pillWrapper)} {
+  overflow: visible;
+}
 #{c(guildList pillItem)} {
-  filter: drop-shadow(0.5px 0 3px cv('color.main'));
+  box-shadow: 0 0 6px 1px cv('color.main');
 }
 
 // HOME BUTTON

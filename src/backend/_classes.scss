@@ -423,6 +423,22 @@ $classes: (
     'refreshIconStroke': 'refreshIconStroke__001a7',
     'refreshIcon': 'refreshIcon__001a7',
   ),
+  'slider': (
+    'slider': 'slider_a562c8',
+    'mini': 'mini_a562c8',
+    'bar': 'bar_a562c8',
+    'barFill': 'barFill_a562c8',
+    'grabber': 'grabber_a562c8',
+    'disabled': 'disabled_a562c8',
+    'track': 'track_a562c8',
+    'mark': 'mark_a562c8',
+    'markAbove': 'markAbove_a562c8',
+    'markBelow': 'markBelow_a562c8',
+    'markValue': 'markValue_a562c8',
+    'markDash': 'markDash_a562c8',
+    'markDashSimple': 'markDashSimple_a562c8',
+    'defaultValue': 'defaultValue_a562c8',
+  ),
   'text': (
     // These are within the same group but not with the rest. not sure where to put these
     'textNormalDefaultColor': 'defaultColor__4bd52',
@@ -2084,6 +2100,35 @@ $classes: (
     'explorePublicText': 'text_a14595',
     'explorePublicArrow': 'arrow_a14595',
   ),
+  // home nitro
+  'nitro': (
+    'store': 'applicationStore_f07d62',
+    'wrapper': 'homeWrapper__0920e',
+    'mainPageScroller': 'mainPageScroller_ca1a02',
+    'allPerksScroller': 'allPerksScroller_ca1a02',
+    'allPerksScrollerOpen': 'open_ca1a02',
+
+    'card': 'card_f8e6bf',
+    'cardDescription': 'cardDescription_f8e6bf',
+
+    'seePerksButton': 'seeAllPerksButton_ca1a02',
+
+    'gift': 'giftNitro_ca1a02',
+    'giftContainer': 'container_da4aee',
+    'giftTextContainer': 'textContainer_da4aee',
+    'giftButton': 'giftCardButton_da4aee',
+    // only appears without nitro
+    'footerInnerWrapper': 'innerWrapper_c511e4',
+    // all perks page
+    'backButton': 'backButton_b9abc5',
+    'arrows': 'leftArrow__3cf14' 'rightArrow__3cf14',
+    'arrowInactive': 'inactiveArrow__3cf14',
+    'arrowIcon': 'arrowIcon__3cf14',
+    'progressBar': 'cardProgressBar__3cf14',
+    'progressDot': 'dot__3cf14',
+    'progressDotSelected': 'selectedDot__3cf14',
+
+  ),
 
   'shop': (
     'shop': 'shop__6db1d',
@@ -3346,10 +3391,6 @@ $classes: (
       'closeIcon': 'closeIcon_e2d7b8',
     ),
   ),
-  'store': (
-    'store': 'applicationStore_f07d62',
-    'scroller': 'scroller_c880e8',
-  ),
   'tooltips': (
     'tooltip': 'tooltip__382e7',
     'disablePointerEvents': 'tooltipDisablePointerEvents__382e7',
@@ -3889,21 +3930,6 @@ $classes: (
     ),
   // subset of userSettings
   'appSettings': (
-      'slider': 'slider_a562c8',
-      'sliderMini': 'mini_a562c8',
-      'sliderBar': 'bar_a562c8',
-      'sliderBarFill': 'barFill_a562c8',
-      'sliderGrabber': 'grabber_a562c8',
-      'sliderDisabled': 'disabled_a562c8',
-      'sliderTrack': 'track_a562c8',
-      'sliderMark': 'mark_a562c8',
-      'sliderMarkAbove': 'markAbove_a562c8',
-      'sliderMarkBelow': 'markBelow_a562c8',
-      'sliderMarkValue': 'markValue_a562c8',
-      'sliderMarkDash': 'markDash_a562c8',
-      'sliderMarkDashSimple': 'markDashSimple_a562c8',
-      'sliderDefaultValue': 'defaultValue_a562c8',
-
       'appearancePreview': 'preview__3e443',
 
       'accessabilityPreview': 'preview__5d148',
@@ -6344,23 +6370,6 @@ $classes: (
           'headerSearchBar': 'searchBar__3fb48',
           'headerSearchBackButton': 'backButton_fed6d3',
           'headerChannelNameOuter': 'outer__4f074',
-          'nitroPremiumScroller': 'mainPageScroller_ca1a02',
-          'nitroCard': 'card_f8e6bf',
-          'nitroCardDescription': 'cardDescription_f8e6bf',
-          'nitroSeePerksButton': 'seeAllPerksButton_ca1a02',
-          'nitroGiftContainer': 'giftNitro_ca1a02',
-          'nitroGiftTextContainer': 'textContainer_da4aee',
-          'nitroFooterInnerWrapper': 'innerWrapper_c511e4',
-          'nitroPerksScroller': 'allPerksScroller_ca1a02',
-          'nitroPerksScrollerOpen': 'open_ca1a02',
-          'nitroPerksBackButton': 'backButton_b9abc5',
-          'nitroPerksArrows': 'leftArrow__3cf14' 'rightArrow__3cf14',
-          // both classes do not exist in file
-          'nitroPerksArrowInactive': 'inactiveArrow__3cf14',
-          'nitroPerksArrowIcon': 'arrowIcon__3cf14',
-          'nitroPerksProgressBar': 'cardProgressBar__3cf14',
-          'nitroPerksProgressDot': 'dot__3cf14',
-          'nitroPerksProgressDotSelected': 'selectedDot__3cf14',
           'friendActivity': 'activity__19b6d',
           'friendsAddFriendInput': 'addFriendInput__72ba7',
           'friendsAddFriendHint': 'addFriendHint__72ba7',

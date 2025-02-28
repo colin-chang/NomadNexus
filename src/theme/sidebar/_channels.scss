@@ -31,10 +31,13 @@
 
   // UNREAD PILL
   #{c(sidebar server channel unreadPill)} {
-    filter: drop-shadow(0.5px 0 3px cv('color.main'));
+    box-shadow: 0 0 6px 1px cv('color.main');
   }
 
   // UNREAD BAR
+  #{c(sidebar server unreadBar bottom)} {
+    bottom: 8px
+  }
   #{c(sidebar server unreadBar bar)} {
     background-color: cv('color.main');
     border-color: cv('color.main');

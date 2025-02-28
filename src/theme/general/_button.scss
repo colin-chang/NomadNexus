@@ -27,7 +27,7 @@
       background-color: hsl(from cv('color.danger') h s l/.8);
     }
   }
-  &#{c(button colorWhite)} {
+  &:is(#{c(button colorWhite)}, #{c(button colorBrandInverted)}) {
     color: cv('color.main');
     &:hover {
       color: cv('color.hover');
