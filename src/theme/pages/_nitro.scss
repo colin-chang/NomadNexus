@@ -1,9 +1,14 @@
 @use 'backend' as *;
 
-#{c(nitro store)},
 #{c(nitro store)} {
   background: transparent;
-  border: none;
+}
+
+#{c(main visualRefresh)} {
+  #{c(nitro wrapper)} {
+    background: transparent;
+    border: none;
+  }
 }
 #{c(nitro mainPageScroller)},
 #{c(nitro allPerksScroller)} {
@@ -35,7 +40,7 @@
 // BUTTONS
 #{c(nitro seePerksButton)} {
   background: cv('shading.card');
-  border-color: cv('color.main');
+  border: none;
 }
 #{c(nitro backButton)} {
   background: cv('color.main');

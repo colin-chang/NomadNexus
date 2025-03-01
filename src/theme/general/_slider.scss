@@ -1,0 +1,15 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+  #{c(slider slider)} {
+    #{c(slider bar)} {
+      background: cv('shading.card');
+    }
+    #{c(slider barFill)} {
+      background: cv('color.main');
+    }
+    #{c(slider grabber)} {
+      filter: drop-shadow(0 0 3px cv('color.main'));
+    }
+  }
+}

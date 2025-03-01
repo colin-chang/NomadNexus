@@ -302,6 +302,7 @@ $classes: (
     'base': 'base_c48ade',
     'baseContent': 'content_c48ade',
     // same line as base
+    'page': 'page_c48ade',
     'loadingSquare': 'wanderingCubes__0b5bb',
     'loadingSquareItem': 'item__0b5bb',
     'pictureInPicture': 'pictureInPicture__6341f',
@@ -1793,52 +1794,65 @@ $classes: (
   ),
   // kinda going through a rewrite on discord's end so i'm leaving this alone :)
   'discover': (
-      'header': 'discoverHeader_b992d4',
-      'categoryItem': 'categoryItem_c72b37',
-      'categoryItemSelected': 'selectedCategoryItem_c72b37',
-      'categoryItemInner': 'itemInner_c72b37',
-      'pageWrapper': 'pageWrapper_a3a4ce',
-
-      'viewWrapper': 'viewWrapper_a3a4ce',
-      'scroller': 'scroller_a3a4ce',
-      'searchHeader': 'searchHeader_a3a4ce',
-      'searchHeaderImage': 'headerImage_a3a4ce',
-      'searchHeaderContentWrapper': 'headerContentWrapper_a3a4ce',
-      'searchHeaderContent': 'headerContent_a3a4ce',
-      'searchTitle': 'searchTitle_a3a4ce',
-      'searchSubtitle': 'searchSubtitle_a3a4ce',
-      'footer': 'footer_a3a4ce',
-      'footerImage': 'footerImage_a3a4ce',
-      'searchPage': 'searchPage_a3a4ce',
-      'searchResultsList': 'guildList_a3a4ce',
-
-      'search': 'search_f69601',
-      'searchBox': 'searchBox_f69601',
-      'searchBoxInput': 'searchBoxInput_f69601',
-      'searchCloseIcon': 'closeIcon_f69601',
-      'searchSearchIcon': 'searchIcon_f69601',
-
-      'cardListSection': 'guildListSection_c8c448',
-      'cardList': 'guildList_c8c448',
-
-      'searchCategories': 'categories_f69601',
-      'searchCategoryPill': 'categoryPill_f69601',
-      'searchCategorySelected': 'selected_f69601',
-
-      'searchPageContainer': 'container_e37a20',
-      'searchPageHeader': 'searchHeader_e37a20',
-      'searchResults': 'results_e37a20',
-      'searchSpinner': 'spinner_e825f6',
-      'searchCard': 'card_e825f6',
-      'searchEmptyContainer': 'emptyContainer_e37a20',
-      'searchEmptyImage': 'emptyImage_e37a20',
-      'searchErrorImage': 'errorImage_e37a20',
-      'searchPlaceholder': 'placeholder_e825f6',
-
-      'studentScroller': 'scroller_a39aa3',
-      'studentCard': 'container_a76561',
-      'studentIconContainer': 'iconContainer_a76561',
+    'sidebar': (
+      'container': 'container__551b0',
+      'header': 'header__551b0',
+      'nav': 'nav__551b0',
+      'item': 'navItem__551b0',
+      'itemSelected': 'selected__551b0',
+      'itemIcon': 'navItemIcon__551b0'
     ),
+
+    'container': 'container_a592e1',
+
+    'header': 'headerBar__8a7fc',
+    'headerOverlay': 'overlay__8a7fc',
+    'headerBackdrop': 'backdrop__8a7fc',
+
+    // search page header
+    'headerRelative': 'relative__8a7fc',
+    'headerIconButton': 'iconButton__8a7fc',
+
+    'search': 'search__1ac1c',
+    'searchBar': 'searchBar__1ac1c',
+    'scroller': 'scroller__23746',
+    'bannerContainer': 'container_e9ef78',
+    'bannerContent': 'content_e9ef78',
+    'card': 'card__84e3e',
+    'cardClickable': 'clickable__84e3e',
+
+    'apps': (
+      'card': 'card_f215b9',
+      'cardHeader': 'header_f215b9',
+      'cardAvatar': 'avatar_f215b9',
+      'cardDetails': 'appDetails_f215b9',
+      'footerContainer': 'container__19cf2',
+      'searchNoResult': 'container__5682d',
+    ),
+
+    'servers': (
+      'card': 'card__4cb8a',
+      'cardHeader': 'header__4cb8a',
+      'cardIcon': 'icon__4cb8a',
+      'cardIconMask': 'iconMask__4cb8a',
+      'cardAvatar': 'avatar_e90879',
+      'cardDetails': 'guildDetails__4cb8a',
+      'cardTitle': 'title__4cb8a',
+      'cardMemberDetails': 'memberDetails__4cb8a',
+      'cardDotOnline': 'presenceCountDot__4cb8a',
+      'cardStatusOffline': 'memberCountDot__4cb8a',
+      'searchContainer': 'container_cbd375',
+      'searchNoResult': 'container__74f3e',
+    ),
+
+    'quests': (
+      'tileContainer': 'container_cec934',
+      'tile': 'questTile__60f82',
+      'tileContent': 'container__956c6',
+      'tileDescription': 'rewardDescriptionContainer__956c6',
+      'tileQuestName': 'questName__956c6',
+    ),
+  ),
   'embeds': (
     'codeblock': 'markup__75297 code',
     'codeblockInline': 'markup__75297 code.inline',
@@ -2089,8 +2103,6 @@ $classes: (
     // guess
     'multipleIcon': 'multipleIcon__00943',
     'activeNowAvatar': 'headerAvatar__00943',
-
-    'searchIcon': 'icon_a45028',
 
     'explorePublicHeader': 'header_a14595',
     'explorePublicTitle': 'title_a14595',
@@ -2584,6 +2596,7 @@ $classes: (
     'pillHome': 'pill__1f388',
     // pill for home
     'pill': 'pill_e5445c',
+    'pillDiscover': 'pill__5bc7e',
     'pillWrapper': 'wrapper__58105',
     'pillItem': 'item__58105',
     'blobContainer': 'blobContainer_e5445c',
@@ -2654,35 +2667,6 @@ $classes: (
       'mention': 'mention__3b95d',
       'text': 'text__3b95d',
     ),
-
-    // separated "discover" button - kinda unsure about most of these classes ngl
-    'discover': (
-        'container': 'container_d71945',
-        'popup': (
-          // not sure what the popup class actually is
-          'anchor': 'popoutAnchor_d71945',
-          'container': 'popoutContainer_d71945',
-          'caret': 'popoutCaret_d71945',
-          'caretLeft': 'popoutCaretLeft_d71945',
-          'content': 'popoutContent_d71945',
-        ),
-        'footer': 'footer__214dc',
-        // in list, has gradient within and discover button (different class group)
-        'gradient': 'gradient__214dc',
-        'gradientHidden': 'gradientHidden__214dc',
-        // only shown when server list is at the bottom
-        'backgroundImage': 'backgroundImage_d71945',
-        'genericBackgroundImage': 'genericBackgroundImage_d71945',
-        // seems like placeholder for "quest"/sponsored stuff
-        // sponsored images. thse contain a `background-image: url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_{$game}_Background.png)`.
-        'genshin': 'genshinBackgroundImage_d71945',
-        // linked image is of Xinayun. 5.1 is around the corner from time of writing. She was added in 4.4; 9 months ago. actual lmao.
-        'valorant': 'valorantBackgroundImage_d71945',
-        // i don't play valorant so no funny commentary from me this time
-        // end of sponsored images
-        'close': 'close_d71945',
-        'coachmarkTextContainer': 'coachmarkTextContainer_d71945',
-      ),
   ),
   'serverSettings': (
     'serverIconUploadInner': 'avatarUploaderInner_cd0bbe',
@@ -3983,45 +3967,72 @@ $classes: (
   // This lot is for the former.
   // Any others (likely ones in modals) would be with their respective classes.
   'reaction': (
-      'reactions': 'reactions_f8896c',
-      'reactionBtn': 'reactionBtn_f8896c',
-      'icon': 'icon_f8896c',
-      'active': 'active_f8896c',
-      'visible': 'visible_f8896c',
-      'forceShow': 'forceShow_f8896c',
-      'forceShowLook': 'forceShowLook_f61c73',
-      'hideEmoji': 'hideEmoji_f8896c',
+    'reactions': 'reactions_f8896c',
+    'reactionBtn': 'reactionBtn_f8896c',
+    'icon': 'icon_f8896c',
+    'active': 'active_f8896c',
+    'visible': 'visible_f8896c',
+    'forceShow': 'forceShow_f8896c',
+    'forceShowLook': 'forceShowLook_f61c73',
+    'hideEmoji': 'hideEmoji_f8896c',
 
-      'reaction': 'reaction_f8896c',
-      'shakeReaction': 'shakeReaction_f8896c',
-      'readOnly': 'reactionReadOnly_f8896c',
-      'count': 'reactionCount_f8896c',
-      'me': 'reactionMe_f8896c',
-      'inner': 'reactionInner_f8896c',
-      'remainingReactions': 'remainingReactions_f8896c',
+    'reaction': 'reaction_f8896c',
+    'shakeReaction': 'shakeReaction_f8896c',
+    'readOnly': 'reactionReadOnly_f8896c',
+    'count': 'reactionCount_f8896c',
+    'me': 'reactionMe_f8896c',
+    'inner': 'reactionInner_f8896c',
+    'remainingReactions': 'remainingReactions_f8896c',
 
-      'premiumIcon': 'premiumIcon_f8896c',
-      'sparkles': 'sparkles_f8896c',
-    ),
+    'premiumIcon': 'premiumIcon_f8896c',
+    'sparkles': 'sparkles_f8896c',
+  ),
 
   'popouts': (
     // Shoody name? Yes. Multiple modals use it? Also yes, sadly.
     // It's in the Emojis, Command Autocomplete and Stickers. Open any of them.
     'categoryList': (
-        'wrapper': 'wrapper__4e6ce',
-        'list': 'list_b1e4f3',
-        'scroller': 'scroller_affa7e',
-        // maybe? it appears in soundboard at the least. can also appear as main scroller
-        'listItems': 'listItems_affa7e',
-        'listHeight': 'listHeight_affa7e',
+      'wrapper': 'wrapper__4e6ce',
+      'list': 'list_b1e4f3',
+      'scroller': 'scroller_affa7e',
+      // maybe? it appears in soundboard at the least. can also appear as main scroller
+      'listItems': 'listItems_affa7e',
+      'listHeight': 'listHeight_affa7e',
 
-        // WILL ALWAYS HAVE INLINE STYLE FOR HEIGHT
-        // these few appear elsewhere
-        'svg': 'svg__2338f',
-        'mask': 'mask__0fa6d',
-        'guildIcon': 'guildIcon__0fa6d',
-        'lockedCategory': 'categoryItemLockIconContainer__0fa6d',
-      ),
+      // WILL ALWAYS HAVE INLINE STYLE FOR HEIGHT
+      // these few appear elsewhere
+      'svg': 'svg__2338f',
+      'mask': 'mask__0fa6d',
+      'guildIcon': 'guildIcon__0fa6d',
+      'lockedCategory': 'categoryItemLockIconContainer__0fa6d',
+    ),
+
+    // Start a message with a `/`
+    'autocomplete': (
+      'popout': 'autocomplete__13533',
+      'inner': 'autocompleteInner__13533',
+      'contentTitle': 'contentTitle__13533',
+      'rail': 'rail_d1405b',
+      // sidebar thingy w/ default commands and bot icons
+      'railWrapper': 'wrapper_b1e4f3',
+      // background applied to this class. ugh.
+      // "category": "wrapper_b1e4f3", // duplicate class lol
+      'categorySelectable': 'selectable__1a58a',
+      'categorySelected': 'selected__1a58a',
+      'categoryIcon': 'icon__1a58a',
+      'sidebarList': 'list_b1e4f3',
+      // if you see below at the category of the same name, this is paired with WRAPPER.
+      'categoryHeader': 'categoryHeader_d1405b',
+      'autocompleteRowVertical': 'autocompleteRowVertical__13533',
+      // class exists, could reside in js. my scraper only scrapes css
+      'clickable': 'clickable__13533',
+      'base': 'base__13533',
+      // wanna apply theming to this? background-modifier-hover: clickable[aria-disabled=false]>:hover,clickable[aria-selected=true]>
+      // option does not cover optional stuff
+      'option': 'option_a19535',
+      'optionError': 'error_a19535',
+      'optionActive': 'active_a19535',
+    ),
 
     'menus': (
       'menu': 'menu_c1e9c4',
@@ -4410,8 +4421,8 @@ $classes: (
 
         // Click the "mark inbox as read" button and another modal pops up
         'markAll': (
-            'content': 'content__1688d',
-          ),
+          'content': 'content__1688d',
+        ),
       ),
     ),
   ),
@@ -4754,44 +4765,6 @@ $classes: (
         'modal': 'quickswitcher_ac6cb0',
         'search': 'input_ac6cb0',
         'scroller': 'scroller_ac6cb0',
-      ),
-
-    // Start a message with a `/`
-    'autocomplete': (
-        'modal': 'autocomplete__13533',
-        // apply :not(emojiAutocomplete modal) to target only this
-        'inner': 'autocompleteInner__13533',
-        // apply not with emoji to target only this
-        'contentTitle': 'contentTitle__13533',
-        // at top of emoji autocomplete
-        'rail': 'rail_d1405b',
-        // sidebar thingy w/ default commands and bot icons
-        'railWrapper': 'wrapper_b1e4f3',
-        // background applied to this class. ugh.
-        // "category": "wrapper_b1e4f3", // duplicate class lol
-        'categorySelectable': 'selectable__1a58a',
-        'categorySelected': 'selected__1a58a',
-        'categoryIcon': 'icon__1a58a',
-        'sidebarList': 'list_b1e4f3',
-        // if you see below at the category of the same name, this is paired with WRAPPER.
-        'categoryHeader': 'categoryHeader_d1405b',
-        'autocompleteRowVertical': 'autocompleteRowVertical__13533',
-        // class exists, could reside in js. my scraper only scrapes css
-        'clickable': 'clickable__13533',
-        'base': 'base__13533',
-        // wanna apply theming to this? background-modifier-hover: clickable[aria-disabled=false]>:hover,clickable[aria-selected=true]>
-        // option does not cover optional stuff
-        'option': 'option_a19535',
-        'optionError': 'error_a19535',
-        'optionActive': 'active_a19535',
-      ),
-
-    // Emoji wants to be special
-    // Type a message starting with `:` followed by two non-breaking ASCII characters
-    'emojiAutocomplete': (
-        'modal': 'autocomplete__6b0e0',
-        'inner': 'autocompleteInner__6b0e0',
-        'scroller': 'scroller__6b0e0',
       ),
 
     // Likely need nitro for this
@@ -6278,8 +6251,6 @@ $classes: (
           // src/channels/privateChannels.scss
           'callInviteButton': 'button_c6e099',
           // src/chat/call.scss
-          'gifPickerSearchInput': 'input_a45028',
-          // src/popouts/gifPicker.scss
           'operations': 'operations_bab751',
           // src/messages/message.scss
           'autocompleteIconForeground': 'iconForeground__13533',
@@ -6316,23 +6287,6 @@ $classes: (
           'autocompleteOptionPillKey': 'optionPillKey__1464f',
           'autocompleteUpsellEmoji': 'premiumEmoji_d4ce86',
           'autocompleteUpsellHeader': 'premiumHeader_f73c14',
-          'flex': 'flex_abf706',
-          'flexAlignStart': 'alignStart_abf706',
-          'flexAlignEnd': 'alignEnd_abf706',
-          'flexAlignCenter': 'alignCenter_abf706',
-          'flexAlignStretch': 'alignStretch_abf706',
-          'flexAlignBaseline': 'alignBaseline_abf706',
-          'flexJustifyStart': 'justifyStart_abf706',
-          'flexJustifyEnd': 'justifyEnd_abf706',
-          'flexJustifyCenter': 'justifyCenter_abf706',
-          'flexJustifyAround': 'justifyAround_abf706',
-          'flexJustifyBetween': 'justifyBetween_abf706',
-          'flexNoWrap': 'noWrap_abf706',
-          'flexWrap': 'wrap_abf706',
-          'flexWrapReverse': 'wrapReverse_abf706',
-          'flexDirectionRow': 'directionRow__65900',
-          'flexDirectionRowReverse': 'directionRowReverse_f644aa',
-          'flexDirectionColumn': 'directionColumn__959e9',
           'spacer': 'spacer__03448',
           'directionUp': 'directionUp__5fbe9',
           'directionRight': 'directionRight__5fbe9',
@@ -6349,8 +6303,6 @@ $classes: (
           'spinnerPulsingEllipsis': 'pulsingEllipsis__0b5bb',
           'premiumLabel': 'premiumLabel_e681d1',
           'serverBoostIcon': 'icon_cbe0b4',
-          'tooltipNested': 'tooltipNested__382e7',
-          'tooltipHub': 'hub__09691',
           'commandTooltip': 'tooltip_c530da',
           'commandTooltipPointer': 'tooltipPointer_c530da',
           'upsellTooltipText': 'upsellTooltipWrapper__675aa',
@@ -6358,12 +6310,6 @@ $classes: (
           'newGuildTooltip': 'container_be6a5c',
           'newGuildTooltipPointer': 'tooltipPointer_be6a5c',
           'newGuildTooltipCard': 'container_cfbfb9',
-          'breadcrumbs': 'breadcrumbs_bac619',
-          'breadcrumbWrapper': 'breadcrumbWrapper__75797',
-          'breadcrumbClickWrapper': 'breadcrumbClickWrapper__6bef1',
-          'breadcrumbFinalWrapper': 'breadcrumbFinalWrapper__7e7bd',
-          'breadcrumb': 'breadcrumb__67607',
-          'breadcrumbArrow': 'breadcrumbArrow__58361',
           'headerBarNicknames': 'nicknames__488b1',
           'headerBarModalContent': 'content__487be',
           'chatSearchFocused': 'focused__97492',
@@ -6509,33 +6455,6 @@ $classes: (
           'botInviteModalContent': 'contentBackground__3d3b0',
           'authModalInApp': 'inApp_c5a065',
           'authModalScopeTimes': 'iconWrapper_cf14a8',
-          'discoverSearchBox': 'searchBox_d727b3',
-          'discoverSearchBoxInput': 'searchBoxInput_d727b3',
-          'discoverSearchBoxIconSearch': 'searchIcon_d727b3',
-          'discoverSearchBoxClearIcon': 'clearIcon_d727b3',
-          'discoverCategory': 'container__551b0',
-          'discoverCategoryItem': 'navItem__551b0',
-          'discoverCategoryItemSelected': 'selected__551b0',
-          'discoverGuildCardLoading': 'loading_e90879',
-          'discoverGuildCardLoaded': 'loaded_e90879',
-          'discoverGuildCard': 'card__84e3e',
-          'discoverGuildCardIcon': 'iconMask__4cb8a',
-          'discoverCardSplash': 'splash_e90879',
-          'discoverGuildInfo': 'guildInfo_e90879',
-          'discoverGuildIcon': 'guildIcon_e90879',
-          'discoverGuildAvatar': 'avatar_e90879',
-          'discoverGuildTitle': 'title_e90879',
-          'discoverGuildMemberInfo': 'memberInfo_e90879',
-          'discoverGuildStatusOnline': 'dotOnline_e90879',
-          'discoverGuildStatusOffline': 'dotOffline_e90879',
-          'discoverEmptyTitle': 'emptyHeader_e37a20',
-          'discoverQuestHeaderBackdrop': 'backdrop__8a7fc',
-          'discoverQuest': 'scroller__23746',
-          'discoverQuestTabSelected': 'selected__65d41',
-          'discoverQuestItem': 'container_cec934',
-          'discoverQuestItemGradient': 'darkThemeGradient_b5b7aa',
-          'discoverQuestItemDescription': 'rewardDescriptionContainer__956c6',
-          'discoverQuestItemName': 'questName__956c6',
           'connectionDebugPopout': 'container__50387',
           'connectionDebugText': 'popoutText_effb26',
           'connectionDebugTextDetails': 'popoutTextDetails_effb26',
@@ -7013,7 +6932,6 @@ $classes: (
           'previewServerConversationRoot': 'conversationRoot_bed0b3',
           'previewServerConversationReply': 'replySpine__081f6',
           'previewServerConversationMessage': 'conversationMessage__3c425',
-          'channelsSidebarHidden': 'hidden_c48ade',
           'attachmentIcon': 'icon_b52bef',
           'attachmentInner': 'attachmentInner_b52bef',
           'fileNameLinkWrapper': 'filenameLinkWrapper_b52bef',

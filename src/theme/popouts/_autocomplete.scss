@@ -1,0 +1,22 @@
+@use 'backend' as *;
+
+#{c(popouts autocomplete popout)} {
+  background: cv('shading.popout');
+  box-shadow: none;
+  #{c(popouts autocomplete clickable)} {
+    #{c(popouts autocomplete base)} {
+      &:hover {
+        background: cv('shading.hover');
+      }
+    }
+    &[aria-selected=true] {
+      #{c(popouts autocomplete base)} {
+        background: cv('color.hover');
+      }
+    }
+  }
+}
+#{c(popouts autocomplete contentTitle)} {
+  padding: 4px 8px;
+  color: var(--header-primary);
+}

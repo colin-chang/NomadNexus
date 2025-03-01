@@ -74,4 +74,15 @@
     font-size: 14px;
     opacity: 0.9;
   }
+
+
+// BAR
+  #{c(chatForm channelBottomBarArea)} {
+    #{c(chatForm stackedBars)} {
+      margin-bottom: 8px;
+      border: none;
+      border-radius: 8px;
+      background: cv('shading.popout');
+    }
+  }
 }

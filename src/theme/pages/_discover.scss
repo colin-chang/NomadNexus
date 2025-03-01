@@ -1,0 +1,118 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+
+  // SIDEBAR
+  #{c(discover sidebar container)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.25));
+  }
+  #{c(discover sidebar item)} {
+    position: relative;
+    z-index: 1;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      left: 0;
+      transition: all 0.3s ease-in-out;
+      z-index: -1;
+      border-radius: 4px;
+    }
+    &#{c(discover sidebar itemSelected)} {
+      background: transparent;
+      &:after {
+        right: 0;
+        background: cv('color.main');
+        animation: cv-channel-select 0.3s ease-in-out;
+      }
+    }
+  }
+
+
+  // HEADER
+  #{c(discover headerBackdrop)} {
+    background: cv('shading.popout');
+  }
+
+  // SEARCH HEADER
+  #{c(discover headerRelative)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5));
+  }
+  #{c(discover headerIconButton)} {
+    background: cv('color.main');
+    &:hover {
+      background: cv('color.hover');
+    }
+  }
+
+
+  // CONTENT
+  #{c(discover container)} {
+    border: none;
+  }
+  #{c(discover scroller)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+  }
+  &:is(#{c(main themeDark)}, #{c(main themeLight)}) {
+    #{c(discover card)} {
+      background: cv('shading.card');
+      border: 2px solid transparent;
+      &:hover {
+        background: cv('shading.card');
+        border-color: cv('color.main');
+      }
+    }
+  }
+
+
+  // APPS
+  #{c(discover apps cardAvatar)} {
+    background: cv('shading.card');
+    border-color: transparent;
+  }
+  #{c(discover apps card)} {
+    &:hover {
+      #{c(discover apps cardAvatar)} {
+        background: cv('shading.card');
+        border-color: transparent;
+      }
+    }
+  }
+  #{c(discover apps footerContainer)},
+  #{c(discover apps searchNoResult)} {
+    background: cv('shading.card');
+  }
+
+
+  // SERVERS
+  #{c(discover servers cardIconMask)} {
+    background: cv('shading.card');
+    border-color: transparent;
+  }
+  #{c(discover servers card)} {
+    &:hover {
+      #{c(discover servers cardIconMask)} {
+        background: cv('shading.card');
+        border-color: transparent;
+      }
+    }
+  }
+  #{c(discover servers searchContainer)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+  }
+
+
+  // QUESTS
+  #{c(discover quests tileContainer)} {
+    background: cv('shading.card');
+  }
+  #{c(discover quests tileContent)} {
+    background: transparent;
+  }
+}
+
+
+
+

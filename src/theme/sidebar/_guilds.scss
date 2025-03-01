@@ -15,6 +15,9 @@
 #{c(guildList pillItem)} {
   box-shadow: 0 0 6px 1px cv('color.main');
 }
+#{c(guildList pillDiscover)} {
+  bottom: 0;
+}
 
 // HOME BUTTON
 #{c(main visualRefresh)} {
