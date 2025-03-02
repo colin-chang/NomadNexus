@@ -76,7 +76,7 @@
 }
 #{c(memberList memberInner)} {
   position: relative;
-  background: transparent;
+  width: unset;
   transition:
     all 0.15s ease-in-out,
     transform 0.1s ease-in-out;
@@ -139,7 +139,7 @@
 // HOVER
 #{c(memberList member)} {
   &:hover {
-    #{c(memberList memberInner)} {
+    #{c(memberList childContainer)} {
       background: transparent;
     }
     #{c(memberList usernameInner)} {
@@ -155,7 +155,7 @@
 
 // SELECTED
 #{c(memberList selected)} {
-  #{c(memberList memberInner)} {
+  #{c(memberList childContainer)} {
     background-color: transparent;
   }
   #{c(memberList usernameInner)} {
