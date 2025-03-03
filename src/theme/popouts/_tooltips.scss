@@ -1,15 +1,13 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
-  #{c(tooltips primary)} {
-    background-color: cv('shading.popout');
-    border: none;
-    #{c(tooltips pointer)} {
-      border-top-color: cv('shading.popout');
-      &::before,
-      &::after {
-        display: none;
-      }
+#{c(tooltips primary)} {
+  background-color: cv('shading.popout');
+  border: none;
+  #{c(tooltips pointer)} {
+    border-top-color: cv('shading.popout');
+    &::before,
+    &::after {
+      display: none;
     }
   }
 }

@@ -986,22 +986,6 @@ $classes: (
     'rtsButtonContainer': 'buttonContainer__664ff',
     'active': 'active_f1ceac',
   ),
-  'card': (
-    // These are likely all over the app but are best found in settings.
-    // Some things labelled "card_" aren't from here and are instead unique to that area.
-    'card': 'card__73069',
-    'outline': 'outline__73069',
-    'editable': 'editable__73069',
-
-    'brand': 'cardBrand__73069',
-    'danger': 'cardDanger__73069',
-    'success': 'cardSuccess__73069',
-    'warning': 'cardWarning__73069',
-
-    'primary': 'cardPrimary__73069',
-    'primaryEditable': 'editable__73069',
-    'primaryOutline': 'outline__73069',
-  ),
   'channelSettings': (
     'overview': 'channel-settings-overview',
 
@@ -3770,6 +3754,20 @@ $classes: (
       'sidebarInfo': 'info__2debe',
 
       'customScroller': 'customScroller__23e6b',
+      
+      'card': (
+      // These are likely all over the app but are best found in settings.
+      // Some things labelled "card_" aren't from here and are instead unique to that area.
+      'card': 'card__73069',
+      'primary': 'cardPrimary__73069',
+      'outline': 'outline__73069',
+      'editable': 'editable__73069',
+
+      'brand': 'cardBrand__73069',
+      'danger': 'cardDanger__73069',
+      'success': 'cardSuccess__73069',
+      'warning': 'cardWarning__73069',
+      ),
 
       // used in a few places, i'm not entirely sure what's different about it
       'premiumFeatureBorder': 'premiumFeatureBorder__65c15',

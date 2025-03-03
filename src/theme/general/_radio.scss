@@ -1,26 +1,24 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
-  #{c(radio item)} {
-    &[aria-checked='true'] {
-      background-color: transparent;
-    }
+#{c(radio item)} {
+  &[aria-checked='true'] {
+    background-color: transparent;
+  }
+}
+#{c(radio refreshIconStroke)} {
+  r: 10 !important; // inline
+  stroke: var(--interactive-active);
+}
+#{c(radio refreshIcon)} {
+  fill: var(--interactive-active);
+}
+#{c(radio indicatorChecked)} {
+  color: var(--interactive-active);
+  #{c(radio refreshIconFill)} {
+    fill: none;
   }
   #{c(radio refreshIconStroke)} {
-    r: 10 !important; // inline
     stroke: var(--interactive-active);
-  }
-  #{c(radio refreshIcon)} {
-    fill: var(--interactive-active);
-  }
-  #{c(radio indicatorChecked)} {
-    color: var(--interactive-active);
-    #{c(radio refreshIconFill)} {
-      fill: none;
-    }
-    #{c(radio refreshIconStroke)} {
-      stroke: var(--interactive-active);
-    }
   }
 }
 #{c(radio bar)} {

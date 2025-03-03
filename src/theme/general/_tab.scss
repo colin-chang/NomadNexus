@@ -12,10 +12,8 @@
       }
     }
   }
-}
 
 // PILL
-#{c(main visualRefresh)} {
   :is(#{c(tab topPill)}, #{c(tab side)}) {
     #{c(tab themed)} {
       &#{c(tab item)} {

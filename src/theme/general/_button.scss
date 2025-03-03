@@ -66,18 +66,6 @@
 
 
 // LINK
-#{c(main visualRefresh)} {
-  &:is(#{c(main themeLight)}, #{c(main themeDark)}) {
-    #{c(button lookLink)} {
-      &:is(#{c(button colorPrimary)}, #{c(button colorLink)}) {
-        color: cv('color.main');
-        &:hover {
-          color: cv('color.hover');
-        }
-      }
-    }
-  }
-}
 #{c(button lookLink)} {
   #{c(button contents)} {
     background: none;
@@ -85,6 +73,14 @@
   &:hover {
     #{c(button contents)} {
       text-decoration: underline;
+    }
+  }
+  :is(#{c(main themeLight)}, #{c(main themeDark)}) & {
+    &:is(#{c(button colorPrimary)}, #{c(button colorLink)}) {
+      color: cv('color.main');
+      &:hover {
+        color: cv('color.hover');
+      }
     }
   }
 }
