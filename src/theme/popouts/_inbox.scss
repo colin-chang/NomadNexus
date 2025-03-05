@@ -1,0 +1,54 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {  
+  #{c(popouts inbox popout)} {
+    background: cv('shading.popout');
+    box-shadow: none;
+  }
+  #{c(popouts inbox header)} {
+    background: transparent;
+  }
+  #{c(popouts inbox channelHeader)} {
+    background: cv('color.main');
+    padding-left: 20px;
+    padding-right: 6px;
+    border-radius: 8px;
+  }
+  #{c(popouts inbox button)} {
+    background: cv('shading.card');
+  }
+  #{c(popouts inbox emptyIcon)} {
+    background: cv('color.main');
+    color: var(--interactive-active);
+  }
+
+
+  // FOR YOU
+
+
+  // UNREAD
+  #{c(popouts inbox unread tutorial)} {
+    background: cv('shading.card');
+  }
+  #{c(popouts inbox unread tutorialIcon)} {
+    background: cv('color.main');
+    color: var(--interactive-active);
+  }
+  #{c(popouts inbox unread messages)} {
+    background: cv('shading.card');
+    border: none;
+  }
+  #{c(popouts inbox unread collapseButton)} {
+    left: 0;
+  }
+
+  // MENTIONS
+  #{c(popouts inbox mentions container)} {
+    margin-left: 16px;
+  }
+  #{c(popouts inbox mentions messageContainer)} {
+    background: cv('shading.card');
+    border: none;
+    margin: 0;
+  }
+}

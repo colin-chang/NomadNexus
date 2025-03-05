@@ -6,6 +6,9 @@
       display: none;
     }
   }
+  #{c(chatForm channelBottomBarArea)} {
+    margin: 0 16px 8px;
+  }
   #{c(chatForm channelTextArea)} {
     // Seperate input with buttons
     background: transparent;

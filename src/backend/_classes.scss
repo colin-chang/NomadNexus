@@ -1049,6 +1049,7 @@ $classes: (
     'messageLoadingWrapper': 'wrapper_fc8177',
     'noChannel': 'noChannel__01d5c',
     // in a server without any channels or loading in
+    'messageDivider': 'divider__5126c',
     'backgroundFlash': 'backgroundFlash__5126c',
     'messageListItem': 'messageListItem__5126c',
     'messageGroupStart': 'groupStart__5126c',
@@ -1067,8 +1068,7 @@ $classes: (
     'buttonSelected': 'selected_f7ecac',
 
     'divider': (
-      'divider': 'divider__5126c',
-      'divider2': 'divider__908e2',
+      'divider': 'divider__908e2',
       'hasContent': 'hasContent__908e2',
       'content': 'content__908e2',
       'isUnread': 'isUnread__908e2',
@@ -1198,6 +1198,36 @@ $classes: (
     'automodShield': 'shieldIcon_b7ab2c',
 
     'layerWrapper': 'chatLayerWrapper__01ae2',
+
+    'reactions': (
+      'reactions': 'reactions__23977',
+      'reactionBtn': 'reactionBtn__23977',
+      'active': 'active__23977',
+      'visible': 'visible__23977',
+      'forceShow': 'forceShow__23977',
+      'icon': 'icon__23977',
+      'hideEmoji': 'hideEmoji__23977',
+      'reaction': 'reaction__23977',
+      'me': 'reactionMe__23977',
+      'readOnly': 'reactionReadOnly__23977',
+      'inner': 'reactionInner__23977',
+      'count': 'reactionCount__23977',
+      'remaining': 'remainingReactions__23977',
+      'tooltip': (
+        'tooltip': 'reactionTooltip_b49891',
+        'emoji': 'reactionTooltipEmoji_b49891',
+        'text': 'reactionTooltipText_b49891',
+        'inner': 'reactionTooltipInner_b49891',
+      ),
+      'burst': (
+        'glow': 'burstGlow__23977',
+        'inner': 'burstReactionTooltipInner_b49891',
+        'message': 'burstReactionTooltipMessage_b49891',
+        'prompt': 'burstReactionTooltipPrompt_b49891',
+        'nitroIcon': 'burstReactionTooltipNitroIcon_b49891',
+        'upsellCta': 'burstReactionTooltipUpsellCta_b49891',
+      ),
+    ),
   ),
   'pages': (
     // page itself
@@ -3011,6 +3041,7 @@ $classes: (
 
           // threads
           'threadsContainer': 'container__5b40b',
+          'threadsSpineBorder': 'spineBorder__5b40b',
           'threadsSpine': 'spine__5b40b',
 
           // voice only
@@ -3972,37 +4003,6 @@ $classes: (
       'keybindRemoveFilled': '@alias removeButton filled',
     ),
 
-  // reactions
-  'reactions': (
-    'reactions': 'reactions__23977',
-    'reactionBtn': 'reactionBtn__23977',
-    'active': 'active__23977',
-    'visible': 'visible__23977',
-    'forceShow': 'forceShow__23977',
-    'icon': 'icon__23977',
-    'hideEmoji': 'hideEmoji__23977',
-    'reaction': 'reaction__23977',
-    'me': 'reactionMe__23977',
-    'readOnly': 'reactionReadOnly__23977',
-    'inner': 'reactionInner__23977',
-    'count': 'reactionCount__23977',
-    'remaining': 'remainingReactions__23977',
-    'tooltip': (
-      'tooltip': 'reactionTooltip_b49891',
-      'emoji': 'reactionTooltipEmoji_b49891',
-      'text': 'reactionTooltipText_b49891',
-      'inner': 'reactionTooltipInner_b49891',
-    ),
-    'burst': (
-      'inner': 'burstReactionTooltipInner_b49891',
-      'message': 'burstReactionTooltipMessage_b49891',
-      'prompt': 'burstReactionTooltipPrompt_b49891',
-      'nitroIcon': 'burstReactionTooltipNitroIcon_b49891',
-      'upsellCta': 'burstReactionTooltipUpsellCta_b49891',
-      'premiumIcon': 'premiumIcon__23977',
-    ),
-  ),
-
   'popouts': (
     // Shoody name? Yes. Multiple modals use it? Also yes, sadly.
     // It's in the Emojis, Command Autocomplete and Stickers. Open any of them.
@@ -4356,16 +4356,29 @@ $classes: (
       ),
     ),
 
-    // Inbox, Pinned and Threads dropdowns.
-    // You can also think of these as "Has a distinct header"
-    // There seriously might be NOTHING shared
-    'headerDropdown': (
-      'messagesPopoutWrap': 'messagesPopoutWrap__45690',
-      // INBOX + PINNED
-      'messagesPopout': 'messagesPopout__45690',
-      // INBOX + PINNED
+    'pins': (
+      'popout': 'messagesPopoutWrap__45690',
       'header': 'header__45690',
-      // INBOX + UNREAD + PINNED
+      'titleContainer': 'titleContainer__45690',
+      'messages': 'messagesPopout__45690',
+      'messageGroup': 'messageGroupWrapper__45690',
+      'messageCozy': 'messageGroupCozy__45690',
+      'actionButtons': 'actionButtons__45690',
+      'jumpButton': 'jumpButton__45690',
+      'loading': 'loading__45690',
+      'loadingVisible': 'visible__45690',
+      'remove': 'closeIcon__45690',
+
+      // no pins
+      'emptyPlaceholder': 'emptyPlaceholder__45690',
+      'emptyImage': 'image__45690',
+      'emptyBody': 'body__45690',
+      'footer': 'footer__45690',
+      'block': 'block__30cbe',
+      // discord put this on the rules for some reason? lots of inline
+      'protip': 'pro__30cbe',
+      // inline color
+      'tip': 'tip__30cbe',
     ),
 
     'inbox': (
@@ -4375,7 +4388,7 @@ $classes: (
       'tab': 'tab_ab6641',
       'tabActive': 'active_f0cd33',
       'controls': 'controls_ab6641',
-      'roundButton': 'button__06eda',
+      'button': 'button__06eda',
       'secondary': 'secondary__06eda',
       // background secondary, hover primary
       'tertiary': 'tertiary__06eda',
@@ -5157,27 +5170,6 @@ $classes: (
       'joinAServerInput': 'input__991a0',
       'joinAServerRowContainer': 'rowContainer__991a0',
       // used as pointer to discovery
-    ),
-
-    'pinned': (
-      'messageGroup': 'messageGroupWrapper__45690',
-      'messageGroupCozy': 'messageGroupCozy__45690',
-      'actionButtons': 'actionButtons__45690',
-      'jumpButton': 'jumpButton__45690',
-      'loading': 'loading__45690',
-      'loadingVisible': 'visible__45690',
-      'remove': 'closeIcon__45690',
-      'emptyPlaceholder': 'emptyPlaceholder__45690',
-      'emptyBottom': 'bottom_ac90a2',
-      // in a rule
-      'emptyImage': 'image__45690',
-      'emptyBody': 'body__45690',
-      'footer': 'footer__45690',
-      'block': 'block__30cbe',
-      // discord put this on the rules for some reason? lots of inline
-      'protip': 'pro__30cbe',
-      // inline color
-      'tip': 'tip__30cbe',
     ),
 
     // Either dropdown in header bar or from hovering on a channel with an active thread
@@ -6689,7 +6681,6 @@ $classes: (
           'inboxChattingAbout': 'calloutContainer__6fddf',
           'threadChatIcon': 'icon_f054bd',
           'threadCTA': 'cta__9271d',
-          'threadChannelSpine': 'spineBorder__5b40b',
           'channelThreadPopoutRow': 'row__76f04',
           'channelThreadPopoutMore': 'more__76f04',
           'threadMembersEmptyHeader': 'emptyStateHeader__7641b',
@@ -6952,7 +6943,6 @@ $classes: (
           'pollCreatePopoutAddAnswer': 'addAnswerButton_d97f89',
           'pollCreatePopoutAddAnswerIcon': 'addAnswerIconDefault_d97f89',
           'pollCreatePopoutAddAnswerLabel': 'addAnswerButtonLabel_d97f89',
-          'superReactionGlow': 'burstGlow__23977',
 
           // SORTED AND NEED ALIASES
         ),

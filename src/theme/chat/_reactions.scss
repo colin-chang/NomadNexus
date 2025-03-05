@@ -1,13 +1,14 @@
 @use 'backend' as *;
 
 #{c(main visualRefresh)} {
-  #{c(reactions reactions)} {
-    #{c(reactions me)} {
+  #{c(chat reactions reactions)} {
+    border-radius: 4px;
+    #{c(chat reactions me)} {
       background: hsl(from cv('color.main') h s l/.15);
       border-color: cv('color.main');
     }
   }
-  :is(#{c(reactions reaction)}, #{c(reactions reactionBtn)}) {
+  :is(#{c(chat reactions reaction)}, #{c(chat reactions reactionBtn)}) {
     &:hover {
       border: 1px solid cv('color.hover');
     }
@@ -15,6 +16,11 @@
 }
 
 // TOOLTIP
-#{c(reactions tooltip tooltip)} {
+#{c(chat reactions tooltip tooltip)} {
   background: cv('shading.popout');
+}
+
+// SUPER REACTIONS
+#{c(chat reactions burst glow)} {
+  border-radius: 4px;
 }
