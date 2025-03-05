@@ -403,16 +403,16 @@ $classes: (
     'row': 'row_f525d3',
     'alignTop': 'alignTop_f525d3',
     'alignCenter': 'alignCenter_f525d3',
-
-    'slider': (
-      // Checkbox with extra steps
-      'container': 'container__87bf1',
-      'slider': 'slider__87bf1',
-      'checked': 'checked__87bf1',
-      'disabled': 'disabled__87bf1',
-      'input': 'input__87bf1',
-    ),
   ),
+
+  'switch': (
+    'container': 'container__87bf1',
+    'slider': 'slider__87bf1',
+    'checked': 'checked__87bf1',
+    'disabled': 'disabled__87bf1',
+    'input': 'input__87bf1',
+  ),
+
   'radio': (
     'item': 'item__001a7',
     'itemDisabled': 'disabled__001a7',
@@ -1479,72 +1479,63 @@ $classes: (
 
     // list posts (though a few classes do show up under grid)
     'list': (
-        'list': 'list_f369db',
-        'card': 'container_faa96b',
-        'isOpen': 'isOpen_faa96b',
-        'dots': 'dots_faa96b',
-        'focusTarget': 'focusTarget_faa96b',
-        'left': 'left_faa96b',
-        'body': 'body_faa96b',
-        'messageFocusBlock': 'messageFocusBlock_faa96b',
-        'message': 'message_faa96b',
-        'messageContent': 'messageContent_faa96b',
-        'bodyMedia': 'bodyMedia_faa96b',
-        'spoilerTag': 'obscuredTag_faa96b',
-        'thumbnailContainer': 'thumbnailContainer_faa96b',
-        'thumbnailOverride': 'thumbnailOverride_faa96b',
-        'spoiler': 'obscured_faa96b',
-        'header': 'header_faa96b',
-        'footer': 'footer_faa96b',
-        'bullet': 'bullet_faa96b',
-        'headerText': 'headerText_faa96b',
-        'postTitleText': 'postTitleText_faa96b',
-        'newBadgeWrapper': 'newBadgeWrapper_faa96b',
-        'newBadge': 'newBadge_faa96b',
-        'inTagsRow': 'inTagsRow_faa96b',
-        'typing': 'typing_faa96b',
-        'typingUsers': 'typingUsers_faa96b',
-        'messageCountBox': 'messageCountBox_faa96b',
-        'messageCountIcon': 'messageCountIcon_faa96b',
-        'messageCountText': 'messageCountText_faa96b',
-        'hasRead': 'hasRead_faa96b',
-        'newMessageCount': 'newMessageCount_faa96b',
-        'updateReactionButton': 'updateReactionButton_faa96b',
-        'timestampTooltip': 'timestampTooltip_faa96b',
-        'blockedMessage': 'blockedMessage_faa96b',
-        'withNewBadgeOverflow': 'withNewBadgeOverflow_faa96b',
-      ),
+      'list': 'list_f369db',
+      'card': 'container_faa96b',
+      'isOpen': 'isOpen_faa96b',
+      'dots': 'dots_faa96b',
+      'focusTarget': 'focusTarget_faa96b',
+      'left': 'left_faa96b',
+      'body': 'body_faa96b',
+      'messageFocusBlock': 'messageFocusBlock_faa96b',
+      'message': 'message_faa96b',
+      'messageContent': 'messageContent_faa96b',
+      'bodyMedia': 'bodyMedia_faa96b',
+      'spoilerTag': 'obscuredTag_faa96b',
+      'thumbnailContainer': 'thumbnailContainer_faa96b',
+      'thumbnailOverride': 'thumbnailOverride_faa96b',
+      'spoiler': 'obscured_faa96b',
+      'header': 'header_faa96b',
+      'footer': 'footer_faa96b',
+      'bullet': 'bullet_faa96b',
+      'headerText': 'headerText_faa96b',
+      'postTitleText': 'postTitleText_faa96b',
+      'newBadgeWrapper': 'newBadgeWrapper_faa96b',
+      'newBadge': 'newBadge_faa96b',
+      'inTagsRow': 'inTagsRow_faa96b',
+      'typing': 'typing_faa96b',
+      'typingUsers': 'typingUsers_faa96b',
+      'messageCountBox': 'messageCountBox_faa96b',
+      'messageCountIcon': 'messageCountIcon_faa96b',
+      'messageCountText': 'messageCountText_faa96b',
+      'hasRead': 'hasRead_faa96b',
+      'newMessageCount': 'newMessageCount_faa96b',
+      'updateReactionButton': 'updateReactionButton_faa96b',
+      'timestampTooltip': 'timestampTooltip_faa96b',
+      'blockedMessage': 'blockedMessage_faa96b',
+      'withNewBadgeOverflow': 'withNewBadgeOverflow_faa96b',
+    ),
 
-    // reactions (more classes under list)
-    'reactions': (
-        'reactions': 'reactions__23977',
-        'reactionBtn': 'reactionBtn__23977',
-        'active': 'active__23977',
-        'visible': 'visible__23977',
-        'forceShow': 'forceShow__23977',
-        'icon': 'icon__23977',
-        'hideEmoji': 'hideEmoji__23977',
-        'reaction': 'reaction__23977',
-        'me': 'reactionMe__23977',
-        'readOnly': 'reactionReadOnly__23977',
-        'inner': 'reactionInner__23977',
-        'count': 'reactionCount__23977',
-        'remaining': 'remainingReactions__23977',
-        'tooltip': (
-          'tooltip': 'reactionTooltip_b49891',
-          'emoji': 'reactionTooltipEmoji_b49891',
-          'text': 'reactionTooltipText_b49891',
-          'inner': 'reactionTooltipInner_b49891',
-        ),
-        'burst': (
-          'inner': 'burstReactionTooltipInner_b49891',
-          'message': 'burstReactionTooltipMessage_b49891',
-          'prompt': 'burstReactionTooltipPrompt_b49891',
-          'nitroIcon': 'burstReactionTooltipNitroIcon_b49891',
-          'upsellCta': 'burstReactionTooltipUpsellCta_b49891',
-          'premiumIcon': 'premiumIcon__23977',
-        ),
-      ),
+    'reaction': (
+      'reactions': 'reactions_f8896c',
+      'reactionBtn': 'reactionBtn_f8896c',
+      'icon': 'icon_f8896c',
+      'active': 'active_f8896c',
+      'visible': 'visible_f8896c',
+      'forceShow': 'forceShow_f8896c',
+      'forceShowLook': 'forceShowLook_f61c73',
+      'hideEmoji': 'hideEmoji_f8896c',
+
+      'reaction': 'reaction_f8896c',
+      'shakeReaction': 'shakeReaction_f8896c',
+      'readOnly': 'reactionReadOnly_f8896c',
+      'count': 'reactionCount_f8896c',
+      'me': 'reactionMe_f8896c',
+      'inner': 'reactionInner_f8896c',
+      'remainingReactions': 'remainingReactions_f8896c',
+
+      'premiumIcon': 'premiumIcon_f8896c',
+      'sparkles': 'sparkles_f8896c',
+    ),
 
     // when posting, it's the attached file(s) thing
     'upload': (
@@ -1602,30 +1593,30 @@ $classes: (
       ),
 
     // post has been opened, this is the chat
-    'open': (
-        'scrollerContent': 'scrollerContent__36d07',
-        'topBarDividerSibling': 'divider_ee23ac',
-        // follows topBar as a sibling
-        // post header containing title, icon, tags, etc
-        'header': (
-            'container': 'container__7e6bb',
-            'iconWrapper': 'iconWrapper__7e6bb',
-            'icon': 'icon__7e6bb',
-            'header': 'header__7e6bb',
-          ),
-        // Contains Follow, Share and if possible, a reaction
-        'topBar': (
-            'container': 'container__34c2c',
-            'header': 'header__34c2c',
-            'button': 'button__34c2c',
-            'buttonInner': 'buttonInner__34c2c',
-            'reactButtons': 'reactButtons__34c2c',
-            'addReactButton': 'addReactButton__34c2c',
-            'reactions': 'reactions__34c2c',
-            'buttons': 'buttons__34c2c',
-            'active': 'active__34c2c',
-          ),
+    'chat': (
+      'scrollerContent': 'scrollerContent__36d07',
+      'divider': 'divider_ee23ac',
+      // follows topBar as a sibling
+      // post header containing title, icon, tags, etc
+      'header': (
+          'container': 'container__7e6bb',
+          'iconWrapper': 'iconWrapper__7e6bb',
+          'icon': 'icon__7e6bb',
+          'header': 'header__7e6bb',
+        ),
+      // Contains Follow, Share and if possible, a reaction
+      'bar': (
+        'container': 'container__34c2c',
+        'header': 'header__34c2c',
+        'button': 'button__34c2c',
+        'buttonInner': 'buttonInner__34c2c',
+        'reactButtons': 'reactButtons__34c2c',
+        'addReactButton': 'addReactButton__34c2c',
+        'reactions': 'reactions__34c2c',
+        'buttons': 'buttons__34c2c',
+        'active': 'active__34c2c',
       ),
+    ),
   ),
   'thread': (
     'jump': 'jump__5126c',
@@ -2159,6 +2150,25 @@ $classes: (
     'previewInfo': 'collectibleInfoContainer_c50f62',
     'chatPreview': 'chatPreview_c50f62',
     'mockInput': 'mockInput_c50f62',
+  ),
+
+  'boost': (
+    'scroller': 'scroller__6fd0e',
+    'headerWave': 'headerWave__1dfae',
+    'bodyWave': 'bodyWave__1dfae',
+    'topPerksCard': 'topPerksCard__3add8',
+    'card': 'card__4d7bb',
+    'faq': 'wrapper__5b98e',
+    'footerPopout': 'innerWrapper_b4589b',
+    
+    'serverBoostPerkContent': 'content_a8c622',
+    'serverBoostPaymentQuantityIconWrapper': 'iconWrapper__96f95',
+    'serverBoostPaymentQuantityIcon': 'icon__96f95',
+    'serverBoostPaymentUpsellFooter': 'upsellFooter__5e07c',
+    'serverBoostPaymentPerksList': 'perksList__3bf54',
+    'serverBoostPaymentActions': 'actions_f8746a',
+
+
   ),
 
   // kinda bad name. in desktop visual refresh, appears at the top as the first child under #{c(main base)}.
@@ -3961,30 +3971,36 @@ $classes: (
       // TYPO
       'keybindRemoveFilled': '@alias removeButton filled',
     ),
-  // There's (at least) two different lines for reactions.
-  // One's for *chat* and the other's for *forum posts*.
-  // This lot is for the former.
-  // Any others (likely ones in modals) would be with their respective classes.
-  'reaction': (
-    'reactions': 'reactions_f8896c',
-    'reactionBtn': 'reactionBtn_f8896c',
-    'icon': 'icon_f8896c',
-    'active': 'active_f8896c',
-    'visible': 'visible_f8896c',
-    'forceShow': 'forceShow_f8896c',
-    'forceShowLook': 'forceShowLook_f61c73',
-    'hideEmoji': 'hideEmoji_f8896c',
 
-    'reaction': 'reaction_f8896c',
-    'shakeReaction': 'shakeReaction_f8896c',
-    'readOnly': 'reactionReadOnly_f8896c',
-    'count': 'reactionCount_f8896c',
-    'me': 'reactionMe_f8896c',
-    'inner': 'reactionInner_f8896c',
-    'remainingReactions': 'remainingReactions_f8896c',
-
-    'premiumIcon': 'premiumIcon_f8896c',
-    'sparkles': 'sparkles_f8896c',
+  // reactions
+  'reactions': (
+    'reactions': 'reactions__23977',
+    'reactionBtn': 'reactionBtn__23977',
+    'active': 'active__23977',
+    'visible': 'visible__23977',
+    'forceShow': 'forceShow__23977',
+    'icon': 'icon__23977',
+    'hideEmoji': 'hideEmoji__23977',
+    'reaction': 'reaction__23977',
+    'me': 'reactionMe__23977',
+    'readOnly': 'reactionReadOnly__23977',
+    'inner': 'reactionInner__23977',
+    'count': 'reactionCount__23977',
+    'remaining': 'remainingReactions__23977',
+    'tooltip': (
+      'tooltip': 'reactionTooltip_b49891',
+      'emoji': 'reactionTooltipEmoji_b49891',
+      'text': 'reactionTooltipText_b49891',
+      'inner': 'reactionTooltipInner_b49891',
+    ),
+    'burst': (
+      'inner': 'burstReactionTooltipInner_b49891',
+      'message': 'burstReactionTooltipMessage_b49891',
+      'prompt': 'burstReactionTooltipPrompt_b49891',
+      'nitroIcon': 'burstReactionTooltipNitroIcon_b49891',
+      'upsellCta': 'burstReactionTooltipUpsellCta_b49891',
+      'premiumIcon': 'premiumIcon__23977',
+    ),
   ),
 
   'popouts': (
@@ -4939,12 +4955,6 @@ $classes: (
         // contains background-image
       ),
 
-    // // Within the boost page, click "Boost This Server"
-    // "boost": (
-    // ),
-    // // ..On the other hand, clicking the x/y boosts panel brings this up
-    // "boostInfo": (
-    // ),
     // Create Group DM
     // classes could be used elsewhere; all classes ripped from two rules, both nowhere near each other
     // Click the plus in the header of the private messages sidebar
@@ -6438,19 +6448,6 @@ $classes: (
           'nitroPaymentCardInputWrapper': 'cardNumberWrapper__8b579',
           'nitroPaymentCardInput': 'cardInput__8b579',
           'nitroPaymentCardInputFocused': 'cardInputFocused__8b579',
-          'serverBoostPerkContent': 'content_a8c622',
-          'serverBoostPaymentQuantityIconWrapper': 'iconWrapper__96f95',
-          'serverBoostPaymentQuantityIcon': 'icon__96f95',
-          'serverBoostPaymentUpsellFooter': 'upsellFooter__5e07c',
-          'serverBoostPaymentPerksList': 'perksList__3bf54',
-          'serverBoostPaymentActions': 'actions_f8746a',
-          'serverBoostPageBoostPrompt': 'innerWrapper_b4589b',
-          'serverBoostPageTopPerksCard': 'topPerksCard__3add8',
-          'serverBoostPageCard': 'card__4d7bb',
-          'serverBoostPageFaq': 'wrapper__5b98e',
-          'serverBoostPageScroller': 'scroller__6fd0e',
-          'serverBoostPageHeaderWave': 'headerWave__1dfae',
-          'serverBoostPageBodyWave': 'bodyWave__1dfae',
           'botInviteModalContent': 'contentBackground__3d3b0',
           'authModalInApp': 'inApp_c5a065',
           'authModalScopeTimes': 'iconWrapper_cf14a8',

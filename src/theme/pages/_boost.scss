@@ -1,0 +1,18 @@
+@use 'backend' as *;
+
+#{C(boost scroller)},
+#{C(boost headerWave)} {
+  background: transparent;
+}
+#{C(boost bodyWave)} {
+  display: none;
+}
+#{C(boost topPerksCard)},
+#{C(boost card)},
+#{C(boost faq)} {
+  background: cv('shading.card');
+}
+
+#{C(boost footerPopout)} {
+  background: cv('shading.popout');
+}

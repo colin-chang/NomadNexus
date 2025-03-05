@@ -35,6 +35,14 @@
   #{c(discover headerBackdrop)} {
     background: cv('shading.popout');
   }
+  #{c(discover searchBar)} {
+    background: cv('shading.input.bg');
+    border-color: cv('shading.input.border');
+    &:focus-within {
+      border-color: cv('color.main');
+    }
+  }
+
 
   // SEARCH HEADER
   #{c(discover headerRelative)} {
@@ -46,7 +54,6 @@
       background: cv('color.hover');
     }
   }
-
 
   // CONTENT
   #{c(discover container)} {

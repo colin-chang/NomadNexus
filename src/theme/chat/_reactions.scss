@@ -1,0 +1,20 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+  #{c(reactions reactions)} {
+    #{c(reactions me)} {
+      background: hsl(from cv('color.main') h s l/.15);
+      border-color: cv('color.main');
+    }
+  }
+  :is(#{c(reactions reaction)}, #{c(reactions reactionBtn)}) {
+    &:hover {
+      border: 1px solid cv('color.hover');
+    }
+  }
+}
+
+// TOOLTIP
+#{c(reactions tooltip tooltip)} {
+  background: cv('shading.popout');
+}

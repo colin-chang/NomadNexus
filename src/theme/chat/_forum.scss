@@ -40,8 +40,29 @@
       border-color: cv('color.main');
     }
   }
-}
-#{c(forums grid contentPreview)} {
-  background-color: cv('shading.card');
-  border: none;
+  #{c(forums grid contentPreview)} {
+    background-color: cv('shading.card');
+    border: none;
+  }
+
+
+  // CHAT
+  #{c(forums chat divider)} {
+    background: transparent;
+  }
+  #{c(forums chat header iconWrapper)} {
+    background: cv('color.main');
+  }
+  #{c(forums chat header icon)} {
+    path {
+      color: var(--interactive-active);
+    }    
+  }
+  #{c(forums chat bar container)} {
+    background: transparent;
+    border: none;
+  }
+  #{c(forums chat bar active)} {
+    color: cv('color.main');
+  }
 }

@@ -7,14 +7,3 @@
     background-color: transparent;
   }
 }
-
-// SLIDER - inline styles
-#{c(checkbox slider container)} {
-  background: hsl(from var(--interactive-normal) h s l/.1) !important;
-  &#{c(checkbox slider checked)} {
-    background: cv('color.main') !important;
-    path {
-      fill: cv('color.main');
-    }
-  }
-}
