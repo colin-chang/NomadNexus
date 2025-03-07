@@ -10,6 +10,9 @@
     border: 3px solid transparent;
     border-radius: 7px;
   }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
 }
 #{c(scroller thin)} {
   &::-webkit-scrollbar {

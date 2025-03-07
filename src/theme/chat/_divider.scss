@@ -1,7 +1,7 @@
 @use 'backend' as *;
 
 #{c(chat divider divider)} {
-  --divider-color: var(--hsl-main-color); // cv('color.main) doesnt work idk why
+  --divider-color: var(--hsl-main-color);
 
   // ALLOWS NO BACKGROUND WITH DATE
   &#{c(chat divider hasContent)} {

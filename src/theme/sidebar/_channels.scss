@@ -60,7 +60,7 @@
 // CHANNEL
 // hidden vars
 :root {
-  --channel-default: var(--text-tertiary);
+  --channel-default: var(--channels-default);
   --channel-muted: var(--interactive-muted);
   --channel-hover: var(--interactive-hover);
   --channel-selected: var(--interactive-active);

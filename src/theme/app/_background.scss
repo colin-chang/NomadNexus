@@ -13,14 +13,15 @@
 
 // BACKGROUND IMAGE
 #{c(main appInner)} {
-  background: transparent center/cover no-repeat;
-  background-image: cv('bg.app.img');
-  background-attachment: cv('bg.app.attach');
-  filter: cv('bg.app.filter');
+  background: cv('shading.bg');
 }
 #{c(main visualRefresh)} {
   #{c(main bg)} {
-    background: cv('shading.bg');
+    background: transparent center/cover no-repeat;
+    background-image: cv('bg.app.img');
+    background-attachment: cv('bg.app.attach');
+    filter: cv('bg.app.filter');
+    z-index: -1;
   }
 }
 

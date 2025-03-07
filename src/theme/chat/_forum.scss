@@ -18,7 +18,28 @@
 
   // TAGS
   #{c(pages tags pill)} {
-    @include card;
+    background: cv('shading.card');
+    border: 2px solid cv('color.hover');
+    transition: all .2s ease;
+    &#{c(pages tags clickable)} {
+      &:not(#{c(pages tags disabled)}) {
+        &:hover {
+          background: cv('shading.card');
+          border-color: cv('color.hover');
+        }
+      }      
+    }
+    &#{c(pages tags selected)} {
+      background: cv('color.main');      
+      border-color: cv('color.main');
+      color: var(--interactive-active);
+      &:not(#{c(pages tags disabled)}) {
+        &:hover {
+          background: cv('color.hover');
+          border-color: cv('color.hover');
+        }
+      }    
+    }
   }
 
   // NEW POST
