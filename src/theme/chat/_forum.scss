@@ -7,7 +7,7 @@
 
   // HEADER
   #{c(forums header)} {
-    background-color: cv('shading.input.bg');
+    background: cv('shading.input.bg');
     border: none;
     box-shadow: 0 0 2px cv('shading.input.border');
     #{c(input input)} {
@@ -23,28 +23,30 @@
 
   // NEW POST
   #{c(forums newPostsPopout)} {
-    background-color: cv('shading.popout');
+    background: cv('shading.popout');
     border-color: transparent;
   }
 
   // CARD
-  :is(#{c(forums grid card)}, #{c(forums list card)}) {
-    background-color: cv('shading.card');
+  :is(#{c(forums grid card)}, #{c(forums list card)}) { // might need theme-dark/light in the future
+    background: cv('shading.card');
     border: 2px solid transparent;
     &:hover {
-      background-color: cv('shading.card');
+      background: cv('shading.card');
       border-color: cv('color.hover');
     }
     &:is(#{c(forums grid isOpen)}, #{c(forums list isOpen)}) {
-      background-color: cv('shading.card');
+      background: cv('shading.card');
       border-color: cv('color.main');
     }
   }
   #{c(forums grid contentPreview)} {
-    background-color: cv('shading.card');
+    background: cv('shading.card');
     border: none;
   }
-
+  #{c(forums pinIcon)} {
+    background: cv('color.main');
+  }
 
   // CHAT
   #{c(forums chat divider)} {
@@ -55,7 +57,7 @@
   }
   #{c(forums chat header icon)} {
     path {
-      color: var(--interactive-active);
+      fill: var(--interactive-active);
     }    
   }
   #{c(forums chat bar container)} {

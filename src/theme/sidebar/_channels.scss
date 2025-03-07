@@ -50,7 +50,9 @@
 
 
 // THREAD SPINE
-#{c(sidebar server channel threadsSpineBorder)},
+#{c(sidebar server channel threadsSpineBorder)} {
+  background-color: cv('color.main');
+}
 #{c(sidebar server channel threadsSpine)} {
   color: cv('color.main');
 }

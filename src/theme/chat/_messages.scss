@@ -58,6 +58,13 @@
   }
 }
 
+// QUOTES
+#{c(chat quoteContainer)} {
+  #{c(chat quoteDivider)} {
+    border-radius: 0;
+  }
+}
+
 // LINKS
 #{c(main anchorLink)} {
   #{c(chat systemMessageContent)} &,
@@ -67,18 +74,41 @@
   }
 }
 
-// QUOTES
-#{c(chat quoteContainer)} {
-  #{c(chat quoteDivider)} {
-    border-radius: 0;
-  }
-}
-
 // EMBEDS
 #{c(main visualRefresh)} {
   #{c(embeds embedFull)} {
     background: cv('shading.card');
     border: none;
     border-left: 4px solid var(--border-normal);
+  }
+
+  // INVITE
+  #{c(embeds invite wrapper)} {
+    background: cv('shading.card');
+    border: none;
+  }
+  #{c(embeds invite statusOnline)} {
+    background: cv('color.online');
+  }
+  #{c(embeds invite statusOffline)} {
+    background: cv('color.offline');
+  }
+
+  // GIFTS
+  #{c(embeds gift tile)} {
+    background: cv('shading.card');
+    border: none;
+    &:hover {
+      background: cv('shading.card');
+    }
+  }
+
+  // AUDIO
+  #{c(embeds audio wrapper)} {
+    background: cv('shading.card');
+    border: none;
+  }
+  #{c(embeds audio controls)} {
+    background: transparent;
   }
 }

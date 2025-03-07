@@ -1258,107 +1258,107 @@ $classes: (
 
     // channel order sort of thing
     'channels': (
-        'categoryRow': 'categoryRow_e4503a',
-        'uncategorized': 'uncategorized_e4503a',
-        // when combined with categoryRow class, removes top padding
-        'categoryText': 'categoryText_e4503a',
-        'channelText': 'channelText_e4503a',
-        'titleBadge': 'titleBadge_e4503a',
-        'selectAll': 'selectAll_e4503a',
-        'selectAllCheckbox': 'selectAllCheckbox_e4503a',
-        'channelRow': 'channelRow_e4503a',
-        // background, also one with :hover:not(disabled class)
-        'disabled': 'disabled_e4503a',
-        'firstChannel': 'firstChannel_e4503a',
-        // both this and next class apply border radius to the channel row ..
-        'lastChannel': 'lastChannel_e4503a',
-        // .. with the first being top left/right and last being bottom left/right
-        'channelInfo': 'channelInfo_e4503a',
-        'channelActions': 'channelActions_e4503a',
-        'channelSubtitles': 'channelSubtitles_e4503a',
-        'channelSubtitle': 'channelSubtitle_e4503a',
-        'subtitleSeparator': 'subtitleSeparator_e4503a',
-        // though just a dot has background
-        'topic': 'topic_e4503a',
-        'channelName': 'channelName_e4503a',
-        'separator': 'separator_e4503a',
-        // horizontal line, background
-        'viewChannelButton': 'viewChannelButton_e4503a',
-        'checkboxInner': 'checkboxInner_e4503a',
-        'scrollerInner': 'scrollerInner_e4503a',
-      ),
+      'categoryRow': 'categoryRow_e4503a',
+      'uncategorized': 'uncategorized_e4503a',
+      // when combined with categoryRow class, removes top padding
+      'categoryText': 'categoryText_e4503a',
+      'channelText': 'channelText_e4503a',
+      'titleBadge': 'titleBadge_e4503a',
+      'selectAll': 'selectAll_e4503a',
+      'selectAllCheckbox': 'selectAllCheckbox_e4503a',
+      'channelRow': 'channelRow_e4503a',
+      // background, also one with :hover:not(disabled class)
+      'disabled': 'disabled_e4503a',
+      'firstChannel': 'firstChannel_e4503a',
+      // both this and next class apply border radius to the channel row ..
+      'lastChannel': 'lastChannel_e4503a',
+      // .. with the first being top left/right and last being bottom left/right
+      'channelInfo': 'channelInfo_e4503a',
+      'channelActions': 'channelActions_e4503a',
+      'channelSubtitles': 'channelSubtitles_e4503a',
+      'channelSubtitle': 'channelSubtitle_e4503a',
+      'subtitleSeparator': 'subtitleSeparator_e4503a',
+      // though just a dot has background
+      'topic': 'topic_e4503a',
+      'channelName': 'channelName_e4503a',
+      'separator': 'separator_e4503a',
+      // horizontal line, background
+      'viewChannelButton': 'viewChannelButton_e4503a',
+      'checkboxInner': 'checkboxInner_e4503a',
+      'scrollerInner': 'scrollerInner_e4503a',
+    ),
 
     // customize options
     'customiseOptions': (
-        'optionButton': 'optionButton__270d7',
-        'selected': 'selected__270d7',
-        // with option background
-        'pressed': 'pressed__270d7',
-        'checkIcon': 'checkIcon__270d7',
-        // background brand experiment
-        'memberCount': 'memberCount__270d7',
-        // background brand experiment
-        'buttonEmoji': 'buttonEmoji__270d7',
-        'buttonText': 'buttonText__270d7',
-      ),
+      'optionButton': 'optionButton__270d7',
+      'selected': 'selected__270d7',
+      // with option background
+      'pressed': 'pressed__270d7',
+      'checkIcon': 'checkIcon__270d7',
+      // background brand experiment
+      'memberCount': 'memberCount__270d7',
+      // background brand experiment
+      'buttonEmoji': 'buttonEmoji__270d7',
+      'buttonText': 'buttonText__270d7',
+    ),
     // customize page
     'customise': (
-        'scroller': 'scroller__5d7c9',
-        // background with dark/light
-        'pageBody': 'pageBody__5d7c9',
-        'prompt': 'prompt__5d7c9',
-        // background primary
-        'promptTitle': 'promptTitle__5d7c9',
-        'required': 'required__5d7c9',
-        // background accent
-        'error': 'error__5d7c9',
-        'promptOptions': 'promptOptions__5d7c9',
-        'emptyPage': 'emptyPage__5d7c9',
-        // background with dark/light
-        'emptyContainer': 'emptyContainer__5d7c9',
-        'emptyIcon': 'emptyIcon__5d7c9',
-        'emptyHeader': 'emptyHeader__5d7c9',
-        'helpText': 'helpText__5d7c9',
-        'profile': 'profile__5d7c9',
-        'profileCard': 'profileCard__5d7c9',
-        // background primary
-        'separator': 'separator__5d7c9',
-        // background modifier accent
-        'username': 'username__5d7c9',
-        'bio': 'bio__5d7c9',
-        'title': 'title__5d7c9',
-        'roles': 'roles__5d7c9',
-        'role': 'role__5d7c9',
-        // background sec alt
-        'roleDot': 'roleDot__5d7c9',
-      ),
+      'scroller': 'scroller__5d7c9',
+      // background with dark/light
+      'pageBody': 'pageBody__5d7c9',
+      'prompt': 'prompt__5d7c9',
+      // background primary
+      'promptTitle': 'promptTitle__5d7c9',
+      'required': 'required__5d7c9',
+      // background accent
+      'error': 'error__5d7c9',
+      'promptOptions': 'promptOptions__5d7c9',
+      'emptyPage': 'emptyPage__5d7c9',
+      // background with dark/light
+      'emptyContainer': 'emptyContainer__5d7c9',
+      'emptyIcon': 'emptyIcon__5d7c9',
+      'emptyHeader': 'emptyHeader__5d7c9',
+      'helpText': 'helpText__5d7c9',
+      'profile': 'profile__5d7c9',
+      'profileCard': 'profileCard__5d7c9',
+      // background primary
+      'separator': 'separator__5d7c9',
+      // background modifier accent
+      'username': 'username__5d7c9',
+      'bio': 'bio__5d7c9',
+      'title': 'title__5d7c9',
+      'roles': 'roles__5d7c9',
+      'role': 'role__5d7c9',
+      // background sec alt
+      'roleDot': 'roleDot__5d7c9',
+    ),
 
     // header stuff
     'header': (
-        'returnButton': 'returnButton__0b563',
-        'returnButtonText': 'returnButtonText__0b563',
-        'returnIcon': 'returnIcon__0b563',
-        'container': 'container__0b563',
-        // page container
-        'tabBar': 'tabBar__0b563',
-        'tabBarItem': 'tabBarItem__0b563',
-        'newBadge': 'newBadge__0b563',
-        'header': 'header__0b563',
-        // has background, overwritten from different rule
-        'innerHeader': 'innerHeader__0b563',
-      ),
+      'returnButton': 'returnButton__0b563',
+      'returnButtonText': 'returnButtonText__0b563',
+      'returnIcon': 'returnIcon__0b563',
+      'container': 'container__0b563',
+      // page container
+      'tabBar': 'tabBar__0b563',
+      'tabBarItem': 'tabBarItem__0b563',
+      'newBadge': 'newBadge__0b563',
+      'header': 'header__0b563',
+      // has background, overwritten from different rule
+      'innerHeader': 'innerHeader__0b563',
+    ),
 
     // tags (used in forums and home)
     'tags': (
-        'pill': 'pill_a2c9e8',
-        'clickable': 'clickable_a2c9e8',
-        'selected': 'selected_a2c9e8',
-        'disabled': 'disabled_a2c9e8',
-        'emoji': 'emoji__1c948',
-        'small': 'small_a2c9e8',
-        'close': 'close_a2c9e8',
-        'tooltipPill': 'tooltipPill_a2c9e8',
-      ),
+      'pill': 'pill_a2c9e8',
+      'clickable': 'clickable_a2c9e8',
+      'selected': 'selected_a2c9e8',
+      'disabled': 'disabled_a2c9e8',
+      'emoji': 'emoji__1c948',
+      'small': 'small_a2c9e8',
+      'close': 'close_a2c9e8',
+      'tooltipPill': 'tooltipPill_a2c9e8',
+    ),
   ),
   'forums': (
     // Named so because aria-label for the chat bubble icon is "Forum" in English
@@ -1388,46 +1388,46 @@ $classes: (
 
     // tags on their own can apply outside the container
     'tags': (
-        'container': 'tagsContainer_d9be46',
+      'container': 'tagsContainer_d9be46',
 
-        'dropdown': 'sortDropdown_f369db',
-        'dropdownInner': 'sortDropdownInner_f369db',
-        'dropdownText': 'sortDropdownText_f369db',
+      'dropdown': 'sortDropdown_f369db',
+      'dropdownInner': 'sortDropdownInner_f369db',
+      'dropdownText': 'sortDropdownText_f369db',
 
-        'dropdownPopoutContainer': 'container_f8b2d2',
-        // on own line. click "Sort & View"
-        'dropdownPopoutContainerClearText': 'clearText_f8b2d2',
+      'dropdownPopoutContainer': 'container_f8b2d2',
+      // on own line. click "Sort & View"
+      'dropdownPopoutContainerClearText': 'clearText_f8b2d2',
 
-        // same line as ^
-        'divider': 'divider_f369db',
+      // same line as ^
+      'divider': 'divider_f369db',
 
-        'list': 'tagList_f369db',
-        'listInner': 'tagListInner_f369db',
+      'list': 'tagList_f369db',
+      'listInner': 'tagListInner_f369db',
 
-        'tag': 'tag_f369db',
-        // hover color uses .pill.clickable:not(.disabled) for background. they're in pages
-        'tagsButton': 'tagsButton_f369db',
-        // usually the "all" button; clicking it brings up a popout
-        'tagsButtonInner': 'tagsButtonInner_f369db',
+      'tag': 'tag_f369db',
+      // hover color uses .pill.clickable:not(.disabled) for background. they're in pages
+      'tagsButton': 'tagsButton_f369db',
+      // usually the "all" button; clicking it brings up a popout
+      'tagsButtonInner': 'tagsButtonInner_f369db',
 
-        'popout': (
-          'container': 'container__5808f',
-          'header': 'header__5808f',
-          'headerLeft': 'headerLeft__5808f',
-          'headerText': 'headerText__5808f',
-          // inline color
-          'count': 'countContainer__5808f',
-          'countText': 'countText__5808f',
+      'popout': (
+        'container': 'container__5808f',
+        'header': 'header__5808f',
+        'headerLeft': 'headerLeft__5808f',
+        'headerText': 'headerText__5808f',
+        // inline color
+        'count': 'countContainer__5808f',
+        'countText': 'countText__5808f',
 
-          'row': 'row__5808f',
+        'row': 'row__5808f',
 
-          'tagContainer': 'tagContainer__5808f',
-          'tag': 'tag__5808f',
+        'tagContainer': 'tagContainer__5808f',
+        'tag': 'tag__5808f',
 
-          'separator': 'separator__5808f',
-          'clear': 'clear__5808f',
-        ),
+        'separator': 'separator__5808f',
+        'clear': 'clear__5808f',
       ),
+    ),
 
     // click the little book icon, category could also be called rules
     'guidelines': (
@@ -1450,62 +1450,62 @@ $classes: (
 
     // it's loading in
     'loadingCard': (
-        // applied regardless of grid or list
-        'card': 'loadingCard_f369db',
-        // below are different opacities, the number is the percentage opacity. 100 = opacity: 1;
-        'opacity33': 'loadingCard-0_f369db',
-        'opacity66': 'loadingCard-1_f369db',
-        'opacity100': 'loadingCard-2_f369db'
-      ),
+      // applied regardless of grid or list
+      'card': 'loadingCard_f369db',
+      // below are different opacities, the number is the percentage opacity. 100 = opacity: 1;
+      'opacity33': 'loadingCard-0_f369db',
+      'opacity66': 'loadingCard-1_f369db',
+      'opacity100': 'loadingCard-2_f369db'
+    ),
 
     // grid posts
     'grid': (
-        'grid': 'grid_f369db',
-        // these all could be 559438
-        'card': 'container__9a337',
-        'isOpen': 'isOpen__9a337',
-        'dots': 'dots__9a337',
+      'grid': 'grid_f369db',
+      // these all could be 559438
+      'card': 'container__9a337',
+      'isOpen': 'isOpen__9a337',
+      'dots': 'dots__9a337',
 
-        'focusTarget': 'focusTarget__9a337',
-        'spoilerTagContainer': 'obscuredTagContainer__9a337',
-        'spoilerTag': 'obscuredTag__9a337',
-        'thumbnailOverride': 'thumbnailOverride__9a337',
-        'imageCover': 'imageCover__9a337',
-        'spoiler': 'obscured__9a337',
-        'bullet': 'bullet__9a337',
-        'typing': 'typing__9a337',
-        'typingUsers': 'typingUsers__9a337',
-        'mediaIconsRow': 'mediaIconsRow__9a337',
-        'mediaIcon': 'mediaIcon__9a337',
-        'moreImagesPill': 'moreImagesPill__9a337',
-        'moreImagesPillIcon': 'moreImagesPillIcon__9a337',
-        'moreImagesPillText': 'moreImagesPillText__9a337',
-        'mosaicMediaContainer': 'mosaicMediaContainer__9a337',
-        'mediaContainer': 'mediaContainer__9a337',
-        'bodyMedia': 'bodyMedia__9a337',
-        'bodyMediaFrame': 'bodyMediaFrame__9a337',
-        'postBody': 'postBody__9a337',
-        'tagsRow': 'tagsRow__9a337',
-        'author': 'author_d3eee8',
-        'header': 'header__9a337',
-        'footer': 'footer__9a337',
-        'title': 'title__9a337',
-        'forumPostControls': 'forumPostControls__9a337',
-        'controlsGroup': 'controlsGroup__9a337',
-        'contentPreview': 'contentPreview__9a337',
-        'content': 'content__9a337',
-        'textContentFooter': 'textContentFooter__9a337',
-        'noTags': 'noTags__9a337',
-        'authorRow': 'authorRow__9a337',
-        'rowGroup': 'rowGroup__9a337',
-        'postCreationTimestamp': 'postCreationTimestamp__9a337',
-        'messageCountContainer': 'messageCountContainer__9a337',
-        'newBadge': 'newBadge__9a337',
-        // background-color: var(--brand-260);
-        'textContentUnread': 'textContentUnread__9a337',
-        'textContentRead': 'textContentRead__9a337',
-        'tag': 'tagPill__9a337',
-      ),
+      'focusTarget': 'focusTarget__9a337',
+      'spoilerTagContainer': 'obscuredTagContainer__9a337',
+      'spoilerTag': 'obscuredTag__9a337',
+      'thumbnailOverride': 'thumbnailOverride__9a337',
+      'imageCover': 'imageCover__9a337',
+      'spoiler': 'obscured__9a337',
+      'bullet': 'bullet__9a337',
+      'typing': 'typing__9a337',
+      'typingUsers': 'typingUsers__9a337',
+      'mediaIconsRow': 'mediaIconsRow__9a337',
+      'mediaIcon': 'mediaIcon__9a337',
+      'moreImagesPill': 'moreImagesPill__9a337',
+      'moreImagesPillIcon': 'moreImagesPillIcon__9a337',
+      'moreImagesPillText': 'moreImagesPillText__9a337',
+      'mosaicMediaContainer': 'mosaicMediaContainer__9a337',
+      'mediaContainer': 'mediaContainer__9a337',
+      'bodyMedia': 'bodyMedia__9a337',
+      'bodyMediaFrame': 'bodyMediaFrame__9a337',
+      'postBody': 'postBody__9a337',
+      'tagsRow': 'tagsRow__9a337',
+      'author': 'author_d3eee8',
+      'header': 'header__9a337',
+      'footer': 'footer__9a337',
+      'title': 'title__9a337',
+      'forumPostControls': 'forumPostControls__9a337',
+      'controlsGroup': 'controlsGroup__9a337',
+      'contentPreview': 'contentPreview__9a337',
+      'content': 'content__9a337',
+      'textContentFooter': 'textContentFooter__9a337',
+      'noTags': 'noTags__9a337',
+      'authorRow': 'authorRow__9a337',
+      'rowGroup': 'rowGroup__9a337',
+      'postCreationTimestamp': 'postCreationTimestamp__9a337',
+      'messageCountContainer': 'messageCountContainer__9a337',
+      'newBadge': 'newBadge__9a337',
+      // background-color: var(--brand-260);
+      'textContentUnread': 'textContentUnread__9a337',
+      'textContentRead': 'textContentRead__9a337',
+      'tag': 'tagPill__9a337',
+    ),
 
     // list posts (though a few classes do show up under grid)
     'list': (
@@ -1545,6 +1545,9 @@ $classes: (
       'withNewBadgeOverflow': 'withNewBadgeOverflow_faa96b',
     ),
 
+    'cardtags': 'tags__08166',
+    'pinIcon': 'pinIcon__08166',
+
     'reaction': (
       'reactions': 'reactions_f8896c',
       'reactionBtn': 'reactionBtn_f8896c',
@@ -1569,58 +1572,58 @@ $classes: (
 
     // when posting, it's the attached file(s) thing
     'upload': (
-        'container': 'container__94439',
+      'container': 'container__94439',
 
-        // when empty
-        'uploadInput': 'uploadInput__94439',
-        'fileInput': 'fileInput__94439',
-        'uploadIcon': 'uploadIcon__94439',
+      // when empty
+      'uploadInput': 'uploadInput__94439',
+      'fileInput': 'fileInput__94439',
+      'uploadIcon': 'uploadIcon__94439',
 
-        // when file attached, hovered over file
-        'popoutContainer': 'popoutContainer__94439',
-        'popout': 'popout__94439',
-        'uploads': 'uploads__94439',
-        'badge': 'badge__94439',
+      // when file attached, hovered over file
+      'popoutContainer': 'popoutContainer__94439',
+      'popout': 'popout__94439',
+      'uploads': 'uploads__94439',
+      'badge': 'badge__94439',
 
-        // html time:
-        // no attach: container>uploadInput
-        // non-image: container>{.icon[.type].imageContainer.imageSmall>tags}+badge
-        // image: container>{.imageContainer.imageSmall>spoilerContainer>spoilerInnerContainer>spoilerWrapper>.image.imageSmall+tags}+badge
-        // when hovered, replace +badge with +popoutContainer. container class still acts as if it were hovered
-        // hover over is limit for uploads, popout clears after no longer hovering
-        // attached file stuff
-        'filenameContainer': 'filenameContainer__41ea0',
-        'filename': 'filename__41ea0',
-        'mediaContainer': 'mediaContainer__41ea0',
-        'media': 'media__41ea0',
-        'tags': 'tags__41ea0',
-        'altTag': 'altTag__41ea0',
-        'spoilerContainer': 'spoilerContainer__41ea0',
-        'spoilerWrapper': 'spoilerWrapper__41ea0',
-        'spoiler': 'spoiler__41ea0',
-        'attachmentItemSmall': 'attachmentItemSmall__41ea0',
-        'imageSmall': 'imageSmall__41ea0',
-        'actionBarIcon': 'actionBarIcon__41ea0',
-        'action': 'action__41ea0',
+      // html time:
+      // no attach: container>uploadInput
+      // non-image: container>{.icon[.type].imageContainer.imageSmall>tags}+badge
+      // image: container>{.imageContainer.imageSmall>spoilerContainer>spoilerInnerContainer>spoilerWrapper>.image.imageSmall+tags}+badge
+      // when hovered, replace +badge with +popoutContainer. container class still acts as if it were hovered
+      // hover over is limit for uploads, popout clears after no longer hovering
+      // attached file stuff
+      'filenameContainer': 'filenameContainer__41ea0',
+      'filename': 'filename__41ea0',
+      'mediaContainer': 'mediaContainer__41ea0',
+      'media': 'media__41ea0',
+      'tags': 'tags__41ea0',
+      'altTag': 'altTag__41ea0',
+      'spoilerContainer': 'spoilerContainer__41ea0',
+      'spoilerWrapper': 'spoilerWrapper__41ea0',
+      'spoiler': 'spoiler__41ea0',
+      'attachmentItemSmall': 'attachmentItemSmall__41ea0',
+      'imageSmall': 'imageSmall__41ea0',
+      'actionBarIcon': 'actionBarIcon__41ea0',
+      'action': 'action__41ea0',
 
-        'files': (
-          'icon': 'icon__41ea0',
-          'acrobat': 'acrobat__41ea0',
-          'ae': 'ae__41ea0',
-          'ai': 'ai__41ea0',
-          'archive': 'archive__41ea0',
-          'audio': 'audio__41ea0',
-          'code': 'code__41ea0',
-          'document': 'document__41ea0',
-          'photoshop': 'photoshop__41ea0',
-          'ps': 'ps__41ea0',
-          'sketch': 'sketch__41ea0',
-          'spreadsheet': 'spreadsheet__41ea0',
-          'unknown': 'unknown__41ea0',
-          'video': 'video__41ea0',
-          'webcode': 'webcode__41ea0',
-        ),
+      'files': (
+        'icon': 'icon__41ea0',
+        'acrobat': 'acrobat__41ea0',
+        'ae': 'ae__41ea0',
+        'ai': 'ai__41ea0',
+        'archive': 'archive__41ea0',
+        'audio': 'audio__41ea0',
+        'code': 'code__41ea0',
+        'document': 'document__41ea0',
+        'photoshop': 'photoshop__41ea0',
+        'ps': 'ps__41ea0',
+        'sketch': 'sketch__41ea0',
+        'spreadsheet': 'spreadsheet__41ea0',
+        'unknown': 'unknown__41ea0',
+        'video': 'video__41ea0',
+        'webcode': 'webcode__41ea0',
       ),
+    ),
 
     // post has been opened, this is the chat
     'chat': (
@@ -1629,11 +1632,11 @@ $classes: (
       // follows topBar as a sibling
       // post header containing title, icon, tags, etc
       'header': (
-          'container': 'container__7e6bb',
-          'iconWrapper': 'iconWrapper__7e6bb',
-          'icon': 'icon__7e6bb',
-          'header': 'header__7e6bb',
-        ),
+        'container': 'container__7e6bb',
+        'iconWrapper': 'iconWrapper__7e6bb',
+        'icon': 'icon__7e6bb',
+        'header': 'header__7e6bb',
+      ),
       // Contains Follow, Share and if possible, a reaction
       'bar': (
         'container': 'container__34c2c',
@@ -1863,30 +1866,6 @@ $classes: (
     'codeblockInline': 'markup__75297 code.inline',
     'embedIframe': 'embedIframe__623de',
 
-    'invite': 'wrapper_d5f3cd',
-    'inviteDestinationExpired': 'inviteDestinationExpired_d5f3cd',
-    'inviteServerIcon': 'guildIcon_d5f3cd',
-    'inviteServerIconImage': 'guildIconImage_d5f3cd',
-    'inviteServerIconExpired': 'guildIconExpired_d5f3cd',
-    'inviteResolvingBackground': 'resolvingBackground_d5f3cd',
-    'inviteSplash': 'inviteSplash_d5f3cd',
-    'inviteSplashImage': 'inviteSplashImage_d5f3cd',
-    'inviteSplashImageLoaded': 'inviteSplashImageLoaded_d5f3cd',
-
-    'giftContainer': 'giftCodeContainer_b7e1cb',
-    'gift': 'tile__72090',
-    'tileHorizontal': 'tileHorizontal__72090',
-    'embedHorizontal': 'embedHorizontal_a8b53f',
-    'embedVertical': 'embedVertical_a8b53f',
-    'giftMedia': 'media__72090',
-    'giftMediaHorizontal': 'mediaHorizontal__72090',
-    'giftInvalidPoop': 'invalidPoop__857bf',
-    'giftInvalidPoopHorizontal': 'invalidPoopHorizontal__857bf',
-    'giftDescription': 'description__72090',
-    'giftTitle': 'title__72090',
-    'giftTagline': 'tagline__72090',
-    'giftActions': 'actions__72090',
-
     'embedFull': 'embedFull__623de',
     'embedGrid': 'grid__623de',
     // always there?
@@ -1906,21 +1885,59 @@ $classes: (
     'codeIcon': 'codeIcon__4d95d',
     'textOpenFullPreview': 'openFullPreviewSection__4d95d',
 
-    'gameInviteContainer': 'container__6f250',
-    // class might be wrong.
-    'gameInvite': 'invite__4d3fa',
-    'gameCoverImageWrapper': 'coverImageWrapper__4d3fa',
-    'gameCoverImage': 'coverImage__4d3fa',
-    'gameCoverImageNotActionable': 'coverImageNotActionable__4d3fa',
-    'gameCoverImageActionable': 'coverImageActionable__4d3fa',
-    'gameCoverImageBlurred': 'blurred__4d3fa',
-    'gameHeader': 'header__4d3fa',
-    'gameDetails': 'details__4d3fa',
-    'gameState': 'state__4d3fa',
-    'gamePartyStatus': 'partyStatus__4d3fa',
-    'gameName': 'name__4d3fa',
-    'gameFullHeight': 'fullHeight__4d3fa',
-    'gameArtwork': 'artwork__4d3fa',
+    'invite': (
+      'wrapper': 'wrapper_d5f3cd',
+      'destinationExpired': 'inviteDestinationExpired_d5f3cd',
+      'serverIcon': 'guildIcon_d5f3cd',
+      'serverIconImage': 'guildIconImage_d5f3cd',
+      'serverIconExpired': 'guildIconExpired_d5f3cd',
+      'resolvingBackground': 'resolvingBackground_d5f3cd',
+      'splash': 'inviteSplash_d5f3cd',
+      'splashImage': 'inviteSplashImage_d5f3cd',
+      'splashImageLoaded': 'inviteSplashImageLoaded_d5f3cd',    
+      'guildInfo': 'guildInfo_d5f3cd',
+      'guildName': 'guildName_d5f3cd',
+      'guildDetail': 'guildDetail_d5f3cd', // expired invite
+      'status': 'status_d5f3cd',
+      'statusOnline': 'statusOnline_d5f3cd',
+      'statusOffline': 'statusOffline_d5f3cd',
+      'button': 'button_d5f3cd',
+    ),
+
+    'gift': (
+      'codeContainer': 'giftCodeContainer_b7e1cb',
+      'tile': 'tile__72090',
+      'tileHorizontal': 'tileHorizontal__72090',
+      'embedHorizontal': 'embedHorizontal_a8b53f',
+      'embedVertical': 'embedVertical_a8b53f',
+      'media': 'media__72090',
+      'mediaHorizontal': 'mediaHorizontal__72090',
+      'invalidPoop': 'invalidPoop__857bf',
+      'invalidPoopHorizontal': 'invalidPoopHorizontal__857bf',
+      'description': 'description__72090',
+      'title': 'title__72090',
+      'tagline': 'tagline__72090',
+      'actions': 'actions__72090',
+    ),
+
+    'gameInvite': (
+      'gameInviteContainer': 'container__6f250',
+      // class might be wrong.
+      'invite': 'invite__4d3fa',
+      'coverImageWrapper': 'coverImageWrapper__4d3fa',
+      'coverImage': 'coverImage__4d3fa',
+      'coverImageNotActionable': 'coverImageNotActionable__4d3fa',
+      'coverImageActionable': 'coverImageActionable__4d3fa',
+      'coverImageBlurred': 'blurred__4d3fa',
+      'header': 'header__4d3fa',
+      'details': 'details__4d3fa',
+      'state': 'state__4d3fa',
+      'partyStatus': 'partyStatus__4d3fa',
+      'name': 'name__4d3fa',
+      'fullHeight': 'fullHeight__4d3fa',
+      'artwork': 'artwork__4d3fa',
+    ),
+    
     'uploadProgressBar': 'progressBar__89dcd',
     'videoPlayWrapper': 'wrapper_cf09d8',
     'threadContainer': 'container__9271d',
@@ -1942,6 +1959,19 @@ $classes: (
       'volumeButtonIcon': 'volumeButtonIcon_a8e786',
       'volumeSlider': 'volumeSlider_a8e786',
       'waveform': 'waveform_a8e786',
+    ),
+
+    'audio': (
+      'wrapper': 'wrapperAudio_cf09d8',
+      'metadata': 'audioMetadata_cf09d8',
+      'controls': 'audioControls_cf09d8',
+      'controlIcon': 'controlIcon_cf09d8',
+      'metadataDownload': 'metadataDownload_cf09d8',
+      'metadataIcon': 'metadataIcon_cf09d8',
+      'metadataSize': 'metadataSize_cf09d8',
+      'durationWrapper': 'durationTimeWrapper_cf09d8',
+      'durationDisplay': 'durationTimeDisplay_cf09d8',
+      'durationSeparator': 'durationTimeSeparator_cf09d8',
     ),
 
     'poll': (
@@ -2024,17 +2054,6 @@ $classes: (
       'barGrabber': 'mediaBarGrabber_b26b79',
       // primary color
       'barVolume': 'mediaBarInteractionVolume_b26b79',
-      // card
-      'controlIcon': 'controlIcon_cf09d8',
-      'metadataDownload': 'metadataDownload_cf09d8',
-      'metadataIcon': 'metadataIcon_cf09d8',
-      'metadataSize': 'metadataSize_cf09d8',
-      'durationWrapper': 'durationTimeWrapper_cf09d8',
-      'durationDisplay': 'durationTimeDisplay_cf09d8',
-      'durationSeparator': 'durationTimeSeparator_cf09d8',
-      'audioWrapper': 'wrapperAudio_cf09d8',
-      'audioMetadata': 'audioMetadata_cf09d8',
-      'audioControls': 'audioControls_cf09d8',
       'bubble': 'bubble_b26b79',
     ),
   'error': (
@@ -4420,6 +4439,12 @@ $classes: (
       'forYou': (
         'container': 'container_fc561d',
         'bodyContainer': 'container__0f711',
+        'avatarContainer': 'container_db811b',
+        'avatarMask': 'mask_db811b',
+        'imageContainer': 'imageContainer_db811b',
+        'image': 'image_db811b',
+        'maskBackground': 'maskBackground_db811b',
+        'maskIcon': 'maskIcon_db811b',
       ),
       'mentions': (
         'scroller': 'scroller__95796',
@@ -6393,14 +6418,6 @@ $classes: (
           'embedFooterText': 'embedFooterText__623de',
           'embedFooterSeparator': 'embedFooterSeparator__623de',
           'embedFooterIcon': 'embedFooterIcon__623de',
-          'inviteTitle': 'h5_b717a1',
-          'inviteGuildInfo': 'guildInfo_d5f3cd',
-          'inviteGuildName': 'guildName_d5f3cd',
-          'inviteGuildDetail': 'guildDetail_d5f3cd',
-          'inviteStatus': 'status_d5f3cd',
-          'inviteStatusOnline': 'statusOnline_d5f3cd',
-          'inviteStatusOffline': 'statusOffline_d5f3cd',
-          'inviteButton': 'button_d5f3cd',
           'playerControlsHidden': 'wrapperControlsHidden_f316dd',
           'playerMetadataContent': 'metadataContent_cf09d8',
           'playerVideoControls': 'videoControls_cf09d8',
@@ -6732,7 +6749,6 @@ $classes: (
           'forumSetupStepContainer': 'stepContainer_a68543',
           'forumSetupStepStatus': 'stepStatus_a68543',
           'forumSetupRoleList': 'rolesList_a68543',
-          'forumPinIcon': 'pinIcon__08166',
           'forumIncreasedReplyPreview': 'replies__1b03e',
           'forumEmpty': 'container__93db4',
           'forumEmptyCTA': 'cta__93db4',

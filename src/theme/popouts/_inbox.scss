@@ -24,6 +24,12 @@
 
 
   // FOR YOU
+  #{c(popouts inbox forYou bodyContainer)} {
+    background: transparent;
+  }
+  #{c(popouts inbox forYou maskBackground)} {
+    background: cv('color.main') !important;
+  }
 
 
   // UNREAD

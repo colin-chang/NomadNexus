@@ -96,7 +96,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --muted-text: #75757e;
   --primary-text: #303035;
   --secondary-text: #60606a;
-  }
+}
 
 /* Grey Theme */
 #{c(main visualRefresh)}:is(#{c(main themeDark)}, #{c(main themeLight)} #{c(main themeDark)}) {
@@ -112,7 +112,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --muted-text: #aeaeb4;
   --primary-text: #ffffff;
   --secondary-text: #c8c8cd;
-  }
+}
 
 /* Darker Theme */
 #{c(main visualRefresh)}:is(#{c(main themeDarker)}, #{c(main themeLight)} #{c(main themeDarker)}) {
@@ -128,7 +128,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --muted-text: #94949c;
   --primary-text: #fbfbfb;
   --secondary-text: #aeaeb4;
-  }
+}
 
 /* Midnight Theme */
 #{c(main visualRefresh)}:is(#{c(main themeMidnight)}, #{c(main themeLight)} #{c(main themeMidnight)}) {
