@@ -21,7 +21,7 @@
       &:not(#{c(popouts menus checkboxContainer)}) {
         // discord does it this way
         path {
-          fill: var(--header-primary);
+          fill: var(--interactive-active);
         }
       }
     }

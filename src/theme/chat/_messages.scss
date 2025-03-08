@@ -103,12 +103,26 @@
     }
   }
 
-  // AUDIO
-  #{c(embeds audio wrapper)} {
+  // MEDIA
+  #{c(embeds media audioWrapper)} {
     background: cv('shading.card');
     border: none;
   }
-  #{c(embeds audio controls)} {
+  #{c(embeds media audioControls)} {
+    background: transparent;
+  }
+}
+
+
+// EMBED BUTTON
+#{c(embeds hoverButton group)} {
+  background: cv('shading.popout');
+}
+#{c(embeds hoverButton button)} {
+  color: cv('color.main');
+  &#{c(embeds hoverButton selected)},
+  &:hover {
+    color: cv('color.hover');
     background: transparent;
   }
 }
