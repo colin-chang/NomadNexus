@@ -11,3 +11,11 @@
     }
   }
 }
+
+#{c(tooltips brand)} {
+  background-color: cv('color.main');
+  border: none;
+  #{c(tooltips pointer)} {
+    border-top-color: cv('color.main');
+  }
+}

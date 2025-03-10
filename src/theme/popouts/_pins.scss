@@ -10,8 +10,8 @@
     background: transparent;
   }
   #{c(popouts pins messageGroup)} {
-    background: cv('shading.card');
-    border: 2px solid cv('color.main');
+    background: hsl(from var(--hsl-card-shading) h s calc(100 - l)/calc(alpha * .2));
+    border: none;
   }
   #{c(popouts pins jumpButton)} {
     background: cv('color.main');

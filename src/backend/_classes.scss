@@ -1688,41 +1688,74 @@ $classes: (
     'newChat': 'chat_fb64c9',
     'newTextAreaError': 'channelTextAreaInnerError_fb64c9',
   ),
+
+  'serverGuide': (
+    'background': 'background__7449f',
+    'title': 'title__7449f',
+    'titleInner': 'headerBarInner__7449f',
+    'container': 'homeContainer__7449f',
+
+    'header': 'header__553a5',
+    'headerArtWrapper': 'headerArtWrapper__553a5',
+    'headerArt': 'headerArt__553a5',
+    'headerArtPlaceholder': 'headerArtPlaceholder__553a5',
+    'guildIcon': 'headerIcon__553a5',
+    'guildName': 'headerName__553a5',
+
+    'mainContent': 'mainContent__7449f',
+    'content': 'container_d13feb',
+    'rowCard': 'row_d13feb',
+    'rowContent': 'content_d13feb',
+    'rowTitle': 'title_d13feb',
+    'rowMessage': ' messageContent_d13feb',
+    'rowMedia': 'media_d13feb',
+
+    'sidebar': 'sidebar__7449f',
+    'profileContainer': 'container__86ab2',
+    'profileBanner': 'banner__86ab2',
+    'profileAvatarContainer': 'avatarContainer__86ab2',
+    'profileAvatarWrapper': 'avatarWrapper__86ab2',
+  ),
+
   // document.URL in console contains /member-safety
   'membersPage': (
-      'page': 'page_c791b2',
-      'scroller': 'scroller_d20375',
-      'container': 'container_c791b2',
+    'page': 'page_c791b2',
+    'header': 'header_c791b2',
+    'scroller': 'scroller_d20375',
+    'container': 'container_c791b2',
 
-      // contains the sortable, searchable list of members. classes may cross over with members page in server settings.
-      // for some reason it's in the same line as a bunch of text shit. despite that some of the elements aren't using those classes???
-      'loaderBar': 'loaderBar__09a38',
-      'loaderContainer': 'loaderContainer__09a38',
-      'horizatonalScroller': 'horizatonalScroller__09a38',
-      // dunno why there's a typo in the class name
-      'mainTableContainer': 'mainTableContainer__09a38',
+    'tableContainer': 'mainTableContainer__09a38',
 
-      'table': 'table_b4ec0b',
+    // contains the sortable, searchable list of members. classes may cross over with members page in server settings.
+    // for some reason it's in the same line as a bunch of text shit. despite that some of the elements aren't using those classes???
+    'loaderBar': 'loaderBar__09a38',
+    'loaderContainer': 'loaderContainer__09a38',
+    'horizatonalScroller': 'horizatonalScroller__09a38',
+    // dunno why there's a typo in the class name
 
-      // similar to class above except different set of text stuff. also not using these classes.
-      // Same set
-      'button': 'sortButton__98d1c',
-      'searchBar': 'searchBar__98d1c',
-      'searchHeader': 'searchHeader__98d1c',
-      'searchHeaderContainer': 'searchHeaderContainer__98d1c',
-      'searchInput': 'searchInput__98d1c',
-      'tableOptions': 'tableOptions__98d1c',
+    // similar to class above except different set of text stuff. also not using these classes.
+    // Same set
+    'button': 'sortButton__98d1c',
+    'searchBar': 'searchBar__98d1c',
+    'searchHeader': 'searchHeader__98d1c',
+    'searchHeaderContainer': 'searchHeaderContainer__98d1c',
+    'searchInput': 'searchInput__98d1c',
+    'tableOptions': 'tableOptions__98d1c',
 
-      'otherRoles': 'otherRoles__71c22',
-      // so many text classes... different group again.
-      'actionButton': 'button__71c22',
+    'table': 'table_b4ec0b',
+    'newMemberNotice': 'newMembersNotice_acdcc0',
 
-      // same line as class above
-      'noResultsContainer': 'noResultsContainer__9c6d0',
-      // on own line for some reason. The children of it are as follows:
-      // div[class] > svg > (wumpus image)
-       // div.text-md-normal "No members match these search results.",,
-    ),
+    'otherRoles': 'otherRoles__71c22',
+    // so many text classes... different group again.
+    'actionButton': 'button__71c22',
+
+    // same line as class above
+    'noResultsContainer': 'noResultsContainer__9c6d0',
+    // on own line for some reason. The children of it are as follows:
+    // div[class] > svg > (wumpus image)
+      // div.text-md-normal "No members match these search results.",,
+  ),
+
   'chatForm': (
     'form': 'form_f75fb0',
     'formWithLoadedChatInput': 'formWithLoadedChatInput_f75fb0',
@@ -6775,19 +6808,6 @@ $classes: (
           'forumChatStartBox': 'box_ee23ac',
           'forumSettingsGuidelinesToolbar': 'staticToolbar_bba883',
           'forumSettingsGuidelinesAddTags': 'addTags__3f6df',
-          'homeContainer': 'homeContainer__7449f',
-          'serverGuideMessage': 'userProfileOuterThemed_c69a7b',
-          'serverGuideMessageInner': 'userCardInner_c69a7b',
-          'serverGuideIcon': 'headerIcon__553a5',
-          'serverGuideAvatar': 'avatarBackground__6f212',
-          'serverGuideAction': 'action_c66e86',
-          'serverGuideActionCompleted': 'checkCircleCompleted_c66e86',
-          'serverGuideSidebarCard': 'sidebarCardWrapper__7449f',
-          'serverGuideRow': 'row_d13feb',
-          'serverGuideChannelIcon': 'channelIconContainer_c66e86',
-          'serverGuideRulesIcon': 'rulesIconContainer_c66e86',
-          'serverGuideChannelHintBanner': 'banner__183e8',
-          'serverGuideChannelHintIcon': 'iconCircle__183e8',
           'serverSubscription': 'scroller__808a1',
           'serverSubscriptionTier': 'tierInfoContainer__3efc4',
           'serverSubscriptionPerk': 'subscriptionPerks__3efc4',
