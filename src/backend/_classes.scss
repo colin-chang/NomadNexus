@@ -1059,6 +1059,7 @@ $classes: (
     'message': 'message__5126c',
     'messageWrapper': 'wrapper_c19a55',
     'replying': 'replying__5126c',
+    'hasThread': 'hasThread_c19a55',
     'mentioned': 'mentioned__5126c',
     'mentionWrapper': 'wrapper_f61d60',
     'messageSelected': 'selected__5126c',
@@ -1370,6 +1371,21 @@ $classes: (
     'headerWithMatchingPosts': 'headerWithMatchingPosts_f369db',
     'matchingPostsRow': 'matchingPostsRow_f369db',
 
+    'empty': 'container__93db4',    
+    'emptyIcon': 'icon__93db4',
+    'emptyCTA': 'cta__93db4',
+
+    'example': ( // empty forum see examples
+      'container': 'container_ee8e87',
+      'tag': 'tag_ee8e87',
+      'post': 'post_ee8e87',
+      'previewContainer': 'previewContainer_ee8e87',
+      'preview': 'preview_ee8e87',
+      'previewPostIcon': 'forumPostIcon_ee8e87',
+      'bottomSeparator': 'bottomSeparator_ee8e87',
+      'chatInput': 'chatInput_ee8e87',
+    ),    
+
     'postTitle': 'forumPostTitle_f75fb0',
 
     'mainCard': 'mainCard_f369db',
@@ -1431,25 +1447,25 @@ $classes: (
 
     // click the little book icon, category could also be called rules
     'guidelines': (
-        'container': 'container_ca49a1',
-        'headerContainer': 'headerContainer_ca49a1',
-        'header': 'guidelinesHeader_ca49a1',
-        'headerCloseButton': 'clickable_ca49a1',
+      'container': 'container_ca49a1',
+      'headerContainer': 'headerContainer_ca49a1',
+      'header': 'guidelinesHeader_ca49a1',
+      'headerCloseButton': 'clickable_ca49a1',
 
-        'descriptionContainer': 'descriptionContainer_ca49a1',
-        'guidelines': 'guidelines_ca49a1',
-        'showMore': 'showMore_ca49a1',
-        'gradient': 'gradient_ca49a1',
-        'showMoreLinkContainer': 'linkContainer_ca49a1',
-        // clicking this opens a modal
-        'showMoreLink': 'showMoreLink_ca49a1',
-        // inline color
-        'showMoreText': 'showMoreText_ca49a1',
-        'showMoreIcon': 'showMoreIcon_ca49a1',
-      ),
+      'descriptionContainer': 'descriptionContainer_ca49a1',
+      'guidelines': 'guidelines_ca49a1',
+      'showMore': 'showMore_ca49a1',
+      'gradient': 'gradient_ca49a1',
+      'showMoreLinkContainer': 'linkContainer_ca49a1',
+      // clicking this opens a modal
+      'showMoreLink': 'showMoreLink_ca49a1',
+      // inline color
+      'showMoreText': 'showMoreText_ca49a1',
+      'showMoreIcon': 'showMoreIcon_ca49a1',
+    ),
 
     // it's loading in
-    'loadingCard': (
+    'loading': (
       // applied regardless of grid or list
       'card': 'loadingCard_f369db',
       // below are different opacities, the number is the percentage opacity. 100 = opacity: 1;
@@ -1653,9 +1669,6 @@ $classes: (
   ),
   'thread': (
     'jump': 'jump__5126c',
-    'msgHasThread': 'hasThread_c19a55',
-    // in here despite probably better in chat
-    'msgSpine': 'spine__9271d',
     'resizeHandle': 'resizeHandle__01ae2',
     'chatTarget': 'chatTarget__01ae2',
     // background of sorts
@@ -1664,6 +1677,7 @@ $classes: (
     'notFloating': 'notFloating__01ae2',
     'chat': 'chat_f02135',
     'iconWrapper': 'iconWrapper__54b20',
+    'icon': 'icon__54b20',
     'header': 'chatHeaderBar_a5700d',
     // usually contains "this thread is/was archived..."
     'subtitle': 'subtitle__54b20',
@@ -1874,16 +1888,18 @@ $classes: (
     'embedVideo': 'embedVideo__623de',
     'attachment': 'file__0ccae',
     // attachmentInner_b52bef cancelButton_b52bef downloadButton__3fb6d downloadWrapper_b46225 fileNameLink_b52bef filename_b52bef filenameLinkWrapper_b52bef filenameWrapper_b52bef icon_b52bef metadata_b52bef newMosaicStyle_b52bef progress_b52bef progressContainer_b52bef rate__50023 size_b52bef
-    'textContainerUp': 'container__4d95d',
-    // parent of below class
-    'textContainer': 'textContainer__4d95d',
-    'textContainerDownload': 'downloadButton__4d95d',
-    'textFooter': 'footer__4d95d',
-    'toggleExpandedPreview': 'toggleExpandSection__4d95d',
-    'attachmentName': 'attachmentName__4d95d',
-    'attachmentSize': 'formattedSize__4d95d',
-    'codeIcon': 'codeIcon__4d95d',
-    'textOpenFullPreview': 'openFullPreviewSection__4d95d',
+    
+    'textContainer': (
+      'container': 'container__4d95d',
+      'textContainer': 'textContainer__4d95d',
+      'footer': 'footer__4d95d',
+      'toggleExpand': 'toggleExpandSection__4d95d',
+      'openFullPreview': 'openFullPreviewSection__4d95d',
+      'attachmentName': 'attachmentName__4d95d',
+      'attachmentSize': 'formattedSize__4d95d',
+      'downloadButton': 'downloadButton__4d95d',
+      'codeIcon': 'codeIcon__4d95d',
+    ),
 
     'invite': (
       'wrapper': 'wrapper_d5f3cd',
@@ -1940,25 +1956,27 @@ $classes: (
     
     'uploadProgressBar': 'progressBar__89dcd',
     'videoPlayWrapper': 'wrapper_cf09d8',
+
+    'threadSpine': 'spine__9271d',
     'threadContainer': 'container__9271d',
+    'threadCTA': 'cta__9271d',
 
     'voiceMessage': (
       // all on same line
       'container': 'container_a8e786',
-
-      'audioElement': 'audioElement_a8e786',
-      'duration': 'duration_a8e786',
-      'oldPlayIconSpacing': 'oldPlayIconSpacing_a8e786',
+      'playing': 'playing_a8e786',
+      'rippleContainer': 'rippleContainer_a8e786',
+      'ripple': 'ripple_a8e786',
       'playButtonContainer': 'playButtonContainer_a8e786',
       'playIcon': 'playIcon_a8e786',
-      'playing': 'playing_a8e786',
-      'reducedMotion': 'reducedMotion_a8e786',
-      'ripple': 'ripple_a8e786',
-      'rippleContainer': 'rippleContainer_a8e786',
-      'volumeButton': 'volumeButton_a8e786',
-      'volumeButtonIcon': 'volumeButtonIcon_a8e786',
-      'volumeSlider': 'volumeSlider_a8e786',
+      'oldPlayIconSpacing': 'oldPlayIconSpacing_a8e786',
       'waveform': 'waveform_a8e786',
+      'duration': 'duration_a8e786',
+      'reducedMotion': 'reducedMotion_a8e786',
+      'volumeButton': 'volumeButton_a8e786',
+      'volumeSlider': 'volumeSlider_a8e786',
+      'volumeButtonIcon': 'volumeButtonIcon_a8e786',
+      'audioElement': 'audioElement_a8e786',
     ),
 
     'media': (
@@ -2318,8 +2336,8 @@ $classes: (
     // gets open applied to it
     'searchOpen': 'open__97492',
     'searchBar': 'searchBar__97492',
-    'searchIconAdd': 'plusIcon__56fec',
-    // in dropdown
+    'searchFilter': 'searchFilter_bd8186',
+    'searchAnswer': 'searchAnswer_bd8186',
     'iconBadge': 'iconBadge__9293f',
     'topic': 'topic__6ec1a',
     'topicExpandable': 'expandable__6ec1a',
@@ -2600,8 +2618,6 @@ $classes: (
     'wrap': 'searchResultsWrap_a9e706',
     'header': 'searchHeader_f3b986',
     'results': 'totalResults_f3b986',
-    'searchFilter': 'searchFilter_bd8186',
-    'searchAnswer': 'searchAnswer_bd8186',
     'headerTabList': 'searchHeaderTabList_f3b986',
     'scroller': 'scroller_a9e706',
     'channelNameText': 'channelNameText_c68065',
@@ -2675,7 +2691,8 @@ $classes: (
     'bottomButtonIcon': 'circleIcon__5bc7e',
     'lowerBadge': 'lowerBadge_cc5dd2',
     'upperBadge': 'upperBadge_cc5dd2',
-    'iconBadge': 'iconBadge__650eb',
+    'iconBadge': 'iconBadge__2b1f5',
+    'iconBadgeIcon': 'icon__2b1f5',
     'participating': 'isCurrentUserConnected__650eb',
     // also used in header for some reason?
     'folderParentWrapper': 'wrapper__48112',
@@ -4555,6 +4572,44 @@ $classes: (
         ),
       ),
     ),
+
+    // Either dropdown in header bar or from hovering on a channel with an active thread
+    // Line numbers based on 2022-09-11 https://canary.discord.com/assets/40532.2f0570f42394060c451f.css
+    'threads': (
+      'browser': 'browser_d98031',
+      'container': 'container_d9c882',
+      'header': 'header_d9c882',
+      'threadIcon': 'threadIcon_d9c882',
+      'title': 'title_d9c882',
+      'divider': 'divider_d9c882',
+      'searchBox': 'searchBox_d9c882',
+      'spacer': 'spacer_d9c882',
+      'createButton': 'createButton_d9c882',
+      'closeIcon': 'closeIcon_d9c882',
+
+      'list': 'list_c441f0',
+      'listHeader': 'sectionHeader_c441f0',
+      'listItem': 'container__6764b',
+      'left': 'left__6764b',
+      'threadNameLine': 'threadNameLine__6764b',
+      'threadName': 'threadName__6764b',
+      'subtext': 'subtext__6764b',
+      'avatar': 'avatar__6764b',
+      'authorName': 'authorName__6764b',
+      'messageContent': 'messageContent__6764b',
+      'facepile': 'facepile__6764b',
+
+      // empty list
+      'emptyContainer': 'container__1b24f',
+      'emptyIconContainer': 'iconContainer__1b24f',
+      'emptyIcon': 'icon__1b24f',
+      'emptyStars': 'stars__1b24f',
+      'emptyHeader': 'header__1b24f',
+      'emptyCreateButton': 'cta__1b24f',
+
+      // Channel popout      
+      'channelPopout': 'popout__76f04',
+    ),
   ),
 
   'modals': (
@@ -5063,7 +5118,6 @@ $classes: (
 
     // In a channel with active threads, hover over it and click "see all". These may apply to the dropdown
     'openThreadsPopout': (
-        'popout': 'popout__76f04',
         'modal': 'modal__9a792',
         'browser': 'browser__9a792',
       ),
@@ -5223,41 +5277,6 @@ $classes: (
       'joinAServerRowContainer': 'rowContainer__991a0',
       // used as pointer to discovery
     ),
-
-    // Either dropdown in header bar or from hovering on a channel with an active thread
-    // Line numbers based on 2022-09-11 https://canary.discord.com/assets/40532.2f0570f42394060c451f.css
-    'threads': (
-        'browser': 'browser_d98031',
-        'container': 'container_d9c882',
-        'header': 'header_d9c882',
-        'threadIcon': 'threadIcon_d9c882',
-        'title': 'title_d9c882',
-        'divider': 'divider_d9c882',
-        'searchBox': 'searchBox_d9c882',
-        'spacer': 'spacer_d9c882',
-        'createButton': 'createButton_d9c882',
-        'closeIcon': 'closeIcon_d9c882',
-
-        'list': 'list_c441f0',
-        'listHeader': 'sectionHeader_c441f0',
-        'listItem': 'container__6764b',
-        'left': 'left__6764b',
-        'threadNameLine': 'threadNameLine__6764b',
-        'threadName': 'threadName__6764b',
-        'subtext': 'subtext__6764b',
-        'avatar': 'avatar__6764b',
-        'authorName': 'authorName__6764b',
-        'messageContent': 'messageContent__6764b',
-        'facepile': 'facepile__6764b',
-
-        // empty list
-        'emptyContainer': 'container__1b24f',
-        'emptyIconContainer': 'iconContainer__1b24f',
-        'emptyIcon': 'icon__1b24f',
-        'emptyStars': 'stars__1b24f',
-        'emptyHeader': 'header__1b24f',
-        'emptyCreateButton': 'cta__1b24f',
-      ),
 
     // User Settings, within Connections, click the rightward chevron ">"
     // Modals contains all possible connectable external accounts
@@ -6699,8 +6718,6 @@ $classes: (
           'regionSelectName': 'regionSelectName__5621e',
           'messagesPopoutThread': 'forumPost__7d15e',
           'inboxChattingAbout': 'calloutContainer__6fddf',
-          'threadChatIcon': 'icon_f054bd',
-          'threadCTA': 'cta__9271d',
           'channelThreadPopoutRow': 'row__76f04',
           'channelThreadPopoutMore': 'more__76f04',
           'threadMembersEmptyHeader': 'emptyStateHeader__7641b',
@@ -6747,46 +6764,17 @@ $classes: (
           'activityItem': 'activityItem__18da2',
           'activityItemDisabled': 'disabled__18da2',
           'activityTag': 'activityTag__18da2',
-          'forumFirstIcon': 'icon__93db4',
           'forumSetupContainer': 'container_a68543',
           'forumSetupStepContainer': 'stepContainer_a68543',
           'forumSetupStepStatus': 'stepStatus_a68543',
           'forumSetupRoleList': 'rolesList_a68543',
-          'forumIncreasedReplyPreview': 'replies__1b03e',
-          'forumEmpty': 'container__93db4',
-          'forumEmptyCTA': 'cta__93db4',
-          'forumExample': 'container_ee8e87',
-          'forumExampleTag': 'tag_ee8e87',
-          'forumExamplePost': 'post_ee8e87',
-          'forumExamplePreviewContainer': 'previewContainer_ee8e87',
-          'forumExamplePreview': 'preview_ee8e87',
-          'forumExamplePreviewPostIcon': 'forumPostIcon_ee8e87',
-          'forumExamplePreviewBottomSeparator': 'bottomSeparator_ee8e87',
-          'forumExamplePreviewInput': 'chatInput_ee8e87',
+          'forumIncreasedReplyPreview': 'replies__1b03e',          
           'forumIncreasedOpenCard': 'isOpen__036bf',
           'forumIncreasedTag': 'increasedActivityPill__2620e',
           'forumTagSelectedCount': 'countContainer_f369db',
           'forumChatStartBox': 'box_ee23ac',
           'forumSettingsGuidelinesToolbar': 'staticToolbar_bba883',
           'forumSettingsGuidelinesAddTags': 'addTags__3f6df',
-          'directoryContainer': 'directoryContainer_da3f59',
-          'directoryCategory': 'category_d7acc7',
-          'directoryCard': 'card_e90143',
-          'directoryListCard': 'container_d9c848',
-          'directoryNewToApps': 'container_f9d8eb',
-          'directoryCardClickable': 'clickable_d9c848',
-          'directoryFooter': 'container_bf1c84',
-          'directorySearchBar': 'search_aabd24',
-          'directorySearchCategoryActive': 'category_fa8ebf.activeCategory_fa8ebf',
-          // SPLIT ME UP INTO MULTIPLE!!!
-          'directoryAppCategory': 'category_d169f5',
-          'directoryAppSupportServer': 'card__6faf3',
-          'directoryAppCommandList': 'list_e0307d',
-          'directoryAppCommand': 'commandName_e0307d',
-          'directoryAppPremiumCardHeader': 'cardHeader_a11d84',
-          'directoryAppPremiumContainer': 'benefitsContainer_a11d84',
-          'directoryAppPermissionList': 'list__83c7c',
-          'directoryAppIntentList': 'intentsContainer_f6d180',
           'homeContainer': 'homeContainer__7449f',
           'serverGuideMessage': 'userProfileOuterThemed_c69a7b',
           'serverGuideMessageInner': 'userCardInner_c69a7b',
@@ -6868,7 +6856,6 @@ $classes: (
           'beforeTalkRulesBackground': 'fieldBackground_d48a51',
           'beforeTalkRule': 'termsRow_d48a51',
           'banReasonOther': 'banReasonOtherClickable__837b7',
-          'nitroShopGiftNitro': 'buttonWhite_b322b1',
           'webhookFooter': 'footer__51eb2',
           'webhookPopout': 'guildPopout__51eb2',
           'appPopoutWrapper': 'contentWrapper__9c62c',

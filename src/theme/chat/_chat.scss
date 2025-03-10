@@ -8,7 +8,7 @@
       border: none;
     }
     &#{c(chat threadSidebarOpen)} {
-      border-radius: 0;
+      border-bottom-right-radius: 0;
     }
   }
   &#{c(main themeMidnight)} {

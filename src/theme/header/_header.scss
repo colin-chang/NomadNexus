@@ -6,11 +6,33 @@
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5));
   }
   #{c(header dot)} {
-    visibility: hidden;
+    display: none;
   }
 }
 #{c(header children)} {
   &::after {
     display: none;
+  }
+}
+
+// NICKNAME
+#{c(header akaBadge)} {
+  background: cv('color.main');
+}
+
+
+// SEARCH
+#{c(main visualRefresh)} {  
+  #{c(header searchBar)} {
+    border-color: transparent;
+    box-shadow: 0 0 1px 1px cv('shading.input.border');
+    &:focus-within {
+      box-shadow: 0 0 2px 1px cv('color.main');
+      border-color: transparent;
+    }
+  }
+  #{c(header searchFilter)},
+  #{c(header searchAnswer)} {
+    background: cv('color.main');
   }
 }

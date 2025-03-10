@@ -55,7 +55,7 @@
 // FOLDER
 #{c(main visualRefresh)} {
   #{c(guildList expandedFolderBackground)} {
-    background-color: cv('shading.card');
+    background: cv('shading.card');
   }
 }
 
@@ -63,12 +63,12 @@
 #{c(guildList bottomButton)} {
   background-color: cv('shading.card');
   &#{c(guildList bottomButtonSelected)} {
-    background-color: cv('color.main');
+    background: cv('color.main');
   }
   #{c(main visualRefresh)} & {
     &:hover {
       &:not(#{c(guildList bottomButtonDisabled)}) {
-        background-color: cv('color.hover');
+        background: cv('color.hover');
       }
     }
   }
@@ -76,9 +76,17 @@
 
 // NEW MENTION
 #{c(guildList mention mention)} {
-  background-color: cv('color.main');
+  background: cv('color.main');
   border-radius: 5px;
   &:active {
-    background-color: cv('color.main');
+    background: cv('color.main');
+  }
+}
+
+// UPPERBADGE
+#{c(guildList iconBadge)} {
+  background: cv('shading.popout');
+  &#{c(guildList participating)} {
+    background: cv('color.main');
   }
 }

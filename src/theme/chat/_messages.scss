@@ -111,8 +111,39 @@
   #{c(embeds media audioControls)} {
     background: transparent;
   }
-}
 
+  // VOICE MESSAGE
+  #{c(embeds voiceMessage container)} {
+    background: cv('shading.card');
+    border: none;
+  }
+
+  // TEXT CONTAINER
+  #{c(embeds textContainer textContainer)},
+  #{c(embeds textContainer footer)} {
+    background: cv('shading.card');
+    border: none;
+  }
+
+  // HAS THREAD
+  #{c(chat cozy)} {   // doesnt actually need visual-refresh
+    &#{c(chat hasThread)} {  // cozy view
+      &::after {
+        border-color: cv('color.main');
+      }
+    }
+  }
+  #{c(embeds threadContainer)} { // compact view
+    border-color: cv('color.main');
+  }
+  #{c(embeds threadContainer)} {
+    background: cv('shading.card');
+    border: none;
+  }
+  #{c(embeds threadCTA)} {
+    color: cv('color.main');
+  }
+}
 
 // EMBED BUTTON
 #{c(embeds hoverButton group)} {

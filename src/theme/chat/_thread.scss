@@ -7,6 +7,14 @@
   #{c(thread container)} {
     background: transparent;
     border: none;
-    border-radius: 0;
+    border-bottom-left-radius: 0;
   }
+}
+
+// ICON
+#{c(thread iconWrapper)} {
+  background: cv('color.main');
+}
+#{c(thread icon)} path {
+  fill: var(--interactive-active);
 }

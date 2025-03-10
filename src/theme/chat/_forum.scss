@@ -89,3 +89,24 @@
     color: cv('color.main');
   }
 }
+
+// EMPTY
+#{c(forums empty)} {
+  background: transparent;
+}
+#{c(forums emptyIcon)} {
+  background: cv('color.main');
+  color: var(--interactive-active);
+}
+#{c(forums emptyCTA)} {
+  color: cv('color.main');
+  &:hover {
+    color: cv('color.hover');
+  }
+}
+
+// LOADING
+#{c(forums loading card)} {
+  background: cv('shading.card');
+  animation: cv-card-loading 1.5s infinite ease-in-out;
+}
