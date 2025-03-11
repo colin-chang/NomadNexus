@@ -1,25 +1,45 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
-  #{c(popouts dropdown popout)} {
+#{c(popouts dropdown popout)} {
+  &,
+  &#{c(popouts dropdown positionTop)} {
     background: cv('shading.popout');
+    border: none;
   }
-  #{c(popouts dropdown option)} {
-    border-radius: 8px;
-    margin: 0 8px;
-    &:hover {
-      background: cv('shading.hover');
-    }
-    &[aria-selected=true] {
-      &:not(#{c(popouts dropdown option)}#{c(popouts dropdown multi)}) {
-        background: cv('color.main');
-      }
+}
+#{c(popouts dropdown option)} {
+  border-radius: 8px;
+  margin: 0 8px;
+  &:hover {
+    background: cv('color.hover');
+  }
+  &[aria-selected=true] {
+    background: cv('color.main');
+    &:not(#{c(popouts dropdown option)}#{c(popouts dropdown multi)}) {
+      background: cv('color.main');
     }
   }
 }
+
+// SINGLE SELECT
 #{c(popouts dropdown selectedIcon)} {
   color: var(--interactive-active);
   circle {
     fill: cv('color.main');
+  }
+}
+
+// MULTI SELECT
+#{c(popouts dropdown multiSelectCheckbox)} {
+  &#{c(popouts dropdown checked)} {    
+    background: var(--interactive-active);
+    path {
+      fill: cv('color.main');
+    }
+  }
+}
+#{c(popouts dropdown optionPillItem)} {
+  #{c(popouts dropdown optionPillBtn)} {
+    background: cv('color.main');
   }
 }

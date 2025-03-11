@@ -1231,124 +1231,6 @@ $classes: (
     ),
   ),
   'pages': (
-    // page itself
-    'pageBody': 'pageBody__41ed7',
-    'pageHeader': 'header__41ed7',
-    'search': 'search__41ed7',
-    'createButton': 'createButton__41ed7',
-    'createButtonInner': 'createButtonInner__41ed7',
-    'createIcon': 'createIcon__41ed7',
-    'browser': 'browser__41ed7',
-    'returnButton': 'returnButton__0b563',
-    'returnButtonText': 'returnButtonText__0b563',
-    'returnIcon': 'returnIcon__0b563',
-
-    // dismissible "Choose your channels" container
-    'channelsDismissible': (
-        'container': 'container_bc0d35',
-        // background
-        'nuxContent': 'nuxContent_bc0d35',
-        'adminUpsell': 'adminUpsell_bc0d35',
-        // combined with container has background
-        'closeButton': 'closeButton_bc0d35',
-        'image': 'image_bc0d35',
-        'heading': 'heading_bc0d35',
-        'tip': 'tip_bc0d35',
-        'checkItOut': 'checkItOut_bc0d35',
-      ),
-
-    // channel order sort of thing
-    'channels': (
-      'categoryRow': 'categoryRow_e4503a',
-      'uncategorized': 'uncategorized_e4503a',
-      // when combined with categoryRow class, removes top padding
-      'categoryText': 'categoryText_e4503a',
-      'channelText': 'channelText_e4503a',
-      'titleBadge': 'titleBadge_e4503a',
-      'selectAll': 'selectAll_e4503a',
-      'selectAllCheckbox': 'selectAllCheckbox_e4503a',
-      'channelRow': 'channelRow_e4503a',
-      // background, also one with :hover:not(disabled class)
-      'disabled': 'disabled_e4503a',
-      'firstChannel': 'firstChannel_e4503a',
-      // both this and next class apply border radius to the channel row ..
-      'lastChannel': 'lastChannel_e4503a',
-      // .. with the first being top left/right and last being bottom left/right
-      'channelInfo': 'channelInfo_e4503a',
-      'channelActions': 'channelActions_e4503a',
-      'channelSubtitles': 'channelSubtitles_e4503a',
-      'channelSubtitle': 'channelSubtitle_e4503a',
-      'subtitleSeparator': 'subtitleSeparator_e4503a',
-      // though just a dot has background
-      'topic': 'topic_e4503a',
-      'channelName': 'channelName_e4503a',
-      'separator': 'separator_e4503a',
-      // horizontal line, background
-      'viewChannelButton': 'viewChannelButton_e4503a',
-      'checkboxInner': 'checkboxInner_e4503a',
-      'scrollerInner': 'scrollerInner_e4503a',
-    ),
-
-    // customize options
-    'customiseOptions': (
-      'optionButton': 'optionButton__270d7',
-      'selected': 'selected__270d7',
-      // with option background
-      'pressed': 'pressed__270d7',
-      'checkIcon': 'checkIcon__270d7',
-      // background brand experiment
-      'memberCount': 'memberCount__270d7',
-      // background brand experiment
-      'buttonEmoji': 'buttonEmoji__270d7',
-      'buttonText': 'buttonText__270d7',
-    ),
-    // customize page
-    'customise': (
-      'scroller': 'scroller__5d7c9',
-      // background with dark/light
-      'pageBody': 'pageBody__5d7c9',
-      'prompt': 'prompt__5d7c9',
-      // background primary
-      'promptTitle': 'promptTitle__5d7c9',
-      'required': 'required__5d7c9',
-      // background accent
-      'error': 'error__5d7c9',
-      'promptOptions': 'promptOptions__5d7c9',
-      'emptyPage': 'emptyPage__5d7c9',
-      // background with dark/light
-      'emptyContainer': 'emptyContainer__5d7c9',
-      'emptyIcon': 'emptyIcon__5d7c9',
-      'emptyHeader': 'emptyHeader__5d7c9',
-      'helpText': 'helpText__5d7c9',
-      'profile': 'profile__5d7c9',
-      'profileCard': 'profileCard__5d7c9',
-      // background primary
-      'separator': 'separator__5d7c9',
-      // background modifier accent
-      'username': 'username__5d7c9',
-      'bio': 'bio__5d7c9',
-      'title': 'title__5d7c9',
-      'roles': 'roles__5d7c9',
-      'role': 'role__5d7c9',
-      // background sec alt
-      'roleDot': 'roleDot__5d7c9',
-    ),
-
-    // header stuff
-    'header': (
-      'returnButton': 'returnButton__0b563',
-      'returnButtonText': 'returnButtonText__0b563',
-      'returnIcon': 'returnIcon__0b563',
-      'container': 'container__0b563',
-      // page container
-      'tabBar': 'tabBar__0b563',
-      'tabBarItem': 'tabBarItem__0b563',
-      'newBadge': 'newBadge__0b563',
-      'header': 'header__0b563',
-      // has background, overwritten from different rule
-      'innerHeader': 'innerHeader__0b563',
-    ),
-
     // tags (used in forums and home)
     'tags': (
       'pill': 'pill_a2c9e8',
@@ -1361,6 +1243,7 @@ $classes: (
       'tooltipPill': 'tooltipPill_a2c9e8',
     ),
   ),
+
   'forums': (
     // Named so because aria-label for the chat bubble icon is "Forum" in English
     'loadingContainer': 'loader_f75fb0',
@@ -1715,6 +1598,116 @@ $classes: (
     'profileBanner': 'banner__86ab2',
     'profileAvatarContainer': 'avatarContainer__86ab2',
     'profileAvatarWrapper': 'avatarWrapper__86ab2',
+  ),
+
+  // browse channels/channels and roles
+  'channelsPage': (        
+    // header stuff
+    'header': (
+      'header': 'header__0b563',
+      // has background, overwritten from different rule
+      'innerHeader': 'innerHeader__0b563',
+      'returnButton': 'returnButton__0b563',
+      'returnButtonText': 'returnButtonText__0b563',
+      'returnIcon': 'returnIcon__0b563',
+      // page container
+      'tabBar': 'tabBar__0b563',
+      'tabBarItem': 'tabBarItem__0b563',
+      'newBadge': 'newBadge__0b563',
+    ),
+
+    'container': 'container__0b563',
+
+    'browse': (
+      'notice': (
+        'container': 'container_bc0d35',
+        'adminUpsell': 'adminUpsell_bc0d35',
+        'content': 'nuxContent_bc0d35',
+        'closeButton': 'closeButton_bc0d35',
+        'image': 'image_bc0d35',
+        'heading': 'heading_bc0d35',
+        'tip': 'tip_bc0d35',
+        'checkItOut': 'checkItOut_bc0d35',
+      ),
+
+      'pageBody': 'pageBody__41ed7',
+      'pageHeader': 'header__41ed7',
+      'search': 'search__41ed7',
+      'createButton': 'createButton__41ed7',
+      'createButtonInner': 'createButtonInner__41ed7',
+      'createIcon': 'createIcon__41ed7',
+      'browser': 'browser__41ed7',
+      'scrollerInner': 'scrollerInner_e4503a',
+
+      'categoryRow': 'categoryRow_e4503a',
+      'uncategorized': 'uncategorized_e4503a',
+      // when combined with categoryRow class, removes top padding
+      'categoryText': 'categoryText_e4503a',
+      'selectAll': 'selectAll_e4503a',
+      'selectAllCheckbox': 'selectAllCheckbox_e4503a',
+
+      'channelRow': 'channelRow_e4503a',
+      // background, also one with :hover:not(disabled class)
+      'channelDisabled': 'disabled_e4503a',
+      'firstChannel': 'firstChannel_e4503a',
+      // both this and next class apply border radius to the channel row ..
+      'lastChannel': 'lastChannel_e4503a',
+      // .. with the first being top left/right and last being bottom left/right
+      'channelInfo': 'channelInfo_e4503a',
+      'channelName': 'channelName_e4503a',
+      'channelText': 'channelText_e4503a',
+      'channelSubtitles': 'channelSubtitles_e4503a',
+      'channelSubtitle': 'channelSubtitle_e4503a',
+      'subtitleSeparator': 'subtitleSeparator_e4503a',
+      'channelTopic': 'topic_e4503a',
+      'channelActions': 'channelActions_e4503a',
+      'viewChannelButton': 'viewChannelButton_e4503a',
+      'checkboxInner': 'checkboxInner_e4503a',
+      'channelSeparator': 'separator_e4503a',
+      // horizontal line, background
+    ),
+
+    // customize page
+    'customise': (
+      'scroller': 'scroller__5d7c9',
+      // background with dark/light
+      'pageBody': 'pageBody__5d7c9',
+      'prompt': 'prompt__5d7c9',
+      // background primary
+      'promptTitle': 'promptTitle__5d7c9',
+      'required': 'required__5d7c9',
+      // background accent
+      'error': 'error__5d7c9',
+      'promptOptions': 'promptOptions__5d7c9',
+      'optionWrapper': 'optionButtonWrapper__270d7',
+      'optionSelected': 'selected__270d7',
+      'optionButton': 'optionButton__270d7',
+      // with option background
+      'pressed': 'pressed__270d7',
+      'checkIcon': 'checkIcon__270d7',
+      // background brand experiment
+      'memberCount': 'memberCount__270d7',
+      // background brand experiment
+      'buttonEmoji': 'buttonEmoji__270d7',
+      'buttonText': 'buttonText__270d7',
+      'helpText': 'helpText__5d7c9',
+      'profile': 'profile__5d7c9',
+      'profileCard': 'profileCard__5d7c9',
+      // background primary
+      'separator': 'separator__5d7c9',
+      // background modifier accent
+      'username': 'username__5d7c9',
+      'bio': 'bio__5d7c9',
+      'title': 'title__5d7c9',
+      'roles': 'roles__5d7c9',
+      'role': 'role__5d7c9',
+      // background sec alt
+      'roleDot': 'roleDot__5d7c9',
+      'emptyPage': 'emptyPage__5d7c9',
+      'emptyContainer': 'emptyContainer__5d7c9',
+      'emptyIcon': 'emptyIcon__5d7c9',
+      'emptyHeader': 'emptyHeader__5d7c9',
+    ),    
   ),
 
   // document.URL in console contains /member-safety
@@ -4294,6 +4287,7 @@ $classes: (
       'icons': 'icons__3f413',
 
       'popout': 'popout__3f413',
+      'positionTop': 'popoutPositionTop__3f413',
       'measurement': 'measurement__3f413',
       // there's a hidden one next to the popout???
       'option': 'option__3f413',
@@ -4302,6 +4296,18 @@ $classes: (
       'focused': 'focused__3f413',
       // hover over item
       'multi': 'multi__3f413',
+
+      // multi select
+      'optionPillContainer': 'optionPillContainer__3f413',
+      'optionPillItem': 'optionPillItem__3f413',
+      'optionPillBtn': 'optionPillBtn__3f413',
+      'optionPill': 'optionPill__3f413',
+      'deleteOptionIcon': 'deleteOptionIcon__3f413',      
+      'multiSelectCheckbox': 'multiSelectCheckbox__3f413',
+      'unchecked': 'unchecked__3f413',
+      'checked': 'checked__3f413',
+
+      'clear': 'clear__3f413',
 
       // i can't find this class but it's in a rule
       // idk where lmao
@@ -4315,8 +4321,6 @@ $classes: (
       'iconsContainer': 'iconsContainer__3f413',
       'iconsCenter': 'iconsCenter__3f413',
       'placeholder': 'placeholder__3f413',
-      'popoutPositionTop': 'popoutPositionTop__3f413',
-      'clear': 'clear__3f413',
       'dropdownIcon': 'dropdownIcon__3f413',
       'noResults': 'noResults__3f413',
       'loading': 'loading__3f413',
@@ -4326,15 +4330,7 @@ $classes: (
       'suffix': 'suffix__3f413',
       'content': 'content__3f413',
       'optionPillWrapper': 'optionPillWrapper_f6639d',
-      'optionPillContainer': 'optionPillContainer__3f413',
-      'optionPillItem': 'optionPillItem__3f413',
-      'optionPill': 'optionPill__3f413',
-      'optionPillBtn': 'optionPillBtn__3f413',
-      'deleteOptionIcon': 'deleteOptionIcon__3f413',
       'noScrollbar': 'noScrollbar__3f413',
-      'multiSelectCheckbox': 'multiSelectCheckbox__3f413',
-      'unchecked': 'unchecked__3f413',
-      'checked': 'checked__3f413',
       'multiSelectCheck': 'multiSelectCheck__3f413',
     ),
 
