@@ -52,6 +52,9 @@
     }
   }
 }
+#{c(channelsPage customise checkIcon)} {
+  background: cv('color.main');
+}
 #{c(channelsPage customise profileCard)} {
   background: cv('shading.card');
 }

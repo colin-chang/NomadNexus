@@ -112,12 +112,6 @@
     background: transparent;
   }
 
-  // VOICE MESSAGE
-  #{c(embeds voiceMessage container)} {
-    background: cv('shading.card');
-    border: none;
-  }
-
   // TEXT CONTAINER
   #{c(embeds textContainer textContainer)},
   #{c(embeds textContainer footer)} {
@@ -141,6 +135,32 @@
     border: none;
   }
   #{c(embeds threadCTA)} {
+    color: cv('color.main');
+  }
+
+  // VOICE MESSAGE
+  #{c(embeds voiceMessage container)} {
+    background: cv('shading.card');
+    border: none;
+  }
+}
+#{c(embeds voiceMessage ripple)} {
+  background: cv('color.main');
+}
+:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+  #{c(embeds voiceMessage container)} {
+    &:not(#{c(embeds voiceMessage playing)}) {
+      #{c(embeds voiceMessage playButtonContainer)} {
+        background: cv('color.main');
+        &:is(:hover, :active) {
+          background: cv('color.hover');
+        }
+      }
+    }
+  }
+}
+#{c(embeds voiceMessage playing)} {
+  #{c(embeds voiceMessage playIcon)} {
     color: cv('color.main');
   }
 }
