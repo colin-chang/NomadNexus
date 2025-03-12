@@ -32,6 +32,9 @@
     background: hsl(from cv('color.main') h s l/.8);
     margin-bottom: 10px;
   }
+  #{c(popouts expressionPicker emoji searchBar)} {
+    margin-right: 12px;
+  }
 
   // EMOJI REACT
   :is(#{c(popouts expressionPicker emoji picker)}, #{c(popouts expressionPicker emoji header)}) {

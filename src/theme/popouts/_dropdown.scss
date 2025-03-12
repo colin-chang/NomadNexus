@@ -40,6 +40,10 @@
 }
 #{c(popouts dropdown optionPillItem)} {
   #{c(popouts dropdown optionPillBtn)} {
-    background: cv('color.main');
+    background: transparent;
+    border: none;
+    #{c(popouts dropdown optionPillBtn)} {
+      background: cv('color.main');
+    }
   }
 }

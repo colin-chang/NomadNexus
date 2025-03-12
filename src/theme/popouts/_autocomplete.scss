@@ -1,5 +1,6 @@
 @use 'backend' as *;
 
+
 #{c(popouts autocomplete popout)} {
   background: cv('shading.popout');
   box-shadow: none;
@@ -19,4 +20,17 @@
 #{c(popouts autocomplete contentTitle)} {
   padding: 4px 8px;
   color: var(--header-primary);
+}
+
+// SLASH COMMANDS CATEGORIES
+#{c(main visualRefresh)} {
+  #{c(popouts autocomplete railWrapper)} {
+    background: transparent;
+  }
+}
+#{c(popouts autocomplete categorySelected)} {
+  &,
+  &:hover {
+    background: cv('color.main');
+  }
 }

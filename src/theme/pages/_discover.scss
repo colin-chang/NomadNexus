@@ -94,9 +94,11 @@
 
 
   // SERVERS
-  #{c(discover servers cardIconMask)} {
-    background: cv('shading.card');
-    border-color: transparent;
+  &:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+    #{c(discover servers cardIconMask)} {
+      background: cv('shading.card');
+      border-color: transparent;
+    }
   }
   #{c(discover servers card)} {
     &:hover {

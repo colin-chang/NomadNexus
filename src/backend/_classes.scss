@@ -1925,6 +1925,7 @@ $classes: (
       'attachmentSize': 'formattedSize__4d95d',
       'downloadButton': 'downloadButton__4d95d',
       'codeIcon': 'codeIcon__4d95d',
+      'textContainerLanguageSelector': 'languageSelector__4d95d',
     ),
 
     'invite': (
@@ -4076,11 +4077,24 @@ $classes: (
     ),
 
   'popouts': (
+
+    // searchbar in popouts
+    'searchbar': (
+      'container': 'container_a45028',
+      // For actual search bar; formally (incorrectly) used for entire container
+      'medium': 'medium_a45028',
+      'inner': 'inner_a45028',
+      // appears to be used for both a wrapper and <input>
+      'iconLayout': 'iconLayout_a45028',
+      'iconContainer': 'iconContainer_a45028',
+      'iconVisible': 'visible_a45028',
+      'iconClear': 'clear_a45028',
+    ),
+
     // Shoody name? Yes. Multiple modals use it? Also yes, sadly.
     // It's in the Emojis, Command Autocomplete and Stickers. Open any of them.
     'categoryList': (
       'wrapper': 'wrapper__4e6ce',
-      'list': 'list_b1e4f3',
       'scroller': 'scroller_affa7e',
       // maybe? it appears in soundboard at the least. can also appear as main scroller
       'listItems': 'listItems_affa7e',
@@ -4103,7 +4117,6 @@ $classes: (
       // sidebar thingy w/ default commands and bot icons
       'railWrapper': 'wrapper_b1e4f3',
       // background applied to this class. ugh.
-      // "category": "wrapper_b1e4f3", // duplicate class lol
       'categorySelectable': 'selectable__1a58a',
       'categorySelected': 'selected__1a58a',
       'categoryIcon': 'icon__1a58a',
@@ -5064,22 +5077,6 @@ $classes: (
       ),
     ),
 
-    // Within a user's popup profile, click the + to add roles,
-    // Within server settings, go to members and click "Display role"
-    // Within audit log, click either filter by user or filter by action
-    // Found when you open the soundboard.
-    'searchPopup': (
-      'container': 'container_a45028',
-      // For actual search bar; formally (incorrectly) used for entire container
-      'medium': 'medium_a45028',
-      'inner': 'inner_a45028',
-      // appears to be used for both a wrapper and <input>
-      'iconLayout': 'iconLayout_a45028',
-      'iconContainer': 'iconContainer_a45028',
-      'iconVisible': 'visible_a45028',
-      'iconClear': 'clear_a45028',
-    ),
-
     // Within server settings, click "members" and then "prune" at the top
     // aka "purge"
     'prune': (
@@ -5136,10 +5133,6 @@ $classes: (
         'footerText': 'footerText_cba592',
       ),
 
-    // // Perks
-    // // These appear in a few modals - best seen when clicking the x/y boosts panel.
-    // "perks": (
-    // ),
     // Upload a text-based file and click expand (beer emoji in theme)
     'textFileExpanded': (
         'container': 'modalTextContainer__4d95d',
@@ -6366,10 +6359,7 @@ $classes: (
           // src/chat/textAreaAutoComplete.scss
           'automodDropdownChannelIcon': 'channelIcon__6ae25',
           // src/??/serverSettings.scss
-          'textContainerLanguageSelector': 'languageSelector__4d95d',
 
-          // src/??/textContainer.scss
-          // multiple matches put in one
           'flowerStarIcon': 'icon__09691',
           // src/??/badge.scss ; as "tooltipHubIcon" src/??/tooltip.scss
           'messageBlockedAction': 'blockedAction__7a70a',
