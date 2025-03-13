@@ -1,0 +1,143 @@
+@use 'backend' as *;
+
+
+// FRIENDS
+#{c(friends container)} {
+  background: none;
+  border: none;
+}
+#{c(friends tabBody)} {
+  background: none;
+}
+#{c(friends peopleColumn)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+#{c(header tabBar)} {
+  #{c(header addFriend)}#{c(header addFriend)}#{c(header addFriend)} {
+    // Yes this is how it is on discord as of 18/2
+    background-color: transparent;
+    color: cv('text.secondary');
+    border: none;
+    &:hover {
+      background-color: cv('shading.hover');
+    }
+    &[aria-selected='true'] {
+      background-color: cv('color.main');
+      color: cv('text.primary');
+    }
+  }
+}
+#{c(friends nowPlayingScroller)} {
+  border: none;
+}
+#{c(friends itemCardOuter)} {
+  &,
+  &#{c(friends itemCardInteractive)}:hover {
+    background-color: cv('shading.card');
+    border: none;
+  }
+}
+#{c(friends itemCardBodySection)} {
+  border: none;
+}
+
+
+// DISCOVER
+#{c(discover sidebar container)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.25));
+}
+#{c(discover sidebar item)} {
+  position: relative;
+  z-index: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    border-radius: 4px;
+  }
+  &#{c(discover sidebar itemSelected)} {
+    background: transparent;
+    &:after {
+      right: 0;
+      background: cv('color.main');
+      animation: cv-channel-select 0.3s ease-in-out;
+    }
+  }
+}
+#{c(discover headerBackdrop)} {
+  background: cv('shading.popout');
+}
+#{c(discover searchBar)} {
+  background: cv('shading.input.bg');
+  border-color: cv('shading.input.border');
+  &:focus-within {
+    border-color: cv('color.main');
+  }
+}
+#{c(discover headerRelative)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5));
+}
+#{c(discover headerIconButton)} {
+  background: cv('color.main');
+  &:hover {
+    background: cv('color.hover');
+  }
+}
+#{c(discover container)} {
+  border: none;
+}
+#{c(discover scroller)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+:is(#{c(main themeDark)}, #{c(main themeLight)}) {
+  #{c(discover card)} {
+    background: cv('shading.card');
+    border: 2px solid transparent;
+    &:hover {
+      background: cv('shading.card');
+      border-color: cv('color.main');
+    }
+  }
+}
+#{c(discover apps cardAvatar)} {
+  background: cv('shading.card');
+  border-color: transparent;
+}
+#{c(discover apps card)} {
+  &:hover {
+    #{c(discover apps cardAvatar)} {
+      background: cv('shading.card');
+      border-color: transparent;
+    }
+  }
+}
+#{c(discover apps footerContainer)},
+#{c(discover apps searchNoResult)} {
+  background: cv('shading.card');
+}
+#{c(discover servers cardIconMask)} {
+  background: cv('shading.card');
+  border-color: transparent;
+}
+#{c(discover servers card)} {
+  &:hover {
+    #{c(discover servers cardIconMask)} {
+      background: cv('shading.card');
+      border-color: transparent;
+    }
+  }
+}
+#{c(discover servers searchContainer)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+#{c(discover quests tileContainer)} {
+  background: cv('shading.card');
+}
+#{c(discover quests tileContent)} {
+  background: transparent;
+}

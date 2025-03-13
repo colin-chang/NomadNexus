@@ -1,0 +1,17 @@
+@use 'backend' as *;
+
+#{c(memberList container)} {
+  background: none;
+  border: none;
+}
+#{c(memberList wrap)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
+  border: none;
+}
+#{c(memberList activityContainer)} {
+  background: cv('shading.card');
+  border: 2px solid transparent;
+  border-radius: 8px;
+  border-width: 2px;
+  padding-left: 10px;
+}
