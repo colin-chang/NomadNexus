@@ -33,4 +33,12 @@
     font-weight: 600;
     color: cv('text.muted');
   }
+  &:has(+ #{c(title leading container)}:not(:empty)) {
+    &::before {
+      left: calc(var(--custom-guild-list-width) + 10px);
+    }
+    &::after {
+      left: calc(var(--custom-guild-list-width) + 95px);
+    }
+  }
 }

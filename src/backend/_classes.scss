@@ -1925,7 +1925,8 @@ $classes: (
       'attachmentSize': 'formattedSize__4d95d',
       'downloadButton': 'downloadButton__4d95d',
       'codeIcon': 'codeIcon__4d95d',
-      'textContainerLanguageSelector': 'languageSelector__4d95d',
+      'languageSelectorPopout': 'languageSelector__4d95d',
+      'modalTextContainer': 'modalTextContainer__4d95d',
     ),
 
     'invite': (
@@ -2091,6 +2092,14 @@ $classes: (
       'normalStylesImageOnlyAnswers': 'normalStylesImageOnlyAnswers_a1443c',
       'victorStyles': 'victorStyles_a1443c',
       'votedStyles': 'votedStyles_a1443c',
+    ),
+
+    'automod': (      
+      'card': 'embedCard__44492',
+      'footerContainer': 'footerContainer__44492',
+      'action': 'footerAction__44492',
+      'actionIcon': 'footerIcon__44492',
+      'dot': 'dot__44492',
     ),
   ),
   // heavily related to embeds
@@ -5133,11 +5142,6 @@ $classes: (
         'footerText': 'footerText_cba592',
       ),
 
-    // Upload a text-based file and click expand (beer emoji in theme)
-    'textFileExpanded': (
-        'container': 'modalTextContainer__4d95d',
-      ),
-
     // In a channel with active threads, hover over it and click "see all". These may apply to the dropdown
     'openThreadsPopout': (
         'modal': 'modal__9a792',
@@ -6498,11 +6502,6 @@ $classes: (
           'messagePublishTagline': 'tagline_cacd02',
           'messagePublishCloseIcon': 'closeIcon_cacd02',
           'messagePublishPermanentHide': 'hidePermanently_cacd02',
-          'messageAutomodCard': 'embedCard__44492',
-          'messageAutomodCardSelected': 'selected__44492',
-          'messageAutomodFooterContainer': 'footerContainer__44492',
-          'messageAutomodFooterAction': 'footerAction__44492',
-          'messageAutomodFooterIcon': 'footerIcon__44492',
           'reactionAddForceShow': 'forceShowLook_ec6b19',
           'formFieldWrapper': 'formFieldWrapper_ff716d',
           'settingsFormFieldWrapper': 'settingsFormFieldWrapper__3ff83',

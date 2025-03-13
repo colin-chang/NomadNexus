@@ -31,6 +31,10 @@
   #{c(popouts expressionPicker emoji categoryHeaderWrapper)} {
     background: hsl(from cv('color.main') h s l/.8);
     margin-bottom: 10px;
+    border-radius: 4px;
+    &::after {
+      height: 0;
+    }
   }
   #{c(popouts expressionPicker emoji searchBar)} {
     margin-right: 12px;
@@ -56,5 +60,42 @@
   #{c(popouts expressionPicker gif header)} {
     background: transparent;
     border: none;
+  }
+}
+
+// EMOJI ITEM
+#{c(popouts expressionPicker emoji item)} {
+  &#{c(popouts expressionPicker emoji itemSelected)} {
+    background: cv('shading.hover');
+  }
+}
+
+// STICKER ITEM
+#{c(popouts expressionPicker sticker inspected)} {
+  #{c(popouts expressionPicker sticker inspectedIndicator)} {
+    background: cv('shading.hover');
+  }
+}
+
+// GIF ITEM
+#{c(popouts expressionPicker gif favoritesFade)} {
+  background: hsl(from cv('color.main') h s l/.8);
+  &,
+  &:hover {
+    border: none;
+  }
+}
+#{c(popouts expressionPicker gif categoryFade)} {
+  border: none;
+  &:hover {
+    border: 2px solid cv('color.main');
+  }
+}
+
+// CATEGORY
+#{c(popouts expressionPicker emoji defaultCategorySelected)} {
+  &,
+  &:hover {
+    background: cv('color.main');
   }
 }

@@ -12,6 +12,8 @@
 }
 
 // CATEGORY LIST
-#{c(popouts categoryList wrapper)} {
-  background: transparent;
+#{c(main visualRefresh)} {
+  #{c(popouts categoryList wrapper)} {
+    background: transparent;
+  }
 }

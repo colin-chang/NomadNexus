@@ -118,6 +118,13 @@
     background: cv('shading.card');
     border: none;
   }
+  #{c(embeds textContainer languageSelectorPopout)} {
+    background: cv('shading.popout');
+  }
+  #{c(embeds textContainer modalTextContainer)} {
+    background: transparent;
+    border: none;
+  }
 
   // HAS THREAD
   #{c(chat cozy)} {   // doesnt actually need visual-refresh
@@ -165,7 +172,16 @@
   }
 }
 
-// EMBED BUTTON
+// AUTOMOD
+#{c(embeds automod card)},
+#{c(embeds automod footerContainer)} {
+  background: cv('shading.card');
+}
+#{c(embeds automod dot)} {
+  background: transparent;
+}
+
+// EMBED DOWNLOAD BUTTON
 #{c(embeds hoverButton group)} {
   background: cv('shading.popout');
 }
