@@ -1,36 +1,35 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
-  #{c(popouts menus menu)} {
-    background: cv('shading.popout');
-    border: none;
-    border-radius: 5px;
+
+#{c(popouts menus menu)} {
+  background: cv('shading.popout');
+  border: none;
+  border-radius: 5px;
+}
+#{c(popouts menus colorDefault)} {
+  &#{c(popouts menus itemFocused)} {
+    background-color: cv('color.hover');
   }
-  #{c(popouts menus colorDefault)} {
-    &#{c(popouts menus itemFocused)} {
-      background-color: cv('color.hover');
+}
+#{c(popouts menus colorDanger)} {
+  &,
+  #{c(popouts menus label)} {
+    color: cv('color.danger');
+  }
+  &#{c(popouts menus itemFocused)} {
+    background-color: cv('color.danger');
+    &:not(#{c(popouts menus checkboxContainer)}) {
+      // discord does it this way
+      path {
+        fill: var(--interactive-active);
+      }
     }
   }
-  #{c(popouts menus colorDanger)} {
-    &,
+}
+#{c(popouts menus item)} {
+  &#{c(popouts menus itemFocused)} {
     #{c(popouts menus label)} {
-      color: cv('color.danger');
-    }
-    &#{c(popouts menus itemFocused)} {
-      background-color: cv('color.danger');
-      &:not(#{c(popouts menus checkboxContainer)}) {
-        // discord does it this way
-        path {
-          fill: var(--interactive-active);
-        }
-      }
-    }
-  }
-  #{c(popouts menus item)} {
-    &#{c(popouts menus itemFocused)} {
-      #{c(popouts menus label)} {
-        color: var(--header-primary);
-      }
+      color: var(--header-primary);
     }
   }
 }
@@ -51,19 +50,17 @@
     background-color: cv('color.dnd') !important;
   }
 }
-#{c(main visualRefresh)} {
-  #{c(popouts menus itemFocused)} {
-    &#set-status-submenu-online {
-      background-color: cv('color.online');
-    }
-    &#set-status-submenu-idle {
-      background-color: cv('color.idle');
-    }
-    &#set-status-submenu-dnd {
-      background-color: cv('color.dnd');
-    }
-    &#set-status-submenu-invisible {
-      background-color: cv('color.offline');
-    }
+#{c(popouts menus itemFocused)} {
+  &#set-status-submenu-online {
+    background-color: cv('color.online');
+  }
+  &#set-status-submenu-idle {
+    background-color: cv('color.idle');
+  }
+  &#set-status-submenu-dnd {
+    background-color: cv('color.dnd');
+  }
+  &#set-status-submenu-invisible {
+    background-color: cv('color.offline');
   }
 }
