@@ -7,11 +7,11 @@
     fill: cv('color.offline');
   }
   // ONLINE
-  &[fill*='#44a25b'] {
+  &[fill*='#43a25a'] {
     fill: cv('color.online');
   }
   // IDLE
-  &[fill*='#c99656'] {
+  &[fill*='#ca9654'] {
     fill: cv('color.idle');
   }
   // DND

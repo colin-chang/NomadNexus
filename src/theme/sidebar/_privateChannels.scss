@@ -76,14 +76,14 @@
     // SELECTED
     &#{c(sidebar private selected)} {
       background-color: transparent;
-      color: cv('text.default');
+      color: var(--interactive-active);
       &::before {
         right: 0;
         background: cv('color.main');
         animation: cv-channel-select 0.3s ease-in-out;
       }
       #{c(sidebar private subtextText)} {
-        color: cv('text.default');
+        color: var(--interactive-active);
       }
     }
   }

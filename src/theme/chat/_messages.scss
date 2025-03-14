@@ -74,6 +74,11 @@
   }
 }
 
+// PUBLISH TO FOLLOWERS
+#{c(chat publish container)} {
+  background: cv('shading.card');
+}
+
 // EMBEDS
 :is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(embeds embedFull)} {

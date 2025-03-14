@@ -1229,6 +1229,16 @@ $classes: (
         'upsellCta': 'burstReactionTooltipUpsellCta_b49891',
       ),
     ),
+    
+    'publish': (
+      // post in announcements channel
+      'container': 'bumpBox_cacd02',
+      'icon': 'icon_cacd02',
+      'tagline': 'tagline_cacd02',
+      'closeIcon': 'closeIcon_cacd02',
+      'hidePermanently': 'hidePermanently_cacd02'
+    ),
+
   ),
   'pages': (
     // tags (used in forums and home)
@@ -1810,7 +1820,7 @@ $classes: (
     'replyName': 'name__841c8',
     'threadSuggestionBar': 'threadSuggestionBar__841c8',
 
-    'inlineLink': 'fakeLink_ada32f',
+    'fakeLink': 'fakeLink_ada32f',
 
     'beforeInlineCode': 'before_inlineCode_ada32f',
     'inlineCode': 'inlineCode_ada32f',
@@ -2448,20 +2458,20 @@ $classes: (
   ),
   // Obviously best seen in Settings > App Settings > Keybinds. Can also be brought up by pressing CTRL+/
   'keybinds': (
-      'combo': 'combo_fcddc1',
-      'key': 'key_fcddc1',
-      'bindArrow': 'bindArrow_fcddc1',
-      // unless "down", has extra class for direction
-      'up': 'up_fcddc1',
-      'left': 'left_fcddc1',
-      'right': 'right_fcddc1',
+    'combo': 'combo_fcddc1',
+    'key': 'key_fcddc1',
+    'bindArrow': 'bindArrow_fcddc1',
+    // unless "down", has extra class for direction
+    'up': 'up_fcddc1',
+    'left': 'left_fcddc1',
+    'right': 'right_fcddc1',
 
-      'searchPopout': 'keybindShortcutSearchPopout_fcddc1',
-      'shortcuts': 'keyboardShortcuts_fcddc1',
+    'searchPopout': 'keybindShortcutSearchPopout_fcddc1',
+    'shortcuts': 'keyboardShortcuts_fcddc1',
 
-      // no idea about these
-      'dim': 'dim_fcddc1',
-    ),
+    // no idea about these
+    'dim': 'dim_fcddc1',
+  ),
   'loading': (
     'container': 'container_a2f514',
     'ready': 'ready_a2f514',
@@ -4089,6 +4099,12 @@ $classes: (
     ),
 
   'popouts': (
+    
+    // unless the popout profile has previously loaded, click on a username in chat or someone in the member list
+    // the line this on appears to be the only rule.
+    'loading': (
+      'popout': 'loadingPopout__58f1c',
+    ),
 
     // searchbar in popouts
     'searchbar': (
@@ -4898,7 +4914,6 @@ $classes: (
       'groupDescription': 'keybindGroupDescription_f061f6',
       'keybindGroup': 'keybindGroup_f061f6',
       'keybindkey': 'keybindKey_f061f6',
-      'key': 'key_fcddc1',
 
       'ddrArrows': 'ddrArrows_f061f6',
       'arrow': 'arrow_f061f6',
@@ -5469,12 +5484,6 @@ $classes: (
             'newBadge': 'newBadge__3ec70',
             // typo
           ),
-      ),
-
-    // unless the popout profile has previously loaded, click on a username in chat or someone in the member list
-    // the line this on appears to be the only rule.
-    'loadingPopout': (
-        'popout': 'loadingPopout__58f1c',
       ),
 
     // Within a forum, click the guidelines book then click "View All"
@@ -6500,11 +6509,6 @@ $classes: (
           'mentionIcon': 'icon_b52c3f',
           'anchorAction': 'actionAnchor__235ca',
           'messageButtonContainer': 'buttonContainer_c19a55',
-          'messagePublishBumpBox': 'bumpBox_cacd02',
-          'messagePublishIcon': 'icon_cacd02',
-          'messagePublishTagline': 'tagline_cacd02',
-          'messagePublishCloseIcon': 'closeIcon_cacd02',
-          'messagePublishPermanentHide': 'hidePermanently_cacd02',
           'reactionAddForceShow': 'forceShowLook_ec6b19',
           'formFieldWrapper': 'formFieldWrapper_ff716d',
           'settingsFormFieldWrapper': 'settingsFormFieldWrapper__3ff83',

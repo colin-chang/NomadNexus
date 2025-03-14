@@ -1,16 +1,16 @@
 @use 'backend' as *;
 
-#{c(modals keyboard modal)} {
-  background: cv('shading.modal')
-}
+#{c(modals keyboard modal)},
 #{c(modals keyboard keybindGroup)} {
   background: cv('shading.modal')
 }
-#{c(modals keyboard key)} {
-  border-color: cv('color.hover');
-  box-shadow: inset 0 -2px cv('color.hover');
-  &:active {
-    border-color: cv('color.main');
-  box-shadow: inset 0 -2px cv('color.main');
+#{c(keybinds combo)} { // needed to overwrite discord in some areas - eg sticker suggestion
+  #{c(keybinds key)} {
+    border-color: cv('color.hover');
+    box-shadow: inset 0 -4px cv('color.hover');
+    &:active {
+      border-color: cv('color.main');
+    box-shadow: inset 0 -2px cv('color.main');
+    }
   }
 }

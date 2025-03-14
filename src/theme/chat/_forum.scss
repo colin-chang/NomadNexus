@@ -78,7 +78,7 @@
   }
   #{c(forums chat header icon)} {
     path {
-      fill: var(--interactive-active);
+      fill: var(--header-primary);
     }    
   }
   #{c(forums chat bar container)} {
@@ -96,7 +96,7 @@
 }
 #{c(forums emptyIcon)} {
   background: cv('color.main');
-  color: var(--interactive-active);
+  color: var(--header-primary);
 }
 #{c(forums emptyCTA)} {
   color: cv('color.main');
@@ -105,7 +105,7 @@
   }
 }
 
-// LOADING
+// CARD LOADING
 #{c(forums loading card)} {
   background: cv('shading.card');
   animation: cv-card-loading 1.5s infinite ease-in-out;
