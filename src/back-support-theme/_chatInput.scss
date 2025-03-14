@@ -1,0 +1,23 @@
+@use 'backend' as *;
+
+:where(html:not(#{c(main visualRefreshChatInput)})) {  
+  #{c(chatForm channelTextArea)} {
+    background-color: var(--input-background);
+    border-color: transparent;
+    box-shadow: 0 0 0 2px var(--input-border);
+    &:focus-within {
+      border-color: transparent;
+      box-shadow: 0 0 0 2px var(--hsl-main-color);
+    }
+  }
+  #{c(chatForm stackedBars)},
+  #{c(chatForm replyBar)},
+  #{c(chatForm threadSuggestionBar)},
+  #{c(chatForm themedBackground)} {
+    background: transparent;
+  }
+
+  #{c(chatForm appsButton)} {
+    background: cv('shading.card');
+  }
+}

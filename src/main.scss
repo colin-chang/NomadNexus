@@ -6,24 +6,23 @@
 
 // Contains the theme proper.
 @use 'theme';
+@use 'back-support-theme';
 
 /* Default Variables */
 $sf: var(--saturation-factor, 1);
 $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 // DO NOT DISTRIBUTE THESE; BACKEND ONLY STUFF.
-#{c(main visualRefresh)} {
+:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+  &,
   &:is(#{c(main themeLight)}, #{c(main themeDark)}) {
-    &,
-    &:is(#{c(main themeLight)}, #{c(main themeDark)}) {
-      // DO NOT EDIT THESE -- VARIABLES ARE NOT TO BE DISTRIBUTED TO END USER.
-      --text-normal: hsl(from var(--normal-text) #{$calc});
-      --text-muted: hsl(from var(--muted-text) #{$calc});
-      --text-primary: hsl(from var(--primary-text) #{$calc});
-      --text-secondary: hsl(from var(--secondary-text) #{$calc});
+    // DO NOT EDIT THESE -- VARIABLES ARE NOT TO BE DISTRIBUTED TO END USER.
+    --text-normal: hsl(from var(--normal-text) #{$calc});
+    --text-muted: hsl(from var(--muted-text) #{$calc});
+    --text-primary: hsl(from var(--primary-text) #{$calc});
+    --text-secondary: hsl(from var(--secondary-text) #{$calc});
 
-      --input-background: hsl(from var(--input-shading) #{$calc});
-      --input-border: hsl(from var(--input-background) h s l/.1);
-    }
+    --input-background: hsl(from var(--input-shading) #{$calc});
+    --input-border: hsl(from var(--input-background) h s l/.1);
   }
 }
 :root {
@@ -83,7 +82,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 
 /* Light Theme */
   // overides discord defaults
-#{c(main visualRefresh)}:is(#{c(main themeLight)}, #{c(main themeDark)} #{c(main themeLight)}) {
+:is(#{c(main themeLight)}, #{c(main themeDark)} #{c(main themeLight)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
   --background-shading: rgba(252, 252, 252, 0.3);
   --background-shading-percent: 100%;
@@ -99,7 +98,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 }
 
 /* Grey Theme */
-#{c(main visualRefresh)}:is(#{c(main themeDark)}, #{c(main themeLight)} #{c(main themeDark)}) {
+:is(#{c(main themeDark)}, #{c(main themeLight)} #{c(main themeDark)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
   --background-shading: rgba(0, 0, 0, 0.4);
   --background-shading-percent: 100%;
@@ -115,7 +114,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 }
 
 /* Darker Theme */
-#{c(main visualRefresh)}:is(#{c(main themeDarker)}, #{c(main themeLight)} #{c(main themeDarker)}) {
+:is(#{c(main themeDarker)}, #{c(main themeLight)} #{c(main themeDarker)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
   --background-shading: rgba(0, 0, 0, 0.6);
   --background-shading-percent: 100%;
@@ -131,7 +130,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 }
 
 /* Midnight Theme */
-#{c(main visualRefresh)}:is(#{c(main themeMidnight)}, #{c(main themeLight)} #{c(main themeMidnight)}) {
+:is(#{c(main themeMidnight)}, #{c(main themeLight)} #{c(main themeMidnight)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
   --background-shading: rgba(0, 0, 0, 0.8);
   --background-shading-percent: 100%;

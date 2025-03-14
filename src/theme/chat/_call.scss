@@ -1,6 +1,6 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(call wrapper)},
   #{c(call channelChatWrapper)} {
     background: transparent;

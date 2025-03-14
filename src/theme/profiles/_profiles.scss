@@ -47,7 +47,7 @@
 
 
 // POPOUT SEND MESSAGE
-#{c(main visualRefreshChatInput)} {
+:is(#{c(main visualRefreshChatInput)}, :not(#{c(main visualRefreshChatInput)})) {
   #{c(chatForm channelTextAreaInline)} {
     background-color: cv('shading.input.bg');
     border: none;
@@ -59,6 +59,7 @@
   // NITRO PROFILE
   #{c(profile themed)} {
     #{c(chatForm channelTextAreaInline)} {
+      background: var(--chat-background-default);
       &:focus-within {
         box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
       }
@@ -67,7 +68,7 @@
 }
 
 // NITRO PROFILE MODAL
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(profile themed)} {
     #{c(tab top)} {
       #{c(tab item)} {

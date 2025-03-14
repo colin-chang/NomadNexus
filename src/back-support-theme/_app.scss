@@ -4,25 +4,6 @@
 // not priority atm
 
 
-// BACKGROUND IMAGE
-:is(
-		html, // might be needed for injectors
-		body,
-		#{c(main appMount)}
-	) {
-  background: none;
-}
-#{c(main bg)} {
-  background: transparent center/cover no-repeat;
-  background-image: cv('bg.app.img');
-  background-attachment: cv('bg.app.attach');
-  filter: cv('bg.app.filter');
-	z-index: -1;
-}
-#{c(loading container)} {
-  background: cv('shading.bg');
-}
-
 // TITLE
 #{c(os titleBar)} {
 	background: cv('shading.bg');
@@ -40,7 +21,7 @@
   &::after {
     content: $version;
     position: absolute;
-    left: 95px;
+    left: 100px;
     margin-top: 3px;
     font-family: cv('font.code');
     font-size: 12px;

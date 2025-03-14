@@ -7,7 +7,7 @@
 #{c(settings contentRegion)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
 }
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(settings contentRegionScroller)} {
     background: transparent;
   }
@@ -17,7 +17,7 @@
 }
 
 // CARD
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(settings card primary)} {
     &,
     &#{c(settings card editable)} {

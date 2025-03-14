@@ -75,11 +75,12 @@
 }
 
 // EMBEDS
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(embeds embedFull)} {
     background: cv('shading.card');
-    border: none;
-    border-left: 4px solid var(--border-normal);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
   }
 
   // INVITE
@@ -186,10 +187,8 @@
   background: cv('shading.popout');
 }
 #{c(embeds hoverButton button)} {
-  color: cv('color.main');
   &#{c(embeds hoverButton selected)},
   &:hover {
-    color: cv('color.hover');
     background: transparent;
   }
 }

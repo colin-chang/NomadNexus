@@ -12,7 +12,7 @@
 }
 
 // CATEGORY LIST
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(popouts categoryList wrapper)} {
     background: transparent;
   }

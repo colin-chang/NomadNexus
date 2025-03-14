@@ -1,7 +1,7 @@
 @use 'backend' as *;
 
 // ACCOUNT PANEL
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}) {
   #{c(sidebar panel panels)} {
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.6));
     border-radius: 0;

@@ -4,7 +4,7 @@
   background: transparent;
 }
 
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(nitro wrapper)} {
     background: transparent;
     border: none;

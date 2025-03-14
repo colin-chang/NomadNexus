@@ -1,7 +1,7 @@
 @use 'backend' as *;
 
 
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   // NEW MESSAGES
   #{c(chat bar newMessages)} {
     top: 4px;

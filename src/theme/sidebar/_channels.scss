@@ -1,6 +1,6 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   // CHANNELS BACKGROUND
   #{c(sidebar list)} {
     margin-bottom: var(--custom-app-panels-height);
@@ -163,7 +163,7 @@
 
 
 // VC USER LIMIT
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(sidebar server channel voiceLimitWrapper)},
   #{c(sidebar server channel voiceLimitUsers)} {
     background: transparent;

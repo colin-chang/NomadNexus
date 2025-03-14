@@ -1,7 +1,7 @@
 @use 'backend' as *;
 
 // TRANSPARENT BG
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   :is(
 		html, // might be needed for injectors
 		body,
@@ -15,7 +15,7 @@
 #{c(main appInner)} {
   background: cv('shading.bg');
 }
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(main bg)} {
     background: transparent center/cover no-repeat;
     background-image: cv('bg.app.img');
@@ -26,7 +26,7 @@
 }
 
 // LOADING
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(loading container)} {
     background: cv('shading.bg');
   }

@@ -2,7 +2,7 @@
 
 /* TAB */
 // TOP
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(tab top)} {
     #{c(tab item)} {
       --selected-tab-item-color: var(--hsl-hover-color);

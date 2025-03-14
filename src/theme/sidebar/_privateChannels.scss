@@ -1,6 +1,6 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(sidebar private channels)} {
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.25));
   }
@@ -33,7 +33,7 @@
     margin-left: 5px;
   }
 }
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   :is(#{c(sidebar private startActivityIcon)}, #{c(sidebar private inviteButtonIcon)}) {
     margin: 0 -4px 0 0;
     #{c(header icon)} {
@@ -54,7 +54,7 @@
 }
 
 // CHANNEL CONTENT
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(sidebar private interactive)} {
     transition: all 0.15s ease-in-out;
     border-radius: 4px;

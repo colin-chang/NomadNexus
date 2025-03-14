@@ -1,5 +1,5 @@
 @use 'backend' as *;
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}) {
   // GUILD LIST
   #{c(guildList guilds)} {
     margin-bottom: var(--custom-app-panels-height);
@@ -20,7 +20,7 @@
 }
 
 // HOME BUTTON
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(guildList homeWrapper)} {
     background-color: cv('shading.card');
     &:not(#{c(guildList acronym)}) {
@@ -53,7 +53,7 @@
 }
 
 // FOLDER
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(guildList expandedFolderBackground)} {
     background: cv('shading.card');
   }

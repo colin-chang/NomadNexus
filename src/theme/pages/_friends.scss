@@ -1,6 +1,6 @@
 @use 'backend' as *;
 // friends list
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(friends container)} {
     background: none;
     border: none;
@@ -56,7 +56,7 @@
 }
 
 // ADD FRIEND BUTTON
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(header tabBar)} {
     #{c(header addFriend)}#{c(header addFriend)}#{c(header addFriend)} {
       // Yes this is how it is on discord as of 18/2
@@ -98,7 +98,7 @@
 #{c(friends nowPlayingContainer)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
 }
-#{c(main visualRefresh)} {
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(friends nowPlayingScroller)} {
     border: none;
   }
