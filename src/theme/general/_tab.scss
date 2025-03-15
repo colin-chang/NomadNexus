@@ -34,6 +34,7 @@
 // SIDE TAB HEADER
 // mainly in settings
 #{c(tab header)} {
+  color: cv('color.main');
   display: flex;
   align-items: center;
   justify-content: center;
