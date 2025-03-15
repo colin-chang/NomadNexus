@@ -9,10 +9,15 @@
 	background: cv('shading.bg');
 	margin: 0;
 	padding-top: 4px;
-	&::before {
+}
+#{c(os wordmark)} {
+  svg {
+    width: 0;
+    height: 0;
+  }
+  &::before {
     content: $themeName;
-    position: absolute;
-    left: 10px;
+    position: static;
     font-size: 16px;
     font-weight: 600;
     color: cv('text.normal');
@@ -20,17 +25,13 @@
   }
   &::after {
     content: $version;
-    position: absolute;
-    left: 100px;
-    margin-top: 3px;
+    position: static;
+    margin-left: 5px;
     font-family: cv('font.code');
     font-size: 12px;
     font-weight: 600;
     color: cv('text.muted');
   }
-}
-#{c(os wordmark)} {
-	display: none;
 }
 
 

@@ -13,32 +13,26 @@
   }
 }
 
-#{c(title title container)} {
+#{c(title leading container)} {
   &::before {
     content: $themeName;
-    position: absolute;
-    left: 10px;
+    position: static;  
+    margin-left: 10px;
     font-size: 16px;
     font-weight: 600;
     color: cv('text.normal');
+    order: 2;
     filter: drop-shadow(0 0 5px cv('color.main'));
   }
   &::after {
     content: $version;
-    position: absolute;
-    left: 100px;
+    position: static;
     margin-top: 3px;
+    margin-left: 5px;
     font-family: cv('font.code');
     font-size: 12px;
     font-weight: 600;
     color: cv('text.muted');
-  }
-  &:has(+ #{c(title leading container)}:not(:empty)) {
-    &::before {
-      left: calc(var(--custom-guild-list-width) + 10px);
-    }
-    &::after {
-      left: calc(var(--custom-guild-list-width) + 100px);
-    }
+    order: 3;
   }
 }
