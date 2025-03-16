@@ -98,3 +98,72 @@
 #{c(userSettings nitro giftCard)} {
   background: cv('shading.card');
 }
+
+
+// SERVER BOOST
+#{c(userSettings boost guildContainer)},
+#{c(userSettings boost boostContainer)} {
+  background: cv('shading.card');
+}
+#{c(userSettings boost appliedBoostContainer)} {
+  background: transparent;
+}
+
+
+// SUBSCRIPTIONS
+#{c(userSettings subscriptions detailsBlock)} {
+  background: cv('shading.card');
+}
+
+// BILLING
+#{c(userSettings billing paymentPane)} {
+  background: cv('shading.card');
+}
+#{c(userSettings billing paginator)},
+#{c(userSettings billing payment)} {
+  background: transparent;
+}
+#{c(userSettings billing expandedInfo)} {
+  background: hsl(from cv('shading.card') h s calc(100 - l)/.1);
+}
+:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+  #{c(userSettings billing hoverablePayment)} {
+    &:hover {
+      background: transparent;
+    }
+  }
+  #{c(userSettings billing bottomDivider)} {
+    border-bottom-color: cv('shading.hover');
+  }
+  #{c(userSettings billing codeRedemptionRedirect)} {
+    background: cv('shading.card');
+    border: none;
+  }
+}
+
+// APPEARANCE
+
+
+
+// VOICE & VIDEO
+#{c(userSettings voice notchesContainer)} {
+  mask-image: url(https://clearvision.github.io/icons/pill.svg);
+  background: cv('color.main') !important; // inline
+}
+:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+  #{c(userSettings voice notchprogress)} {
+    background: cv('shading.bg');
+  }
+}
+#{c(userSettings voice notches)} {
+  display: none;
+}
+#{c(userSettings voice soundButton)} {
+  background: cv('shading.card');
+}
+#{c(userSettings voice cameraWrapper)} {
+  background: cv('shading.card');
+}
+#{c(userSettings voice backgroundOptionRing)} {
+  border: 2px solid cv('color.main');
+}

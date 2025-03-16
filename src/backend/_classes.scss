@@ -1292,14 +1292,15 @@ $classes: (
     'title': 'title_d9be46',
     'searchIcon': 'searchIcon_d9be46',
     'closeIcon': 'closeIcon_d9be46',
+    'tagsContainer': 'tagsContainer_d9be46',
+    'moreTagsButton': 'tagsButton_d9be46',
+    'moreTagsButtonInner': 'tagsButtonInner_d9be46',
     'submitButton': 'submitButton_d9be46',
     
     'newPostsPopout': 'newPostsButton_f369db',
 
     // tags on their own can apply outside the container
     'tags': (
-      'container': 'tagsContainer_d9be46',
-
       'dropdown': 'sortDropdown_f369db',
       'dropdownInner': 'sortDropdownInner_f369db',
       'dropdownText': 'sortDropdownText_f369db',
@@ -3913,7 +3914,7 @@ $classes: (
 
     // used in a few places, i'm not entirely sure what's different about it
     'premiumFeatureBorder': 'premiumFeatureBorder__65c15',
-    'featureBorder': 'featureBorder_fbfab6c6d722',
+    'featureBorder': 'featureBorder__65c15',
     'featureBackground': 'background__65c15',
 
     'sectionTitle': 'sectionTitle__7bffb',
@@ -3993,8 +3994,8 @@ $classes: (
         'descriptionContainer': 'effectDescriptionContainer__92e52',
       ),
 
+      'premiumBackground': 'premiumBackground__65c15',
       'upsellContainer': 'upsellContainer__0b69f',
-
     ),
 
     'family': (
@@ -4075,78 +4076,110 @@ $classes: (
 
     'boost': (
       'headerWave': 'wave__8e08c',
-      'appliedBoostContainer': 'appliedBoostContainer_ceb06a',
       'guildContainer': 'guildContainer__5dba5',
+      'appliedBoostContainer': 'appliedBoostContainer_ceb06a',
       'boostContainer': 'boostContainer_ceb06a',
       'boostContainerInner': 'boostInnerContainer_ceb06a',
-
       
       'recognitionCard': 'boosterRecognitionCard__744ff',
       'FAQ': 'faq__744ff',
       
       'transferSearch': 'selectSearch__39466',
+      'transerSelectGuild': 'selectGuild__39466',
+      'transerSelectGuildIcon': 'selectGuildIcon__39466',
       'transferButton': 'selectGuildPseudoCta__39466',
-
     ),
 
-      'subscriptionsSectionDescription': 'sectionDescription_e335a7',
-      'subscriptionsNoItemsCardSubs': 'noItemsCard_e335a7',
-      'subscriptionsNoItemsIconSubs': 'noItemsIcon_e335a7',
-      'subscriptionsNoItemsCardCredits': 'noItemsCard__70151',
-      'subscriptionsNoItemsIconCredits': 'noItemsIcon__70151',
-      'subscriptionsBillingInformation': 'billingInformation_e335a7',
-      'subscriptionsDetailsBlock': 'detailsBlock_e335a7',
+    'subscriptions': (
+      'sectionDescription': 'sectionDescription_e335a7',
+      'noItemsCardSubs': 'noItemsCard_e335a7',
+      'noItemsIconSubs': 'noItemsIcon_e335a7',
+      'nItemsCardCredits': 'noItemsCard__70151',
+      'noItemsIconCredits': 'noItemsIcon__70151',
+      'detailsBlock': 'detailsBlock_e335a7',
+      'billingInformation': 'billingInformation_e335a7',
+    ),
 
-      'giftPromotionCard': 'promotionCard_d4883c',
-
+    'gift': (
+      'promotionCard': 'promotionCard_d4883c',
       'codeRedemptionRedirect': 'codeRedemptionRedirect_a706ba',
+    ),
 
+    'billing': (
+      'defaultIndicator': 'defaultIndicator__43963',
+      'premiumIndicator': 'premiumIndicator__43963',
+      'description': 'description__43963',
+      'descriptionWrapper': 'descriptionWrapper__43963',
+      'paymentPane': 'paymentPane__01014',
+      'paginator': 'paginator__01014',
+      'bottomDivider': 'bottomDivider__01014',
+      'hoverablePayment': 'hoverablePayment_e9cb00',
+      'payment': 'payment_e9cb00',
+      'expandedInfo': 'expandedInfo_e9cb00',
+      'codeRedemptionRedirect': 'codeRedemptionRedirect_a706ba',
+    ),
 
+    'appearance': (
+      'preview': 'preview__3e443',
+
+      'themesPresets': 'presets__67a11',
+      'themesBasicSelectors': 'basicThemeSelectors_fbfab6',
+      'themesSelectorContainer': 'themeSelectionContainer__36dee',
+      'themesSelection': 'themeSelection__36dee',
+      'themesDefault': 'defaultThemeSelection__36dee',
+      'themesLight': 'lightIcon__36dee',
+      'themesDark': 'darkIcon__36dee',
+      'themesSyncIconWrapper': 'iconWrapper__36dee',
+      'themesSelected': 'selected__36dee',
+
+      'themesDisabled': 'disabled__36dee',
+      // for those with no nitro
+      'themesLightOverlay': 'lightOverlay__36dee',
+      'themesDarkOverlay': 'darkOverlay__36dee',
+
+      'themesFeatureBorder': 'featureBorder_fbfab6',
+      'themesHeader': 'header__67a11',
+      // "Colour", nitro icon, try etc
+      'themesHeadings': 'headings__67a11',
+      'themesTitle': 'title__67a11',
+      'themesPremiumIcon': 'premiumIcon__67a11',
+      'themesNitroWheel': 'nitroWheel_c5f0dc',
+      // ON OWN LINE; ALSO APPEARS UNDER SERVER PROFILES
+      'themesTryItOutButton': 'tryItOutButtons_fbfab6',
+
+      'selectedCircle': 'selectionCircle__36dee',
+      'checkmarkCircle': 'checkmarkCircle__36dee',
+      'checkmark': 'checkmark__36dee',
+    ),
+
+    'accessability': (
+      'preview': 'preview__5d148',
+      'previewMessage': 'previewMessage__5d148',
+    ),
+
+    'voice': (
+      'notchesContainer': 'container__06283',
+      'notches': 'notches__06283',        
+      'notchesGray': 'gray__06283',
+      'notchprogress': 'progress__06283',        
+      'sensitivityBar': 'sliderBar_ac7648',
+      'sensitivitySpeaking': 'speaking_ac7648',
       
-      'userSettingsProfilePremiumBackground': 'premiumBackground__65c15',
-      'userSettingsSubsAccountCredit': 'premiumSubscriptionAccountCredit__94f72',
-      'userSettingsBillingIndicator': 'defaultIndicator__43963',
-      'userSettingsBillingMethodText': 'description__43963' 'descriptionWrapper__43963',
-      'userSettingsBillingPaymentPane': 'paymentPane__01014',
-      'userSettingsBillingPaginator': 'paginator__01014',
-      'userSettingsBillingBottomDivider': 'bottomDivider__01014',
-      'userSettingsBillingHoverablePayment': 'hoverablePayment_e9cb00',
-      'userSettingsBillingPayment': 'payment_e9cb00',
-      'userSettingsBillingExpandedInfo': 'expandedInfo_e9cb00',
-      'userSettingsMicTest': 'micTest__8f8f8',
-      'userSettingsMicTestContainer': 'container__06283',
-      'userSettingsMicTestProgress': 'progress__06283',
-      'userSettingsVoiceSensitivity': 'sliderBar_ac7648',
-      'userSettingsVoiceSensitivitySpeaking': 'speaking_ac7648',
-      'userSettingsEntranceSoundButton': 'soundButtonSettingContainer__84bad',
-      'userSettingsVideoBgOption': 'backgroundOption__53965',
+      'soundButton': 'soundButtonSettingContainer__84bad',
+
+      'cameraWrapper': 'cameraWrapper_d41d5f',
+      'backgroundOption': 'backgroundOption__53965',
+      'backgroundOptionRing': 'backgroundOptionRing__53965',
+      'backgroundOptionInner': 'backgroundOptionInner__53965',
+    ),
+
       'userSettingsKeybindContainer': 'container_f89b2c',
       'userSettingsKeybindDisabled': 'containerDisabled__2636e',
       'userSettingsKeybindRecording': 'recording__2636e',
 
-
-
-
     ),
   // subset of userSettings
   'appSettings': (
-      'appearancePreview': 'preview__3e443',
-
-      'accessabilityPreview': 'preview__5d148',
-      'previewMessage': 'previewMessage__5d148',
-
-      'voicePage': 'userSettingsVoice_b6e3f3',
-      'voiceNotches': 'notches__06283',
-      'voiceNotchesGray': 'gray__06283',
-      'voicePreviewContainer': 'cameraWrapper_d41d5f',
-      'voiceBackgroundOptionRing': 'backgroundOptionRing__53965',
-      'voiceBackgroundOptionInner': 'backgroundOptionInner__53965',
-
-      'overlayWrapper': 'wrapper_e03935',
-      'overlayDisabled': 'disabled_e03935',
-      'overlaySelected': 'selected_e03935',
-      'overlayOption': 'option_e03935',
-      'overlayDisabledSelected': 'disabledSelected_e03935',
 
       'soundRow': 'soundRow__6d8e5',
       'soundRowDividerDefault': 'dividerDefault__0d850',
@@ -4175,8 +4208,6 @@ $classes: (
       'addGamePopout': 'addGamePopout_cc46f0',
 
       'contentTransitionWrap': 'contentTransitionWrap__23e6b',
-      // TYPO
-      'keybindRemoveFilled': '@alias removeButton filled',
     ),
 
   'popouts': (
@@ -6317,50 +6348,6 @@ $classes: (
     'xenoLibNotifLoadbar': 'xenoLib-notification-loadbar',
   ),
 
-  // I've done my best to list *all* classes relating to that experiment (and treatment if applicable) but no chances.
-  // These may get merged in with the rest above so this area is far more chaotic than the others.
-  'experiments': (
-      // 2022-11_client_themes - Currently three "treatments", allows a custom background via adding a class to html.
-      // Treatment 1 - Client Themes
-      // No classes added; custom option broken.
-      // Treatment 2 - Client Themes Sidebar Editor
-      // "themesCustomThemeBackground": "custom-theme-background", // applied to html
-      'themesPresets': 'presets__67a11',
-      'themesBasicSelectors': 'basicThemeSelectors_fbfab6',
-      'themesSelectorContainer': 'themeSelectionContainer__36dee',
-      'themesSelection': 'themeSelection__36dee',
-      'themesSelected': 'selected__36dee',
-      'themesDefault': 'defaultThemeSelection__36dee',
-      'themesSelectedCircle': 'selectionCircle__36dee',
-      'themesCheckmarkCircle': 'checkmarkCircle__36dee',
-      'themesCheckmark': 'checkmark__36dee',
-      'themesSyncIconWrapper': 'iconWrapper__36dee',
-      'themesFeatureBorder': 'featureBorder_fbfab6',
-      'themesHeader': 'header__67a11',
-      // "Colour", nitro icon, try etc
-      'themesHeadings': 'headings__67a11',
-      'themesTitle': 'title__67a11',
-      'themesPremiumIcon': 'premiumIcon__67a11',
-      'themesNitroWheel': 'nitroWheel_c5f0dc',
-      // ON OWN LINE; ALSO APPEARS UNDER SERVER PROFILES
-      'themesTryItOutButton': 'tryItOutButtons_fbfab6',
-      'themesDisabled': 'disabled__36dee',
-      // for those with no nitro
-      'themesLightOverlay': 'lightOverlay__36dee',
-      'themesDarkOverlay': 'darkOverlay__36dee',
-      'themesLight': 'lightIcon__36dee',
-      'themesDark': 'darkIcon__36dee',
-      'themesSidebarEditor': 'themeEditor_cf6da1',
-      // has bg + border left
-      'themesSidebarHeader': 'editorHeader_cf6da1',
-      'themesSidebarCloseCircleButton': 'closeCircleButton_cf6da1',
-      'themesSidebarCloseCircle': 'closeCircle_cf6da1',
-      'themesSidebarBody': 'editorBody_cf6da1',
-      'themesSidebarSelectionGroup': 'selectionGroup_cf6da1',
-      'themesSidebarFooter': 'editorFooter_cf6da1',
-      'themesSidebarFooterButton': 'footerButton_cf6da1',
-      // exit preview
-    ),
   // This category is for the random stuff that I'm unable to find
   // locations of or don't really fit anywhere above.
   // Former is usually true.

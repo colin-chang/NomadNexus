@@ -43,7 +43,7 @@
 
 /* THEME SPECIFIC SHADING */
 /* LIGHT THEME */
-.visual-refresh:is(.theme-light, .theme-dark .theme-light) {
+:is(.theme-light, .theme-dark .theme-light) {
   --background-shading: rgba(252, 252, 252, 0.3);
   --background-shading-percent: 100%;
   --card-shading: rgba(252, 252, 252, 0.05);
@@ -54,8 +54,8 @@
   --muted-text: #75757e;
 }
 
-/* GREY THEME */
-.visual-refresh:is(.theme-dark, .theme-light .theme-dark) {
+/* GREY THEME / DARK THEME IN OLD UI */
+:is(.theme-dark, .theme-light .theme-dark) {
   --background-shading: rgba(0, 0, 0, 0.4);
   --background-shading-percent: 100%;
   --card-shading: rgba(0, 0, 0, 0.3);
@@ -66,8 +66,8 @@
   --muted-text: #aeaeb4;
 }
 
-/* DARK THEME */
-.visual-refresh:is(.theme-darker, .theme-light .theme-darker) {
+/* DARK THEME - NEW UI EXCLUSIVE */
+:is(.theme-darker, .theme-light .theme-darker) {
   --background-shading: rgba(0, 0, 0, 0.6);
   --background-shading-percent: 100%;
   --card-shading: rgba(0, 0, 0, 0.4);
@@ -78,8 +78,8 @@
   --muted-text: #94949c;
 }
 
-/* MIDNIGHT THEME */
-.visual-refresh:is(.theme-midnight, .theme-light .theme-midnight) {
+/* MIDNIGHT THEME - NEW UI EXCLUSIVE */
+:is(.theme-midnight, .theme-light .theme-midnight) {
   --background-shading: rgba(0, 0, 0, 0.8);
   --background-shading-percent: 100%;
   --card-shading: rgba(0, 0, 0, 0.5);

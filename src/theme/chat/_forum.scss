@@ -16,6 +16,17 @@
     }
   }
 
+  // GUIDELINES
+  #{c(forums guidelines container)} {
+    background: cv('shading.card');
+    border: none;
+  }
+  #{c(forums guidelines descriptionContainer)},
+  #{c(forums guidelines gradient)},
+  #{c(forums guidelines showMoreLinkContainer)} {
+    background: transparent;
+  }
+
   // TAGS
   #{c(pages tags pill)} {
     background: cv('shading.card');
