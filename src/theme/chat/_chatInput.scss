@@ -34,35 +34,6 @@
     border: none;
   }
 
-  //  BUTTONS
-  #{c(chatForm accessoryBar)} {
-    border: none;
-    margin-left: 0;
-    pointer-events: none;
-    padding-bottom: 0;
-  }
-  #{c(chatForm accessoryBarLeft)},
-  #{c(chatForm accessoryBarRight)} {
-    pointer-events: initial;
-  }
-  #{c(chatForm attachButton)} {
-    background-color: cv('color.main');
-    padding: 4px 12px;
-    margin-left: -8px;
-    border-radius: 4px;
-    color: var(--button-filled-brand-text);
-    &:hover {
-      background-color: cv('color.hover');
-      color: var(--button-filled-brand-text);
-    }
-    &::after {
-      // See "/theme/misc/_i18n.scss" for more.
-      content: var(--__i18n-attachment);
-      font-size: 1em;
-      margin-left: 0.5em;
-    }
-  }
-
   // TYPING
   #{c(chatForm typing)} {
     margin-left: 20px;
@@ -79,7 +50,28 @@
       background: cv('shading.popout');
     }
   }
+
+ //  BOTTOM BUTTONS
+  #{c(chatForm accessoryBar)} {
+    border: none;
+    margin-left: 0;
+    pointer-events: none;
+    padding-bottom: 0;
+  }
+  #{c(chatForm accessoryBarLeft)},
+  #{c(chatForm accessoryBarRight)} {
+    pointer-events: initial;
+  }
 }
+#{c(chatForm attachButton)} {
+  &::after {
+    // See "/theme/misc/_i18n.scss" for more.
+    content: var(--__i18n-attachment);
+    font-size: 1em;
+    margin-left: 0.5em;
+  }
+}
+
 
 // LINK
 #{c(chatForm fakeLink)} {

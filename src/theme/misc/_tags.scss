@@ -76,14 +76,14 @@ $tagged: (
 );
 
 // OUTPUT
-#{c(chat messageContents)} > img {
+#{c(chat messageContents)} #{c(chat chatAvatar)} {
 	~ #{c(chat chatHeaderUsername)} #{c(chat chatUsername)}::after {
 		content: var(--tag, none);
 		font-size: clamp(10px, 0.7rem, 1rem);
+		font-style: italic;
 		margin-left: round(0.4rem, 1px);
-		border-radius: round(0.4rem, 1px);
-		padding: 0 round(0.3rem, 1px);
-		border: clamp(1px, round(down, 0.15rem, 1.5px), 0.15rem) solid;
+		vertical-align: super;
+		display: inline-block;
 	}
 }
 

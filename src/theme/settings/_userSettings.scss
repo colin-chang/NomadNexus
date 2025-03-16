@@ -1,0 +1,100 @@
+@use 'backend' as *;
+
+// SIDEBAR
+#{c(userSettings sidebar nitroBackgroundSelected)} {
+  background: transparent;
+}
+
+// ACCOUNT
+#{c(userSettings account profileCard)} {
+  background: cv('shading.card');
+}
+#{c(userSettings account badgeList)},
+#{c(userSettings account fieldBackground)},
+#{c(userSettings account fieldList)} {
+  background: transparent;
+}
+// ACCOUNT STANDING
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+  #{c(userSettings account standing container)} {
+    background: transparent;
+  }
+}
+#{c(userSettings account standing avatarBackground)} {
+  background: transparent;
+}
+
+
+// PROFILES
+#{c(userSettings profiles uploadImageOption)} {
+  background: hsl(from cv('shading.card') h s calc(100 - l)/.1);
+  &:hover {
+    border: 2px solid cv('color.main')
+  }
+}
+#{c(main visualRefreshChatInput)} {
+  #{c(userSettings profiles bioTextAreaContainer)} {
+    background: cv('shading.input.bg');
+    box-shadow: 0 0 0 2px cv('shading.input.border');
+    &:focus-within {
+      border-color: transparent;
+      box-shadow: 0 0 2px 2px cv('color.main');
+    }
+  }
+}
+
+
+// FAMILY CENTER
+#{c(userSettings family box)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(userSettings family row)} {
+  background: hsl(from cv('shading.card') h s calc(100 - l)/.1);
+  border: none;
+}
+
+
+// DEVICES
+#{c(userSettings devices sessionIcon)} {
+  background: cv('color.main');
+  color: var(--header-primary);
+}
+
+
+// CONNECTIONS
+#{c(userSettings connections connectContainer)},
+#{c(userSettings connections connection)} {
+  background: cv('shading.card');
+}
+#{c(userSettings connections accountButtonInner)} {
+  background-color: hsl(from cv('shading.card') h s calc(100 - l)/.1);
+}
+#{c(userSettings connections connectionHeader)} {
+  background: transparent;
+  padding-bottom: 0;
+}
+#{c(userSettings connections connectionMetadataContainer)} {
+  background-color: hsl(from cv('shading.card') h s calc(100 - l)/.1);
+}
+
+
+// NITRO - NO NITRO
+#{c(userSettings nitro perkCard)} {
+  background: cv('shading.card');
+}
+#{c(userSettings nitro footerWrapperBase)} {
+  background: cv('shading.popout');
+}
+#{c(userSettings nitro footerSubButton)} {
+  color: cv('color.main') !important; // discord styles 
+}
+#{c(userSettings nitro footerGiftButton)} {
+  &:hover {
+    background: transparent;
+  }
+}
+// NITRO - WITH NITRO
+#{c(userSettings nitro giftCard)} {
+  background: cv('shading.card');
+}

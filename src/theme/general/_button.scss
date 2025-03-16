@@ -8,6 +8,7 @@
 #{c(button lookFilled)} {
   &:is(#{c(button colorBrand)}, #{c(button colorPrimary)}) {
     background-color: cv('color.main');
+    border: none;
     &:hover {
       background-color: cv('color.hover');
     }
@@ -17,18 +18,21 @@
   }
   &#{c(button colorGreen)} {
     background-color: cv('color.success');
+    border: none;
     &:hover {
       background-color: hsl(from cv('color.success') h s l/.8);
     }
   }
   &#{c(button colorRed)} {
     background-color: cv('color.danger');
+    border: none;
     &:hover {
       background-color: hsl(from cv('color.danger') h s l/.8);
     }
   }
   &:is(#{c(button colorWhite)}, #{c(button colorBrandInverted)}) {
     color: cv('color.main');
+    border: none;
     &:hover {
       color: cv('color.hover');
     }
@@ -78,10 +82,10 @@
   :is(#{c(main themeLight)}, #{c(main themeDark)}) & {
     &:is(#{c(button colorPrimary)}, #{c(button colorLink)}) {
       color: cv('color.main');
-      &:hover {
-        color: cv('color.hover');
-      }
     }
+  }
+  &#{c(button colorBrand)} {
+    color: cv('color.main');
   }
 }
 
