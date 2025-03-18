@@ -24,12 +24,11 @@
   background: transparent;
 }
 
-
 // PROFILES
 #{c(userSettings profiles uploadImageOption)} {
   background: cv('shading.cardInverted');
   &:hover {
-    border: 2px solid cv('color.main')
+    border: 2px solid cv('color.main');
   }
 }
 #{c(main visualRefreshChatInput)} {
@@ -43,7 +42,6 @@
   }
 }
 
-
 // CONTENT & SOCIAL
 #{c(userSettings content blockedCard)} {
   background: cv('shading.card');
@@ -51,7 +49,6 @@
 #{c(userSettings content blockedHeader)} {
   background: transparent;
 }
-
 
 // FAMILY CENTER
 #{c(userSettings family box)} {
@@ -63,13 +60,11 @@
   border: none;
 }
 
-
 // DEVICES
 #{c(userSettings devices sessionIcon)} {
   background: cv('color.main');
   color: var(--header-primary);
 }
-
 
 // CONNECTIONS
 #{c(userSettings connections connectContainer)},
@@ -87,7 +82,6 @@
   background-color: cv('shading.cardInverted');
 }
 
-
 // NITRO - NO NITRO
 #{c(userSettings nitro perkCard)} {
   background: cv('shading.card');
@@ -96,7 +90,7 @@
   background: cv('shading.popout');
 }
 #{c(userSettings nitro footerSubButton)} {
-  color: cv('color.main') !important; // discord styles 
+  color: cv('color.main') !important; // discord styles
 }
 #{c(userSettings nitro footerGiftButton)} {
   &:hover {
@@ -108,7 +102,6 @@
   background: cv('shading.card');
 }
 
-
 // SERVER BOOST
 #{c(userSettings boost guildContainer)},
 #{c(userSettings boost boostContainer)} {
@@ -117,7 +110,6 @@
 #{c(userSettings boost appliedBoostContainer)} {
   background: transparent;
 }
-
 
 // SUBSCRIPTIONS
 #{c(userSettings subscriptions detailsBlock)} {
@@ -152,8 +144,6 @@
 
 // APPEARANCE
 
-
-
 // VOICE & VIDEO
 #{c(userSettings voice notchesContainer)} {
   mask-image: url(https://clearvision.github.io/icons/pill.svg);
@@ -177,7 +167,7 @@
 }
 #{c(userSettings voice cameraWrapper)} {
   background: cv('shading.card');
-  border: none
+  border: none;
 }
 #{c(userSettings voice backgroundOptionRing)} {
   border: 2px solid cv('color.main');

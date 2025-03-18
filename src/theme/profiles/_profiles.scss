@@ -25,7 +25,7 @@
         }
       }
     }
-    
+
     // STATUS BUBBLE
     #{c(profile statusBubbleOuter)} {
       background: cv('shading.popout');
@@ -44,7 +44,6 @@
 #{c(profile overlay)} {
   background-color: cv('shading.card');
 }
-
 
 // POPOUT SEND MESSAGE
 :is(#{c(main visualRefreshChatInput)}, :not(#{c(main visualRefreshChatInput)})) {

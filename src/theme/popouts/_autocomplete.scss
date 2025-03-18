@@ -1,6 +1,5 @@
 @use 'backend' as *;
 
-
 #{c(popouts autocomplete popout)} {
   background: cv('shading.popout');
   box-shadow: none;
@@ -10,7 +9,7 @@
         background: cv('shading.hover');
       }
     }
-    &[aria-selected=true] {
+    &[aria-selected='true'] {
       #{c(popouts autocomplete base)} {
         background: cv('color.hover');
       }

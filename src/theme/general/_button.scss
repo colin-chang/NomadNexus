@@ -39,7 +39,6 @@
   }
 }
 
-
 // BUTTON OUTLINE
 #{c(button lookOutlined)} {
   &:is(#{c(button colorBrand)}, #{c(button colorPrimary)}) {
@@ -68,7 +67,6 @@
   }
 }
 
-
 // LINK
 #{c(button lookLink)} {
   #{c(button contents)} {
@@ -88,5 +86,3 @@
     color: cv('color.main');
   }
 }
-
-

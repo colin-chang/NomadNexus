@@ -1,6 +1,6 @@
 @use 'backend' as *;
 
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {  
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(popouts inbox popout)} {
     background: cv('shading.popout');
     box-shadow: none;
@@ -25,7 +25,6 @@
     color: var(--header-primary);
   }
 
-
   // FOR YOU
   #{c(popouts inbox forYou bodyContainer)} {
     background: transparent;
@@ -33,7 +32,6 @@
   #{c(popouts inbox forYou maskBackground)} {
     background: cv('color.main') !important;
   }
-
 
   // UNREAD
   #{c(popouts inbox unread tutorial)} {

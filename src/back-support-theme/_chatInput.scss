@@ -3,7 +3,7 @@
 #{c(chatForm form)} {
   margin-top: 0;
 }
-:where(html:not(#{c(main visualRefreshChatInput)})) {  
+:where(html:not(#{c(main visualRefreshChatInput)})) {
   #{c(chatForm channelTextArea)} {
     background-color: var(--input-background);
     border-color: transparent;

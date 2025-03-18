@@ -1,7 +1,6 @@
 @use 'backend' as *;
 
 :is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
-
   // HEADER
   #{c(channelsPage header header)} {
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5)) !important;
@@ -31,7 +30,7 @@
       &:not(#{c(channelsPage browse channelDisabled)}) {
         background: cv('shading.card');
         border-color: cv('color.main');
-      }      
+      }
     }
   }
 
@@ -71,7 +70,7 @@
     left: -1px;
     position: absolute;
     background: inherit;
-    opacity: .2;
+    opacity: 0.2;
     border-radius: 4px;
   }
 }

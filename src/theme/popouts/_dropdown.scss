@@ -13,7 +13,7 @@
   &:hover {
     background: cv('color.hover');
   }
-  &[aria-selected=true] {
+  &[aria-selected='true'] {
     background: cv('color.main');
     &:not(#{c(popouts dropdown option)}#{c(popouts dropdown multi)}) {
       background: cv('color.main');
@@ -31,7 +31,7 @@
 
 // MULTI SELECT
 #{c(popouts dropdown multiSelectCheckbox)} {
-  &#{c(popouts dropdown checked)} {    
+  &#{c(popouts dropdown checked)} {
     background: var(--interactive-active);
     path {
       fill: cv('color.main');

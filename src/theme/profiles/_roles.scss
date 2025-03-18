@@ -1,6 +1,7 @@
 @use 'backend' as *;
 
-#{c(profile outer)}:not(#{c(profile themed)}) #{c(role role)} { //to not hit custom themes
+#{c(profile outer)}:not(#{c(profile themed)}) #{c(role role)} {
+  //to not hit custom themes
   background: transparent;
   border-color: transparent;
   position: relative;
@@ -19,7 +20,7 @@
       left: -1px;
       position: absolute;
       background: inherit;
-      opacity: .2;
+      opacity: 0.2;
       border-radius: 4px;
     }
   }

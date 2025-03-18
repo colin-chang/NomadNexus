@@ -20,9 +20,8 @@
   background: cv('color.main');
 }
 
-
 // SEARCH
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {  
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(header searchBar)} {
     background-color: cv('shading.input.bg');
     border-color: transparent;

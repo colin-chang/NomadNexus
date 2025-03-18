@@ -133,14 +133,17 @@
   }
 
   // HAS THREAD
-  #{c(chat cozy)} {   // doesnt actually need visual-refresh
-    &#{c(chat hasThread)} {  // cozy view
+  #{c(chat cozy)} {
+    // doesnt actually need visual-refresh
+    &#{c(chat hasThread)} {
+      // cozy view
       &::after {
         border-color: cv('color.main');
       }
     }
   }
-  #{c(embeds threadContainer)} { // compact view
+  #{c(embeds threadContainer)} {
+    // compact view
     border-color: cv('color.main');
   }
   #{c(embeds threadContainer)} {

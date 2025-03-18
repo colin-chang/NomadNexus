@@ -3,7 +3,7 @@
 :is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(popouts search container)} {
     background: cv('shading.popout');
-    border: none
+    border: none;
   }
 }
 
@@ -22,11 +22,12 @@
     :is(#{c(popouts search resultChannelIcon)}, #{c(popouts search resultChannelCategory)}) {
       opacity: 1;
     }
-    strong { //channel name
+    strong {
+      //channel name
       color: var(--interactive-active);
     }
   }
-  &[aria-selected=true] {
+  &[aria-selected='true'] {
     background-color: cv('color.hover');
     box-shadow: none;
     :is(strong, #{c(popouts search plusIcon)}) {
@@ -72,7 +73,7 @@
   }
 
   // TODAY
-  #{c(popouts search calendar day)} {    
+  #{c(popouts search calendar day)} {
     &#{c(popouts search calendar daySelected)} {
       &::after {
         background: cv('color.main');

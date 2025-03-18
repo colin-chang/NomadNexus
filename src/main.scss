@@ -42,7 +42,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   // shadings are defined in .theme-dark/.theme-light -- turns out every color variable discord uses also uses saturation-factor.
   --hsl-background-shading: hsl(from var(--background-shading) #{$calc});
   --hsl-card-shading: hsl(from var(--card-shading) #{$calc});
-  --hsl-card-shading-inverted: hsl(from var(--hsl-card-shading) h s calc(100 - l)/calc(alpha * .2));
+  --hsl-card-shading-inverted: hsl(from var(--hsl-card-shading) h s calc(100 - l) / calc(alpha * 0.2));
   --hsl-popout-shading: hsl(from var(--popout-shading) #{$calc});
   --hsl-modal-shading: hsl(from var(--modal-shading) #{$calc});
 
@@ -82,7 +82,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 }
 
 /* Light Theme */
-  // overides discord defaults
+// overides discord defaults
 :is(#{c(main themeLight)}, #{c(main themeDark)} #{c(main themeLight)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
   --background-shading: rgba(252, 252, 252, 0.3);

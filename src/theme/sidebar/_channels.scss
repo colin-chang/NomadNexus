@@ -36,7 +36,7 @@
 
   // UNREAD BAR
   #{c(sidebar server unreadBar bottom)} {
-    bottom: 8px
+    bottom: 8px;
   }
   #{c(sidebar server unreadBar bar)} {
     background-color: cv('color.main');
@@ -47,7 +47,6 @@
     color: var(--button-filled-brand-text) !important; //inline style
   }
 }
-
 
 // THREAD SPINE
 #{c(sidebar server channel threadsSpineBorder)} {
@@ -94,7 +93,6 @@
   color: var(--channel-default);
 }
 #{c(sidebar server channel wrapper)} {
-  
   // MUTED
   &#{c(sidebar server channel muted)} {
     #{c(sidebar server channel name)},
@@ -160,7 +158,6 @@
     }
   }
 }
-
 
 // VC USER LIMIT
 :is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {

@@ -1,6 +1,5 @@
 @use 'backend' as *;
 
-
 :is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   // NEW MESSAGES
   #{c(chat bar newMessages)} {
@@ -11,7 +10,7 @@
     transition: all 0.1s ease-in-out;
     &:active {
       padding-top: 0;
-      scale: .99;
+      scale: 0.99;
     }
   }
 
@@ -33,6 +32,6 @@
   // FOLLOW CHANNEL
   #{c(chat followWrapper)} {
     background: cv('shading.popout');
-    border: none
+    border: none;
   }
 }

@@ -13,7 +13,7 @@
   }
 }
 #{c(settings contentColumnDefault)} {
-  padding-top: 50px
+  padding-top: 50px;
 }
 
 // CARD
@@ -28,6 +28,6 @@
 }
 #{c(settings card card)} {
   a {
-    color: cv('color.main')
+    color: cv('color.main');
   }
 }

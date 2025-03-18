@@ -1,7 +1,6 @@
 @use 'backend' as *;
 
 :is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
-
   // SIDEBAR
   #{c(discover sidebar container)} {
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.25));
@@ -30,7 +29,6 @@
     }
   }
 
-
   // HEADER
   #{c(discover headerBackdrop)} {
     background: cv('shading.popout');
@@ -42,7 +40,6 @@
       border-color: cv('color.main');
     }
   }
-
 
   // SEARCH HEADER
   #{c(discover headerRelative)} {
@@ -73,7 +70,6 @@
     }
   }
 
-
   // APPS
   #{c(discover apps cardAvatar)} {
     background: cv('shading.card');
@@ -91,7 +87,6 @@
   #{c(discover apps searchNoResult)} {
     background: cv('shading.card');
   }
-
 
   // SERVERS
   &:is(#{c(main themeLight)}, #{c(main themeDark)}) {
@@ -112,7 +107,6 @@
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
   }
 
-
   // QUESTS
   #{c(discover quests tileContainer)} {
     background: cv('shading.card');
@@ -121,7 +115,3 @@
     background: transparent;
   }
 }
-
-
-
-

@@ -16,7 +16,7 @@
 #{c(title leading container)} {
   &::before {
     content: $themeName;
-    position: static;  
+    position: static;
     margin-left: 10px;
     font-size: 16px;
     font-weight: 600;
