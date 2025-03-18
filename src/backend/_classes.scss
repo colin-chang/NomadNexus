@@ -987,39 +987,7 @@ $classes: (
     'rtsButtonContainer': 'buttonContainer__664ff',
     'active': 'active_f1ceac',
   ),
-  'channelSettings': (
-    'overview': 'channel-settings-overview',
 
-    // class found within JS rather than CSS
-    'roleScroller': 'scroller_ff90b2',
-    'settingsCard': 'settingCard_dd864e',
-    'settingsCardActive': 'active_dd864e',
-    'cardContent': 'cardContent_f62fce',
-    'cardFolder': 'cardFolder_dd864e',
-    'folderHeader': 'folderHeader_dd864e',
-    'adminWarning': 'adminWarning_dd864e',
-    // no idea what this is used for
-    'folderRoleMemberList': 'memberRow_dd864e',
-
-    'permGroup': 'group__344e6',
-    'permDisabled': 'disabled__344e6',
-    'permItem': 'item__344e6',
-    'permSelected': 'selected__344e6',
-    'permDeny': 'deny__344e6',
-    'permNoop': 'passthrough__344e6',
-    'permAllow': 'allow__344e6',
-
-    'inviteRow': 'inviteSettingsInviteRow__1de14',
-    'revokeInvite': 'revokeInvite__1de14',
-
-    'integrationCard': 'card_dc2e44',
-    'integrationIconWrapper': 'iconWrapper__4a3a5',
-
-    'webhookCard': 'card_eafb9c',
-    'webhookAvatarUploader': 'avatarUploaderInner_eafb9c',
-
-    'followedChannelCard': 'card_ebafdd',
-  ),
   'chat': (
     'cozy': 'cozy_c19a55',
     'compact': 'compact_c19a55',
@@ -1357,6 +1325,13 @@ $classes: (
       // inline color
       'showMoreText': 'showMoreText_ca49a1',
       'showMoreIcon': 'showMoreIcon_ca49a1',
+
+      'modal': (
+        'container': 'container__444a0',
+        'header': 'header__444a0',
+        'content': 'content__444a0',
+        'rulesIcon': 'rulesIcon__444a0',      
+      ),
     ),
 
     // it's loading in
@@ -1582,6 +1557,8 @@ $classes: (
     'newThreadContainer': 'container_fb64c9',
     'newChat': 'chat_fb64c9',
     'newTextAreaError': 'channelTextAreaInnerError_fb64c9',
+    'newThreadTextArea': 'channelTextArea_fb64c9',
+    'newThreadTextAreaInner': 'channelTextAreaInner_fb64c9'
   ),
 
   'serverGuide': (
@@ -1852,7 +1829,7 @@ $classes: (
 
     'appsButton': 'button_e6e74f',
   ),
-  // kinda going through a rewrite on discord's end so i'm leaving this alone :)
+
   'discover': (
     'sidebar': (
       'container': 'container__551b0',
@@ -3998,6 +3975,14 @@ $classes: (
       'upsellContainer': 'upsellContainer__0b69f',
     ),
 
+    'content': (
+      'blockedCard': 'card__5cea9',
+      'blockedHeader': 'header__5cea9',
+      'blockedUserList': 'usersList__5cea9',
+      'blockedRow': 'row__5cea9',
+      'blockedLastRow': 'lastRow__5cea9',
+    ),
+
     'family': (
       'containers': 'container__5dbf8' 'container__8cc9a' 'container__5b321',
       'box': 'box_f8c98c',
@@ -4181,34 +4166,86 @@ $classes: (
   // subset of userSettings
   'appSettings': (
 
-      'soundRow': 'soundRow__6d8e5',
-      'soundRowDividerDefault': 'dividerDefault__0d850',
+    'soundRow': 'soundRow__6d8e5',
+    'soundRowDividerDefault': 'dividerDefault__0d850',
 
-      'keybindDefault': 'defaultKeybind__740f2',
-      'keybindCard': 'card_b846e5',
-      'keybindGroup': 'defaultKeybindGroup__740f2',
-      'keybindGroupDescription': 'defaultKeybindGroupDescription__740f2',
-      'keybindGroupHeader': 'defaultKeybindGroupHeader__740f2',
-      'keybindGroupWithDescription': 'defaultKeybindGroupWithDescription__740f2',
-      'keybindShortcutGroup': 'defaultKeybindShortcutGroup__740f2',
-      'keybindRemove': 'removeKeybind__740f2',
+    'keybindDefault': 'defaultKeybind__740f2',
+    'keybindCard': 'card_b846e5',
+    'keybindGroup': 'defaultKeybindGroup__740f2',
+    'keybindGroupDescription': 'defaultKeybindGroupDescription__740f2',
+    'keybindGroupHeader': 'defaultKeybindGroupHeader__740f2',
+    'keybindGroupWithDescription': 'defaultKeybindGroupWithDescription__740f2',
+    'keybindShortcutGroup': 'defaultKeybindShortcutGroup__740f2',
+    'keybindRemove': 'removeKeybind__740f2',
 
-      'gameNotDetected': 'notDetected_cc46f0',
-      'gameNowPlaying': 'nowPlaying_cc46f0',
-      'gameName': 'gameName_cc46f0',
-      'gameNameInput': 'gameNameInput_cc46f0',
-      'gameLastPlayed': 'lastPlayed_cc46f0',
-      'gameOverlayStatusText': 'overlayStatusText_fd966d',
-      'gameOverlayToggleIcon': 'toggleIcon_cc46f0',
-      'gameOverlayToggleIconOn': 'toggleIconOn_cc46f0',
-      'gameOverlayToggleIconOff': 'toggleIconOff_cc46f0',
-      'gameOverlayToggleIconFill': 'fill_cc46f0',
-      'game': 'game_cc46f0',
-      'gameRemove': 'removeGame_cc46f0',
-      'addGamePopout': 'addGamePopout_cc46f0',
+    'gameNotDetected': 'notDetected_cc46f0',
+    'gameNowPlaying': 'nowPlaying_cc46f0',
+    'gameName': 'gameName_cc46f0',
+    'gameNameInput': 'gameNameInput_cc46f0',
+    'gameLastPlayed': 'lastPlayed_cc46f0',
+    'gameOverlayStatusText': 'overlayStatusText_fd966d',
+    'gameOverlayToggleIcon': 'toggleIcon_cc46f0',
+    'gameOverlayToggleIconOn': 'toggleIconOn_cc46f0',
+    'gameOverlayToggleIconOff': 'toggleIconOff_cc46f0',
+    'gameOverlayToggleIconFill': 'fill_cc46f0',
+    'game': 'game_cc46f0',
+    'gameRemove': 'removeGame_cc46f0',
+    'addGamePopout': 'addGamePopout_cc46f0',
 
-      'contentTransitionWrap': 'contentTransitionWrap__23e6b',
+    'contentTransitionWrap': 'contentTransitionWrap__23e6b',
+  ),
+
+  'channelSettings': (
+    'channelSettingsCategory': 'category__3ddc0',
+    'overview': (
+      'overview': 'channel-settings-overview',
     ),
+
+    // class found within JS rather than CSS
+    'roleScroller': 'scroller_ff90b2',
+    'settingsCard': 'settingCard_dd864e',
+    'settingsCardActive': 'active_dd864e',
+    'cardContent': 'cardContent_f62fce',
+    'cardFolder': 'cardFolder_dd864e',
+    'folderHeader': 'folderHeader_dd864e',
+    'adminWarning': 'adminWarning_dd864e',
+    // no idea what this is used for
+    'folderRoleMemberList': 'memberRow_dd864e',
+
+    'permissions': (
+      'roleDropdownHeader': 'header_d5ae15',
+      'roleDropdownContainer': 'container_d5ae15',
+      'roleDropdownTag': 'sectionTag_d5ae15',
+      'roleDropdownRow': 'row_d5ae15',
+      'roleDropdownRowInner': 'rowInner_d5ae15',
+      'roleDropdownSelected': 'selected_d5ae15',
+
+      'permGroup': 'group__344e6',
+      'permDisabled': 'disabled__344e6',
+      'permItem': 'item__344e6',
+      'permSelected': 'selected__344e6',
+      'permDeny': 'deny__344e6',
+      'permNoop': 'passthrough__344e6',
+      'permAllow': 'allow__344e6',
+    ),  
+    
+    'invites': (
+      'inviteRow': 'inviteSettingsInviteRow__1de14',
+      'revokeInvite': 'revokeInvite__1de14',
+    ),
+    
+    'integration': (
+      'integrationCard': 'card_dc2e44',
+      'integrationIconWrapper': 'iconWrapper__4a3a5',
+    ),
+
+
+
+    'webhookCard': 'card_eafb9c',
+    'webhookAvatarUploader': 'avatarUploaderInner_eafb9c',
+
+    'followedChannelCard': 'card_ebafdd',
+  ),
 
   'popouts': (
     
@@ -4643,12 +4680,53 @@ $classes: (
         'categoryGeneric': 'stickerCategoryGeneric__3ad28',
         // used on freq used
         'categoryGenericSelected': 'stickerCategoryGenericSelected__3ad28',
+        'firstPartyCategorySelected': 'firstPartyCategorySelected__3ad28',
 
         'stickerSearchSuggestion': 'searchSuggestion_e94b8c',
 
         // search result empty
         'standardStickerShortcut': 'standardStickerShortcut__3ad28',
       ),
+    ),
+
+    'stickerSuggestion': (
+      'focused': 'suggestedExpressionFocused_d4ced7',
+      'mask': 'mask_d4ced7',
+      'maskBackground': 'maskBackground_d4ced7',
+      'background': 'containerBackground_d4ced7',
+    ),
+
+    'apps': (
+      'popout': 'contentWrapper__9c62c',
+      'container': 'container__927fc',
+      'loading': 'container_ccbbbb',
+      'sectionRowsContainer': 'sectionRowsContentContainer__927fc',
+      'itemContainer': 'container_cb32c7',
+      'rowContainer': 'rowContainer_cb32c7',
+      'rowDivider': 'rowDivider_cb32c7',
+      'viewMore': 'viewMore__32c75',
+      'learnMore': 'container__19cf2',
+
+      'details': (
+        'container': 'container__7bdb0',
+        'backButton': 'clickable__8c853',      
+        'stickyBanner': 'stickyBanner__57d3f',
+        'banner': 'bannerBackground__57d3f',
+        'appIcon': 'appIcon__7bdb0',
+        'overviewNoVideo': 'overviewContainerNoVideo__95856',
+        'overviewWithVideo': 'overviewContainerWithVideo__95856',
+        'overviewShowMore': 'expandableDescriptionClickable__95856',
+        'dropdown': 'sortDropdown__27f60',
+        'commandContainer': 'commandContainer_c94584',
+        'command': 'command_c94584',
+        'tag': 'tagContainer__95856',
+      ),
+
+      'search': (
+        'sectionContainer': 'sectionContentContainer_b18295',
+        'itemClickable': 'clickable__761e5',
+        'itemDivider': 'underline__761e5',
+      ),      
     ),
 
     'pins': (
@@ -5133,15 +5211,6 @@ $classes: (
       'scroller': 'scroller_ac6cb0',
     ),
 
-    // Likely need nitro for this
-    // Type any message with a name or subject similar to a sticker
-    'stickerSuggestion': (
-      'expressionFocused': 'suggestedExpressionFocused_d4ced7',
-      'mask': 'mask_d4ced7',
-      'maskBackground': 'maskBackground_d4ced7',
-      'background': 'containerBackground_d4ced7',
-    ),
-
     // Quickly join and leave a server for a modal with this to show up
     // Will show up if you select anything but happy in the "How'd x go?" rating modal
     // You'll also have to have not clicked the "don't show me this again" box
@@ -5401,15 +5470,16 @@ $classes: (
       'modal': 'container__024d4',
 
       // first screen "Create a server"
-      'templateButton': 'container_eb2cd2',
-      'templateIcon': 'icon_eb2cd2',
-      'templateButtonText': 'text_eb2cd2',
-      'templateArrow': 'arrow_eb2cd2',
-      'createAServerHeader': 'header_c04f35',
-      'createAServerTitle': 'title_c04f35',
-      'createAServerCloseButton': 'closeButton_c04f35',
-      'createAServerSubtitle': 'subtitle_c04f35',
-      'createAServerTemplatesList': 'templatesList_c04f35',
+      'createServerHeader': 'header_c04f35',
+      'createServerTitle': 'title_c04f35',
+      'createServerCloseButton': 'closeButton_c04f35',
+      'createServerSubtitle': 'subtitle_c04f35',
+      'createServerTemplatesList': 'templatesList_c04f35',
+      'optionHeader': 'optionHeader_c04f35',
+      'optionContainer': 'container_eb2cd2',
+      'optionIcon': 'icon_eb2cd2',
+      'optionText': 'text_eb2cd2',
+      'optionArrow': 'arrow_eb2cd2',
       'footerTitle': 'footerTitle_c04f35',
 
       // second screen "Tell us more about your server"
@@ -5424,14 +5494,20 @@ $classes: (
       // third screen "Customise your server"
       'customiseHeader': 'header_b917ac',
       'customiseTitle': 'title_b917ac',
+      'customiseSubtitle': 'subtitle_b917ac',
       'customiseCreateServer': 'createGuild_b917ac',
       'customiseUploadIcon': 'uploadIcon_b917ac',
+      'customiseIconContainer': 'iconContainer__98cf7',
 
       // alternate second screen "Join a server" - click already have an invite button
       'joinAServerHeader': 'header__991a0',
       'joinAServerInput': 'input__991a0',
-      'joinAServerRowContainer': 'rowContainer__991a0',
+      'joinServerExample': 'sampleLink__991a0',
+      'joinServerRowContainer': 'rowContainer__991a0',
       // used as pointer to discovery
+      'joinServerRowText': 'rowText__991a0',
+      'joinServerRowArrow': 'rowArrow__991a0',
+      'joinServerBackButton': 'backButton_b917ac',
     ),
 
     // Upload a file. That's really all there is to it.
@@ -5574,14 +5650,6 @@ $classes: (
             'newBadge': 'newBadge__3ec70',
             // typo
           ),
-      ),
-
-    // Within a forum, click the guidelines book then click "View All"
-    'guidelines': (
-        'container': 'container__444a0',
-        'header': 'header__444a0',
-        'content': 'content__444a0',
-        'rulesIcon': 'rulesIcon__444a0',
       ),
 
     // Click an image (png, jpg, gif) in chat. This may not apply to videos or other embeds.
@@ -6820,20 +6888,7 @@ $classes: (
           'sidebarPFPUpsell': 'editor__2a891',
           'chatToolbarButton': 'button_bba883',
           'chatToolbarIcon': 'icon_bba883',
-          'channelSettingsRoleDropdownHeader': 'header_d5ae15',
-          'channelSettingsRoleDropdownContainer': 'container_d5ae15',
-          'channelSettingsRoleDropdownTag': 'sectionTag_d5ae15',
-          'channelSettingsRoleDropdownRow': 'row_d5ae15',
-          'channelSettingsRoleDropdownRowInner': 'rowInner_d5ae15',
-          'channelSettingsRoleDropdownSelected': 'selected_d5ae15',
           'defaultColor': 'defaultColor_e9e35f',
-          'addServerOptionHeader': 'optionHeader_c04f35',
-          'createServerSubtitle': 'subtitle_b917ac',
-          'createServerIconContainer': 'iconContainer__98cf7',
-          'createServerOtherBackButton': 'backButton_b917ac',
-          'joinServerExample': 'sampleLink__991a0',
-          'joinServerRowText': 'rowText__991a0',
-          'joinServerRowArrow': 'rowArrow__991a0',
           'voiceChannelListening': 'container__4e30a',
           'voiceChannelListeningIcon': 'container_b1bfd4',
           'previewServerIconContainer': 'iconContainer__1b9f0',
@@ -6859,46 +6914,7 @@ $classes: (
           'banReasonOther': 'banReasonOtherClickable__837b7',
           'webhookFooter': 'footer__51eb2',
           'webhookPopout': 'guildPopout__51eb2',
-          'appPopoutWrapper': 'contentWrapper__9c62c',
-          'appPopoutContainer': 'container__927fc',
-          'appPopoutItemLoading': 'container_ccbbbb',
-          'appPopoutItem': 'container_cb32c7',
-          'appPopoutRowItem': 'rowContainer_cb32c7',
-          'appPopoutRowItemUnderline': 'rowDivider_cb32c7',
-          'appPopoutViewMore': 'viewMore__32c75',
-          'appPopoutDetails': 'container__7bdb0',
-          'appPopoutDetailsBackButton': 'clickable__8c853',
-          'appPopoutStickyBanner': 'stickyBanner__57d3f',
-          'appPopoutBanner': 'bannerBackground__57d3f',
-          'appPopoutAppIcon': 'appIcon__7bdb0',
-          'appPopoutAppOverview': 'overviewContainerNoVideo__95856',
-          'appPopoutAppOverviewWithVideo': 'overviewContainerWithVideo__95856',
-          'appPopoutAppOverviewShowMore': 'expandableDescriptionClickable__95856',
-          'appPopoutDropdown': 'sortDropdown__27f60',
-          'appPopoutCommandContainer': 'commandContainer_c94584',
-          'appPopoutCommand': 'command_c94584',
-          'appPopoutTag': 'tagContainer__95856',
-          'appPopoutLearnMore': 'container__19cf2',
-          'appPopoutSearchItem': 'clickable__761e5',
-          'appPopoutSearchItemUnderline': 'underline__761e5',
           'webhookEmojiRow': 'emojiCounter__51eb2',
-          'boostServerPerksRow': 'perkRow_c609c8',
-          'boostServerPerks': 'perks__30359',
-          'modView': 'sidebarContainer__656be',
-          'modViewHeader': 'container__34940',
-          'modViewHeaderTop': 'topRow__34940',
-          'modViewHeaderBottomAction': 'bottomRowAction__34940',
-          'modViewHeaderBottomActionDisabled': 'bottomRowActionDisabled__34940',
-          'modViewHeaderBottomActionInner': 'innerBottomRowAction__34940',
-          'modViewBody': 'container__3a5a1',
-          'modViewBodyHeader': 'header__3a5a1',
-          'modViewBodyItem': 'modInfoItem__96c0b',
-          'modViewBodyAction': 'modInfoAction__96c0b',
-          'modViewPermissionChiplet': 'permissionChiplet__1ef77',
-          'modViewElevatedPermissionChiplet': 'elevatedPermission__1ef77',
-          'modViewActivity': 'innerContainer__39de8',
-          'modViewPermissionItem': 'permissionItemContainer__3f11f',
-          'modViewElevatedPermissionItem': 'elevatedPermission__3f11f',
           'shopNewPill': 'shyButton_a25714',
           'pollRadioForeground': 'radioForeground_f4f0eb',
           'clipsShareTo': 'channelRow__1db97',
@@ -6916,7 +6932,6 @@ $classes: (
           'subEnabledServers': 'integrationWrapper_c7f964',
           'freeBoost': 'header__99020',
           'nitroTrial': 'tile_ff4e03',
-          'channelSettingsCategory': 'category__3ddc0',
           'previewServerHomeContainerInner': 'container__29699',
           'previewServerHomeIcon': 'icon_ac2d0d',
           'previewServerHomeInteractiveCard': 'interactiveCard_d92364',

@@ -16,7 +16,7 @@
       border: none; // Only midnight theme has this??????
     }
   }
-  :is(#{c(chat chatScrollerNSFW)}, #{c(chat chatContentInner)}) {
+  :is(#{c(chat chatContentInner)}, #{c(chat chatScrollerNSFW)}) {
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
   }
 }
@@ -34,4 +34,9 @@
     border-color: cv('shading.popout');
     box-shadow: none;
   }
+}
+
+// NO CHANNELS
+#{c(chat noChannel)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
 }

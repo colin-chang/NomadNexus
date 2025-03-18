@@ -46,7 +46,7 @@
 :is(.theme-light, .theme-dark .theme-light) {
   --background-shading: rgba(252, 252, 252, 0.3);
   --background-shading-percent: 100%;
-  --card-shading: rgba(252, 252, 252, 0.05);
+  --card-shading: rgba(252, 252, 252, 0.3);
   --popout-shading: rgba(252, 252, 252, 0.7);
   --modal-shading: rgba(252, 252, 252, 0.5);
   --input-shading: rgba(0, 0, 0, 0.3);

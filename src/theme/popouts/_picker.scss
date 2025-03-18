@@ -51,7 +51,7 @@
     background: transparent;
   }
   #{c(popouts expressionPicker sticker packHeader)} {
-    margin-left: -12px;
+    margin-left: -8px;
     margin-bottom: 10px;
   }
 
@@ -92,10 +92,28 @@
   }
 }
 
-// CATEGORY
+// EMOJI CATEGORY
 #{c(popouts expressionPicker emoji defaultCategorySelected)} {
   &,
   &:hover {
     background: cv('color.main');
+  }
+}
+
+// STICKER CATEGORY
+#{c(popouts expressionPicker sticker categoryGenericSelected)},
+#{c(popouts expressionPicker sticker firstPartyCategorySelected)} {
+  &,
+  &:hover {
+    background: cv('color.main');
+  }
+}
+
+// STICKER SUGGESTION - right click in chat input and hover on suggestions
+#{c(popouts stickerSuggestion background)} {
+  background: cv('shading.popout');
+  border: none;
+  &::after {
+    border-top-color: cv('shading.popout');
   }
 }

@@ -27,7 +27,7 @@
 
 // PROFILES
 #{c(userSettings profiles uploadImageOption)} {
-  background: hsl(from cv('shading.card') h s calc(100 - l)/.1);
+  background: cv('shading.cardInverted');
   &:hover {
     border: 2px solid cv('color.main')
   }
@@ -44,13 +44,22 @@
 }
 
 
+// CONTENT & SOCIAL
+#{c(userSettings content blockedCard)} {
+  background: cv('shading.card');
+}
+#{c(userSettings content blockedHeader)} {
+  background: transparent;
+}
+
+
 // FAMILY CENTER
 #{c(userSettings family box)} {
   background: cv('shading.card');
   border: none;
 }
 #{c(userSettings family row)} {
-  background: hsl(from cv('shading.card') h s calc(100 - l)/.1);
+  background: cv('shading.cardInverted');
   border: none;
 }
 
@@ -68,14 +77,14 @@
   background: cv('shading.card');
 }
 #{c(userSettings connections accountButtonInner)} {
-  background-color: hsl(from cv('shading.card') h s calc(100 - l)/.1);
+  background-color: cv('shading.cardInverted');
 }
 #{c(userSettings connections connectionHeader)} {
   background: transparent;
   padding-bottom: 0;
 }
 #{c(userSettings connections connectionMetadataContainer)} {
-  background-color: hsl(from cv('shading.card') h s calc(100 - l)/.1);
+  background-color: cv('shading.cardInverted');
 }
 
 
@@ -124,7 +133,7 @@
   background: transparent;
 }
 #{c(userSettings billing expandedInfo)} {
-  background: hsl(from cv('shading.card') h s calc(100 - l)/.1);
+  background: cv('shading.cardInverted');
 }
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {
   #{c(userSettings billing hoverablePayment)} {
@@ -158,11 +167,17 @@
 #{c(userSettings voice notches)} {
   display: none;
 }
+:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+  #{c(userSettings voice sensitivityBar)} {
+    background-color: cv('shading.cardInverted');
+  }
+}
 #{c(userSettings voice soundButton)} {
   background: cv('shading.card');
 }
 #{c(userSettings voice cameraWrapper)} {
   background: cv('shading.card');
+  border: none
 }
 #{c(userSettings voice backgroundOptionRing)} {
   border: 2px solid cv('color.main');

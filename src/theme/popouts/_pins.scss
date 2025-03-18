@@ -10,7 +10,8 @@
     background: transparent;
   }
   #{c(popouts pins messageGroup)} {
-    background: hsl(from var(--hsl-card-shading) h s calc(100 - l)/calc(alpha * .2));
+    background: cv('shading.cardInverted');
+    
     border: none;
   }
   #{c(popouts pins jumpButton)} {
