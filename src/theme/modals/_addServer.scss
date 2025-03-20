@@ -4,7 +4,7 @@
   border: 2px solid transparent;
   background: cv('shading.cardInverted');
   &:hover {
-    border-color: cv('color.main');
+    border-color: cv('color.hover');
   }
 }
 
@@ -20,7 +20,7 @@
   border: 2px solid transparent;
   background: cv('shading.cardInverted');
   &:hover {
-    border-color: cv('color.main');
+    border-color: cv('color.hover');
     background: cv('shading.cardInverted');
   }
 }

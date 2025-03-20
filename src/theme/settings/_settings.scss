@@ -31,3 +31,23 @@
     color: cv('color.main');
   }
 }
+
+// COLLAPSEABLE
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+  #{c(settings collapseable)} {
+    &,
+    &:active,
+    &#{c(settings collapseableToggled)} {
+      background: cv('shading.card');
+      border: none;
+    }
+  }
+}
+
+// REMOVE BUTTON
+#{c(settings removeButton default)} {
+  &,
+  &:hover {
+    background-color: cv('shading.popout');
+  }
+}

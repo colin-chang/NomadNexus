@@ -19,12 +19,10 @@
   :is(#{c(chat chatContentInner)}, #{c(chat chatScrollerNSFW)}) {
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
   }
-}
-
-// CHAT LOADING
-#{c(chat chatLoadingWrapper)},
-#{c(chat messageLoadingWrapper)} {
-  background-color: transparent;
+    // CHAT LOADING
+  :is(#{c(chat chatLoadingWrapper)}, #{c(chat messageLoadingWrapper)}) {
+    background-color: transparent;
+  }
 }
 
 // TOOLBAR

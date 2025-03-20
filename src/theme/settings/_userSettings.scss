@@ -51,9 +51,11 @@
 }
 
 // FAMILY CENTER
-#{c(userSettings family box)} {
-  background: cv('shading.card');
-  border: none;
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+  #{c(userSettings family box)} {
+    background: cv('shading.card');
+    border: none;
+  }
 }
 #{c(userSettings family row)} {
   background: cv('shading.cardInverted');
@@ -171,4 +173,27 @@
 }
 #{c(userSettings voice backgroundOptionRing)} {
   border: 2px solid cv('color.main');
+}
+
+// REGISTERED GAMES
+#{c(userSettings games notDetected)} {
+  background: cv('shading.card');
+}
+#{c(userSettings games nowPlaying)} {
+  background: hsl(from ('color.success') h s l/.8) ;
+}
+#{c(userSettings games addGamePopout)} {
+  background: cv('shading.popout');
+  box-shadow: none;
+}
+#{c(userSettings games game)} {
+  box-shadow: 0 1px 0 0 cv('shading.hover');
+}
+
+// OVERLAY
+#{c(userSettings overlay expandedContainer)},
+#{c(userSettings overlay groupHeader)},
+#{c(userSettings overlay groupCollapsedContainer)},
+#{c(userSettings overlay groupContainer)}  {
+  background: transparent;
 }

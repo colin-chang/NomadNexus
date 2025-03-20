@@ -10,9 +10,25 @@
   }
 }
 
+// CODEBLOCK
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+  #{c(chat markup)}{
+    code {
+      background: cv('shading.card');
+      border: 1px solid var(--hsl-card-shading-inverted);
+      &#{c(chat codeInline)} {
+        border:none;
+        background: hsl(from cv('shading.card') h s calc(100 - l) / calc(alpha * 0.5));
+        padding: 3px 6px
+      }
+    }
+  }
+}
+
 // REPLY
 #{c(chat replied spine)} {
   border-color: cv('color.main');
+  &:hover,
   #{c(chat replied contentHovered)} {
     border-color: cv('color.hover');
   }
@@ -37,6 +53,21 @@
     }
   }
 }
+
+// REPLY HIGHLIGHT
+#{c(chat replying)} {
+  --background-mentioned: hsl(from var(--hsl-main-color) h s l/.1);
+  --background-mentioned-hover: hsl(from var(--hsl-hover-color) h s l/.1);
+  background: var(--background-mentioned);
+  &:hover,
+  #{c(chat messageSelected)}  {
+    background-color: var(--background-mentioned-hover) !important; // way easier than whatever discord does
+  }
+  &::before {
+    background-color: cv('color.hover');
+  }
+}
+
 
 // MENTION
 #{c(chat mentionWrapper)} {
@@ -86,6 +117,15 @@
     border-top: none;
     border-right: none;
     border-bottom: none;
+  }
+
+  // ATTACHMENTS
+  #{c(embeds attachment file)} {
+    background: cv('shading.card');
+    border: none;
+  }
+  #{c(embeds attachment upload progressBar)} {
+    background: cv('color.main') !important;
   }
 
   // INVITE

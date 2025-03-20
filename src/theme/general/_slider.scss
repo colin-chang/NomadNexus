@@ -1,7 +1,8 @@
 @use 'backend' as *;
 
 #{c(slider slider)} {
-  #{c(slider bar)} {
+  #{c(slider bar)},
+  #{c(slider markDash)} {
     background: cv('shading.card');
   }
   #{c(slider barFill)} {

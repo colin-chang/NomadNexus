@@ -1024,10 +1024,12 @@ $classes: (
     'messageListItem': 'messageListItem__5126c',
     'messageGroupStart': 'groupStart__5126c',
     'cozyMessage': 'cozyMessage__5126c',
-    'markup': 'markup__75297',
-    'markupInlineFormat': 'inlineFormat__75297',
     'message': 'message__5126c',
     'messageWrapper': 'wrapper_c19a55',
+    'markup': 'markup__75297',
+    'markupInlineFormat': 'inlineFormat__75297',    
+    'codeInline': 'inline',
+    'codeActions': 'codeActions__75297',
     'replying': 'replying__5126c',
     'hasThread': 'hasThread_c19a55',
     'mentioned': 'mentioned__5126c',
@@ -1901,8 +1903,19 @@ $classes: (
     'embedGridContainer': 'gridContainer__623de',
     'embedSuppressButton': 'embedSuppressButton__623de',
     'embedVideo': 'embedVideo__623de',
-    'attachment': 'file__0ccae',
-    // attachmentInner_b52bef cancelButton_b52bef downloadButton__3fb6d downloadWrapper_b46225 fileNameLink_b52bef filename_b52bef filenameLinkWrapper_b52bef filenameWrapper_b52bef icon_b52bef metadata_b52bef newMosaicStyle_b52bef progress_b52bef progressContainer_b52bef rate__50023 size_b52bef
+    
+    'attachment': (
+      'wrapper': 'fileWrapper__0ccae',
+      'file': 'file__0ccae',
+      'icon': 'icon__0ccae',
+      'inner': 'fileInner__0ccae',
+      'nameLink': 'fileNameLink__0ccae',
+
+      'upload': (        
+        'progressBar': 'progressBar__89dcd',
+      ),
+    ),
+
     'textContainer': (
         'container': 'container__4d95d',
         'textContainer': 'textContainer__4d95d',
@@ -1971,7 +1984,6 @@ $classes: (
       'artwork': 'artwork__4d3fa',
     ),
 
-    'uploadProgressBar': 'progressBar__89dcd',
     'videoPlayWrapper': 'wrapper_cf09d8',
 
     'threadSpine': 'spine__9271d',
@@ -2512,33 +2524,27 @@ $classes: (
   // it can be accessed by going to https://discord.com/message-requests
   // (default repo) the main file is under pyrite/source/theme/friends
   'messageRequests': (
-      'container': 'container_f391e3',
-      'list': 'list_f391e3',
-      'sectionTitle': 'sectionTitle_f391e3',
-      'selected': 'selected_f391e3',
-      'siblingSelected': 'siblingSelected_f391e3',
-      'messageRequestCoachmark': 'messageRequestCoachmark_f391e3',
-      'titleDivider': 'titleDivider_f391e3',
-      'clearAllButton': 'clearAllButton_f391e3',
+    'container': 'container_f391e3',
+    'list': 'list_f391e3',
+    'sectionTitle': 'sectionTitle_f391e3',
+    'selected': 'selected_f391e3',
+    'siblingSelected': 'siblingSelected_f391e3',
+    'messageRequestCoachmark': 'messageRequestCoachmark_f391e3',
+    'titleDivider': 'titleDivider_f391e3',
+    'clearAllButton': 'clearAllButton_f391e3',
 
-      'item': 'messageRequestItem_abb9ad',
-      'active': 'active_abb9ad',
+    'item': 'messageRequestItem_abb9ad',
+    'active': 'active_abb9ad',
 
-      'emptyStateContainer': 'emptyStateContainer__65428',
-      // not sure if this is used elsewhere.
-    ),
+    'emptyStateContainer': 'emptyStateContainer__65428',
+    // not sure if this is used elsewhere.
+  ),
   // shared classes. used as aliases from elsewhere.
   'nameTag': (
-      'nameTag': 'nameTag__05e81',
-      'username': 'username__05e81',
-      'bot': 'bot__05e81',
-    ),
-  // shared classes. used in multiple places, mainly as a "remove this row" kind of thing
-  'removeButton': (
-      'button': 'button_e18686',
-      'default': 'default_e18686',
-      'filled': 'filled_e18686',
-    ),
+    'nameTag': 'nameTag__05e81',
+    'username': 'username__05e81',
+    'bot': 'bot__05e81',
+  ),
   'notice': (
     'base': 'notice__6e2b9',
     'button': 'button__6e2b9',
@@ -3887,6 +3893,16 @@ $classes: (
       'warning': 'cardWarning__73069',
     ),
 
+    'collapseable': 'collapseable__217b7',
+    'collapseableToggled': 'toggled__217b7',
+    
+    // shared classes. used in multiple places, mainly as a "remove this row" kind of thing
+    'removeButton': (
+      'button': 'button_e18686',
+      'default': 'default_e18686',
+      'filled': 'filled_e18686',
+    ),
+
     // used in a few places, i'm not entirely sure what's different about it
     'premiumFeatureBorder': 'premiumFeatureBorder__65c15',
     'featureBorder': 'featureBorder__65c15',
@@ -3914,6 +3930,9 @@ $classes: (
     'closeButtonContainer': 'container_c2b141',
     'closeButton': 'closeButton_c2b141',
     'closeButtonKeybind': 'keybind_c2b141',
+
+    
+    'colorPickerPopout': 'customColorPicker__459fb',
   ),
 
   'userSettings': (
@@ -3921,8 +3940,9 @@ $classes: (
       'nitroTab': 'premiumTab__581ea',
       'nitroLabel': 'premiumLabel_e681d1',
       'nitroLabelSelected': 'selected_e681d1',
-      'nitoBackground': 'background_e681d1',
+      'nitroBackground': 'background_e681d1',
       'nitroBackgroundSelected': 'selectedBackground_e681d1',
+      'socialLink': 'link__7df54',
     ),
 
     'account': (
@@ -4156,6 +4176,31 @@ $classes: (
       'backgroundOptionInner': 'backgroundOptionInner__53965',
     ),
 
+    'games': (
+      'notDetected': 'notDetected_cc46f0',
+      'nowPlaying': 'nowPlaying_cc46f0',
+      'gameName': 'gameName_cc46f0',
+      'gameNameInput': 'gameNameInput_cc46f0',
+      'gameLastPlayed': 'lastPlayed_cc46f0',
+      'overlayStatusText': 'overlayStatusText_fd966d',
+      'overlayToggleIcon': 'toggleIcon_cc46f0',
+      'overlayToggleIconOn': 'toggleIconOn_cc46f0',
+      'overlayToggleIconOff': 'toggleIconOff_cc46f0',
+      'overlayToggleIconFill': 'fill_cc46f0',
+      'game': 'game_cc46f0',
+      'removeGame': 'removeGame_cc46f0',
+      'addGamePopout': 'addGamePopout_cc46f0',
+    ),
+
+    'overlay': (
+      'collapseable': 'collapseable__9d98d',
+      'expandedContainer': 'expandedContainer__9d98d',
+      'groupHeader': 'groupHeader__9d98d',
+      'groupContent': 'groupContent__9d98d',
+      'groupCollapsedContainer': 'groupCollapsedContainer__9d98d',
+      'groupContainer': 'groupContainer__9d98d'
+    ),
+
     'userSettingsKeybindContainer': 'container_f89b2c',
     'userSettingsKeybindDisabled': 'containerDisabled__2636e',
     'userSettingsKeybindRecording': 'recording__2636e',
@@ -4174,19 +4219,7 @@ $classes: (
       'keybindShortcutGroup': 'defaultKeybindShortcutGroup__740f2',
       'keybindRemove': 'removeKeybind__740f2',
 
-      'gameNotDetected': 'notDetected_cc46f0',
-      'gameNowPlaying': 'nowPlaying_cc46f0',
-      'gameName': 'gameName_cc46f0',
-      'gameNameInput': 'gameNameInput_cc46f0',
-      'gameLastPlayed': 'lastPlayed_cc46f0',
-      'gameOverlayStatusText': 'overlayStatusText_fd966d',
-      'gameOverlayToggleIcon': 'toggleIcon_cc46f0',
-      'gameOverlayToggleIconOn': 'toggleIconOn_cc46f0',
-      'gameOverlayToggleIconOff': 'toggleIconOff_cc46f0',
-      'gameOverlayToggleIconFill': 'fill_cc46f0',
-      'game': 'game_cc46f0',
-      'gameRemove': 'removeGame_cc46f0',
-      'addGamePopout': 'addGamePopout_cc46f0',
+      
 
       'contentTransitionWrap': 'contentTransitionWrap__23e6b',
     ),
@@ -6571,8 +6604,6 @@ $classes: (
           'activityInviteTextLink': 'textLink__4d3fa',
           'attachment': 'attachment_b52bef',
           'attachmentEmbedWrapper': 'embedWrapper_b7e1cb',
-          'codeInline': 'inline',
-          'codeActions': 'codeActions__75297',
           'embed': 'embed__623de',
           'embedMargin': 'embedMargin__623de',
           'embedLink': 'embedLink__623de',
@@ -6645,8 +6676,6 @@ $classes: (
           'settingsImageUploaderInner': 'imageUploaderInner_e4d0bf',
           'settingsImageUploaderIcon': 'imageUploaderIcon_e4d0bf',
           'settingsAttendeeCTA': 'attendeeCTA_ca5ce6',
-          'settingsColorPickerCustom': 'customColorPicker__459fb',
-          'settingsSocialLink': 'link__7df54',
           'guildFeatureAvailabilityIndicator': 'availabilityIndicator__40463',
           'guildSettingsMembersMoved': 'movedTable_dd2627',
           'guildSettingsShowMembersInChannelList': 'bannerContainer__71cd5',
@@ -6692,8 +6721,6 @@ $classes: (
           'automodStepIcon': 'stepCountIcon_b6c6eb',
           'automodStepperCOntainer': 'stepperContainer_ed9c90',
           'automodContentCard': 'mentionLimitContainer_ed9c90' 'keywordListContainer__09e76' 'actionContainer__6446f',
-          'automodCollapseableCard': 'collapseable__217b7',
-          'automodCollapseableCardToggled': 'toggled__217b7',
           'automodCollapseableHeaderContainer': 'container_e5c5d5',
           'automodCollapseableHeaderClickable': 'clickableContainer_e5c5d5',
           'automodCollapsedContainer': 'groupCollapsedContainer_b6a9f9',
@@ -6866,9 +6893,10 @@ $classes: (
           'sidebarPFPUpsell': 'editor__2a891',
           'chatToolbarButton': 'button_bba883',
           'chatToolbarIcon': 'icon_bba883',
-          'defaultColor': 'defaultColor_e9e35f',
+
           'voiceChannelListening': 'container__4e30a',
           'voiceChannelListeningIcon': 'container_b1bfd4',
+
           'previewServerIconContainer': 'iconContainer__1b9f0',
           'previewServerChannelIcon': 'channelIcon__949ab',
           'previewServerChannelTitleIcon': 'channelTitleIcon__949ab',

@@ -12,7 +12,7 @@
   border: 2px solid transparent;
   &:hover {
     background: cv('shading.card');
-    border-color: cv('color.main');
+    border-color: cv('color.hover');
   }
 }
 #{c(popouts apps rowContainer)} {
@@ -42,7 +42,7 @@
     &:not(:last-child) {
       border: 2px solid transparent;
       &:hover {
-        border-color: cv('color.main');
+        border-color: cv('color.hover');
       }
     }
   }
@@ -55,7 +55,7 @@
   border: 2px solid transparent;
   &:hover {
     background: cv('shading.card');
-    border-color: cv('color.main');
+    border-color: cv('color.hover');
   }
 }
 
@@ -71,7 +71,7 @@
   border: 2px solid transparent;
   &:hover {
     background: cv('shading.card');
-    border-color: cv('color.main');
+    border-color: cv('color.hover');
   }
   &,
   &:first-child,
