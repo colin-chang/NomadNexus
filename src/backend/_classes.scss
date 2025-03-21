@@ -1917,18 +1917,18 @@ $classes: (
     ),
 
     'textContainer': (
-        'container': 'container__4d95d',
-        'textContainer': 'textContainer__4d95d',
-        'footer': 'footer__4d95d',
-        'toggleExpand': 'toggleExpandSection__4d95d',
-        'openFullPreview': 'openFullPreviewSection__4d95d',
-        'attachmentName': 'attachmentName__4d95d',
-        'attachmentSize': 'formattedSize__4d95d',
-        'downloadButton': 'downloadButton__4d95d',
-        'codeIcon': 'codeIcon__4d95d',
-        'languageSelectorPopout': 'languageSelector__4d95d',
-        'modalTextContainer': 'modalTextContainer__4d95d',
-      ),
+      'container': 'container__4d95d',
+      'textContainer': 'textContainer__4d95d',
+      'footer': 'footer__4d95d',
+      'toggleExpand': 'toggleExpandSection__4d95d',
+      'openFullPreview': 'openFullPreviewSection__4d95d',
+      'attachmentName': 'attachmentName__4d95d',
+      'attachmentSize': 'formattedSize__4d95d',
+      'downloadButton': 'downloadButton__4d95d',
+      'codeIcon': 'codeIcon__4d95d',
+      'languageSelectorPopout': 'languageSelector__4d95d',
+      'modalTextContainer': 'modalTextContainer__4d95d',
+    ),
 
     'invite': (
       'wrapper': 'wrapper_d5f3cd',
@@ -4264,78 +4264,76 @@ $classes: (
     ),
 
     'integration': (
-      'integrationCard': 'card_dc2e44',
-      'integrationIconWrapper': 'iconWrapper__4a3a5',
+      'card': 'card_dc2e44',
+      'iconWrapper': 'iconWrapper__4a3a5',
+
+      'webhookCard': 'card_eafb9c',
+      'webhookAvatarUploader': 'avatarUploaderInner_eafb9c',
     ),
-
-    'webhookCard': 'card_eafb9c',
-    'webhookAvatarUploader': 'avatarUploaderInner_eafb9c',
-
-    'followedChannelCard': 'card_ebafdd',
   ),
 
   'popouts': (
     // unless the popout profile has previously loaded, click on a username in chat or someone in the member list
     // the line this on appears to be the only rule.
     'loading': (
-        'popout': 'loadingPopout__58f1c',
-      ),
+      'popout': 'loadingPopout__58f1c',
+    ),
 
     // searchbar in popouts
     'searchbar': (
-        'container': 'container_a45028',
-        // For actual search bar; formally (incorrectly) used for entire container
-        'medium': 'medium_a45028',
-        'inner': 'inner_a45028',
-        // appears to be used for both a wrapper and <input>
-        'iconLayout': 'iconLayout_a45028',
-        'iconContainer': 'iconContainer_a45028',
-        'iconVisible': 'visible_a45028',
-        'iconClear': 'clear_a45028',
-      ),
+      'container': 'container_a45028',
+      // For actual search bar; formally (incorrectly) used for entire container
+      'medium': 'medium_a45028',
+      'inner': 'inner_a45028',
+      // appears to be used for both a wrapper and <input>
+      'iconLayout': 'iconLayout_a45028',
+      'iconContainer': 'iconContainer_a45028',
+      'iconVisible': 'visible_a45028',
+      'iconClear': 'clear_a45028',
+    ),
 
     // Shoody name? Yes. Multiple modals use it? Also yes, sadly.
     // It's in the Emojis, Command Autocomplete and Stickers. Open any of them.
     'categoryList': (
-        'wrapper': 'wrapper__4e6ce',
-        'scroller': 'scroller_affa7e',
-        // maybe? it appears in soundboard at the least. can also appear as main scroller
-        'listItems': 'listItems_affa7e',
-        'listHeight': 'listHeight_affa7e',
+      'wrapper': 'wrapper__4e6ce',
+      'scroller': 'scroller_affa7e',
+      // maybe? it appears in soundboard at the least. can also appear as main scroller
+      'listItems': 'listItems_affa7e',
+      'listHeight': 'listHeight_affa7e',
 
-        // WILL ALWAYS HAVE INLINE STYLE FOR HEIGHT
-        // these few appear elsewhere
-        'svg': 'svg__2338f',
-        'mask': 'mask__0fa6d',
-        'guildIcon': 'guildIcon__0fa6d',
-        'lockedCategory': 'categoryItemLockIconContainer__0fa6d',
-      ),
+      // WILL ALWAYS HAVE INLINE STYLE FOR HEIGHT
+      // these few appear elsewhere
+      'svg': 'svg__2338f',
+      'mask': 'mask__0fa6d',
+      'guildIcon': 'guildIcon__0fa6d',
+      'lockedCategory': 'categoryItemLockIconContainer__0fa6d',
+    ),
 
     // Start a message with a `/`
     'autocomplete': (
-        'popout': 'autocomplete__13533',
-        'inner': 'autocompleteInner__13533',
-        'contentTitle': 'contentTitle__13533',
-        'rail': 'rail_d1405b',
-        // sidebar thingy w/ default commands and bot icons
-        'railWrapper': 'wrapper_b1e4f3',
-        // background applied to this class. ugh.
-        'categorySelectable': 'selectable__1a58a',
-        'categorySelected': 'selected__1a58a',
-        'categoryIcon': 'icon__1a58a',
-        'sidebarList': 'list_b1e4f3',
-        // if you see below at the category of the same name, this is paired with WRAPPER.
-        'categoryHeader': 'categoryHeader_d1405b',
-        'autocompleteRowVertical': 'autocompleteRowVertical__13533',
-        // class exists, could reside in js. my scraper only scrapes css
-        'clickable': 'clickable__13533',
-        'base': 'base__13533',
-        // wanna apply theming to this? background-modifier-hover: clickable[aria-disabled=false]>:hover,clickable[aria-selected=true]>
-        // option does not cover optional stuff
-        'option': 'option_a19535',
-        'optionError': 'error_a19535',
-        'optionActive': 'active_a19535',
-      ),
+      'popout': 'autocomplete__13533',
+      'inner': 'autocompleteInner__13533',
+      'contentTitle': 'contentTitle__13533',
+      'rail': 'rail_d1405b',
+      // sidebar thingy w/ default commands and bot icons
+      'railWrapper': 'wrapper_b1e4f3',
+      // background applied to this class. ugh.
+      'categorySelectable': 'selectable__1a58a',
+      'categorySelected': 'selected__1a58a',
+      'categoryIcon': 'icon__1a58a',
+      'sidebarList': 'list_b1e4f3',
+      // if you see below at the category of the same name, this is paired with WRAPPER.
+      'categoryHeader': 'categoryHeader_d1405b',
+      'autocompleteRowVertical': 'autocompleteRowVertical__13533',
+      // class exists, could reside in js. my scraper only scrapes css
+      'clickable': 'clickable__13533',
+      'base': 'base__13533',
+      // wanna apply theming to this? background-modifier-hover: clickable[aria-disabled=false]>:hover,clickable[aria-selected=true]>
+      // option does not cover optional stuff
+      'option': 'option_a19535',
+      'optionError': 'error_a19535',
+      'optionActive': 'active_a19535',
+    ),
 
     'menus': (
       'menu': 'menu_c1e9c4',
@@ -4412,305 +4410,305 @@ $classes: (
 
       // used with do not disturb and invis
       'accountSwitcher': (
-          'focused': 'focused_d40c56',
-          // put on a parent class, one actually with an "item-" class
-          'item': 'userMenuItem_d40c56',
-          // nested inside *another* item
-          'username': 'userMenuUsername_d40c56',
-          'text': 'userMenuText_d40c56',
-          'discriminator': 'userMenuDiscriminator_d40c56',
-          'activeIcon': 'activeIcon_d40c56',
-          // child "circle" changes fill via js
-        ),
+        'focused': 'focused_d40c56',
+        // put on a parent class, one actually with an "item-" class
+        'item': 'userMenuItem_d40c56',
+        // nested inside *another* item
+        'username': 'userMenuUsername_d40c56',
+        'text': 'userMenuText_d40c56',
+        'discriminator': 'userMenuDiscriminator_d40c56',
+        'activeIcon': 'activeIcon_d40c56',
+        // child "circle" changes fill via js
+      ),
     ),
 
     // Be in a private call, change region
     'regionSelect': (
-        'popout': 'regionSelectPopout__5621e',
-      ),
+      'popout': 'regionSelectPopout__5621e',
+    ),
 
     // Click the in-chat search bar in header
     'search': (
-        'container': 'container__55c99',
-        'query': 'queryContainer__55c99',
-        'queryFocused': 'focused__55c99',
-        'queryText': 'queryText__55c99',
-        'queryShortcut': 'queryShortcut__55c99',
+      'container': 'container__55c99',
+      'query': 'queryContainer__55c99',
+      'queryFocused': 'focused__55c99',
+      'queryText': 'queryText__55c99',
+      'queryShortcut': 'queryShortcut__55c99',
 
-        'header': 'header__56fec',
-        'learnMore': 'searchLearnMore__56fec',
-        // (?) link
-        'resultsGroup': 'resultsGroup__56fec',
-        'option': 'option__56fec',
-        'searchOption': 'searchOption__56fec',
-        'filter': 'filter__56fec',
-        'answer': 'answer__56fec',
-        'plusIcon': 'plusIcon__56fec',
+      'header': 'header__56fec',
+      'learnMore': 'searchLearnMore__56fec',
+      // (?) link
+      'resultsGroup': 'resultsGroup__56fec',
+      'option': 'option__56fec',
+      'searchOption': 'searchOption__56fec',
+      'filter': 'filter__56fec',
+      'answer': 'answer__56fec',
+      'plusIcon': 'plusIcon__56fec',
 
-        'optionUser': 'user__56fec',
-        'displayedNick': 'displayedNick__56fec',
-        'displayUsername': 'displayUsername__56fec',
+      'optionUser': 'user__56fec',
+      'displayedNick': 'displayedNick__56fec',
+      'displayUsername': 'displayUsername__56fec',
 
-        'resultChannel': 'resultChannel__56fec',
-        'resultChannelIcon': 'searchResultChannelIcon__56fec',
-        'resultChannelCategory': 'searchResultChannelCategory__56fec',
+      'resultChannel': 'resultChannel__56fec',
+      'resultChannelIcon': 'searchResultChannelIcon__56fec',
+      'resultChannelCategory': 'searchResultChannelCategory__56fec',
 
-        'historyRow': 'searchHistoryRow__56fec',
-        'clearHistory': 'searchClearHistory__56fec',
-        'datePicker': 'datePicker__56fec',
-        'datePickerHint': 'datePickerHint__56fec',
-        'hint': 'hint__56fec',
-        'hintValue': 'hintValue__56fec',
+      'historyRow': 'searchHistoryRow__56fec',
+      'clearHistory': 'searchClearHistory__56fec',
+      'datePicker': 'datePicker__56fec',
+      'datePickerHint': 'datePickerHint__56fec',
+      'hint': 'hint__56fec',
+      'hintValue': 'hintValue__56fec',
 
-        'calendar': (
-          // outer class
-          'picker': 'calendarPicker_d27f17',
+      'calendar': (
+        // outer class
+        'picker': 'calendarPicker_d27f17',
 
-          'navigation': 'react-datepicker__navigation',
-          'navigation--next': 'react-datepicker__navigation--next',
-          'navigation--previous': 'react-datepicker__navigation--previous',
-          'navigation-icon': 'react-datepicker__navigation-icon',
+        'navigation': 'react-datepicker__navigation',
+        'navigation--next': 'react-datepicker__navigation--next',
+        'navigation--previous': 'react-datepicker__navigation--previous',
+        'navigation-icon': 'react-datepicker__navigation-icon',
 
-          'datePicker': 'react-datepicker',
-          'monthContainer': 'react-datepicker__month-container',
-          'header': 'react-datepicker__header',
-          'currentMonth': 'react-datepicker__current-month',
-          'dayNames': 'react-datepicker__day-names',
-          'dayName': 'react-datepicker__day-name',
+        'datePicker': 'react-datepicker',
+        'monthContainer': 'react-datepicker__month-container',
+        'header': 'react-datepicker__header',
+        'currentMonth': 'react-datepicker__current-month',
+        'dayNames': 'react-datepicker__day-names',
+        'dayName': 'react-datepicker__day-name',
 
-          'month': 'react-datepicker__month',
-          'week': 'react-datepicker__week',
-          'day': 'react-datepicker__day',
-          'dayDisabled': 'react-datepicker__day--disabled',
-          'daySelected': 'react-datepicker__day--selected',
-          'dayOutsideMonth': 'react-datepicker__day--outside-month',
-          'dayKeyboardSelected': 'react-datepicker__day--keyboard-selected',
-          'today': 'react-datepicker__day--today',
-        ),
+        'month': 'react-datepicker__month',
+        'week': 'react-datepicker__week',
+        'day': 'react-datepicker__day',
+        'dayDisabled': 'react-datepicker__day--disabled',
+        'daySelected': 'react-datepicker__day--selected',
+        'dayOutsideMonth': 'react-datepicker__day--outside-month',
+        'dayKeyboardSelected': 'react-datepicker__day--keyboard-selected',
+        'today': 'react-datepicker__day--today',
       ),
+    ),
 
     // Best seen in Voice + Video settings, right at the top there's two
     'dropdown': (
-        'wrapper': 'wrapper__3f413',
-        'select': 'select__3f413',
-        'filled': 'lookFilled__3f413',
+      'wrapper': 'wrapper__3f413',
+      'select': 'select__3f413',
+      'filled': 'lookFilled__3f413',
 
-        'open': 'open__3f413',
+      'open': 'open__3f413',
 
-        'value': 'value__3f413',
-        'icons': 'icons__3f413',
+      'value': 'value__3f413',
+      'icons': 'icons__3f413',
 
-        'popout': 'popout__3f413',
-        'positionTop': 'popoutPositionTop__3f413',
-        'measurement': 'measurement__3f413',
-        // there's a hidden one next to the popout???
-        'option': 'option__3f413',
-        'selectedIcon': 'selectedIcon__3f413',
-        // checkmark
-        'focused': 'focused__3f413',
-        // hover over item
-        'multi': 'multi__3f413',
+      'popout': 'popout__3f413',
+      'positionTop': 'popoutPositionTop__3f413',
+      'measurement': 'measurement__3f413',
+      // there's a hidden one next to the popout???
+      'option': 'option__3f413',
+      'selectedIcon': 'selectedIcon__3f413',
+      // checkmark
+      'focused': 'focused__3f413',
+      // hover over item
+      'multi': 'multi__3f413',
 
-        // multi select
-        'optionPillContainer': 'optionPillContainer__3f413',
-        'optionPillItem': 'optionPillItem__3f413',
-        'optionPillBtn': 'optionPillBtn__3f413',
-        'optionPill': 'optionPill__3f413',
-        'deleteOptionIcon': 'deleteOptionIcon__3f413',
-        'multiSelectCheckbox': 'multiSelectCheckbox__3f413',
-        'unchecked': 'unchecked__3f413',
-        'checked': 'checked__3f413',
+      // multi select
+      'optionPillContainer': 'optionPillContainer__3f413',
+      'optionPillItem': 'optionPillItem__3f413',
+      'optionPillBtn': 'optionPillBtn__3f413',
+      'optionPill': 'optionPill__3f413',
+      'deleteOptionIcon': 'deleteOptionIcon__3f413',
+      'multiSelectCheckbox': 'multiSelectCheckbox__3f413',
+      'unchecked': 'unchecked__3f413',
+      'checked': 'checked__3f413',
 
-        'clear': 'clear__3f413',
+      'clear': 'clear__3f413',
 
-        // i can't find this class but it's in a rule
-        // idk where lmao
-        'searchable': 'searchable__3f413',
-        'searchInput': 'searchInput__3f413',
-        'editing': 'editing__3f413',
-        'label': 'label_f6639d',
-        'selectPositionTop': 'selectPositionTop__3f413',
-        'disabled': 'disabled__3f413',
-        'hidden': 'hidden_f6639d',
-        'iconsContainer': 'iconsContainer__3f413',
-        'iconsCenter': 'iconsCenter__3f413',
-        'placeholder': 'placeholder__3f413',
-        'dropdownIcon': 'dropdownIcon__3f413',
-        'noResults': 'noResults__3f413',
-        'loading': 'loading__3f413',
-        'loadingSpinner': 'loadingSpinner__3f413',
-        'searchableSelect': 'searchableSelect__3f413',
-        'prefix': 'prefix__3f413',
-        'suffix': 'suffix__3f413',
-        'content': 'content__3f413',
-        'optionPillWrapper': 'optionPillWrapper_f6639d',
-        'noScrollbar': 'noScrollbar__3f413',
-        'multiSelectCheck': 'multiSelectCheck__3f413',
-      ),
+      // i can't find this class but it's in a rule
+      // idk where lmao
+      'searchable': 'searchable__3f413',
+      'searchInput': 'searchInput__3f413',
+      'editing': 'editing__3f413',
+      'label': 'label_f6639d',
+      'selectPositionTop': 'selectPositionTop__3f413',
+      'disabled': 'disabled__3f413',
+      'hidden': 'hidden_f6639d',
+      'iconsContainer': 'iconsContainer__3f413',
+      'iconsCenter': 'iconsCenter__3f413',
+      'placeholder': 'placeholder__3f413',
+      'dropdownIcon': 'dropdownIcon__3f413',
+      'noResults': 'noResults__3f413',
+      'loading': 'loading__3f413',
+      'loadingSpinner': 'loadingSpinner__3f413',
+      'searchableSelect': 'searchableSelect__3f413',
+      'prefix': 'prefix__3f413',
+      'suffix': 'suffix__3f413',
+      'content': 'content__3f413',
+      'optionPillWrapper': 'optionPillWrapper_f6639d',
+      'noScrollbar': 'noScrollbar__3f413',
+      'multiSelectCheck': 'multiSelectCheck__3f413',
+    ),
 
     // Click on the emoji, sticker or gif within the chatbar
     'expressionPicker': (
-        'positionLayer': 'positionLayer__08434',
-        // has relevant theme-[dark/light] class applied to it
-        'positionContainer': 'positionContainer__08434',
-        'drawerSizingWrapper': 'drawerSizingWrapper__08434',
-        'resizeHandle': 'resizeHandle__08434',
-        'contentWrapper': 'contentWrapper__08434',
-        'nav': 'nav__08434',
-        'navItem': 'navItem__08434',
-        'navButton': 'navButton__08434',
-        'navButtonActive': 'navButtonActive__08434',
+      'positionLayer': 'positionLayer__08434',
+      // has relevant theme-[dark/light] class applied to it
+      'positionContainer': 'positionContainer__08434',
+      'drawerSizingWrapper': 'drawerSizingWrapper__08434',
+      'resizeHandle': 'resizeHandle__08434',
+      'contentWrapper': 'contentWrapper__08434',
+      'nav': 'nav__08434',
+      'navItem': 'navItem__08434',
+      'navButton': 'navButton__08434',
+      'navButtonActive': 'navButtonActive__08434',
 
-        'inspector': 'inspector_aeaaeb',
+      'inspector': 'inspector_aeaaeb',
 
-        // Emoji within charbar combined popout
-        'emoji': (
-            'wrapper': 'wrapper_c0e32c',
-            // want just floating? :not( below ). has ID
-            'hasTabWrapper': 'emojiPickerHasTabWrapper_c0e32c',
-            'picker': 'emojiPicker_c0e32c',
+      // Emoji within charbar combined popout
+      'emoji': (
+        'wrapper': 'wrapper_c0e32c',
+        // want just floating? :not( below ). has ID
+        'hasTabWrapper': 'emojiPickerHasTabWrapper_c0e32c',
+        'picker': 'emojiPicker_c0e32c',
 
-            'header': 'header_c0e32c',
-            'searchBar': 'searchBar_c0e32c',
-            'skinSelector': 'diversitySelector_c0e32c',
-            'skinSelectorButton': 'diversitySelectorButton_a45a2a',
-            'skinSelectorImage': 'diversityEmojiItemImage_a45a2a',
-            // uses style for image, asset will likely change with each update though
-            // click the clapping emoji for these
-            'skinOptions': 'diversitySelectorOptions_a45a2a',
-            'skinOptionsEmojiItem': 'diversityEmojiItem_a45a2a',
-            // if you wish to select one skin type, the above class has `data-list-item-id="diversity___item-n"`
-            // where n is 0-5; 0 being yellow, 1 being lightest and 5 being darkest
-            'body': 'bodyWrapper_c0e32c',
-            'pickerListWrapper': 'emojiPickerListWrapper_c0e32c',
-            'listWrapper': 'listWrapper_c656ac',
-            'list': 'list_c656ac',
-            'categorySection': 'categorySection_c656ac',
-            'categoryHeader': 'header_c656ac',
-            'categoryHeaderWrapper': 'wrapper__14245',
-            'categoryHeaderInner': 'header__14245',
-            'listRowLarge': 'emojiListRowLargeSize_fc7141',
-            // widen the modal above 400px wide for rows
-            'item': 'emojiItem_fc7141',
-            'itemLarge': 'emojiItemLarge_fc7141',
-            'itemSelected': 'emojiItemSelected_fc7141',
-            'imageLoading': 'imageLoading__1859b',
+        'header': 'header_c0e32c',
+        'searchBar': 'searchBar_c0e32c',
+        'skinSelector': 'diversitySelector_c0e32c',
+        'skinSelectorButton': 'diversitySelectorButton_a45a2a',
+        'skinSelectorImage': 'diversityEmojiItemImage_a45a2a',
+        // uses style for image, asset will likely change with each update though
+        // click the clapping emoji for these
+        'skinOptions': 'diversitySelectorOptions_a45a2a',
+        'skinOptionsEmojiItem': 'diversityEmojiItem_a45a2a',
+        // if you wish to select one skin type, the above class has `data-list-item-id="diversity___item-n"`
+        // where n is 0-5; 0 being yellow, 1 being lightest and 5 being darkest
+        'body': 'bodyWrapper_c0e32c',
+        'pickerListWrapper': 'emojiPickerListWrapper_c0e32c',
+        'listWrapper': 'listWrapper_c656ac',
+        'list': 'list_c656ac',
+        'categorySection': 'categorySection_c656ac',
+        'categoryHeader': 'header_c656ac',
+        'categoryHeaderWrapper': 'wrapper__14245',
+        'categoryHeaderInner': 'header__14245',
+        'listRowLarge': 'emojiListRowLargeSize_fc7141',
+        // widen the modal above 400px wide for rows
+        'item': 'emojiItem_fc7141',
+        'itemLarge': 'emojiItemLarge_fc7141',
+        'itemSelected': 'emojiItemSelected_fc7141',
+        'imageLoading': 'imageLoading__1859b',
 
-            'inspectorGrid': 'inspector_c0e32c',
-            // bar at bottom should use the class under expressionPicker.
-            'graphicPrimary': 'graphicPrimary_aeaaeb',
-            'emoji': 'emoji__045fa',
-            'textWrapper': 'textWrapper_aeaaeb',
-            'titlePrimary': 'titlePrimary_aeaaeb',
-            'favorite': 'favorite_aeaaeb',
-            // it's a star~
-            'titleSecondary': 'titleSecondary_aeaaeb',
-            'graphicSecondary': 'graphicSecondary_aeaaeb',
+        'inspectorGrid': 'inspector_c0e32c',
+        // bar at bottom should use the class under expressionPicker.
+        'graphicPrimary': 'graphicPrimary_aeaaeb',
+        'emoji': 'emoji__045fa',
+        'textWrapper': 'textWrapper_aeaaeb',
+        'titlePrimary': 'titlePrimary_aeaaeb',
+        'favorite': 'favorite_aeaaeb',
+        // it's a star~
+        'titleSecondary': 'titleSecondary_aeaaeb',
+        'graphicSecondary': 'graphicSecondary_aeaaeb',
 
-            'categoryList': 'categoryList_c0e32c',
+        'categoryList': 'categoryList_c0e32c',
 
-            'categoryItem': 'categoryItem_b9ee0c',
-            'defaultCategory': 'categoryItemDefaultCategory_b9ee0c',
-            'defaultCategorySelected': 'categoryItemDefaultCategorySelected_b9ee0c',
-            'categoryIcon': 'categoryIcon_b9ee0c',
-            'categorySeparator': 'guildCategorySeparator_b9ee0c',
-            'unicodeShortcut': 'unicodeShortcut_b9ee0c',
-            // for all the non-server emotes
-            'unicodeShortcutInvisible': 'unicodeShortcutInvisible_b9ee0c',
+        'categoryItem': 'categoryItem_b9ee0c',
+        'defaultCategory': 'categoryItemDefaultCategory_b9ee0c',
+        'defaultCategorySelected': 'categoryItemDefaultCategorySelected_b9ee0c',
+        'categoryIcon': 'categoryIcon_b9ee0c',
+        'categorySeparator': 'guildCategorySeparator_b9ee0c',
+        'unicodeShortcut': 'unicodeShortcut_b9ee0c',
+        // for all the non-server emotes
+        'unicodeShortcutInvisible': 'unicodeShortcutInvisible_b9ee0c',
 
-            'premiumRetention': 'premiumRetentionNotice_a606ef',
+        'premiumRetention': 'premiumRetentionNotice_a606ef',
 
-            // When you're hoving over a message, click the add reaction button. This also includes "super" reactions.
-            'floating': (
-                'sparkleStar': 'sparkleStar__24af7',
-                'sparklePlus': 'sparklePlus__24af7',
+        // When you're hoving over a message, click the add reaction button. This also includes "super" reactions.
+        'floating': (
+          'sparkleStar': 'sparkleStar__24af7',
+          'sparklePlus': 'sparklePlus__24af7',
 
-                // only named so as it's the dumb preview thing that begs for the user to buy nitro
-                'nonNitroBlocker': (
-                    'wrapper': 'wrapper__97f37',
-                    'banner': 'banner__97f37',
-                    // video, with autoplay in the tag.
-                    'hasTrialOffer': 'hasTrialOffer__97f37',
-                    'content': 'content__97f37',
-                    'header': 'header__97f37',
-                    'headerText': 'headerText__97f37',
-                    'subheaderText': 'subheaderText__97f37',
-                    'ctaActionWrapper': 'ctaActionWrapper__97f37',
-                  ),
-
-                'upsellContainer': 'upsellContainer_a3bc57',
-                // "Unlock these emojis with Nitro" shows up when reacting
-              ),
+          // only named so as it's the dumb preview thing that begs for the user to buy nitro
+          'nonNitroBlocker': (
+            'wrapper': 'wrapper__97f37',
+            'banner': 'banner__97f37',
+            // video, with autoplay in the tag.
+            'hasTrialOffer': 'hasTrialOffer__97f37',
+            'content': 'content__97f37',
+            'header': 'header__97f37',
+            'headerText': 'headerText__97f37',
+            'subheaderText': 'subheaderText__97f37',
+            'ctaActionWrapper': 'ctaActionWrapper__97f37',
           ),
 
-        // Gif within chatbar combined popout
-        'gif': (
-            'container': 'container_fed6d3',
-            // has ID on it
-            'header': 'header_fed6d3',
-            'searchBar': 'searchBar_fed6d3',
-            'content': 'content_fed6d3',
-            'scroller': 'container_d02962',
-            'resultPlaceholder': 'placeholder__2dc39',
-            'result': 'result__2dc39',
-            'resultFocused': 'focused_bad108',
-            'favoritesFade': 'categoryFadeBlurple_d02962',
-            'categoryFade': 'categoryFade_d02962',
-            'categoryText': 'categoryText_d02962',
-            'categoryIcon': 'categoryIcon_d02962',
-            'categoryName': 'categoryName_d02962',
-            'endContainer': 'endContainer__2dc39',
-            'results': 'results__2dc39',
-            'noResultsWrapper': 'wrapper__29ebd',
-            'sadImage': 'sadImage__29ebd',
-
-            // search "hentai" or something
-            // shown in favourites when they're empty or something. i used a plugin that allowed for searching and it brought these up.
-            'emptyHintCard': 'emptyHintCard__2dc39',
-            'emptyHintFavourite': 'emptyHintFavorite__2dc39',
-            // star
-          ),
-
-        // Sticker within chatbar combined popout
-        'sticker': (
-            'wrapper': 'wrapper__8ef02',
-            // has ID on it
-            'header': 'header__8ef02',
-            'searchWrapper': 'wrapper_cdf8a9',
-            // for the bar, use child of above
-            'listWrapper': 'listWrapper__8ef02',
-            'gridWrapper': 'wrapper_e94b8c',
-
-            // holds stickers in grid
-            'packHeader': 'packHeader_e94b8c',
-            // has a pos sticky and top 0
-            'packRow': 'row_c6367b',
-            'sticker': 'sticker_c6367b',
-            // border radius and padding, doesn't apply to in-chat sticker
-            'stickerCursor': 'sticker_e94b8c',
-            // only cursor, doesn't apply to in-chat sticker
-            'inspected': 'stickerInspected_c6367b',
-            'inspectedIndicator': 'inspectedIndicator_c6367b',
-            // hover over a sticker
-            'upsell': 'upsell_ac65bb',
-            // In a server you can manage stickers on with at least 1 free slot
-            'emptyGuildUpsell': 'emptyGuildUpsell_e94b8c',
-            // also above but zero stickers
-            // bar at bottom should be under GSE
-            'categoryList': 'categoryList__3ad28',
-            'categorySeparator': 'guildCategorySeparator__3ad28',
-            'category': 'stickerCategory__3ad28',
-            'categoryGeneric': 'stickerCategoryGeneric__3ad28',
-            // used on freq used
-            'categoryGenericSelected': 'stickerCategoryGenericSelected__3ad28',
-            'firstPartyCategorySelected': 'firstPartyCategorySelected__3ad28',
-
-            'stickerSearchSuggestion': 'searchSuggestion_e94b8c',
-
-            // search result empty
-            'standardStickerShortcut': 'standardStickerShortcut__3ad28',
-          ),
+          'upsellContainer': 'upsellContainer_a3bc57',
+          // "Unlock these emojis with Nitro" shows up when reacting
+        ),
       ),
+
+      // Gif within chatbar combined popout
+      'gif': (
+        'container': 'container_fed6d3',
+        // has ID on it
+        'header': 'header_fed6d3',
+        'searchBar': 'searchBar_fed6d3',
+        'content': 'content_fed6d3',
+        'scroller': 'container_d02962',
+        'resultPlaceholder': 'placeholder__2dc39',
+        'result': 'result__2dc39',
+        'resultFocused': 'focused_bad108',
+        'favoritesFade': 'categoryFadeBlurple_d02962',
+        'categoryFade': 'categoryFade_d02962',
+        'categoryText': 'categoryText_d02962',
+        'categoryIcon': 'categoryIcon_d02962',
+        'categoryName': 'categoryName_d02962',
+        'endContainer': 'endContainer__2dc39',
+        'results': 'results__2dc39',
+        'noResultsWrapper': 'wrapper__29ebd',
+        'sadImage': 'sadImage__29ebd',
+
+        // search "hentai" or something
+        // shown in favourites when they're empty or something. i used a plugin that allowed for searching and it brought these up.
+        'emptyHintCard': 'emptyHintCard__2dc39',
+        'emptyHintFavourite': 'emptyHintFavorite__2dc39',
+        // star
+      ),
+
+      // Sticker within chatbar combined popout
+      'sticker': (
+        'wrapper': 'wrapper__8ef02',
+        // has ID on it
+        'header': 'header__8ef02',
+        'searchWrapper': 'wrapper_cdf8a9',
+        // for the bar, use child of above
+        'listWrapper': 'listWrapper__8ef02',
+        'gridWrapper': 'wrapper_e94b8c',
+
+        // holds stickers in grid
+        'packHeader': 'packHeader_e94b8c',
+        // has a pos sticky and top 0
+        'packRow': 'row_c6367b',
+        'sticker': 'sticker_c6367b',
+        // border radius and padding, doesn't apply to in-chat sticker
+        'stickerCursor': 'sticker_e94b8c',
+        // only cursor, doesn't apply to in-chat sticker
+        'inspected': 'stickerInspected_c6367b',
+        'inspectedIndicator': 'inspectedIndicator_c6367b',
+        // hover over a sticker
+        'upsell': 'upsell_ac65bb',
+        // In a server you can manage stickers on with at least 1 free slot
+        'emptyGuildUpsell': 'emptyGuildUpsell_e94b8c',
+        // also above but zero stickers
+        // bar at bottom should be under GSE
+        'categoryList': 'categoryList__3ad28',
+        'categorySeparator': 'guildCategorySeparator__3ad28',
+        'category': 'stickerCategory__3ad28',
+        'categoryGeneric': 'stickerCategoryGeneric__3ad28',
+        // used on freq used
+        'categoryGenericSelected': 'stickerCategoryGenericSelected__3ad28',
+        'firstPartyCategorySelected': 'firstPartyCategorySelected__3ad28',
+
+        'stickerSearchSuggestion': 'searchSuggestion_e94b8c',
+
+        // search result empty
+        'standardStickerShortcut': 'standardStickerShortcut__3ad28',
+      ),
+    ),
 
     'stickerSuggestion': (
       'focused': 'suggestedExpressionFocused_d4ced7',

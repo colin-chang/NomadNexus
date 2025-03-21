@@ -1,5 +1,13 @@
 @use 'backend' as *;
 
+// BACKGROUND
+#{c(serverGuide background)} {
+  #{c(scroller base)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+  }
+}
+
+// CARDS
 :is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(serverGuide rowCard)} {
     background: cv('shading.card');

@@ -16,10 +16,11 @@
     code {
       background: cv('shading.card');
       border: 1px solid var(--hsl-card-shading-inverted);
+      // INLINE
       &#{c(chat codeInline)} {
         border:none;
         background: hsl(from cv('shading.card') h s calc(100 - l) / calc(alpha * 0.5));
-        padding: 3px 6px
+        padding: 2px 6px
       }
     }
   }
@@ -67,7 +68,6 @@
     background-color: cv('color.hover');
   }
 }
-
 
 // MENTION
 #{c(chat mentionWrapper)} {

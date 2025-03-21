@@ -62,7 +62,7 @@
     pointer-events: initial;
   }
 }
-#{c(chatForm attachButton)} {
+#{c(main visualRefreshChatInput)} #{c(chatForm attachButton)} {
   &::after {
     // See "/theme/misc/_i18n.scss" for more.
     content: var(--__i18n-attachment);

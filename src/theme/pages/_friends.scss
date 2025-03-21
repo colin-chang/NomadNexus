@@ -103,7 +103,7 @@
   }
   #{c(friends itemCardOuter)} {
     &,
-    &#{c(friends itemCardInteractive)}:hover {
+    &:is(#{c(friends itemCardInteractive)}:hover, #{c(friends itemCardActive)}) {
       background-color: cv('shading.card');
       border: none;
     }
