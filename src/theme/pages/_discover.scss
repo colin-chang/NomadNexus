@@ -33,15 +33,8 @@
   #{c(discover headerBackdrop)} {
     background: cv('shading.popout');
   }
-  #{c(discover searchBar)} {
-    background: cv('shading.input.bg');
-    border-color: cv('shading.input.border');
-    &:focus-within {
-      border-color: cv('color.main');
-    }
-  }
 
-  // SEARCH HEADER
+  // SEARCH RESULT HEADER
   #{c(discover headerRelative)} {
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5));
   }

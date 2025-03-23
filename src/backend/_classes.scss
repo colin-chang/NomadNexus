@@ -2774,27 +2774,25 @@ $classes: (
   'serverSettings': (
     'serverIconUploadInner': 'avatarUploaderInner_cd0bbe',
 
-    'rolePage': 'contentColumnMinimal__23e6b',
-
-    'noticeRegion': 'noticeRegion__23e6b',
-    'noticeContainer': 'container_fcf29c',
-
-    'roleEveryoneContainer': 'container_d8f25b',
-    'roleEveryoneIcon': 'icon_d8f25b',
-    'roleSearchPopup': 'container__3dde2',
-    // shared with above in friends list
-    'roleRow': 'roleRow_a930f1',
-    'roleRowDisableHover': 'roleRowDisableHover_a930f1',
-    'roleCircleButton': 'circleButton_a930f1',
-    'roleEditButton': 'editButton_a930f1',
-    // below "role"s are shown by clicking edit
-    'roleContentContainer': 'contentContainer__91dc3',
-    'roleSidebar': 'sidebar_e29cd7',
-    'roleTitleContainer': 'titleContainer_e29cd7',
-    'roleHeader': 'header_c6bf1b',
-    'roleHeaderStickyElevated': 'stickyHeaderElevated_c6bf1b',
-    'roleHeaderSticky': 'stickyHeader_c6bf1b',
-    'rolePreviewContainer': 'previewContainer__05e8e',
+    'roles': (
+      'container': 'contentColumnMinimal__23e6b',
+      'roleEveryoneContainer': 'container_d8f25b',
+      'roleEveryoneIcon': 'icon_d8f25b',
+      'roleSearchPopup': 'container__3dde2',
+      // shared with above in friends list
+      'roleRow': 'roleRow_a930f1',
+      'roleRowDisableHover': 'roleRowDisableHover_a930f1',
+      'roleCircleButton': 'circleButton_a930f1',
+      'roleEditButton': 'editButton_a930f1',
+      // below "role"s are shown by clicking edit
+      'roleContentContainer': 'contentContainer__91dc3',
+      'roleSidebar': 'sidebar_e29cd7',
+      'roleTitleContainer': 'titleContainer_e29cd7',
+      'roleHeader': 'header_c6bf1b',
+      'roleHeaderStickyElevated': 'stickyHeaderElevated_c6bf1b',
+      'roleHeaderSticky': 'stickyHeader_c6bf1b',
+      'rolePreviewContainer': 'previewContainer__05e8e',
+    ),
 
     'emojiRow': 'emojiRow_e7d73e',
     'emojiAliasPlaceholder': 'emojiAliasPlaceholder_e7d73e',
@@ -3878,6 +3876,9 @@ $classes: (
     'contentColumn': 'contentColumn__23e6b',
     'contentColumnDefault': 'contentColumnDefault__23e6b',
     'contentColumnWide': 'contentColumnWide__23e6b',
+    
+    'noticeRegion': 'noticeRegion__23e6b',
+    'noticeContainer': 'container_fcf29c',
 
     'card': (
       // These are likely all over the app but are best found in settings.
@@ -4225,25 +4226,25 @@ $classes: (
     ),
 
   'channelSettings': (
-    'channelSettingsCategory': 'category__3ddc0',
+    'category': 'category__3ddc0',
+
     'overview': (
       'overview': 'channel-settings-overview',
     ),
 
-    // class found within JS rather than CSS
-    'roleScroller': 'scroller_ff90b2',
-    'settingsCard': 'settingCard_dd864e',
-    'settingsCardActive': 'active_dd864e',
-    'cardContent': 'cardContent_f62fce',
-    'cardFolder': 'cardFolder_dd864e',
-    'folderHeader': 'folderHeader_dd864e',
-    'adminWarning': 'adminWarning_dd864e',
-    // no idea what this is used for
-    'folderRoleMemberList': 'memberRow_dd864e',
-
     'permissions': (
-      'roleDropdownHeader': 'header_d5ae15',
+      'card': 'settingCard__1a4ef',
+      'cardActive': 'active__1a4ef',
+      'cardContent': 'cardContent_f62fce',
+      'cardFolder': 'cardFolder__1a4ef',
+      'folderHeader': 'folderHeader__1a4ef',
+      'adminWarning': 'adminWarning__1a4ef',
+      // no idea what this is used for
+      'folderMemberList': 'memberRow__1a4ef',
+
+      'sideScroller': 'scroller__53543',
       'roleDropdownContainer': 'container_d5ae15',
+      'roleDropdownHeader': 'header_d5ae15',
       'roleDropdownTag': 'sectionTag_d5ae15',
       'roleDropdownRow': 'row_d5ae15',
       'roleDropdownRowInner': 'rowInner_d5ae15',

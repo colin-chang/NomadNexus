@@ -17,8 +17,7 @@
 }
 :is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(main bg)} {
-    background: transparent center/cover no-repeat;
-    background-image: cv('bg.app.img');
+    background: cv('bg.app.img') center/cover no-repeat;
     background-attachment: cv('bg.app.attach');
     filter: cv('bg.app.filter');
     z-index: -1;

@@ -1,24 +1,30 @@
 @use 'backend' as *;
 
-#{c(shop shop)} {
-  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
-}
+
 #{c(shop scroller)},
-#{c(shop featured)},
 #{c(shop pageWrapper)} {
   background: transparent;
 }
-
-// CARD
-#{c(shop card)} {
-  background: cv('shading.card');
-  border-color: transparent;
-  &:hover {
-    border-color: cv('color.main');
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+  #{c(shop shop)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
   }
-}
-#{c(shop cardText)} {
-  background: transparent;
+  #{c(shop featured)} {
+    background: transparent;
+  }
+
+  // CARD
+  #{c(shop card)} {
+    background: cv('shading.card');
+    border: 2px solid transparent;
+    &:hover {
+      border-color: cv('color.main');
+    }
+  }
+  #{c(shop cardText)} {
+    background: transparent;
+    border: none;
+  }
 }
 
 // PREVIEW

@@ -16,6 +16,14 @@
   padding-top: 50px;
 }
 
+// GUILD/CHANNELS UNSAVED CHANGES
+:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+  #{c(settings noticeContainer)} {
+    background: cv('shading.popout');
+    border: none;
+  }
+}
+
 // CARD
 :is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(settings card primary)} {

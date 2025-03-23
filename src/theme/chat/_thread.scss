@@ -8,7 +8,7 @@
     background: transparent;
     border: none;
     border-bottom-left-radius: 0;
-    &#{c(thread container)} {
+    &#{c(thread floating)} {
       background: cv('shading.popout') ;
     }
   }

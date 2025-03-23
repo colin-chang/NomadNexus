@@ -9,6 +9,11 @@
   &#{c(popouts menus itemFocused)} {
     background-color: cv('color.hover');
   }
+  &:active {
+    &:not(#{c(popouts menus itemHideInteraction)}) {
+      background-color: cv('color.main');
+    }
+  }
 }
 #{c(popouts menus colorDanger)} {
   &,
@@ -21,6 +26,14 @@
       // discord does it this way
       path {
         fill: var(--interactive-active);
+      }
+    }
+  }
+  &:active {
+    &:not(#{c(popouts menus itemHideInteraction)}) {
+      background-color: hsl(from cv('color.danger') h s l/.8);
+      #{c(popouts menus label)} {
+        color: var(--interactive-active);
       }
     }
   }

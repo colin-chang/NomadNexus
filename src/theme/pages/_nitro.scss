@@ -3,7 +3,6 @@
 #{c(nitro store)} {
   background: transparent;
 }
-
 :is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
   #{c(nitro wrapper)} {
     background: transparent;
@@ -14,12 +13,11 @@
 #{c(nitro allPerksScroller)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
 }
-
 #{c(nitro mainPageScroller)} {
   right: 0;
   transition: all 0.75s ease-in-out;
   &:has(+ #{c(nitro allPerksScrollerOpen)}) {
-    right: 100%;
+    right: 100%; // avoid them overlaying each other
   }
 }
 
