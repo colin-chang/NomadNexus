@@ -1704,41 +1704,41 @@ $classes: (
 
   // document.URL in console contains /member-safety
   'membersPage': (
-      'page': 'page_c791b2',
-      'header': 'header_c791b2',
-      'scroller': 'scroller_d20375',
-      'container': 'container_c791b2',
+    'page': 'page_c791b2',
+    'header': 'header_c791b2',
+    'scroller': 'scroller_d20375',
+    'container': 'container_c791b2',
 
-      'tableContainer': 'mainTableContainer__09a38',
+    'tableContainer': 'mainTableContainer__09a38',
 
-      // contains the sortable, searchable list of members. classes may cross over with members page in server settings.
-      // for some reason it's in the same line as a bunch of text shit. despite that some of the elements aren't using those classes???
-      'loaderBar': 'loaderBar__09a38',
-      'loaderContainer': 'loaderContainer__09a38',
-      'horizatonalScroller': 'horizatonalScroller__09a38',
-      // dunno why there's a typo in the class name
-      // similar to class above except different set of text stuff. also not using these classes.
-      // Same set
-      'button': 'sortButton__98d1c',
-      'searchBar': 'searchBar__98d1c',
-      'searchHeader': 'searchHeader__98d1c',
-      'searchHeaderContainer': 'searchHeaderContainer__98d1c',
-      'searchInput': 'searchInput__98d1c',
-      'tableOptions': 'tableOptions__98d1c',
+    // contains the sortable, searchable list of members. classes may cross over with members page in server settings.
+    // for some reason it's in the same line as a bunch of text shit. despite that some of the elements aren't using those classes???
+    'loaderBar': 'loaderBar__09a38',
+    'loaderContainer': 'loaderContainer__09a38',
+    'horizatonalScroller': 'horizatonalScroller__09a38',
+    // dunno why there's a typo in the class name
+    // similar to class above except different set of text stuff. also not using these classes.
+    // Same set
+    'button': 'sortButton__98d1c',
+    'searchBar': 'searchBar__98d1c',
+    'searchHeader': 'searchHeader__98d1c',
+    'searchHeaderContainer': 'searchHeaderContainer__98d1c',
+    'searchInput': 'searchInput__98d1c',
+    'tableOptions': 'tableOptions__98d1c',
 
-      'table': 'table_b4ec0b',
-      'newMemberNotice': 'newMembersNotice_acdcc0',
+    'table': 'table_b4ec0b',
+    'newMemberNotice': 'newMembersNotice_acdcc0',
 
-      'otherRoles': 'otherRoles__71c22',
-      // so many text classes... different group again.
-      'actionButton': 'button__71c22',
+    'otherRoles': 'otherRoles__71c22',
+    // so many text classes... different group again.
+    'actionButton': 'button__71c22',
 
-      // same line as class above
-      'noResultsContainer': 'noResultsContainer__9c6d0',
-      // on own line for some reason. The children of it are as follows:
-      // div[class] > svg > (wumpus image)
-       // div.text-md-normal "No members match these search results.",,
-    ),
+    // same line as class above
+    'noResultsContainer': 'noResultsContainer__9c6d0',
+    // on own line for some reason. The children of it are as follows:
+    // div[class] > svg > (wumpus image)
+    // div.text-md-normal "No members match these search results.",,
+  ),
 
   'chatForm': (
     'form': 'form_f75fb0',
@@ -2770,41 +2770,6 @@ $classes: (
 
     // removed from visual-refresh
     'footer': 'footer__214dc',
-  ),
-  'serverSettings': (
-    'serverIconUploadInner': 'avatarUploaderInner_cd0bbe',
-
-    'roles': (
-      'container': 'contentColumnMinimal__23e6b',
-      'roleEveryoneContainer': 'container_d8f25b',
-      'roleEveryoneIcon': 'icon_d8f25b',
-      'roleSearchPopup': 'container__3dde2',
-      // shared with above in friends list
-      'roleRow': 'roleRow_a930f1',
-      'roleRowDisableHover': 'roleRowDisableHover_a930f1',
-      'roleCircleButton': 'circleButton_a930f1',
-      'roleEditButton': 'editButton_a930f1',
-      // below "role"s are shown by clicking edit
-      'roleContentContainer': 'contentContainer__91dc3',
-      'roleSidebar': 'sidebar_e29cd7',
-      'roleTitleContainer': 'titleContainer_e29cd7',
-      'roleHeader': 'header_c6bf1b',
-      'roleHeaderStickyElevated': 'stickyHeaderElevated_c6bf1b',
-      'roleHeaderSticky': 'stickyHeader_c6bf1b',
-      'rolePreviewContainer': 'previewContainer__05e8e',
-    ),
-
-    'emojiRow': 'emojiRow_e7d73e',
-    'emojiAliasPlaceholder': 'emojiAliasPlaceholder_e7d73e',
-    'emojiAliasInput': 'emojiAliasInput_e7d73e',
-    'emojiInput': 'emojiInput_e7d73e',
-
-    'templateDescriptionBox': 'descriptionBox__981f7',
-    'templateDescriptionIcon': 'descriptionIcon__981f7',
-
-    'enableCommunityFeatureCard': 'featureCard_bebc5b',
-    'enableCommunityFeatureIcon': 'featureIcon_bebc5b',
-    'enableCommunityGuildDetails': 'guildDetails_bebc5b',
   ),
   'sidebar': (
     'sidebar': 'sidebar_c48ade',
@@ -3894,15 +3859,17 @@ $classes: (
       'warning': 'cardWarning__73069',
     ),
 
-    'collapseable': 'collapseable__217b7',
-    'collapseableToggled': 'toggled__217b7',
-    
+    'rowCard': 'card_b846e5',
+
     // shared classes. used in multiple places, mainly as a "remove this row" kind of thing
     'removeButton': (
       'button': 'button_e18686',
       'default': 'default_e18686',
       'filled': 'filled_e18686',
     ),
+
+    'collapseable': 'collapseable__217b7',
+    'collapseableToggled': 'toggled__217b7',
 
     // used in a few places, i'm not entirely sure what's different about it
     'premiumFeatureBorder': 'premiumFeatureBorder__65c15',
@@ -4177,6 +4144,20 @@ $classes: (
       'backgroundOptionInner': 'backgroundOptionInner__53965',
     ),
 
+    'keybinds': (
+      'keybindContainer': 'container_f89b2c',
+      'recorderContainer': 'recorderContainer__2636e',
+      'keybindDisabled': 'containerDisabled__2636e',
+      'keybindRecording': 'recording__2636e',
+      'removeButton': 'removeKeybind__740f2',
+      'default': 'defaultKeybind__740f2',
+      'defaultgroup': 'defaultKeybindGroup__740f2',
+      'groupDescription': 'defaultKeybindGroupDescription__740f2',
+      'groupHeader': 'defaultKeybindGroupHeader__740f2',
+      'groupWithDescription': 'defaultKeybindGroupWithDescription__740f2',
+      'shortcutGroup': 'defaultKeybindShortcutGroup__740f2',
+    ),
+
     'games': (
       'notDetected': 'notDetected_cc46f0',
       'nowPlaying': 'nowPlaying_cc46f0',
@@ -4201,29 +4182,7 @@ $classes: (
       'groupCollapsedContainer': 'groupCollapsedContainer__9d98d',
       'groupContainer': 'groupContainer__9d98d'
     ),
-
-    'userSettingsKeybindContainer': 'container_f89b2c',
-    'userSettingsKeybindDisabled': 'containerDisabled__2636e',
-    'userSettingsKeybindRecording': 'recording__2636e',
   ),
-  // subset of userSettings
-  'appSettings': (
-      'soundRow': 'soundRow__6d8e5',
-      'soundRowDividerDefault': 'dividerDefault__0d850',
-
-      'keybindDefault': 'defaultKeybind__740f2',
-      'keybindCard': 'card_b846e5',
-      'keybindGroup': 'defaultKeybindGroup__740f2',
-      'keybindGroupDescription': 'defaultKeybindGroupDescription__740f2',
-      'keybindGroupHeader': 'defaultKeybindGroupHeader__740f2',
-      'keybindGroupWithDescription': 'defaultKeybindGroupWithDescription__740f2',
-      'keybindShortcutGroup': 'defaultKeybindShortcutGroup__740f2',
-      'keybindRemove': 'removeKeybind__740f2',
-
-      
-
-      'contentTransitionWrap': 'contentTransitionWrap__23e6b',
-    ),
 
   'channelSettings': (
     'category': 'category__3ddc0',
@@ -4271,6 +4230,182 @@ $classes: (
       'webhookCard': 'card_eafb9c',
       'webhookAvatarUploader': 'avatarUploaderInner_eafb9c',
     ),
+  ),
+
+  'guildSettings': (
+    'profile': (
+      'bannergrid': 'grid_ec9088',
+      'bannerContainer': 'itemContainer_ec9088',
+      'bannerSelected': 'itemSelected_ec9088',
+
+      'traitsGrid': 'grid__4cbea',
+      'traitContainer': 'traitContainer__4cbea',
+      'traitEmoji': 'emojiWrapper__4cbea',
+      'traitInput': 'traitInput__4cbea',
+    ),
+
+    'emoji': (
+      'row': 'emojiRow_e7d73e',
+      'aliasPlaceholder': 'emojiAliasPlaceholder_e7d73e',
+      'aliasInput': 'emojiAliasInput_e7d73e',
+      'input': 'emojiInput_e7d73e',
+      'removeButton': 'emojiRemove_e7d73e',
+    ),
+
+    'members': (
+      'header': 'header_fa2640',
+      'bannerContainer': 'bannerContainer__71cd5',
+      'maintableContainer': 'mainTableContainer_fa2640',
+    ),
+
+    'roles': (
+      'container': 'contentColumnMinimal__23e6b',
+      'defaultPermsContainer': 'container_d8f25b',
+      'defaultPermsIcon': 'icon_d8f25b',
+      'row': 'roleRow__5f97b',
+      'rowDisableHover': 'roleRowDisableHover__5f97b',
+      'circleButton': 'circleButton__5f97b',
+      'editButton': 'editButton__5f97b',
+      // below "role"s are shown by clicking edit
+      'roleSidebar': 'sidebar_e29cd7',
+      'roleTitleContainer': 'titleContainer_e29cd7',
+      'roleContentContainer': 'contentContainer__91dc3',
+      'roleHeader': 'header_c6bf1b',
+      'roleHeaderStickyElevated': 'stickyHeaderElevated_c6bf1b',
+      'roleHeaderSticky': 'stickyHeader_c6bf1b',
+      'rolePreviewContainer': 'previewContainer__05e8e',
+    ),
+
+    'access': (
+      'joinOptions': 'joinOptions__959cb',
+      'joinOptionContent': 'joinOptionContent__959cb',
+      'joinOptionActive': 'active__959cb',
+    ),
+
+    'audit': (
+      'log': 'auditLog__43dab',
+      'header': 'header__43dab',
+      'headerExpanded': 'headerExpanded__43dab',
+      'divider': 'divider__43dab',
+      'changeDetails': 'changeDetails__43dab',
+    ),
+
+    'bans': (
+      'scrollerContainer': 'scrollerContainer_cdb2b0',
+      'bannedUser': 'bannedUser_cdb2b0',
+    ),
+
+    'template': (      
+      'descriptionBox': 'descriptionBox__981f7',
+      'descriptionIcon': 'descriptionIcon__981f7',
+    ),
+
+    'guildSettingsRoleViewAsDropdown': 'container__09ccc',
+
+    'guildSettingsStickersUploadCard': 'wrapper__83b1d',
+    'guildSettingsStickersTierLock': 'tierLock_f15dca',
+
+    'guildSettingsSafetyChangeLog': 'changelog_abe1fa',
+    'guildSettingsSafetyChecklist': 'safetyChecklist_eae0ef',
+    'guildSettingsSafetyPill': 'valuePill__5dac8',
+    'guildSettingsSafetyItemWrapper': 'simpleItemWrapper__5dac8',
+    'guildSettingsCommunityUpsell': 'upsellContainer__4cfe2',
+    'guildSettingsCommunityUpsellFooter': 'upsellFooter__4cfe2',
+    'guildSettingsInsightsAnalyticsCard': 'analyticsCard__5931c',
+    'guildSettingsInsightsNotEnoughMembers': 'notEnoughMembersError_bf485f',
+    'guildSettingsInsightsMemberInsights': 'memberInsightsContainer_cfaf72',
+    'guildSettingsInsightsActions': 'insightsActions_cfaf72',
+    'guildSettingsDiscoveryChecklist': 'checklist__5afba',
+    'guildSettingsDiscoveryHeader': 'header__812a7',
+    'guildSettingsDiscoverySeparator': 'separator__812a7',
+    'guildSettingsWelcomeEnable': 'enableContainer__5ea8c',
+    'guildSettingsWelcomePreview': 'previewContainer__5579e',
+    'guildSettingsWelcomeEditCircle': 'editCircle__5ea8c',
+    'guildSettingsWelcomeChannel': 'welcomeChannel__5579e',
+    'guildSettingsWelcomeChannelIcon': 'channelIcon__5579e',
+    'guildSettingsBoostBackground': 'background_c44edb',
+    'guildSettingsBoostTierInProgress': 'tierInProgress_c44edb',
+    'guildSettingsBoostTierLocked': 'tierHeaderLocked_f15dca',
+    'guildSettingsBoostTierUnlocked': 'tierHeaderUnlocked_f15dca',
+    'guildSettingsBoostTierBody': 'tierBody_f15dca',
+    'automodBadge': 'textBadge__0034b',
+    'automodEditCard': 'editCard_a25a68',
+    'automodEditCardToggled': 'toggled_a25a68',
+    'automodRuleIconContainer': 'ruleIconContainer_c5e6a1',
+    'automodRuleIcon': 'ruleIcon_c5e6a1',
+    'automodActionTag': 'actionContainer_bc4513',
+    'automodActionIcon': 'actionIcon_bc4513',
+    'automodActionText': 'actionTextHeader_bc4513',
+    'automodStepIcon': 'stepCountIcon_b6c6eb',
+    'automodStepperCOntainer': 'stepperContainer_ed9c90',
+    'automodContentCard': 'mentionLimitContainer_ed9c90' 'keywordListContainer__09e76' 'actionContainer__6446f',
+    'automodCollapseableHeaderContainer': 'container_e5c5d5',
+    'automodCollapseableHeaderClickable': 'clickableContainer_e5c5d5',
+    'automodCollapsedContainer': 'groupCollapsedContainer_b6a9f9',
+    'automodCollapseablePointer': 'pointer_b6a9f9',
+    'automodCollapseableRadioBackground': 'backgroundModifierContainer_e5c5d5',
+    'automodCollapseableRadioSelected': 'selected_e5c5d5',
+    'automodKeywordsTextArea': 'keywordsTextArea__6a631',
+    'automodRegexTextArea': 'textArea_c615b7',
+    'guildSettingsOnboardingTestimonialContainer': 'testimonialHeroContainer__3e7e2',
+    'guildSettingsOnboardingTestimonialQuotes': 'quotes__3e7e2',
+    'guildSettingsOnboardingTestimonial': 'testimonial__3e7e2',
+    'guildSettingsOnboardingUpsell': 'upsellPreview_d9161f',
+    'guildSettingsOnboardingUpsellList': 'previewListItem_d9161f',
+    'guildSettingsOnboardingUpsellListSelected': 'selected_d9161f',
+    'guildSettingsOnboardingUpsellCheckboxCircle': 'checkboxCircle_d9161f',
+    'guildSettingsOnboardingUpsellCheckbox': 'checkbox_d9161f',
+    'onboardingEduPopout': 'educationUpsell__4a4f2',
+    'onboardingEduPopoutArrow': 'educationUpsellArrow__4a4f2',
+    'onboardingProgressBarContainer': 'progressBarContainer__008b2',
+    'onboardingProgressBar': 'progressBar__008b2',
+    'onboardingProgressBarCurrent': 'progressBarCurrent__008b2',
+    'onboardingFooterContainer': 'container__4a4f2',
+    'onboardingChannelRow': 'channelRow__1ea09',
+    'onboardingChannelRowDisabled': 'disabled__1ea09',
+    'onboardingChannelRowSeparator': 'separator__1ea09',
+    'onboardingChannelListHeader': 'header__75906',
+    'onboardingChannelListHeaderContainer': 'container_e9b3cb',
+    'onboardingChannelListProgressBar': 'progressBar__58525',
+    'onboardingChannelListProgressIcon': 'icon_e9b3cb',
+    'onboardingChannelList': 'channelList__75906',
+    'onboardingChannelChattableIndicator': 'chattableIndicator__75906',
+    'onboardingChannelCoverage': 'channelCoverage_e34850',
+    'onboardingChannelCoverageProgress': 'coverageProgress_e34850',
+    'onboardingChannelCoverageDetails': 'channelCoverageDetails_e34850',
+    'onboardingChannelCoveragePill': 'channelPill_e34850',
+    'onboardingAddQuestion': 'addPrompt_e34850',
+    'onboardingAddQuestionIcon': 'plusIcon_e34850',
+    'onboardingQuestionContainer': 'container__5d756',
+    'onboardingQuestionExample': 'example__5d756',
+    'onboardingActionExampleBadIcon': 'badExampleIcon_d2b0e4',
+    'onboardingActionItem': 'actionItem_d2b0e4',
+    'onboardingResourceChannel': 'resourceChannel_d2b0e4',
+    'onboardingActionItemIcon': 'actionItemEmojiWrapper_d2b0e4',
+    'onboardingActionAdd': 'addActionItem_d2b0e4',
+    'onboardingActionPreviewPill': 'pillContainer__9e06a',
+    'onboardingActionPreviewPillSelected': 'pillItemSelected__9e06a',
+    'onboardingReviewHeader': 'reviewHeader_a9b452',
+    'onboardingReviewStepContainer': 'onboardingStepContainer__28e57',
+    'onboardingReviewIconContainer': 'iconContainer__28e57',
+    'onboardingReviewIcon': 'channelIcon__28e57',
+    'onboardingRecommendedDefaultChannels': 'channelRow__514d8',
+    'onboardingChannelPermissionsItems': 'selectableChannelRow_e6fa8e',
+    'onboardingChannelPermissionsMenu': 'deprivateTableBody_e6fa8e',
+    'onboardingRecommendedReadOnly': 'suggestedChannels_d2b0e4',
+    'onboardingPickAnEmoji': 'container_cd2100',
+    'guildSettingsSubsCard': 'card_ea91d1',
+    'guildSettingsSubsStepsContainer': 'howItWorksContainer_aa72d6',
+    'guildSettingsSubsStepsImageContainer': 'howItWorksImageContainer_aa72d6',
+    'guildSettingsSubsEarningsPreviewContainer': 'earningsPreviewContainer_da92c3',
+    'guildSettingsSubsAvatarCard': 'avatarCard_da92c3',
+    'guildSettingsSubsEmojisContainer': 'emojisContainer_adff39',
+    'guildSettingsSubsViewServerButton': 'viewServerButton_adff39',
+
+
+    'enableCommunityFeatureCard': 'featureCard_bebc5b',
+    'enableCommunityFeatureIcon': 'featureIcon_bebc5b',
+    'enableCommunityGuildDetails': 'guildDetails_bebc5b',
   ),
 
   'popouts': (
@@ -4662,7 +4797,6 @@ $classes: (
         'results': 'results__2dc39',
         'noResultsWrapper': 'wrapper__29ebd',
         'sadImage': 'sadImage__29ebd',
-
         // search "hentai" or something
         // shown in favourites when they're empty or something. i used a plugin that allowed for searching and it brought these up.
         'emptyHintCard': 'emptyHintCard__2dc39',
@@ -4749,6 +4883,147 @@ $classes: (
         'itemClickable': 'clickable__761e5',
         'itemDivider': 'underline__761e5',
       ),
+    ),
+
+    // In voice call, open up the sound board
+    'soundboard': (
+      'picker': 'picker__09f65',
+      'refresh': 'refresh__09f65',
+      // less compact version, appears to be the "new" version that is being used.
+      'header': 'header__0856d',
+      'searchWrapper': 'wrapper__0d1ef',
+      'volumeClickArea': 'settingsClickArea__61424',
+      'volumeIcon': 'settingsIcon__61424',
+
+      'categoryList': 'categoryList_a1e0e0',
+      // sidebar uses `modals sidebarList wrapper` too
+      'category': 'category_a1e0e0',
+      // individual server or default discord sounds
+      'categoryIcon': 'categoryIcon_a1e0e0',
+      // default discord sounds
+      'categoryIconIcon': 'categoryIconIcon_a1e0e0',
+      // wonderful name, discord. child is path[class=""]
+      'categorySelected': 'selected_a1e0e0',
+      // used for icon-based ones when selected
+      
+      'listWrapper': 'listWrapper__0856d',
+      // wrapper to the wrapper
+      'wrapper': 'wrapper__0c74f',
+      // wrapper to the scroller
+      // scroller uses the same `modals sidebarList scroller` weirdly enough
+      'section': (
+        // used for each category **HEADER**
+        'container': 'sectionContainer__61424',
+        'header': 'sectionHeader__61424',
+        // class as [aria-expanded="true"|"false"]
+        'notFirstSection': 'notFirstSectionHeader__61424',
+        'content': 'sectionHeaderContent__61424',
+        'title': 'sectionTitle__61424',
+        'icon': 'headerIcon__61424',
+      ),
+      'sound': (
+        // and now for the rows
+        'row': 'soundRow__61424',
+        'button': (
+          'wrapper': 'soundButtonWrapper__58c6c',
+          'button': 'soundButton__6d4ed' 'soundButtonRefresh__6d4ed',
+          'interactive': 'soundButtonInteractive__6d4ed' 'soundButtonInteractiveRefresh__6d4ed',
+          // :hover on this to show overlay
+          'focused': 'focused__6d4ed',
+          // arrow keys to navigate work
+          'hoverActiveBackground': 'hoverActiveBackground__6d4ed',
+          'name': 'soundName__6d4ed' 'soundNameRefresh__6d4ed',
+
+          'overlay': 'buttonOverlay__6d4ed',
+          'overlayBackground': 'buttonOverlayBackground__6d4ed',
+          // never appears in refresh
+          'overlayActions': 'buttonOverlayActions__6d4ed' 'buttonOverlayActionsRefresh__6d4ed',
+          'absoluteFill': 'absoluteFill__6d4ed',
+          // position absolute; top,left,right,bottom 0
+        ),
+        'primaryIcon': 'primaryIcon__6d4ed' 'primaryIconRefresh__6d4ed',
+        // only on refresh for nitro locked
+        'lockIcon': 'lockIcon__6d4ed',
+        // only on refresh for nitro locked without emoji
+        'secondary': (
+          // action buttons. "play", "favourite" etc
+          'button': 'secondaryButton__6d4ed' 'secondaryButtonRefresh__6d4ed',
+          'icon': 'secondaryIcon__6d4ed',
+          'favourite': 'favoriteIconFavorite__6d4ed',
+          // only shows up when sound is favourited
+        ),
+        'animated': 'animated__6d4ed',
+        'playing': 'playing__6d4ed',
+        'previewing': 'previewing__6d4ed',
+        'info': 'soundInfo__6d4ed' 'soundInfoRefresh__6d4ed',
+        'emoji': (
+          'hasEmoji': 'hasEmoji__6d4ed',
+          'circle': 'emojiCircle__6d4ed',
+          'emoji': 'emoji__6d4ed',
+        ),
+        'add': (
+          'button': 'soundAddButton__58c6c' 'soundAddButtonRefresh__58c6c',
+          'info': 'soundAddInfoRefresh__58c6c',
+          // only appears in refresh
+          'icon': 'soundAddIcon__58c6c' 'soundAddIconRefresh__58c6c',
+          'text': 'soundAddText_c06ee5' 'soundAddTextRefresh__58c6c',
+        ),
+      ),
+      'nitro': (
+        // because not everyone has nitro
+        'topDivider': (
+          'container': 'nitroTopDividerContainer_b3fb5f',
+          'upper': 'nitroTopDividerUpper_b3fb5f',
+          'shadow': 'nitroTopDividerShadow_b3fb5f',
+          'lock': (
+            'container': 'nitroTopDividerLockContainer_b3fb5f',
+            'border': 'nitroTopDividerLockBorder_b3fb5f',
+            // "left" line
+            'circle': 'nitroTopDividerLockCircle_b3fb5f',
+            // > svg > path[fill]
+            'borderReversed': 'nitroTopDividerLockBorderReversed_b3fb5f',
+            // "right" line
+          ),
+          'lower': 'nitroTopDividerLower_b3fb5f',
+        ),
+        'sectionLocked': 'sectionContainerNitroLocked__61424',
+        // on section/header. has background
+        'rowLocked': 'soundRowNitroLocked__61424',
+        // on row. has background like section/header
+        'premiumDisabled': 'premiumDisabledRefresh__6d4ed',
+
+        // only appears in refresh. on button. hover this also gives emojiCircle background gradient
+        'upsell': (
+          // floating thing at bottom that shows up when scrolling
+          'container': 'upsellContainer__0b69f',
+          // has inline style for transform: translateY(0-120%);opacity: 0-1;
+          'shadow': 'upsellContainerShadow__0b69f',
+          'innerFloating': 'upsellContainerFloating__0b69f',
+          'text': 'upsellText__0b69f',
+          'button': 'upsellButton__0b69f'
+        ),
+
+        'cta': (
+          // large container that appears when clicking sound from outside server without nitro
+          // "Express yourself with more sounds"
+          'container': 'container_d829e7',
+          'noParentContainer': 'noParentContainer_d829e7',
+          'close': 'closeButton_d829e7',
+          'contentContainer': 'contentContainer_d829e7',
+          'image': 'image_d829e7',
+          'title': 'title_d829e7',
+          'titleNoSocialProof': 'titleNoSocialProof_d829e7',
+          'body': 'body_d829e7',
+
+          // footer equiv
+          'ctaContainer': 'ctaContainer_d829e7',
+          'secondaryCTA': 'secondaryCTA_d829e7',
+          // "View All Nitro Perks"
+            // the right button does not have a dedicated class
+        ),
+      ),
+
+      'keybindHint': 'keybindHint__46002',
     ),
 
     'pins': (
@@ -5718,150 +5993,6 @@ $classes: (
         // parent to actionButtonInner
         'actionButtonInner': 'actionButtonInner_cc1819',
       ),
-
-    // In voice call, open up the sound board
-    'soundboard': (
-        'modal': 'picker__09f65',
-        'refresh': 'refresh__09f65',
-
-        // less compact version, appears to be the "new" version that is being used.
-        'header': 'header__0856d',
-        'searchWrapper': 'wrapper__0d1ef',
-        'volumeClickArea': 'settingsClickArea__61424',
-        'volumeIcon': 'settingsIcon__61424',
-
-        // clicking pops out a menu using `modals menu menu`
-        'categoryList': 'categoryList_a1e0e0',
-        // sidebar uses `modals sidebarList wrapper` too
-        'category': 'category_a1e0e0',
-        // individual server or default discord sounds
-        'categoryIcon': 'categoryIcon_a1e0e0',
-        // default discord sounds
-        'categoryIconIcon': 'categoryIconIcon_a1e0e0',
-        // wonderful name, discord. child is path[class=""]
-        'categorySelected': 'selected_a1e0e0',
-
-        // used for icon-based ones when selected
-        'gridNoticeWrapper': 'gridNoticeWrapper__0856d',
-        // appears to be empty, may house something in the future?
-        'listWrapper': 'listWrapper__0856d',
-        // wrapper to the wrapper
-        'wrapper': 'wrapper__0c74f',
-        // wrapper to the scroller
-        // scroller uses the same `modals sidebarList scroller` weirdly enough
-        'section': (
-            // used for each category **HEADER**
-            'container': 'sectionContainer__61424',
-            'header': 'sectionHeader__61424',
-            // class as [aria-expanded="true"|"false"]
-            'notFirstSection': 'notFirstSectionHeader__61424',
-            'content': 'sectionHeaderContent__61424',
-            'title': 'sectionTitle__61424',
-            'icon': 'headerIcon__61424',
-          ),
-        'sound': (
-          // and now for the rows
-          'row': 'soundRow__61424',
-          'button': (
-            'button': 'soundButton__6d4ed' 'soundButtonRefresh__6d4ed',
-            'wrapper': 'soundButtonWrapper__58c6c',
-            'interactive': 'soundButtonInteractive__6d4ed' 'soundButtonInteractiveRefresh__6d4ed',
-            // :hover on this to show overlay
-            'name': 'soundName__6d4ed' 'soundNameRefresh__6d4ed',
-
-            'overlay': 'buttonOverlay__6d4ed',
-            'overlayBackground': 'buttonOverlayBackground__6d4ed',
-            // never appears in refresh
-            'overlayActions': 'buttonOverlayActions__6d4ed' 'buttonOverlayActionsRefresh__6d4ed',
-            'absoluteFill': 'absoluteFill__6d4ed',
-            // position absolute; top,left,right,bottom 0
-          ),
-          'primaryIcon': 'primaryIcon__6d4ed' 'primaryIconRefresh__6d4ed',
-          // only on refresh for nitro locked
-          'lockIcon': 'lockIcon__6d4ed',
-          // only on refresh for nitro locked without emoji
-          'secondary': (
-              // action buttons. "play", "favourite" etc
-              'button': 'secondaryButton__6d4ed' 'secondaryButtonRefresh__6d4ed',
-              'icon': 'secondaryIcon__6d4ed',
-              'favourite': 'favoriteIconFavorite__6d4ed',
-              // only shows up when sound is favourited
-            ),
-          'focused': 'focused__6d4ed',
-          // arrow keys to navigate work
-          'animated': 'animated__6d4ed',
-          'playing': 'playing__6d4ed',
-          'previewing': 'previewing__6d4ed',
-          'info': 'soundInfo__6d4ed' 'soundInfoRefresh__6d4ed',
-          'emoji': (
-            'hasEmoji': 'hasEmoji__6d4ed',
-            'circle': 'emojiCircle__6d4ed',
-            'emoji': 'emoji__6d4ed',
-          ),
-          'add': (
-            'button': 'soundAddButton__58c6c' 'soundAddButtonRefresh__58c6c',
-            'info': 'soundAddInfoRefresh__58c6c',
-            // only appears in refresh
-            'icon': 'soundAddIcon__58c6c' 'soundAddIconRefresh__58c6c',
-            'text': 'soundAddText_c06ee5' 'soundAddTextRefresh__58c6c',
-          ),
-        ),
-        'nitro': (
-          // because not everyone has nitro
-          'topDivider': (
-              'container': 'nitroTopDividerContainer_b3fb5f',
-              'upper': 'nitroTopDividerUpper_b3fb5f',
-              'shadow': 'nitroTopDividerShadow_b3fb5f',
-              'lock': (
-                'container': 'nitroTopDividerLockContainer_b3fb5f',
-                'border': 'nitroTopDividerLockBorder_b3fb5f',
-                // "left" line
-                'circle': 'nitroTopDividerLockCircle_b3fb5f',
-                // > svg > path[fill]
-                'borderReversed': 'nitroTopDividerLockBorderReversed_b3fb5f',
-                // "right" line
-              ),
-              'lower': 'nitroTopDividerLower_b3fb5f',
-            ),
-          'sectionLocked': 'sectionContainerNitroLocked__61424',
-          // on section/header. has background
-          'rowLocked': 'soundRowNitroLocked__61424',
-          // on row. has background like section/header
-          'premiumDisabled': 'premiumDisabledRefresh__6d4ed',
-
-          // only appears in refresh. on button. hover this also gives emojiCircle background gradient
-          'upsell': (
-              // floating thing at bottom that shows up when scrolling
-              'container': 'upsellContainer__0b69f',
-              // has inline style for transform: translateY(0-120%);opacity: 0-1;
-              'shadow': 'upsellContainerShadow__0b69f',
-              'innerFloating': 'upsellContainerFloating__0b69f',
-              'text': 'upsellText__0b69f',
-              'button': 'upsellButton__0b69f'
-            ),
-
-          'cta': (
-            // large container that appears when clicking sound from outside server without nitro
-            // "Express yourself with more sounds"
-            'container': 'container_d829e7',
-            'noParentContainer': 'noParentContainer_d829e7',
-            'close': 'closeButton_d829e7',
-            'contentContainer': 'contentContainer_d829e7',
-            'image': 'image_d829e7',
-            'title': 'title_d829e7',
-            'titleNoSocialProof': 'titleNoSocialProof_d829e7',
-            'body': 'body_d829e7',
-
-            // footer equiv
-            'ctaContainer': 'ctaContainer_d829e7',
-            'secondaryCTA': 'secondaryCTA_d829e7',
-            // "View All Nitro Perks"
-             // the right button does not have a dedicated class
-          ),
-        ),
-
-        'keybindHint': 'keybindHint__46002',
-      ),
   ),
   // holy shit end of modals
   // Client Mods
@@ -6676,117 +6807,6 @@ $classes: (
           'settingsImageUploaderIcon': 'imageUploaderIcon_e4d0bf',
           'settingsAttendeeCTA': 'attendeeCTA_ca5ce6',
           'guildFeatureAvailabilityIndicator': 'availabilityIndicator__40463',
-          'guildSettingsMembersMoved': 'movedTable_dd2627',
-          'guildSettingsShowMembersInChannelList': 'bannerContainer__71cd5',
-          'guildSettingsRoleList': 'list_e29cd7',
-          'guildSettingsRoleListRow': 'row_e29cd7',
-          'guildSettingsRoleViewAsDropdown': 'container__09ccc',
-          'guildSettingsEmojiRemove': 'emojiRemove_e7d73e',
-          'guildSettingsStickersUploadCard': 'wrapper__83b1d',
-          'guildSettingsStickersTierLock': 'tierLock_f15dca',
-          'guildSettingsSafetyChangeLog': 'changelog_abe1fa',
-          'guildSettingsSafetyChecklist': 'safetyChecklist_eae0ef',
-          'guildSettingsSafetyPill': 'valuePill__5dac8',
-          'guildSettingsBanContainer': 'scrollerContainer_cdb2b0',
-          'guildSettingsBannedUser': 'bannedUser_cdb2b0',
-          'guildSettingsSafetyItemWrapper': 'simpleItemWrapper__5dac8',
-          'guildSettingsCommunityUpsell': 'upsellContainer__4cfe2',
-          'guildSettingsCommunityUpsellFooter': 'upsellFooter__4cfe2',
-          'guildSettingsInsightsAnalyticsCard': 'analyticsCard__5931c',
-          'guildSettingsInsightsNotEnoughMembers': 'notEnoughMembersError_bf485f',
-          'guildSettingsInsightsMemberInsights': 'memberInsightsContainer_cfaf72',
-          'guildSettingsInsightsActions': 'insightsActions_cfaf72',
-          'guildSettingsDiscoveryChecklist': 'checklist__5afba',
-          'guildSettingsDiscoveryHeader': 'header__812a7',
-          'guildSettingsDiscoverySeparator': 'separator__812a7',
-          'guildSettingsWelcomeEnable': 'enableContainer__5ea8c',
-          'guildSettingsWelcomePreview': 'previewContainer__5579e',
-          'guildSettingsWelcomeEditCircle': 'editCircle__5ea8c',
-          'guildSettingsWelcomeChannel': 'welcomeChannel__5579e',
-          'guildSettingsWelcomeChannelIcon': 'channelIcon__5579e',
-          'guildSettingsBoostBackground': 'background_c44edb',
-          'guildSettingsBoostTierInProgress': 'tierInProgress_c44edb',
-          'guildSettingsBoostTierLocked': 'tierHeaderLocked_f15dca',
-          'guildSettingsBoostTierUnlocked': 'tierHeaderUnlocked_f15dca',
-          'guildSettingsBoostTierBody': 'tierBody_f15dca',
-          'automodBadge': 'textBadge__0034b',
-          'automodEditCard': 'editCard_a25a68',
-          'automodEditCardToggled': 'toggled_a25a68',
-          'automodRuleIconContainer': 'ruleIconContainer_c5e6a1',
-          'automodRuleIcon': 'ruleIcon_c5e6a1',
-          'automodActionTag': 'actionContainer_bc4513',
-          'automodActionIcon': 'actionIcon_bc4513',
-          'automodActionText': 'actionTextHeader_bc4513',
-          'automodStepIcon': 'stepCountIcon_b6c6eb',
-          'automodStepperCOntainer': 'stepperContainer_ed9c90',
-          'automodContentCard': 'mentionLimitContainer_ed9c90' 'keywordListContainer__09e76' 'actionContainer__6446f',
-          'automodCollapseableHeaderContainer': 'container_e5c5d5',
-          'automodCollapseableHeaderClickable': 'clickableContainer_e5c5d5',
-          'automodCollapsedContainer': 'groupCollapsedContainer_b6a9f9',
-          'automodCollapseablePointer': 'pointer_b6a9f9',
-          'automodCollapseableRadioBackground': 'backgroundModifierContainer_e5c5d5',
-          'automodCollapseableRadioSelected': 'selected_e5c5d5',
-          'automodKeywordsTextArea': 'keywordsTextArea__6a631',
-          'automodRegexTextArea': 'textArea_c615b7',
-          'guildSettingsAuditLog': 'auditLog__43dab',
-          'guildSettingsAuditHeader': 'header__43dab',
-          'guildSettingsAuditHeaderExpanded': 'headerExpanded__43dab',
-          'guildSettingsAuditDivider': 'divider__43dab',
-          'guildSettingsAuditChangeDetails': 'changeDetails__43dab',
-          'guildSettingsOnboardingTestimonialContainer': 'testimonialHeroContainer__3e7e2',
-          'guildSettingsOnboardingTestimonialQuotes': 'quotes__3e7e2',
-          'guildSettingsOnboardingTestimonial': 'testimonial__3e7e2',
-          'guildSettingsOnboardingUpsell': 'upsellPreview_d9161f',
-          'guildSettingsOnboardingUpsellList': 'previewListItem_d9161f',
-          'guildSettingsOnboardingUpsellListSelected': 'selected_d9161f',
-          'guildSettingsOnboardingUpsellCheckboxCircle': 'checkboxCircle_d9161f',
-          'guildSettingsOnboardingUpsellCheckbox': 'checkbox_d9161f',
-          'onboardingEduPopout': 'educationUpsell__4a4f2',
-          'onboardingEduPopoutArrow': 'educationUpsellArrow__4a4f2',
-          'onboardingProgressBarContainer': 'progressBarContainer__008b2',
-          'onboardingProgressBar': 'progressBar__008b2',
-          'onboardingProgressBarCurrent': 'progressBarCurrent__008b2',
-          'onboardingFooterContainer': 'container__4a4f2',
-          'onboardingChannelRow': 'channelRow__1ea09',
-          'onboardingChannelRowDisabled': 'disabled__1ea09',
-          'onboardingChannelRowSeparator': 'separator__1ea09',
-          'onboardingChannelListHeader': 'header__75906',
-          'onboardingChannelListHeaderContainer': 'container_e9b3cb',
-          'onboardingChannelListProgressBar': 'progressBar__58525',
-          'onboardingChannelListProgressIcon': 'icon_e9b3cb',
-          'onboardingChannelList': 'channelList__75906',
-          'onboardingChannelChattableIndicator': 'chattableIndicator__75906',
-          'onboardingChannelCoverage': 'channelCoverage_e34850',
-          'onboardingChannelCoverageProgress': 'coverageProgress_e34850',
-          'onboardingChannelCoverageDetails': 'channelCoverageDetails_e34850',
-          'onboardingChannelCoveragePill': 'channelPill_e34850',
-          'onboardingAddQuestion': 'addPrompt_e34850',
-          'onboardingAddQuestionIcon': 'plusIcon_e34850',
-          'onboardingQuestionContainer': 'container__5d756',
-          'onboardingQuestionExample': 'example__5d756',
-          'onboardingActionExampleBadIcon': 'badExampleIcon_d2b0e4',
-          'onboardingActionItem': 'actionItem_d2b0e4',
-          'onboardingResourceChannel': 'resourceChannel_d2b0e4',
-          'onboardingActionItemIcon': 'actionItemEmojiWrapper_d2b0e4',
-          'onboardingActionAdd': 'addActionItem_d2b0e4',
-          'onboardingActionPreviewPill': 'pillContainer__9e06a',
-          'onboardingActionPreviewPillSelected': 'pillItemSelected__9e06a',
-          'onboardingReviewHeader': 'reviewHeader_a9b452',
-          'onboardingReviewStepContainer': 'onboardingStepContainer__28e57',
-          'onboardingReviewIconContainer': 'iconContainer__28e57',
-          'onboardingReviewIcon': 'channelIcon__28e57',
-          'onboardingRecommendedDefaultChannels': 'channelRow__514d8',
-          'onboardingChannelPermissionsItems': 'selectableChannelRow_e6fa8e',
-          'onboardingChannelPermissionsMenu': 'deprivateTableBody_e6fa8e',
-          'onboardingRecommendedReadOnly': 'suggestedChannels_d2b0e4',
-          'onboardingPickAnEmoji': 'container_cd2100',
-          'guildSettingsSubsCard': 'card_ea91d1',
-          'guildSettingsSubsStepsContainer': 'howItWorksContainer_aa72d6',
-          'guildSettingsSubsStepsImageContainer': 'howItWorksImageContainer_aa72d6',
-          'guildSettingsSubsEarningsPreviewContainer': 'earningsPreviewContainer_da92c3',
-          'guildSettingsSubsAvatarCard': 'avatarCard_da92c3',
-          'guildSettingsSubsEmojisContainer': 'emojisContainer_adff39',
-          'guildSettingsSubsViewServerButton': 'viewServerButton_adff39',
           'botTag': 'botTag__82f07',
           'botTagInvert': 'botTagInvert__82f07',
           'loading': 'loading__6ef4d',

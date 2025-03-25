@@ -186,8 +186,10 @@
   background: cv('shading.popout');
   box-shadow: none;
 }
-#{c(userSettings games game)} {
-  box-shadow: 0 1px 0 0 cv('shading.hover');
+:is(#{c(main themeLight)}, html:not(#{c(main themeDark)})) {
+  #{c(userSettings games game)} {
+    box-shadow: 0 1px 0 0 cv('shading.hover');
+  }
 }
 
 // OVERLAY
