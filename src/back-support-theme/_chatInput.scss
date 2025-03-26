@@ -3,7 +3,7 @@
 #{c(chatForm form)} {
   margin-top: 0;
 }
-:where(html:not(#{c(main visualRefreshChatInput)})) {
+#{c(main visualRefresh)} {
   #{c(chatForm channelTextArea)} {
     background-color: var(--input-background);
     border-color: transparent;
@@ -14,13 +14,16 @@
     }
   }
   #{c(chatForm stackedBars)},
-  #{c(chatForm replyBar)},
+  #{c(chatForm attachmentArea)} {
+    background: transparent;
+  }
+  #{c(chatForm upload)} {
+    background: cv('shading.card');
+    border: none;
+  }
+}
   #{c(chatForm threadSuggestionBar)},
   #{c(chatForm themedBackground)} {
     background: transparent;
   }
 
-  #{c(chatForm appsButton)} {
-    background: cv('shading.card');
-  }
-}
