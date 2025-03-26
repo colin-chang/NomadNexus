@@ -3,16 +3,18 @@
 #{c(popouts autocomplete popout)} {
   background: cv('shading.popout');
   box-shadow: none;
-  #{c(popouts autocomplete clickable)} {
+}
+#{c(popouts autocomplete clickable)} {
+  &[aria-disabled=false] {
     #{c(popouts autocomplete base)} {
       &:hover {
-        background: cv('shading.hover');
-      }
-    }
-    &[aria-selected='true'] {
-      #{c(popouts autocomplete base)} {
         background: cv('color.hover');
       }
+    }
+  }
+  &[aria-selected='true'] {
+    #{c(popouts autocomplete base)} {
+      background: cv('color.hover');
     }
   }
 }
@@ -22,7 +24,7 @@
 }
 
 // SLASH COMMANDS CATEGORIES
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(popouts autocomplete railWrapper)} {
     background: transparent;
   }

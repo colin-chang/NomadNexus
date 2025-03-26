@@ -1,6 +1,6 @@
 @use 'backend' as *;
 
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(memberList container)} {
     background: none;
     border: none;
@@ -45,7 +45,7 @@
 }
 
 // ACTIVITY
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(memberList activityContainer)} {
     background: cv('shading.card');
     border-radius: 8px;

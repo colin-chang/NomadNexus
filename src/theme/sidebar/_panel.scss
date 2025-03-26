@@ -1,12 +1,12 @@
 @use 'backend' as *;
 
 // ACCOUNT PANEL
-:is(#{c(main visualRefresh)}) {
+#{c(main visualRefresh)} {
   #{c(sidebar panel panels)} {
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.6));
     border-radius: 0;
     border: none;
-    width: var(--custom-guild-sidebar-width);
+    width: 100%;
     left: 0;
     bottom: 0;
   }

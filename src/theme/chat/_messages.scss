@@ -11,7 +11,7 @@
 }
 
 // CODEBLOCK
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(chat markup)}{
     code {
       background: cv('shading.card');
@@ -111,7 +111,7 @@
 }
 
 // EMBEDS
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(embeds embedFull)} {
     background: cv('shading.card');
     border-top: none;

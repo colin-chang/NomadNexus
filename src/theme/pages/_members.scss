@@ -1,6 +1,6 @@
 @use 'backend' as *;
 
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(membersPage page)} {
     background: transparent !important; // discord styles has !important
   }

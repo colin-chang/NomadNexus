@@ -1,6 +1,6 @@
 @use 'backend' as *;
 
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   // SIDEBAR
   #{c(discover sidebar container)} {
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.25));

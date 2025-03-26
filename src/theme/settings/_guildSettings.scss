@@ -31,7 +31,7 @@
 }
 
 // ROLES
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(guildSettings roles defaultPermsContainer)} {
     background: cv('shading.card');
     border: 2px solid transparent;
@@ -65,7 +65,7 @@
 }
 
 // AUDIT LOG
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(guildSettings audit log)} {
     background: cv('shading.card');
     border: none;

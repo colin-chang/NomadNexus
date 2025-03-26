@@ -8,7 +8,7 @@
 }
 
 // CARDS
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(serverGuide rowCard)} {
     background: cv('shading.card');
     border: cv('shading.card');

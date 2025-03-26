@@ -1,6 +1,6 @@
 @use 'backend' as *;
 
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   // HEADER
   #{c(channelsPage header header)} {
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5)) !important;

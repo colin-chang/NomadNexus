@@ -15,7 +15,7 @@
   background: transparent;
 }
 // ACCOUNT STANDING
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(userSettings account standing container)} {
     background: transparent;
   }
@@ -51,7 +51,7 @@
 }
 
 // FAMILY CENTER
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(userSettings family box)} {
     background: cv('shading.card');
     border: none;

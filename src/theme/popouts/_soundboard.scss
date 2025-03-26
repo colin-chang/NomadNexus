@@ -1,6 +1,6 @@
 @use 'backend' as *;
 
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   :is(#{c(popouts soundboard picker)}, #{c(popouts soundboard picker)}#{c(popouts soundboard refresh)}) {
     background: cv('shading.popout');
   }

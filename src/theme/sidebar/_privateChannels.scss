@@ -52,7 +52,7 @@
 }
 
 // CHANNEL CONTENT
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(sidebar private interactive)} {
     transition: all 0.15s ease-in-out;
     border-radius: 4px;

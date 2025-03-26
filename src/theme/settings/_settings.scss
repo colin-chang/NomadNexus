@@ -7,7 +7,7 @@
 #{c(settings contentRegion)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
 }
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(settings contentRegionScroller)} {
     background: transparent;
   }
@@ -17,7 +17,7 @@
 }
 
 // GUILD/CHANNELS UNSAVED CHANGES
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(settings noticeContainer)} {
     background: cv('shading.popout');
     border: none;
@@ -25,7 +25,7 @@
 }
 
 // CARD
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(settings card primary)} {
     &,
     &#{c(settings card editable)} {
@@ -41,7 +41,7 @@
 }
 
 // COLLAPSEABLE
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(settings collapseable)} {
     &,
     &:active,

@@ -1,9 +1,9 @@
 @use 'backend' as *;
 
-#{c(chatForm form)} {
-  margin-top: 0;
-}
 #{c(main visualRefresh)} {
+  #{c(chatForm form)} {
+    margin-top: 0;
+  }
   #{c(chatForm channelTextArea)} {
     background-color: var(--input-background);
     border-color: transparent;

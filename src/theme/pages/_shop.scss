@@ -5,7 +5,7 @@
 #{c(shop pageWrapper)} {
   background: transparent;
 }
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(shop shop)} {
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
   }

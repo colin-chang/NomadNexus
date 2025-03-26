@@ -21,7 +21,7 @@
 }
 
 // SEARCH
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(header searchBar)} {
     background-color: cv('shading.input.bg');
     border-color: transparent;

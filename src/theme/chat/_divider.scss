@@ -8,7 +8,7 @@
     border-color: transparent;
   }
 }
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(chat divider content)} {
     display: flex;
     flex: 1;

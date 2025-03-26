@@ -1,7 +1,7 @@
 @use 'backend' as *;
 
 // BACKGROUND
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(chat chat)} {
     background: transparent;
     &[data-has-border='true'] {
@@ -26,7 +26,7 @@
 }
 
 // TOOLBAR
-:is(#{c(main visualRefresh)}, html:not(#{c(main visualRefresh)})) {
+#{c(main visualRefresh)} {
   #{c(chat buttonWrapper)} {
     background-color: cv('shading.popout');
     border-color: cv('shading.popout');
