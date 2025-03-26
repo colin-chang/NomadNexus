@@ -1,5 +1,34 @@
 @use 'backend' as *;
 
+// OLD CHAT INPUT (TREATMENT 3)
+#{c(main visualRefresh)}:not(#{c(main visualRefreshChatInput)}) {
+  #{c(chatForm form)} {
+    margin-top: 0;
+  }
+  #{c(chatForm channelTextArea)} {
+    background-color: var(--input-background);
+    border-color: transparent;
+    box-shadow: 0 0 0 2px var(--input-border);
+    &:focus-within {
+      border-color: transparent;
+      box-shadow: 0 0 0 2px var(--hsl-main-color);
+    }
+  }
+  #{c(chatForm stackedBars)},
+  #{c(chatForm attachmentArea)} {
+    background: transparent;
+  }
+  #{c(chatForm upload)} {
+    background: cv('shading.card');
+    border: none;
+  }
+}
+#{c(chatForm threadSuggestionBar)},
+#{c(chatForm themedBackground)} {
+  background: transparent;
+}
+
+// NEW CHAT INPUT (TREATMENT 2)
 #{c(main visualRefreshChatInput)} {
   #{c(chatForm formWithLoadedChatInput)} {
     &:before {
@@ -63,14 +92,8 @@
     pointer-events: initial;
   }
 }
-#{c(main visualRefreshChatInput)} #{c(chatForm attachButton)} {
-  &::after {
-    // See "/theme/misc/_i18n.scss" for more.
-    content: var(--__i18n-attachment);
-    font-size: 1em;
-    margin-left: 0.5em;
-  }
-}
+
+// APPLIES TO BOTH
 
 // LINK
 #{c(chatForm fakeLink)} {
