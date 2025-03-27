@@ -1,7 +1,7 @@
 /**
  * @name ClearVision V7 for BetterDiscord
  * @author ClearVision Team
- * @version 7.0.0 pre
+ * @version 7.0.0
  * @description Highly customizable theme for BetterDiscord.
  * @source https://github.com/ClearVision/ClearVision-v7
  * @website https://clearvision.github.io
@@ -23,29 +23,30 @@
   --dnd-color: #982929;
   --streaming-color: #593695;
   --offline-color: #808080;
-  /* BACKGROUND IMAGES */
+  /* APP BACKGROUND */
+  --background-shading-percent: 100%;
   --background-image: url(https://clearvision.github.io/images/sapphire.jpg);
   --background-attachment: fixed;
+  --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
+  /* USER POPOUT BACKGROUND */
   --user-popout-image: var(--background-image);
   --user-popout-attachment: var(--background-attachment);
+  --user-popout-filter: var(--background-filter);
+  /* USER MODAL BACKGROUND */
   --user-modal-image: var(--background-image);
   --user-modal-attachment: var(--background-attachment);
+  --user-modal-filter: var(--background-filter);
   /* HOME ICON */
   --home-icon: url(https://clearvision.github.io/icons/discord.svg);
   /* FONTS */
   --main-font: "gg sans", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace;
-  /* BACKGROUND IMAGE FILTERS */
-  --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
-  --user-popout-filter: var(--background-filter);
-  --user-modal-filter: var(--background-filter);
 }
 
 /* THEME SPECIFIC SHADING */
 /* LIGHT THEME */
 :is(.theme-light, .theme-dark .theme-light) {
   --background-shading: rgba(252, 252, 252, 0.3);
-  --background-shading-percent: 100%;
   --card-shading: rgba(252, 252, 252, 0.3);
   --popout-shading: rgba(252, 252, 252, 0.7);
   --modal-shading: rgba(252, 252, 252, 0.5);
@@ -57,7 +58,6 @@
 /* ASH THEME */
 :is(.theme-dark, .theme-light .theme-dark) {
   --background-shading: rgba(0, 0, 0, 0.4);
-  --background-shading-percent: 100%;
   --card-shading: rgba(0, 0, 0, 0.2);
   --popout-shading: rgba(0, 0, 0, 0.6);
   --modal-shading: rgba(0, 0, 0, 0.4);
@@ -69,7 +69,6 @@
 /* DARK THEME */
 :is(.theme-darker, .theme-light .theme-darker) {
   --background-shading: rgba(0, 0, 0, 0.6);
-  --background-shading-percent: 100%;
   --card-shading: rgba(0, 0, 0, 0.3);
   --popout-shading: rgba(0, 0, 0, 0.7);
   --modal-shading: rgba(0, 0, 0, 0.5);
@@ -81,7 +80,6 @@
 /* ONYX THEME */
 :is(.theme-midnight, .theme-light .theme-midnight) {
   --background-shading: rgba(0, 0, 0, 0.8);
-  --background-shading-percent: 100%;
   --card-shading: rgba(0, 0, 0, 0.4);
   --popout-shading: rgba(0, 0, 0, 0.8);
   --modal-shading: rgba(0, 0, 0, 0.6);

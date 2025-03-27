@@ -64,6 +64,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --streaming-color: #593695;
   --offline-color: #808080;
 
+  --background-shading-percent: 100%;
   --background-image: url(https://clearvision.github.io/images/sapphire.jpg);
   --background-attachment: fixed;
   --user-popout-image: var(--background-image);
@@ -85,7 +86,6 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 :is(#{c(main themeLight)}, #{c(main themeDark)} #{c(main themeLight)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
   --background-shading: rgba(252, 252, 252, 0.3);
-  --background-shading-percent: 100%;
   --card-shading: rgba(252, 252, 252, 0.3);
   --popout-shading: rgba(252, 252, 252, 0.7);
   --modal-shading: rgba(252, 252, 252, 0.5);
@@ -101,7 +101,6 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 :is(#{c(main themeDark)}, #{c(main themeLight)} #{c(main themeDark)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
   --background-shading: rgba(0, 0, 0, 0.4);
-  --background-shading-percent: 100%;
   --card-shading: rgba(0, 0, 0, 0.2);
   --popout-shading: rgba(0, 0, 0, 0.6);
   --modal-shading: rgba(0, 0, 0, 0.4);
@@ -117,7 +116,6 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 :is(#{c(main themeDarker)}, #{c(main themeLight)} #{c(main themeDarker)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
   --background-shading: rgba(0, 0, 0, 0.6);
-  --background-shading-percent: 100%;
   --card-shading: rgba(0, 0, 0, 0.3);
   --popout-shading: rgba(0, 0, 0, 0.7);
   --modal-shading: rgba(0, 0, 0, 0.5);
@@ -133,7 +131,6 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 :is(#{c(main themeMidnight)}, #{c(main themeLight)} #{c(main themeMidnight)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
   --background-shading: rgba(0, 0, 0, 0.8);
-  --background-shading-percent: 100%;
   --card-shading: rgba(0, 0, 0, 0.4);
   --popout-shading: rgba(0, 0, 0, 0.8);
   --modal-shading: rgba(0, 0, 0, 0.6);

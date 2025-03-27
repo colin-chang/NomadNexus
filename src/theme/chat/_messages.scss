@@ -62,10 +62,10 @@
   background: var(--background-mentioned);
   &:hover,
   #{c(chat messageSelected)}  {
-    background-color: var(--background-mentioned-hover) !important; // way easier than whatever discord does
+    background: var(--background-mentioned-hover) !important; // way easier than whatever discord does
   }
   &::before {
-    background-color: cv('color.hover');
+    background: cv('color.hover');
   }
 }
 
