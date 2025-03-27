@@ -1,22 +1,13 @@
-<div align="center">
+<div>
 
 # ClearVision v7
-
-IMAGE OUTDATED NEEDS UPDATING
-![v6 Sapphire](https://i.imgur.com/U7UXrEN.png)
+<img  width="500" src="https://raw.githubusercontent.com/ClearVision/ClearVision-v7/refs/heads/master/screenshots/treatment-2.jpg">
+<img  width="500" src="https://raw.githubusercontent.com/ClearVision/ClearVision-v7/refs/heads/master/screenshots/treatment-3.jpg">
 
 </div>
 
-
-### Default presets
-- Pearl - Pinkish theme, primarily for light mode
-- Garnet - Magenta theme, primarily for dark mode
-- Lapis - Darkish blue theme, primarily for dark mode | Art: https://www.pixiv.net/en/artworks/123209397 ; https://www.pixiv.net/en/users/44473246 -- NEED PERMISSION BEFORE USING
-- Obsidian - Nearly black theme, primarily for dark mode | Art: https://www.publicdomainpictures.net/en/view-image.php?image=195779 ; CC0 ; https://www.publicdomainpictures.net/en/browse-author.php?a=1 (maybe?)
-- Diamond - White theme, primarily for light mode
-
-### Legacy Presets
-Old ClearVision v6 presets are offered, too. All primarily for dark mode
+### Presets
+List of presets available. All primarily for dark mode
 - Sapphire - Darkish blue | Art: https://www.deviantart.com/kuldarleement/art/Stellar-collision-397866757 ; https://www.deviantart.com/kuldarleement/ ; http://www.kuldarleement.eu/  
 - Ruby - Red | Art: https://www.deviantart.com/artistmef/art/Follow-the-path-279366207 ; https://www.deviantart.com/artistmef/  
 - Amber - Orange | Art: https://www.deviantart.com/chromamancer/art/War-March-201045286 ; https://www.furaffinity.net/view/5408230 ; https://www.furaffinity.net/user/chromamancer/  
@@ -26,26 +17,15 @@ Old ClearVision v6 presets are offered, too. All primarily for dark mode
 - Winter - Light blue, for festivity | Art: https://wall.alphacoders.com/big.php?i=114938 ; unknown artist.
 
 Goals:
-- Only supports visual refresh
+- Supports visual refresh - New UI with new chat input & new UI with old chat input
 - Supports both light and dark, along with dark variants
-- Ensure all colour variables have some form of `calc(var(--saturation-factor,1) * $val)` in them
+- Supports saturation setting
 - Uses smallest css target possible
-- Never use complex selectors before `> htmlElement` or `> *` without a very good reason
-- Avoid usage of :has() without a good reason
-- Always give reason for using `!important`
 - Plugin support in extra files for respective client mods
-
-### addons???
 
 ## Theme Editor
 
-You can now customize the theme with a preview before downloading it to your computer.
-
-Please keep in mind that **we do not manage the theme editor**, and cannot help with any bugs that come from using it.
-
-> [Theme Editor](https://bdeditor.dev/theme/clearvision)
-
-_Thank you to @Gibbu to providing this._
+Currently not available
 
 ## Installing
 
@@ -85,7 +65,8 @@ To build the theme from source, first install npm from the dependencies below, t
 
 ## Contributing
 
-_This section is outdated._
-
 You can run `pnpm run test` to compile the theme.
 The `main.css` file will be in the `/test` directory, which can then be copied into your client mod's Custom CSS or placed in the themes folder and enabled in settings. Just make sure any other themes are disabled for testing.
+
+## Support
+Join our [discord server](https://discord.gg/dHaSxn3) and post in our support channel if you need additional help
