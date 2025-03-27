@@ -3,7 +3,7 @@
 // ACCOUNT PANEL
 #{c(main visualRefresh)} {
   #{c(sidebar panel panels)} {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.6));
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5));
     border-radius: 0;
     border: none;
     width: 100%;
