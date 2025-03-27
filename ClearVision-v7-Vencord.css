@@ -9,7 +9,7 @@
  */
 /* IMPORT CSS */
 @import url("https://clearvision.github.io/ClearVision-v7/main.css");
-@import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
+@import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
@@ -54,11 +54,11 @@
   --muted-text: #75757e;
 }
 
-/* GREY THEME / DARK THEME IN OLD UI */
+/* ASH THEME */
 :is(.theme-dark, .theme-light .theme-dark) {
   --background-shading: rgba(0, 0, 0, 0.4);
   --background-shading-percent: 100%;
-  --card-shading: rgba(0, 0, 0, 0.3);
+  --card-shading: rgba(0, 0, 0, 0.2);
   --popout-shading: rgba(0, 0, 0, 0.6);
   --modal-shading: rgba(0, 0, 0, 0.4);
   --input-shading: rgba(255, 255, 255, 0.05);
@@ -66,11 +66,11 @@
   --muted-text: #aeaeb4;
 }
 
-/* DARK THEME - NEW UI EXCLUSIVE */
+/* DARK THEME */
 :is(.theme-darker, .theme-light .theme-darker) {
   --background-shading: rgba(0, 0, 0, 0.6);
   --background-shading-percent: 100%;
-  --card-shading: rgba(0, 0, 0, 0.4);
+  --card-shading: rgba(0, 0, 0, 0.3);
   --popout-shading: rgba(0, 0, 0, 0.7);
   --modal-shading: rgba(0, 0, 0, 0.5);
   --input-shading: rgba(255, 255, 255, 0.05);
@@ -78,11 +78,11 @@
   --muted-text: #94949c;
 }
 
-/* MIDNIGHT THEME - NEW UI EXCLUSIVE */
+/* ONYX THEME */
 :is(.theme-midnight, .theme-light .theme-midnight) {
   --background-shading: rgba(0, 0, 0, 0.8);
   --background-shading-percent: 100%;
-  --card-shading: rgba(0, 0, 0, 0.5);
+  --card-shading: rgba(0, 0, 0, 0.4);
   --popout-shading: rgba(0, 0, 0, 0.8);
   --modal-shading: rgba(0, 0, 0, 0.6);
   --input-shading: rgba(255, 255, 255, 0.05);
