@@ -157,6 +157,9 @@
   #{c(embeds media audioControls)} {
     background: transparent;
   }
+  #{c(embeds media videoWrapper)} {
+    background: cv('shading.card');
+  }
 
   // TEXT CONTAINER
   #{c(embeds textContainer textContainer)},

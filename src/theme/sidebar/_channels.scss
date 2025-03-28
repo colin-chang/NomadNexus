@@ -12,18 +12,10 @@
     padding: 0;
   }
 
-  // HEADER
-  #{c(sidebar server header clickable)},
-  #{c(sidebar server header header)} {
-    background: transparent;
-  }
+
 
   // HEADER - COMMUNITY/BANNER
-  :is(#{c(sidebar server header communityInfoVisible)}, #{c(sidebar server header hasBanner)}) {
-    #{c(sidebar server header header)} {
-      background-color: transparent;
-    }
-  }
+
   #{c(sidebar server header bannerContainer)} {
     background-color: transparent;
     border: none;
@@ -39,7 +31,8 @@
   #{c(sidebar server unreadBar old bottom)}  {
     bottom: 8px;
   }
-  #{c(sidebar server unreadBar bar)} {
+  #{c(sidebar server unreadBar bar)},
+  #{c(sidebar server unreadBar old bar)} {
     background-color: cv('color.main');
     border-color: cv('color.main');
   }
