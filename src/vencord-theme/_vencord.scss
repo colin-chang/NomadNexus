@@ -1,10 +1,22 @@
 @use 'backend' as *;
 // Vencord stuff
+
+// SETTINGS CARDS
 #{c(vencord quickActions pill)} {
-  &,
+  background: cv('shading.card');
+  border: 1px solid transparent;
   &:hover {
     background: cv('shading.card');
     box-shadow: none;
+    border-color: cv('color.main');
+  }
+}
+.vc-addon-card {
+  background: cv('shading.card');
+  border: 2px solid transparent;
+  &:hover {
+    background: cv('shading.card');
+    border-color: cv('color.main');
   }
 }
 

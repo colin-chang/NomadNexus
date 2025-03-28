@@ -1,0 +1,31 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+  #{c(modals quickswitcher modal)} {
+    background: cv('shading.popout');
+    border: none;
+  }
+  #{c(modals quickswitcher scroller)} {
+    background: transparent;
+  }
+  #{c(modals quickswitcher search)} {
+    border: none;
+    box-shadow: 0 0 2px 2px cv('shading.input.border');
+    &:focus-within {
+      box-shadow: 0 0 2px 2px cv('color.main');
+    }
+  }
+}
+#{c(modals quickswitcher scroller)} {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+}
+#{c(modals quickswitcher result)} {
+  &[aria-selected=true] {
+    background: cv('color.hover')
+  }
+}

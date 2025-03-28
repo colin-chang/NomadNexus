@@ -35,7 +35,8 @@
   }
 
   // UNREAD BAR
-  #{c(sidebar server unreadBar bottom)} {
+  #{c(sidebar server unreadBar bottom)},
+  #{c(sidebar server unreadBar old bottom)}  {
     bottom: 8px;
   }
   #{c(sidebar server unreadBar bar)} {

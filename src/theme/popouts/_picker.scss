@@ -40,7 +40,7 @@
     margin-right: 12px;
   }
 
-  // EMOJI REACT
+  // REACT ON MESSAGE EMOJIS
   :is(#{c(popouts expressionPicker emoji picker)}, #{c(popouts expressionPicker emoji header)}) {
     background: cv('shading.popout');
     border: none;
@@ -116,4 +116,14 @@
   &::after {
     border-top-color: cv('shading.popout');
   }
+}
+
+// EMOJI / STICKER INFO
+#{c(popouts emojiStickerPopout container)} {
+  background: cv('shading.popout');
+  box-shadow: none;
+  backdrop-filter: none;
+}
+#{c(popouts emojiStickerPopout guildSection)} {
+  background: transparent;
 }

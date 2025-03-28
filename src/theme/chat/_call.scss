@@ -13,3 +13,16 @@
     background: transparent;
   }
 }
+
+// DM CALL
+#{c(call wrapper)} {
+  &#{c(call minimum)} {
+    #{c(call container)} {
+      background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.6));
+    }
+  }
+}
+// REGION SELECTOR
+#{c(call quickSelectPopout)} {
+  background: cv('shading.popout')
+}

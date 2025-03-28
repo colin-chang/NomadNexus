@@ -2941,7 +2941,26 @@ $classes: (
             'voiceChannelUsers': 'voiceChannelsUsers__7aaec',
 
             // Old style that lacks an arrow. Shares classes with serverList.
-             // Placed under "positionedContainer" above.
+            // Placed under "positionedContainer" above.
+            'old': (
+              'container': 'container__3b95d',
+              'unreadParent': 'unread__629e4',
+              // "parent" as it's the parent of the below "unread" class
+              'top': 'unreadTop__629e4',
+              'bottom': 'unreadBottom__629e4',
+
+              'bar': 'bar__3b95d',
+              'hidden': 'hidden__3b95d',
+              'active': 'active__3b95d',
+              // it appears ig?
+              'unread': 'unread__3b95d',
+              'mention': 'mention__3b95d',
+              // ping!
+              'text': 'text__3b95d',
+              'icon': 'icon_edf32f',
+              // few servers has it idk why
+              // no idea honestly
+            ),
           ),
         'scroller': 'scroller__629e4',
 
@@ -4852,6 +4871,21 @@ $classes: (
       'background': 'containerBackground_d4ced7',
     ),
 
+    // Click either an Emoji or a Sticker within chat
+    'emojiStickerPopout': (
+      'container': 'popoutContainer__0f481',
+      'emojiSection': 'emojiSection_d5cd2d',
+      // also used with sticker
+      'guildSection': 'guildSection_d5cd2d',
+      'guildTitle': 'guildTitle_d5cd2d',
+
+      'loading': 'popoutLoader_dfa983',
+      'loadingBackground': 'popoutLoadingBackground__0f481',
+      // contains mask
+      'loadingForeground': 'popoutLoadingForeground__0f481',
+      // contains background-image
+    ),
+
     'apps': (
       'popout': 'contentWrapper__9c62c',
       'container': 'container__927fc',
@@ -5476,112 +5510,114 @@ $classes: (
 
     // Join a server with "Welcome Screen" set up
     'welcome': (
-        'main': 'main__949ab',
-        // modal itself
-        'options': 'options__949ab',
-        'optionContainer': 'optionContainer__949ab',
-      ),
+      'main': 'main__949ab',
+      // modal itself
+      'options': 'options__949ab',
+      'optionContainer': 'optionContainer__949ab',
+    ),
 
     // @everyone with a larger server
     'mentionWarning': (
-        'popout': 'contentWarningPopout_be95d0',
-        'body': 'body_be95d0',
-        'animation': 'animation_be95d0',
-        'content': 'content_be95d0',
-        'header': 'header_be95d0',
-        'footer': 'footer_be95d0',
-      ),
+      'popout': 'contentWarningPopout_be95d0',
+      'body': 'body_be95d0',
+      'animation': 'animation_be95d0',
+      'content': 'content_be95d0',
+      'header': 'header_be95d0',
+      'footer': 'footer_be95d0',
+    ),
 
     // On a message with reactions, right click and click "Show reactions"
     'reactions': (
-        'modal': 'container_cc2dff',
-        'sidebar': 'scroller_cc2dff',
-        'default': 'reactionDefault_cc2dff',
-        'selected': 'reactionSelected_cc2dff',
-        'reactors': 'reactors_cc2dff',
-      ),
+      'modal': 'container_cc2dff',
+      'sidebar': 'scroller_cc2dff',
+      'default': 'reactionDefault_cc2dff',
+      'selected': 'reactionSelected_cc2dff',
+      'reactors': 'reactors_cc2dff',
+    ),
 
     // Ctrl+K or Ctrl+T to open (CMD on Mac)
-    'quickswitch': (
-        'container': 'container_ac6cb0',
-        'modal': 'quickswitcher_ac6cb0',
-        'search': 'input_ac6cb0',
-        'scroller': 'scroller_ac6cb0',
-      ),
+    'quickswitcher': (
+      'container': 'container_ac6cb0',
+      'modal': 'quickswitcher_ac6cb0',
+      'search': 'input_ac6cb0',
+      'scroller': 'scroller_ac6cb0',      
+      'result': 'result__71961',
+      'ping': 'wrapper_dc0b29',
+    ),
 
     // Quickly join and leave a server for a modal with this to show up
     // Will show up if you select anything but happy in the "How'd x go?" rating modal
     // You'll also have to have not clicked the "don't show me this again" box
     'problemInfo': (
-        'section': 'problemInfo__6c12c',
-        'root': 'root__66e7e',
-        'option': 'option__66e7e',
-        'text': 'text__66e7e',
-        'caret': 'caret__66e7e',
-      ),
+      'section': 'problemInfo__6c12c',
+      'root': 'root__66e7e',
+      'option': 'option__66e7e',
+      'text': 'text__66e7e',
+      'caret': 'caret__66e7e',
+    ),
 
     // Submit feedback in above
     'submitFeedback': (
-        // literally on own rule for no margin
-        'title': 'title__62160',
-      ),
+      // literally on own rule for no margin
+      'title': 'title__62160',
+    ),
 
     // Get timed out. Use an alt to time you out. Best not to attempt it on any non-private servers
     'timedOut': (
-        'container': 'container__65338',
-        // This one can be closed by clicking "okay"
-        'iconContainer': 'iconContainer__65338',
-        'icon': 'icon__65338',
-        'header': 'header__65338',
-        'headerText': 'headerText__65338',
-        'button': 'button__65338',
+      'container': 'container__65338',
+      // This one can be closed by clicking "okay"
+      'iconContainer': 'iconContainer__65338',
+      'icon': 'icon__65338',
+      'header': 'header__65338',
+      'headerText': 'headerText__65338',
+      'button': 'button__65338',
 
-        'spamBanner': 'spamBanner_a2eac3',
-        'bannerIcon': 'bannerIcon__1d97f',
-        'bannerText': 'bannerText_a2eac3',
-      ),
+      'spamBanner': 'spamBanner_a2eac3',
+      'bannerIcon': 'bannerIcon__1d97f',
+      'bannerText': 'bannerText_a2eac3',
+    ),
 
     // Time someone out, yes that's really the best way to get these to show up
     // Or you can switch account
     'toasts': (
-        'containerTop': 'containerTop__45edc',
-        // contains z-index and alignment stuff. rule paired with bottom
-        'containerBottom': 'containerBottom__45edc',
-        'toast': 'toast__3fde7',
-        'icon': 'icon__3fde7',
-      ),
+      'containerTop': 'containerTop__45edc',
+      // contains z-index and alignment stuff. rule paired with bottom
+      'containerBottom': 'containerBottom__45edc',
+      'toast': 'toast__3fde7',
+      'icon': 'icon__3fde7',
+    ),
 
     // Click on a banned user under the bans tab in server settings
     'bannedUser': (
-        'modal': 'bannedUserModal_a73dc3',
-        'header': 'header_a73dc3',
-        'username': 'userUsername_a73dc3',
-        'discrim': 'userDiscrim_a73dc3',
-        'content': 'content_a73dc3',
-        // contains reason
-        'reasonHeader': 'reasonHeader_a73dc3',
-        'footer': 'footer_a73dc3',
-      ),
+      'modal': 'bannedUserModal_a73dc3',
+      'header': 'header_a73dc3',
+      'username': 'userUsername_a73dc3',
+      'discrim': 'userDiscrim_a73dc3',
+      'content': 'content_a73dc3',
+      // contains reason
+      'reasonHeader': 'reasonHeader_a73dc3',
+      'footer': 'footer_a73dc3',
+    ),
 
     // Change Nickname of another user in a server
     // These could apply to friends.
-    'nicknameChange': (
-        'modalContent': 'modalContent__9522a',
-        'card': 'card__9522a',
-        'warningText': 'warning__9522a',
-        'itemGroup': 'itemGroup__9522a',
-        // used for "Nickname" title
-        'disabled': 'disabled__9522a',
-        'nickError': 'nickError__9522a',
-        'reset': 'reset__9522a',
+  'nicknameChange': (
+    'modalContent': 'modalContent__9522a',
+    'card': 'card__9522a',
+    'warningText': 'warning__9522a',
+    'itemGroup': 'itemGroup__9522a',
+    // used for "Nickname" title
+    'disabled': 'disabled__9522a',
+    'nickError': 'nickError__9522a',
+    'reset': 'reset__9522a',
 
-        // friends nickname. they don't seem to overlap in retrospect.
-        'friends': (
-            'description': 'description_d9ee11',
-            'input': 'input_d9ee11',
-            'reset': 'reset_d9ee11',
-          ),
+    // friends nickname. they don't seem to overlap in retrospect.
+    'friends': (
+        'description': 'description_d9ee11',
+        'input': 'input_d9ee11',
+        'reset': 'reset_d9ee11',
       ),
+    ),
 
     // Within server settings, click "members" and then "prune" at the top
     // aka "purge"
@@ -5590,21 +5626,6 @@ $classes: (
         'role': 'role_ce3fe1',
         'content': 'content_bad290',
         'spacing': 'spacing_bad290',
-      ),
-
-    // Click either an Emoji or a Sticker within chat
-    'emojiStickerPopout': (
-        'container': 'popoutContainer__0f481',
-        'emojiSection': 'emojiSection_d5cd2d',
-        // also used with sticker
-        'guildSection': 'guildSection_d5cd2d',
-        'guildTitle': 'guildTitle_d5cd2d',
-
-        'loading': 'popoutLoader_dfa983',
-        'loadingBackground': 'popoutLoadingBackground__0f481',
-        // contains mask
-        'loadingForeground': 'popoutLoadingForeground__0f481',
-        // contains background-image
       ),
 
     // Create Group DM
@@ -6777,8 +6798,6 @@ $classes: (
           'settingsFormFieldWrapper': 'settingsFormFieldWrapper__3ff83',
           'messageReportOption': 'childButton__3ed08',
           'reactionModalColorStandard': 'colorStandard_c9946a',
-          'quickswitcherResult': 'result__71961',
-          'quickswitcherPing': 'wrapper_dc0b29',
           'nitroPaymentNote': 'paymentNote_a8c622',
           'nitroPaymentWrapper': 'wrapper__4106a',
           'nitroPaymentBody': 'body_c6f1a4',
