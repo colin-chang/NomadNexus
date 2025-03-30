@@ -27,6 +27,19 @@
   }
 }
 
+// LOADING
+#{c(main visualRefresh)} #{c(shop loadingCardSkeleton)},
+#{c(shop loadingFeaturedSkeleton)} {
+  background: var(--hsl-card-shading-inverted);
+}
+#{c(shop loadingCardBody)},
+#{c(shop loadingFeaturedBody)} {
+  background: var(--hsl-card-shading-inverted);
+}
+#{c(shop loadingCardContent)} {
+  background: transparent;
+}
+
 // PREVIEW
 #{c(shop previewInfo)} {
   background: transparent;

@@ -37,3 +37,8 @@
 #{c(thread icon)} path {
   fill: var(--header-primary);
 }
+
+// NOTICE
+#{c(thread header)} {
+  background-color: cv('shading.popout');
+}

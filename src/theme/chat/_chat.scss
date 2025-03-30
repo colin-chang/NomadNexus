@@ -23,6 +23,9 @@
   :is(#{c(chat chatLoadingWrapper)}, #{c(chat messageLoadingWrapper)}) {
     background-color: transparent;
   }
+  #{c(chat chatLoadingWrapper)} {
+    animation: cv-card-loading 1.5s infinite ease-in-out;
+  }
 }
 
 // TOOLBAR

@@ -1561,7 +1561,7 @@ $classes: (
     'iconWrapper': 'iconWrapper__54b20',
     'icon': 'icon__54b20',
     'header': 'chatHeaderBar_a5700d',
-    // usually contains "this thread is/was archived..."
+    // usually contains "this thread is/was archived.../locked"
     'subtitle': 'subtitle__54b20',
 
     // usually contains "started by..."
@@ -2263,11 +2263,12 @@ $classes: (
 
     'shopWhatsNew': 'whatsNewSectionBackground_c880e8',
 
-    'loadingSkeleton': 'skeleton__72fa0',
+    'loadingCardSkeleton': 'skeleton__72fa0',
     'loadingBanner': 'bannerBody__72fa0',
-    'loadingCard': 'cardBody__72fa0',
-
+    'loadingCardBody': 'cardBody__72fa0',
     'loadingCardContent': 'cardAvatar__72fa0' 'cardTitle__72fa0' 'cardDescription__72fa0' 'cardSummary__72fa0',
+    'loadingFeaturedSkeleton': 'skeleton__08415',
+    'loadingFeaturedBody': 'skeletonBody__08415',
 
     'card': 'shopCard_c3d04b',
     'cardNitro': 'shopCard_b37971',
