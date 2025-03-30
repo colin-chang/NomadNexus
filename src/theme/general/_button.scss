@@ -29,6 +29,9 @@
     &:hover {
       background-color: hsl(from cv('color.danger') h s l/.8);
     }
+    &:disabled {
+      background-color: cv('color.danger');
+    }
   }
   &:is(#{c(button colorWhite)}, #{c(button colorBrandInverted)}) {
     color: cv('color.main');

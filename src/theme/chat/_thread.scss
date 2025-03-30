@@ -22,7 +22,7 @@
   }
   #{c(thread newThreadTextAreaInner)} {
     background-color: cv('shading.input.bg');
-    box-shadow: 0 0 0 2px cv('shading.input.border');
+    box-shadow: 0 0 2px 2px cv('shading.input.border');
     border-radius: 8px;
     &:focus-within {
       box-shadow: 0 0 2px 2px cv('color.main');

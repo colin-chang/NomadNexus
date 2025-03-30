@@ -107,4 +107,11 @@
   #{c(discover quests tileContent)} {
     background: transparent;
   }
+  #{c(discover quests video background)} {
+    background: cv('shading.modal');
+  }
+  #{c(discover quests video content)},
+  #{c(discover quests video header)} {
+    background: transparent;
+  }
 }

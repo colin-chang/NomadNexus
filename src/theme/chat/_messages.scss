@@ -9,6 +9,10 @@
     transform: scale(0.9);
   }
 }
+#{c(chat botTag)} {
+  background: cv('color.main');
+  color: cv('text.normal')
+}
 
 // CODEBLOCK
 #{c(main visualRefresh)} {
