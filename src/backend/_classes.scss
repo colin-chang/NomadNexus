@@ -309,6 +309,16 @@ $classes: (
     'anchorLinkUnderlineOnHover': 'anchorUnderlineOnHover_edefb8',
     'desaturate': 'desaturate_c7819f',
 
+    'wanderingCubes': 'wanderingCubes__0b5bb',
+    'wanderingCubesItem': 'item__0b5bb',
+    'spinner': 'spinner__0b5bb',
+    'spinnerCircle': 'spinningCircle__0b5bb',
+    'spinnerCircleInner': 'spinningCircleInner__0b5bb',
+    'spinnerCirclePath': 'path__0b5bb',
+    'spinnerCirclePath3': 'path3__0b5bb',
+    'spinnerPulsingEllipsisPopout': 'spinner_e90879',
+    'spinnerPulsingEllipsis': 'pulsingEllipsis__0b5bb',
+
     // has a filter relating to the saturation factor variable
     'loader': 'loader_c48ade',
 
@@ -364,18 +374,6 @@ $classes: (
         'reduceMotion': 'reduce-motion',
         // A11y > "enable reduced motion" ticked
       ),
-  ),
-
-  'loading': (
-    'wanderingCubes': 'wanderingCubes__0b5bb',
-    'wanderingCubesItem': 'item__0b5bb',
-    'spinner': 'spinner__0b5bb',
-    'spinnerCircle': 'spinningCircle__0b5bb',
-    'spinnerCircleInner': 'spinningCircleInner__0b5bb',
-    'spinnerCirclePath': 'path__0b5bb',
-    'spinnerCirclePath3': 'path3__0b5bb',
-    'spinnerPulsingEllipsisPopout': 'spinner_e90879',
-    'spinnerPulsingEllipsis': 'pulsingEllipsis__0b5bb',
   ),
 
   'input': (
@@ -2541,10 +2539,10 @@ $classes: (
     'placeholderUsernameMultiple': 'mulitplePlaceholderUsername__27cc6',
 
     // click on user with quest badge
-    'quest' (
+    'quest': (
       'container': 'container__4413f',
       'button': 'ctaButton__4413f',
-    )
+    ),
   ),
   // this area doesn't show up if you don't have any pending requests.
   // it can be accessed by going to https://discord.com/message-requests
