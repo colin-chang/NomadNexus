@@ -11,12 +11,19 @@
 }
 #{c(chat botTag)} {
   background: cv('color.main');
-  color: cv('text.normal')
+  color: var(--header-primary);
+}
+
+// EDITING
+#{c(chat operations)} {
+  a {
+    color: cv('color.main');
+  }
 }
 
 // CODEBLOCK
 #{c(main visualRefresh)} {
-  #{c(chat markup)}{
+  #{c(chat markup)} {
     code {
       background: cv('shading.card');
       border: 1px solid var(--hsl-card-shading-inverted);
@@ -101,7 +108,7 @@
 }
 
 // LINKS
-#{c(main anchorLink)} {
+a {
   #{c(chat systemMessageContent)} &,
   #{c(chat markup)} &,
   & {

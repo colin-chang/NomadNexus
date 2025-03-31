@@ -1,5 +1,11 @@
 @use 'backend' as *;
 
+// NEW CHANNEL BADGE
+#{c(sidebar server channels newChannelBadge)} {
+  background: cv('color.main') !important; //inline
+  color: var(--header-primary);
+}
+
 #{c(main visualRefresh)} {
   // CHANNELS BACKGROUND
   #{c(sidebar list)} {
@@ -12,17 +18,14 @@
     padding: 0;
   }
 
-
-
   // HEADER - COMMUNITY/BANNER
-
   #{c(sidebar server header bannerContainer)} {
     background-color: transparent;
     border: none;
   }
 
   // UNREAD PILL
-  #{c(sidebar server channel unreadPill)} {
+  #{c(sidebar server channels unreadPill)} {
     box-shadow: 0 0 6px 1px cv('color.main');
   }
 
@@ -43,10 +46,10 @@
 }
 
 // THREAD SPINE
-#{c(sidebar server channel threadsSpineBorder)} {
+#{c(sidebar server channels threadsSpineBorder)} {
   background-color: cv('color.main');
 }
-#{c(sidebar server channel threadsSpine)} {
+#{c(sidebar server channels threadsSpine)} {
   color: cv('color.main');
 }
 
@@ -62,7 +65,7 @@
   --channel-unread-hover: var(--hsl-hover-color);
 }
 
-#{c(sidebar server channel link)} {
+#{c(sidebar server channels link)} {
   transition: all 0.15s ease-in-out;
   margin-left: 4px;
   &::before {
@@ -75,58 +78,58 @@
     border-radius: 4px;
   }
 }
-#{c(sidebar server channel icon)} {
+#{c(sidebar server channels icon)} {
   width: 18px;
   height: 18px;
   margin-right: 3px;
   transition: all 0.15s ease-in-out;
   color: var(--channel-default);
 }
-#{c(sidebar server channel name)} {
+#{c(sidebar server channels name)} {
   transition: all 0.15s ease-in-out;
   color: var(--channel-default);
 }
-#{c(sidebar server channel wrapper)} {
+#{c(sidebar server channels wrapper)} {
   // MUTED
-  &#{c(sidebar server channel muted)} {
-    #{c(sidebar server channel name)},
-    #{c(sidebar server channel icon)} {
+  &#{c(sidebar server channels muted)} {
+    #{c(sidebar server channels name)},
+    #{c(sidebar server channels icon)} {
       color: var(--channel-muted);
     }
   }
 
   // HOVER
   &:hover,
-  &#{c(sidebar server channel muted)}:hover {
-    #{c(sidebar server channel link)} {
+  &#{c(sidebar server channels muted)}:hover {
+    #{c(sidebar server channels link)} {
       background: cv('shading.hover');
     }
-    #{c(sidebar server channel name)},
-    #{c(sidebar server channel icon)} {
+    #{c(sidebar server channels name)},
+    #{c(sidebar server channels icon)} {
       color: var(--channel-hover);
     }
   }
 
   // UNREAD
-  &#{c(sidebar server channel unread)} {
-    #{c(sidebar server channel name)} {
+  &#{c(sidebar server channels unread)} {
+    #{c(sidebar server channels name)} {
       color: var(--channel-unread);
       text-shadow: 0 0 3px;
     }
-    #{c(sidebar server channel icon)} {
+    #{c(sidebar server channels icon)} {
       color: var(--channel-unread);
       filter: drop-shadow(0 0 3px);
     }
     &:hover {
-      :is(#{c(sidebar server channel name)}, #{c(sidebar server channel icon)}) {
+      :is(#{c(sidebar server channels name)}, #{c(sidebar server channels icon)}) {
         color: var(--channel-unread-hover);
       }
     }
   }
 
   // SELECTED
-  &#{c(sidebar server channel selected)} {
-    #{c(sidebar server channel link)} {
+  &#{c(sidebar server channels selected)} {
+    #{c(sidebar server channels link)} {
       background-color: transparent;
       &::before {
         right: 0;
@@ -134,19 +137,19 @@
         animation: cv-channel-select 0.3s ease-in-out;
       }
     }
-    #{c(sidebar server channel name)},
-    #{c(sidebar server channel icon)} {
+    #{c(sidebar server channels name)},
+    #{c(sidebar server channels icon)} {
       color: var(--channel-selected);
     }
   }
 
   // CONNECTED
-  &#{c(sidebar server channel connected)} {
-    #{c(sidebar server channel name)} {
+  &#{c(sidebar server channels connected)} {
+    #{c(sidebar server channels name)} {
       color: cv('color.main');
       text-shadow: 0 0 3px;
     }
-    #{c(sidebar server channel icon)} {
+    #{c(sidebar server channels icon)} {
       color: cv('color.main');
       filter: drop-shadow(0 0 3px);
     }
@@ -155,14 +158,14 @@
 
 // VC USER LIMIT
 #{c(main visualRefresh)} {
-  #{c(sidebar server channel voiceLimitWrapper)},
-  #{c(sidebar server channel voiceLimitUsers)} {
+  #{c(sidebar server channels voiceLimitWrapper)},
+  #{c(sidebar server channels voiceLimitUsers)} {
     background: transparent;
   }
-  #{c(sidebar server channel voiceLimitUsers)} {
+  #{c(sidebar server channels voiceLimitUsers)} {
     padding: 0 8px 0 6px;
   }
-  #{c(sidebar server channel voiceLimitTotal)} {
+  #{c(sidebar server channels voiceLimitTotal)} {
     padding: 0 6px 0 1px;
   }
 }

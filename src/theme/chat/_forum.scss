@@ -51,6 +51,10 @@
         }
       }
     }
+    #{c(forums tags dropdownPopoutContainer)} {
+      background: transparent;
+      border: none;
+    }
   }
 
   // NEW POST
@@ -73,15 +77,20 @@
       border-color: cv('color.main');
     }
   }
-  #{c(forums grid contentPreview)} {
-    background: cv('shading.card');
-    border: none;
-  }
-  #{c(forums pinIcon)} {
-    background: cv('color.main');
-  }
+}
+#{c(forums grid contentPreview)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(forums pinIcon)} {
+  background: cv('color.main');
+}
+#{c(forums list newMessageCount)} {
+  color: cv('color.main') !important; //inline
+}
 
   // CHAT
+#{c(main visualRefresh)} {
   #{c(forums chat divider)} {
     background: transparent;
   }

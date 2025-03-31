@@ -97,7 +97,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --secondary-text: #60606a;
 }
 
-/* Grey Theme */
+/* Ash Theme */
 :is(#{c(main themeDark)}, #{c(main themeLight)} #{c(main themeDark)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
   --background-shading: rgba(0, 0, 0, 0.4);
@@ -112,7 +112,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --secondary-text: #c8c8cd;
 }
 
-/* Darker Theme */
+/* Dark Theme */
 :is(#{c(main themeDarker)}, #{c(main themeLight)} #{c(main themeDarker)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
   --background-shading: rgba(0, 0, 0, 0.6);
@@ -127,7 +127,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --secondary-text: #aeaeb4;
 }
 
-/* Midnight Theme */
+/* Onyx Theme */
 :is(#{c(main themeMidnight)}, #{c(main themeLight)} #{c(main themeMidnight)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
   --background-shading: rgba(0, 0, 0, 0.8);
