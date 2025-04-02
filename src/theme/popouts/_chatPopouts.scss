@@ -1,0 +1,33 @@
+@use 'backend' as *;
+
+// EMOJI & STICKER INFO / NEW MEMBER POPOUT
+#{c(main visualRefresh)} {
+  #{c(popouts emojiStickerPopout container)} {
+    background: cv('shading.popout');
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+}
+#{c(popouts emojiStickerPopout guildSection)} {
+  background: transparent;
+}
+
+// STICKER SUGGESTION - right click in chat input and hover on suggestions
+#{c(popouts stickerSuggestion background)} {
+  background: cv('shading.popout');
+  border: none;
+  &::after {
+    border-top-color: cv('shading.popout');
+  }
+}
+
+// MENTION WARNING
+#{c(popouts mentionWarning popout)} {
+  background: cv('shading.popout');
+  box-shadow: none;
+}
+:is(#{c(main themeDark)}, #{c(main themeLight)}) {
+  #{c(popouts mentionWarning footer)} {
+    background: transparent;
+  }
+}

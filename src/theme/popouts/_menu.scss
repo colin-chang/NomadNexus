@@ -76,3 +76,15 @@
     background-color: cv('color.offline');
   }
 }
+
+// ACCOUNT SWITCHER
+#{c(popouts menus accountSwitcher activeIcon)} {
+  path {
+    fill: cv('color.main');
+  }
+  #{c(popouts menus accountSwitcher focused)} & {
+    circle: {
+      fill: cv('color.main');
+    }
+  }
+}

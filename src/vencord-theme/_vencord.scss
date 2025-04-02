@@ -20,6 +20,11 @@
   }
 }
 
+// NOTIFICATION
+.vc-notification-root {
+  background: cv('shading.popout');
+}
+
 
 // SPOTIFY CONTROLS
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {

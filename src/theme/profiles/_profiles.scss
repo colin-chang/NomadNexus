@@ -8,37 +8,18 @@
 // NO NITRO PROFILE
 #{c(profile outer)} {
   &:not(#{c(profile themed)}) {
-    background-color: transparent;
+    &#{c(profile biteSize)} {
+      background: cv('bg.popout.img') center/cover no-repeat;
+      background-attachment: cv('bg.popout.attach');
+      filter: cv('bg.popout.filter');
+    }
+    &#{c(profile fullSize)} {
+      background: cv('bg.modal.img') center/cover no-repeat;
+      background-attachment: cv('bg.modal.attach');
+      filter: cv('bg.modal.filter');
+    }
     #{c(profile inner)} {
-      &:is(#{c(profile biteSize)}, #{c(profile fullSize)}) {
-        background: cv('shading.bg');
-      }
-      &#{c(profile biteSize)} {
-        &:before {
-          content: '';
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background: transparent center/cover no-repeat;
-          background-image: cv('bg.popout.img');
-          background-attachment: cv('bg.popout.attach');
-          filter: cv('bg.popout.filter');
-          z-index: -1;
-        }
-      }
-      &#{c(profile fullSize)} {
-        &:before {
-          content: '';
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background: transparent center/cover no-repeat;
-          background-image: cv('bg.modal.img');
-          background-attachment: cv('bg.modal.attach');
-          filter: cv('bg.modal.filter');
-          z-index: -1;
-        }
-      }
+      background: cv('shading.bg');
     }
 
     // STATUS BUBBLE

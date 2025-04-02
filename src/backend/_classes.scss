@@ -4913,21 +4913,6 @@ $classes: (
       'background': 'containerBackground_d4ced7',
     ),
 
-    // Click either an Emoji or a Sticker within chat
-    'emojiStickerPopout': (
-      'container': 'popoutContainer__0f481',
-      'emojiSection': 'emojiSection_d5cd2d',
-      // also used with sticker
-      'guildSection': 'guildSection_d5cd2d',
-      'guildTitle': 'guildTitle_d5cd2d',
-
-      'loading': 'popoutLoader_dfa983',
-      'loadingBackground': 'popoutLoadingBackground__0f481',
-      // contains mask
-      'loadingForeground': 'popoutLoadingForeground__0f481',
-      // contains background-image
-    ),
-
     'apps': (
       'popout': 'contentWrapper__9c62c',
       'container': 'container__927fc',
@@ -5202,8 +5187,8 @@ $classes: (
 
         // Click the "mark inbox as read" button and another modal pops up
         'markAll': (
-            'content': 'content__1688d',
-          ),
+          'content': 'content__1688d',
+        ),
       ),
     ),
 
@@ -5244,6 +5229,32 @@ $classes: (
         // Channel popout
         'channelPopout': 'popout__76f04',
       ),
+
+    
+    // @everyone with a larger server
+    'mentionWarning': (
+      'popout': 'contentWarningPopout_be95d0',
+      'body': 'body_be95d0',
+      'animation': 'animation_be95d0',
+      'content': 'content_be95d0',
+      'header': 'header_be95d0',
+      'footer': 'footer_be95d0',
+    ),
+
+    // Click either an Emoji or a Sticker within chat
+    'emojiStickerPopout': (
+      'container': 'popoutContainer__0f481',
+      'emojiSection': 'emojiSection_d5cd2d',
+      // also used with sticker
+      'guildSection': 'guildSection_d5cd2d',
+      'guildTitle': 'guildTitle_d5cd2d',
+
+      'loading': 'popoutLoader_dfa983',
+      'loadingBackground': 'popoutLoadingBackground__0f481',
+      // contains mask
+      'loadingForeground': 'popoutLoadingForeground__0f481',
+      // contains background-image
+    ),
   ),
 
   'modals': (
@@ -5556,16 +5567,6 @@ $classes: (
       // modal itself
       'options': 'options__949ab',
       'optionContainer': 'optionContainer__949ab',
-    ),
-
-    // @everyone with a larger server
-    'mentionWarning': (
-      'popout': 'contentWarningPopout_be95d0',
-      'body': 'body_be95d0',
-      'animation': 'animation_be95d0',
-      'content': 'content_be95d0',
-      'header': 'header_be95d0',
-      'footer': 'footer_be95d0',
     ),
 
     // On a message with reactions, right click and click "Show reactions"
