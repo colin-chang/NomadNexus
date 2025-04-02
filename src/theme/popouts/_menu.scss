@@ -83,7 +83,7 @@
     fill: cv('color.main');
   }
   #{c(popouts menus accountSwitcher focused)} & {
-    circle: {
+    circle {
       fill: cv('color.main');
     }
   }

@@ -78,8 +78,8 @@ $cv: (
       modal: var(--hsl-popout-shading),
       // discord vars
       input: (
-          bg: var(--input-background),
-          border: var(--input-border),
+          bg: var(--hsl-input-shading),
+          border: var(--hsl-input-border-shading),
         ),
       hover: var(--background-modifier-accent),
     ),

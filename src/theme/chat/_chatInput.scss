@@ -6,9 +6,9 @@
     margin-top: 4px;
   }
   #{c(chatForm channelTextArea)} {
-    background-color: var(--input-background);
+    background-color: cv('shading.input.bg');
+    box-shadow: 0 0 0 2px cv('shading.input.border');
     border-color: transparent;
-    box-shadow: 0 0 0 2px var(--input-border);
     &:focus-within {
       border-color: transparent;
       box-shadow: 0 0 2px 2px var(--hsl-main-color);

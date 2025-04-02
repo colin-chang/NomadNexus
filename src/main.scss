@@ -19,9 +19,6 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
     --text-muted: hsl(from var(--muted-text) #{$calc});
     --text-primary: hsl(from var(--primary-text) #{$calc});
     --text-secondary: hsl(from var(--secondary-text) #{$calc});
-
-    --input-background: hsl(from var(--input-shading) #{$calc});
-    --input-border: hsl(from var(--input-background) h s l/.1);
   }
 }
 :root {
@@ -44,6 +41,8 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --hsl-card-shading-inverted: hsl(from var(--hsl-card-shading) h s calc(100 - l) / calc(alpha * 0.2));
   --hsl-popout-shading: hsl(from var(--popout-shading) #{$calc});
   --hsl-modal-shading: hsl(from var(--modal-shading) #{$calc});
+  --hsl-input-shading: hsl(from var(--input-shading) #{$calc});
+  --hsl-input-border-shading: hsl(from var(--hsl-input-shading) h s l/.1);
 
   --font-primary: var(--main-font);
   --font-display: var(--main-font);

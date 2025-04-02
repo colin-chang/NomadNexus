@@ -54,7 +54,8 @@
   // NITRO PROFILE
   #{c(profile themed)} {
     #{c(chatForm channelTextAreaInline)} {
-      background: var(--chat-background-default);
+      background: var(--input-background);
+      box-shadow: 0 0 0 2px var(--profile-body-border-color);
       &:focus-within {
         box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
       }

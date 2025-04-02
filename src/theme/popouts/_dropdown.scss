@@ -1,5 +1,14 @@
 @use 'backend' as *;
 
+#{c(popouts dropdown filled)} {
+  &#{c(popouts dropdown select)} {
+    box-shadow: none;
+    &:hover {
+      border: 1px solid var(--input-border);
+    }
+  }
+}
+
 #{c(popouts dropdown popout)} {
   &,
   &#{c(popouts dropdown positionTop)} {
