@@ -107,11 +107,10 @@
   }
 }
 
-// LINKS
+// MESSAGE LINKS
 a {
   #{c(chat systemMessageContent)} &,
-  #{c(chat markup)} &,
-  & {
+  #{c(chat markup)} & {
     color: cv('color.main');
   }
 }
