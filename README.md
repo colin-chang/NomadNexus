@@ -65,7 +65,7 @@ Download the theme file from [our official support server](https://clearvision.g
 
 There are multiple ways to do this if your client offers using an online version. The suggested two are `https://clearvision.github.io/ClearVision-v6/main.css` or `https://raw.githubusercontent.com/ClearVision/ClearVision-v6/master/ClearVision_v6.theme.css`
 
-For customizing the theme from there, you'll want to use custom css and add any variables you'd like to change. It should look something like this
+For customizing the theme from there, you'll want to use custom css and add any variables you'd like to change. It should look something like this:
 
 ```
 :root {
