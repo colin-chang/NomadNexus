@@ -91,6 +91,9 @@
 #{c(profile panel panel)} {
   &#{c(profile outer)} {
     &:not(#{c(main customTheme)}) {
+      background: transparent;
+    }
+    #{c(profile inner)} {
       background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
     }
   }

@@ -41,7 +41,7 @@
 #{c(chat replied spine)} {
   border-color: cv('color.main');
   &:hover,
-  #{c(chat replied contentHovered)} {
+  &#{c(chat replied contentHovered)} {
     border-color: cv('color.hover');
   }
 }
@@ -55,8 +55,13 @@
 }
 
 // EXECUTE COMMAND
-#{c(chat replied executedCommand)} {
-  #{c(chat replied commandName)} {
+#{c(chat replied app spine)} {
+  &::before {
+    border-color: cv('color.main');
+  }
+}
+#{c(chat replied app executedCommand)} {
+  #{c(chat replied app launcherCommandName)} {
     color: cv('color.main');
     background: transparent;
     &:hover {

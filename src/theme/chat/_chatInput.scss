@@ -95,6 +95,13 @@
 
 // APPLIES TO BOTH
 
+// SCROLLBAR
+#{c(chatForm scrollableContainer)} {
+  &::-webkit-scrollbar-thumb {
+    background-color: cv('color.main');
+  }
+}
+
 // LINK
 #{c(chatForm fakeLink)} {
   color: cv('color.main');

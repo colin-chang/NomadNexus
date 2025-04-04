@@ -1096,9 +1096,14 @@ $classes: (
       'contentHovered': 'repliedMessageContentHovered_c19a55',
       'spineHovered': 'repliedMessageClickableSpineHovered_c19a55',
       'textPlaceholder': 'repliedTextPlaceholder_c19a55',
-      'executedCommand': 'executedCommand_c19a55',
-      'appLauncherCommandName': 'appLauncherOnboardingCommandName_c19a55',
-      'commandName': 'commandName_c19a55',
+
+      'app': (
+        // bot commands
+        'spine': 'messageSpine_c19a55',
+        'executedCommand': 'executedCommand_c19a55',
+        'launcherCommandName': 'appLauncherOnboardingCommandName_c19a55',
+        'commandName': 'commandName_c19a55',
+      ),
     ),
 
     'allowedAvatars': 'avatars__1ee8c',
@@ -4987,41 +4992,41 @@ $classes: (
         'row': 'soundRow__61424',
         'button': (
           'wrapper': 'soundButtonWrapper__58c6c',
-          'button': 'soundButton__6d4ed' 'soundButtonRefresh__6d4ed',
-          'interactive': 'soundButtonInteractive__6d4ed' 'soundButtonInteractiveRefresh__6d4ed',
+          'button': 'soundButton__9be63' 'soundButtonRefresh__9be63',
+          'interactive': 'soundButtonInteractive__9be63' 'soundButtonInteractiveRefresh__9be63',
           // :hover on this to show overlay
-          'focused': 'focused__6d4ed',
+          'focused': 'focused__9be63',
           // arrow keys to navigate work
-          'hoverActiveBackground': 'hoverActiveBackground__6d4ed',
+          'hoverActiveBackground': 'hoverActiveBackground__9be63',
           // voice & video choose entrance sound
-          'name': 'soundName__6d4ed' 'soundNameRefresh__6d4ed',
+          'name': 'soundName__9be63' 'soundNameRefresh__9be63',
 
-          'overlay': 'buttonOverlay__6d4ed',
-          'overlayBackground': 'buttonOverlayBackground__6d4ed',
+          'overlay': 'buttonOverlay__9be63',
+          'overlayBackground': 'buttonOverlayBackground__9be63',
           // never appears in refresh
-          'overlayActions': 'buttonOverlayActions__6d4ed' 'buttonOverlayActionsRefresh__6d4ed',
-          'absoluteFill': 'absoluteFill__6d4ed',
+          'overlayActions': 'buttonOverlayActions__9be63' 'buttonOverlayActionsRefresh__9be63',
+          'absoluteFill': 'absoluteFill__9be63',
           // position absolute; top,left,right,bottom 0
         ),
-        'primaryIcon': 'primaryIcon__6d4ed' 'primaryIconRefresh__6d4ed',
+        'primaryIcon': 'primaryIcon__9be63' 'primaryIconRefresh__9be63',
         // only on refresh for nitro locked
-        'lockIcon': 'lockIcon__6d4ed',
+        'lockIcon': 'lockIcon__9be63',
         // only on refresh for nitro locked without emoji
         'secondary': (
           // action buttons. "play", "favourite" etc
-          'button': 'secondaryButton__6d4ed' 'secondaryButtonRefresh__6d4ed',
-          'icon': 'secondaryIcon__6d4ed',
-          'favourite': 'favoriteIconFavorite__6d4ed',
+          'button': 'secondaryButton__9be63' 'secondaryButtonRefresh__9be63',
+          'icon': 'secondaryIcon__9be63',
+          'favourite': 'favoriteIconFavorite__9be63',
           // only shows up when sound is favourited
         ),
-        'animated': 'animated__6d4ed',
-        'playing': 'playing__6d4ed',
-        'previewing': 'previewing__6d4ed',
-        'info': 'soundInfo__6d4ed' 'soundInfoRefresh__6d4ed',
+        'animated': 'animated__9be63',
+        'playing': 'playing__9be63',
+        'previewing': 'previewing__9be63',
+        'info': 'soundInfo__9be63' 'soundInfoRefresh__9be63',
         'emoji': (
-          'hasEmoji': 'hasEmoji__6d4ed',
-          'circle': 'emojiCircle__6d4ed',
-          'emoji': 'emoji__6d4ed',
+          'hasEmoji': 'hasEmoji__9be63',
+          'circle': 'emojiCircle__9be63',
+          'emoji': 'emoji__9be63',
         ),
         'add': (
           'button': 'soundAddButton__58c6c' 'soundAddButtonRefresh__58c6c',
@@ -5052,7 +5057,7 @@ $classes: (
         // on section/header. has background
         'rowLocked': 'soundRowNitroLocked__61424',
         // on row. has background like section/header
-        'premiumDisabled': 'premiumDisabledRefresh__6d4ed',
+        'premiumDisabled': 'premiumDisabledRefresh__9be63',
 
         // only appears in refresh. on button. hover this also gives emojiCircle background gradient
         'upsell': (
@@ -5303,263 +5308,279 @@ $classes: (
     // best-seen locations for each class are listed if apllicable
     // these are classes used on all search bars within modals and some non-modal search bars too
     'searchBar': (
-        'container': 'container_fea832',
-        'disabled': 'disabled_fea832',
-        // Best seen in non-nitro stickers
-        'inner': 'inner_fea832',
-        'input': 'input_fea832',
-        // text, usually. often has a `value=` when typing
-        'tag': 'tag_fea832',
-        // add/create dms' username
-        'close': 'close_fea832',
-        // add/create dms' username's cross
-        'richTagInput': 'richTagInput_fea832',
-        // input text of create channel, set to private
-        'richTag': 'richTag_fea832',
-        // create channel, set to private
-        'tagRoleColor': 'tagRoleColor_fea832',
-        // role color dot in create private channel
-        'tagLabel': 'tagLabel_fea832',
+      'container': 'container_fea832',
+      'disabled': 'disabled_fea832',
+      // Best seen in non-nitro stickers
+      'inner': 'inner_fea832',
+      'input': 'input_fea832',
+      // text, usually. often has a `value=` when typing
+      'tag': 'tag_fea832',
+      // add/create dms' username
+      'close': 'close_fea832',
+      // add/create dms' username's cross
+      'richTagInput': 'richTagInput_fea832',
+      // input text of create channel, set to private
+      'richTag': 'richTag_fea832',
+      // create channel, set to private
+      'tagRoleColor': 'tagRoleColor_fea832',
+      // role color dot in create private channel
+      'tagLabel': 'tagLabel_fea832',
 
-        // text within rich
-        // can be found in threads dropdown/modal, clear being visible when you search something
-        'iconLayout': 'iconLayout_fea832',
-        'iconContainer': 'iconContainer_fea832',
-        'icon': 'icon_fea832',
-        'iconVisible': 'visible_fea832',
-        'iconClear': 'clear_fea832',
+      // text within rich
+      // can be found in threads dropdown/modal, clear being visible when you search something
+      'iconLayout': 'iconLayout_fea832',
+      'iconContainer': 'iconContainer_fea832',
+      'icon': 'icon_fea832',
+      'iconVisible': 'visible_fea832',
+      'iconClear': 'clear_fea832',
 
-        'small': 'small_fea832',
-        // Server settings -> members tab + bans
-        'medium': 'medium_fea832',
-        // Used on gifs, stickers, emoji, create/add to dm
-        'large': 'large_fea832',
-        // If you've got experiments enabled, check that tab
-      ),
+      'small': 'small_fea832',
+      // Server settings -> members tab + bans
+      'medium': 'medium_fea832',
+      // Used on gifs, stickers, emoji, create/add to dm
+      'large': 'large_fea832',
+      // If you've got experiments enabled, check that tab
+    ),
 
     // When creating a new channel
     'createChannel': (
-        // different line for some reason
-        'searchBar': 'searchBar__3e00d',
+      // different line for some reason
+      'searchBar': 'searchBar__3e00d',
 
-        // make a private channel and click next
-        // more -- i cannot remember how to pull this up.
-        'modal': 'modal_b545d5',
-        'modalContent': 'modalContent_b545d5',
-        'modalFooter': 'modalFooter_b545d5',
-        'footer': 'footer_b545d5',
-        'description': 'description_b545d5',
-        'name': 'name_b545d5',
-        'type': 'type_b545d5',
-        'icon': 'icon_b545d5',
-        'error': 'error_b545d5',
-        'header': 'header_b545d5',
-        'title': 'title_b545d5',
-        'subtitle': 'subtitle_b545d5',
-        'subtitleIcon': 'subtitleIcon_b545d5',
-        'closeButton': 'closeButton_b545d5',
-        'sectionTitle': 'sectionTitle_b545d5',
-        'clone': 'clone_b545d5',
-        'permissionsTitle': 'permissionsTitle_b545d5',
-        'background': 'background_b545d5',
-        'foreground': 'foreground_b545d5',
-        'inputWrapper': 'inputWrapper_b545d5',
-        'inputInner': 'inputInner_b545d5',
-        'inputPrefix': 'inputPrefix_b545d5',
-        'switchIcon': 'switchIcon_b545d5',
-        'channelTypeDescription': 'channelTypeDescription_b545d5',
-        'storeChannelOptionSelector': 'storeChannelOptionSelector_b545d5',
-        'username': 'username_b545d5',
-        'emptyRoles': 'emptyRoles_b545d5',
-        'owner': 'owner_b545d5',
-        'addMembersContainer': 'addMembersContainer_b545d5',
-        'addMemberError': 'addMemberError_b545d5',
-        'createError': 'createError_b545d5',
-        'channelNameNote': 'channelNameNote_b545d5',
-        'radioLabelName': 'radioLabelName_b545d5',
-        'radioLabelDescription': 'radioLabelDescription_b545d5',
-        'newBadge': 'newBadge_b545d5',
-        'radioBar': 'radioBar_b545d5',
-        'radioBarLabel': 'radioBarLabel_b545d5',
-        'radioBarIcon': 'radioBarIcon_b545d5',
-        'radioItemName': 'radioItemName_b545d5',
-      ),
+      // make a private channel and click next
+      // more -- i cannot remember how to pull this up.
+      'modal': 'modal_b545d5',
+      'modalContent': 'modalContent_b545d5',
+      'modalFooter': 'modalFooter_b545d5',
+      'footer': 'footer_b545d5',
+      'description': 'description_b545d5',
+      'name': 'name_b545d5',
+      'type': 'type_b545d5',
+      'icon': 'icon_b545d5',
+      'error': 'error_b545d5',
+      'header': 'header_b545d5',
+      'title': 'title_b545d5',
+      'subtitle': 'subtitle_b545d5',
+      'subtitleIcon': 'subtitleIcon_b545d5',
+      'closeButton': 'closeButton_b545d5',
+      'sectionTitle': 'sectionTitle_b545d5',
+      'clone': 'clone_b545d5',
+      'permissionsTitle': 'permissionsTitle_b545d5',
+      'background': 'background_b545d5',
+      'foreground': 'foreground_b545d5',
+      'inputWrapper': 'inputWrapper_b545d5',
+      'inputInner': 'inputInner_b545d5',
+      'inputPrefix': 'inputPrefix_b545d5',
+      'switchIcon': 'switchIcon_b545d5',
+      'channelTypeDescription': 'channelTypeDescription_b545d5',
+      'storeChannelOptionSelector': 'storeChannelOptionSelector_b545d5',
+      'username': 'username_b545d5',
+      'emptyRoles': 'emptyRoles_b545d5',
+      'owner': 'owner_b545d5',
+      'addMembersContainer': 'addMembersContainer_b545d5',
+      'addMemberError': 'addMemberError_b545d5',
+      'createError': 'createError_b545d5',
+      'channelNameNote': 'channelNameNote_b545d5',
+      'radioLabelName': 'radioLabelName_b545d5',
+      'radioLabelDescription': 'radioLabelDescription_b545d5',
+      'newBadge': 'newBadge_b545d5',
+      'radioBar': 'radioBar_b545d5',
+      'radioBarLabel': 'radioBarLabel_b545d5',
+      'radioBarIcon': 'radioBarIcon_b545d5',
+      'radioItemName': 'radioItemName_b545d5',
+    ),
 
     // When creating a new event
     'createEvent': (
-        'container': 'container_f2ceaa',
-        'progressBar': 'progressBar_f2ceaa',
-        // tab at top, unselected
-        'progressBarSelected': 'selectedProgressBar_f2ceaa',
-        // above selected
-        'stepContainer': 'stepContainer_f2ceaa',
+      'container': 'container_f2ceaa',
+      'progressBar': 'progressBar_f2ceaa',
+      // tab at top, unselected
+      'progressBarSelected': 'selectedProgressBar_f2ceaa',
+      // above selected
+      'stepContainer': 'stepContainer_f2ceaa',
 
-        'textInput': 'textInput__97cfe',
-        // different line for some reason
-        'previewCard': 'previewCard_f70348',
-      ),
+      'textInput': 'textInput__97cfe',
+      // different line for some reason
+      'previewCard': 'previewCard_f70348',
+    ),
 
     // In a server with pending/active events, click "x Event(s)" at the top of the sidebar
     'eventsList': (
-        'header': 'header_d0b769',
-        'content': 'content_d0b769',
-        'icon': 'icon_d0b769',
-        // if cihld of iconButton, it's the close button
-        'divider': 'divider_d0b769',
-        'button': 'button_d0b769',
-        'iconButton': 'iconButton_d0b769',
-      ),
+      'header': 'header_d0b769',
+      'content': 'content_d0b769',
+      'icon': 'icon_d0b769',
+      // if cihld of iconButton, it's the close button
+      'divider': 'divider_d0b769',
+      'button': 'button_d0b769',
+      'iconButton': 'iconButton_d0b769',
+    ),
 
     // Within modal above, click an event
     // two major rules apply to this modal
     'eventFull': (
-        'modal': 'root__4325e',
-        'banner': 'banner__4325e',
-        'container': 'container__4325e',
-        'contentContainer': 'contentContainer__4325e',
-        'footer': 'footer__4325e',
-      ),
+      'modal': 'root__4325e',
+      'banner': 'banner__4325e',
+      'container': 'container__4325e',
+      'contentContainer': 'contentContainer__4325e',
+      'footer': 'footer__4325e',
+    ),
 
     // When reading an event, either in preview modal or list modal
     'eventCard': (
-        'card': 'card__88264',
-        'header': 'container__4efb4',
-        'guildIcon': 'guildIcon__88264',
-        'rsvpCount': 'rsvpCount_b5010b',
-      ),
+      'card': 'card__88264',
+      'header': 'container__4efb4',
+      'guildIcon': 'guildIcon__88264',
+      'rsvpCount': 'rsvpCount_b5010b',
+    ),
 
     // Clicking on an invite in your browser while not signed in and being redirect to the app
     // above: [broken? non-linux only? firefox settings likely]
     // Not sure how to get this anymore.
     'browserInvite': (
-        'contentWrapper': 'contentWrapper__9b0f4',
-        'inviteSplash': 'inviteSplash__9b0f4',
-        // has style for background image
-        'scroller': 'scroller_ed5743',
-        'headerContainer': 'container_fa285e',
-        // houses guild icon, guild name, online/total count
-        'guildIcon': 'guildIcon_fa285e',
-        'title': 'title_fa285e',
-        'activityCount': 'activityCount_fa285e',
-        'pill': 'pill__921c5',
-        'pillOnline': 'pillOnline__921c5',
-        'pillIcon': 'pillIcon__921c5',
-        'pillIconOnline': 'pillIconOnline__921c5',
-        'pillMessage': 'pillMessage_b83a05',
-        'pillIconTotal': 'pillIconTotal__921c5',
-      ),
+      'contentWrapper': 'contentWrapper__9b0f4',
+      'inviteSplash': 'inviteSplash__9b0f4',
+      // has style for background image
+      'scroller': 'scroller_ed5743',
+      'headerContainer': 'container_fa285e',
+      // houses guild icon, guild name, online/total count
+      'guildIcon': 'guildIcon_fa285e',
+      'title': 'title_fa285e',
+      'activityCount': 'activityCount_fa285e',
+      'pill': 'pill__921c5',
+      'pillOnline': 'pillOnline__921c5',
+      'pillIcon': 'pillIcon__921c5',
+      'pillIconOnline': 'pillIconOnline__921c5',
+      'pillMessage': 'pillMessage_b83a05',
+      'pillIconTotal': 'pillIconTotal__921c5',
+    ),
 
     // Click "Invite People" in the server header dropdown
     'inviteOthers': (
-        'scroller': 'scroller__67dba',
-        'footer': 'footer__67dba',
-      ),
+      'scroller': 'scroller__67dba',
+      'footer': 'footer__67dba',
+    ),
 
     // "Time Out" on another user
     'timeoutDuration': (
-        'groupBar': 'group__3d4a0',
-        'item': 'item__3d4a0',
+      'groupBar': 'group__3d4a0',
+      'item': 'item__3d4a0',
 
-        // there are many more classes in the group below
-        'selectorButton': 'selectorButton__0907c',
-        'selectorButtonSelected': 'selectorButtonSelected__0907c',
-      ),
+      // there are many more classes in the group below
+      'selectorButton': 'selectorButton__0907c',
+      'selectorButtonSelected': 'selectorButtonSelected__0907c',
+    ),
 
     // Click the x next to a pinned message OR pin a message WITHOUT holding shift
     // Not to be confused with pinned; this isn't a dropdown
     'pin': (
-        'message': 'message__89466',
-      ),
+      'message': 'message__89466',
+    ),
 
     // Get an incoming call
     'incomingCall': (
-        'root': 'root__2dbe1',
-      ),
+      'root': 'root__2dbe1',
+    ),
 
     // Ctrl+/ (CMD on Mac) to pull this modal up
     'keyboard': (
-        'shortcuts': 'keybind-shortcuts',
+      'shortcuts': 'keybind-shortcuts',
 
-        'modal': 'keyboardShortcutsModal_f061f6',
-        'title': 'modalTitle_f061f6',
-        'subtitle': 'modalSubtitle_f061f6',
-        'list': 'keyboardShortcutList_f061f6',
-        'group': 'keyboardShortcutListGroup_f061f6',
-        'firstGroup': 'firstGroup_f061f6',
-        'groupDescription': 'keybindGroupDescription_f061f6',
-        'keybindGroup': 'keybindGroup_f061f6',
-        'keybindkey': 'keybindKey_f061f6',
+      'modal': 'keyboardShortcutsModal_f061f6',
+      'title': 'modalTitle_f061f6',
+      'subtitle': 'modalSubtitle_f061f6',
+      'list': 'keyboardShortcutList_f061f6',
+      'group': 'keyboardShortcutListGroup_f061f6',
+      'firstGroup': 'firstGroup_f061f6',
+      'groupDescription': 'keybindGroupDescription_f061f6',
+      'keybindGroup': 'keybindGroup_f061f6',
+      'keybindkey': 'keybindKey_f061f6',
 
-        'ddrArrows': 'ddrArrows_f061f6',
-        'arrow': 'arrow_f061f6',
-        'active': 'active_f061f6',
-        'left': 'left_f061f6',
-        'down': 'down_f061f6',
-        'up': 'up_f061f6',
-        'right': 'right_f061f6',
-      ),
+      'ddrArrows': 'ddrArrows_f061f6',
+      'arrow': 'arrow_f061f6',
+      'active': 'active_f061f6',
+      'left': 'left_f061f6',
+      'down': 'down_f061f6',
+      'up': 'up_f061f6',
+      'right': 'right_f061f6',
+    ),
 
     // Join a server with the "Rules Screening" set up but not onboarding. It's got a checkbox at the bottom. Rules are on a few lines.
     'rulesScreening': (
-        // one line, main shit really
-        'container': 'container_b962dc',
-        // whole modal
-        'guildSidebar': 'guildSidebar_b962dc',
-        // sidebar, has background color
-        'guildDescription': 'guildDescription_b962dc',
-        'guildIcon': 'guildIcon_b962dc',
-        'guildIconNoIcon': 'guildIconNoIcon_b962dc',
-        // has background color
-        'guildName': 'guildName_b962dc',
-        'emojisContainer': 'emojisContainer_b962dc',
-        'emoji': 'emoji_b962dc',
-        // the extra +n emoji has an inline style, uses header secondary
-        'onlineCount': 'onlineCount_b962dc',
-        'dot': 'dot_b962dc',
-        'dotOnline': 'dotOnline_b962dc',
-        'dotMembers': 'dotMembers_a74b6',
-        'divider': 'divider_b962dc',
-        'modal': 'modal_b962dc',
-        // actually for the main body of the modal in question. wankers.
-        'sequencer': 'sequencer_b962dc',
-        'modalContent': 'modalContent_b962dc',
-        'content': 'content_b962dc',
-        'centerContent': 'centerContent_b962dc',
-        'closeButton': 'closeButton_b962dc',
-        'applicationIcon': 'applicationIcon_b962dc',
-        'animationAndSparklesContainer': 'animationAndSparklesContainer_b962dc',
-        // within content has an animation, a title and a description
-        'sparkleIcon': 'sparkleIcon_b962dc',
-        'sparkleTop': 'sparkleTop_b962dc',
-        'sparkleBottom': 'sparkleBottom_b962dc',
-        'animation': 'animation_b962dc',
-        'header': 'header_b962dc',
-        'subheader': 'subheader_b962dc',
-        'footer': 'footer_b962dc',
-        'submitButton': 'submitButton_b962dc',
-        'formItem': 'formItem_b962dc',
-        'resendButton': 'resendButton_b962dc',
-        'confirmation': 'confirmation_b962dc',
-        'confirmationContent': 'confirmationContent_b962dc',
-        'confirmationButtonRow': 'confirmationButtonRow_b962dc',
-        'confirmationButton': 'confirmationButton_b962dc',
-        'confirmationButtonColumn': 'confirmationButtonColumn_b962dc',
-        'notice': 'notice_b962dc',
-        'rejectionReasonLabel': 'rejectionReasonLabel_b962dc',
-        'rejectionReason': 'rejectionReason_b962dc',
+      // one line, main shit really
+      'container': 'container_b962dc',
+      // whole modal
+      'guildSidebar': 'guildSidebar_b962dc',
+      // sidebar, has background color
+      'guildDescription': 'guildDescription_b962dc',
+      'guildIcon': 'guildIcon_b962dc',
+      'guildIconNoIcon': 'guildIconNoIcon_b962dc',
+      // has background color
+      'guildName': 'guildName_b962dc',
+      'emojisContainer': 'emojisContainer_b962dc',
+      'emoji': 'emoji_b962dc',
+      // the extra +n emoji has an inline style, uses header secondary
+      'onlineCount': 'onlineCount_b962dc',
+      'dot': 'dot_b962dc',
+      'dotOnline': 'dotOnline_b962dc',
+      'dotMembers': 'dotMembers_a74b6',
+      'divider': 'divider_b962dc',
+      'modal': 'modal_b962dc',
+      // actually for the main body of the modal in question. wankers.
+      'sequencer': 'sequencer_b962dc',
+      'modalContent': 'modalContent_b962dc',
+      'content': 'content_b962dc',
+      'centerContent': 'centerContent_b962dc',
+      'closeButton': 'closeButton_b962dc',
+      'applicationIcon': 'applicationIcon_b962dc',
+      'animationAndSparklesContainer': 'animationAndSparklesContainer_b962dc',
+      // within content has an animation, a title and a description
+      'sparkleIcon': 'sparkleIcon_b962dc',
+      'sparkleTop': 'sparkleTop_b962dc',
+      'sparkleBottom': 'sparkleBottom_b962dc',
+      'animation': 'animation_b962dc',
+      'header': 'header_b962dc',
+      'subheader': 'subheader_b962dc',
+      'footer': 'footer_b962dc',
+      'submitButton': 'submitButton_b962dc',
+      'formItem': 'formItem_b962dc',
+      'resendButton': 'resendButton_b962dc',
+      'confirmation': 'confirmation_b962dc',
+      'confirmationContent': 'confirmationContent_b962dc',
+      'confirmationButtonRow': 'confirmationButtonRow_b962dc',
+      'confirmationButton': 'confirmationButton_b962dc',
+      'confirmationButtonColumn': 'confirmationButtonColumn_b962dc',
+      'notice': 'notice_b962dc',
+      'rejectionReasonLabel': 'rejectionReasonLabel_b962dc',
+      'rejectionReason': 'rejectionReason_b962dc',
 
-        // questions stuff, different line
-        'questions': (
-            'questionContainer': 'questionContainer__0a749',
-            'questionTitle': 'questionTitle__0a749',
-            'requirementContainer': 'requirementContainer__0a749',
-            'requirementIcon': 'requirementIcon__0a749',
-            'requirementText': 'requirementText__0a749',
-            'requirementSuccess': 'requirementSuccess__0a749',
-            'requirementFailure': 'requirementFailure__0a749',
-            'footnote': 'footnote__0a749',
-          ),
+      // questions stuff, different line
+      'questions': (
+        'questionContainer': 'questionContainer__0a749',
+        'questionTitle': 'questionTitle__0a749',
+        'requirementContainer': 'requirementContainer__0a749',
+        'requirementIcon': 'requirementIcon__0a749',
+        'requirementText': 'requirementText__0a749',
+        'requirementSuccess': 'requirementSuccess__0a749',
+        'requirementFailure': 'requirementFailure__0a749',
+        'footnote': 'footnote__0a749',
       ),
+    ),
+
+    'screenshare': (
+      'headerContainer': 'container_a55fdc',
+      'tabSelected': 'tabItemSelected__9e06a',
+      'tile': 'tile_a2de16',
+      'sourceThumbnail': 'sourceThumbnail_a2de16',
+      'sourceSelected': 'selected_a2de16',
+      'card': 'card__4bb93',
+      'upsell': 'enhancedBanner__39bd2',
+      'selector': 'selectorButton_c6d3dc',
+      // resolution / fps
+      'selectorSelected': 'selectorButtonSelected_c6d3dc',
+      'selectorUpsell': 'premiumUpsell_c6d3dc',
+      'selectorUpsellText': 'enhancedSelectorNitroText_c6d3dc',
+    ),
+
 
     // Join a server with "Welcome Screen" set up
     'welcome': (
@@ -6860,16 +6881,6 @@ $classes: (
           'screenshareSegmentControlOption': 'segmentControlOption_a2de16',
           'myScreenControlOptions': 'interactive__2f4f7',
           'streamStillRunning': 'videoWrapper__2f4f7',
-          'screenshareSegmentControlSelected': 'tabItemSelected__9e06a',
-          'screenshareTile': 'tile_a2de16',
-          'screenshareSourceThumbnail': 'sourceThumbnail_a2de16',
-          'screenshareSourceSelected': 'selected_a2de16',
-          'screenshareCard': 'card__4bb93',
-          'screenshareUpsell': 'enhancedBanner__39bd2',
-          'screenshareSettingsSelector': 'selectorButton_c6d3dc',
-          'screenshareSettingsSelected': 'selectorButtonSelected_c6d3dc',
-          'screenshareSettingsUpsell': 'premiumUpsell_c6d3dc',
-          'screenshareSettingsUpsellText': 'enhancedSelectorNitroText_c6d3dc',
           'serverWelcomeCards': 'card_aae012',
           'serverInviteTick': 'checkmark_aae012',
           'stageMessageToast': 'toast_d3c698',

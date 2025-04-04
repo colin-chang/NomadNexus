@@ -4,8 +4,10 @@
   #{c(modals root)} {
     background: cv('shading.modal');
     border: none;
+    box-shadow: none;
   }
   #{c(modals footer)} {
     background: transparent;
+    box-shadow: none;
   }
 }

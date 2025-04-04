@@ -1,0 +1,30 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+  #{c(modals screenshare headerContainer)} {
+    background: transparent;
+  }
+}
+#{c(modals screenshare tile)} {
+  &:hover {
+    #{c(modals screenshare sourceThumbnail)} {
+      box-shadow: inset 0 0 0 2px cv('color.main');
+    }
+  }
+}
+#{c(modals screenshare card)} {
+  background: cv('shading.cardInverted');
+}
+#{c(modals screenshare selector)} {
+  background: cv('shading.cardInverted');
+  &:hover {
+    &::before {
+      background: cv('color.hover');
+    }
+  }
+  &#{c(modals screenshare selectorSelected)} {
+    &::before {
+      background: cv('color.main');
+    }
+  }
+}
