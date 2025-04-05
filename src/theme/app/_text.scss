@@ -16,7 +16,8 @@ code {
 }
 
 // LINKS
-#{c(main anchorLink)} {
+#{c(main anchorLink)},
+a {
   color: cv('color.main');
 }
 

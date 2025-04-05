@@ -66,18 +66,21 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --background-shading-percent: 100%;
   --background-image: url(https://clearvision.github.io/images/sapphire.jpg);
   --background-attachment: fixed;
+  --background-filter: saturate(calc(#{$sf} * 1));
+
   --user-popout-image: var(--background-image);
   --user-popout-attachment: var(--background-attachment);
+  --user-popout-filter: var(--background-filter);
+
   --user-modal-image: var(--background-image);
   --user-modal-attachment: var(--background-attachment);
+  --user-modal-filter: var(--background-filter);
+  
   --home-icon: url(https://clearvision.github.io/icons/discord.svg);
 
   // Advanced users only kinda thing
   --main-font: 'gg sans', Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --code-font: Consolas, 'gg mono', 'Liberation Mono', Menlo, Courier, monospace;
-  --background-filter: saturate(calc(#{$sf} * 1));
-  --user-popout-filter: var(--background-filter);
-  --user-modal-filter: var(--background-filter);
 }
 
 /* Light Theme */
