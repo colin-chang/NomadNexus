@@ -11,12 +11,12 @@
     &#{c(profile biteSize)} {
       background: cv('bg.popout.img') center/cover no-repeat;
       background-attachment: cv('bg.popout.attach');
-      filter: cv('bg.popout.filter');
+      /*filter: cv('bg.popout.filter');*/
     }
     &#{c(profile fullSize)} {
       background: cv('bg.modal.img') center/cover no-repeat;
       background-attachment: cv('bg.modal.attach');
-      filter: cv('bg.modal.filter');
+      /*filter: cv('bg.modal.filter');*/
     }
     #{c(profile inner)} {
       background: cv('shading.bg');
