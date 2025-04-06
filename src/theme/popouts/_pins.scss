@@ -10,7 +10,7 @@
     background: transparent;
   }
   #{c(popouts pins messageGroup)} {
-    background: cv('shading.cardInverted');
+    background: cv('shading.cardInner');
 
     border: none;
   }

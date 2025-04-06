@@ -60,7 +60,7 @@
 }
 #{c(guildSettings access joinOptionContent)} {
   &#{c(guildSettings access joinOptionActive)} {
-    background: cv('shading.cardInverted');
+    background: cv('shading.cardInner');
   }
 }
 
@@ -72,6 +72,14 @@
   }
   :is(#{c(guildSettings audit headerExpanded)}, #{c(guildSettings audit divider)}, #{c(guildSettings audit changeDetails)}) {
     background: transparent;
+  }
+}
+
+// BANS
+#{c(main visualRefresh)} {
+  #{c(guildSettings bans scrollerContainer)} {
+    background: cv('shading.card');
+    border: none;
   }
 }
 

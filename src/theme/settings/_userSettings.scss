@@ -26,7 +26,7 @@
 
 // PROFILES
 #{c(userSettings profiles uploadImageOption)} {
-  background: cv('shading.cardInverted');
+  background: cv('shading.cardInner');
   &:hover {
     border: 2px solid cv('color.main');
   }
@@ -58,7 +58,7 @@
   }
 }
 #{c(userSettings family row)} {
-  background: cv('shading.cardInverted');
+  background: cv('shading.cardInner');
   border: none;
 }
 
@@ -74,14 +74,14 @@
   background: cv('shading.card');
 }
 #{c(userSettings connections accountButtonInner)} {
-  background-color: cv('shading.cardInverted');
+  background-color: cv('shading.cardInner');
 }
 #{c(userSettings connections connectionHeader)} {
   background: transparent;
   padding-bottom: 0;
 }
 #{c(userSettings connections connectionMetadataContainer)} {
-  background-color: cv('shading.cardInverted');
+  background-color: cv('shading.cardInner');
 }
 
 // NITRO - NO NITRO
@@ -127,7 +127,7 @@
   background: transparent;
 }
 #{c(userSettings billing expandedInfo)} {
-  background: cv('shading.cardInverted');
+  background: cv('shading.cardInner');
 }
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {
   #{c(userSettings billing hoverablePayment)} {
@@ -161,7 +161,7 @@
 }
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {
   #{c(userSettings voice sensitivityBar)} {
-    background-color: cv('shading.cardInverted');
+    background-color: cv('shading.cardInner');
   }
 }
 #{c(userSettings voice soundButton)} {

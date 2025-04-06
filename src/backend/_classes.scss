@@ -5260,6 +5260,13 @@ $classes: (
       'loadingForeground': 'popoutLoadingForeground__0f481',
       // contains background-image
     ),
+
+    'streamPreview': (
+      'popout': 'streamPreview__6da2d',
+      'previewContainer': 'previewContainer__6da2d',
+      'watchButton': 'watchButton__6da2d',
+    ),
+
   ),
 
   'modals': (
@@ -6907,9 +6914,6 @@ $classes: (
           'threadMembersEmptyHeader': 'emptyStateHeader__7641b',
           'threadMembersEmptyIcon': 'emptyStateIcon__7641b',
           'waveButtonDisabled': 'compactButtonDisabled__7ff28',
-          'streamPopoutPreview': 'streamPreview__6da2d',
-          'streamPopoutPreviewContainer': 'previewContainer__6da2d',
-          'streamPopoutWatchButton': 'watchButton__6da2d',
           'vcActivityPopout': 'popout__7fe3a',
           'vcSetActivityPopout': 'popout__669b5',
           'vcSetActivityPopoutIcon': 'iconWidget__669b5',

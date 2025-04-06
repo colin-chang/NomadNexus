@@ -20,7 +20,8 @@
 #{c(main visualRefresh)} {
   #{c(guildList homeWrapper)} {
     background-color: cv('shading.card');
-    svg {
+    > svg {
+    // > so it wont affect group dms
       width: 100%;
       height: 100%;
       background: cv('home.icon') center/cover no-repeat;

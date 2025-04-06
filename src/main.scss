@@ -38,7 +38,6 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   // shadings are defined in .theme-dark/.theme-light -- turns out every color variable discord uses also uses saturation-factor.
   --hsl-background-shading: hsl(from var(--background-shading) #{$calc});
   --hsl-card-shading: hsl(from var(--card-shading) #{$calc});
-  --hsl-card-shading-inverted: hsl(from var(--hsl-card-shading) h s calc(100 - l) / calc(alpha * 0.2));
   --hsl-popout-shading: hsl(from var(--popout-shading) #{$calc});
   --hsl-modal-shading: hsl(from var(--modal-shading) #{$calc});
   --hsl-input-shading: hsl(from var(--input-shading) #{$calc});
@@ -75,7 +74,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --user-modal-image: var(--background-image);
   --user-modal-attachment: var(--background-attachment);
   --user-modal-filter: var(--background-filter);
-  
+
   --home-icon: url(https://clearvision.github.io/icons/discord.svg);
 
   // Advanced users only kinda thing

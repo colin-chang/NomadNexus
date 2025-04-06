@@ -72,7 +72,7 @@ $cv: (
       percent: var(--background-shading-percent),
       // shading amount
       card: var(--hsl-card-shading),
-      cardInverted: var(--hsl-card-shading-inverted),
+      cardInner: var(--background-modifier-accent),
       // mainly used for embeds, most modals, random things
       popout: var(--hsl-popout-shading),
       modal: var(--hsl-popout-shading),

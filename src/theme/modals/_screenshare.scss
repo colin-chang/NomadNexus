@@ -13,10 +13,10 @@
   }
 }
 #{c(modals screenshare card)} {
-  background: cv('shading.cardInverted');
+  background: cv('shading.cardInner');
 }
 #{c(modals screenshare selector)} {
-  background: cv('shading.cardInverted');
+  background: cv('shading.cardInner');
   &:hover {
     &::before {
       background: cv('color.hover');

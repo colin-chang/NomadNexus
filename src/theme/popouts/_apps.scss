@@ -8,7 +8,7 @@
   gap: 8px;
 }
 #{c(popouts apps itemContainer)} {
-  background: cv('shading.cardInverted');
+  background: cv('shading.cardInner');
   border: 2px solid transparent;
   &:hover {
     background: cv('shading.card');
@@ -51,7 +51,7 @@
   }
 }
 #{c(popouts apps details command)} {
-  background: cv('shading.cardInverted');
+  background: cv('shading.cardInner');
   border: 2px solid transparent;
   &:hover {
     background: cv('shading.card');
@@ -67,7 +67,7 @@
   gap: 8px;
 }
 #{c(popouts apps search itemClickable)} {
-  background: cv('shading.cardInverted');
+  background: cv('shading.cardInner');
   border: 2px solid transparent;
   &:hover {
     background: cv('shading.card');

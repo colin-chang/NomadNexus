@@ -11,10 +11,10 @@
 
   // CARD
   #{c(popouts threads listItem)} {
-    background: cv('shading.cardInverted');
+    background: cv('shading.cardInner');
     border: 2px solid transparent;
     &:hover {
-      background: cv('shading.cardInverted');
+      background: cv('shading.cardInner');
       border: 2px solid cv('color.hover');
     }
   }
