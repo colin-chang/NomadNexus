@@ -3,19 +3,19 @@
 /*member list, profile*/
 #{c(avatar mask)} rect {
   // OFFLINE
-  &[fill*='#83838b'] {
+  &[fill*='#82838b'] {
     fill: cv('color.offline');
   }
   // ONLINE
-  &[fill*='#43a25a'] {
+  &[fill*='#40a258'] {
     fill: cv('color.online');
   }
   // IDLE
-  &[fill*='#ca9654'] {
+  &[fill*='#cc954c'] {
     fill: cv('color.idle');
   }
   // DND
-  &[fill*='#d83a42'] {
+  &[fill*='#d83a41'] {
     fill: cv('color.dnd');
   }
   // STREAMING
