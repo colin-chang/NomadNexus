@@ -105,7 +105,7 @@
 // DM SIDE PROFILE
 #{c(profile panel panel)} {
   &#{c(profile outer)} {
-    &:not(#{c(main customTheme)}) {
+    &:not(#{c(profile themed)}) {
       background: transparent;
     }
   }
