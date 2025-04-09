@@ -19,6 +19,14 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
     --text-muted: hsl(from var(--muted-text) #{$calc});
     --text-primary: hsl(from var(--primary-text) #{$calc});
     --text-secondary: hsl(from var(--secondary-text) #{$calc});
+    
+    // shadings are defined in .theme-dark/.theme-light -- turns out every color variable discord uses also uses saturation-factor.
+    --hsl-background-shading: hsl(from var(--background-shading) #{$calc});
+    --hsl-card-shading: hsl(from var(--card-shading) #{$calc});
+    --hsl-popout-shading: hsl(from var(--popout-shading) #{$calc});
+    --hsl-modal-shading: hsl(from var(--modal-shading) #{$calc});
+    --hsl-input-shading: hsl(from var(--input-shading) #{$calc});
+    --hsl-input-border-shading: hsl(from var(--hsl-input-shading) h s l/.1);
   }
 }
 :root {
@@ -35,14 +43,8 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --hsl-dnd-color: hsl(from var(--dnd-color) #{$calc});
   --hsl-streaming-color: hsl(from var(--streaming-color) #{$calc});
   --hsl-offline-color: hsl(from var(--offline-color) #{$calc});
-  // shadings are defined in .theme-dark/.theme-light -- turns out every color variable discord uses also uses saturation-factor.
-  --hsl-background-shading: hsl(from var(--background-shading) #{$calc});
-  --hsl-card-shading: hsl(from var(--card-shading) #{$calc});
-  --hsl-popout-shading: hsl(from var(--popout-shading) #{$calc});
-  --hsl-modal-shading: hsl(from var(--modal-shading) #{$calc});
-  --hsl-input-shading: hsl(from var(--input-shading) #{$calc});
-  --hsl-input-border-shading: hsl(from var(--hsl-input-shading) h s l/.1);
 
+  // fonts
   --font-primary: var(--main-font);
   --font-display: var(--main-font);
   --font-code: var(--code-font);
