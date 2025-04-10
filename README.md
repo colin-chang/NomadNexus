@@ -63,7 +63,7 @@ Download the theme file from [our official support server](https://clearvision.g
 
 **For using the theme online:**
 
-There are multiple ways to do this if your client offers using an online version. The suggested two are `https://clearvision.github.io/ClearVision-v6/main.css` or `https://raw.githubusercontent.com/ClearVision/ClearVision-v6/master/ClearVision_v6.theme.css`
+There are multiple ways to do this if your client offers using an online version. The suggested two are `https://clearvision.github.io/ClearVision-v7/main.css` or `https://raw.githubusercontent.com/ClearVision/ClearVision-v7/master/ClearVision-v7.theme.css`
 
 For customizing the theme from there, you'll want to use custom css and add any variables you'd like to change. It should look something like this:
 
@@ -88,8 +88,9 @@ To build the theme from source, first install npm from the dependencies below, t
 
 ## Contributing
 
-You can run `pnpm run test` to compile the theme.
-The `main.css` file will be in the `/test` directory, which can then be copied into your client mod's Custom CSS or placed in the themes folder and enabled in settings. Just make sure any other themes are disabled for testing.
+Run `pnpm run test` to compile the theme.
+
+The `main.css` file builds to the `/test` directory, which can then be copied into your client mod's Custom CSS or placed in the themes folder and enabled in settings. Just make sure any other themes are disabled for testing.
 
 ## Support
-Join our [discord server](https://discord.gg/dHaSxn3) and post in our support channel if you need additional help
+Join our [discord server](https://discord.gg/dHaSxn3) and post in our support channel if you need additional help!
