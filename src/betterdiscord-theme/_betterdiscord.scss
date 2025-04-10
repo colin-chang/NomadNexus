@@ -1,5 +1,27 @@
 @use 'backend' as *;
 
-#notice-for-if-you-look-in-here {
-  content: 'nothing here yet, need someone that uses bd for help';
+// settings
+#{c(main visualRefresh)} {
+  // addon/theme stores
+  #{c(bd addonStoreCard)} {
+    background: cv('shading.card');
+    border: 1px solid transparent;
+    &:hover {
+      background: cv('shading.card');
+      box-shadow: none;
+      border-color: cv('color.main');
+    }
+  }
+  // actual addons
+  #{c(bd addonCard)} {
+    background: cv('shading.card');
+    border: 2px solid transparent;
+    &:hover {
+      background: cv('shading.card');
+      border-color: cv('color.main');
+    }
+  }
+  #{c(bd addonHeader)} {
+    background: cv('shading.card');
+  }
 }
