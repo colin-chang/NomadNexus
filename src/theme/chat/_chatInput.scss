@@ -107,6 +107,18 @@
   color: cv('color.main');
 }
 
+// INLINE CODE
+#{c(main visualRefresh)} {
+  :is(#{c(chatForm inlineCode)}, #{c(chatForm afterInlineCode)}, #{c(chatForm beforeInlineCode)}) {
+    background: hsl(from cv('shading.card') h s calc(100 - l) / calc(alpha * 0.3));
+  }
+}
+
+// SEND BUTTON
+#{c(chatForm sendButtonActiveChild)} {
+  color: var(--interactive-active);
+}
+
 // TOOLBAR
 #{c(chatForm toolbar)} {
   background-color: cv('shading.popout');
