@@ -2608,7 +2608,7 @@ $classes: (
     'colorPlayStation': 'colorPlayStation__6e2b9',
     // same as Spotify
     'colorBrand': 'colorBrand__6e2b9',
-    // idfk
+    // view server as role
     'colorCustom': 'colorCustom__6e2b9',
     // idfk
     // The contents of these notices are in English because yes.
@@ -3335,20 +3335,21 @@ $classes: (
               // Disabled Soundboard (deafened) - actionButtons > <div> > <span>.button.color.#{c(button disabledButtonWrapper)} > button.color.disabled > contents > icon > svg,,
           ),
 
+        'noiseCancellation': (
+          'popout': 'noiseCancellationPopout_e131a9',
+          // click the noise suppression button
+          'tooltip': 'noiseCancellationTooltip_e131a9',
+          // hover over the noise suppression button
+          'krispLogo': 'krispLogo_e131a9',
+          // in NC popout; parent is clickable to https://api.krisp.ai/v2/resource/link/discord
+          'krispLink': 'krispLink_e131a9',
+          // in NC popout; clickable to a support article from discord
+          'micTestButton': 'micTestButton_e131a9',
+        ),
+
         // other classes that idk too much about
         'hotspot': 'hotspot_e131a9',
         'customStatusContainer': 'customStatusContainer_e131a9',
-        'noiseCancellationPopout': 'noiseCancellationPopout_e131a9',
-        // click the noise suppression button
-        'noiseCancellationTooltip': 'noiseCancellationTooltip_e131a9',
-        // hover over the noise suppression button
-        'krispLogo': 'krispLogo_e131a9',
-        // in NC popout; parent is clickable to https://api.krisp.ai/v2/resource/link/discord
-        'krispLink': 'krispLink_e131a9',
-        // in NC popout; clickable to a support article from discord
-        'micTestButton': 'micTestButton_e131a9',
-        // in NC popout
-        'beta': 'beta_e131a9',
         'voiceUsers': 'voiceUsers_e131a9',
         'withText': 'withText_e131a9',
         // relates to buttons
@@ -4073,13 +4074,13 @@ $classes: (
 
       // click the rightward chevron ">"
       'modal': (
-          'container': 'container__750de',
-          'header': 'header__750de',
-          'title': 'title__750de',
-          'connectionsContainer': 'connectionsContainer__750de',
-          'accountButton': 'accountBtn__750de',
-          'accountButtonInner': 'accountBtnInner__750de',
-        ),
+        'container': 'container__750de',
+        'header': 'header__750de',
+        'title': 'title__750de',
+        'connectionsContainer': 'connectionsContainer__750de',
+        'accountButton': 'accountBtn__750de',
+        'accountButtonInner': 'accountBtnInner__750de',
+      ),
 
       'connection': 'connection_c7f964',
       'connectionHeader': 'connectionHeader_c7f964',

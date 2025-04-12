@@ -73,8 +73,17 @@
 #{c(userSettings connections connection)} {
   background: cv('shading.card');
 }
-#{c(userSettings connections accountButtonInner)} {
+#{c(userSettings connections connectionsContainer)} {
+  justify-content: center;
+}
+#{c(userSettings connections accountButtonInner)},
+#{c(userSettings connections modal accountButtonInner)} {
   background-color: cv('shading.cardInner');
+  border: 2px solid transparent;
+  &:hover {
+    background-color: cv('shading.hover');
+    border-color: cv('color.main');
+  }
 }
 #{c(userSettings connections connectionHeader)} {
   background: transparent;

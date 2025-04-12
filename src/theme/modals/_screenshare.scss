@@ -5,6 +5,8 @@
     background: transparent;
   }
 }
+
+// PAGE 1
 #{c(modals screenshare tile)} {
   &:hover {
     #{c(modals screenshare sourceThumbnail)} {
@@ -12,6 +14,13 @@
     }
   }
 }
+#{c(modals screenshare sourceThumbnail)} {
+  &#{c(modals screenshare sourceSelected)} {
+    box-shadow: inset 0 0 0 2px cv('color.main');
+  }
+}
+
+// PAGE 2
 #{c(modals screenshare card)} {
   background: cv('shading.cardInner');
 }

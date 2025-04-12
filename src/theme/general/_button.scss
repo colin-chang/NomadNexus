@@ -68,6 +68,9 @@
       color: var(--button-outline-brand-text);
     }
   }
+  &:hover {
+    background-color: transparent;
+  }
 }
 
 // LINK

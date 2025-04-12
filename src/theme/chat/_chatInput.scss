@@ -110,13 +110,22 @@
 // INLINE CODE
 #{c(main visualRefresh)} {
   :is(#{c(chatForm inlineCode)}, #{c(chatForm afterInlineCode)}, #{c(chatForm beforeInlineCode)}) {
-    background: hsl(from cv('shading.card') h s calc(100 - l) / calc(alpha * 0.3));
+    background: hsl(from cv('shading.card') h s calc(100 - l) / calc(alpha * 0.5));
   }
 }
 
 // SEND BUTTON
 #{c(chatForm sendButtonActiveChild)} {
-  color: var(--interactive-active);
+  color: var(--interactive-normal);
+}
+:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+  #{c(chatForm sendButton)} {
+    &:is(:focus, :focus-within, :hover) {
+      #{c(chatForm sendButtonActiveChild)} {
+        color: var(--interactive-active);
+      }
+    }
+  }
 }
 
 // TOOLBAR
