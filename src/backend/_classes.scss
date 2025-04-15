@@ -2621,40 +2621,36 @@ $classes: (
   // These appear to be shared between profile popout and server settings. likely used elsewhere too.
   // DOES NOT APPLY TO TOP OF CHAT CHANNEL AREA.
   'role': (
-      'root': 'root__48c1c',
-      'role': 'role_dfa8b6',
-      'removeButton': 'roleRemoveButton_dfa8b6',
-      'removeIcon': 'roleRemoveIcon_dfa8b6',
-      'circle': 'roleCircle__4f569',
-      'flowerStar': 'roleFlowerStar__48c1c',
-      'verifiedIcon': 'roleVerifiedIcon__48c1c',
-      'name': 'roleName__48c1c',
-      'nameOverflow': 'roleNameOverflow__48c1c',
-      'actionButton': 'actionButton__48c1c',
-      'addButton': 'addButton__48c1c',
-      'addButtonIcon': 'addButtonIcon__48c1c',
-      'icon': 'roleIcon__48c1c',
-      'popoutBottom': 'popoutBottom__48c1c',
-      'popoutTop': 'popoutTop__48c1c',
-      'overflow': (
-        'button': 'overflowButton__48c1c',
-        'popout': (
-          'popout': 'overflowRolesPopout__48c1c',
-          'arrowWrapper': 'overflowRolesPopoutArrowWrapper__48c1c',
-          'arrow': 'overflowRolesPopoutArrow__48c1c',
-          'header': 'overflowRolesPopoutHeader__48c1c',
-          'headerIcon': 'overflowRolesPopoutHeaderIcon__48c1c',
-          'headerText': 'overflowRolesPopoutHeaderText__48c1c',
-        ),
-      ),
+    'root': 'root__48c1c',
+    'role': 'role_dfa8b6',
+    'removeButton': 'roleRemoveButton_dfa8b6',
+    'removeIcon': 'roleRemoveIcon_dfa8b6',
+    'circle': 'roleCircle__4f569',
+    'flowerStar': 'roleFlowerStar__48c1c',
+    'verifiedIcon': 'roleVerifiedIcon__48c1c',
+    'name': 'roleName__48c1c',
+    'nameOverflow': 'roleNameOverflow__48c1c',
+    'actionButton': 'actionButton__48c1c',
+    'addButton': 'addButton__48c1c',
+    'addButtonIcon': 'addButtonIcon__48c1c',
+    'icon': 'roleIcon__48c1c',
+    'expandButton': 'expandButton_fccfdf',
+    'collapseButton': 'collapseButton_fccfdf',
 
-      // Show role colours next to names
-      'svg': 'svg__4f569',
-      'background': 'background__4f569',
-      'dot': 'dot__4f569',
-      'dotBorderColor': 'dotBorderColor__4f569',
-      'dotBorderBase': 'dotBorderBase__4f569',
+    // Show role colours next to names
+    'svg': 'svg__4f569',
+    'background': 'background__4f569',
+    'dot': 'dot__4f569',
+    'dotBorderColor': 'dotBorderColor__4f569',
+    'dotBorderBase': 'dotBorderBase__4f569',
+
+    // add roles
+    'add': (
+      'popout': 'container__3dde2',
+      'list': 'list__97e86',
+      'item': 'item__97e86',
     ),
+  ),
   'scroller': (
     // There's two because pain.
     'base': 'scrollerBase__99f8c' 'scrollerBase_d125d2',

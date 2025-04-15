@@ -9,7 +9,7 @@
     position: static;
   }
   #{c(role removeIcon)} {
-    left: 15px;
+    left: 12px;
   }
   #{c(role circle)} {
     &::before {
@@ -24,4 +24,10 @@
       border-radius: 4px;
     }
   }
+}
+
+// ADD ROLES
+#{c(role add popout)} {
+  background: cv('shading.popout');
+  border: none;
 }
