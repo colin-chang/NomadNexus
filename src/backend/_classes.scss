@@ -628,48 +628,13 @@ $classes: (
       'qrCodeOverlay': 'qrCodeOverlay_e16417',
     ),
   'os': (
-    // OS specific stuff. There doesn't seem to be anything related to Linux nor web.
-    'titleBar': 'titleBar__421ed',
-    'withFrame': 'withFrame__421ed',
-
-    'wordmark': 'wordmark__421ed',
-    'withBackgroundOverride': 'withBackgroundOverride__421ed',
-
-    'win': (
-      'platform': 'platform-win',
-      'wordmark': 'wordmarkWindows__421ed',
-      // does not appear in refresh
-      'type': 'typeWindows__421ed',
-      // does not appear in refresh
-      'button': 'winButton__421ed',
-      // does not appear in refresh
-      'buttonClose': 'winButtonClose__421ed',
-      // does not appear in refresh
-      'buttonMinMax': 'winButtonMinMax__421ed',
-      // does not appear in refresh
-    ),
-
-    'mac': (
-      'platform': 'platform-osx',
-      'wordmark': 'wordmarkMacOS__421ed',
-      'type': 'typeMacOS__421ed',
-      'typeWithFrame': 'typeMacOSWithFrame__421ed',
-      'dragRegion': 'macDragRegion_a934d8',
-      'focused': 'focused__421ed',
-      'unfocused': 'unfocused__421ed',
-      'buttons': 'macButtons__421ed',
-      'button': 'macButton__421ed',
-      'buttonClose': 'macButtonClose__421ed',
-      'buttonMin': 'macButtonMinimize__421ed',
-      'buttonMax': 'macButtonMaximize__421ed',
-    ),
+    'win': 'platform-win',
+    'mac': 'platform-osx',
+    'linux': 'platform-linux',
+    'web': 'platform-web',
 
     'overlay': 'platform-overlay',
     // it's in there! -- only css change is with a scroller somewhere having more padding on top.
-    'linux': 'platform-linux',
-    // found within JS
-    'web': 'platform-web',
-    // found within JS
   ),
   // Generic classes for avatars/profile pictures
   'avatar': (
@@ -2301,13 +2266,6 @@ $classes: (
     'card': 'card__4d7bb',
     'faq': 'wrapper__5b98e',
     'footerPopout': 'innerWrapper_b4589b',
-
-    'serverBoostPerkContent': 'content_a8c622',
-    'serverBoostPaymentQuantityIconWrapper': 'iconWrapper__96f95',
-    'serverBoostPaymentQuantityIcon': 'icon__96f95',
-    'serverBoostPaymentUpsellFooter': 'upsellFooter__5e07c',
-    'serverBoostPaymentPerksList': 'perksList__3bf54',
-    'serverBoostPaymentActions': 'actions_f8746a',
   ),
 
   // kinda bad name. in desktop visual refresh, appears at the top as the first child under #{c(main base)}.
@@ -3537,7 +3495,7 @@ $classes: (
       // default colours are now provided with inline styling.
       'badgeList': 'container__8061a',
       'note': 'note_fcb628',
-      'noteTextarea': 'textarea_dde0a8',
+      'noteTextarea': 'textarea__9daae',
 
       // seems to be used on all of them
       'showOutOfBoundaryComponents': 'showOutOfBoundaryComponents_c69a7b',
@@ -5854,48 +5812,48 @@ $classes: (
 
     // Ctrl+N or click the green + at the bottom of the server list
     'addServer': (
-        'modal': 'container__024d4',
+      'modal': 'container__024d4',
 
-        // first screen "Create a server"
-        'createServerHeader': 'header_c04f35',
-        'createServerTitle': 'title_c04f35',
-        'createServerCloseButton': 'closeButton_c04f35',
-        'createServerSubtitle': 'subtitle_c04f35',
-        'createServerTemplatesList': 'templatesList_c04f35',
-        'optionHeader': 'optionHeader_c04f35',
-        'optionContainer': 'container_eb2cd2',
-        'optionIcon': 'icon_eb2cd2',
-        'optionText': 'text_eb2cd2',
-        'optionArrow': 'arrow_eb2cd2',
-        'footerTitle': 'footerTitle_c04f35',
+      // first screen "Create a server"
+      'createServerHeader': 'header_c04f35',
+      'createServerTitle': 'title_c04f35',
+      'createServerCloseButton': 'closeButton_c04f35',
+      'createServerSubtitle': 'subtitle_c04f35',
+      'createServerTemplatesList': 'templatesList_c04f35',
+      'optionHeader': 'optionHeader_c04f35',
+      'optionContainer': 'container_eb2cd2',
+      'optionIcon': 'icon_eb2cd2',
+      'optionText': 'text_eb2cd2',
+      'optionArrow': 'arrow_eb2cd2',
+      'footerTitle': 'footerTitle_c04f35',
 
-        // second screen "Tell us more about your server"
-        'tellUsMoreHeader': 'header__78f69',
-        'tellUsMoreTitle': 'title__78f69',
-        'tellUsMoreSubtitle': 'subtitle__78f69',
-        'tellUsMoreBackButton': 'backButton__78f69',
-        'tellUsMoreOptionsList': 'optionsList__78f69',
-        'tellUsMoreCloseButton': 'closeButton__78f69',
-        'tellUsMoreSkip': 'skip__78f69',
+      // second screen "Tell us more about your server"
+      'tellUsMoreHeader': 'header__78f69',
+      'tellUsMoreTitle': 'title__78f69',
+      'tellUsMoreSubtitle': 'subtitle__78f69',
+      'tellUsMoreBackButton': 'backButton__78f69',
+      'tellUsMoreOptionsList': 'optionsList__78f69',
+      'tellUsMoreCloseButton': 'closeButton__78f69',
+      'tellUsMoreSkip': 'skip__78f69',
 
-        // third screen "Customise your server"
-        'customiseHeader': 'header_b917ac',
-        'customiseTitle': 'title_b917ac',
-        'customiseSubtitle': 'subtitle_b917ac',
-        'customiseCreateServer': 'createGuild_b917ac',
-        'customiseUploadIcon': 'uploadIcon_b917ac',
-        'customiseIconContainer': 'iconContainer__98cf7',
+      // third screen "Customise your server"
+      'customiseHeader': 'header_b917ac',
+      'customiseTitle': 'title_b917ac',
+      'customiseSubtitle': 'subtitle_b917ac',
+      'customiseCreateServer': 'createGuild_b917ac',
+      'customiseUploadIcon': 'uploadIcon_b917ac',
+      'customiseIconContainer': 'iconContainer__98cf7',
 
-        // alternate second screen "Join a server" - click already have an invite button
-        'joinAServerHeader': 'header__991a0',
-        'joinAServerInput': 'input__991a0',
-        'joinServerExample': 'sampleLink__991a0',
-        'joinServerRowContainer': 'rowContainer__991a0',
-        // used as pointer to discovery
-        'joinServerRowText': 'rowText__991a0',
-        'joinServerRowArrow': 'rowArrow__991a0',
-        'joinServerBackButton': 'backButton_b917ac',
-      ),
+      // alternate second screen "Join a server" - click already have an invite button
+      'joinAServerHeader': 'header__991a0',
+      'joinAServerInput': 'input__991a0',
+      'joinServerExample': 'sampleLink__991a0',
+      'joinServerRowContainer': 'rowContainer__991a0',
+      // used as pointer to discovery
+      'joinServerRowText': 'rowText__991a0',
+      'joinServerRowArrow': 'rowArrow__991a0',
+      'joinServerBackButton': 'backButton_b917ac',
+    ),
 
     // Upload a file. That's really all there is to it.
     // For subcategories:
@@ -5905,139 +5863,139 @@ $classes: (
     // "modify" is when you've clicked the pencil icon in the chatbar, it's got some overlap with drop most likely
     // "fail" was probably removed? i don't know.
     'upload': (
-        'areaPosition': 'uploadArea_f75fb0',
-        // applies position fixed and other things with thread sidebar open/floating
-        'inner': 'inner_dbca3c',
+      'areaPosition': 'uploadArea_f75fb0',
+      // applies position fixed and other things with thread sidebar open/floating
+      'inner': 'inner_dbca3c',
 
-        // Used in drop and modify
-        'drop': (
-            'area': 'uploadArea_dbca3c',
-            'droppable': 'droppable_dbca3c',
-            'modalIn': 'uploadModalIn_dbca3c',
+      // Used in drop and modify
+      'drop': (
+        'area': 'uploadArea_dbca3c',
+        'droppable': 'droppable_dbca3c',
+        'modalIn': 'uploadModalIn_dbca3c',
 
-            'modal': 'uploadDropModal_dbca3c',
-            'error': 'error_dbca3c',
-            // upload a folder to get this to appear
-            // "pops" are in another (sub) category
-            'bgScale': 'bgScale_dbca3c',
-            'icons': 'icons_dbca3c',
-            // While the icons in this list are in order, the html tree order is one-three-two
-            // the "uses" comment are other classes on the same element. they're listed all below under "fileTypes"
-            'wrapOne': 'wrapOne_dbca3c',
-            'one': 'one_dbca3c',
+        'modal': 'uploadDropModal_dbca3c',
+        'error': 'error_dbca3c',
+        // upload a folder to get this to appear
+        // "pops" are in another (sub) category
+        'bgScale': 'bgScale_dbca3c',
+        'icons': 'icons_dbca3c',
+        // While the icons in this list are in order, the html tree order is one-three-two
+        // the "uses" comment are other classes on the same element. they're listed all below under "fileTypes"
+        'wrapOne': 'wrapOne_dbca3c',
+        'one': 'one_dbca3c',
 
-            // uses document
-            'wrapTwo': 'wrapTwo_dbca3c',
-            'two': 'two_dbca3c',
+        // uses document
+        'wrapTwo': 'wrapTwo_dbca3c',
+        'two': 'two_dbca3c',
 
-            // uses image
-            'wrapThree': 'wrapThree_dbca3c',
-            'three': 'three_dbca3c',
+        // uses image
+        'wrapThree': 'wrapThree_dbca3c',
+        'three': 'three_dbca3c',
 
-            // uses code
-            'instructions': 'instructions_dbca3c',
-            'title': 'title_dbca3c',
-          ),
-
-        // All of these rules have a background-image applied to them. You can find these under the same line as drop, above
-        // After the first the rules all seem to be prefixed by uploadModal inner(from drop) file(from drop) icon.[type]
-        // (these aren't even the only set of things like this!)
-        'fileTypes': (
-            'icon': 'icon_dbca3c',
-            // Base class for all of them
-            'document': 'document_dbca3c',
-            'image': 'image_dbca3c',
-            'code': 'code_dbca3c',
-            'video': 'video_dbca3c',
-            'acrobat': 'acrobat_dbca3c',
-            'ae': 'ae_dbca3c',
-            'sketch': 'sketch_dbca3c',
-            'ai': 'ai_dbca3c',
-            'archive': 'archive_dbca3c',
-            'photoshop': 'photoshop_dbca3c',
-            'ps': 'ps_dbca3c',
-            // This class uses the same image as photoshop. why there's two is anyone's guess
-            'spreadsheet': 'spreadsheet_dbca3c',
-            'webcode': 'webcode_dbca3c',
-            'audio': 'audio_dbca3c',
-            // This class also has a margin applied to it
-            'unknown': 'unknown_dbca3c',
-          ),
-
-        // These little things appear briefly and ARE used elsewhere within modals or the app itself.
-        'pop': (
-            'base': 'base_e42a84',
-            'sparkle': 'sparkle_e42a84',
-            'pop': 'pop_e42a84',
-            'light': 'light_e42a84',
-            'cross': 'cross_e42a84',
-
-            'sparkleOne': 'sparkleOne_dbca3c',
-            'sparkleTwo': 'sparkleTwo_dbca3c',
-            'popOne': 'popOne_dbca3c',
-            // There doesn't seem to be a popTwo
-            'lightOne': 'lightOne_dbca3c',
-            'lightTwo': 'lightTwo_dbca3c',
-            'crossOne': 'crossOne_dbca3c',
-            'crossTwo': 'crossTwo_dbca3c',
-
-            // Colors use images
-            'sparkleWhite': 'sparkleWhite_e42a84',
-            'sparkleGrey': 'sparkleGrey_bce2e6',
-            'sparkleBlurple': 'sparkleBlurple_bce2e6',
-            'popWhite': 'popWhite_e42a84',
-            'popGrey': 'popGrey_bce2e6',
-            'popBlurple': 'popBlurple_bce2e6',
-            'lightWhite': 'lightWhite_e42a84',
-            'lightGrey': 'lightGrey_bce2e6',
-            'lightBlurple': 'lightBlurple_bce2e6',
-            'crossWhite': 'crossWhite_e42a84',
-            'crossGrey': 'crossGrey_e42a84',
-            'crossBlurple': 'crossBlurple_bce2e6',
-          ),
-
-        'modify': (
-          'modal': 'uploadModal_dbca3c',
-          'file': 'file_dbca3c',
-          'expandable': 'expandable_dbca3c',
-          // used with images and gifs
-          'description': 'description_dbca3c',
-          'filename': 'filename_dbca3c',
-          'comment': 'comment_dbca3c',
-          'label': 'label_dbca3c',
-          // section header thingy
-          'filenameInputWrapper': 'channelTextAreaUpload_dbca3c',
-          // it's unique here
-          'optional': 'optional_dbca3c',
-          // found in css
-          'footer': 'footer_dbca3c',
-          'hasSpoilers': 'hasSpoilers_dbca3c',
-          'footerRightAlign': 'footerRightAlign_dbca3c',
-          'cancelAllButton': 'cancelAllButton_dbca3c',
-          // found within css
-        ),
-
-        // Line 532 of 2022-09-14: https://canary.discord.com/assets/40532.a635ae389e26e316ec3b.css
-        // Line 533 also applies here and anything on that line is mentioned
-        'fail': (
-            'modal': 'root__3ec70',
-            'artContainer': 'artContainer__3ec70',
-            'artContainerAlign': 'artContainer__8162d',
-            'content': 'content__3ec70',
-            'header': 'header__3ec70',
-            'body': 'body__8162d',
-            'footer': 'footer__3ec70',
-            'primaryActions': 'primaryActions__3ec70',
-
-            // The rest were found in css but I couldn't find them in the modal and are listed in the css list order
-            'secondaryAction': 'secondaryAction__3ec70',
-            'artContainerBoxShadow': 'artContainerBoxShadow__3ec70',
-            'art': 'art__3ec70',
-            'sparkleBadge': 'sparkleBadge__3ec70',
-            'newBadge': 'newBadge__3ec70',
-            // typo
-          ),
+        // uses code
+        'instructions': 'instructions_dbca3c',
+        'title': 'title_dbca3c',
       ),
+
+      // All of these rules have a background-image applied to them. You can find these under the same line as drop, above
+      // After the first the rules all seem to be prefixed by uploadModal inner(from drop) file(from drop) icon.[type]
+      // (these aren't even the only set of things like this!)
+      'fileTypes': (
+        'icon': 'icon_dbca3c',
+        // Base class for all of them
+        'document': 'document_dbca3c',
+        'image': 'image_dbca3c',
+        'code': 'code_dbca3c',
+        'video': 'video_dbca3c',
+        'acrobat': 'acrobat_dbca3c',
+        'ae': 'ae_dbca3c',
+        'sketch': 'sketch_dbca3c',
+        'ai': 'ai_dbca3c',
+        'archive': 'archive_dbca3c',
+        'photoshop': 'photoshop_dbca3c',
+        'ps': 'ps_dbca3c',
+        // This class uses the same image as photoshop. why there's two is anyone's guess
+        'spreadsheet': 'spreadsheet_dbca3c',
+        'webcode': 'webcode_dbca3c',
+        'audio': 'audio_dbca3c',
+        // This class also has a margin applied to it
+        'unknown': 'unknown_dbca3c',
+      ),
+
+      // These little things appear briefly and ARE used elsewhere within modals or the app itself.
+      'pop': (
+        'base': 'base_e42a84',
+        'sparkle': 'sparkle_e42a84',
+        'pop': 'pop_e42a84',
+        'light': 'light_e42a84',
+        'cross': 'cross_e42a84',
+
+        'sparkleOne': 'sparkleOne_dbca3c',
+        'sparkleTwo': 'sparkleTwo_dbca3c',
+        'popOne': 'popOne_dbca3c',
+        // There doesn't seem to be a popTwo
+        'lightOne': 'lightOne_dbca3c',
+        'lightTwo': 'lightTwo_dbca3c',
+        'crossOne': 'crossOne_dbca3c',
+        'crossTwo': 'crossTwo_dbca3c',
+
+        // Colors use images
+        'sparkleWhite': 'sparkleWhite_e42a84',
+        'sparkleGrey': 'sparkleGrey_bce2e6',
+        'sparkleBlurple': 'sparkleBlurple_bce2e6',
+        'popWhite': 'popWhite_e42a84',
+        'popGrey': 'popGrey_bce2e6',
+        'popBlurple': 'popBlurple_bce2e6',
+        'lightWhite': 'lightWhite_e42a84',
+        'lightGrey': 'lightGrey_bce2e6',
+        'lightBlurple': 'lightBlurple_bce2e6',
+        'crossWhite': 'crossWhite_e42a84',
+        'crossGrey': 'crossGrey_e42a84',
+        'crossBlurple': 'crossBlurple_bce2e6',
+      ),
+
+      'modify': (
+        'modal': 'uploadModal_dbca3c',
+        'file': 'file_dbca3c',
+        'expandable': 'expandable_dbca3c',
+        // used with images and gifs
+        'description': 'description_dbca3c',
+        'filename': 'filename_dbca3c',
+        'comment': 'comment_dbca3c',
+        'label': 'label_dbca3c',
+        // section header thingy
+        'filenameInputWrapper': 'channelTextAreaUpload_dbca3c',
+        // it's unique here
+        'optional': 'optional_dbca3c',
+        // found in css
+        'footer': 'footer_dbca3c',
+        'hasSpoilers': 'hasSpoilers_dbca3c',
+        'footerRightAlign': 'footerRightAlign_dbca3c',
+        'cancelAllButton': 'cancelAllButton_dbca3c',
+        // found within css
+      ),
+
+      // Line 532 of 2022-09-14: https://canary.discord.com/assets/40532.a635ae389e26e316ec3b.css
+      // Line 533 also applies here and anything on that line is mentioned
+      'fail': (
+        'modal': 'root__3ec70',
+        'artContainer': 'artContainer__3ec70',
+        'artContainerAlign': 'artContainer__8162d',
+        'content': 'content__3ec70',
+        'header': 'header__3ec70',
+        'body': 'body__8162d',
+        'footer': 'footer__3ec70',
+        'primaryActions': 'primaryActions__3ec70',
+
+        // The rest were found in css but I couldn't find them in the modal and are listed in the css list order
+        'secondaryAction': 'secondaryAction__3ec70',
+        'artContainerBoxShadow': 'artContainerBoxShadow__3ec70',
+        'art': 'art__3ec70',
+        'sparkleBadge': 'sparkleBadge__3ec70',
+        'newBadge': 'newBadge__3ec70',
+        // typo
+      ),
+    ),
 
     // Click an image (png, jpg, gif) in chat. This may not apply to videos or other embeds.
     'mediaViewer': (
@@ -6083,8 +6041,50 @@ $classes: (
         // parent to actionButtonInner
         'actionButtonInner': 'actionButtonInner_cc1819',
       ),
+    
+    'purchase': (
+      'nitroTier': (
+        'header': 'skuSelectModalHeader_e50a4d',
+        'content': 'skuSelectModalContent_e50a4d',
+      ),
+
+      'gift': (
+        'spinner': 'spinner_ca0af2',
+        'header': 'modalHeaderCustomGift_b54a5b',
+        'giftBox': 'customGiftBox_d50aac',
+        'giftBoxSelected': 'customGiftBoxHighlighted_d50aac',
+
+        // nitro
+        'selectionBox': 'selectionBox_b13085',
+        'selectionBoxSelected': 'selectedPlan_b13085',
+        'shopIcon': 'iconBackground__33980',
+
+        // profile decoration
+        'customMessage': 'customGiftMessage_bf1b4a',
+        'preview': 'previewContainerSelected__50f14',
+      ),
+
+      'payment': (
+        'note': 'paymentNote_a8c622',
+        'breadcrumb': 'wrapper__4106a',
+        'body': 'body_c6f1a4',
+        'table': 'table_fda3e4',
+        'cardPageBody': 'body_b25217',
+        'cardInputWrapper': 'cardNumberWrapper__8b579',
+        'cardInput': 'cardInput__8b579',
+        'cardInputFocused': 'cardInputFocused__8b579',
+      ),
+
+      'boost': (
+        'content': 'content_a8c622',
+        'quantityIconWrapper': 'iconWrapper__96f95',
+        'quantityIcon': 'icon__96f95',
+        'quantityValue': 'value__96f95',
+        'upsellFooter': 'upsellFooter__5e07c',
+      ),
+    ),
   ),
-  // holy shit end of modals
+  
   // Client Mods
   // Powercord and Replugged support have been dropped.
   'vencord': (
@@ -6850,14 +6850,6 @@ $classes: (
           'settingsFormFieldWrapper': 'settingsFormFieldWrapper__3ff83',
           'messageReportOption': 'childButton__3ed08',
           'reactionModalColorStandard': 'colorStandard_c9946a',
-          'nitroPaymentNote': 'paymentNote_a8c622',
-          'nitroPaymentWrapper': 'wrapper__4106a',
-          'nitroPaymentBody': 'body_c6f1a4',
-          'nitroPaymentTable': 'table__58ce9',
-          'nitroPaymentDiscount': 'planOptionDiscount_b13085',
-          'nitroPaymentCardInputWrapper': 'cardNumberWrapper__8b579',
-          'nitroPaymentCardInput': 'cardInput__8b579',
-          'nitroPaymentCardInputFocused': 'cardInputFocused__8b579',
           'botInviteModalContent': 'contentBackground__3d3b0',
           'authModalInApp': 'inApp_c5a065',
           'authModalScopeTimes': 'iconWrapper_cf14a8',
@@ -6983,13 +6975,6 @@ $classes: (
           'previewServerContainer': 'container__7e919',
           'previewServerBackButton': 'button_c5cd6a',
           'previewServerHomeContainer': 'container_c68a2c',
-          'giftModalSelectTierHeader': 'skuSelectModalHeader_e50a4d',
-          'giftModalSelectTier': 'skuSelectModalContent_e50a4d',
-          'giftModalHeader': 'modalHeaderCustomGift_b54a5b',
-          'giftModalGiftBoxSelected': 'customGiftBoxHighlighted_d50aac',
-          'giftModalPlanSelected': 'selectedPlan_b13085',
-          'giftModalShopIcon': 'iconBackground__33980',
-          'giftModalSpinner': 'spinner_ca0af2',
           'serverShopIntro': 'container_adb50a',
           'serverShopSelected': 'selected_d804ff',
           'inboxPopoutPill': 'unread__6fddf',

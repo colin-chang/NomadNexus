@@ -1,7 +1,7 @@
 @use 'backend' as *;
 
-// OLD CHAT INPUT (TREATMENT 3)
-#{c(main visualRefresh)}:not(#{c(main visualRefreshChatInput)}) {
+// CHAT INPUT
+#{c(main visualRefresh)} {
   #{c(chatForm form)} {
     margin-top: 4px;
   }
@@ -27,73 +27,6 @@
 #{c(chatForm themedBackground)} {
   background: transparent;
 }
-
-// NEW CHAT INPUT (TREATMENT 2)
-#{c(main visualRefreshChatInput)} {
-  #{c(chatForm formWithLoadedChatInput)} {
-    &:before {
-      display: none;
-    }
-  }
-  #{c(chatForm channelBottomBarArea)} {
-    margin: 0 16px;
-  }
-  #{c(chatForm channelTextArea)} {
-    // Seperate input with buttons
-    background: transparent;
-    border: none;
-    padding: 2px 2px 0;
-  }
-  :is(#{c(chatForm channelTextAreaMainChat)}, #{c(chatForm channelTextAreaEdit)}) {
-    #{c(chatForm themedBackground)} {
-      background-color: cv('shading.input.bg');
-      box-shadow: 0 0 0 2px cv('shading.input.border');
-      border-radius: 8px;
-      &:focus-within {
-        box-shadow: 0 0 2px 2px cv('color.main');
-      }
-    }
-  }
-
-  // ATTACHMENTS
-  #{c(chatForm attachmentArea)} {
-    background: transparent;
-  }
-  #{c(chatForm upload)} {
-    background: cv('shading.card');
-    border: none;
-  }
-
-  // TYPING
-  #{c(chatForm typing)} {
-    margin-left: 20px;
-    font-size: 14px;
-    opacity: 0.9;
-  }
-
-  // BAR
-  #{c(chatForm channelBottomBarArea)} {
-    #{c(chatForm stackedBars)} {
-      margin-bottom: 8px;
-      border: none;
-      border-radius: 8px;
-      background: cv('shading.popout');
-    }
-  }
-
-  //  BOTTOM BUTTONS
-  #{c(chatForm accessoryBar)} {
-    border: none;
-    margin-left: 0;
-    pointer-events: none;
-  }
-  #{c(chatForm accessoryBarLeft)},
-  #{c(chatForm accessoryBarRight)} {
-    pointer-events: initial;
-  }
-}
-
-// APPLIES TO BOTH
 
 // SCROLLBAR
 #{c(chatForm scrollableContainer)} {

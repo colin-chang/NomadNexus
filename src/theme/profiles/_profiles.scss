@@ -55,6 +55,15 @@
 #{c(profile overlay)} {
   background-color: cv('shading.card');
 }
+#{c(profile note)} {
+  #{c(profile noteTextarea)} {
+    border: none;
+    background: cv('shading.input.bg');
+    &:focus {
+      background: cv('shading.input.bg');
+    }
+  }
+}
 
 // POPOUT SEND MESSAGE
 :is(#{c(main visualRefreshChatInput)}, :not(#{c(main visualRefreshChatInput)})) {
@@ -69,7 +78,7 @@
   // NITRO PROFILE
   #{c(profile themed)} {
     #{c(chatForm channelTextAreaInline)} {
-      background: var(--input-background);
+      background: var(--user-profile-note-background-focus);;
       box-shadow: 0 0 0 2px var(--profile-body-border-color);
       &:focus-within {
         box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
@@ -96,6 +105,7 @@
     background-color: var(--profile-gradient-primary-color);
   }
   #{c(profile noteTextarea)} {
+    background: var(--user-profile-note-background-focus);
     &:focus {
       box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
     }

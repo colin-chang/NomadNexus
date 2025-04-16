@@ -1,5 +1,5 @@
 @use 'backend' as *;
-#{c(os win platform)} {
+#{c(os win)} {
   #{c(sidebar sidebar)} {
     border-radius: 0;
   }

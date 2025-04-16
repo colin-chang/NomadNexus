@@ -6,8 +6,9 @@
     border: none;
     box-shadow: none;
   }
-  #{c(modals footer)} {
-    background: transparent;
-    box-shadow: none;
-  }
+}
+#{c(modals header)},
+#{c(modals body)}
+#{c(modals footer)} {
+  background: transparent;
 }

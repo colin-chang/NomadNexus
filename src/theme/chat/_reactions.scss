@@ -6,6 +6,9 @@
     #{c(chat reactions me)} {
       background: hsl(from cv('color.main') h s l/.15);
       border-color: cv('color.main');
+      #{c(chat reactions count)} {
+        color: var(--interactive-active);
+      }
     }
   }
   :is(#{c(chat reactions reaction)}, #{c(chat reactions reactionBtn)}) {

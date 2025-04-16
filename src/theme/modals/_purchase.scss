@@ -1,0 +1,64 @@
+@use 'backend' as *;
+
+// GIFT
+#{c(modals purchase gift spinner)} {
+  background: transparent;
+}
+#{c(modals purchase gift giftBoxSelected)} {
+  border-color: cv('color.main');
+}
+#{c(modals purchase gift shopIcon)} {
+  background: cv('color.main');
+  color: var(--header-primary);
+}
+#{c(main visualRefresh)} {
+  #{c(modals purchase gift selectionBox)} {
+    background: cv('shading.cardInner');
+    outline: none;
+  }
+  #{c(modals purchase gift selectionBoxSelected)} {
+    background: cv('shading.cardInner');
+    outline: 2px solid cv('color.main');
+  }
+  #{c(modals purchase gift preview)} {
+    background: cv('shading.cardInner');
+    outline: 2px solid cv('color.main');
+    border: none
+  }
+}
+#{c(modals purchase gift customMessage)} {
+  background: transparent;
+}
+
+// PAYMENT
+#{c(modals purchase payment breadcrumb)} {
+  background: transparent;
+}
+#{c(modals purchase payment cardPageBody)} {
+  padding: 0 2px;
+}
+#{c(modals purchase payment cardInput)} {
+  background-color: cv('shading.input.bg');
+  border: none;
+  box-shadow: 0 0 0 2px cv('shading.input.border');
+}
+#{c(modals purchase payment cardInputFocused)} {
+  box-shadow: 0 0 2px 2px cv('color.main');
+}
+
+// BUY BOOST
+#{c(modals purchase boost content)},
+#{c(modals purchase boost upsellFooter)} {
+  background: transparent;
+}
+:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+  #{c(modals purchase boost quantityIconWrapper)} {
+    background: cv('shading.cardInner');
+  }
+}
+#{c(modals purchase boost quantityValue)} {
+  &,
+  &:focus {
+    box-shadow: none;
+  }
+}
