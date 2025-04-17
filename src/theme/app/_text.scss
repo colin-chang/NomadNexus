@@ -15,12 +15,6 @@ code {
   font-family: cv('font.code');
 }
 
-// LINKS
-#{c(main anchorLink)},
-a {
-  color: cv('color.main');
-}
-
 // SELECTION
 ::selection {
   background: cv('color.main');

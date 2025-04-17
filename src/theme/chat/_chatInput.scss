@@ -35,11 +35,6 @@
   }
 }
 
-// LINK
-#{c(chatForm fakeLink)} {
-  color: cv('color.main');
-}
-
 // INLINE CODE
 #{c(main visualRefresh)} {
   :is(#{c(chatForm inlineCode)}, #{c(chatForm afterInlineCode)}, #{c(chatForm beforeInlineCode)}) {

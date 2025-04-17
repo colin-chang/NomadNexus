@@ -85,11 +85,8 @@
 #{c(forums pinIcon)} {
   background: cv('color.main');
 }
-#{c(forums list newMessageCount)} {
-  color: cv('color.main') !important; //inline
-}
 
-  // CHAT
+// CHAT
 #{c(main visualRefresh)} {
   #{c(forums chat divider)} {
     background: transparent;

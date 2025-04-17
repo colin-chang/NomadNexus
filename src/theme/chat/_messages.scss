@@ -112,14 +112,6 @@
   }
 }
 
-// MESSAGE LINKS
-a {
-  #{c(chat systemMessageContent)} &,
-  #{c(chat markup)} & {
-    color: cv('color.main');
-  }
-}
-
 // PUBLISH TO FOLLOWERS
 #{c(chat publish container)} {
   background: cv('shading.card');
