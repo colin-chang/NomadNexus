@@ -1,0 +1,8 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+    #{c(other cv libraryScroller)},
+    #{c(other cv librarySettingsScroller)} {
+        background: cv('shading.card');
+    }
+}

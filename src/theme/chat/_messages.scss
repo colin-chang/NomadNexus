@@ -209,6 +209,12 @@
     background: cv('shading.card');
     border: none;
   }
+
+  #{c(embeds poll finished container)},
+  #{c(embeds poll container)} {
+    background: cv('shading.card');
+    border: none;
+  }
 }
 #{c(embeds voiceMessage ripple)} {
   background: cv('color.main');
