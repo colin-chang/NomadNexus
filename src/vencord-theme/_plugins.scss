@@ -1,0 +1,24 @@
+@use 'backend' as *;
+
+// MAGANE
+#{c(main visualRefresh)} {
+    div#magane div.stickerWindow,
+    div#magane .stickersModal .modal-content {
+        background: cv('bg.app.img') center/cover no-repeat;
+        background-attachment: cv('bg.app.attach');
+        filter: cv('bg.app.filter');
+        &:before {
+            background: cv('shading.bg');
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+    div#magane div.stickerWindow div.packs-toolbar {
+        background: cv('shading.card');
+    }
+}
