@@ -51,3 +51,13 @@
     }
   }
 }
+
+// PRIVATE VC PREVIEW
+#{c(popouts vcPreview popout)} {
+  background: cv('shading.popout');
+}
+#{c(main visualRefresh)} {
+  #{c(popouts vcPreview peopleContainer)} {
+    background: cv('shading.cardInner');
+  }
+}

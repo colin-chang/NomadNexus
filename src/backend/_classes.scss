@@ -5222,6 +5222,11 @@ $classes: (
       'watchButton': 'watchButton__6da2d',
     ),
 
+    'vcPreview': (
+      // hover private vc with members playing games/listening to spotify
+      'popout': 'container__4e30a',
+      'peopleContainer': 'container_b1bfd4',
+    ),
   ),
 
   'modals': (
@@ -6963,10 +6968,6 @@ $classes: (
           'sidebarPFPUpsell': 'editor__2a891',
           'chatToolbarButton': 'button_bba883',
           'chatToolbarIcon': 'icon_bba883',
-
-          'voiceChannelListening': 'container__4e30a',
-          'voiceChannelListeningIcon': 'container_b1bfd4',
-
           'previewServerIconContainer': 'iconContainer__1b9f0',
           'previewServerChannelIcon': 'channelIcon__949ab',
           'previewServerChannelTitleIcon': 'channelTitleIcon__949ab',
