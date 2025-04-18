@@ -602,31 +602,35 @@ $classes: (
     'childContainer': 'childContainer__3e3b0',
     'redesignIconChildContainer': 'redesignIconChildContainer__3e3b0',
   ),
-  'badges'
-    (
-      'base': 'base__2b1f5',
-      'number': 'numberBadge__2b1f5',
-      'text': 'textBadge__2b1f5',
-    )
-    'login': (
-      'wrapper': 'wrapper_d4fa29',
-      'characterBackground': 'characterBackground_eb4069',
-      // seemingly a parent class for the whole thing
-      'artwork': 'artwork_eb4069',
-      'loggingIn': 'loggingIn_bdd070',
-      'logo': 'logo_eb4069',
-      'splashBackground': 'splashBackground__742a4',
+  'badges': (
+    'base': 'base__2b1f5',
+    'number': 'numberBadge__2b1f5',
+    'text': 'textBadge__2b1f5',
+  )
+  'login': (
+    'wrapper': 'wrapper_d4fa29',
+    'characterBackground': 'characterBackground_eb4069',
+    // seemingly a parent class for the whole thing
+    'artwork': 'artwork_eb4069',
+    'loggingIn': 'loggingIn_bdd070',
+    'logo': 'logo_eb4069',
+    'splashBackground': 'splashBackground__742a4',
 
-      'authBox': 'authBox__921c5',
-      // paired up with a dark mode and the next class
-      'authBoxExpanded': 'authBoxExpanded__921c5',
-      // ...even with a thin screen this pops up
-      'mainLoginContainer': 'mainLoginContainer__1d5fc',
-      // could potentially be mainLoginContainer__86e92
-      'header': 'header__1d5fc',
-      'title': 'title__921c5',
-      'qrCodeOverlay': 'qrCodeOverlay_e16417',
-    ),
+    'authBox': 'authBox__921c5',
+    // paired up with a dark mode and the next class
+    'authBoxExpanded': 'authBoxExpanded__921c5',
+    // ...even with a thin screen this pops up
+    // appears when adding acc while logged in
+    'mainLoginContainer': 'mainLoginContainer__1d5fc',
+    'header': 'header__1d5fc',
+    'title': 'title__921c5',
+    'qrCodeOverlay': 'qrCodeOverlay_e16417',
+    
+    'accountsList': 'list__920b8',
+    
+    'addAccountNav': 'navRow__86e92',
+    // appears when adding acc while logged in
+  ),
   'os': (
     'win': 'platform-win',
     'mac': 'platform-osx',
@@ -6926,10 +6930,6 @@ $classes: (
           'createEventCreateStageContainer': 'container__03b47',
           'createEventColorMuted': 'colorMuted_c9946a',
           'createEventColorBrand': 'colorBrand_c9946a',
-          'loginAccountsList': 'list__920b8',
-          'loginStartOverButton': 'startOverButton_e16417',
-          'loginVerificationContainer': 'container_deee3a',
-          'addAccountFooter': 'navRow__86e92',
           'copyGiftCode': 'copyInput_fffc15',
           'giftQuestContainer': 'outerContainer__2055a',
           'giftQuestProgress': 'gridProgressBar__2055a',

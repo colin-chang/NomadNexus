@@ -1,0 +1,17 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+  #{c(login authBox)} {
+    background-color: cv('shading.modal');
+  }
+}
+
+// ACCOUNT LIST
+#{c(login accountsList)} {
+  background-color: cv('shading.cardInner');
+}
+
+// ADD ACCOUNT
+#{c(login addAccountNav)} {
+  background-color: transparent;
+}
