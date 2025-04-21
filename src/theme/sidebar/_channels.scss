@@ -169,3 +169,45 @@
     padding: 0 6px 0 1px;
   }
 }
+
+// VC Highlights / etc
+// VOICE USER LIST
+#{c(sidebar server channels voice listGeneric)} {
+  padding-left: 24px;
+}
+
+#{c(sidebar server channels voice user)} {
+  z-index: 1;
+  #{c(sidebar server channels voice userContent)} {
+    border-radius: 3px;
+    transition: all 0.15s ease-in-out;
+  }
+  #{c(sidebar server channels voice avatarSpeaking)} {
+    box-shadow: 0 0 0 2px cv('color.main'), inset 0 0 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: all 0.1s ease-in-out;
+    &:after {
+      content: '';
+      top: -2px;
+      bottom: -2px;
+      width: 150px;
+      position: absolute;
+      height: 1.8em;
+      background: linear-gradient(to right, cv('color.main') 10%, transparent);
+      opacity: 0.5;
+      transition: all 0.1s ease-in-out, width 0.15s ease-in-out;
+      pointer-events: none;
+      z-index: -1;
+      border-radius: 999px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  #{c(sidebar server channels voice username)} {
+    color: hsla(0, 0%, 100%, 0.5);
+    transition: all 0.1s ease-in-out;
+  }
+  #{c(sidebar server channels voice usernameSpeaking)} {
+    color: #fff;
+  }
+}
