@@ -1,6 +1,8 @@
 @use 'backend' as *;
 
-/* INPUT */
+#{c(input wrapper)} {
+  margin: 2px;
+}
 #{c(input input)} {
   background-color: cv('shading.input.bg');
   border: none;

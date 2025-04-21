@@ -66,15 +66,7 @@
 }
 
 // POPOUT SEND MESSAGE
-:is(#{c(main visualRefreshChatInput)}, :not(#{c(main visualRefreshChatInput)})) {
-  #{c(chatForm channelTextAreaInline)} {
-    background-color: cv('shading.input.bg');
-    border: none;
-    box-shadow: 0 0 2px cv('shading.input.border');
-    &:focus-within {
-      box-shadow: 0 0 2px 2px cv('color.main');
-    }
-  }
+#{c(main visualRefresh)} {
   // NITRO PROFILE
   #{c(profile themed)} {
     #{c(chatForm channelTextAreaInline)} {
@@ -108,6 +100,7 @@
     background: var(--user-profile-note-background-focus);
     &:focus {
       box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
+      background: var(--user-profile-note-background-focus);
     }
   }
 }

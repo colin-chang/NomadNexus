@@ -34,8 +34,8 @@
 #{c(modals purchase payment breadcrumb)} {
   background: transparent;
 }
-#{c(modals purchase payment cardPageBody)} {
-  padding: 0 2px;
+#{c(modals purchase payment cardInputWrapper)} {
+  margin: 2px;
 }
 #{c(modals purchase payment cardInput)} {
   background-color: cv('shading.input.bg');
