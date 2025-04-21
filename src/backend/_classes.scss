@@ -1177,6 +1177,7 @@ $classes: (
         'emoji': 'reactionTooltipEmoji_b49891',
         'text': 'reactionTooltipText_b49891',
         'inner': 'reactionTooltipInner_b49891',
+        'button': 'reactionEmojiDetailsClickable_d5cd2d',
       ),
       'burst': (
         'glow': 'burstGlow__23977',
@@ -3267,6 +3268,7 @@ $classes: (
 
           // There's a row of buttons in this panel. These are not to be confused with the "noise suppression" and "disconnect" buttons.
           'actionButtons': (
+            'experiment': 'experimentButton_e131a9',
             'actionButtons': 'actionButtons_e131a9',
             'button': 'button_e131a9',
             'color': 'buttonColor_e131a9',

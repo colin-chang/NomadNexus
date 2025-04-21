@@ -22,6 +22,14 @@
 #{c(chat reactions tooltip tooltip)} {
   background: cv('shading.popout');
 }
+:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+  #{c(chat reactions tooltip tooltip)} {
+    background: cv('color.main');
+    &:hover {
+      background: cv('color.hover');
+    }
+  }
+}
 
 // SUPER REACTIONS
 #{c(chat reactions burst glow)} {

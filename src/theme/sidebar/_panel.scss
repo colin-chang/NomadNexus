@@ -20,6 +20,26 @@
   }
 }
 
+// BUTTONS
+#{c(main visualRefresh)} {
+  #{c(sidebar panel voice actionButtons button)} {
+    &#{c(sidebar panel voice actionButtons color)} {
+      background: cv('color.main');
+      &:hover {
+        background: cv('color.hover');
+      }
+      &#{c(sidebar panel voice actionButtons color)} {
+        background: hsl(from cv('color.main') h s l/.4);
+        color: var(--button-secondary-text);
+        border-color: hsl(from cv('color.main') h s l/.2);
+        &:hover {
+          background: hsl(from cv('color.hover') h s l/.3);
+        }
+      }
+    }
+  }
+}
+
 // QUEST
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {
   #{c(sidebar panel quest wrapper)} {
