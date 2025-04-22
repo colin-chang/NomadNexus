@@ -4,7 +4,7 @@
   margin: 2px;
 }
 #{c(input input)} {
-  background-color: cv('shading.input.bg');
+  background: cv('shading.input.bg');
   border: none;
   box-shadow: 0 0 0 2px cv('shading.input.border');
   &::placeholder {
@@ -24,11 +24,11 @@
     background: none;
   }
   #{c(input multiField)} {
-    background-color: transparent;
+    background: transparent;
     box-shadow: none;
   }
   #{c(input copy)} & {
-    background-color: transparent;
+    background: transparent;
     box-shadow: none;
   }
 }

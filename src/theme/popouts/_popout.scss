@@ -1,17 +1,5 @@
 @use 'backend' as *;
 
-// SEARCH BAR
-#{c(popouts searchbar container)} {
-  background: cv('shading.input.bg');
-  border-color: transparent;
-  box-shadow: 0 0 1px 1px cv('shading.input.border');
-  margin: 2px;
-  &:focus-within {
-    box-shadow: 0 0 2px 1px cv('color.main');
-    border-color: transparent;
-  }
-}
-
 // CATEGORY LIST
 #{c(main visualRefresh)} {
   #{c(popouts categoryList wrapper)} {

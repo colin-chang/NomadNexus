@@ -2495,6 +2495,8 @@ $classes: (
     'memberContainer': 'container__91a9d',
     'selected': 'selected__91a9d',
     'childContainer': 'childContainer__91a9d',
+    'nameplated': 'nameplated__91a9d',
+    // members with nameplates
     'layout': 'layout__91a9d',
     'memberInner': 'memberInner__5d473',
     'muted': 'muted__91a9d',
@@ -2666,6 +2668,46 @@ $classes: (
     'emptyResultsText': 'emptyResultsText_a9e706',
     'noResults': 'noResults_a9e706',
   ),
+
+  'searchbar': (
+    'container': 'container_a45028',
+    // For actual search bar; formally (incorrectly) used for entire container
+    'medium': 'medium_a45028',
+    'inner': 'inner_a45028',
+    // appears to be used for both a wrapper and <input>
+    'iconLayout': 'iconLayout_a45028',
+    'iconContainer': 'iconContainer_a45028',
+    'iconVisible': 'visible_a45028',
+    'iconClear': 'clear_a45028',
+
+    'visualRefresh': (
+      // needs .visual-refresh
+      // used in settings search, create dms
+      // most others seem to be using _a45028 instead
+      'container': 'container_fea832',
+      'disabled': 'disabled_fea832',
+      // Best seen in non-nitro stickers
+      'inner': 'inner_fea832',
+      'input': 'input_fea832',
+      // text, usually. often has a `value=` when typing
+      'tag': 'tag_fea832',
+      // add/create dms' username
+      'close': 'close_fea832',
+      // add/create dms' username's cross
+
+      'iconLayout': 'iconLayout_fea832',
+      'iconContainer': 'iconContainer_fea832',
+      'icon': 'icon_fea832',
+      'iconVisible': 'visible_fea832',
+      'iconClear': 'clear_fea832',
+
+      'small': 'small_fea832',
+      'medium': 'medium_fea832',
+      'large': 'large_fea832',
+
+    )
+  ),
+
   'guildList': (
     'guilds': 'guilds_c48ade',
     'wrapper': 'wrapper_ef3116',
@@ -4442,19 +4484,6 @@ $classes: (
       'popout': 'loadingPopout__58f1c',
     ),
 
-    // searchbar in popouts
-    'searchbar': (
-      'container': 'container_a45028',
-      // For actual search bar; formally (incorrectly) used for entire container
-      'medium': 'medium_a45028',
-      'inner': 'inner_a45028',
-      // appears to be used for both a wrapper and <input>
-      'iconLayout': 'iconLayout_a45028',
-      'iconContainer': 'iconContainer_a45028',
-      'iconVisible': 'visible_a45028',
-      'iconClear': 'clear_a45028',
-    ),
-
     // Shoody name? Yes. Multiple modals use it? Also yes, sadly.
     // It's in the Emojis, Command Autocomplete and Stickers. Open any of them.
     'categoryList': (
@@ -5276,43 +5305,6 @@ $classes: (
       'right': 'animatorRight_faf9c0',
       'top': 'animatorTop_faf9c0',
       'bottom': 'animatorBottom_faf9c0',
-    ),
-
-    // best-seen locations for each class are listed if apllicable
-    // these are classes used on all search bars within modals and some non-modal search bars too
-    'searchBar': (
-      'container': 'container_fea832',
-      'disabled': 'disabled_fea832',
-      // Best seen in non-nitro stickers
-      'inner': 'inner_fea832',
-      'input': 'input_fea832',
-      // text, usually. often has a `value=` when typing
-      'tag': 'tag_fea832',
-      // add/create dms' username
-      'close': 'close_fea832',
-      // add/create dms' username's cross
-      'richTagInput': 'richTagInput_fea832',
-      // input text of create channel, set to private
-      'richTag': 'richTag_fea832',
-      // create channel, set to private
-      'tagRoleColor': 'tagRoleColor_fea832',
-      // role color dot in create private channel
-      'tagLabel': 'tagLabel_fea832',
-
-      // text within rich
-      // can be found in threads dropdown/modal, clear being visible when you search something
-      'iconLayout': 'iconLayout_fea832',
-      'iconContainer': 'iconContainer_fea832',
-      'icon': 'icon_fea832',
-      'iconVisible': 'visible_fea832',
-      'iconClear': 'clear_fea832',
-
-      'small': 'small_fea832',
-      // Server settings -> members tab + bans
-      'medium': 'medium_fea832',
-      // Used on gifs, stickers, emoji, create/add to dm
-      'large': 'large_fea832',
-      // If you've got experiments enabled, check that tab
     ),
 
     // When creating a new channel

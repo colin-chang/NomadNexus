@@ -4,6 +4,7 @@
   #{c(modals quickswitcher modal)} {
     background: cv('shading.popout');
     border: none;
+    background: cv('shading.input.bg');
   }
   #{c(modals quickswitcher scroller)} {
     background: transparent;

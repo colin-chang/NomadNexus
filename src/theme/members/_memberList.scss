@@ -122,6 +122,14 @@
       background: linear-gradient(to right, currentColor 90%, transparent);
     }
   }
+  #{c(memberList nameplated)} & {
+    &[style^='color:'] {
+      &:before,
+      &:after {
+        background: linear-gradient(to right, currentColor, transparent);
+      }
+    }
+  }
 }
 
 // ACTIVITY

@@ -21,6 +21,13 @@
   }
 }
 
+// SYSTEM MESSAGE
+#{c(chat systemMessageContent)} {
+  a {
+    color: var(--text-link);
+  }
+}
+
 // CODEBLOCK
 #{c(main visualRefresh)} {
   #{c(chat markup)} {

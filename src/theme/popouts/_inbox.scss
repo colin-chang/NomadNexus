@@ -9,7 +9,7 @@
     background: transparent;
   }
   #{c(popouts inbox channelHeader)} {
-    background: cv('color.main');
+    background: hsl(from cv('color.main') h s l/.8);
     padding-left: 20px;
     padding-right: 6px;
     border-radius: 8px;
