@@ -62,6 +62,33 @@
   border: none;
 }
 
+// AUTHORISED APPS
+#{c(userSettings authedApps app)} {
+  background: cv('shading.card');
+}
+#{c(userSettings authedApps header)} {
+  background: transparent;
+}
+#{c(userSettings authedApps detailsContainer)} {
+  background: transparent;
+  #{c(userSettings authedApps detailsSection)} {
+    background: cv('shading.cardInner');
+    padding: 16px;
+    &:active {
+      background: cv('shading.cardInner');
+    }
+    &:first-child {
+      border-radius: 8px 8px 0 0;
+    }
+    &:nth-child(2) {
+      border-radius: 0 0 8px 8px;
+    }
+  }
+}
+#{c(userSettings authedApps actionMenuButton)} {
+  background: cv('shading.cardInner');
+}
+
 // DEVICES
 #{c(userSettings devices sessionIcon)} {
   background: cv('color.main');

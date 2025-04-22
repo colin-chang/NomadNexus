@@ -44,8 +44,7 @@
 #{c(main visualRefresh)} {
   #{c(settings collapseable)} {
     &,
-    &:active,
-    &#{c(settings collapseableToggled)} {
+    &:active {
       background: cv('shading.card');
       border: none;
     }

@@ -1,34 +1,24 @@
 @use 'backend' as *;
 
-#{c(input wrapper)} {
-  margin: 2px;
-}
 #{c(input input)} {
   background: cv('shading.input.bg');
-  border: none;
-  box-shadow: 0 0 0 2px cv('shading.input.border');
+  border-color: cv('shading.input.border');
   &::placeholder {
     color: cv('text.muted');
   }
-  &:hover,
-  &[readonly] {
-    border: none;
-  }
   &:focus,
   &#{c(input focused)} {
-    box-shadow: 0 0 2px 2px cv('color.main');
+    border-color: cv('color.main');
+    box-shadow: 0 0 2px 0 cv('color.main');
   }
   &#{c(input field)} {
     border: none;
-    box-shadow: none;
     background: none;
   }
   #{c(input multiField)} {
     background: transparent;
-    box-shadow: none;
   }
   #{c(input copy)} & {
     background: transparent;
-    box-shadow: none;
   }
 }

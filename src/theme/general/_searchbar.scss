@@ -2,24 +2,20 @@
 
 #{c(searchbar container)} {
   background: cv('shading.input.bg');
-  border-color: transparent;
-  box-shadow: 0 0 1px 1px cv('shading.input.border');
-  margin: 2px;
+  border-color: cv('shading.input.border');
   &:focus-within {
-    box-shadow: 0 0 2px 1px cv('color.main');
-    border-color: transparent;
+    border-color: cv('color.main');
+    box-shadow: 0 0 2px 0 cv('color.main');
   }
 }
 
 #{c(main visualRefresh)} {
   #{c(searchbar visualRefresh container)} {
     background: cv('shading.input.bg');
-    border-color: transparent;
-    box-shadow: 0 0 1px 1px cv('shading.input.border');
-    margin: 2px;
+    border-color: cv('shading.input.border');
     &:focus-within {
-      box-shadow: 0 0 2px 1px cv('color.main');
-      border-color: transparent;
+      border-color: cv('color.main');
+      box-shadow: 0 0 2px 0 cv('color.main');
     }
   }
 }
