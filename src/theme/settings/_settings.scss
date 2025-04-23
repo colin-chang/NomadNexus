@@ -41,8 +41,42 @@
 }
 
 // COLLAPSEABLE
+#{c(settings collapseableRadio container)},
+#{c(settings collapseableRadio clickable)} {
+  background: transparent;
+}
 #{c(main visualRefresh)} {
-  #{c(settings collapseable)} {
+  #{c(settings collapseableRadio backgroundModifierContainer)} {
+    background: cv('shading.card');
+    &:is(:hover, :active) {
+      &:not(#{c(settings collapseableRadio disabled)}) {
+        &:not(#{c(settings collapseableRadio noAction)}) {
+          background: var(--card-shading);
+        }
+      }      
+    }
+    &#{c(settings collapseableRadio selected)} {
+      // default colour ('none' option)
+      background: cv('shading.card');
+      border-color: cv('color.main');
+    }
+  }
+  #{c(settings collapseableRadio selected)} {
+    // specific colours
+    &#{c(settings collapseableRadio statusGreen)} {
+      border-color: var(--status-positive);
+    }
+    &#{c(settings collapseableRadio statusYellow)} {
+      border-color: var(--status-warning);
+    }
+    &#{c(settings collapseableRadio statusOrange)} {
+      border-color: var(--orange-360);
+    }
+    &#{c(settings collapseableRadio statusRed)} {
+      border-color: var(--status-danger);
+    }
+  }
+  #{c(settings collapseableRadio collapseable)} {
     &,
     &:active {
       background: cv('shading.card');

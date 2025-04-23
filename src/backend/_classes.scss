@@ -424,7 +424,6 @@ $classes: (
 
   'radio': (
     'item': 'item__001a7',
-    'itemFilled': 'itemFilled__001a7',
     'itemDisabled': 'disabled__001a7',
     'bar': 'radioBar__001a7',
     'barInfo': 'info__001a7',
@@ -3937,8 +3936,23 @@ $classes: (
       'filled': 'filled_e18686',
     ),
 
-    'collapseable': 'collapseable__217b7',
-    'collapseableToggled': 'toggled__217b7',
+    // collapseable radio
+    // within moderation category
+    'collapseableRadio': (
+      'container': 'container__6cd3a',
+      'clickable': 'clickableContainer__6cd3a',
+      'backgroundModifierContainer': 'backgroundModifierContainer__6cd3a',
+      'disabled': 'disabled__6cd3a',
+      'noAction': 'noAction__6cd3a',
+      'selected': 'selected__6cd3a',
+      'statusGreen': 'statusGreen__6cd3a',
+      'statusYellow': 'statusYellow__6cd3a',
+      'statusOrange': 'statusOrange__6cd3a',
+      'statusRed': 'statusRed__6cd3a',
+
+      'collapseable': 'collapseable__217b7',
+      'collapseableToggled': 'toggled__217b7',
+    ),
 
     // used in a few places, i'm not entirely sure what's different about it
     'premiumFeatureBorder': 'premiumFeatureBorder__65c15',
@@ -4376,6 +4390,14 @@ $classes: (
       'descriptionIcon': 'descriptionIcon__981f7',
     ),
 
+    'insights': (
+      'developerPortal': 'developerPortalCtaWrapper_bf485f',
+      'analyticsCard': 'analyticsCard__5931c',
+      'notEnoughMembers': 'notEnoughMembersError_bf485f',
+      'insightsContainer': 'memberInsightsContainer_cfaf72',
+      'insightsActions': 'insightsActions_cfaf72',
+    ),
+
     'guildSettingsRoleViewAsDropdown': 'container__09ccc',
 
     'guildSettingsStickersUploadCard': 'wrapper__83b1d',
@@ -4387,10 +4409,6 @@ $classes: (
     'guildSettingsSafetyItemWrapper': 'simpleItemWrapper__5dac8',
     'guildSettingsCommunityUpsell': 'upsellContainer__4cfe2',
     'guildSettingsCommunityUpsellFooter': 'upsellFooter__4cfe2',
-    'guildSettingsInsightsAnalyticsCard': 'analyticsCard__5931c',
-    'guildSettingsInsightsNotEnoughMembers': 'notEnoughMembersError_bf485f',
-    'guildSettingsInsightsMemberInsights': 'memberInsightsContainer_cfaf72',
-    'guildSettingsInsightsActions': 'insightsActions_cfaf72',
     'guildSettingsDiscoveryChecklist': 'checklist__5afba',
     'guildSettingsDiscoveryHeader': 'header__812a7',
     'guildSettingsDiscoverySeparator': 'separator__812a7',
@@ -6692,15 +6710,8 @@ $classes: (
           'bdSettingsSidebarItemSelected': 'selected',
           // src/injectors/bd/sidebar.scss | so... https://sass-lang.com/documentation/breaking-changes/extend-compound/
           'bdSettingsSidebarSeparator': 'ui-tab-bar-separator',
-
           // src/injectors/bd/sidebar.scss
           // below: sorted, has location(s)
-          'noticeTextLink': 'textLink__9671b',
-          // src/app/notice.scss
-          'readyToBoostContainer': 'subscription_d970da',
-          // src/pages/serverBoost.scss
-          'readyToBoostProgressPill': 'tierPill_d970da',
-          // src/pages/serverBoost.scss
           'userSummaryIcon': 'icon__183c2',
           // src/channels/channels.scss
           'userSummaryMoreUsers': 'moreUsers__183c2',
@@ -6721,18 +6732,6 @@ $classes: (
           // src/channels/privateChannels.scss
           'callInviteButton': 'button_c6e099',
           // src/chat/call.scss
-          'autocompleteIconForeground': 'iconForeground__13533',
-          // src/chat/textAreaAutoComplete.scss
-          'autocompleteRowSubheading': 'autocompleteRowSubheading__13533',
-          // src/chat/textAreaAutoComplete.scss
-          'autocompleteContentSecondary': 'autocompleteRowContentSecondary__13533',
-          // src/chat/textAreaAutoComplete.scss
-          'autocompleteOptionals': 'optionals__920ab',
-          // src/chat/textAreaAutoComplete.scss
-          'autocompleteOptionalCount': 'optionalCount__920ab',
-          // src/chat/textAreaAutoComplete.scss
-          'automodDropdownChannelIcon': 'channelIcon__6ae25',
-          // src/??/serverSettings.scss
           'flowerStarIcon': 'icon__09691',
           // src/??/badge.scss ; as "tooltipHubIcon" src/??/tooltip.scss
           'messageBlockedAction': 'blockedAction__7a70a',
@@ -6746,11 +6745,6 @@ $classes: (
           'membersChannelContainer': 'mainTableContainer_dd2627',
 
           // below: known to not exist elsewhere in this file
-          'autocompleteOptionPill': 'optionPill__1464f',
-          'autocompleteOptionPillSelected': 'selectedPill__1464f',
-          'autocompleteOptionPillKey': 'optionPillKey__1464f',
-          'autocompleteUpsellEmoji': 'premiumEmoji_d4ce86',
-          'autocompleteUpsellHeader': 'premiumHeader_f73c14',
           'spacer': 'spacer__03448',
           'directionUp': 'directionUp__5fbe9',
           'directionRight': 'directionRight__5fbe9',
@@ -6816,36 +6810,6 @@ $classes: (
           'activityInviteMoreUsers': 'moreUsers__4d3fa',
           'activityInviteHelpIcon': 'helpIcon__4d3fa',
           'activityInviteTextLink': 'textLink__4d3fa',
-          'attachment': 'attachment_b52bef',
-          'attachmentEmbedWrapper': 'embedWrapper_b7e1cb',
-          'embed': 'embed__623de',
-          'embedMargin': 'embedMargin__623de',
-          'embedLink': 'embedLink__623de',
-          'embedProvider': 'embedProvider__623de',
-          'embedAuthor': 'embedAuthor__623de',
-          'embedAuthorname': 'embedAuthorName__623de',
-          'embedAuthorNameLink': 'embedAuthorNameLink__623de',
-          'embedAuthorIcon': 'embedAuthorIcon__623de',
-          'embedTitle': 'embedTitle__623de',
-          'embedTitleLink': 'embedTitleLink__623de',
-          'embedDescription': 'embedDescription__623de',
-          'embedFields': 'embedFields__623de',
-          'embedField': 'embedField__623de',
-          'embedFieldName': 'embedFieldName__623de',
-          'embedFieldValue': 'embedFieldValue__623de',
-          'embedImage': 'embedImage_b0068',
-          'imageWrapperBackground': 'imageWrapperBackground_af017a',
-          'imageError': 'imageError_af017a',
-          'imageHoverButton': 'hoverButton__06ab4',
-          'embedThumbnail': 'embedThumbnail__623de',
-          'embedVideoActions': 'embedVideoActions__623de',
-          'embedVideoAction': 'embedVideoAction_add135',
-          'embedVideoActionsButtonWrapper': 'wrapper__926d7',
-          'embedFooter': 'embedFooter__623de',
-          'embedFooterText': 'embedFooterText__623de',
-          'embedFooterSeparator': 'embedFooterSeparator__623de',
-          'embedFooterIcon': 'embedFooterIcon__623de',
-          'playerControlsHidden': 'wrapperControlsHidden_f316dd',
           'messageGroupBlockedExpanded': 'expanded__7a70a',
           'messageTimestampAlt': 'alt_c19a55',
           'messageInlineMediaEmbed': 'inlineMediaEmbed__623de',
@@ -6881,8 +6845,6 @@ $classes: (
           'settingsImageUploaderIcon': 'imageUploaderIcon_e4d0bf',
           'settingsAttendeeCTA': 'attendeeCTA_ca5ce6',
           'guildFeatureAvailabilityIndicator': 'availabilityIndicator__40463',
-          'botTag': 'botTag__82f07',
-          'botTagInvert': 'botTagInvert__82f07',
           'loading': 'loading__6ef4d',
           'replyCloseButton': 'closeButton_e876a8',
           'replySeperator': 'separator__841c8',
@@ -7012,20 +6974,6 @@ $classes: (
           'previewServerConversationRoot': 'conversationRoot_bed0b3',
           'previewServerConversationReply': 'replySpine__081f6',
           'previewServerConversationMessage': 'conversationMessage__3c425',
-          'attachmentIcon': 'icon_b52bef',
-          'attachmentInner': 'attachmentInner_b52bef',
-          'fileNameLinkWrapper': 'filenameLinkWrapper_b52bef',
-          'fileNameLink': 'fileNameLink_b52bef',
-          'fileMetadata': 'metadata_b52bef',
-          'attachmentDownloadButton': 'downloadButton__3fb6d',
-          'fileNameWrapper': 'filenameWrapper_b52bef',
-          'fileName': 'filename_b52bef',
-          'fileSize': 'size_b52bef',
-          'fileProgress': 'progress_b52bef',
-          'attachmentCancelButton': 'cancelButton_b52bef',
-          'attachmentButton': 'downloadButton__3fb6d' 'cancelButton_b52bef',
-
-          'searchResultHighlight': 'highlight',
           'questPanelContentExpanded': 'contentExpanded__636a2',
           'upsellTooltipCaretRightCenter': 'caretRightCenter__675aa',
           'pollCheckbox': 'checkbox_f4f0eb',

@@ -2,7 +2,7 @@
 
 //  inline styles
 #{c(switch container)} {
-  background: hsl(from var(--interactive-normal) h s l/.1) !important;
+  background: hsl(from var(--interactive-normal) h s l/.3) !important;
   &#{c(switch checked)} {
     background: cv('color.main') !important;
     path {

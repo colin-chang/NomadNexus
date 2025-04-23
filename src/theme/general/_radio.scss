@@ -5,10 +5,6 @@
     background-color: transparent;
   }
 }
-#{c(radio itemFilled)} {
-  // old ui
-  background-color: transparent;
-}
 #{c(radio refreshIconStroke)} {
   r: 10 !important; // inline
   stroke: var(--interactive-active);

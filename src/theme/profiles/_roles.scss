@@ -2,8 +2,7 @@
 
 #{c(profile outer)}:not(#{c(profile themed)}) #{c(role role)} {
   //to not hit custom themes
-  background: transparent;
-  border-color: transparent;
+  border-radius: 4px;
   position: relative;
   #{c(role removeButton)} {
     position: static;
@@ -24,6 +23,17 @@
       border-radius: 4px;
     }
   }
+}
+
+// dot next to name
+#{c(role background)} {
+  fill: none;
+}
+#{c(role dotBorderBase)} {
+  fill: none;
+}
+#{c(role dotBorderColor)} {
+  opacity: 1;
 }
 
 // ADD ROLES

@@ -94,3 +94,11 @@
 #{c(guildSettings template descriptionBox)} {
   background: cv('shading.card');
 }
+
+// SERVER INSIGHTS
+#{c(guildSettings insights developerPortal)} {
+  background: transparent;
+}
+#{c(guildSettings insights analyticsCard)} {
+  background: cv('shading.card');
+}
