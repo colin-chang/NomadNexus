@@ -48,6 +48,9 @@
 #{c(main visualRefresh)} {
   #{c(settings collapseableRadio backgroundModifierContainer)} {
     background: cv('shading.card');
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
     &:is(:hover, :active) {
       &:not(#{c(settings collapseableRadio disabled)}) {
         &:not(#{c(settings collapseableRadio noAction)}) {

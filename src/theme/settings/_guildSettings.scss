@@ -60,6 +60,19 @@
     }
   }
 }
+// ROLES - EDIT
+#{c(guildSettings roles edit backContainer)},
+#{c(guildSettings roles edit header)} {
+  background: transparent;
+}
+#{c(guildSettings roles edit headerStickyElevated)} {
+  background: cv('shading.popout');
+}
+
+// ROLES - VIEW SERVER AS ROLE
+#{c(guildSettings roles preview dropdown)} {
+  background: cv('shading.popout');
+}
 
 // ACCESS
 #{c(guildSettings access joinOptions)} {

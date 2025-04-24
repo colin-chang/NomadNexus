@@ -2579,8 +2579,6 @@ $classes: (
     // The contents of these notices are in English because yes.
     'completeSteps': 'notice__30f28',
     // contents: "You must complete a few more steps before you can start talking in this server."
-    'viewServerAsRole': 'notice_c9e42f',
-    // contents: "You are viewing this server as $count role(s)."
     'previewServerNotice': 'notice_c5cd6a',
   ),
   // These appear to be shared between profile popout and server settings. likely used elsewhere too.
@@ -3552,6 +3550,7 @@ $classes: (
       'customTheme': 'custom-user-profile-theme',
       'userPopout': 'user-profile-popout',
       'userModal': 'user-profile-modal',
+      'userSidebar': 'user-profile-sidebar',
       'overlay': 'overlay_c0bea0',
       'outer': 'outer_c0bea0',
       'inner': 'inner_c0bea0',
@@ -3843,35 +3842,17 @@ $classes: (
           'guildNick': 'guildNick_aafe31',
         ),
 
-      // Panel: Go to the DMs of someone while your screen is larger than
+      // Go to the DMs of someone while your screen is larger than
       // 1132px wide and you've not disabled the panel via header
-      'panel': (
-          'panel': 'panel_c0bea0',
-          'container': 'container_a823cd',
-
-          'activity': 'activity__747b1',
-
-          'body': 'body__747b1',
-          'bodyOverlay': 'overlay__747b1',
-
+      'sidebar': (
+          'body': 'body__486c9',
+          'bodyOverlay': 'overlay__486c9',
           // used over "about me/member since" container
-          'guildProfile': 'guildNick_b26403',
-          // nickname
-          'guildAvatar': 'guildAvatar_b26403',
-          // not for icons but rather people with nitro and custom avi
-          'guildAvatarWithoutIcon': 'guildAvatarWithoutIcon_b26403',
 
           // encompass both mutual servers and mutual friends
-          'connectionsOverlay': 'overlay__325ce',
-          'connectionsList': 'list__325ce',
-          'connectionsDivider': 'divider__325ce',
-
-          // individual list for mutual friends/servers
-          'connectionList': 'connectionList_a4a127',
-          'collapsed': 'isCollapsed_a4a127',
-          'collapseButton': 'collapseBtn_a4a127',
-          'collapseButtonContent': 'collapseBtnContent_a4a127',
-          'collapseButtonIcon': 'iconWrapper_a4a127',
+          'connectionsOverlay': 'overlay_d04d18',
+          'connectionsList': 'list_d04d18',
+          'connectionsDivider': 'divider_d04d18',
         ),
 
       // Popoout: click on user in chat or member list
@@ -4354,13 +4335,22 @@ $classes: (
       'circleButton': 'circleButton__5f97b',
       'editButton': 'editButton__5f97b',
       // below "role"s are shown by clicking edit
-      'roleSidebar': 'sidebar_e29cd7',
-      'roleTitleContainer': 'titleContainer_e29cd7',
-      'roleContentContainer': 'contentContainer__91dc3',
-      'roleHeader': 'header_c6bf1b',
-      'roleHeaderStickyElevated': 'stickyHeaderElevated_c6bf1b',
-      'roleHeaderSticky': 'stickyHeader_c6bf1b',
-      'rolePreviewContainer': 'previewContainer__05e8e',
+      'edit': (
+        'sidebar': 'sidebar_e29cd7',
+        'backContainer': 'titleContainer_e29cd7',
+        'contentContainer': 'contentContainer__91dc3',
+        'header': 'header_c6bf1b',
+        'headerStickyElevated': 'stickyHeaderElevated_c6bf1b',
+        'headerSticky': 'stickyHeader_c6bf1b',
+        'iconPreviewContainer': 'previewContainer__05e8e',
+      ),
+      'preview': (
+        // view server as role
+        'notice': 'notice_c9e42f',
+        'button': 'button_c9e42f',
+        'backbutton': 'backButton_c9e42f',
+        'dropdown': 'container__09ccc',  
+      ),
     ),
 
     'access': (
@@ -4434,8 +4424,6 @@ $classes: (
       'insightsActions': 'insightsActions_cfaf72',
     ),
 
-    'guildSettingsRoleViewAsDropdown': 'container__09ccc',
-
     'guildSettingsStickersUploadCard': 'wrapper__83b1d',
     'guildSettingsStickersTierLock': 'tierLock_f15dca',
 
@@ -4444,9 +4432,6 @@ $classes: (
     'guildSettingsSafetyPill': 'valuePill__5dac8',
     'guildSettingsSafetyItemWrapper': 'simpleItemWrapper__5dac8',
     
-    'guildSettingsDiscoveryChecklist': 'checklist__5afba',
-    'guildSettingsDiscoveryHeader': 'header__812a7',
-    'guildSettingsDiscoverySeparator': 'separator__812a7',
     'guildSettingsWelcomeEnable': 'enableContainer__5ea8c',
     'guildSettingsWelcomePreview': 'previewContainer__5579e',
     'guildSettingsWelcomeEditCircle': 'editCircle__5ea8c',
