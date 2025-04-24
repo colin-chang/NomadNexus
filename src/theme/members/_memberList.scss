@@ -77,12 +77,15 @@
 }
 #{c(memberList memberInner)} {
   position: relative;
-  width: unset;
+  width: 100%;
   transition: all 0.15s ease-in-out, transform 0.1s ease-in-out;
   z-index: 1;
   &:active {
     transform: scale(0.9);
   }
+}
+#{c(memberList name)} {
+  width: fit-content;
 }
 #{c(memberList nameContainer)} {
   position: static;
