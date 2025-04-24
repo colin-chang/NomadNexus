@@ -7,9 +7,9 @@
 
 // NO NITRO PROFILE
 #{c(profile outer)} {
-  &:not(#{c(profile themed)}) {    
+  &:not(#{c(profile customTheme)}) {    
     background: cv('shading.bg');
-    &#{c(profile biteSize)} {
+    &#{c(profile userPopout)} {
       &::before {
         content: '';
         position: absolute;
@@ -21,7 +21,7 @@
         z-index: -1;
       }
     }
-    &#{c(profile fullSize)} {
+    &#{c(profile userModal)} {
       &::before {
         content: '';
         position: absolute;
@@ -68,7 +68,7 @@
 // POPOUT SEND MESSAGE
 #{c(main visualRefresh)} {
   // NITRO PROFILE
-  #{c(profile themed)} {
+  #{c(profile customTheme)} {
     #{c(chatForm channelTextAreaInline)} {
       background: var(--user-profile-note-background-focus);;
       box-shadow: 0 0 0 2px var(--profile-body-border-color);
@@ -81,7 +81,7 @@
 
 // NITRO PROFILE MODAL
 #{c(main visualRefresh)} {
-  #{c(profile themed)} {
+  #{c(profile customTheme)} {
     #{c(tab top)} {
       #{c(tab item)} {
         --selected-tab-item-color: var(--profile-gradient-secondary-color);
@@ -92,7 +92,7 @@
     }
   }
 }
-#{c(profile themed)} {
+#{c(profile customTheme)} {
   ::-webkit-scrollbar-thumb {
     background-color: var(--profile-gradient-primary-color);
   }
@@ -108,7 +108,7 @@
 // DM SIDE PROFILE
 #{c(profile panel panel)} {
   &#{c(profile outer)} {
-    &:not(#{c(profile themed)}) {
+    &:not(#{c(profile customTheme)}) {
       background: transparent;
     }
   }

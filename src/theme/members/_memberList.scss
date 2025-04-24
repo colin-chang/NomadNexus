@@ -78,17 +78,14 @@
 #{c(memberList memberInner)} {
   position: relative;
   width: unset;
-  transition:
-    all 0.15s ease-in-out,
-    transform 0.1s ease-in-out;
+  transition: all 0.15s ease-in-out, transform 0.1s ease-in-out;
   z-index: 1;
   &:active {
     transform: scale(0.9);
   }
 }
-#{c(memberList usernameInner)} {
-  max-width: 100%;
-  overflow: visible;
+#{c(memberList nameContainer)} {
+  position: static;
   transition: all 0.15s ease-in-out;
   &:before {
     content: '';
@@ -151,7 +148,7 @@
     #{c(memberList childContainer)} {
       background: transparent;
     }
-    #{c(memberList usernameInner)} {
+    #{c(memberList nameContainer)} {
       &:before {
         opacity: 1;
       }
@@ -167,7 +164,7 @@
   #{c(memberList childContainer)} {
     background-color: transparent;
   }
-  #{c(memberList usernameInner)} {
+  #{c(memberList nameContainer)} {
     -webkit-text-fill-color: cv('text.normal');
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
     &:after {

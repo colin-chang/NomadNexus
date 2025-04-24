@@ -2503,6 +2503,7 @@ $classes: (
     'contentName': 'content__91a9d',
     'ownerIcon': 'ownerIcon__5d473',
     'name': 'name__91a9d',
+    'nameContainer': 'nameContainer__703b9',
     'usernameInner': 'username__703b9',
     'offline': 'offline__5d473',
     'activity': 'activityText__5d473',
@@ -3548,10 +3549,10 @@ $classes: (
       'showOutOfBoundaryComponents': 'showOutOfBoundaryComponents_c69a7b',
 
       // profile backgrounds
-      'themed': 'custom-user-profile-theme',
+      'customTheme': 'custom-user-profile-theme',
+      'userPopout': 'user-profile-popout',
+      'userModal': 'user-profile-modal',
       'overlay': 'overlay_c0bea0',
-      'biteSize': 'biteSize_c0bea0',
-      'fullSize': 'fullSize_c0bea0',
       'outer': 'outer_c0bea0',
       'inner': 'inner_c0bea0',
 
@@ -3578,13 +3579,14 @@ $classes: (
           'panel': 'panel__63ed3',
           'fullSize': 'fullSize__63ed3',
           'nicknameIcons': 'nicknameIcons__63ed3',
-          'usernameRow': 'usernameRow__63ed3',
+          'usernameRow': 'usernameRow__63ed3',     
+          'usernameContainer': 'container__63ed3',
           'tags': 'tags__63ed3',
           'userTag': 'userTag__63ed3',
           'pronounsTooltip': 'pronounsTooltip__63ed3',
           'pronouns': 'pronouns__63ed3',
           'userTagDiscriminator': 'userTagDiscriminator__63ed3',
-          'dotSpacer': 'dotSpacer__63ed3',
+          'dotSpacer': 'dotSpacer__63ed3',     
         ),
 
       // shared between modal+panel+popout (not self)+status
@@ -3800,12 +3802,7 @@ $classes: (
       'modal': (
           'root': 'root__24502',
           'headerInner': 'headerInner__24502',
-
           'body': 'body__24502',
-
-          'usernameContainer': 'container__63ed3',
-          'usernameRow': 'usernameRow__63ed3',
-          'nickname': 'nickname__63ed3',
 
           // cannot find these but they're in the same rule as connections
           'connections': (
@@ -4385,6 +4382,45 @@ $classes: (
       'bannedUser': 'bannedUser_cdb2b0',
     ),
 
+    'automod': (
+      'badge': 'textBadge__0034b',
+      'editCard': 'editCard_a25a68',
+      'editCardToggled': 'toggled_a25a68',
+      'ruleIconContainer': 'ruleIconContainer_c5e6a1',
+      'ruleIcon': 'ruleIcon_c5e6a1',
+      'pillContainer': 'actionContainer_bc4513',
+      'pillIcon': 'actionIcon_bc4513',
+      'pillText': 'actionTextHeader_bc4513',
+      'stepIcon': 'stepCountIcon_b6c6eb',
+      'stepperContainer': 'stepperContainer_ed9c90',
+      'contentContainer': 'mentionLimitContainer_ed9c90' 'keywordListContainer__09e76' 'actionContainer__6446f',
+      'keywordsTextArea': 'keywordsTextArea__6a631',
+      'regexTextArea': 'textArea_c615b7',
+    ),
+
+    'community': (
+      'enable': (
+        'guildDetails': 'guildDetails_bebc5b',
+        'featureCard': 'featureCard_bebc5b',
+        'featureIcon': 'featureIcon_bebc5b',
+      ),
+      'overview': (
+        'upsellContainer': 'upsellContainer__4cfe2',
+        'upsellFooter': 'upsellFooter__4cfe2',
+      ),
+    ),
+
+    'subs': (
+      'howItWorksContainer': 'howItWorksContainer_aa72d6',
+      'howItWorksCard': 'howItWorksCard_dd30dc',
+      'howItWorksImageContainer': 'howItWorksImageContainer_aa72d6',      
+      'card': 'card_ea91d1',
+      'earningsPreviewContainer': 'earningsPreviewContainer_da92c3',
+      'avatarCard': 'avatarCard_da92c3',
+      'avatarConnector': 'verticalConnector__02e4c' 'horizontalConnector__02e4c',
+      'viewServerButton': 'viewServerButton_adff39',
+    ),    
+
     'template': (      
       'descriptionBox': 'descriptionBox__981f7',
       'descriptionIcon': 'descriptionIcon__981f7',
@@ -4407,8 +4443,7 @@ $classes: (
     'guildSettingsSafetyChecklist': 'safetyChecklist_eae0ef',
     'guildSettingsSafetyPill': 'valuePill__5dac8',
     'guildSettingsSafetyItemWrapper': 'simpleItemWrapper__5dac8',
-    'guildSettingsCommunityUpsell': 'upsellContainer__4cfe2',
-    'guildSettingsCommunityUpsellFooter': 'upsellFooter__4cfe2',
+    
     'guildSettingsDiscoveryChecklist': 'checklist__5afba',
     'guildSettingsDiscoveryHeader': 'header__812a7',
     'guildSettingsDiscoverySeparator': 'separator__812a7',
@@ -4422,25 +4457,6 @@ $classes: (
     'guildSettingsBoostTierLocked': 'tierHeaderLocked_f15dca',
     'guildSettingsBoostTierUnlocked': 'tierHeaderUnlocked_f15dca',
     'guildSettingsBoostTierBody': 'tierBody_f15dca',
-    'automodBadge': 'textBadge__0034b',
-    'automodEditCard': 'editCard_a25a68',
-    'automodEditCardToggled': 'toggled_a25a68',
-    'automodRuleIconContainer': 'ruleIconContainer_c5e6a1',
-    'automodRuleIcon': 'ruleIcon_c5e6a1',
-    'automodActionTag': 'actionContainer_bc4513',
-    'automodActionIcon': 'actionIcon_bc4513',
-    'automodActionText': 'actionTextHeader_bc4513',
-    'automodStepIcon': 'stepCountIcon_b6c6eb',
-    'automodStepperCOntainer': 'stepperContainer_ed9c90',
-    'automodContentCard': 'mentionLimitContainer_ed9c90' 'keywordListContainer__09e76' 'actionContainer__6446f',
-    'automodCollapseableHeaderContainer': 'container_e5c5d5',
-    'automodCollapseableHeaderClickable': 'clickableContainer_e5c5d5',
-    'automodCollapsedContainer': 'groupCollapsedContainer_b6a9f9',
-    'automodCollapseablePointer': 'pointer_b6a9f9',
-    'automodCollapseableRadioBackground': 'backgroundModifierContainer_e5c5d5',
-    'automodCollapseableRadioSelected': 'selected_e5c5d5',
-    'automodKeywordsTextArea': 'keywordsTextArea__6a631',
-    'automodRegexTextArea': 'textArea_c615b7',
     'guildSettingsOnboardingTestimonialContainer': 'testimonialHeroContainer__3e7e2',
     'guildSettingsOnboardingTestimonialQuotes': 'quotes__3e7e2',
     'guildSettingsOnboardingTestimonial': 'testimonial__3e7e2',
@@ -4488,18 +4504,8 @@ $classes: (
     'onboardingChannelPermissionsMenu': 'deprivateTableBody_e6fa8e',
     'onboardingRecommendedReadOnly': 'suggestedChannels_d2b0e4',
     'onboardingPickAnEmoji': 'container_cd2100',
-    'guildSettingsSubsCard': 'card_ea91d1',
-    'guildSettingsSubsStepsContainer': 'howItWorksContainer_aa72d6',
-    'guildSettingsSubsStepsImageContainer': 'howItWorksImageContainer_aa72d6',
-    'guildSettingsSubsEarningsPreviewContainer': 'earningsPreviewContainer_da92c3',
-    'guildSettingsSubsAvatarCard': 'avatarCard_da92c3',
-    'guildSettingsSubsEmojisContainer': 'emojisContainer_adff39',
-    'guildSettingsSubsViewServerButton': 'viewServerButton_adff39',
 
-
-    'enableCommunityFeatureCard': 'featureCard_bebc5b',
-    'enableCommunityFeatureIcon': 'featureIcon_bebc5b',
-    'enableCommunityGuildDetails': 'guildDetails_bebc5b',
+    
   ),
 
   'popouts': (

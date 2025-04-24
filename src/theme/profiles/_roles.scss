@@ -1,6 +1,6 @@
 @use 'backend' as *;
 
-#{c(profile outer)}:not(#{c(profile themed)}) #{c(role role)} {
+#{c(profile outer)}:not(#{c(profile customTheme)}) #{c(role role)} {
   //to not hit custom themes
   border-radius: 4px;
   position: relative;
