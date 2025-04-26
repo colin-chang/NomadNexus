@@ -15,7 +15,7 @@
     backdrop-filter: none;
   }
   #{c(sidebar server container)} {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.25));
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
     padding: 0;
   }
 

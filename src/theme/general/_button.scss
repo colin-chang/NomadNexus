@@ -71,9 +71,6 @@
       color: var(--button-outline-brand-text);
     }
   }
-  &:hover {
-    background-color: transparent;
-  }
 }
 
 // LINK
@@ -93,5 +90,8 @@
   }
   &#{c(button colorBrand)} {
     color: cv('color.main');
+  }
+  &#{c(button colorRed)} {
+    color: cv('color.danger');
   }
 }

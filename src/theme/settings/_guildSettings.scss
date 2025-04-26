@@ -25,6 +25,17 @@
   }
 }
 
+// STICKERS
+#{c(guildSettings stickers wrapper)} {
+  &,
+  &:hover {
+    background: transparent;
+  }
+}
+#{c(guildSettings stickers action)} {
+  background: cv('shading.popout');
+}
+
 // MEMBERS
 #{c(guildSettings members maintableContainer)} {
   background: cv('shading.card');
@@ -183,6 +194,18 @@
   background: cv('color.main');
   &:hover {
     background: cv('color.hover');
+  }
+}
+
+// SERVER BOOST
+#{c(main visualRefresh)} {
+  #{c(guildSettings boost tierCard)} {
+    border: none;
+  }
+  #{c(guildSettings boost tierHeader)},
+  #{c(guildSettings boost tierBody)} {
+    background: cv('shading.card');
+    border: none;
   }
 }
 

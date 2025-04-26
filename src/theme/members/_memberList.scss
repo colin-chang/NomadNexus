@@ -6,13 +6,13 @@
     border: none;
   }
   #{c(memberList wrap)} {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
+    background: none;
     border: none;
     height: 100%;
   }
 }
 #{c(memberList members)} {
-  background: none;
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
 }
 
 // PLACEHOLDER
