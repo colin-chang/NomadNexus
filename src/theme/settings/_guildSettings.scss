@@ -95,6 +95,20 @@
   }
 }
 
+// SAFETY SETUP
+#{c(main visualRefresh)} {
+  #{c(guildSettings safety changelog)},
+  #{c(guildSettings safety checklist)},
+  #{c(guildSettings safety itemWrapper)} {
+    background: cv('shading.card');
+    border: none;
+  }
+}
+#{c(guildSettings safety pill)} {
+  background: cv('shading.card');
+  border: 1px solid cv('color.main');
+}
+
 // AUDIT LOG
 #{c(main visualRefresh)} {
   #{c(guildSettings audit log)} {

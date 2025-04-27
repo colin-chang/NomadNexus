@@ -39,6 +39,10 @@
     color: cv('color.main');
   }
 }
+#{c(settings rowCard)} {
+  background: cv('shading.card');
+  border-color: cv('color.main');
+}
 
 // COLLAPSEABLE
 #{c(settings collapseableRadio container)},

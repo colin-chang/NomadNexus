@@ -737,8 +737,9 @@ $classes: (
     'root': 'root_bfe55a',
     'idle': 'idle_bfe55a',
     // applied when screen sharing and not hovered, hides controls (and children of)
-    'rootChild': 'root_c8dbe9',
-    // a child to root above
+    'gradientBackground': 'gradientBackground__11664',
+    'gradientSphere': 'sphere__11664',
+    // both above are seen in empty vc
     'voiceCallWrapper': 'voiceCallWrapper_a21736',
     // paired with rootChild
     'transition': 'transition_c8dbe9',
@@ -3761,6 +3762,7 @@ $classes: (
       'warning': 'cardWarning__73069',
     ),
 
+    // registerd games, emoji
     'rowCard': 'card_b846e5',
 
     // shared classes. used in multiple places, mainly as a "remove this row" kind of thing
@@ -4225,6 +4227,15 @@ $classes: (
       'joinOptionActive': 'active__959cb',
     ),
 
+    'safety': (      
+      'changelog': 'changelog_abe1fa',
+      'checklist': 'safetyChecklist_eae0ef',
+
+      // click on any option
+      'itemWrapper': 'simpleItemWrapper__5dac8',
+      'pill': 'valuePill__5dac8',
+    ),
+
     'audit': (
       'log': 'auditLog__43dab',
       'header': 'header__43dab',
@@ -4367,10 +4378,6 @@ $classes: (
       'insightsActions': 'insightsActions_cfaf72',
     ),
 
-    'guildSettingsSafetyChangeLog': 'changelog_abe1fa',
-    'guildSettingsSafetyChecklist': 'safetyChecklist_eae0ef',
-    'guildSettingsSafetyPill': 'valuePill__5dac8',
-    'guildSettingsSafetyItemWrapper': 'simpleItemWrapper__5dac8',
     
     'guildSettingsWelcomeEnable': 'enableContainer__5ea8c',
     'guildSettingsWelcomePreview': 'previewContainer__5579e',

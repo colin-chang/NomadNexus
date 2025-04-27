@@ -30,7 +30,7 @@
   // TAGS
   #{c(pages tags pill)} {
     background: cv('shading.card');
-    border: 2px solid cv('color.hover');
+    border-color: cv('color.main');
     transition: all 0.2s ease;
     &#{c(pages tags clickable)} {
       &:not(#{c(pages tags disabled)}) {
