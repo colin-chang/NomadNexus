@@ -14,6 +14,25 @@
   }
 }
 
+// EMPTY CALL
+#{c(call gradientBackground)} {
+  background: none;
+}
+#{c(call gradientSphere)} {
+  background: none;
+  border: none;
+  animation: none;
+}
+
+// BUTTONS
+#{c(call buttonSection)} {
+  #{c(call buttonSectionExperiment)} {
+    background: cv('shading.popout');
+    border: none;
+    border-radius: 4px;
+  }
+}
+
 // DM CALL
 #{c(call wrapper)} {
   &#{c(call minimum)} {

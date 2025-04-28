@@ -775,7 +775,8 @@ $classes: (
     'bottomControls': 'bottomControls_bfe55a',
     'eventPromptsContainer': 'eventPromptsContainer__1405b',
     'buttonsWrapper': 'wrapper__1405b',
-    'controlButton': 'controlButton__1405b',
+    'buttonSection': 'buttonSection__1405b',
+    'buttonSectionExperiment': 'experimentButtonSection__1405b',
     'fauxDisabled': 'fauxDisabled__666fa',
     // used when camera isn't plugged in
     'contextMenuContainer': 'contextMenuContainer_f1ceac',
@@ -5336,13 +5337,18 @@ $classes: (
     ),
 
     // "Time Out" on another user
-    'timeoutDuration': (
+    'timeout': (
       'groupBar': 'group__3d4a0',
       'item': 'item__3d4a0',
 
       // there are many more classes in the group below
       'selectorButton': 'selectorButton__0907c',
       'selectorButtonSelected': 'selectorButtonSelected__0907c',
+    ),
+
+    'ban': (
+      'radioItem': 'radioItemStyles__837b7',
+      'otherReasonClickable': 'banReasonOtherClickable__837b7',
     ),
 
     // Click the x next to a pinned message OR pin a message WITHOUT holding shift

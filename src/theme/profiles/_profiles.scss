@@ -38,7 +38,7 @@
   &:not(#{c(profile customTheme)}) {    
     background: cv('shading.bg');
     #{c(profile inner)} {
-      background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
+      background: transparent;
     }
 
     // STATUS BUBBLE

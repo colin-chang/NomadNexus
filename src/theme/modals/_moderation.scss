@@ -1,0 +1,21 @@
+@use 'backend' as *;
+
+// TIMEOUT
+#{c(modals timeout selectorButton)} {
+  background: cv('shading.cardInner');
+}
+:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+  #{c(modals timeout item)} {
+    background: cv('color.main');
+  }
+}
+
+// BAN
+#{c(main visualRefresh)} {
+  #{c(modals ban radioItem)} {
+    background: transparent;
+  }
+  #{c(modals ban otherReasonClickable)}{
+    background: cv('shading.cardInner');
+  }
+}
