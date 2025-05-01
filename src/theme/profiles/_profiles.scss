@@ -112,6 +112,6 @@
 // DM SIDE PROFILE
 #{c(profile userSidebar)} {
   &:not(#{c(profile customTheme)}) {
-    background: transparent;
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
   }
 }

@@ -72,9 +72,12 @@
   }
 }
 // ROLES - EDIT
-#{c(guildSettings roles edit backContainer)},
+#{c(guildSettings roles edit backContainer)} {
+  background: transparent;
+}
 #{c(guildSettings roles edit header)} {
   background: transparent;
+  transition: background .15s ease-in-out;
 }
 #{c(guildSettings roles edit headerStickyElevated)} {
   background: cv('shading.popout');

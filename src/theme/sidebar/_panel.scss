@@ -40,6 +40,11 @@
   }
 }
 
+// NOISE CANCELLATION
+#{c(sidebar panel voice noiseCancellation popout)} {
+  background: cv('shading.popout');
+}
+
 // QUEST
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {
   #{c(sidebar panel quest wrapper)} {
