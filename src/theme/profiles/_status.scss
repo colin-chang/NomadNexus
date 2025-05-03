@@ -7,19 +7,19 @@
     fill: cv('color.offline');
   }
   // ONLINE
-  &[fill*='#40a258'] {
+  &[fill*='#43a25a'] {
     fill: cv('color.online');
   }
   // IDLE
-  &[fill*='#cc954c'] {
+  &[fill*='#ca9654'] {
     fill: cv('color.idle');
   }
   // DND
-  &[fill*='#d83a41'] {
+  &[fill*='#d83a42'] {
     fill: cv('color.dnd');
   }
   // STREAMING
-  &[fill*='#593695'] {
+  &[fill*='#82838b'] {
     fill: cv('color.streaming');
   }
 }
