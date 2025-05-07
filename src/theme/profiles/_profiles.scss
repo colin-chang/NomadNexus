@@ -75,7 +75,7 @@
   #{c(profile customTheme)} {
     #{c(chatForm channelTextAreaInline)} {
       background: var(--user-profile-note-background-focus);;
-      box-shadow: 0 0 0 2px var(--profile-body-border-color);
+      box-shadow: 0 0 0 2px var(--user-profile-border);
       &:focus-within {
         box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
       }
