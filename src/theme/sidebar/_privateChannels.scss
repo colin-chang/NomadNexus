@@ -2,7 +2,7 @@
 
 #{c(main visualRefresh)} {
   #{c(sidebar private channels)} {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.25));
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
   }
   #{c(sidebar private scroller)} {
     background: transparent;

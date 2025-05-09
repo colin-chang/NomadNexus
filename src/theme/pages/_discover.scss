@@ -3,7 +3,7 @@
 #{c(main visualRefresh)} {
   // SIDEBAR
   #{c(discover sidebar container)} {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.25));
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
   }
   #{c(discover sidebar item)} {
     position: relative;

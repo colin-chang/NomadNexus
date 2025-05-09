@@ -45,12 +45,9 @@
 }
 
 // SEARCHBAR
-#{c(friends searchbar)} {
-  background-color: cv('shading.input.bg');
-  border: none;
-  box-shadow: 0 0 0 2px cv('shading.input.border');
-  &:focus-within {
-    box-shadow: 0 0 0 2px cv('color.main');
+#{c(main visualRefresh)} {
+  #{c(friends searchbar)} {
+    border-width: 2px;
   }
 }
 
@@ -75,19 +72,16 @@
 
 // ADD FRIEND SEARCHBAR
 #{c(friends addFriendInputWrapper)} {
-  background-color: cv('shading.input.bg');
-  border: none;
-  box-shadow: 0 0 0 2px cv('shading.input.border');
+  background: cv('shading.input.bg');
+  border: 2px solid cv('shading.input.border');
   &:focus-within {
-    box-shadow: 0 0 2px 2px cv('color.main');
+    border-color: cv('color.main');
+    box-shadow: 0 0 2px 0 cv('color.main');
   }
-  #{c(input input)} {
-    background-color: transparent;
-    box-shadow: none;
-    &:focus-within {
-      box-shadow: none;
-    }
-  }
+}
+#{c(friends addFriendInput)} {
+  background: transparent;
+  box-shadow: none;
 }
 
 // ACTIVE NOW

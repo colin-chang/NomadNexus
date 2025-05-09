@@ -10,10 +10,10 @@
     background: transparent;
   }
   #{c(modals quickswitcher search)} {
-    border: none;
-    box-shadow: 0 0 2px 2px cv('shading.input.border');
+    border: 2px solid cv('shading.input.border');
     &:focus-within {
-      box-shadow: 0 0 2px 2px cv('color.main');
+      border-color: cv('color.main');
+      box-shadow: 0 0 2px 0 cv('color.main');
     }
   }
 }

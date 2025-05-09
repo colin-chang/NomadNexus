@@ -6,10 +6,10 @@
 }
 #{c(guildSettings profile traitContainer)} {
   background: cv('shading.input.bg');
-  border: none;
-  box-shadow: 0 0 1px 1px cv('shading.input.border');
+  border-color: cv('shading.input.border');
   &:focus-within {
-    box-shadow: 0 0 2px 1px cv('color.main');
+    border-color: cv('color.main');
+    box-shadow: 0 0 2px 0 cv('color.main');
   }
 }
 #{c(guildSettings profile traitEmoji)} {

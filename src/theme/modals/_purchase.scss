@@ -34,16 +34,13 @@
 #{c(modals purchase payment breadcrumb)} {
   background: transparent;
 }
-#{c(modals purchase payment cardInputWrapper)} {
-  margin: 2px;
-}
 #{c(modals purchase payment cardInput)} {
   background-color: cv('shading.input.bg');
-  border: none;
-  box-shadow: 0 0 0 2px cv('shading.input.border');
+  border-color: cv('shading.input.border');
 }
 #{c(modals purchase payment cardInputFocused)} {
-  box-shadow: 0 0 2px 2px cv('color.main');
+  border-color: cv('color.main');
+  box-shadow: 0 0 2px 0 cv('color.main');
 }
 
 // BUY BOOST
