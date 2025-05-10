@@ -82,8 +82,11 @@
         background: cv('color.main');
         animation: cv-channel-select 0.3s ease-in-out;
       }
-      #{c(sidebar private subtextText)} {
+      #{c(sidebar private activityText)} {
         color: var(--interactive-active);
+        strong {
+          color: var(--interactive-active);
+        }
       }
     }
   }

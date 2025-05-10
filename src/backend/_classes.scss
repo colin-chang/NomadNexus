@@ -2486,6 +2486,7 @@ $classes: (
     'hiddenMembers': 'hiddenMembers_c8ffbb',
     'members': 'members_c8ffbb',
     'group': 'membersGroup_c8ffbb',
+
     'activityHeader': 'header__095fe',
     'activityContainer': 'container__0f2e8',
     'activityContainerSelected': 'selected__0f2e8',
@@ -2493,6 +2494,7 @@ $classes: (
     'activityPopoutInteractionsHeader': 'interactionsContainerHeader_af3b89',
     'activityPopoutInteractions': 'interactionsContainer_af3b89',
     'activityPopoutShareToChannelButton': 'shareToChannelButton_af3b89',
+
     'member': 'member__5d473',
     'memberBackground': 'member_c8ffbb',
     'memberClickable': 'clickable__91a9d',
@@ -2511,11 +2513,18 @@ $classes: (
     'nameContainer': 'nameContainer__703b9',
     'usernameInner': 'username__703b9',
     'offline': 'offline__5d473',
-    'activity': 'activityText__5d473',
     'placeholderMemberGroups': 'memberGroupsPlaceholder_c8ffbb',
     'placeholderAvatar': 'placeholderAvatar__27cc6',
     'placeholderUsername': 'placeholderUsername__27cc6',
     'placeholderUsernameMultiple': 'mulitplePlaceholderUsername__27cc6',
+
+    // activity status
+    'activityIcon': 'icon_c9d15c',
+    // shows up when a user is playing a game or listening to music -- SHARED IN OTHER PLACES IN APP
+    'activityQuestsIcon': 'questsIcon_c9d15c',
+    // presumably this is used with quests. -- SHARED IN OTHER PLACES IN APP
+    'activityEmoji': 'emoji_c9d15c',
+    'activityText': 'truncated_c9d15c',
 
     // click on user with quest badge
     'quest': (
@@ -2870,27 +2879,16 @@ $classes: (
         // paired with "layout" class-wise. shows when user is playing game or has custom status, always shows with group.
         'subtext': 'subtext__972a0',
         // child to subtextLayout
-        'subtextText': 'text__8ac07',
-        'activity': 'activity__972a0',
 
         // shows for user when they're doing something, use subtext:not(activity) to only target group
-        'emoji': 'emoji_e463a5',
-        // SHARED IN OTHER PLACES IN APP; ANY STATUS WITH EMOJI HAS THIS
-        'activityEmoji': 'activityEmoji__972a0',
-        'activityText': 'activityText__972a0',
+        'emoji': 'emoji_c9d15c',
+        'activityText': 'activityStatusText__972a0',
         // two elements have this, used for regular and paired with textRuler with aria-hidden=true
-        'textRuler': 'textRuler_c9d15c',
-        // simply hides it -- SHARED IN OTHER PLACES IN APP
-        'activityIcon': 'icon_c9d15c',
-        // shows up when a user is playing a game or listening to music -- SHARED IN OTHER PLACES IN APP
-        'activityQuestsIcon': 'questsIcon_c9d15c',
 
-        // presumably this is used with quests. -- SHARED IN OTHER PLACES IN APP
         'closeButton': 'closeButton__972a0',
-
         // click to close dm or leave group chat
-        'loadingEmpty': 'empty__99e7c',
 
+        'loadingEmpty': 'empty__99e7c',
         // you'll quickly see it when you reload on the friends list
         // These have color and background attached to them. Use these instead of channelInteractive.
         'interactiveBG': 'interactive_bf202d',
@@ -5163,6 +5161,12 @@ $classes: (
       // contains mask
       'loadingForeground': 'popoutLoadingForeground__0f481',
       // contains background-image
+    ),
+
+    // click on guild tag beside user name
+    'guildTag': (
+      'spinner': 'spinnerContainer__86bf6',
+      'container': 'container__86bf6',
     ),
 
     'streamPreview': (

@@ -44,7 +44,7 @@
   }
 }
 
-// ACTIVITY
+// RECENT ACTIVITY
 #{c(main visualRefresh)} {
   #{c(memberList activityContainer)} {
     background: cv('shading.card');
@@ -132,12 +132,10 @@
   }
 }
 
-// ACTIVITY
-#{c(memberList activity)} {
-  #{c(main visualRefresh)} & {
-    color: cv('text.muted');
-    transition: all 0.15s ease-in-out;
-  }
+// ACTIVITY STATUS
+#{c(memberList activityText)} {
+  color: cv('text.muted');
+  transition: all 0.15s ease-in-out;
   strong {
     color: cv('color.main');
     font-weight: 700;
@@ -168,15 +166,15 @@
     background-color: transparent;
   }
   #{c(memberList nameContainer)} {
-    -webkit-text-fill-color: cv('text.normal');
+    -webkit-text-fill-color: var(--interactive-active);
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
     &:after {
       right: 0;
     }
   }
-  #{c(memberList activity)},
+  #{c(memberList activityText)},
   strong {
-    color: cv('text.normal');
+    color: var(--interactive-active);
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
   }
   #{c(memberList ownerIcon)} {

@@ -16,10 +16,6 @@
   }
 }
 #{c(popouts menus colorDanger)} {
-  &,
-  #{c(popouts menus label)} {
-    color: cv('color.danger');
-  }
   &#{c(popouts menus itemFocused)} {
     background-color: cv('color.danger');
     &:not(#{c(popouts menus checkboxContainer)}) {
@@ -32,6 +28,7 @@
   &:active {
     &:not(#{c(popouts menus itemHideInteraction)}) {
       background-color: hsl(from cv('color.danger') h s l/.8);
+      color: var(--interactive-active);
       #{c(popouts menus label)} {
         color: var(--interactive-active);
       }

@@ -32,6 +32,11 @@
   }
 }
 
+// GUILD TAG
+#{c(popouts guildTag spinner)} {
+  background: cv('shading.popout');
+}
+
 // STREAM PREVIEW
 #{c(main visualRefresh)} {
   #{c(popouts streamPreview popout)} {
