@@ -28,24 +28,26 @@
       }
     }
   }
+}
 
-  // HEADER
-  #{c(discover headerBackdrop)} {
-    background: cv('shading.popout');
-  }
+// HEADER
+#{c(discover headerBackdrop)} {
+  background: cv('shading.popout');
+}
 
-  // SEARCH RESULT HEADER
-  #{c(discover headerRelative)} {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5));
+// SEARCH RESULT HEADER
+#{c(discover headerRelative)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5));
+}
+#{c(discover headerIconButton)} {
+  background: cv('color.main');
+  &:hover {
+    background: cv('color.hover');
   }
-  #{c(discover headerIconButton)} {
-    background: cv('color.main');
-    &:hover {
-      background: cv('color.hover');
-    }
-  }
+}
 
   // CONTENT
+#{c(main visualRefresh)} {
   #{c(discover container)} {
     border: none;
   }
@@ -55,52 +57,65 @@
   &:is(#{c(main themeDark)}, #{c(main themeLight)}) {
     #{c(discover card)} {
       background: cv('shading.card');
-      border: 2px solid transparent;
+      border: none;
       &:hover {
         background: cv('shading.card');
-        border-color: cv('color.main');
+        box-shadow: 0 0 0 2px cv('color.hover');
       }
     }
   }
+}
 
-  // APPS
+// APPS
+#{c(main visualRefresh)} {
   #{c(discover apps cardAvatar)} {
     background: cv('shading.card');
-    border-color: transparent;
+    border: none;
   }
   #{c(discover apps card)} {
     &:hover {
       #{c(discover apps cardAvatar)} {
         background: cv('shading.card');
-        border-color: transparent;
       }
     }
   }
-  #{c(discover apps footerContainer)},
-  #{c(discover apps searchNoResult)} {
-    background: cv('shading.card');
-  }
+}
+#{c(discover apps footerContainer)},
+#{c(discover apps searchNoResult)} {
+  background: cv('shading.card');
+}
 
   // SERVERS
+#{c(main visualRefresh)} {
   &:is(#{c(main themeLight)}, #{c(main themeDark)}) {
     #{c(discover servers cardIconMask)} {
       background: cv('shading.card');
-      border-color: transparent;
+      width: 48px;
+      height: 48px;
+      padding: 0;
+      margin-left: 8px;
     }
   }
   #{c(discover servers card)} {
     &:hover {
       #{c(discover servers cardIconMask)} {
         background: cv('shading.card');
-        border-color: transparent;
       }
     }
   }
-  #{c(discover servers searchContainer)} {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
-  }
+}
+#{c(discover servers onlineDot)} {
+  background: cv('color.online');
+}
+#{c(discover servers offlineDot)} {
+  background: cv('color.offline');
+}
+#{c(discover servers searchContainer)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
 
-  // QUESTS
+// QUESTS
+#{c(main visualRefresh)} {
   #{c(discover quests tileContainer)} {
     background: cv('shading.card');
   }

@@ -10,14 +10,16 @@
       background: cv('shading.card');
       box-shadow: none;
       border-color: cv('color.main');
+      transform: none;
     }
   }
   .vc-addon-card {
     background: cv('shading.card');
-    border: 2px solid transparent;
+    border: none;
     &:hover {
       background: cv('shading.card');
-      border-color: cv('color.main');
+      transform: none;
+      box-shadow: none;
     }
   }
 
