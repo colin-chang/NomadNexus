@@ -1,9 +1,11 @@
 @use 'backend' as *;
 
 // FOCUS
-#{c(guildList focusStroke)} {
-  stroke: var(--focus-color);
-  stroke-width: 4px;
+#{c(main keyboardMode)} {
+  #{c(guildList focusStroke)} {
+    stroke: var(--focus-color);
+    stroke-width: 4px;
+  }
 }
 
 #{c(main visualRefresh)} {
