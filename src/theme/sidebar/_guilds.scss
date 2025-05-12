@@ -1,4 +1,13 @@
 @use 'backend' as *;
+
+// FOCUS
+#{c(main keyboardMode)} {
+  #{c(guildList focusStroke)} {
+    stroke: var(--focus-color);
+    stroke-width: 4px;
+  }
+}
+
 #{c(main visualRefresh)} {
   // GUILD LIST
   #{c(guildList guilds)} {

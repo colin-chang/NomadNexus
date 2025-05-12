@@ -323,7 +323,7 @@ $classes: (
     'loader': 'loader_c48ade',
 
     // probably used elsewhere but 100% used for loading "Browse Channels" for the first time during a session.
-    'ring': 'focus-rings-ring',
+    'focusRing': 'focus-rings-ring',
 
     // tab around to see this, other extra classes may appear in other areas.
     // Visual Refresh stuff
@@ -2720,7 +2720,9 @@ $classes: (
     )
   ),
 
-  'guildList': (
+  'guildList': (    
+    'focusStroke': 'focusStroke_cc5dd2',
+    
     'guilds': 'guilds_c48ade',
     'wrapper': 'wrapper_ef3116',
     'hidden': 'hidden_ef3116',
@@ -6597,7 +6599,6 @@ $classes: (
   // Shit definitely needs sorting.
   'other': (
       'developerPortalCtaWrapper': 'developerPortalCtaWrapper_bf485f',
-      'focusStroke': 'focusStroke_cc5dd2',
       // Random stuff found while attempting to convert ClearVision 6 to this class format. Comments show where the selector is used.
       // This category **WILL** be removed over time and without warning.
       'cv': (

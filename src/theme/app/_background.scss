@@ -44,3 +44,8 @@
 #{c(main spinnerCirclePath)} {
   stroke: cv('color.main');
 }
+
+// FOCUS
+#{c(main focusRing)} {
+  box-shadow: 0 0 0 4px var(--focus-color);
+}

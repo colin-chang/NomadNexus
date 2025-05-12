@@ -57,6 +57,8 @@
   --channel-selected-bg: var(--main-color); /* selected channel background [default: var(--main-color)] */
   --channel-unread: var(--main-color); /* unread channel text color [default: var(--main-color)] */
   --channel-unread-hover: var(--hover-color); /* unread channel hover color [default: var(--hover-color)] */
+  /* ACCESSIBILITY */
+  --focus-color: var(--main-color); /* outline when pressing TAB key [default: var(--main-color)] */
 }
 
 /* THEME SPECIFIC SHADING */
