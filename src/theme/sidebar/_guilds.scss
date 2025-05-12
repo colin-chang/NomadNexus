@@ -24,7 +24,7 @@
     // > so it wont affect group dms
       width: 100%;
       height: 100%;
-      background: cv('home.icon') center/cover no-repeat;
+      background: cv('home.icon') center/cv('home.size') no-repeat;
     }
     path {
       display: none;

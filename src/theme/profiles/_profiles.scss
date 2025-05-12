@@ -13,7 +13,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: cv('bg.popout.img') center/cover no-repeat;
+      background: cv('bg.popout.img') cv('bg.popout.pos')/cv('bg.popout.size') no-repeat;
       background-attachment: cv('bg.popout.attach');
       filter: cv('bg.popout.filter');
       z-index: -1;
@@ -27,7 +27,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: cv('bg.modal.img') center/cover no-repeat;
+      background: cv('bg.modal.img') cv('bg.modal.pos')/cv('bg.modal.size') no-repeat;
       background-attachment: cv('bg.modal.attach');
       filter: cv('bg.modal.filter');
       z-index: -1;

@@ -35,14 +35,9 @@
     }
   }
   :is(#{c(sidebar private startActivityIcon)}, #{c(sidebar private inviteButtonIcon)}) {
-    margin: 0 -4px 0 0;
-    #{c(header icon)} {
-      color: cv('color.main');
-    }
+    color: cv('color.main');
     &:hover {
-      #{c(header icon)} {
-        color: cv('color.hover');
-      }
+      color: cv('color.hover');
     }
   }
 }

@@ -46,6 +46,14 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --hsl-streaming-color: hsl(from var(--streaming-color) #{$calc});
   --hsl-offline-color: hsl(from var(--offline-color) #{$calc});
 
+  --hsl-channel-normal: var(--channel-normal);
+  --hsl-channel-muted: var(--channel-muted); 
+  --hsl-channel-hover: var(--channel-hover);
+  --hsl-channel-selected: var(--channel-selected);
+  --hsl-channel-selected-bg: var(--channel-selected-bg);
+  --hsl-channel-unread: var(--channel-unread);
+  --hsl-channel-unread-hover: var(--channel-unread-hover);
+
   // fonts
   --font-primary: var(--main-font);
   --font-display: var(--main-font);
@@ -68,22 +76,37 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 
   --background-shading-percent: 100%;
   --background-image: url(https://clearvision.github.io/images/sapphire.jpg);
+  --background-position: center;
+  --background-size: cover;
   --background-attachment: fixed;
   --background-filter: saturate(calc(#{$sf} * 1));
 
   --user-popout-image: var(--background-image);
+  --user-popout-position: var(--background-position);
+  --user-popout-size:  var(--background-size);
   --user-popout-attachment: var(--background-attachment);
   --user-popout-filter: var(--background-filter);
 
   --user-modal-image: var(--background-image);
+  --user-modal-position: var(--background-position);
+  --user-modal-size: var(--background-size);
   --user-modal-attachment: var(--background-attachment);
   --user-modal-filter: var(--background-filter);
 
   --home-icon: url(https://clearvision.github.io/icons/discord.svg);
+  --home-size: cover;
 
-  // Advanced users only kinda thing
   --main-font: 'gg sans', Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --code-font: Consolas, 'gg mono', 'Liberation Mono', Menlo, Courier, monospace;
+
+  /* CHANNEL COLORS */
+  --channel-normal: var(--interactive-normal);
+  --channel-muted: var(--interactive-muted); 
+  --channel-hover: var(--interactive-hover);
+  --channel-selected: var(--interactive-active);
+  --channel-selected-bg: var(--main-color);
+  --channel-unread: var(--main-color);
+  --channel-unread-hover: var(--hover-color);
 }
 
 /* Light Theme */

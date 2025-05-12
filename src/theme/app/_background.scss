@@ -23,7 +23,7 @@
 }
 #{c(main visualRefresh)} {
   #{c(main bg)} {
-    background: cv('bg.app.img') center/cover no-repeat;
+    background: cv('bg.app.img') cv('bg.app.pos')/cv('bg.app.size') no-repeat;
     background-attachment: cv('bg.app.attach');
     filter: cv('bg.app.filter');
     z-index: -1;
