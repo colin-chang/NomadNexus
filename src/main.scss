@@ -59,6 +59,8 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --font-display: var(--main-font);
   --font-code: var(--code-font);
 
+  --focus-primary: var(var(--focus-color));
+
   // other stuff that the theme sets
 
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
@@ -99,7 +101,6 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --main-font: 'gg sans', Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --code-font: Consolas, 'gg mono', 'Liberation Mono', Menlo, Courier, monospace;
 
-  /* CHANNEL COLORS */
   --channel-normal: var(--interactive-normal);
   --channel-muted: var(--interactive-muted); 
   --channel-hover: var(--interactive-hover);
@@ -107,6 +108,8 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --channel-selected-bg: var(--main-color);
   --channel-unread: var(--main-color);
   --channel-unread-hover: var(--hover-color);
+
+  --focus-color: var(--main-color);
 }
 
 /* Light Theme */
