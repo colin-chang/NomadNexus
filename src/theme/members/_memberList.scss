@@ -87,46 +87,51 @@
 #{c(memberList name)} {
   width: fit-content;
 }
-#{c(memberList nameContainer)} {
-  position: static;
-  transition: all 0.15s ease-in-out;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to right, cv('shading.hover') 90%, transparent);
-    border-radius: 3px;
-    opacity: 0;
+#{c(memberList member)} {
+  #{c(memberList nameContainer)} {
+    position: static;
     transition: all 0.15s ease-in-out;
-    z-index: -1;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 100%;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to right, cv('color.main') 90%, transparent);
-    border-radius: 3px;
-    opacity: 0.8;
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
-  }
-  &[style^='color:'] {
-    &:before,
-    &:after {
-      background: linear-gradient(to right, currentColor 90%, transparent);
+    z-index: unset;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to right, cv('shading.hover') 90%, transparent);
+      border-radius: 3px;
+      opacity: 0;
+      transition: all 0.15s ease-in-out;
+      z-index: -1;
     }
-  }
-  #{c(memberList nameplated)} & {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to right, cv('color.main') 90%, transparent);
+      border-radius: 3px;
+      opacity: 0.8;
+      transition: all 0.3s ease-in-out;
+      z-index: -1;
+    }
     &[style^='color:'] {
       &:before,
       &:after {
-        background: linear-gradient(to right, currentColor, transparent);
+        background: linear-gradient(to right, currentColor 90%, transparent);
+      }
+    }
+  }
+  #{c(memberList nameContainer)} {
+    #{c(memberList nameplated)} & {
+      &[style^='color:'] {
+        &:before,
+        &:after {
+          background: linear-gradient(to right, currentColor, transparent);
+        }
       }
     }
   }
