@@ -24,8 +24,7 @@
 [![Issues][issues-badge]][issues-link]
 [![Pull Requests][prs-badge]][prs-link]
 
-<img  width="500" src="https://raw.githubusercontent.com/ClearVision/ClearVision-v7/refs/heads/master/screenshots/treatment-2.jpg">
-<img  width="500" src="https://raw.githubusercontent.com/ClearVision/ClearVision-v7/refs/heads/master/screenshots/treatment-3.jpg">
+![v6 Sapphire](https://raw.githubusercontent.com/ClearVision/ClearVision-v7/refs/heads/master/screenshots/treatment-3.jpg)
 
 </div>
 
@@ -49,6 +48,9 @@ Goals:
 ## Theme Editor
 
 Currently not available
+
+You can check for updates regarding the theme editor [here](https://discord.gg/ZHthyCw)
+
 
 ## Installing
 
