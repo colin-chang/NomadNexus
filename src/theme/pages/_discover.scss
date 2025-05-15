@@ -85,7 +85,7 @@
   background: cv('shading.card');
 }
 
-  // SERVERS
+// SERVERS
 #{c(main visualRefresh)} {
   &:is(#{c(main themeLight)}, #{c(main themeDark)}) {
     #{c(discover servers cardIconMask)} {
@@ -106,9 +106,6 @@
 }
 #{c(discover servers onlineDot)} {
   background: cv('color.online');
-}
-#{c(discover servers offlineDot)} {
-  background: cv('color.offline');
 }
 #{c(discover servers searchContainer)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));

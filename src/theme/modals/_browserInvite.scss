@@ -1,0 +1,13 @@
+@use 'backend' as *;
+
+// MEMBER COUNT
+#{c(modals browserInvite pillOnline)} {
+  background: cv('color.online');
+}
+
+// SETTINGS BUTTONS OF INVITE LINK
+#{c(main visualRefresh)} {
+  #{c(modals browserInvite editProfileContainer)} {
+    background: cv('shading.popout');
+  }
+}
