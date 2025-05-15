@@ -11,3 +11,10 @@
 #{c(popouts loading popout)} {
   background: cv('shading.popout');
 }
+
+// NOTIFICATION SETTINGS BUTTONS OF INVITE LINK
+#{c(main visualRefresh)} {
+  #{c(browserInvite editProfileContainer)} {
+    background: cv('shading.popout');
+  }
+}
