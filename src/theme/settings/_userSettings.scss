@@ -31,16 +31,6 @@
     border: 2px solid cv('color.main');
   }
 }
-#{c(main visualRefreshChatInput)} {
-  #{c(userSettings profiles bioTextAreaContainer)} {
-    background: cv('shading.input.bg');
-    box-shadow: 0 0 0 2px cv('shading.input.border');
-    &:focus-within {
-      border-color: transparent;
-      box-shadow: 0 0 2px 2px cv('color.main');
-    }
-  }
-}
 
 // CONTENT & SOCIAL
 #{c(userSettings content blockedCard)} {

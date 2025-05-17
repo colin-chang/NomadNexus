@@ -329,9 +329,11 @@ $classes: (
     // Visual Refresh stuff
     'visualRefresh': 'visual-refresh',
     // 2024-05_desktop_visual_refresh (Desktop Visual Refresh); select treatments 1-4
-    'visualRefreshChatInput': 'visual-refresh-chat-input',
 
-    // same experiment, select treatment 1 or 2.
+    // desktop refresh fast follows
+    'refreshGuildBg': 'refresh-fast-follow-guild-bg',
+    // treatment 2 - darker guild list background
+
     // no idea what these classes are about
     'backgroundOpacity': (
         'low': 'background-opacity-low',
