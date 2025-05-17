@@ -4,7 +4,7 @@
 
 // treatment 2 - darker guild list background
 #{c(main refreshGuildBg)} {
-  #{c(main visualRefresh)} {
+  &#{c(main visualRefresh)} {
     #{c(main bg)} {
       background: cv('bg.app.img') cv('bg.app.pos')/cv('bg.app.size') no-repeat;
       background-attachment: cv('bg.app.attach');
