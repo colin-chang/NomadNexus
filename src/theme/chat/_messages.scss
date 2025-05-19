@@ -154,6 +154,14 @@
     background: cv('color.offline');
   }
 
+  #{c(embeds invite guildInviteContainer)} {
+    background: cv('shading.card');
+  }
+
+  #{c(embeds invite guildInviteFooter)} {
+    background: none;
+  }
+
   // GIFTS
   #{c(embeds gift tile)} {
     background: cv('shading.card');
