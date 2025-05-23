@@ -40,8 +40,10 @@
   }
 }
 #{c(settings rowCard)} {
-  background: cv('shading.card');
-  border-color: cv('color.main');
+  &::before {
+    background: cv('shading.card');
+    border-color: cv('color.main');
+  }
 }
 
 // COLLAPSEABLE
@@ -58,7 +60,7 @@
     &:is(:hover, :active) {
       &:not(#{c(settings collapseableRadio disabled)}) {
         &:not(#{c(settings collapseableRadio noAction)}) {
-          background: var(--card-shading);
+          background: cv('shading.card');
         }
       }      
     }

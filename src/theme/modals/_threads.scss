@@ -2,7 +2,7 @@
 
 #{c(main visualRefresh)} {
   #{c(modals threads modal)} {
-    background: cv('shading.modal');
+    background: cv('shading.modal') !important; // yea...
   }
   #{c(modals threads browser)} {
     background: transparent;
