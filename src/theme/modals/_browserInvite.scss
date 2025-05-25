@@ -1,8 +1,8 @@
 @use 'backend' as *;
 
 // MEMBER COUNT
-#{c(modals browserInvite pillOnline)} {
-  background: transparent;
+#{c(modals browserInvite pillIconOnline)} {
+  background: cv('color.online');
 }
 
 // SETTINGS BUTTONS OF INVITE LINK
