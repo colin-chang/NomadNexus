@@ -1,39 +1,21 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
-  #{c(modals screenshare headerContainer)} {
-    background: transparent;
-  }
-}
 
-// PAGE 1
-#{c(modals screenshare tile)} {
-  &:hover {
-    #{c(modals screenshare sourceThumbnail)} {
-      box-shadow: inset 0 0 0 2px cv('color.main');
-    }
-  }
-}
-#{c(modals screenshare sourceThumbnail)} {
-  &#{c(modals screenshare sourceSelected)} {
-    box-shadow: inset 0 0 0 2px cv('color.main');
-  }
-}
-
-// PAGE 2
-#{c(modals screenshare card)} {
+#{c(modals screenshare pillContainer)} {
   background: cv('shading.cardInner');
 }
-#{c(modals screenshare selector)} {
-  background: cv('shading.cardInner');
+#{c(modals screenshare pillItemSelected)} {
+  background: cv('color.main');
+}
+
+#{c(modals screenshare source)} {
   &:hover {
-    &::before {
-      background: cv('color.hover');
-    }
-  }
-  &#{c(modals screenshare selectorSelected)} {
-    &::before {
-      background: cv('color.main');
+    &:not(#{c(modals screenshare sourceSelected)}) {
+      #{c(modals screenshare sourcePreviewContainer)} {
+        &:before {
+          border-color: cv('color.main');
+        }
+      }
     }
   }
 }

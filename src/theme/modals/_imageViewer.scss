@@ -1,0 +1,7 @@
+@use 'backend' as *;
+
+#{c(main visualRefresh)} {
+  :is(#{c(modals imageViewer actionButtons)}, #{c(modals imageViewer closeButton)}) {
+    background: cv('shading.modal');
+  }
+}

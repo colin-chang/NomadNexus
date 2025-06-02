@@ -5470,18 +5470,16 @@ $classes: (
     ),
 
     'screenshare': (
-      'headerContainer': 'container_a55fdc',
-      'tabSelected': 'tabItemSelected__9e06a',
-      'tile': 'tile_a2de16',
-      'sourceThumbnail': 'sourceThumbnail_a2de16',
-      'sourceSelected': 'selected_a2de16',
-      'card': 'card__4bb93',
-      'upsell': 'enhancedBanner__39bd2',
-      'selector': 'selectorButton_c6d3dc',
-      // resolution / fps
-      'selectorSelected': 'selectorButtonSelected_c6d3dc',
-      'selectorUpsell': 'premiumUpsell_c6d3dc',
-      'selectorUpsellText': 'enhancedSelectorNitroText_c6d3dc',
+      // selector pills
+      'pillContainer': 'pillContainer__9e06a',
+      'pillItem': 'pillItem__9e06a',
+      'pillItemSelected': 'pillItemSelected__9e06a',
+
+      'source': 'source_febe19',
+      'sourceSelected': 'selectedSource_febe1',
+      'sourcePreviewContainer': 'sourcePreviewContainer_febe19',
+      'sourcePreview': 'sourcePreview_febe19',
+      'sourceOverlayCTA': 'sourceOverlayCTA_febe19',
     ),
 
 
@@ -5939,49 +5937,50 @@ $classes: (
     ),
 
     // Click an image (png, jpg, gif) in chat. This may not apply to videos or other embeds.
-    'mediaViewer': (
-        'carouselModal': 'carouselModal_d3a6f0',
-        // put on modal root
-        'base': 'base__5cd44',
-        // applies to top bar and action buttons
-        'topBar': 'topBar__6088c',
-        // has ::before with gradient background
-        'closeButton': 'closeButton__6088c',
-        'closeButtonInner': 'closeButtonInner__6088c',
-        'messageContents': 'messageContents__6088c',
-        // displayed in topBar
-        'timestamp': 'timestamp__6088c',
+    'imageViewer': (
+      'carouselModal': 'carouselModal_d3a6f0',
+      // put on modal root
+      'base': 'base__5cd44',
+      // applies to top bar and action buttons
+      'topBar': 'topBar__6088c',
+      // has ::before with gradient background
 
-        'group': 'group__5cd44',
+      'actionButtons': 'actionButtons_cc1819',
+      // paired with base. holds many buttons.
+      'actionButton': 'actionButton_cc1819',
+      // individual button. paired with actionButtonWrapper for some reason. has aira-label.
+      'actionButtonWrapper': 'actionButtonWrapper_cc1819',
+      // parent to actionButtonInner
+      'actionButtonInner': 'actionButtonInner_cc1819',
+      
+      'closeButton': 'closeButton__6088c',
+      'closeButtonInner': 'closeButtonInner__6088c',
+      'messageContents': 'messageContents__6088c',
+      // displayed in topBar
+      'timestamp': 'timestamp__6088c',
 
-        // holds action buttons and wrapper chain
-        'mediaContainerWrapper': 'wrapper_b2eddf',
-        // parent of mediaContainer
-        'mediaContainer': 'mediaContainer_b2eddf',
-        // parent of mediaWrapper
-        'mediaWrapper': 'mediaWrapper_b2eddf',
-        // parent of innerWrapper
-        'innerWrapper': 'innerWrapper_b2eddf',
-        // parent of imageWrapperZoom and imageWrapperParent (same element)
-        'imageWrapperZoom': 'wrapper_a22bfd',
-        // class named so as it has a zoomed class with same suffix. paired with imageWrapperParent... why are there so many wrappers.
-        'zoomed': 'zoomed_a22bfd',
-        // click on image
-        'imageWrapperParent': 'wrapper__091cf',
-        // paired with imageWrapperZoom. parent to imageWrapperInner
-        'imageWrapperInner': 'imageWrapper_af017a',
-        // WHY ARE THERE SO MANY WRAPPERS. parent to loadingOverlay
-        'loadingOverlay': 'loadingOverlay_af017a',
+      'group': 'group__5cd44',
 
-        // parent to the img element.
-        'actionButtons': 'actionButtons_cc1819',
-        // paired with base. holds many buttons.
-        'actionButton': 'actionButton_cc1819',
-        // individual button. paired with actionButtonWrapper for some reason. has aira-label.
-        'actionButtonWrapper': 'actionButtonWrapper_cc1819',
-        // parent to actionButtonInner
-        'actionButtonInner': 'actionButtonInner_cc1819',
-      ),
+      // holds action buttons and wrapper chain
+      'mediaContainerWrapper': 'wrapper_b2eddf',
+      // parent of mediaContainer
+      'mediaContainer': 'mediaContainer_b2eddf',
+      // parent of mediaWrapper
+      'mediaWrapper': 'mediaWrapper_b2eddf',
+      // parent of innerWrapper
+      'innerWrapper': 'innerWrapper_b2eddf',
+      // parent of imageWrapperZoom and imageWrapperParent (same element)
+      'imageWrapperZoom': 'wrapper_a22bfd',
+      // class named so as it has a zoomed class with same suffix. paired with imageWrapperParent... why are there so many wrappers.
+      'zoomed': 'zoomed_a22bfd',
+      // click on image
+      'imageWrapperParent': 'wrapper__091cf',
+      // paired with imageWrapperZoom. parent to imageWrapperInner
+      'imageWrapperInner': 'imageWrapper_af017a',
+      // WHY ARE THERE SO MANY WRAPPERS. parent to loadingOverlay
+      'loadingOverlay': 'loadingOverlay_af017a',
+      // parent to the img element.
+    ),
     
     'purchase': (
       'nitroTier': (
