@@ -1001,6 +1001,10 @@ $classes: (
     'messageLoadingWrapper': 'wrapper_fc8177',
     'noChannel': 'noChannel__01d5c',
     // in a server without any channels or loading in
+
+    'chatHeaderBar': 'chatHeaderBar_dc83f5',
+    // This channel is not on your channel list.
+   
     'messageDivider': 'divider__5126c',
     'backgroundFlash': 'backgroundFlash__5126c',
     'messageListItem': 'messageListItem__5126c',
@@ -1080,10 +1084,10 @@ $classes: (
     ),
 
     'allowedAvatars': 'avatars__1ee8c',
-    'allowedRoleButton': 'role__1ee8c',
+    'allowedRole': 'role__1ee8c',
     // element kind button
-    'allowedRole': 'role_fa0dd2',
-    'allowedRole2': 'role_b4b2c3',
+    'allowedRoleInner': 'role_fa0dd2',
+    'allowedRoleInner2': 'role_b4b2c3',
     // paired with above
     'allowedRoleColor': 'roleColor_b4b2c3',
 
@@ -1735,6 +1739,13 @@ $classes: (
     // on own line for some reason. The children of it are as follows:
     // div[class] > svg > (wumpus image)
     // div.text-md-normal "No members match these search results.",,
+  ),
+
+  'serverBoosts': (
+    'container': 'container__89463',
+    'contentContainer': 'contentContainer__89463',
+    'card': 'container__98cbd',
+    'sidebarContainer': 'sidebarContainer__89463',
   ),
 
   'chatForm': (
@@ -6785,7 +6796,6 @@ $classes: (
           'serverExperienceGradient': 'overlay_fe70ca',
           'customizeChannelsPill': 'selectValuePill__05934',
           'customizeChannelsOption': 'optionButtonWrapper__270d7',
-          'channelNotInList': 'chatHeaderBar_dc83f5',
           'membersChannelRowContainer': 'memberRowContainer__71c22',
           'userSettingsProfilesPreviewStatus': 'statusDot_ab876d',
           'avatarEditingContainer': 'editingContainer__11787',

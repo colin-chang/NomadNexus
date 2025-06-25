@@ -41,3 +41,17 @@
 #{c(chat noChannel)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
 }
+
+// This channel is not on your channel list.
+#{c(main visualRefresh)} {
+  #{c(chat chatHeaderBar)} {
+    background: transparent;
+  }
+}
+
+// 
+#{c(main visualRefresh)} {
+  #{c(chat allowedRoleInner2)} {
+    background: hsl(from var(--custom-role-label-color) h s l/.2);
+  }
+}

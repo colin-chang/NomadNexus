@@ -1,0 +1,20 @@
+@use 'backend' as *;
+
+#{c(serverBoosts container)} {
+  background: transparent;
+}
+#{c(serverBoosts contentContainer)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+
+#{c(serverBoosts card)} {
+  background: cv('shading.card');
+  border-color: transparent;
+  &:hover {
+    border-color: cv('color.hover');
+  }
+}
+
+#{c(serverBoosts sidebarContainer)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
+}

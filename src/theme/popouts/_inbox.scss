@@ -1,6 +1,8 @@
 @use 'backend' as *;
 
 #{c(main visualRefresh)} {
+
+  // SHARED
   #{c(popouts inbox popout)} {
     background: cv('shading.popout');
     box-shadow: none;
@@ -23,6 +25,13 @@
   #{c(popouts inbox emptyIcon)} {
     background: cv('color.main');
     color: var(--header-primary);
+  }
+  #{c(popouts inbox jumpButton)} {
+    background: cv('color.main');
+    border: none;
+    &:hover {
+      background: cv('color.hover');
+    }
   }
 
   // FOR YOU
