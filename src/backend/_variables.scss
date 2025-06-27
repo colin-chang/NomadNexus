@@ -85,12 +85,10 @@ $cv: (
     ),
   // TEXT COLORS - ALSO TO BE USED IN .theme-light AND .theme-dark
   text: (
-      normal: var(--text-normal),
+      normal: var(--text-default),
       muted: var(--text-muted),
       primary: var(--text-primary),
       secondary: var(--text-secondary),
-      // BELOW: not in theme file
-      default: var(--text-default),
     ),
 
   // FONT

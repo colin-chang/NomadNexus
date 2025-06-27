@@ -15,7 +15,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   &,
   &:is(#{c(main themeLight)}, #{c(main themeDark)}) {
     // DO NOT EDIT THESE -- VARIABLES ARE NOT TO BE DISTRIBUTED TO END USER.
-    --text-normal: hsl(from var(--normal-text) #{$calc});
+    --text-default: hsl(from var(--normal-text) #{$calc});
     --text-muted: hsl(from var(--muted-text) #{$calc});
     --text-link: var(--hsl-main-color);
     --text-brand: var(--hsl-main-color);
@@ -59,7 +59,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --font-display: var(--main-font);
   --font-code: var(--code-font);
 
-  --focus-primary: var(var(--focus-color));
+  --focus-primary: var(--focus-color);
 
   // other stuff that the theme sets
 
