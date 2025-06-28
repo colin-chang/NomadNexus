@@ -19,7 +19,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
     --text-muted: hsl(from var(--muted-text) #{$calc});
     --text-link: var(--hsl-main-color);
     --text-brand: var(--hsl-main-color);
-    --text-positive: var(--hsl-success-color);
+    --text-feedback-positive: var(--hsl-success-color);
     --text-danger: var(--hsl-danger-color);
     
     // shadings are defined in .theme-dark/.theme-light -- turns out every color variable discord uses also uses saturation-factor.
