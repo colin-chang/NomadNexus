@@ -3,16 +3,15 @@
 /* NOTICE */
 #{c(notice base)} {
   border-radius: 4px;
-  background: hsl(from var(--custom-notice-background, var(--hsl-main-color)) h s l/.8);
 }
 
 // CUSTOM COLOURS
 #{c(notice colorBrand)} {
-  --custom-notice-background: var(--hsl-main-color);
+  --custom-notice-background: hsl(from var(--hsl-main-color) h s l/.8);
 }
 #{c(notice colorDanger)} {
-  --custom-notice-background: var(--hsl-danger-color);
+  --custom-notice-background: hsl(from var(--hsl-danger-color) h s l/.8);
 }
 #{c(notice colorStreamerMode)} {
-  --custom-notice-background: var(--hsl-streaming-color);
+  --custom-notice-background: hsl(from var(--hsl-streaming-color) h s l/.8);
 }

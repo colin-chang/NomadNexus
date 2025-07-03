@@ -70,33 +70,26 @@
 }
 
 // POPOUT SEND MESSAGE
-#{c(main visualRefresh)} {
-  // NITRO PROFILE
-  #{c(profile customTheme)} {
-    #{c(chatForm channelTextAreaInline)} {
-      background: var(--user-profile-note-background-focus);;
-      box-shadow: 0 0 0 2px var(--user-profile-border);
-      &:focus-within {
-        box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
-      }
+#{c(profile customTheme)} {
+  #{c(chatForm channelTextAreaInline)} {
+    background: var(--user-profile-note-background-focus);;
+    box-shadow: 0 0 0 2px var(--user-profile-border);
+    &:focus-within {
+      box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
     }
   }
 }
 
 // NITRO PROFILE MODAL
-#{c(main visualRefresh)} {
-  #{c(profile customTheme)} {
-    #{c(tab top)} {
-      #{c(tab item)} {
-        --selected-tab-item-color: var(--profile-gradient-secondary-color);
-        &#{c(tab selected)} {
-          --selected-tab-item-color: var(--profile-gradient-primary-color);
-        }
+#{c(profile customTheme)} {
+  #{c(tab top)} {
+    #{c(tab item)} {
+      --selected-tab-item-color: var(--profile-gradient-secondary-color);
+      &#{c(tab selected)} {
+        --selected-tab-item-color: var(--profile-gradient-primary-color);
       }
     }
   }
-}
-#{c(profile customTheme)} {
   ::-webkit-scrollbar-thumb {
     background-color: var(--profile-gradient-primary-color);
   }

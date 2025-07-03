@@ -1,15 +1,8 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
-  #{c(memberList container)} {
-    background: none;
-    border: none;
-  }
-  #{c(memberList wrap)} {
-    background: none;
-    border: none;
-    height: 100%;
-  }
+#{c(memberList container)} {
+  background: none;
+  border: none;
 }
 #{c(memberList members)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
@@ -45,13 +38,11 @@
 }
 
 // RECENT ACTIVITY
-#{c(main visualRefresh)} {
-  #{c(memberList activityContainer)} {
-    background: cv('shading.card');
-    border-radius: 8px;
-    border-width: 2px;
-    padding-left: 10px;
-  }
+#{c(memberList activityContainer)} {
+  background: cv('shading.card');
+  border-radius: 8px;
+  border-width: 2px;
+  padding-left: 10px;
 }
 #{c(memberList activityContainerSelected)} {
   &,

@@ -1,13 +1,11 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
-  #{c(membersPage page)} {
-    background: transparent !important; // discord styles has !important
-  }
-  #{c(membersPage tableContainer)} {
-    background: cv('shading.card');
-    border: none;
-  }
+#{c(membersPage page)} {
+  background: transparent !important; // discord styles has !important
+}
+#{c(membersPage tableContainer)} {
+  background: cv('shading.card');
+  border: none;
 }
 #{c(membersPage newMemberNotice)} {
   background: cv('color.main');

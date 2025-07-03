@@ -1,10 +1,8 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
-  #{c(popouts search container)} {
-    background: cv('shading.popout');
-    border: none;
-  }
+#{c(popouts search container)} {
+  background: cv('shading.popout');
+  border: none;
 }
 
 // QUERY

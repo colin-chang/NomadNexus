@@ -29,17 +29,15 @@
 }
 
 // CODEBLOCK
-#{c(main visualRefresh)} {
-  #{c(chat markup)} {
-    code {
-      background: cv('shading.card');
-      border: 1px solid var(--hsl-card-shading-inverted);
-      // INLINE
-      &#{c(chat codeInline)} {
-        border:none;
-        background: hsl(from cv('shading.card') h s calc(100 - l) / calc(alpha * 0.5));
-        padding: 2px 6px
-      }
+#{c(chat markup)} {
+  code {
+    background: cv('shading.card');
+    border: 1px solid var(--hsl-card-shading-inverted);
+    // INLINE
+    &#{c(chat codeInline)} {
+      border:none;
+      background: hsl(from cv('shading.card') h s calc(100 - l) / calc(alpha * 0.5));
+      padding: 2px 6px
     }
   }
 }
@@ -125,111 +123,113 @@
 }
 
 // EMBEDS
-#{c(main visualRefresh)} {
-  #{c(embeds embedFull)} {
-    background: cv('shading.card');
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-  }
+#{c(embeds embedFull)} {
+  background: cv('shading.card');
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
 
-  // ATTACHMENTS
-  #{c(embeds attachment file)} {
-    background: cv('shading.card');
-    border: none;
-  }
-  #{c(embeds attachment upload progressBar)} {
-    background: cv('color.main') !important;
-  }
-
-  // INVITE
-  #{c(embeds invite wrapper)} {
-    background: cv('shading.card');
-    border: none;
-  }
-  #{c(embeds invite statusOnline)} {
-    background: cv('color.online');
-  }
-  #{c(embeds invite statusOffline)} {
-    background: cv('color.offline');
-  }
-
-  #{c(embeds invite guildInviteContainer)} {
-    background: cv('shading.card');
-  }
-
-  #{c(embeds invite guildInviteFooter)} {
-    background: none;
-  }
-
-  // GIFTS
-  #{c(embeds gift tile)} {
-    background: cv('shading.card');
-    border: none;
-    &:hover {
-      background: cv('shading.card');
-    }
-  }
-
-  // MEDIA
-  #{c(embeds media audioWrapper)} {
-    background: cv('shading.card');
-    border: none;
-  }
-  #{c(embeds media audioControls)} {
+// EMBED DOWNLOAD BUTTON
+#{c(embeds hoverButton group)} {
+  background: cv('shading.popout');
+}
+#{c(embeds hoverButton button)} {
+  &#{c(embeds hoverButton selected)},
+  &:hover {
     background: transparent;
   }
-  #{c(embeds media videoWrapper)} {
+}
+
+// ATTACHMENTS
+#{c(embeds attachment file)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(embeds attachment upload progressBar)} {
+  background: cv('color.main') !important;
+}
+
+// INVITE
+#{c(embeds invite wrapper)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(embeds invite statusOnline)} {
+  background: cv('color.online');
+}
+#{c(embeds invite statusOffline)} {
+  background: cv('color.offline');
+}
+
+#{c(embeds invite guildInviteContainer)} {
+  background: cv('shading.card');
+}
+
+#{c(embeds invite guildInviteFooter)} {
+  background: none;
+}
+
+// GIFTS
+#{c(embeds gift tile)} {
+  background: cv('shading.card');
+  border: none;
+  &:hover {
     background: cv('shading.card');
   }
+}
 
-  // TEXT CONTAINER
-  #{c(embeds textContainer textContainer)},
-  #{c(embeds textContainer footer)} {
-    background: cv('shading.card');
-    border: none;
-  }
-  #{c(embeds textContainer languageSelectorPopout)} {
-    background: cv('shading.popout');
-  }
-  #{c(embeds textContainer modalTextContainer)} {
-    background: transparent;
-    border: none;
-  }
+// MEDIA
+#{c(embeds media audioWrapper)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(embeds media audioControls)} {
+  background: transparent;
+}
+#{c(embeds media videoWrapper)} {
+  background: cv('shading.card');
+}
 
-  // HAS THREAD
-  #{c(chat cozy)} {
-    // doesnt actually need visual-refresh
-    &#{c(chat hasThread)} {
-      // cozy view
-      &::after {
-        border-color: cv('color.main');
-      }
+// TEXT CONTAINER
+#{c(embeds textContainer textContainer)},
+#{c(embeds textContainer footer)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(embeds textContainer languageSelectorPopout)} {
+  background: cv('shading.popout');
+}
+#{c(embeds textContainer modalTextContainer)} {
+  background: transparent;
+  border: none;
+}
+
+// HAS THREAD
+#{c(chat cozy)} {
+  &#{c(chat hasThread)} {
+    // cozy view
+    &::after {
+      border-color: cv('color.main');
     }
   }
-  #{c(embeds threadContainer)} {
-    // compact view
-    border-color: cv('color.main');
-  }
-  #{c(embeds threadContainer)} {
-    background: cv('shading.card');
-    border: none;
-  }
-  #{c(embeds threadCTA)} {
-    color: cv('color.main');
-  }
+}
+#{c(embeds threadContainer)} {
+  // compact view
+  border-color: cv('color.main');
+}
+#{c(embeds threadContainer)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(embeds threadCTA)} {
+  color: cv('color.main');
+}
 
-  // VOICE MESSAGE
-  #{c(embeds voiceMessage container)} {
-    background: cv('shading.card');
-    border: none;
-  }
-
-  #{c(embeds poll finished container)},
-  #{c(embeds poll container)} {
-    background: cv('shading.card');
-    border: none;
-  }
+// VOICE MESSAGE
+#{c(embeds voiceMessage container)} {
+  background: cv('shading.card');
+  border: none;
 }
 #{c(embeds voiceMessage ripple)} {
   background: cv('color.main');
@@ -261,13 +261,9 @@
   background: transparent;
 }
 
-// EMBED DOWNLOAD BUTTON
-#{c(embeds hoverButton group)} {
-  background: cv('shading.popout');
-}
-#{c(embeds hoverButton button)} {
-  &#{c(embeds hoverButton selected)},
-  &:hover {
-    background: transparent;
-  }
+// POLL
+#{c(embeds poll finished container)},
+#{c(embeds poll container)} {
+  background: cv('shading.card');
+  border: none;
 }

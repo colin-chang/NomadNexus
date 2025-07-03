@@ -1,14 +1,12 @@
 @use 'backend' as *;
 
 // TRANSPARENT BG
-#{c(main visualRefresh)} {
-  :is(
-		html, // might be needed for injectors
-		body,
-		#{c(main appMount)}
-	) {
-    background: none;
-  }
+:is(
+  html, // might be needed for injectors
+  body,
+  #{c(main appMount)}
+) {
+  background: none;
 }
 
 // BACKGROUND IMAGE
@@ -21,20 +19,16 @@
 #{c(main appInner)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.1));
 }
-#{c(main visualRefresh)} {
-  #{c(main bg)} {
-    background: cv('bg.app.img') cv('bg.app.pos')/cv('bg.app.size') no-repeat;
-    background-attachment: cv('bg.app.attach');
-    filter: cv('bg.app.filter');
-    z-index: -1;
-  }
+#{c(main bg)} {
+  background: cv('bg.app.img') cv('bg.app.pos')/cv('bg.app.size') no-repeat;
+  background-attachment: cv('bg.app.attach');
+  filter: cv('bg.app.filter');
+  z-index: -1;
 }
 
 // LOADING
-#{c(main visualRefresh)} {
-  #{c(loading container)} {
+#{c(loading container)} {
     background: cv('shading.bg');
-  }
 }
 
 // LOADING ICONS

@@ -42,14 +42,12 @@
 }
 
 // ROLES
-#{c(main visualRefresh)} {
-  #{c(guildSettings roles defaultPermsContainer)} {
+#{c(guildSettings roles defaultPermsContainer)} {
+  background: cv('shading.card');
+  border: 2px solid transparent;
+  &:hover {
     background: cv('shading.card');
-    border: 2px solid transparent;
-    &:hover {
-      background: cv('shading.card');
-      border: 2px solid cv('color.main');
-    }
+    border: 2px solid cv('color.main');
   }
 }
 #{c(guildSettings roles defaultPermsIcon)} {
@@ -99,13 +97,11 @@
 }
 
 // SAFETY SETUP
-#{c(main visualRefresh)} {
-  #{c(guildSettings safety changelog)},
-  #{c(guildSettings safety checklist)},
-  #{c(guildSettings safety itemWrapper)} {
-    background: cv('shading.card');
-    border: none;
-  }
+#{c(guildSettings safety changelog)},
+#{c(guildSettings safety checklist)},
+#{c(guildSettings safety itemWrapper)} {
+  background: cv('shading.card');
+  border: none;
 }
 #{c(guildSettings safety pill)} {
   background: cv('shading.card');
@@ -113,43 +109,39 @@
 }
 
 // AUDIT LOG
-#{c(main visualRefresh)} {
-  #{c(guildSettings audit log)} {
-    background: cv('shading.card');
-    border: none;
-  }
-  :is(#{c(guildSettings audit headerExpanded)}, #{c(guildSettings audit divider)}, #{c(guildSettings audit changeDetails)}) {
-    background: transparent;
-  }
+#{c(guildSettings audit log)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(guildSettings audit headerExpanded)},
+#{c(guildSettings audit divider)},
+#{c(guildSettings audit changeDetails)} {
+  background: transparent;
 }
 
 // BANS
-#{c(main visualRefresh)} {
-  #{c(guildSettings bans scrollerContainer)} {
-    background: cv('shading.card');
-    border: none;
-  }
+#{c(guildSettings bans scrollerContainer)} {
+  background: cv('shading.card');
+  border: none;
 }
 
 // AUTOMOD
 #{c(guildSettings automod badge)} {
   border-color: transparent;
 }
-#{c(main visualRefresh)} {
-  #{c(guildSettings automod editCard)} {
-    background: cv('shading.card');
-    border: none;
-  }
-  #{c(guildSettings automod contentContainer)} {
-    background: cv('shading.cardInner');
-  }
-  #{c(guildSettings automod keywordsTextArea)} {
-    background: cv('shading.input.bg');
-    border-color: cv('shading.input.border');
-    &:focus {
-      border-color: cv('color.main');
-      box-shadow: 0 0 2px 0 cv('color.main');
-    }
+#{c(guildSettings automod editCard)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(guildSettings automod contentContainer)} {
+  background: cv('shading.cardInner');
+}
+#{c(guildSettings automod keywordsTextArea)} {
+  background: cv('shading.input.bg');
+  border-color: cv('shading.input.border');
+  &:focus {
+    border-color: cv('color.main');
+    box-shadow: 0 0 2px 0 cv('color.main');
   }
 }
 #{c(guildSettings automod pillContainer)},
@@ -181,13 +173,11 @@
 }
 
 // COMMUNITY OVERVIEW
-#{c(main visualRefresh)} {
-  #{c(guildSettings community overview upsellContainer)} {
-    background: cv('shading.card');
-  }
-  #{c(guildSettings community overview upsellFooter)} {
-    background: transparent;
-  }
+#{c(guildSettings community overview upsellContainer)} {
+  background: cv('shading.card');
+}
+#{c(guildSettings community overview upsellFooter)} {
+  background: transparent;
 }
 
 // SERVER SUBSCRIPTIONS
@@ -215,15 +205,13 @@
 }
 
 // SERVER BOOST
-#{c(main visualRefresh)} {
-  #{c(guildSettings boost tierCard)} {
-    border: none;
-  }
-  #{c(guildSettings boost tierHeader)},
-  #{c(guildSettings boost tierBody)} {
-    background: cv('shading.card');
-    border: none;
-  }
+#{c(guildSettings boost tierCard)} {
+  border: none;
+}
+#{c(guildSettings boost tierHeader)},
+#{c(guildSettings boost tierBody)} {
+  background: cv('shading.card');
+  border: none;
 }
 
 // SERVER TEMPLATE

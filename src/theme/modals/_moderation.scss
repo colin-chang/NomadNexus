@@ -13,11 +13,9 @@
   background: cv('color.main');
 }
 // BAN
-#{c(main visualRefresh)} {
-  #{c(modals ban radioItem)} {
-    background: transparent;
-  }
-  #{c(modals ban otherReasonClickable)}{
-    background: cv('shading.cardInner');
-  }
+#{c(modals ban radioItem)} {
+  background: transparent;
+}
+#{c(modals ban otherReasonClickable)}{
+  background: cv('shading.cardInner');
 }

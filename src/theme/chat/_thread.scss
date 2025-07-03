@@ -1,33 +1,20 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
-  #{c(thread resizeHandle)} {
-    background: transparent;
+#{c(thread resizeHandle)} {
+  background: transparent;
+}
+#{c(thread container)} {
+  background: transparent;
+  border: none;
+  border-bottom-left-radius: 0;
+  &#{c(thread floating)} {
+    background: cv('shading.popout') ;
   }
-  #{c(thread container)} {
-    background: transparent;
-    border: none;
-    border-bottom-left-radius: 0;
-    &#{c(thread floating)} {
-      background: cv('shading.popout') ;
-    }
-  }
+}
 
-  // NEW THREAD
-  #{c(thread newThreadContainer)} {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5));
-  }
-  #{c(thread newThreadTextArea)} {
-    margin-bottom: 0;
-  }
-  #{c(thread newThreadTextAreaInner)} {
-    background-color: cv('shading.input.bg');
-    box-shadow: 0 0 2px 2px cv('shading.input.border');
-    border-radius: 8px;
-    &:focus-within {
-      box-shadow: 0 0 2px 2px cv('color.main');
-    }
-  }
+// NEW THREAD
+#{c(thread newThreadContainer)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5));
 }
 
 // ICON

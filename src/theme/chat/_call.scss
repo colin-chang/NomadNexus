@@ -1,17 +1,15 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
-  #{c(call wrapper)},
-  #{c(call channelChatWrapper)} {
-    background: transparent;
-  }
-  #{c(call container)} {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
-    border: none;
-  }
-  #{c(call root)} {
-    background: transparent;
-  }
+#{c(call wrapper)},
+#{c(call channelChatWrapper)} {
+  background: transparent;
+}
+#{c(call container)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+  border: none;
+}
+#{c(call root)} {
+  background: transparent;
 }
 
 // EMPTY CALL

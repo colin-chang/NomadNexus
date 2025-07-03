@@ -2,34 +2,33 @@
 
 /* TAB */
 // TOP
-#{c(main visualRefresh)} {
-  #{c(tab top)} {
-    #{c(tab item)} {
-      --selected-tab-item-color: var(--hsl-hover-color);
-      &#{c(tab selected)} {
-        --selected-tab-item-color: var(--hsl-main-color);
-        color: var(--interactive-active);
-      }
+#{c(tab top)} {
+  #{c(tab item)} {
+    --selected-tab-item-color: var(--hsl-hover-color);
+    &#{c(tab selected)} {
+      --selected-tab-item-color: var(--hsl-main-color);
+      color: var(--interactive-active);
     }
   }
+}
 
-  // PILL
-  :is(#{c(tab topPill)}, #{c(tab side)}) {
-    #{c(tab themed)} {
-      &#{c(tab item)} {
+// PILL
+:is(#{c(tab topPill)}, #{c(tab side)}) {
+  #{c(tab themed)} {
+    &#{c(tab item)} {
+      &:hover:not(#{c(tab disabled)}) {
+        background-color: cv('shading.hover');
+      }
+      &#{c(tab selected)} {
+        background-color: cv('color.main');
         &:hover:not(#{c(tab disabled)}) {
-          background-color: cv('shading.hover');
-        }
-        &#{c(tab selected)} {
           background-color: cv('color.main');
-          &:hover:not(#{c(tab disabled)}) {
-            background-color: cv('color.main');
-          }
         }
       }
     }
   }
 }
+
 
 // SIDE TAB HEADER
 // mainly in settings

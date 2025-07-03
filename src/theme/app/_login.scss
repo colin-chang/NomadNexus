@@ -1,9 +1,7 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
-  #{c(login authBox)} {
-    background-color: cv('shading.modal');
-  }
+#{c(login authBox)} {
+  background-color: cv('shading.modal');
 }
 
 // ACCOUNT LIST

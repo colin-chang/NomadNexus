@@ -1,40 +1,39 @@
 @use 'backend' as *;
 
 // BACKGROUND
-#{c(main visualRefresh)} {
-  #{c(chat chat)} {
-    background: transparent;
-    &[data-has-border='true'] {
-      border: none;
-    }
-    &#{c(chat threadSidebarOpen)} {
-      border-bottom-right-radius: 0;
-    }
+#{c(chat chat)} {
+  background: transparent;
+  &[data-has-border='true'] {
+    border: none;
   }
-  &#{c(main themeMidnight)} {
-    #{c(chat chatContent)} {
-      border: none; // Only midnight theme has this??????
-    }
+  &#{c(chat threadSidebarOpen)} {
+    border-bottom-right-radius: 0;
   }
-  :is(#{c(chat chatContentInner)}, #{c(chat chatScrollerNSFW)}) {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+#{c(main themeMidnight)} {
+  #{c(chat chatContent)} {
+    border: none; // Only midnight theme has this??????
   }
-    // CHAT LOADING
-  :is(#{c(chat chatLoadingWrapper)}, #{c(chat messageLoadingWrapper)}) {
-    background-color: transparent;
-  }
-  #{c(chat chatLoadingWrapper)} {
-    animation: cv-card-loading 1.5s infinite ease-in-out;
-  }
+}
+#{c(chat chatContentInner)},
+#{c(chat chatScrollerNSFW)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+
+// CHAT LOADING
+#{c(chat chatLoadingWrapper)},
+#{c(chat messageLoadingWrapper)} {
+  background-color: transparent;
+}
+#{c(chat chatLoadingWrapper)} {
+  animation: cv-card-loading 1.5s infinite ease-in-out;
 }
 
 // TOOLBAR
-#{c(main visualRefresh)} {
-  #{c(chat buttonWrapper)} {
-    background-color: cv('shading.popout');
-    border-color: cv('shading.popout');
-    box-shadow: none;
-  }
+#{c(chat buttonsWrapper)} {
+  background-color: cv('shading.popout');
+  border-color: cv('shading.popout');
+  box-shadow: none;
 }
 
 // NO CHANNELS
@@ -43,15 +42,11 @@
 }
 
 // This channel is not on your channel list.
-#{c(main visualRefresh)} {
-  #{c(chat chatHeaderBar)} {
-    background: transparent;
-  }
+#{c(chat chatHeaderBar)} {
+  background: transparent;
 }
 
-// 
-#{c(main visualRefresh)} {
-  #{c(chat allowedRoleInner2)} {
-    background: hsl(from var(--custom-role-label-color) h s l/.2);
-  }
+// allowed role list
+#{c(chat allowedRoleInner2)} {
+  background: hsl(from var(--custom-role-label-color) h s l/.2);
 }

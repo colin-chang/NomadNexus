@@ -14,12 +14,9 @@
 #{c(userSettings account fieldList)} {
   background: transparent;
 }
+
 // ACCOUNT STANDING
-#{c(main visualRefresh)} {
-  #{c(userSettings account standing container)} {
-    background: transparent;
-  }
-}
+#{c(userSettings account standing container)},
 #{c(userSettings account standing avatarBackground)} {
   background: transparent;
 }
@@ -41,11 +38,9 @@
 }
 
 // FAMILY CENTER
-#{c(main visualRefresh)} {
-  #{c(userSettings family box)} {
-    background: cv('shading.card');
-    border: none;
-  }
+#{c(userSettings family box)} {
+  background: cv('shading.card');
+  border: none;
 }
 #{c(userSettings family row)} {
   background: cv('shading.cardInner');

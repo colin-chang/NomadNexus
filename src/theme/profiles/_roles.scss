@@ -37,9 +37,7 @@
 }
 
 // ADD ROLES
-#{c(main visualRefresh)} {
-  #{c(role add popout)} {
-    background: cv('shading.popout');
-    border: none;
-  }
+#{c(role add popout)} {
+  background: cv('shading.popout');
+  border: none;
 }

@@ -8,11 +8,9 @@
 }
 
 // CARDS
-#{c(main visualRefresh)} {
-  #{c(serverGuide rowCard)} {
-    background: cv('shading.card');
-    border: cv('shading.card');
-  }
+#{c(serverGuide rowCard)} {
+  background: cv('shading.card');
+  border: cv('shading.card');
 }
 #{c(serverGuide guildIcon)} {
   background-color: cv('shading.card');

@@ -11,20 +11,18 @@
   background: cv('color.main');
   color: var(--header-primary);
 }
-#{c(main visualRefresh)} {
-  #{c(modals purchase gift selectionBox)} {
-    background: cv('shading.cardInner');
-    outline: none;
-  }
-  #{c(modals purchase gift selectionBoxSelected)} {
-    background: cv('shading.cardInner');
-    outline: 2px solid cv('color.main');
-  }
-  #{c(modals purchase gift preview)} {
-    background: cv('shading.cardInner');
-    outline: 2px solid cv('color.main');
-    border: none
-  }
+#{c(modals purchase gift selectionBox)} {
+  background: cv('shading.cardInner');
+  outline: none;
+}
+#{c(modals purchase gift selectionBoxSelected)} {
+  background: cv('shading.cardInner');
+  outline: 2px solid cv('color.main');
+}
+#{c(modals purchase gift preview)} {
+  background: cv('shading.cardInner');
+  outline: 2px solid cv('color.main');
+  border: none
 }
 #{c(modals purchase gift customMessage)} {
   background: transparent;

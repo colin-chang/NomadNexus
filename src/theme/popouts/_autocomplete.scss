@@ -24,10 +24,8 @@
 }
 
 // SLASH COMMANDS CATEGORIES
-#{c(main visualRefresh)} {
-  #{c(popouts autocomplete railWrapper)} {
-    background: transparent;
-  }
+#{c(popouts autocomplete railWrapper)} {
+  background: transparent;
 }
 #{c(popouts autocomplete categorySelected)} {
   &,

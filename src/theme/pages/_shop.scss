@@ -5,30 +5,28 @@
 #{c(shop pageWrapper)} {
   background: transparent;
 }
-#{c(main visualRefresh)} {
-  #{c(shop shop)} {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
-  }
-  #{c(shop featured)} {
-    background: transparent;
-  }
+#{c(shop shop)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+#{c(shop featured)} {
+  background: transparent;
+}
 
-  // CARD
-  #{c(shop card)} {
-    background: cv('shading.card');
-    border: 2px solid transparent;
-    &:hover {
-      border-color: cv('color.main');
-    }
+// CARD
+#{c(shop card)} {
+  background: cv('shading.card');
+  border: 2px solid transparent;
+  &:hover {
+    border-color: cv('color.main');
   }
-  #{c(shop cardText)} {
-    background: transparent;
-    border: none;
-  }
+}
+#{c(shop cardText)} {
+  background: transparent;
+  border: none;
 }
 
 // LOADING
-#{c(main visualRefresh)} #{c(shop loadingCardSkeleton)},
+#{c(shop loadingCardSkeleton)},
 #{c(shop loadingFeaturedSkeleton)} {
   background: var(--hsl-card-shading-inverted);
 }

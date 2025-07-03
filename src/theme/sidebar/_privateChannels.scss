@@ -1,44 +1,43 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
-  #{c(sidebar private channels)} {
-    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
-  }
-  #{c(sidebar private scroller)} {
-    background: transparent;
-    margin: 0;
-  }
+#{c(sidebar private channels)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
+}
+#{c(sidebar private scroller)} {
+  background: transparent;
+  margin: 0;
+}
 
-  // HEADER
-  #{c(sidebar private headerContainer)} {
-    color: cv('color.main');
+// HEADER
+#{c(sidebar private headerContainer)} {
+  color: cv('color.main');
+}
+#{c(sidebar private headerText)} {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  align-items: center;
+  &::before {
+    content: '';
+    height: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to left, currentColor 50%, transparent);
+    margin-right: 5px;
   }
-  #{c(sidebar private headerText)} {
-    display: flex;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-    align-items: center;
-    &::before {
-      content: '';
-      height: 2px;
-      flex-grow: 1;
-      background: linear-gradient(to left, currentColor 50%, transparent);
-      margin-right: 5px;
-    }
-    &::after {
-      content: '';
-      height: 2px;
-      flex-grow: 1;
-      background: linear-gradient(to right, currentColor 50%, transparent);
-      margin-left: 5px;
-    }
+  &::after {
+    content: '';
+    height: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to right, currentColor 50%, transparent);
+    margin-left: 5px;
   }
-  :is(#{c(sidebar private startActivityIcon)}, #{c(sidebar private inviteButtonIcon)}) {
-    color: cv('color.main');
-    &:hover {
-      color: cv('color.hover');
-    }
+}
+#{c(sidebar private startActivityIcon)},
+#{c(sidebar private inviteButtonIcon)} {
+  color: cv('color.main');
+  &:hover {
+    color: cv('color.hover');
   }
 }
 
@@ -49,39 +48,37 @@
 }
 
 // CHANNEL CONTENT
-#{c(main visualRefresh)} {
-  #{c(sidebar private interactive)} {
+#{c(sidebar private interactive)} {
+  transition: all 0.15s ease-in-out;
+  border-radius: 4px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
     transition: all 0.15s ease-in-out;
+    z-index: -1;
     border-radius: 4px;
+  }
+  // HOVER
+  &:hover {
+    background: cv('shading.hover');
+  }
+  // SELECTED
+  &#{c(sidebar private selected)} {
+    background-color: transparent;
+    color: var(--interactive-active);
     &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 100%;
-      bottom: 0;
-      left: 0;
-      transition: all 0.15s ease-in-out;
-      z-index: -1;
-      border-radius: 4px;
+      right: 0;
+      background: cv('color.main');
+      animation: cv-channel-select 0.3s ease-in-out;
     }
-    // HOVER
-    &:hover {
-      background: cv('shading.hover');
-    }
-    // SELECTED
-    &#{c(sidebar private selected)} {
-      background-color: transparent;
+    #{c(sidebar private activityText)} {
       color: var(--interactive-active);
-      &::before {
-        right: 0;
-        background: cv('color.main');
-        animation: cv-channel-select 0.3s ease-in-out;
-      }
-      #{c(sidebar private activityText)} {
+      strong {
         color: var(--interactive-active);
-        strong {
-          color: var(--interactive-active);
-        }
       }
     }
   }

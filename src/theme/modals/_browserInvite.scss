@@ -6,8 +6,6 @@
 }
 
 // SETTINGS BUTTONS OF INVITE LINK
-#{c(main visualRefresh)} {
-  #{c(modals browserInvite editProfileContainer)} {
-    background: cv('shading.popout');
-  }
+#{c(modals browserInvite editProfileContainer)} {
+  background: cv('shading.popout');
 }

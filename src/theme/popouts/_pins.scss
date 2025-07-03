@@ -1,26 +1,23 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
-  #{c(popouts pins popout)} {
-    background: cv('shading.popout');
-    box-shadow: none;
-  }
-  #{c(popouts pins header)},
-  #{c(popouts pins footer)} {
-    background: transparent;
-  }
-  #{c(popouts pins messageGroup)} {
-    background: cv('shading.cardInner');
-
-    border: none;
-  }
-  #{c(popouts pins jumpButton)} {
-    background: cv('color.main');
-    border-color: transparent;
+#{c(popouts pins popout)} {
+  background: cv('shading.popout');
+  box-shadow: none;
+}
+#{c(popouts pins header)},
+#{c(popouts pins footer)} {
+  background: transparent;
+}
+#{c(popouts pins messageGroup)} {
+  background: cv('shading.cardInner');
+  border: none;
+}
+#{c(popouts pins jumpButton)} {
+  background: cv('color.main');
+  border-color: transparent;
+  color: var(--interactive-active);
+  &:hover {
+    background: cv('color.hover');
     color: var(--interactive-active);
-    &:hover {
-      background: cv('color.hover');
-      color: var(--interactive-active);
-    }
   }
 }
