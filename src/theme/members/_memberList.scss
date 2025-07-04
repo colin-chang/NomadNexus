@@ -4,6 +4,10 @@
   background: none;
   border: none;
 }
+#{c(memberList container)} {
+  background: none;
+  border: none;
+}
 #{c(memberList members)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
 }
