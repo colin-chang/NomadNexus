@@ -24,8 +24,9 @@
 #{c(settings card primary)} {
   &,
   &#{c(settings card editable)} {
+    --__card-accent-color: cv('shading.card');
     background: cv('shading.card');
-    border-color: transparent;
+    border-color: transparent;    
   }
 }
 #{c(settings card card)} {
