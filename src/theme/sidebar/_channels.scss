@@ -184,7 +184,7 @@
       transition: all 0.1s ease-in-out, width 0.15s ease-in-out;
       pointer-events: none;
       z-index: -1;
-      border-radius: 0 999px 999px 0;
+      border-radius: 999px 0 0 999px;
     }
   }
   #{c(sidebar server channels voice username)} {
