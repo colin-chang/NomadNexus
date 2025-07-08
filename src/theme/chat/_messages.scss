@@ -197,6 +197,9 @@
   background: cv('shading.card');
   border: none;
 }
+#{c(embeds textContainer codeView)} {
+  background: transparent;
+}
 #{c(embeds textContainer languageSelectorPopout)} {
   background: cv('shading.popout');
 }
