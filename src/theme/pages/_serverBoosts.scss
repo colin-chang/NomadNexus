@@ -10,8 +10,13 @@
 #{c(serverBoosts card)} {
   background: cv('shading.card');
   border-color: transparent;
-  &:hover {
+  #{c(serverBoosts parentCard)}:hover & {
+    background: cv('shading.card');
     border-color: cv('color.hover');
+  }
+  &#{c(serverBoosts cardActive)},
+  &#{c(serverBoosts cardWarning)} {
+    background: cv('shading.card');
   }
 }
 

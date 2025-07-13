@@ -726,6 +726,25 @@ $classes: (
     'colorRed': 'colorRed__201d5',
     'colorTransparent': 'colorTransparent__201d5',
     'colorWhite': 'colorWhite__201d5',
+
+    // new button classes
+    // brand, white and inverted are using old classes
+    'new': (
+      'button': 'button__6af3a',
+      'hasText': 'hasText__6af3a',
+
+      'small': 'sm__6af3a',
+      'medium': 'md__6af3a',
+      'fullWidth': 'fullWidth__6af3a',
+
+      'primary': 'primary__6af3a',
+      'secondary': 'secondary__6af3a',
+      'criticalPrimary': 'critical-primary__6af3a',
+      'criticalSecondary': 'critical-secondary__6af3a',
+      'active': 'active__6af3a',
+      'overlayPrimary': 'overlay-primary__6af3a',
+      'overlaySecondary': 'overlay-secondary__6af3a',
+    )
   ),
   'call': (
     // There's a bit of overlap with "stage". feel free to jump down to there.
@@ -1588,10 +1607,10 @@ $classes: (
     'rowMedia': 'media_d13feb',
 
     'sidebar': 'sidebar__7449f',
-    'profileContainer': 'container__86ab2',
-    'profileBanner': 'banner__86ab2',
-    'profileAvatarContainer': 'avatarContainer__86ab2',
-    'profileAvatarWrapper': 'avatarWrapper__86ab2',
+    'profileContainer': 'container_dca174',
+    'profileBanner': 'banner_dca174',
+    'profileAvatarContainer': 'avatarContainer_dca174',
+    'profileAvatarWrapper': 'avatarWrapper_dca174',
   ),
 
   // browse channels/channels and roles
@@ -1745,7 +1764,10 @@ $classes: (
   'serverBoosts': (
     'container': 'container__89463',
     'contentContainer': 'contentContainer__89463',
+    'parentCard': 'parentContainer__98cbd',
     'card': 'container__98cbd',
+    'cardActive': 'active__98cbd',
+    'cardWarning': 'warning__98cbd',
     'sidebarContainer': 'sidebarContainer__89463',
   ),
 

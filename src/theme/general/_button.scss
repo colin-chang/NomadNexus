@@ -95,3 +95,52 @@
     color: cv('color.danger');
   }
 }
+
+
+
+// NEW BUTTON CLASSES
+#{c(button new button)} {
+  border-radius: 4px;
+}
+#{c(button new primary)} {
+  background: cv('color.main');
+  border-color: transparent;
+  &:hover {
+    background: cv('color.hover');
+    border-color: transparent;
+  }
+}
+#{c(button new secondary)} {
+  background: transparent;
+  border-color: cv('color.main');
+  &:hover {
+    background: transparent;
+    border-color: cv('color.hover');
+  }
+}
+#{c(button new active)} {
+  background: cv('color.success');
+  border-color: transparent;
+  &:hover {
+    background: hsl(from cv('color.success') h s l/.8);
+    border-color: transparent;
+  }
+}
+#{c(button new criticalPrimary)} {
+  background: cv('color.danger');
+  border-color: transparent;
+  &:hover {
+    background: hsl(from cv('color.danger') h s l/.8);
+    border-color: transparent;
+  }
+}
+#{c(button new criticalSecondary)} {
+  background: transparent;
+  border-color: cv('color.danger');
+  color: var(--control-text-critical-primary-default);
+  &:hover {
+    background: transparent;
+    border-color: hsl(from cv('color.danger') h s l/.8);
+    color: var(--control-text-critical-primary-default);
+  }
+}

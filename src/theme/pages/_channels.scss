@@ -46,6 +46,7 @@
   border: 2px solid transparent;
   &:hover {
     background: cv('shading.card');
+    border-color: cv('color.hover');;
   }
   &#{c(channelsPage customise optionSelected)} {
     background: cv('shading.card');
