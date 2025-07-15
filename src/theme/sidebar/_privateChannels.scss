@@ -10,7 +10,10 @@
 
 // HEADER
 #{c(sidebar private headerContainer)} {
-  color: cv('color.main');
+  &,
+  &:hover {
+    color: cv('color.main');
+  }
 }
 #{c(sidebar private headerText)} {
   display: flex;

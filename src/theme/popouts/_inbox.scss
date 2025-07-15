@@ -19,6 +19,9 @@
 }
 #{c(popouts inbox button)} {
   background: cv('shading.card');
+  &:hover:not(#{c(popouts inbox buttonDisabled)}) {
+    background: cv('shading.card');
+  }
 }
 #{c(popouts inbox emptyIcon)} {
   background: cv('color.main');
