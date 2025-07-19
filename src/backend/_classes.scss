@@ -2078,27 +2078,13 @@ $classes: (
     ),
 
     'poll': (
-      // poll finished small embed
-      'finished': (
-          'container': 'container_f69538',
-          'embed': 'embed_f69538',
-          'containerWithImage': 'containerWithImage_f69538',
-          'imageContainer': 'imageContainer_f69538',
-          'description': 'description_f69538',
-          'victorAnswer': 'victorAnswer_f69538',
-          'victorAnswerText': 'victorAnswerText_f69538',
-          'victorIcon': 'victorAnswer_f69538',
-          'button': 'button_f69538',
-        ),
-
       'pollContainer': 'pollContainer_b7e1cb',
-
       // shared class with next group's "container"
       // all in another group
+      'container': 'container__0be77',
       'bottomBar': 'bottomBar__0be77',
       // contains detailsText and usually secondary action
       'buttonPresentation': 'buttonPresentation__0be77',
-      'container': 'container__0be77',
       // bg-c card-secondary-bg
       'detailsText': 'detailsText__0be77',
       'detailsTextButton': 'detailsTextButton__0be77',
@@ -2127,18 +2113,38 @@ $classes: (
       'emoji': 'emoji__4c520',
       // optional emoji that gets placed before label
       'label': 'label__4c520',
-      'selected': 'selected__4c520',
+      'selected': 'selected__4c520',      
       'voteCount': 'voteCount__4c520',
       'voteCountButton': 'voteCountButton__4c520',
       'votePercentageBar': 'votePercentageBar__4c520',
       // a span with style width: $percentage%. has background color -- THIS IS USED ON ANSWERS WITHOUT VOTES [style:"width: 0%;"]
       'votesData': 'votesData__4c520',
 
+      'radioBackground': 'radioBackground_f4f0eb',
+      'radioForeground': 'radioForeground_f4f0eb',
+      // one choice
+      'checkbox': 'checkbox_f4f0eb',
+      'checkboxSelected': 'checkboxSelected_f4f0eb',
+      // multiple choices
+
       // how answers are themed seems to be in some classes
       'normalStylesDefault': 'normalStylesDefault_a1443c',
       'normalStylesImageOnlyAnswers': 'normalStylesImageOnlyAnswers_a1443c',
       'victorStyles': 'victorStyles_a1443c',
       'votedStyles': 'votedStyles_a1443c',
+
+      // poll finished small embed
+      'finished': (
+        'container': 'container_f69538',
+        'embed': 'embed_f69538',
+        'containerWithImage': 'containerWithImage_f69538',
+        'imageContainer': 'imageContainer_f69538',
+        'description': 'description_f69538',
+        'victorAnswer': 'victorAnswer_f69538',
+        'victorAnswerText': 'victorAnswerText_f69538',
+        'victorIcon': 'victorAnswer_f69538',
+        'button': 'button_f69538',
+      ),
     ),
 
     'automod': (
@@ -2287,8 +2293,8 @@ $classes: (
     'shopAllButton': 'shopAll__08415',
 
     // browse
-    'pageWrapper': 'pageWrapper__6db1d',
-    'page': 'page__6db1d',
+    'pageWrapper': 'pageWrapper__1feb0',
+    'page': 'page__1feb0',
 
     'shopWhatsNew': 'whatsNewSectionBackground_c880e8',
 
@@ -6060,6 +6066,26 @@ $classes: (
         'upsellFooter': 'upsellFooter__5e07c',
       ),
     ),
+
+    'poll': (
+      'container': 'container__53cea',
+
+      'create': (
+        'textInputWrapper': 'defaultTextInputWrapper__7b848',
+        'textInput': 'defaultTextInput__7b848',
+        'addAnswerButton': 'addAnswerButton_d97f89',
+        'addAnswerIcon': 'addAnswerIconDefault_d97f89',
+        'addAnswerLabel': 'addAnswerButtonLabel_d97f89',
+      ),
+
+      // click 'votes' in a poll
+      'votes': (
+        'sidebarScroller': 'scroller__01c8c',
+        'voters': 'voters__01c8c',
+        'voteDefault': 'voteDefault__01c8c',
+        'voteSelected': 'voteSelected__01c8c',
+      ),
+    ),
   ),
   
   // Client Mods
@@ -6693,16 +6719,6 @@ $classes: (
           'membersChannelContainer': 'mainTableContainer_dd2627',
 
           // below: known to not exist elsewhere in this file
-          'gameVerifiedIcon': 'gameVerifiedIcon_cc46f0',
-          'nitroTrialBadge': 'premiumTrialAcknowledgedBadge__4c1e4',
-          'scrollerWrap': 'wrapper__28a87',
-          'commandTooltip': 'tooltip_c530da',
-          'commandTooltipPointer': 'tooltipPointer_c530da',
-          'upsellTooltipText': 'upsellTooltipWrapper__675aa',
-          'upsellTooltipCaretTopCenter': 'caretTopCenter__675aa',
-          'newGuildTooltip': 'container_be6a5c',
-          'newGuildTooltipPointer': 'tooltipPointer_be6a5c',
-          'newGuildTooltipCard': 'container_cfbfb9',
           'libraryScroller': 'scroller__4a84a',
           'libraryTable': 'table_adb41f',
           'libraryTableHeader': 'header_adb41f',
@@ -6732,7 +6748,6 @@ $classes: (
           'libraryDefaultIndicator': 'defaultIndicator_a6f654',
           'libraryPlayButton': 'playButton__0cb56',
           'libraryPlayButtonContents': 'playButtonContents__0cb56',
-          'botInviteModalContent': 'contentBackground__3d3b0',
           'authModalInApp': 'inApp_c5a065',
           'authModalScopeTimes': 'iconWrapper_cf14a8',
           'connectionDebugPopout': 'container__50387',
@@ -6793,7 +6808,6 @@ $classes: (
           'createEventCreateStageContainer': 'container__03b47',
           'createEventColorMuted': 'colorMuted_c9946a',
           'createEventColorBrand': 'colorBrand_c9946a',
-          'copyGiftCode': 'copyInput_fffc15',
           'giftQuestContainer': 'outerContainer__2055a',
           'giftQuestProgress': 'gridProgressBar__2055a',
           'phoneInput': 'phoneField_a0c54f',
@@ -6843,7 +6857,6 @@ $classes: (
           'inboxPopoutPill': 'unread__6fddf',
           'beforeTalkRulesBackground': 'fieldBackground_d48a51',
           'beforeTalkRule': 'termsRow_d48a51',
-          'banReasonOther': 'banReasonOtherClickable__837b7',
           'webhookFooter': 'footer__51eb2',
           'webhookPopout': 'guildPopout__51eb2',
           'webhookEmojiRow': 'emojiCounter__51eb2',
@@ -6872,15 +6885,6 @@ $classes: (
           'previewServerConversationReply': 'replySpine__081f6',
           'previewServerConversationMessage': 'conversationMessage__3c425',
           'questPanelContentExpanded': 'contentExpanded__636a2',
-          'upsellTooltipCaretRightCenter': 'caretRightCenter__675aa',
-          'pollCheckbox': 'checkbox_f4f0eb',
-          'pollCheckboxSelected': 'checkboxSelected_f4f0eb',
-          'pollVotesPopoutAnswerScroller': 'scroller__01c8c',
-          'pollVotesPopoutVoters': 'voters__01c8c',
-          'pollCreatePopoutAnswerInputWrapper': 'defaultTextInputWrapper__7b848',
-          'pollCreatePopoutAddAnswer': 'addAnswerButton_d97f89',
-          'pollCreatePopoutAddAnswerIcon': 'addAnswerIconDefault_d97f89',
-          'pollCreatePopoutAddAnswerLabel': 'addAnswerButtonLabel_d97f89',
 
           // SORTED AND NEED ALIASES
         ),

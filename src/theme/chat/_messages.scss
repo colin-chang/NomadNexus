@@ -270,3 +270,27 @@
   background: cv('shading.card');
   border: none;
 }
+
+#{c(embeds poll answer)} {
+  #{c(embeds poll answerInner)}#{c(embeds poll currentlyVoting)}#{c(embeds poll selected)} {
+    outline: 1px solid cv('color.main');
+  }
+}
+#{c(embeds poll secondaryButtonPresentation)} {
+  background: cv('color.main');
+  border: transparent;
+}
+#{c(embeds poll checkbox)} {
+  border-width: 1px;
+}
+#{c(embeds poll radioForeground)} {
+  color: currentColor;
+}
+#{c(embeds poll checkboxSelected)} {
+  border: 1px solid cv('color.main');
+  background: transparent;
+}
+#{c(embeds poll votedStyles)} {
+  --custom-poll-style-vote-percentage: hsl(from var(--hsl-main-color) h s l/.2);
+  --custom-poll-style-border: var(--hsl-main-color);
+}
