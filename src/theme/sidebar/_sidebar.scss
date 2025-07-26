@@ -1,9 +1,5 @@
 @use 'backend' as *;
-#{c(os win)} {
-  #{c(sidebar sidebar)} {
-    border-radius: 0;
-  }
-}
+
 #{c(sidebar sidebar)} {
   background: transparent;
   &:after {
