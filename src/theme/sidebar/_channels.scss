@@ -28,10 +28,6 @@
 }
 
 // UNREAD BAR
-#{c(sidebar server unreadBar bottom)},
-#{c(sidebar server unreadBar old bottom)}  {
-  bottom: 8px;
-}
 #{c(sidebar server unreadBar bar)},
 #{c(sidebar server unreadBar old bar)} {
   background-color: cv('color.main');
@@ -39,7 +35,7 @@
 }
 #{c(sidebar server unreadBar unreadIcon)},
 #{c(sidebar server unreadBar text)} {
-  color: var(--button-filled-brand-text) !important; //inline style
+  color: var(--interactive-active) !important; //inline style
 }
 
 // THREAD SPINE
