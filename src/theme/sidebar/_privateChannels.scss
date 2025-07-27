@@ -2,6 +2,7 @@
 
 #{c(sidebar private channels)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
+  padding-bottom: var(--custom-app-panels-height, 0);
 }
 #{c(sidebar private scroller)} {
   background: transparent;
