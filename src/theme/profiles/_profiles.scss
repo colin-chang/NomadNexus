@@ -34,7 +34,9 @@
     }
   }
 }
+
 #{c(profile outer)} {
+  border: none;
   &:not(#{c(profile customTheme)}) {    
     background: cv('shading.bg');
     #{c(profile inner)} {
@@ -45,12 +47,6 @@
     #{c(profile statusBubbleOuter)} {
       background: cv('shading.popout');
     }
-    #{c(profile statusBubbleOuter)} {
-      &::before,
-      &::after {
-        display: none;
-      }
-    }
     #{c(profile statusBubbleInner)} {
       background: transparent;
     }
@@ -58,15 +54,6 @@
 }
 #{c(profile overlay)} {
   background-color: cv('shading.card');
-}
-#{c(profile note)} {
-  #{c(profile noteTextarea)} {
-    border: none;
-    background: cv('shading.input.bg');
-    &:focus {
-      background: cv('shading.input.bg');
-    }
-  }
 }
 
 // POPOUT SEND MESSAGE
@@ -80,8 +67,35 @@
   }
 }
 
+// PROFILE STYLES
+#{c(profile modal profile)} {
+  background: cv('shading.bg');
+  outline: none;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+#{c(profile modal profileNote)} {
+  #{c(profile modal noteTextarea)} {
+    margin-top: 2px;
+    border-color: cv('shading.input.border');
+    background: cv('shading.input.bg');
+    &:focus:focus,
+    &:focus:hover {
+      background: cv('shading.input.bg');
+      border-color: cv('color.main');
+    }
+  }
+}
+#{c(profile statusBubbleOuter)} {
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
 // NITRO PROFILE MODAL
 #{c(profile customTheme)} {
+  // TABS
   #{c(tab top)} {
     #{c(tab item)} {
       --selected-tab-item-color: var(--profile-gradient-secondary-color);
@@ -90,14 +104,25 @@
       }
     }
   }
+  // SCROLLBAR
   ::-webkit-scrollbar-thumb {
     background-color: var(--profile-gradient-primary-color);
   }
-  #{c(profile noteTextarea)} {
+  // NOTE
+  #{c(profile modal noteTextarea)} {
     background: var(--user-profile-note-background-focus);
     &:focus {
-      box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
+      border-color: var(--profile-gradient-primary-color);
       background: var(--user-profile-note-background-focus);
+    }
+  }
+  // BUTTONS
+  &:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+    #{c(profile button themeColor)} {
+      &#{c(profile button secondary)} {
+        background: var(--profile-gradient-button-color);
+        color: var(--button-filled-brand-text);
+      }
     }
   }
 }

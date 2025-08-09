@@ -1,7 +1,7 @@
 @use 'backend' as *;
 
 #{c(modals poll container)} {
-  background: transparent;
+  background: cv('shading.modal');
   border: none;
 }
 

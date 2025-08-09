@@ -377,20 +377,14 @@ $classes: (
     'fastFollowsRefresh': (
       'refreshGuildBg': 'refresh-fast-follow-guild-bg',
     ),
-
-    'userModalV2': (
-      'modal': 'user-profile-modal-v2',
-      'profile': 'profile__9c3be',
-    ),
   ),
 
   'input': (
-    'wrapper': 'inputWrapper__0f084',
+    'wrapper': 'wrapper_d14335',
+
+    'container': 'container__0f084',
     'input': 'input__0f084',
     'focused': 'focused__0f084',
-    'field': 'inputField_d64f22',
-    'multiField': 'multiInputField_b404ff',
-    'copy': 'copyInput_cedfaf',
   ),
   'checkbox': (
     // checkboxes
@@ -3604,16 +3598,14 @@ $classes: (
       // Generic-ish classes
       // default colours are now provided with inline styling.
       'badgeList': 'container__8061a',
-      'note': 'note_fcb628',
-      'noteTextarea': 'textarea__9daae',
-
       // seems to be used on all of them
       'showOutOfBoundaryComponents': 'showOutOfBoundaryComponents_c69a7b',
 
       // profile backgrounds
       'customTheme': 'custom-user-profile-theme',
       'userPopout': 'user-profile-popout',
-      'userModal': 'user-profile-modal',
+      'userModal': 'user-profile-modal' 'user-profile-modal-v2',
+      // bots still on v1 profile
       'userSidebar': 'user-profile-sidebar',
       'overlay': 'overlay_c0bea0',
       'outer': 'outer_c0bea0',
@@ -3684,6 +3676,14 @@ $classes: (
 
       'overlayScroller': 'scroller_fcb628',
 
+      'button': (
+        // edit profile button not included
+        'themeColor': 'themeColor_fb7f94',
+        'primary': 'primary_fb7f94',
+        'secondary': 'secondary_fb7f94',
+        'inner': 'buttonInner_fb7f94',
+      ),
+
       // actually used on the modal!
       'memberSince': (
         'wrapper': 'memberSinceWrapper_c4eb81',
@@ -3724,9 +3724,15 @@ $classes: (
 
       // Modal: right click on user in same spots and click "View Profile"
       'modal': (
-        'root': 'root__24502',
-        'headerInner': 'headerInner__24502',
-        'body': 'body__24502',
+        'root': 'root__9c3be',
+        'bgImage': 'backgroundImage__9c3be', // nitro profiles only
+        'profile': 'profile__9c3be',
+        'profileHeader': 'profileHeader__9c3be',
+        'profileBody': 'profileBody__9c3be',
+        'profileButtons': 'profileButtons__9c3be',
+        'profileRolesSection': 'profileRolesSection__9c3be',
+        'profileNote': 'profileNote__9c3be',
+        
 
         // cannot find these but they're in the same rule as connections
         'connections': (
@@ -3749,22 +3755,24 @@ $classes: (
             'openIcon': 'connectedAccountOpenIcon_e6abe8',
           ),
 
-          'listScroller': 'listScroller__9d78f',
-          'listRow': 'listRow__9d78f',
-          'listAvatar': 'listAvatar__9d78f',
-          'listRowContent': 'listRowContent__9d78f',
-          'listName': 'listName__9d78f',
-          'listDiscriminator': 'listDiscriminator__9d78f',
-          'empty': 'empty__9d78f',
-          'emptyIcon': 'emptyIcon__9d78f',
-          'emptyIconFriends': 'emptyIconFriends__9d78f',
-          'emptyIconGuilds': 'emptyIconGuilds__9d78f',
-          'emptyIconStreamerMode': 'emptyIconStreamerMode__9d78f',
-          'emptyText': 'emptyText__9d78f',
+        'listScroller': 'listScroller__9d78f',
+        'listRow': 'listRow__9d78f',
+        'listAvatar': 'listAvatar__9d78f',
+        'listRowContent': 'listRowContent__9d78f',
+        'listName': 'listName__9d78f',
+        'listDiscriminator': 'listDiscriminator__9d78f',
+        'empty': 'empty__9d78f',
+        'emptyIcon': 'emptyIcon__9d78f',
+        'emptyIconFriends': 'emptyIconFriends__9d78f',
+        'emptyIconGuilds': 'emptyIconGuilds__9d78f',
+        'emptyIconStreamerMode': 'emptyIconStreamerMode__9d78f',
+        'emptyText': 'emptyText__9d78f',
 
-          'guildAvatar': 'guildAvatar_aafe31',
-          'guildAvatarWithoutIcon': 'guildAvatarWithoutIcon_aafe31',
-          'guildNick': 'guildNick_aafe31',
+        'guildAvatar': 'guildAvatar_aafe31',
+        'guildAvatarWithoutIcon': 'guildAvatarWithoutIcon_aafe31',
+        'guildNick': 'guildNick_aafe31',
+          
+        'noteTextarea': 'textarea__9daae',
         ),
 
       // Go to the DMs of someone while your screen is larger than
