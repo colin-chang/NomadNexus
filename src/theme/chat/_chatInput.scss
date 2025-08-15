@@ -59,6 +59,7 @@
 // TOOLBAR
 #{c(chatForm toolbar)} {
   background-color: cv('shading.popout');
+  box-shadow: none;
   &::before {
     border-top-color: cv('shading.popout');
   }
