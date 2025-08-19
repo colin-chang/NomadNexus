@@ -1,7 +1,8 @@
 @use 'backend' as *;
 
 
-#{c(shop scroller)},
+#{c(shop scroll)},
+#{c(shop featuredScroll)},
 #{c(shop page)} {
   background: transparent;
 }

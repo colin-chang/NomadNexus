@@ -435,6 +435,7 @@ $classes: (
     'refreshIconStroke': 'refreshIconStroke__001a7',
     'refreshIcon': 'refreshIcon__001a7',
   ),
+
   'slider': (
     'slider': 'slider_a562c8',
     'mini': 'mini_a562c8',
@@ -451,6 +452,17 @@ $classes: (
     'markDashSimple': 'markDashSimple_a562c8',
     'defaultValue': 'defaultValue_a562c8',
   ),
+
+  'pagination': (  
+    // page control buttons
+    // found in search and shop (browse)  
+    'pageControlContainer': 'pageControlContainer_c15210',
+    'pageControl': 'pageControl_c15210',
+    'pageButton': 'pageButton_c15210',
+    'activeButton': 'activeButton_c15210',
+    'endButton': 'endButton_c15210',
+  ),
+
   'text': (
     // These are within the same group but not with the rest. not sure where to put these
     'textNormalDefaultColor': 'defaultColor__4bd52',
@@ -549,22 +561,22 @@ $classes: (
         'bold':'text-xs\/bold_cf4812',
       ),
       'sm': (
-        'normal': 'text-sm\/normal_f9d828' 'text-sm\/normal_a8af02' 'text-sm\/normal__4ed1a' 'text-sm\/normal_a39fe9' 'text-sm\/normal_aabef9' 'text-sm\/normal_c23051' 'text-sm\/normal_cf4812' 'text-sm\/normal_b717a1' 'text-sm\/normal_df8943' 'text-sm\/normal_ec1c2d',
-        'medium': 'text-sm\/medium_f9d828' 'text-sm\/medium_a8af02' 'text-sm\/medium__4ed1a' 'text-sm\/medium_a39fe9' 'text-sm\/medium_aabef9' 'text-sm\/medium_c23051' 'text-sm\/medium_cf4812' 'text-sm\/medium_b717a1' 'text-sm\/medium_df8943' 'text-sm\/medium_ec1c2d',
-        'semibold': 'text-sm\/semibold_f9d828' 'text-sm\/semibold_a8af02' 'text-sm\/semibold__4ed1a' 'text-sm\/semibold_a39fe9' 'text-sm\/semibold_aabef9' 'text-sm\/semibold_c23051' 'text-sm\/semibold_cf4812' 'text-sm\/semibold_b717a1' 'text-sm\/semibold_df8943' 'text-sm\/semibold_ec1c2d',
-        'bold': 'text-sm\/bold_f9d828' 'text-sm\/bold_a8af02' 'text-sm\/bold__4ed1a' 'text-sm\/bold_a39fe9' 'text-sm\/bold_aabef9' 'text-sm\/bold_c23051' 'text-sm\/bold_cf4812' 'text-sm\/bold_b717a1' 'text-sm\/bold_df8943' 'text-sm\/bold_ec1c2d',
+        'normal': 'text-sm\/normal_cf4812',
+        'medium': 'text-sm\/medium_cf4812',
+        'semibold': 'text-sm\/semibold_cf4812',
+        'bold': 'text-sm\/bold_cf4812',
       ),
       'md': (
-        'normal': 'text-md\/normal_f9d828' 'text-md\/normal_a8af02' 'text-md\/normal__4ed1a' 'text-md\/normal_a39fe9' 'text-md\/normal_aabef9' 'text-md\/normal_c23051' 'text-md\/normal_cf4812' 'text-md\/normal_b717a1' 'text-md\/normal_df8943' 'text-md\/normal_ec1c2d',
-        'medium': 'text-md\/medium_f9d828' 'text-md\/medium_a8af02' 'text-md\/medium__4ed1a' 'text-md\/medium_a39fe9' 'text-md\/medium_aabef9' 'text-md\/medium_c23051' 'text-md\/medium_cf4812' 'text-md\/medium_b717a1' 'text-md\/medium_df8943' 'text-md\/medium_ec1c2d',
-        'semibold': 'text-md\/semibold_f9d828' 'text-md\/semibold_a8af02' 'text-md\/semibold__4ed1a' 'text-md\/semibold_a39fe9' 'text-md\/semibold_aabef9' 'text-md\/semibold_c23051' 'text-md\/semibold_cf4812' 'text-md\/semibold_b717a1' 'text-md\/semibold_df8943' 'text-md\/semibold_ec1c2d',
-        'bold': 'text-md\/bold_f9d828' 'text-md\/bold_a8af02' 'text-md\/bold__4ed1a' 'text-md\/bold_a39fe9' 'text-md\/bold_aabef9' 'text-md\/bold_c23051' 'text-md\/bold_cf4812' 'text-md\/bold_b717a1' 'text-md\/bold_df8943' 'text-md\/bold_ec1c2d',
+        'normal': 'text-md\/normal_cf4812',
+        'medium': 'text-md\/medium_cf4812',
+        'semibold': 'text-md\/semibold_cf4812',
+        'bold': 'text-md\/bold_cf4812',
       ),
       'lg': (
-        'normal': 'text-lg\/normal_f9d828' 'text-lg\/normal_a8af02' 'text-lg\/normal__4ed1a' 'text-lg\/normal_a39fe9' 'text-lg\/normal_aabef9' 'text-lg\/normal_c23051' 'text-lg\/normal_cf4812' 'text-lg\/normal_b717a1' 'text-lg\/normal_df8943' 'text-lg\/normal_ec1c2d',
-        'medium': 'text-lg\/medium_f9d828' 'text-lg\/medium_a8af02' 'text-lg\/medium__4ed1a' 'text-lg\/medium_a39fe9' 'text-lg\/medium_aabef9' 'text-lg\/medium_c23051' 'text-lg\/medium_cf4812' 'text-lg\/medium_b717a1' 'text-lg\/medium_df8943' 'text-lg\/medium_ec1c2d',
-        'semibold': 'text-lg\/semibold_f9d828' 'text-lg\/semibold_a8af02' 'text-lg\/semibold__4ed1a' 'text-lg\/semibold_a39fe9' 'text-lg\/semibold_aabef9' 'text-lg\/semibold_c23051' 'text-lg\/semibold_cf4812' 'text-lg\/semibold_b717a1' 'text-lg\/semibold_df8943' 'text-lg\/semibold_ec1c2d',
-        'bold': 'text-lg\/bold_f9d828' 'text-lg\/bold_a8af02' 'text-lg\/bold__4ed1a' 'text-lg\/bold_a39fe9' 'text-lg\/bold_aabef9' 'text-lg\/bold_c23051' 'text-lg\/bold_cf4812' 'text-lg\/bold_b717a1' 'text-lg\/bold_df8943' 'text-lg\/bold_ec1c2d',
+        'normal': 'text-lg\/normal_cf4812',
+        'medium': 'text-lg\/medium_cf4812',
+        'semibold': 'text-lg\/semibold_cf4812',
+        'bold': 'text-lg\/bold_cf4812',
       ),
     ),
   ),
@@ -1764,11 +1776,14 @@ $classes: (
   'serverBoosts': (
     'container': 'container__89463',
     'contentContainer': 'contentContainer__89463',
-    'parentCard': 'parentContainer__98cbd',
-    'card': 'container__98cbd',
-    'cardActive': 'active__98cbd',
-    'cardWarning': 'warning__98cbd',
+    'parentCard': 'parentContainer__5573a',
     'sidebarContainer': 'sidebarContainer__89463',
+
+    'card': 'container__5573a',
+    'cardActive': 'active__5573a',
+    'cardWarning': 'warning__5573a',
+
+    'sidebarCard': 'container__6c253',
   ),
 
   'chatForm': (
@@ -2285,12 +2300,12 @@ $classes: (
 
   'shop': (
     'shop': 'shop__6db1d',
-    'scroller': 'shopScroll__6db1d',
+    'scroll': 'shopScroll__1feb0',
     'header': 'headerBar__80679',
 
     // featured
+    'featuredScroll': 'shopScroll__08415',
     'featured': 'shop__08415',
-    'shopAllButton': 'shopAll__08415',
 
     // browse
     'pageWrapper': 'pageWrapper__1feb0',
@@ -2717,11 +2732,6 @@ $classes: (
     'jumpButtonContainer': 'buttonsContainer__02a39',
     'jumpButton': 'button__02a39',
     'navContainer': 'container__3f123',
-    'pageControlContainer': 'pageControlContainer_c15210',
-    'pageControl': 'pageControl_c15210',
-    'pageButton': 'pageButton_c15210',
-    'activeButton': 'activeButton_c15210',
-    'endButton': 'endButton_c15210',
     'errorImage': 'errorImage_a9e706',
     'errorMessage': 'errorMessage_a9e706',
     // paired with emptyResultsText

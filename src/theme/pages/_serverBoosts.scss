@@ -7,6 +7,8 @@
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
 }
 
+
+// CARDS
 #{c(serverBoosts card)} {
   background: cv('shading.card');
   border-color: transparent;
@@ -23,6 +25,11 @@
   }
 }
 
+// SIDEBAR
 #{c(serverBoosts sidebarContainer)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
+}
+#{c(serverBoosts sidebarCard)} {
+  background: transparent;
+  border: none;
 }
