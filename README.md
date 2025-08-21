@@ -95,4 +95,6 @@ Run `pnpm run test` to compile the theme.
 The `main.css` file builds to the `/test` directory, which can then be copied into your client mod's Custom CSS or placed in the themes folder and enabled in settings. Just make sure any other themes are disabled for testing.
 
 ## Support
-Join our [discord server](https://discord.gg/dHaSxn3) and post in our support channel if you need additional help!
+[Join our discord server](https://discord.gg/dHaSxn3) and post in our support channel if you need additional help!
+
+<small>_If you feel you have been unfairly punished, you can [join the appeal server](https://discord.gg/Yz7tkHbpcv). Note that if your appeal has been denied, you will not be able to join._</small>
