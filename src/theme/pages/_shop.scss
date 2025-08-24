@@ -43,3 +43,9 @@
 #{c(shop previewInfo)} {
   background: transparent;
 }
+
+// orb drop down modal
+#{c(shop orbCard)} {
+  background: cv('shading.card');
+  border: 2px solid cv('color.main');
+}
