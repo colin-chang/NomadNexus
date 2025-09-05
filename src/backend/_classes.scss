@@ -3624,38 +3624,45 @@ $classes: (
       'outer': 'outer_c0bea0',
       'inner': 'inner_c0bea0',
 
-      // status
-      'statusBubbleContainer': 'container_ab8609',
-      'statusBubbleOuter': 'outer_ab8609',
-      'statusBubbleInner': 'inner_ab8609',
+      'status': (
+        'container': 'container_ab8609',
+        'outer': 'outer_ab8609',
+        'inner': 'inner_ab8609',
+
+        // hover over own status
+        'tooltip': 'tooltip__4e35b',
+        'tooltipContent': 'tooltipContent__4e35b',
+        'caretIcon': 'caretIcon__4e35b',
+        'caretFill': 'caretFill__4e35b',
+      ),
 
       // Banners are in their own line. The SVG Wrapper is in its own line.
       'banner': (
-          'banner': 'banner__68edb',
-          'gifTag': 'gifTag__68edb',
-          'mask': 'mask__68edb',
-        ),
+        'banner': 'banner__68edb',
+        'gifTag': 'gifTag__68edb',
+        'mask': 'mask__68edb',
+      ),
 
       // shared between modal+panel+popout+status+settings>profile
       // container also holds badges, notes button
       'username': (
-          'container': 'container__63ed3',
-          'clickableUsername': 'clickableUsername__63ed3',
-          'nickname': 'nickname__63ed3',
-          'userTagUsername': 'userTagUsername__63ed3',
-          'biteSize': 'biteSize__63ed3',
-          'panel': 'panel__63ed3',
-          'fullSize': 'fullSize__63ed3',
-          'nicknameIcons': 'nicknameIcons__63ed3',
-          'usernameRow': 'usernameRow__63ed3',     
-          'usernameContainer': 'container__63ed3',
-          'tags': 'tags__63ed3',
-          'userTag': 'userTag__63ed3',
-          'pronounsTooltip': 'pronounsTooltip__63ed3',
-          'pronouns': 'pronouns__63ed3',
-          'userTagDiscriminator': 'userTagDiscriminator__63ed3',
-          'dotSpacer': 'dotSpacer__63ed3',     
-        ),
+        'container': 'container__63ed3',
+        'clickableUsername': 'clickableUsername__63ed3',
+        'nickname': 'nickname__63ed3',
+        'userTagUsername': 'userTagUsername__63ed3',
+        'biteSize': 'biteSize__63ed3',
+        'panel': 'panel__63ed3',
+        'fullSize': 'fullSize__63ed3',
+        'nicknameIcons': 'nicknameIcons__63ed3',
+        'usernameRow': 'usernameRow__63ed3',     
+        'usernameContainer': 'container__63ed3',
+        'tags': 'tags__63ed3',
+        'userTag': 'userTag__63ed3',
+        'pronounsTooltip': 'pronounsTooltip__63ed3',
+        'pronouns': 'pronouns__63ed3',
+        'userTagDiscriminator': 'userTagDiscriminator__63ed3',
+        'dotSpacer': 'dotSpacer__63ed3',     
+      ),
 
       // shared between modal+panel+popout (not self)+status
       // contains:

@@ -42,18 +42,33 @@
     #{c(profile inner)} {
       background: transparent;
     }
-
-    // STATUS BUBBLE
-    #{c(profile statusBubbleOuter)} {
-      background: cv('shading.popout');
-    }
-    #{c(profile statusBubbleInner)} {
-      background: transparent;
-    }
   }
 }
 #{c(profile overlay)} {
   background-color: cv('shading.card');
+}
+
+// STATUS
+#{c(profile outer)}:not(#{c(profile customTheme)}) {
+  #{c(profile status outer)} {
+    background: cv('shading.popout');
+  }
+  #{c(profile status inner)} {
+    background: transparent;
+  }
+}
+#{c(profile status outer)} {
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+#{c(profile status tooltip)} {
+  background: cv('shading.popout');
+  box-shadow: none;
+}
+#{c(profile status caretIcon)} #{c(profile status caretFill)} {
+  fill: cv('shading.popout');
 }
 
 // POPOUT SEND MESSAGE
@@ -84,12 +99,6 @@
       background: cv('shading.input.bg');
       border-color: cv('color.main');
     }
-  }
-}
-#{c(profile statusBubbleOuter)} {
-  &::before,
-  &::after {
-    display: none;
   }
 }
 
