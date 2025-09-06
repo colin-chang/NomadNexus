@@ -17,3 +17,16 @@
     }
   }
 }
+
+// bottom aligned chat input
+#{c(experiments bottomAlignedChatInput chatGradientBase)} {
+  background: none;
+}
+#{c(experiments bottomAlignedChatInput alignChatInput)} {
+  #{c(experiments bottomAlignedChatInput scrollerSpacer)} {
+    height: 16px;
+  }
+  #{c(chatForm form)} {
+  margin-top: 4px;
+  }
+}
