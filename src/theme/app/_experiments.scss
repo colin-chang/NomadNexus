@@ -24,10 +24,10 @@
 }
 #{c(experiments bottomAlignedChatInput alignChatInput)} {
   #{c(experiments bottomAlignedChatInput scrollerSpacer)} {
-    height: 16px;
+    height: 20px;
   }
   #{c(chat chatScroller)}::-webkit-scrollbar-track {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
   #{c(chatForm form)} {
     margin-top: 4px;
