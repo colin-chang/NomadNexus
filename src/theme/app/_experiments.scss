@@ -26,7 +26,10 @@
   #{c(experiments bottomAlignedChatInput scrollerSpacer)} {
     height: 16px;
   }
+  #{c(chat chatScroller)}::-webkit-scrollbar-track {
+    margin-bottom: 16px;
+  }
   #{c(chatForm form)} {
-  margin-top: 4px;
+    margin-top: 4px;
   }
 }
