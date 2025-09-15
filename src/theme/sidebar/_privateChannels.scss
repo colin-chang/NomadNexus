@@ -10,8 +10,7 @@
 
 // HEADER
 #{c(sidebar private headerContainer)} {
-  &,
-  &:hover {
+  &:not(#{c(sidebar private tall)}):hover {
     color: cv('color.main');
   }
 }

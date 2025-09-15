@@ -749,20 +749,20 @@ $classes: (
     // new button classes
     // brand, white and inverted are using old classes
     'new': (
-      'button': 'button__6af3a',
-      'hasText': 'hasText__6af3a',
+      'button': 'button_a22cb0',
+      'hasText': 'hasText_a22cb0',
 
-      'small': 'sm__6af3a',
-      'medium': 'md__6af3a',
-      'fullWidth': 'fullWidth__6af3a',
+      'small': 'sm_a22cb0',
+      'medium': 'md_a22cb0',
+      'fullWidth': 'fullWidth_a22cb0',
 
-      'primary': 'primary__6af3a',
-      'secondary': 'secondary__6af3a',
-      'criticalPrimary': 'critical-primary__6af3a',
-      'criticalSecondary': 'critical-secondary__6af3a',
-      'active': 'active__6af3a',
-      'overlayPrimary': 'overlay-primary__6af3a',
-      'overlaySecondary': 'overlay-secondary__6af3a',
+      'primary': 'primary_a22cb0',
+      'secondary': 'secondary_a22cb0',
+      'criticalPrimary': 'critical-primary_a22cb0',
+      'criticalSecondary': 'critical-secondary_a22cb0',
+      'active': 'active_a22cb0',
+      'overlayPrimary': 'overlay-primary_a22cb0',
+      'overlaySecondary': 'overlay-secondary_a22cb0',
     )
   ),
   'call': (
@@ -2911,6 +2911,7 @@ $classes: (
         'scroller': 'scroller__99e7c',
         'headerContainer': 'privateChannelsHeaderContainer__99e7c',
         // Similar to category for servers
+        'tall': 'tall__99e7c',
         'headerText': 'headerText__99e7c',
         'startActivityIcon': 'plusIcon__675e5',
         // with play again - might need to start an activity prior
