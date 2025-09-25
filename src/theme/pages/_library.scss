@@ -2,5 +2,5 @@
 
 #{c(other cv libraryScroller)},
 #{c(other cv librarySettingsScroller)} {
-    background: cv('shading.card');
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
 }
