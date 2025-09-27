@@ -20,6 +20,16 @@
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
 }
 
+#{c(chat chatGradientBase)} {
+  background: none;
+}
+#{c(chat scrollerSpacer)} {
+    height: 20px;
+}
+#{c(chat chatScroller)}::-webkit-scrollbar-track {
+  margin-bottom: 20px;
+}
+
 // CHAT LOADING
 #{c(chat chatLoadingWrapper)},
 #{c(chat messageLoadingWrapper)} {
@@ -50,3 +60,5 @@
 #{c(chat allowedRoleInner2)} {
   background: hsl(from var(--custom-role-label-color) h s l/.2);
 }
+
+

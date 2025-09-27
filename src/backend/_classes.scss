@@ -377,13 +377,6 @@ $classes: (
     'fastFollowsRefresh': (
       'refreshGuildBg': 'refresh-fast-follow-guild-bg',
     ),
-    'bottomAlignedChatInput' : (
-      'alignChatInput': 'align-chat-input',
-
-      // below most recent message
-      'scrollerSpacer': 'scrollerSpacer__36d07',
-      'chatGradientBase': 'chatGradientBase__36d07',
-    )
   ),
 
   'input': (
@@ -395,32 +388,32 @@ $classes: (
   ),
   'checkbox': (
     // checkboxes
-    'wrapper': 'checkboxWrapper_c4538f',
-    'wrapperDisabled': 'checkboxWrapperDisabled_c4538f',
-    'checkbox': 'checkbox_c4538f',
-    'checked': 'checked_c4538f',
+    'wrapper': 'checkboxWrapper__09aca',
+    'wrapperDisabled': 'checkboxWrapperDisabled__09aca',
+    'checkbox': 'checkbox__09aca',
+    'checked': 'checked__09aca',
 
     // input stuffs
-    'input': 'input_c4538f',
-    'inputDefault': 'inputDefault_c4538f',
-    'inputDisabled': 'inputDisabled_c4538f',
-    'inputReadonly': 'inputReadonly_c4538f',
+    'input': 'input__09aca',
+    'inputDefault': 'inputDefault__09aca',
+    'inputDisabled': 'inputDisabled__09aca',
+    'inputReadonly': 'inputReadonly__09aca',
 
     // shapes
-    'round': 'round_c4538f',
-    'box': 'box_c4538f',
-    'smallBox': 'smallBox_c4538f',
+    'round': 'round__09aca',
+    'box': 'box__09aca',
+    'smallBox': 'smallBox__09aca',
 
     // labels
-    'label': 'label_c4538f',
-    'labelClickable': 'labelClickable_c4538f',
-    'labelDisabled': 'labelDisabled_c4538f',
-    'labelForward': 'labelForward_c4538f',
-    'labelReversed': 'labelReversed_c4538f',
+    'label': 'label__09aca',
+    'labelClickable': 'labelClickable__09aca',
+    'labelDisabled': 'labelDisabled__09aca',
+    'labelForward': 'labelForward__09aca',
+    'labelReversed': 'labelReversed__09aca',
 
-    'row': 'row_c4538f',
-    'alignTop': 'alignTop_c4538f',
-    'alignCenter': 'alignCenter_c4538f',
+    'row': 'row__09aca',
+    'alignTop': 'alignTop__09aca',
+    'alignCenter': 'alignCenter__09aca',
   ),
 
   'switch': (
@@ -1024,6 +1017,10 @@ $classes: (
     'messagesWrapper': 'messagesWrapper__36d07',
     'chatScroller': 'scroller__36d07',
     'chatScrollerInner': 'scrollerInner__36d07',
+    'scrollerSpacer': 'scrollerSpacer__36d07',
+    // placed at bottom of message list
+    'chatGradientBase': 'chatGradientBase__36d07',
+    // typing... bar
     'chatScrollerNSFW': 'scroller__28a87',
     'chatGatedContent': 'gatedContent__7184c',
     'chatGatedImage': 'image__7184c',
@@ -1035,11 +1032,11 @@ $classes: (
     // buttons
     'chatContentInner': 'chatContent_f75fb0',
     'chatLoadingWrapper': 'wrapper_d852db',
-    'scrollerSpacer': 'scrollerSpacer__36d07',
-    // placed at bottom of message list
     'messageLoadingWrapper': 'wrapper_fc8177',
     'noChannel': 'noChannel__01d5c',
     // in a server without any channels or loading in
+
+    
 
     'chatHeaderBar': 'chatHeaderBar_dc83f5',
     // This channel is not on your channel list.
