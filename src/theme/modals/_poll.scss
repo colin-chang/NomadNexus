@@ -6,18 +6,7 @@
 }
 
 // CREATE POLL
-#{c(modals poll create textInput)} {
-  background: transparent;
-  &:focus {
-    box-shadow: none;
-  }
-}
-#{c(modals poll create addAnswerButton)} {
-  &:hover {
-    background-color: var(--background-mod-subtle);
-    box-shadow: inset 0 0 0 1px var(--hover-color);
-  }
-}
+
 
 // VIEW VOTES
 #{c(modals poll votes sidebarScroller)},

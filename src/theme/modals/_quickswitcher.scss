@@ -1,9 +1,5 @@
 @use 'backend' as *;
 
-#{c(modals quickswitcher modal)} {
-  background: cv('shading.modal');
-  border: none;
-}
 #{c(modals quickswitcher scroller)} {
   background: transparent;  
   &::-webkit-scrollbar {
