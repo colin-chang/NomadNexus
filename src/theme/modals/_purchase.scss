@@ -1,5 +1,19 @@
 @use 'backend' as *;
 
+#{c(modals purchase backgroundRefresh)} {
+  background: cv('shading.modal');
+}
+
+// NITRO TIER
+#{c(modals purchase nitroTier content)} {
+  &#{c(modals purchase nitroTier contentRefresh)}#{c(modals purchase nitroTier contentRefresh)} {
+    background: transparent;
+  }
+}
+#{c(modals purchase nitroTier card)} {
+  background: cv('shading.cardInner');
+}
+
 // GIFT
 #{c(modals purchase gift spinner)} {
   background: transparent;

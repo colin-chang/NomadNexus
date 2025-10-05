@@ -2,7 +2,17 @@
 
 :is(#{c(popouts soundboard picker)}, #{c(popouts soundboard picker)}#{c(popouts soundboard refresh)}) {
   background: cv('shading.popout');
+  box-shadow: none;
 }
+
+// CATEGORY
+#{c(popouts soundboard section container)} {
+  background: hsl(from cv('color.main') h s l/.8);
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+// BUTTON
 #{c(popouts soundboard sound button wrapper)} {
   background: transparent;
 }

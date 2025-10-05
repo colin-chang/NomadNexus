@@ -284,6 +284,7 @@ $classes: (
     'themeBrand': 'theme-brand',
     // no idea where this is used; does not appear using secret color theme
     'customTheme': 'custom-theme-background',
+    'themeColorPicker': 'client-theme-color-picker',
 
     // Settings > Appearance > select any "color theme".
     // Images
@@ -6065,9 +6066,14 @@ $classes: (
     ),
     
     'purchase': (
+      'backgroundRefresh': 'premiumBrandRefreshBackground_e5f3a9',
+
       'nitroTier': (
         'header': 'skuSelectModalHeader_e50a4d',
         'content': 'skuSelectModalContent_e50a4d',
+        'contentRefresh': 'premiumBrandRefreshContent_e50a4d',
+
+        'card': 'card__6df1a',
       ),
 
       'gift': (

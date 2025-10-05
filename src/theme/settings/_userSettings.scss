@@ -166,6 +166,13 @@
 }
 
 // APPEARANCE
+#{c(userSettings appearance selectedCircle)} {
+  box-shadow: inset 0 0 0 4px cv('color.main');
+}
+#{c(userSettings appearance checkmark)} {
+  color: cv('color.main');
+}
+
 
 // VOICE & VIDEO
 #{c(userSettings voice notchesContainer)} {
