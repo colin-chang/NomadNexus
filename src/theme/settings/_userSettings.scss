@@ -23,7 +23,7 @@
 
 // PROFILES
 #{c(userSettings profiles uploadImageOption)} {
-  background: cv('shading.cardInner');
+  background: cv('shading.cardAlt');
   &:hover {
     border: 2px solid cv('color.main');
   }
@@ -43,7 +43,7 @@
   border: none;
 }
 #{c(userSettings family row)} {
-  background: cv('shading.cardInner');
+  background: cv('shading.cardAlt');
   border: none;
 }
 
@@ -57,10 +57,10 @@
 #{c(userSettings authedApps detailsContainer)} {
   background: transparent;
   #{c(userSettings authedApps detailsSection)} {
-    background: cv('shading.cardInner');
+    background: cv('shading.cardAlt');
     padding: 16px;
     &:active {
-      background: cv('shading.cardInner');
+      background: cv('shading.cardAlt');
     }
     &:first-child {
       border-radius: 8px 8px 0 0;
@@ -71,7 +71,7 @@
   }
 }
 #{c(userSettings authedApps actionMenuButton)} {
-  background: cv('shading.cardInner');
+  background: cv('shading.cardAlt');
 }
 
 // DEVICES
@@ -90,7 +90,7 @@
 }
 #{c(userSettings connections accountButtonInner)},
 #{c(userSettings connections modal accountButtonInner)} {
-  background-color: cv('shading.cardInner');
+  background-color: cv('shading.cardAlt');
   border: 2px solid transparent;
   &:hover {
     background-color: cv('shading.hover');
@@ -102,7 +102,7 @@
   padding-bottom: 0;
 }
 #{c(userSettings connections connectionMetadataContainer)} {
-  background-color: cv('shading.cardInner');
+  background-color: cv('shading.cardAlt');
 }
 
 // NITRO - NO NITRO
@@ -148,7 +148,7 @@
   background: transparent;
 }
 #{c(userSettings billing expandedInfo)} {
-  background: cv('shading.cardInner');
+  background: cv('shading.cardAlt');
 }
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {
   #{c(userSettings billing hoverablePayment)} {
@@ -189,7 +189,7 @@
 }
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {
   #{c(userSettings voice sensitivityBar)} {
-    background-color: cv('shading.cardInner');
+    background-color: cv('shading.cardAlt');
   }
 }
 #{c(userSettings voice soundButton)} {

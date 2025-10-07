@@ -17,7 +17,7 @@
   background: transparent;
 }
 #{c(popouts soundboard sound button button)} {
-  background-color: cv('shading.cardInner');
+  background-color: cv('shading.cardAlt');
   &:is(:hover, :focus-within, #{c(popouts soundboard sound button focused)}) {
     border-color: cv('color.main');
     &#{c(popouts soundboard sound button hoverActiveBackground)} {

@@ -21,7 +21,7 @@
   background: cv('shading.input.bg');
 }
 #{c(channelSettings permissions permGroup)} {
-  border-color: cv('shading.cardInner');
+  border-color: cv('shading.cardAlt');
 }
 #{c(channelSettings permissions permItem)} {
   background: cv('shading.card');
@@ -32,14 +32,14 @@
 }
 #{c(channelSettings permissions permDeny)} {
   color: cv('color.danger');
-  border-right: 1px solid cv('shading.cardInner');
+  border-right: 1px solid cv('shading.cardAlt');
   &#{c(channelSettings permissions permSelected)} {
     background-color: hsl(from cv('color.danger') h s l/.6);
   }
 }
 #{c(channelSettings permissions permAllow)} {
   color: cv('color.success');
-  border-left: 1px solid cv('shading.cardInner');
+  border-left: 1px solid cv('shading.cardAlt');
   &#{c(channelSettings permissions permSelected)} {
     background-color: hsl(from cv('color.success') h s l/.6);
   }

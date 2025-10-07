@@ -32,7 +32,6 @@
 #{c(chat markup)} {
   code {
     background: cv('shading.card');
-    border: 1px solid var(--hsl-card-shading-inverted);
     // INLINE
     &#{c(chat codeInline)} {
       border:none;

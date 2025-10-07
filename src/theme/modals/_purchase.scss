@@ -1,7 +1,7 @@
 @use 'backend' as *;
 
 #{c(modals purchase backgroundRefresh)} {
-  background: cv('shading.modal');
+  background: cv('shading.modal') !important;
 }
 
 // NITRO TIER
@@ -11,7 +11,7 @@
   }
 }
 #{c(modals purchase nitroTier card)} {
-  background: cv('shading.cardInner');
+  background: cv('shading.cardAlt');
 }
 
 // GIFT
@@ -26,15 +26,15 @@
   color: var(--header-primary);
 }
 #{c(modals purchase gift selectionBox)} {
-  background: cv('shading.cardInner');
+  background: cv('shading.cardAlt');
   outline: none;
 }
 #{c(modals purchase gift selectionBoxSelected)} {
-  background: cv('shading.cardInner');
+  background: cv('shading.cardAlt');
   outline: 2px solid cv('color.main');
 }
 #{c(modals purchase gift preview)} {
-  background: cv('shading.cardInner');
+  background: cv('shading.cardAlt');
   outline: 2px solid cv('color.main');
   border: none
 }
@@ -62,7 +62,7 @@
 }
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {
   #{c(modals purchase boost quantityIconWrapper)} {
-    background: cv('shading.cardInner');
+    background: cv('shading.cardAlt');
   }
 }
 #{c(modals purchase boost quantityValue)} {

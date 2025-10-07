@@ -29,11 +29,11 @@
 // LOADING
 #{c(shop loadingCardSkeleton)},
 #{c(shop loadingFeaturedSkeleton)} {
-  background: var(--hsl-card-shading-inverted);
+  background: cv('shading.cardAlt');
 }
 #{c(shop loadingCardBody)},
 #{c(shop loadingFeaturedBody)} {
-  background: var(--hsl-card-shading-inverted);
+  background: cv('shading.cardAlt');
 }
 #{c(shop loadingCardContent)} {
   background: transparent;

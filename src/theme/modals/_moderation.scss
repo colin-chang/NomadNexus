@@ -2,7 +2,7 @@
 
 // TIMEOUT
 #{c(modals timeout selectorButton)} {
-  background: cv('shading.cardInner');
+  background: cv('shading.cardAlt');
 }
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {
   #{c(modals timeout item)} {
@@ -17,5 +17,5 @@
   background: transparent;
 }
 #{c(modals ban otherReasonClickable)}{
-  background: cv('shading.cardInner');
+  background: cv('shading.cardAlt');
 }

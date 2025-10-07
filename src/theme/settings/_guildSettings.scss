@@ -92,7 +92,7 @@
 }
 #{c(guildSettings access joinOptionContent)} {
   &#{c(guildSettings access joinOptionActive)} {
-    background: cv('shading.cardInner');
+    background: cv('shading.cardAlt');
   }
 }
 
@@ -134,7 +134,7 @@
   border: none;
 }
 #{c(guildSettings automod contentContainer)} {
-  background: cv('shading.cardInner');
+  background: cv('shading.cardAlt');
 }
 #{c(guildSettings automod keywordsTextArea)} {
   background: cv('shading.input.bg');
@@ -146,7 +146,7 @@
 }
 #{c(guildSettings automod pillContainer)},
 #{c(guildSettings automod stepIcon)} {
-  background: cv('shading.cardInner');
+  background: cv('shading.cardAlt');
 }
 #{c(guildSettings automod stepperContainer)} {
   background: transparent;
@@ -192,10 +192,10 @@
   background: cv('shading.card');
 }
 #{c(guildSettings subs avatarCard)} {
-  background: cv('shading.cardInner');
+  background: cv('shading.cardAlt');
 }
 #{c(guildSettings subs avatarConnector)} {
-  border-color: cv('shading.cardInner') !important;
+  border-color: cv('shading.cardAlt') !important;
 }
 #{c(guildSettings subs viewServerButton)} {
   background: cv('color.main');
