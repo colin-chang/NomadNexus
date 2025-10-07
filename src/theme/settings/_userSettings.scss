@@ -203,6 +203,18 @@
   border: 2px solid cv('color.main');
 }
 
+// ACTIVITY PRIVACY
+#{c(userSettings activityPrivacy guildsHeader)} {
+  background: transparent;
+  gap: 0;
+}
+#{c(userSettings activityPrivacy guildsControlsDropDown)} {
+  flex-direction: unset;
+}
+#{c(userSettings activityPrivacy guildIcon)} > foreignObject {
+  background: transparent;
+}
+
 // REGISTERED GAMES
 #{c(userSettings games notDetected)} {
   background: cv('shading.card');
