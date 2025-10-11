@@ -12,6 +12,9 @@
 #{c(shop featured)} {
   background: transparent;
 }
+#{c(shop divider)} {
+  margin-top: 0;
+}
 
 // CARD
 #{c(shop card)} {
@@ -37,6 +40,18 @@
 }
 #{c(shop loadingCardContent)} {
   background: transparent;
+}
+
+// FILTER
+#{c(shop filterBar)} {
+  background: transparent;
+}
+#{c(shop filterColorToggled)} {
+  outline-color: cv('color.main');
+}
+#{c(shop filterThemeToggled)} {
+  background: cv('shading.card');
+  border-color: cv('color.main');
 }
 
 // PREVIEW

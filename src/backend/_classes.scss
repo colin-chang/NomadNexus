@@ -583,31 +583,31 @@ $classes: (
   ),
   'tab': (
     // Found in multiple locations but best seen in friends list. Each location has other classes attached to the elements. Listed locations may be used in other areas too
-    'header': 'header_b3f026',
+    'header': 'header_aa8da2',
     // used in sidebar of settings areas
-    'headerText': 'headerText_b3f026',
+    'headerText': 'headerText_aa8da2',
     // "USER SETTINGS", "PAYMENT SETTINGS" etc
-    'separator': 'separator_b3f026',
+    'separator': 'separator_aa8da2',
 
     // see header
     // "Types"
-    'topPill': 'topPill_b3f026',
+    'topPill': 'topPill_aa8da2',
     // used in friends list header, inbox dropdown
-    'top': 'top_b3f026',
+    'top': 'top_aa8da2',
     // used in profile popout, roles list (edit)
-    'side': 'side_b3f026',
+    'side': 'side_aa8da2',
 
     // used in channel search, settings sidebar
     // Items themselves
-    'item': 'item_b3f026',
+    'item': 'item_aa8da2',
     // an individual tab
-    'brand': 'brand_b3f026',
+    'brand': 'brand_aa8da2',
     // user settings > profile at top, server/channel settings > roles > (click edit for any) at top
-    'themed': 'themed_b3f026',
+    'themed': 'themed_aa8da2',
 
     // friends list header, channel search, inbox dropdown, profile popout, settings sidebar
-    'selected': 'selected_b3f026',
-    'disabled': 'disabled_b3f026',
+    'selected': 'selected_aa8da2',
+    'disabled': 'disabled_aa8da2',
   ),
   'flowerStar': (
     // used in a few places around the app. best seen next to the name of a server with boosts or in community servers.
@@ -2316,9 +2316,10 @@ $classes: (
     // browse
     'pageWrapper': 'pageWrapper__1feb0',
     'page': 'page__1feb0',
+    'divider': 'divider__1feb0',
+    'filter': 'filterBar__1feb0',
 
-    'shopWhatsNew': 'whatsNewSectionBackground_c880e8',
-
+    // loading
     'loadingCardSkeleton': 'skeleton__72fa0',
     'loadingBanner': 'bannerBody__72fa0',
     'loadingCardBody': 'cardBody__72fa0',
@@ -2326,6 +2327,7 @@ $classes: (
     'loadingFeaturedSkeleton': 'skeleton__08415',
     'loadingFeaturedBody': 'skeletonBody__08415',
 
+    // cards
     'card': 'shopCard_c3d04b',
     'cardNitro': 'shopCard_b37971',
     'cardDarkBackground': 'darkCardBackground_c3d04b',
@@ -2333,6 +2335,17 @@ $classes: (
     'cardText': 'cardText_c3d04b',
     'cardTextLight': 'lightCardBackground_c3d04b',
     'cardTextDark': 'darkCardBackground_c3d04b',
+
+    // filter
+    'filterBar': 'filterBar__11877',
+    'filterSection': 'filterSection__11877',
+    'filterTitle__11877': 'filterTitle',
+    'filterColorRow': 'colorSwatchRow__11877',
+    'filterColor': 'circle__11877',
+    'filterColorToggled': 'circleToggled__11877',
+    'filterThemeRow': 'themeRow__11877',
+    'filterTheme': 'theme__11877',
+    'filterThemeToggled': 'themeToggled__11877',
 
     // preview
     'previewModal': 'modalContent_c50f62',
