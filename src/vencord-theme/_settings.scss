@@ -1,30 +1,50 @@
 @use 'backend' as *;
 // Vencord stuff
 
-// SETTINGS CARDS
-#{c(main visualRefresh)} {
-  #{c(vencord quickActions pill)} {
-    background: cv('shading.card');
-    border: 1px solid transparent;
-    &:hover {
-      background: cv('shading.card');
-      box-shadow: none;
-      border-color: cv('color.main');
-      transform: none;
-    }
+// BUTTON
+.vc-btn-primary {
+  background: cv('color.main');
+  border-color: transparent;
+  border-radius: 4px;
+  &:hover {
+    background: cv('color.hover');
+    border-color: transparent;
   }
-  .vc-addon-card {
-    background: cv('shading.card');
-    border: none;
-    &:hover {
-      background: cv('shading.card');
-      transform: none;
-      box-shadow: none;
-    }
-  }
+}
 
-  // NOTIFICATION
-  .vc-notification-root {
-    background: cv('shading.popout');
+// SWITCH
+.vc-switch-container {
+  background: hsl(from var(--interactive-normal) h s l/.2) !important;
+  &.vc-switch-checked {
+    background: cv('color.main') !important;
+    path {
+      fill: cv('color.main');
+    }
   }
+}
+
+// SETTINGS CARDS
+#{c(vencord quickActions pill)} {
+  background: cv('shading.card');
+  border: 1px solid transparent;
+  &:hover {
+    background: cv('shading.card');
+    box-shadow: none;
+    border-color: cv('color.main');
+    transform: none;
+  }
+}
+.vc-addon-card {
+  background: cv('shading.card');
+  border: none;
+  &:hover {
+    background: cv('shading.card');
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+// NOTIFICATION
+.vc-notification-root {
+  background: cv('shading.popout');
 }
