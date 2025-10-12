@@ -203,6 +203,12 @@
   border: 2px solid cv('color.main');
 }
 
+// KEYBINDS
+#{c(userSettings keybinds defaultgroup)} {
+  background: cv('shading.card');
+  border: none;
+}
+
 // ACTIVITY PRIVACY
 #{c(userSettings activityPrivacy guildsHeader)} {
   background: transparent;
