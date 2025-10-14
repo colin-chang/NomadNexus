@@ -28,12 +28,49 @@
     border: 2px solid cv('color.main');
   }
 }
+#{c(userSettings profiles lockIcon)} {
+  background: cv('color.main') !important;
+}
+
+// PROFILES - AVATAR DECO
+#{c(userSettings profiles decoration gridItem)} {
+  background: cv('shading.cardAlt');
+}
+#{c(userSettings profiles decoration gridItemSelected)} {
+  box-shadow: inset 0 0 0 2px cv('color.main');
+}
+#{c(userSettings profiles decoration preview)},
+#{c(userSettings profiles decoration previewSmall)} {
+  background: cv('shading.cardAlt');
+}
+#{c(userSettings profiles decoration previewUpsellBanner)} {
+  background: transparent;
+}
+
+// PROFILES - NAMEPLATE
+#{c(userSettings profiles nameplate inventoryControlsButton)} {
+  background: cv('shading.cardAlt');
+}
+#{c(userSettings profiles nameplate inventoryControlsSelected)} {
+  box-shadow: inset 0 0 0 2px cv('color.main');
+}
+
+// PROFILES - EFFECT
+#{c(userSettings profiles effect gridItem)} {
+  background: cv('shading.cardAlt');
+}
+#{c(userSettings profiles effect gridItemSelected)} {
+  box-shadow: inset 0 0 0 2px cv('color.main');
+}
 
 // CONTENT & SOCIAL
 #{c(userSettings content blockedCard)} {
   background: cv('shading.card');
 }
 #{c(userSettings content blockedHeader)} {
+  background: transparent;
+}
+#{c(userSettings content games emptyContainer)} {
   background: transparent;
 }
 
@@ -84,9 +121,6 @@
 #{c(userSettings connections connectContainer)},
 #{c(userSettings connections connection)} {
   background: cv('shading.card');
-}
-#{c(userSettings connections connectionsContainer)} {
-  justify-content: center;
 }
 #{c(userSettings connections accountButtonInner)},
 #{c(userSettings connections modal accountButtonInner)} {
@@ -226,7 +260,7 @@
   background: cv('shading.card');
 }
 #{c(userSettings games nowPlaying)} {
-  background: hsl(from ('color.success') h s l/.8) ;
+  background: hsl(from cv('color.success') h s l/.8) ;
 }
 #{c(userSettings games addGamePopout)} {
   background: cv('shading.popout');

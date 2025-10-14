@@ -105,7 +105,8 @@
 #{c(button new primary)} {
   background: cv('color.main');
   border-color: transparent;
-  &:hover {
+  &:hover,
+  &:active {
     background: cv('color.hover');
     border-color: transparent;
   }
@@ -113,7 +114,8 @@
 #{c(button new secondary)} {
   background: transparent;
   border-color: cv('color.main');
-  &:hover {
+  &:hover,
+  &:active  {
     background: transparent;
     border-color: cv('color.hover');
   }
@@ -121,7 +123,8 @@
 #{c(button new active)} {
   background: cv('color.success');
   border-color: transparent;
-  &:hover {
+  &:hover,
+  &:active  {
     background: hsl(from cv('color.success') h s l/.8);
     border-color: transparent;
   }
@@ -129,7 +132,8 @@
 #{c(button new criticalPrimary)} {
   background: cv('color.danger');
   border-color: transparent;
-  &:hover {
+  &:hover,
+  &:active  {
     background: hsl(from cv('color.danger') h s l/.8);
     border-color: transparent;
   }
@@ -138,7 +142,8 @@
   background: transparent;
   border-color: cv('color.danger');
   color: var(--control-text-critical-primary-default);
-  &:hover {
+  &:hover,
+  &:active  {
     background: transparent;
     border-color: hsl(from cv('color.danger') h s l/.8);
     color: var(--control-text-critical-primary-default);

@@ -741,7 +741,6 @@ $classes: (
     'colorWhite': 'colorWhite__201d5',
 
     // new button classes
-    // brand, white and inverted are using old classes
     'new': (
       'button': 'button_a22cb0',
       'hasText': 'hasText_a22cb0',
@@ -750,13 +749,13 @@ $classes: (
       'medium': 'md_a22cb0',
       'fullWidth': 'fullWidth_a22cb0',
 
-      'primary': 'primary_a22cb0',
-      'secondary': 'secondary_a22cb0',
-      'criticalPrimary': 'critical-primary_a22cb0',
-      'criticalSecondary': 'critical-secondary_a22cb0',
-      'active': 'active_a22cb0',
-      'overlayPrimary': 'overlay-primary_a22cb0',
-      'overlaySecondary': 'overlay-secondary_a22cb0',
+      'primary': 'primary_a22cb0', // brand
+      'secondary': 'secondary_a22cb0', // grey
+      'criticalPrimary': 'critical-primary_a22cb0', //red
+      'criticalSecondary': 'critical-secondary_a22cb0', // red inverted
+      'active': 'active_a22cb0', // green
+      'overlayPrimary': 'overlay-primary_a22cb0', // white
+      'overlaySecondary': 'overlay-secondary_a22cb0', // white inverted
     )
   ),
   'call': (
@@ -3968,9 +3967,11 @@ $classes: (
       'bioTextArea': 'bioTextArea__6a919',
       'profileContainer': 'container_ba7f98',
 
+      'lockIcon': 'iconBadge__03991',
+
       'decoration': (
         'gridItem': 'decorationGridItem_dfa67d',
-        'itemSelected': 'selected_dfa67d',
+        'gridItemSelected': 'selected_dfa67d',
         'lockIconBadge': 'iconBadge_dfa67d',
         'preview': 'decorationPreview__51743',
         'previewSmall': 'smallDecorationPreviewsContainer__51743',
@@ -3978,9 +3979,17 @@ $classes: (
         'previewUpsellBanner': 'shopPreviewBanner__51743',
       ),
 
+      'nameplate': (
+        'inventoryControls': 'inventoryControls__6980e',
+        'inventoryControlsButton': 'inventoryControlsButton__6980e',
+        'inventoryControlsSelected': 'selected__6980e',
+        'nameplateItem': 'nameplateItem__6980e',
+        'nameplateItemOverlay': 'nameplateItemOverlay__6980e',
+      ),
+
       'effect': (
         'gridItem': 'effectGridItem_b4019a',
-        'itemSelected': 'selected_b4019a',
+        'gridItemSelected': 'selected_b4019a',
         'lockIconBadge': 'lockBadge_b4019a',
         'description': 'effectDescriptionNoGradient__92e52',
         'descriptionUpsell': 'effectDescriptionBorderWithGradient__92e52',
@@ -3997,6 +4006,11 @@ $classes: (
       'blockedUserList': 'usersList__5cea9',
       'blockedRow': 'row__5cea9',
       'blockedLastRow': 'lastRow__5cea9',
+
+      'games': (
+        'emptyContainer': 'emptyContainer_de8069',
+        'emptyText': 'noGamesConnectedText_de8069',
+      ),
     ),
 
     'family': (
@@ -4208,8 +4222,7 @@ $classes: (
       'nowPlaying': 'nowPlaying_cc46f0',
       'gameName': 'gameName_cc46f0',
       'gameNameInput': 'gameNameInput_cc46f0',
-      'gameLastPlayed': 'lastPlayed_cc46f0',
-      'overlayStatusText': 'overlayStatusText_fd966d',
+      'gameLastPlayed': 'gameNameLastPlayed_cc46f0',
       'overlayToggleIcon': 'toggleIcon_cc46f0',
       'overlayToggleIconOn': 'toggleIconOn_cc46f0',
       'overlayToggleIconOff': 'toggleIconOff_cc46f0',

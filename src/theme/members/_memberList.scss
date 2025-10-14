@@ -93,9 +93,9 @@
       top: 0;
       right: 0;
       bottom: 0;
-      left: 0;
+      left: -8px;
       background: linear-gradient(to right, cv('shading.hover') 90%, transparent);
-      border-radius: 3px;
+      border-radius: 4px;
       opacity: 0;
       transition: all 0.15s ease-in-out;
       z-index: -1;
@@ -104,9 +104,9 @@
       content: '';
       position: absolute;
       top: 0;
-      right: 100%;
+      right: calc(100% + 8px);
       bottom: 0;
-      left: 0;
+      left: -8px;
       background: linear-gradient(to right, cv('color.main') 90%, transparent);
       border-radius: 3px;
       opacity: 0.8;
