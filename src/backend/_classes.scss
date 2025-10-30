@@ -295,15 +295,15 @@ $classes: (
     'keyboardMode': 'keyboard-mode',
     'focused': 'app-focused',
     'layerContainer': 'layerContainer_da8173',
-    'container': 'container_c48ade',
-    'content': 'content_c48ade',
+    'container': 'container__5e434',
+    'content': 'content__5e434',
     'layer': 'layer_da8173',
     'mediaEngineVideo': 'media-engine-video',
     // class found within JS
-    'base': 'base_c48ade',
-    'baseContent': 'content_c48ade',
+    'base': 'base__5e434',
+    'baseContent': 'content__5e434',
     // same line as base
-    'page': 'page_c48ade',
+    'page': 'page__5e434',
     'pictureInPicture': 'pictureInPicture__6341f',
     'pictureInPictureWindow': 'pictureInPictureWindow__6341f',
     'anchorLink': 'anchor_edefb8',
@@ -321,7 +321,7 @@ $classes: (
     'spinnerPulsingEllipsis': 'pulsingEllipsis__46696',
 
     // has a filter relating to the saturation factor variable
-    'loader': 'loader_c48ade',
+    'loader': 'loader__5e434',
 
     // probably used elsewhere but 100% used for loading "Browse Channels" for the first time during a session.
     'focusRing': 'focus-rings-ring',
@@ -2807,7 +2807,7 @@ $classes: (
   'guildList': (    
     'focusStroke': 'focusStroke_cc5dd2',
     
-    'guilds': 'guilds_c48ade',
+    'guilds': 'guilds__5e434',
     'wrapper': 'wrapper_ef3116',
     'hidden': 'hidden_ef3116',
     // unsure about usage but exists on same line as wrapper above
@@ -2904,13 +2904,13 @@ $classes: (
     'footer': 'footer__214dc',
   ),
   'sidebar': (
-    'sidebar': 'sidebar_c48ade',
-    'hasNotice': 'hasNotice_c48ade',
-    'list': 'sidebarList_c48ade',
+    'sidebar': 'sidebar__5e434',
+    'hasNotice': 'hasNotice__5e434',
+    'list': 'sidebarList__5e434',
     // appears in redesign as parent to #{c(sidebar private channels)} and #{c(sidebar server container)}.
-    'listRounded': 'sidebarListRounded_c48ade',
+    'listRounded': 'sidebarListRounded__5e434',
     // appears in redesign, adds border top left radius
-    'resizeHandle': 'sidebarResizeHandle_c48ade',
+    'resizeHandle': 'sidebarResizeHandle__5e434',
 
     // appears in redesign
     // Private Messages, Direct Messages.
@@ -3329,7 +3329,7 @@ $classes: (
     // Panels include your avatar, username, mic, headphones and settings icons
     // as well as voice related stuff
     'panel': (
-      'panels': 'panels_c48ade',
+      'panels': 'panels__5e434',
 
       // Non-voice stuff
       'container': 'container__37e49',
@@ -3458,7 +3458,7 @@ $classes: (
       'activity': (
         'panel': 'panel__5dec7',
         // has background with theme dark/light
-        'activityPanel': 'activityPanel_c48ade',
+        'activityPanel': 'activityPanel__5e434',
         // has border bottom
         'body': 'body__5dec7',
         'gameWrapper': 'gameWrapper__5dec7',
