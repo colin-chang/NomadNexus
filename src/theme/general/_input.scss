@@ -14,3 +14,13 @@
     color: cv('text.muted');
   }
 }
+
+#{c(experiments manaTextInputs)} {
+  #{c(input wrapper)} {
+    background: cv('shading.input.bg');
+    border-color: cv('shading.input.border');
+    &:not([data-read-only=true]):has(input:focus,textarea:focus) {
+      outline: none;
+    }
+  }
+}
