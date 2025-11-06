@@ -382,7 +382,6 @@ $classes: (
   ),
 
   'input': (
-    'mana-text-inputs' : 'manaTextInputs',
     'wrapper': 'wrapper__72c38',
 
     'container': 'container__0f084',
@@ -812,7 +811,6 @@ $classes: (
     'eventPromptsContainer': 'eventPromptsContainer__1405b',
     'buttonsWrapper': 'wrapper__1405b',
     'buttonSection': 'buttonSection__1405b',
-    'buttonSectionExperiment': 'experimentButtonSection__1405b',
     'fauxDisabled': 'fauxDisabled__666fa',
     // used when camera isn't plugged in
     'contextMenuContainer': 'contextMenuContainer_f1ceac',
@@ -3929,7 +3927,6 @@ $classes: (
     'closeButtonContainer': 'container_c2b141',
     'closeButton': 'closeButton_c2b141',
     'closeButtonKeybind': 'keybind_c2b141',
-
     
     'colorPickerPopout': 'customColorPicker__459fb',
   ),
@@ -3970,6 +3967,19 @@ $classes: (
       'profileContainer': 'container_ba7f98',
 
       'lockIcon': 'iconBadge__03991',
+
+      'nameStyles': (
+        'content': 'modalContent__39813',
+        'selectionSection': 'selectionSection__39813',
+
+        'fontButton': 'fontButton_fc7677',
+        'fontSelected': 'selected_fc7677',
+        'fontText': 'fontText_fc7677',
+        
+        'effectButton': 'effectContainer_caa50c',
+        'effectSelected': 'selected_caa50c',
+        'effectText': 'effectText_caa50c'
+      ),
 
       'decoration': (
         'gridItem': 'decorationGridItem_dfa67d',
@@ -5128,23 +5138,23 @@ $classes: (
     ),
 
     'pins': (
-      'popout': 'messagesPopoutWrap__45690',
-      'header': 'header__45690',
-      'titleContainer': 'titleContainer__45690',
-      'messages': 'messagesPopout__45690',
-      'messageGroup': 'messageGroupWrapper__45690',
-      'messageCozy': 'messageGroupCozy__45690',
-      'actionButtons': 'actionButtons__45690',
-      'jumpButton': 'jumpButton__45690',
-      'loading': 'loading__45690',
-      'loadingVisible': 'visible__45690',
-      'remove': 'closeIcon__45690',
+      'popout': 'messagesPopoutWrap_e8b59c',
+      'header': 'header_e8b59c',
+      'titleContainer': 'titleContainer_e8b59c',
+      'messages': 'messagesPopout_e8b59c',
+      'messageGroup': 'messageGroupWrapper_e8b59c',
+      'messageCozy': 'messageGroupCozy_e8b59c',
+      'actionButtons': 'actionButtons_e8b59c',
+      'jumpButton': 'jumpButton_e8b59c',
+      'loading': 'loading_e8b59c',
+      'loadingVisible': 'visible_e8b59c',
+      'remove': 'closeIcon_e8b59c',
 
       // no pins
-      'emptyPlaceholder': 'emptyPlaceholder__45690',
-      'emptyImage': 'image__45690',
-      'emptyBody': 'body__45690',
-      'footer': 'footer__45690',
+      'emptyPlaceholder': 'emptyPlaceholder_e8b59c',
+      'emptyImage': 'image_e8b59c',
+      'emptyBody': 'body_e8b59c',
+      'footer': 'footer_e8b59c',
       'block': 'block__30cbe',
       // discord put this on the rules for some reason? lots of inline
       'protip': 'pro__30cbe',
@@ -5205,7 +5215,7 @@ $classes: (
         'close': 'closeButton__95796',
         'messageContainer': 'messageContainer__95796',
         'message': 'message__95796',
-        'scrollingFooterWrap': 'scrollingFooterWrap__45690',
+        'scrollingFooterWrap': 'scrollingFooterWrap_e8b59c',
       ),
 
       'unread': (
@@ -6915,11 +6925,7 @@ $classes: (
           'serverExperienceGradient': 'overlay_fe70ca',
           'customizeChannelsPill': 'selectValuePill__05934',
           'customizeChannelsOption': 'optionButtonWrapper__270d7',
-          'membersChannelRowContainer': 'memberRowContainer__71c22',
-          'userSettingsProfilesPreviewStatus': 'statusDot_ab876d',
           'avatarEditingContainer': 'editingContainer__11787',
-          'messageReqSpam': 'selected_dcc822',
-          'messageReqSpamCheck': 'hamBanner__6a41e',
           'sidebarPFPUpsell': 'editor__2a891',
           'chatToolbarButton': 'button_bba883',
           'chatToolbarIcon': 'icon_bba883',

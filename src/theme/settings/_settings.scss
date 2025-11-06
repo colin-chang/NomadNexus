@@ -94,3 +94,8 @@
     background-color: cv('shading.popout');
   }
 }
+
+// COLOUR PICKER
+#{c(settings colorPickerPopout)} {
+  background: cv('shading.popout');
+}

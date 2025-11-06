@@ -28,11 +28,9 @@
 
 // BUTTONS
 #{c(call buttonSection)} {
-  &#{c(call buttonSectionExperiment)} {
-    background: cv('shading.popout');
-    border: none;
-    border-radius: 4px;
-  }
+  background: cv('shading.popout');
+  border: none;
+  border-radius: 4px;
 }
 #{c(call colorable)} {
   &#{c(call disconnect)} {
