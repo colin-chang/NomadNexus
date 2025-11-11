@@ -1989,7 +1989,12 @@ $classes: (
       'downloadButton': 'downloadButton__4d95d',
       'codeIcon': 'codeIcon__4d95d',
       'languageSelectorPopout': 'languageSelector__4d95d',
-      'modalTextContainer': 'modalTextContainer__4d95d',
+
+      'modal': (
+        'content': 'modalContent__4d95d',
+        'textContainer': 'modalTextContainer__4d95d',
+        'footer': 'modalFooter__4d95d',
+      ),
     ),
 
     'invite': (

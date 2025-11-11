@@ -33,7 +33,7 @@
 }
 
 // PROFILES - DISPLAY NAME STYLES
-#{c(userSettings profiles nameStyles content)} {
+#{c(userSettings profiles nameStyles content)}#{c(userSettings profiles nameStyles content)} {
   background: transparent;
 }
 #{c(userSettings profiles nameStyles fontButton)}#{c(userSettings profiles nameStyles fontSelected)},

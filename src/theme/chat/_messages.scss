@@ -202,9 +202,13 @@
 #{c(embeds textContainer languageSelectorPopout)} {
   background: cv('shading.popout');
 }
-#{c(embeds textContainer modalTextContainer)} {
+// TEXT CONTAINER MODAL 
+#{c(embeds textContainer modal textContainer)} {
   background: transparent;
   border: none;
+}
+#{c(embeds textContainer modal content)} #{c(embeds textContainer codeView)} {
+  background: transparent;
 }
 
 // HAS THREAD
