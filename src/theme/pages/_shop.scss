@@ -24,10 +24,6 @@
     border-color: cv('color.main');
   }
 }
-#{c(shop cardText)} {
-  background: transparent;
-  border: none;
-}
 
 // LOADING
 #{c(shop loadingCardSkeleton)},

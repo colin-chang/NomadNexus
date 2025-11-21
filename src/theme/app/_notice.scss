@@ -15,3 +15,14 @@
 #{c(notice colorStreamerMode)} {
   --custom-notice-background: hsl(from var(--hsl-streaming-color) h s l/.8);
 }
+
+
+// PREVIEW NOTICE
+#{c(notice preview)} {
+  background: hsl(from var(--hsl-main-color) h s l/.8);
+}
+#{c(notice previewButton)} {
+  &:hover {
+    background: transparent;
+  }
+}

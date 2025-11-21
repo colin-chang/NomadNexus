@@ -782,12 +782,6 @@ $classes: (
     'spriteWrapper': 'spriteWrapper_c8dbe9',
     // this to crossWhite seem to relate to the little animation when leaving a call
     'sprite': 'sprite_c8dbe9',
-    'avatarWrapper': 'wrapper_f910d0',
-    'avatarClickable': 'clickable_f910d0',
-    'callAvatarMask': 'callAvatarMask_f910d0',
-    'voiceAvatar': 'voiceAvatar_f910d0',
-    'avatarBorder': 'border_f910d0',
-    'avatarSpeaking': 'speaking_f910d0',
 
     'videoControls': 'videoControls_bfe55a',
     'controlSection': 'controlSection_bfe55a',
@@ -795,6 +789,16 @@ $classes: (
     'topControls': 'topControls_bfe55a',
     // contains header and region selector
     'headerWrapper': 'headerWrapper_cb9592',
+
+    'subtitleContainer': 'subtitleContainer__49508',
+    'headerBar': 'headerBar__49508',
+    'headerBarChildren': 'headerBarChildren__49508',
+    'title': 'title__49508',
+    'toolbar': 'toolbar__49508',
+
+    'clipsEnabledIndicator': 'clipsEnabledIndicator__8c88a',
+    'clipBadgeIcon': 'clipBadgeIcon__8c88a',
+    // inline bg
 
     'quickSelect': 'quickSelect_ebaca5',
     // for region
@@ -806,6 +810,8 @@ $classes: (
     'quickSelectPopoutScroll': 'quickSelectPopoutScroll_ebaca5',
     'quickSelectScroller': 'quickSelectScroller_ebaca5',
     'quickSelectPopoutOption': 'quickSelectPopoutOption_ebaca5',
+
+    'participantsButton': 'participantsButton__211d1',
 
     'bottomControls': 'bottomControls_bfe55a',
     'eventPromptsContainer': 'eventPromptsContainer__1405b',
@@ -833,25 +839,25 @@ $classes: (
     'green': 'green_f1ceac',
     'disconnect': 'disconnect_f1ceac',
 
-    'videoRow': 'row_d6271c',
-    'videoTile': 'tile_d6271c',
-    'noVerticalMargin': 'noVerticalMargin_d6271c',
+    // Grid view only
+    'gridRow': 'row_d6271c',
+    'gridTile': 'tile_d6271c',
+    'gridNoVerticalMargin': 'noVerticalMargin_d6271c',
     // paired with videoTile, can't describe usage
-    'noHorizontalMargin': 'noHorizontalMargin_d6271c',
+    'gridNoHorizontalMargin': 'noHorizontalMargin_d6271c',
     // paired with videoTile, used on last tile of row
-    'tileSizer': 'tileSizer_d6271c',
-    'videoWrapper': 'wrapper__2f4f7',
-    'tile': 'tile_eaee1d',
-    // god these names are shit
-    'tileChildFlex': 'tile__2f4f7',
+    'gridTileSizer': 'tileSizer_d6271c',
+
+    'tileWrapper': 'wrapper__2f4f7',
+    'tile': 'tile__2f4f7',
     // contains flex properties
-    'tileChildIdle': 'idle__2f4f7',
-    'tileChildBackground': 'tile__90dc5',
-    // despite being on the same element as the flex, contains background color
+    'tileIdle': 'idle__2f4f7',
+    'tileBackground': 'tile__90dc5',
+    // despite being on the same element as tile, contains background color
     'tileChild': 'tileChild__2f4f7',
     // haha fuck you not actually on the same class as the four above
     'tileContent': 'content__2f4f7',
-    'tileBackground': 'background_fb62e2',
+    'tileUserBackground': 'background_fb62e2',
     // has inline style background applied to it
     'tileAvatarWrapper': 'avatarWrapper_fb62e2',
     'tileIndicators': 'indicators__2f4f7',
@@ -868,24 +874,20 @@ $classes: (
     'tileVideo': 'video__48b20',
     'tileVideoContain': 'videoContain__48b20',
     'tileVideoPreview': 'previewWrapper__48b20',
-    'videoEnded': 'tile__90dc5',
+
     'leftTrayIcon': 'leftTrayIcon_cb9592',
     'rightTrayIcon': 'rightTrayIcon_cb9592',
 
-    'status': 'status_f910d0',
-    'videoBorder': 'border__2f4f7',
-    'videoSpeaking': 'speaking__2f4f7',
+    'tileBorder': 'border__2f4f7',
+    'tileSpeaking': 'speaking__2f4f7',
     'streamBackground': 'root_e605a1',
     'liveQualityIndicator': 'liveQualityIndicator__30845',
     'lowQualityWarningIcon': 'warningIcon__14990',
     'watchStreamButton': 'cta_a3a802',
     'inviteButton': 'buttonColor__7b3e8',
 
-    'resizeHandle': 'resizeHandle__4b144',
     'channelChatWrapper': 'channelChatWrapper_cb9592',
-
-    // invisible class to the right side of the call. 0 width.
-    'chatButtonContainer': 'buttonContainer_ffab0d',
+    // side chat
   ),
   'stage': (
     // heavily relates to call
@@ -998,7 +1000,6 @@ $classes: (
     'audienceIcon': 'audienceIcon__55bab',
 
     // no clue, legacy shit or whatever
-    'participantsButton': 'participantsButton__211d1',
     'rtsButtonContainer': 'buttonContainer__664ff',
     'active': 'active_f1ceac',
   ),
@@ -2332,13 +2333,13 @@ $classes: (
     'loadingFeaturedBody': 'skeletonBody__08415',
 
     // cards
-    'card': 'shopCard_c3d04b',
-    'cardNitro': 'shopCard_b37971',
-    'cardDarkBackground': 'darkCardBackground_c3d04b',
-    'cardDarkBackgroundNitro': 'darkCardBackground_b37971',
-    'cardText': 'cardText_c3d04b',
-    'cardTextLight': 'lightCardBackground_c3d04b',
-    'cardTextDark': 'darkCardBackground_c3d04b',
+    'card': 'productCardContainer_fcbddd',
+    'cardContentInner': 'productCardContentContainer_fcbddd',
+    'cardPreviewContainer': 'productPreviewContainer_fcbddd',
+    'cardPreview': 'productPreview_dec3d3',
+    'cardheaderContainer': 'headerContainer_fcbddd',
+    'cardGradient': 'footerGradient_fcbddd',
+    'cardFooter': 'footerContainer_fcbddd',
 
     // filter
     'filterBar': 'filterBar__11877',
@@ -2437,6 +2438,8 @@ $classes: (
     'themed': 'themed__9293f',
     'transparent': 'transparent__9293f',
     'children': 'children__9293f',
+    'channelIcon': 'channelIcon__9293f',
+    'channelIconWrapper': 'iconWrapper__9293f',
     'divider': 'divider__9293f',
     'iconWrapper': 'iconWrapper__9293f',
     'updateDownloadingCloud': 'cloud__49676',
@@ -2687,7 +2690,9 @@ $classes: (
     // The contents of these notices are in English because yes.
     'completeSteps': 'notice__30f28',
     // contents: "You must complete a few more steps before you can start talking in this server."
-    'previewServerNotice': 'notice_c5cd6a',
+    'preview': 'notice_c5cd6a',
+    // preview server/view server as role
+    'previewButton': 'button_c5cd6a',
   ),
   // These appear to be shared between profile popout and server settings. likely used elsewhere too.
   // DOES NOT APPLY TO TOP OF CHAT CHANNEL AREA.
@@ -3623,6 +3628,9 @@ $classes: (
     'red': 'tooltipRed_c36707',
     'green': 'tooltipGreen_c36707',
     'yellow': 'tooltipYellow_c36707',
+
+    'dialogWrapper': 'dialogWrapper_b1f768',
+    // hover on server icon
 
     // different css lines
     'stageListenerPill': 'stageListenerPill_b1f768',
@@ -6934,14 +6942,6 @@ $classes: (
           'sidebarPFPUpsell': 'editor__2a891',
           'chatToolbarButton': 'button_bba883',
           'chatToolbarIcon': 'icon_bba883',
-          'previewServerIconContainer': 'iconContainer__1b9f0',
-          'previewServerChannelIcon': 'channelIcon__949ab',
-          'previewServerChannelTitleIcon': 'channelTitleIcon__949ab',
-          'previewServerChannelOptionArrow': 'optionArrow__949ab',
-          'previewServerHeader': 'header_c5cd6a',
-          'previewServerContainer': 'container__7e919',
-          'previewServerBackButton': 'button_c5cd6a',
-          'previewServerHomeContainer': 'container_c68a2c',
           'serverShopIntro': 'container_adb50a',
           'serverShopSelected': 'selected_d804ff',
           'inboxPopoutPill': 'unread__6fddf',
