@@ -1,19 +1,2 @@
 @use 'backend' as *;
 
-// desktop refresh fast follows
-// treatment 2 - darker guild list background
-#{c(experiments fastFollowsRefresh refreshGuildBg)} {
-  &#{c(main visualRefresh)} {
-    // background
-    #{c(main bg)} {
-      background: cv('bg.app.img') cv('bg.app.pos')/cv('bg.app.size') no-repeat;
-      background-attachment: cv('bg.app.attach');
-      filter: cv('bg.app.filter');
-      z-index: -1;
-    }
-    // guild list
-    #{c(guildList guilds)} {
-      background: transparent;
-    }
-  }
-}

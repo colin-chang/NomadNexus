@@ -105,6 +105,7 @@
   #{c(userSettings authedApps detailsSection)} {
     background: cv('shading.cardAlt');
     padding: 16px;
+    margin: 0;
     &:active {
       background: cv('shading.cardAlt');
     }
@@ -164,6 +165,10 @@
   }
 }
 // NITRO - WITH NITRO
+#{c(userSettings nitro shareNitroContainer)} {
+  background: cv('shading.card');
+  margin: 0;
+}
 #{c(userSettings nitro giftCard)} {
   background: cv('shading.card');
 }
