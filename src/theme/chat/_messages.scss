@@ -29,6 +29,10 @@
 }
 
 // CODEBLOCK
+#{c(hljs hljs)} {
+  background: cv('shading.card');
+  border: 1px solid var(--border-normal);
+}
 #{c(chat markup)} {
   code {
     background: cv('shading.card');
@@ -260,6 +264,7 @@
 
 // AUTOMOD
 #{c(embeds automod card)},
+#{c(embeds automod card)}#{c(embeds automod selected)},
 #{c(embeds automod footerContainer)} {
   background: cv('shading.card');
 }

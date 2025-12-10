@@ -5,6 +5,12 @@
   background: transparent;
 }
 
+// CONTENT
+#{c(userSettings content)},
+#{c(userSettings contentHeader)} {
+  background: transparent;
+}
+
 // ACCOUNT
 #{c(userSettings account profileCard)} {
   background: cv('shading.card');

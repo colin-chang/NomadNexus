@@ -1019,22 +1019,16 @@ $classes: (
     // placed at bottom of message list
     'chatGradientBase': 'chatGradientBase__36d07',
     // typing... bar
-    'chatScrollerNSFW': 'scroller__28a87',
-    'chatGatedContent': 'gatedContent__7184c',
+    'chatScrollerNSFW': 'scroller_f35c3c',
+    'chatGatedWrapper': 'wrapper_f35c3c',
     'chatGatedImage': 'image__7184c',
     'chatGatedTitle': 'title__7184c',
     'chatGatedDescription': 'description__7184c',
-    'chatGatedSeparator': 'separator_def860',
-    // no idea how to actually get it :)
-    'chatGatedAction': 'action__7184c',
-    // buttons
     'chatContentInner': 'chatContent_f75fb0',
     'chatLoadingWrapper': 'wrapper_d852db',
     'messageLoadingWrapper': 'wrapper_fc8177',
     'noChannel': 'noChannel__01d5c',
     // in a server without any channels or loading in
-
-    
 
     'chatHeaderBar': 'chatHeaderBar_dc83f5',
     // This channel is not on your channel list.
@@ -2172,6 +2166,7 @@ $classes: (
 
     'automod': (
       'card': 'embedCard__44492',
+      'selected': 'selected__44492',
       'footerContainer': 'footerContainer__44492',
       'action': 'footerAction__44492',
       'actionIcon': 'footerIcon__44492',
@@ -3866,7 +3861,7 @@ $classes: (
     'contentColumnWide': 'contentColumnWide__23e6b',
     
     'noticeRegion': 'noticeRegion__23e6b',
-    'noticeContainer': 'container_fcf29c',
+    'noticeContainer': 'container__9a9f9',
 
     'card': (
       // These are likely all over the app but are best found in settings.
@@ -3950,6 +3945,9 @@ $classes: (
       'nitroBackgroundSelected': 'selectedBackground_e681d1',
       'socialLink': 'link__7df54',
     ),
+
+    'content': 'content_e9e3ed',
+    'contentHeader': 'contentHeader_e9e3ed',
 
     'account': (
       'profileCard': 'accountProfileCard__1fed1',
@@ -4237,7 +4235,7 @@ $classes: (
       'guildsWrapper': 'wrapper__7db08',
       'guildsHeader': 'headerContainer__7db08',
       'guildsControlsContainer': 'controlsContainer__7db08',
-      'guildsControlsDropDown': 'container__3f413',
+      'guildsControlsDropDown': 'container_a16aea',
       'guildIcon': 'iconContainer__0ecc4',
     ),
 
@@ -4747,61 +4745,61 @@ $classes: (
 
     // Best seen in Voice + Video settings, right at the top there's two
     'dropdown': (
-      'wrapper': 'wrapper__3f413',
-      'select': 'select__3f413',
-      'filled': 'lookFilled__3f413',
+      'wrapper': 'wrapper_a16aea',
+      'select': 'select_a16aea',
+      'filled': 'lookFilled_a16aea',
 
-      'open': 'open__3f413',
+      'open': 'open_a16aea',
 
-      'value': 'value__3f413',
-      'icons': 'icons__3f413',
+      'value': 'value_a16aea',
+      'icons': 'icons_a16aea',
 
-      'popout': 'popout__3f413',
-      'positionTop': 'popoutPositionTop__3f413',
-      'measurement': 'measurement__3f413',
+      'popout': 'popout_a16aea',
+      'positionTop': 'popoutPositionTop_a16aea',
+      'measurement': 'measurement_a16aea',
       // there's a hidden one next to the popout???
-      'option': 'option__3f413',
-      'selectedIcon': 'selectedIcon__3f413',
+      'option': 'option_a16aea',
+      'selectedIcon': 'selectedIcon_a16aea',
       // checkmark
-      'focused': 'focused__3f413',
+      'focused': 'focused_a16aea',
       // hover over item
-      'multi': 'multi__3f413',
+      'multi': 'multi_a16aea',
 
       // multi select
-      'optionPillContainer': 'optionPillContainer__3f413',
-      'optionPillItem': 'optionPillItem__3f413',
-      'optionPillBtn': 'optionPillBtn__3f413',
-      'optionPill': 'optionPill__3f413',
-      'deleteOptionIcon': 'deleteOptionIcon__3f413',
-      'multiSelectCheckbox': 'multiSelectCheckbox__3f413',
-      'unchecked': 'unchecked__3f413',
-      'checked': 'checked__3f413',
+      'optionPillContainer': 'optionPillContainer_a16aea',
+      'optionPillItem': 'optionPillItem_a16aea',
+      'optionPillBtn': 'optionPillBtn_a16aea',
+      'optionPill': 'optionPill_a16aea',
+      'deleteOptionIcon': 'deleteOptionIcon_a16aea',
+      'multiSelectCheckbox': 'multiSelectCheckbox_a16aea',
+      'unchecked': 'unchecked_a16aea',
+      'checked': 'checked_a16aea',
 
-      'clear': 'clear__3f413',
+      'clear': 'clear_a16aea',
 
       // i can't find this class but it's in a rule
       // idk where lmao
-      'searchable': 'searchable__3f413',
-      'searchInput': 'searchInput__3f413',
-      'editing': 'editing__3f413',
+      'searchable': 'searchable_a16aea',
+      'searchInput': 'searchInput_a16aea',
+      'editing': 'editing_a16aea',
       'label': 'label_f6639d',
-      'selectPositionTop': 'selectPositionTop__3f413',
-      'disabled': 'disabled__3f413',
+      'selectPositionTop': 'selectPositionTop_a16aea',
+      'disabled': 'disabled_a16aea',
       'hidden': 'hidden_f6639d',
-      'iconsContainer': 'iconsContainer__3f413',
-      'iconsCenter': 'iconsCenter__3f413',
-      'placeholder': 'placeholder__3f413',
-      'dropdownIcon': 'dropdownIcon__3f413',
-      'noResults': 'noResults__3f413',
-      'loading': 'loading__3f413',
-      'loadingSpinner': 'loadingSpinner__3f413',
-      'searchableSelect': 'searchableSelect__3f413',
-      'prefix': 'prefix__3f413',
-      'suffix': 'suffix__3f413',
-      'content': 'content__3f413',
+      'iconsContainer': 'iconsContainer_a16aea',
+      'iconsCenter': 'iconsCenter_a16aea',
+      'placeholder': 'placeholder_a16aea',
+      'dropdownIcon': 'dropdownIcon_a16aea',
+      'noResults': 'noResults_a16aea',
+      'loading': 'loading_a16aea',
+      'loadingSpinner': 'loadingSpinner_a16aea',
+      'searchableSelect': 'searchableSelect_a16aea',
+      'prefix': 'prefix_a16aea',
+      'suffix': 'suffix_a16aea',
+      'content': 'content_a16aea',
       'optionPillWrapper': 'optionPillWrapper_f6639d',
-      'noScrollbar': 'noScrollbar__3f413',
-      'multiSelectCheck': 'multiSelectCheck__3f413',
+      'noScrollbar': 'noScrollbar_a16aea',
+      'multiSelectCheck': 'multiSelectCheck_a16aea',
     ),
 
     // Click on the emoji, sticker or gif within the chatbar
