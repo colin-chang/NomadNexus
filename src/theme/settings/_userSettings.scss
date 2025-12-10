@@ -1,8 +1,35 @@
 @use 'backend' as *;
 
 // SIDEBAR
-#{c(userSettings sidebar nitroBackgroundSelected)} {
-  background: transparent;
+#{c(userSettings sidebar fixedContent)}::after {
+  display: none;
+}
+#{c(userSettings sidebar sectionLabel)} {
+  justify-content: center;
+  &::before {
+    content: '';
+    height: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to left, cv('color.main') 50%, transparent);
+  }
+  &::after {
+    content: '';
+    height: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to right, cv('color.main') 50%, transparent);
+  }
+}
+#{c(userSettings sidebar label)} {
+  color: cv('color.main') !important;
+  margin: 0 5px;
+}
+#{c(userSettings sidebar item)} {
+  &:hover {
+     background: cv('shading.hover');
+  }
+  &#{c(userSettings sidebar itemActive)} {
+    background: cv('color.main');
+  }
 }
 
 // CONTENT
@@ -79,13 +106,13 @@
 }
 
 // CONTENT & SOCIAL
-#{c(userSettings content blockedCard)} {
+#{c(userSettings contentSocial blockedCard)} {
   background: cv('shading.card');
 }
-#{c(userSettings content blockedHeader)} {
+#{c(userSettings contentSocial blockedHeader)} {
   background: transparent;
 }
-#{c(userSettings content games emptyContainer)} {
+#{c(userSettings contentSocial games emptyContainer)} {
   background: transparent;
 }
 
