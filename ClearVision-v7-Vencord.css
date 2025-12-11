@@ -49,7 +49,7 @@
   --main-font: "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
   --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
   /* CHANNEL COLORS */
-  --channel-normal: var(--interactive-text-normal); /* channel text color [default: var(--interactive-text-normal)] */
+  --channel-normal: var(--interactive-text-default); /* channel text color [default: var(--interactive-text-default)] */
   --channel-muted: var(--interactive-muted); /* muted channel text color [default: var(--interactive-muted)] */
   --channel-hover: var(--interactive-text-hover); /* hovered channel text color [default: var(--interactive-text-hover)] */
   --channel-selected: var(--interactive-text-active); /* selected channel text color [default: var(--interactive-text-active)] */
