@@ -6,7 +6,7 @@
     background: hsl(from cv('color.main') h s l/.15);
     border-color: cv('color.main');
     #{c(chat reactions count)} {
-      color: var(--interactive-active);
+      color: var(--interactive-text-active);
     }
   }
 }

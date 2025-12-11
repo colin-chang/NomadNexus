@@ -101,10 +101,10 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --main-font: 'gg sans', Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --code-font: Consolas, 'gg mono', 'Liberation Mono', Menlo, Courier, monospace;
 
-  --channel-normal: var(--interactive-normal);
+  --channel-normal: var(--interactive-text-default);
   --channel-muted: var(--interactive-muted); 
-  --channel-hover: var(--interactive-hover);
-  --channel-selected: var(--interactive-active);
+  --channel-hover: var(--interactive-text-hover);
+  --channel-selected: var(--interactive-text-active);
   --channel-selected-bg: var(--main-color);
   --channel-unread: var(--main-color);
   --channel-unread-hover: var(--hover-color);

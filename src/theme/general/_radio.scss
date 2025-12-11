@@ -7,10 +7,10 @@
 }
 #{c(radio refreshIconStroke)} {
   r: 10 !important; // inline
-  stroke: var(--interactive-active);
+  stroke: var(--interactive-text-active);
 }
 #{c(radio refreshIcon)} {
-  fill: var(--interactive-active);
+  fill: var(--interactive-text-active);
 }
 #{c(radio indicatorChecked)} {
   color: var(--interactive-active);
@@ -18,7 +18,7 @@
     fill: none;
   }
   #{c(radio refreshIconStroke)} {
-    stroke: var(--interactive-active);
+    stroke: var(--interactive-text-active);
   }
 }
 #{c(radio bar)} {

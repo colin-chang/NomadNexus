@@ -7,7 +7,7 @@
     --selected-tab-item-color: var(--hsl-hover-color);
     &#{c(tab selected)} {
       --selected-tab-item-color: var(--hsl-main-color);
-      color: var(--interactive-active);
+      color: var(--interactive-text-active);
     }
   }
 }

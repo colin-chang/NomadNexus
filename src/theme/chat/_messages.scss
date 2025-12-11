@@ -108,6 +108,7 @@
 #{c(chat mentioned)} {
   --background-mentioned: hsl(from var(--hsl-main-color) h s l/.1);
   --background-mentioned-hover: hsl(from var(--hsl-hover-color) h s l/.1);
+  background: var(--background-mentioned);
   &:before {
     background-color: cv('color.main');
   }

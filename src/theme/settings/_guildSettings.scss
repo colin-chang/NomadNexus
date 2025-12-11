@@ -52,7 +52,7 @@
 }
 #{c(guildSettings roles defaultPermsIcon)} {
   background: cv('color.main');
-  color: var(--interactive-active);
+  color: var(--interactive-text-active);
 }
 #{c(guildSettings roles circleButton)} {
   margin-left: 10px;
