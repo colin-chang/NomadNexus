@@ -21,16 +21,16 @@
     &:not(#{c(popouts menus checkboxContainer)}) {
       // discord does it this way
       path {
-        fill: var(--interactive-active);
+        fill: var(--interactive-text-active);
       }
     }
   }
   &:active {
     &:not(#{c(popouts menus itemHideInteraction)}) {
       background-color: hsl(from cv('color.danger') h s l/.8);
-      color: var(--interactive-active);
+      color: var(--interactive-text-active);
       #{c(popouts menus label)} {
-        color: var(--interactive-active);
+        color: var(--interactive-text-active);
       }
     }
   }

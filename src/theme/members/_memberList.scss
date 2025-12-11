@@ -166,7 +166,7 @@
     background-color: transparent;
   }
   #{c(memberList nameContainer)} {
-    -webkit-text-fill-color: var(--interactive-active);
+    -webkit-text-fill-color: var(--interactive-text-active);
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
     &:after {
       right: 0;
@@ -174,7 +174,7 @@
   }
   #{c(memberList activityText)},
   strong {
-    color: var(--interactive-active);
+    color: var(--interactive-text-active);
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
   }
   #{c(memberList ownerIcon)} {

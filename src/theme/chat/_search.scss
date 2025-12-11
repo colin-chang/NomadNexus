@@ -15,7 +15,7 @@
   background: cv('color.main');
   &:hover {
     background: cv('color.hover');
-    color: var(--interactive-active);
+    color: var(--interactive-text-active);
   }
 }
 

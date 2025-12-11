@@ -32,7 +32,7 @@
 
 // SINGLE SELECT
 #{c(popouts dropdown selectedIcon)} {
-  color: var(--interactive-active);
+  color: var(--interactive-text-active);
   circle {
     fill: cv('color.main');
   }
@@ -41,7 +41,7 @@
 // MULTI SELECT
 #{c(popouts dropdown multiSelectCheckbox)} {
   &#{c(popouts dropdown checked)} {
-    background: var(--interactive-active);
+    background: var(--interactive-text-active);
     path {
       fill: cv('color.main');
     }

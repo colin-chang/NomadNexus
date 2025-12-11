@@ -15,21 +15,21 @@
   &:hover {
     background-color: cv('color.hover');
     :is(#{c(popouts search filter)}, #{c(popouts search answer), #{c(popouts search plusIcon)}}) {
-      color: var(--interactive-active);
+      color: var(--interactive-text-active);
     }
     :is(#{c(popouts search resultChannelIcon)}, #{c(popouts search resultChannelCategory)}) {
       opacity: 1;
     }
     strong {
       //channel name
-      color: var(--interactive-active);
+      color: var(--interactive-text-active);
     }
   }
   &[aria-selected='true'] {
     background-color: cv('color.hover');
     box-shadow: none;
     :is(strong, #{c(popouts search plusIcon)}) {
-      color: var(--interactive-active);
+      color: var(--interactive-text-active);
     }
   }
 }

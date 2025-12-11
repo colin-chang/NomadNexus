@@ -72,16 +72,16 @@
   // SELECTED
   &#{c(sidebar private selected)} {
     background-color: transparent;
-    color: var(--interactive-active);
+    color: var(--interactive-text-active);
     &::before {
       right: 0;
       background: cv('color.main');
       animation: cv-channel-select 0.3s ease-in-out;
     }
     #{c(sidebar private activityText)} {
-      color: var(--interactive-active);
+      color: var(--interactive-text-active);
       strong {
-        color: var(--interactive-active);
+        color: var(--interactive-text-active);
       }
     }
   }

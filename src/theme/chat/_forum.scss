@@ -50,7 +50,7 @@
   &#{c(pages tags selected)} {
     background: cv('color.main');
     border-color: cv('color.main');
-    color: var(--interactive-active);
+    color: var(--interactive-text-active);
     &:not(#{c(pages tags disabled)}) {
       &:hover {
         background: cv('color.hover');
