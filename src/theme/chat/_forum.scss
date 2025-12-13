@@ -101,7 +101,7 @@
 }
 #{c(forums chat header icon)} {
   path {
-    fill: var(--header-primary);
+    fill: var(--interactive-icon-active);
   }
 }
 #{c(forums chat bar container)} {
@@ -118,7 +118,7 @@
 }
 #{c(forums emptyIcon)} {
   background: cv('color.main');
-  color: var(--header-primary);
+  color: var(--interactive-icon-active);
 }
 #{c(forums emptyCTA)} {
   color: cv('color.main');

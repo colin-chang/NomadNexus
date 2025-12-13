@@ -52,14 +52,14 @@
   #{c(header addFriend)}#{c(header addFriend)}#{c(header addFriend)} {
     // Yes this is how it is on discord as of 18/2
     background-color: transparent;
-    color: cv('text.secondary');
+    color: var(--text-subtle);
     border: none;
     &:hover {
       background-color: cv('shading.hover');
     }
     &[aria-selected='true'] {
       background-color: cv('color.main');
-      color: cv('text.primary');
+      color: var(--text-strong);
     }
   }
 }

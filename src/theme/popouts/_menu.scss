@@ -16,6 +16,9 @@
   }
 }
 #{c(popouts menus colorDanger)} {
+  #{c(popouts menus label)} {
+    color: cv('color.danger');
+  }
   &#{c(popouts menus itemFocused)} {
     background-color: cv('color.danger');
     &:not(#{c(popouts menus checkboxContainer)}) {
@@ -38,7 +41,7 @@
 #{c(popouts menus item)} {
   &#{c(popouts menus itemFocused)} {
     #{c(popouts menus label)} {
-      color: var(--header-primary);
+      color: var(--interactive-text-active);
     }
   }
 }

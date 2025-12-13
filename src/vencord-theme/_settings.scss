@@ -14,7 +14,7 @@
 
 // SWITCH
 .vc-switch-container {
-  background: hsl(from var(--interactive-normal) h s l/.2) !important;
+  background: hsl(from var(--interactive-text-default) h s l/.2) !important;
   &.vc-switch-checked {
     background: cv('color.main') !important;
     path {

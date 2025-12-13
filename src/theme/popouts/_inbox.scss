@@ -25,7 +25,7 @@
 }
 #{c(popouts inbox emptyIcon)} {
   background: cv('color.main');
-  color: var(--header-primary);
+  color: var(--interactive-icon-active);
 }
 #{c(popouts inbox jumpButton)} {
   background: cv('color.main');
