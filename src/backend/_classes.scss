@@ -383,7 +383,6 @@ $classes: (
 
     'container': '_0f0849b61557225e-container',
     'input': '_0f0849b61557225e-input',
-    'focused': 'focused__0f084',
   ),
   'checkbox': (
     // checkboxes
@@ -428,7 +427,6 @@ $classes: (
     'itemDisabled': '_88a69141dd70013a-disabled',
     'bar': '_88a69141dd70013a-radioBar',
     'barInfo': '_88a69141dd70013a-info',
-    'iconForeground': 'radioIconForeground__88a69',
     'indicatorChecked': '_88a69141dd70013a-radioIndicatorChecked',
     'refreshIconFill': '_88a69141dd70013a-refreshIconFill',
     'refreshIconStroke': '_88a69141dd70013a-refreshIconStroke',
@@ -477,9 +475,9 @@ $classes: (
     // I strongly advise against using these classes.
     // Yes, there really are 10 different classes in the complete css class scrape as of 2024-09-19.
     // I would've put a generator function of sorts in but find+replace tool wouldn't have found that
-    'code': 'code_f9d828' 'code_a8af02' '_4ed1af9a212b8f4f-code' 'code_a39fe9' 'code_aabef9' 'code_c23051' 'cf48127484dbde85-code' 'b717a15017b82443-code' 'code_df8943' 'code_ec1c2d',
-    'fontScaling': 'fontScaling_f9d828' 'fontScaling_a8af02' '_4ed1af9a212b8f4f-fontScaling' 'fontScaling_a39fe9' 'fontScaling_aabef9' 'fontScaling_c23051' 'cf48127484dbde85-fontScaling' 'b717a15017b82443-fontScaling' 'fontScaling_df8943' 'fontScaling_ec1c2d',
-    'eyebrow': 'eyebrow_f9d828' 'eyebrow_a8af02' '_4ed1af9a212b8f4f-eyebrow' 'eyebrow_a39fe9' 'eyebrow_aabef9' 'eyebrow_c23051' 'cf48127484dbde85-eyebrow' 'b717a15017b82443-eyebrow' '_2b1f52e43a8f1c02-eyebrow' 'a7acaedd978a9637-eyebrow',
+    'code': 'cf48127484dbde85-code',
+    'fontScaling': 'cf48127484dbde85-fontScaling',
+    'eyebrow':'cf48127484dbde85-eyebrow',
     'display': (
       'sm': 'display-sm_f9d828' 'display-sm_a8af02' '_4ed1af9a212b8f4f-display-sm' 'display-sm_a39fe9' 'display-sm_aabef9' 'display-sm_c23051' 'cf48127484dbde85-display-sm' 'b717a15017b82443-display-sm' 'display-sm_df8943' 'display-sm_ec1c2d',
       'md': 'display-md_f9d828' 'display-md_a8af02' '_4ed1af9a212b8f4f-display-md' 'display-md_a39fe9' 'display-md_aabef9' 'display-md_c23051' 'cf48127484dbde85-display-md' 'b717a15017b82443-display-md' 'display-md_df8943' 'display-md_ec1c2d',
@@ -487,95 +485,71 @@ $classes: (
     ),
     'heading': (
       'sm': (
-        'normal': 'heading-sm\/normal_cf4812',
-        'medium': 'heading-sm\/medium_cf4812',
-        'semibold': 'heading-sm\/semibold_cf4812',
-        'bold': 'heading-sm\/bold_cf4812',
-        'extrabold': 'heading-sm\/extrabold_cf4812',
+        'normal': 'cf48127484dbde85-heading-sm\/normal',
+        'medium': 'cf48127484dbde85-heading-sm\/medium',
+        'semibold': 'cf48127484dbde85-heading-sm\/semibold',
+        'bold': 'cf48127484dbde85-heading-sm\/bold',
+        'extrabold': 'cf48127484dbde85-heading-sm\/extrabold',
       ),
       'md': (
-        'normal': 'heading-md\/normal_cf4812',
-        'medium': 'heading-md\/medium_cf4812',
-        'semibold': 'heading-md\/semibold_cf4812',
-        'bold': 'heading-md\/bold_cf4812',
-        'extrabold': 'heading-md\/extrabold_cf4812',
+        'normal': 'cf48127484dbde85-heading-md\/normal',
+        'medium': 'cf48127484dbde85-heading-md\/medium',
+        'semibold': 'cf48127484dbde85-heading-md\/semibold',
+        'bold': 'cf48127484dbde85-heading-md\/bold',
+        'extrabold': 'cf48127484dbde85-heading-md\/extrabold',
       ),
       'lg': (
-        'normal': 'heading-lg\/normal_cf4812',
-        'medium': 'heading-lg\/medium_cf4812',
-        'semibold': 'heading-lg\/semibold_cf4812',
-        'bold': 'heading-lg\/bold_cf4812',
-        'extrabold': 'heading-lg\/extrabold_cf4812',
+        'normal': 'cf48127484dbde85-heading-lg\/normal',
+        'medium': 'cf48127484dbde85-heading-lg\/medium',
+        'semibold': 'cf48127484dbde85-heading-lg\/semibold',
+        'bold': 'cf48127484dbde85-heading-lg\/bold',
+        'extrabold': 'cf48127484dbde85-heading-lg\/extrabold',
       ),
       'xl': (
-        'normal': 'heading-xl\/normal_cf4812',
-        'medium': 'heading-xl\/medium_cf4812',
-        'semibold': 'heading-xl\/semibold_cf4812',
-        'bold': 'heading-xl\/bold_cf4812',
-        'extrabold': 'heading-xl\/extrabold_cf4812',
+        'normal': 'cf48127484dbde85-heading-xl\/normal',
+        'medium': 'cf48127484dbde85-heading-xl\/medium',
+        'semibold': 'cf48127484dbde85-heading-xl\/semibold',
+        'bold': 'cf48127484dbde85-heading-xl\/bold',
+        'extrabold': 'cf48127484dbde85-heading-xl\/extrabold',
       ),
       'xxl': (
-        'normal': 'heading-xxl\/normal_cf4812',
-        'medium': 'heading-xxl\/medium_cf4812',
-        'semibold': 'heading-xxl\/semibold_cf4812',
-        'bold': 'heading-xxl\/bold_cf4812',
-        'extrabold': 'heading-xxl\/extrabold_cf4812',
-      ),
-      'deprecated12': (
-        'normal': 'heading-deprecated-12\/normal_f9d828' 'heading-deprecated-12\/normal_a8af02' 'heading-deprecated-12\/normal__4ed1a' 'heading-deprecated-12\/normal_a39fe9' 'heading-deprecated-12\/normal_aabef9' 'heading-deprecated-12\/normal_c23051' 'heading-deprecated-12\/normal_cf4812' 'heading-deprecated-12\/normal_b717a1' 'heading-deprecated-12\/normal_df8943' 'heading-deprecated-12\/normal_ec1c2d',
-        'medium': 'heading-deprecated-12\/medium_f9d828' 'heading-deprecated-12\/medium_a8af02' 'heading-deprecated-12\/medium__4ed1a' 'heading-deprecated-12\/medium_a39fe9' 'heading-deprecated-12\/medium_aabef9' 'heading-deprecated-12\/medium_c23051' 'heading-deprecated-12\/medium_cf4812' 'heading-deprecated-12\/medium_b717a1' 'heading-deprecated-12\/medium_df8943' 'heading-deprecated-12\/medium_ec1c2d',
-        'semibold': 'heading-deprecated-12\/semibold_f9d828' 'heading-deprecated-12\/semibold_a8af02' 'heading-deprecated-12\/semibold__4ed1a' 'heading-deprecated-12\/semibold_a39fe9' 'heading-deprecated-12\/semibold_aabef9' 'heading-deprecated-12\/semibold_c23051' 'heading-deprecated-12\/semibold_cf4812' 'heading-deprecated-12\/semibold_b717a1' 'heading-deprecated-12\/semibold_df8943' 'heading-deprecated-12\/semibold_ec1c2d',
-        'bold': 'heading-deprecated-12\/bold_f9d828' 'heading-deprecated-12\/bold_a8af02' 'heading-deprecated-12\/bold__4ed1a' 'heading-deprecated-12\/bold_a39fe9' 'heading-deprecated-12\/bold_aabef9' 'heading-deprecated-12\/bold_c23051' 'heading-deprecated-12\/bold_cf4812' 'heading-deprecated-12\/bold_b717a1' 'heading-deprecated-12\/bold_df8943' 'heading-deprecated-12\/bold_ec1c2d',
-        'extrabold': 'heading-deprecated-12\/extrabold_f9d828' 'heading-deprecated-12\/extrabold_a8af02' 'heading-deprecated-12\/extrabold__4ed1a' 'heading-deprecated-12\/extrabold_a39fe9' 'heading-deprecated-12\/extrabold_aabef9' 'heading-deprecated-12\/extrabold_c23051' 'heading-deprecated-12\/extrabold_cf4812' 'heading-deprecated-12\/extrabold_b717a1' 'heading-deprecated-12\/extrabold_df8943' 'heading-deprecated-12\/extrabold_ec1c2d',
-      ),
-    ),
-    'redesign': (
-      'heading18': (
-        'bold': 'redesign\/heading-18\/bold_f9d828' 'redesign\/heading-18\/bold_a8af02' 'redesign\/heading-18\/bold__4ed1a' 'redesign\/heading-18\/bold_a39fe9' 'redesign\/heading-18\/bold_aabef9' 'redesign\/heading-18\/bold_c23051' 'redesign\/heading-18\/bold_cf4812' 'redesign\/heading-18\/bold_b717a1' 'redesign\/heading-18\/bold_df8943' 'redesign\/heading-18\/bold_ec1c2d',
-      ),
-      'messagePreview': (
-        'normal': 'redesign\/message-preview\/normal_f9d828' 'redesign\/message-preview\/normal_a8af02' 'redesign\/message-preview\/normal__4ed1a' 'redesign\/message-preview\/normal_a39fe9' 'redesign\/message-preview\/normal_aabef9' 'redesign\/message-preview\/normal_c23051' 'redesign\/message-preview\/normal_cf4812' 'redesign\/message-preview\/normal_b717a1' 'redesign\/message-preview\/normal_df8943' 'redesign\/message-preview\/normal_ec1c2d',
-        'medium': 'redesign\/message-preview\/medium_f9d828' 'redesign\/message-preview\/medium_a8af02' 'redesign\/message-preview\/medium__4ed1a' 'redesign\/message-preview\/medium_a39fe9' 'redesign\/message-preview\/medium_aabef9' 'redesign\/message-preview\/medium_c23051' 'redesign\/message-preview\/medium_cf4812' 'redesign\/message-preview\/medium_b717a1' 'redesign\/message-preview\/medium_df8943' 'redesign\/message-preview\/medium_ec1c2d',
-        'semibold': 'redesign\/message-preview\/semibold_f9d828' 'redesign\/message-preview\/semibold_a8af02' 'redesign\/message-preview\/semibold__4ed1a' 'redesign\/message-preview\/semibold_a39fe9' 'redesign\/message-preview\/semibold_aabef9' 'redesign\/message-preview\/semibold_c23051' 'redesign\/message-preview\/semibold_cf4812' 'redesign\/message-preview\/semibold_b717a1' 'redesign\/message-preview\/semibold_df8943' 'redesign\/message-preview\/semibold_ec1c2d',
-        'bold': 'redesign\/message-preview\/bold_f9d828' 'redesign\/message-preview\/bold_a8af02' 'redesign\/message-preview\/bold__4ed1a' 'redesign\/message-preview\/bold_a39fe9' 'redesign\/message-preview\/bold_aabef9' 'redesign\/message-preview\/bold_c23051' 'redesign\/message-preview\/bold_cf4812' 'redesign\/message-preview\/bold_b717a1' 'redesign\/message-preview\/bold_df8943' 'redesign\/message-preview\/bold_ec1c2d',
-      ),
-      'channelTitle': (
-        'normal': 'redesign\/channel-title\/normal_f9d828' 'redesign\/channel-title\/normal_a8af02' 'redesign\/channel-title\/normal__4ed1a' 'redesign\/channel-title\/normal_a39fe9' 'redesign\/channel-title\/normal_aabef9' 'redesign\/channel-title\/normal_c23051' 'redesign\/channel-title\/normal_cf4812' 'redesign\/channel-title\/normal_b717a1' 'redesign\/channel-title\/normal_df8943' 'redesign\/channel-title\/normal_ec1c2d',
-        'medium': 'redesign\/channel-title\/medium_f9d828' 'redesign\/channel-title\/medium_a8af02' 'redesign\/channel-title\/medium__4ed1a' 'redesign\/channel-title\/medium_a39fe9' 'redesign\/channel-title\/medium_aabef9' 'redesign\/channel-title\/medium_c23051' 'redesign\/channel-title\/medium_cf4812' 'redesign\/channel-title\/medium_b717a1' 'redesign\/channel-title\/medium_df8943' 'redesign\/channel-title\/medium_ec1c2d',
-        'semibold': 'redesign\/channel-title\/semibold_f9d828' 'redesign\/channel-title\/semibold_a8af02' 'redesign\/channel-title\/semibold__4ed1a' 'redesign\/channel-title\/semibold_a39fe9' 'redesign\/channel-title\/semibold_aabef9' 'redesign\/channel-title\/semibold_c23051' 'redesign\/channel-title\/semibold_cf4812' 'redesign\/channel-title\/semibold_b717a1' 'redesign\/channel-title\/semibold_df8943' 'redesign\/channel-title\/semibold_ec1c2d',
-        'bold': 'redesign\/channel-title\/bold_f9d828' 'redesign\/channel-title\/bold_a8af02' 'redesign\/channel-title\/bold__4ed1a' 'redesign\/channel-title\/bold_a39fe9' 'redesign\/channel-title\/bold_aabef9' 'redesign\/channel-title\/bold_c23051' 'redesign\/channel-title\/bold_cf4812' 'redesign\/channel-title\/bold_b717a1' 'redesign\/channel-title\/bold_df8943' 'redesign\/channel-title\/bold_ec1c2d',
+        'normal': 'cf48127484dbde85-heading-xxl\/normal',
+        'medium': 'cf48127484dbde85-heading-xxl\/medium',
+        'semibold': 'cf48127484dbde85-heading-xxl\/semibold',
+        'bold': 'cf48127484dbde85-heading-xxl\/bold',
+        'extrabold': 'cf48127484dbde85-heading-xxl\/extrabold',
       ),
     ),
     'text': (
       'xxs': (
-        'normal': 'text-xxs\/normal_cf4812',
-        'medium': 'text-xxs\/medium_cf4812',
-        'semibold': 'text-xxs\/semibold_cf4812',
-        'bold':'text-xxs\/bold_cf4812',
+        'normal': 'cf48127484dbde85-text-xxs\/normal',
+        'medium': 'cf48127484dbde85-text-xxs\/medium',
+        'semibold': 'cf48127484dbde85-text-xxs\/semibold',
+        'bold':'cf48127484dbde85-text-xxs\/bold',
       ),
       'xs': (
-        'normal': 'text-xs\/normal_cf4812',
-        'medium': 'text-xs\/medium_cf4812',
-        'semibold': 'text-xs\/semibold_cf4812',
-        'bold':'text-xs\/bold_cf4812',
+        'normal': 'cf48127484dbde85-text-xs\/normal',
+        'medium': 'cf48127484dbde85-text-xs\/medium',
+        'semibold': 'cf48127484dbde85-text-xs\/semibold',
+        'bold':'cf48127484dbde85-text-xs\/bold',
       ),
       'sm': (
-        'normal': 'text-sm\/normal_cf4812',
-        'medium': 'text-sm\/medium_cf4812',
-        'semibold': 'text-sm\/semibold_cf4812',
-        'bold': 'text-sm\/bold_cf4812',
+        'normal': 'cf48127484dbde85-text-sm\/normal',
+        'medium': 'cf48127484dbde85-text-sm\/medium',
+        'semibold': 'cf48127484dbde85-text-sm\/semibold',
+        'bold': 'cf48127484dbde85-text-sm\/bold',
       ),
       'md': (
-        'normal': 'text-md\/normal_cf4812',
-        'medium': 'text-md\/medium_cf4812',
-        'semibold': 'text-md\/semibold_cf4812',
-        'bold': 'text-md\/bold_cf4812',
+        'normal': 'cf48127484dbde85-text-md\/normal',
+        'medium': 'cf48127484dbde85-text-md\/medium',
+        'semibold': 'cf48127484dbde85-text-md\/semibold',
+        'bold': 'cf48127484dbde85-text-md\/bold',
       ),
       'lg': (
-        'normal': 'text-lg\/normal_cf4812',
-        'medium': 'text-lg\/medium_cf4812',
-        'semibold': 'text-lg\/semibold_cf4812',
-        'bold': 'text-lg\/bold_cf4812',
+        'normal': 'cf48127484dbde85-text-lg\/normal',
+        'medium': 'cf48127484dbde85-text-lg\/medium',
+        'semibold': 'cf48127484dbde85-text-lg\/semibold',
+        'bold': 'cf48127484dbde85-text-lg\/bold',
       ),
     ),
   ),
@@ -620,7 +594,6 @@ $classes: (
     'text': '_2b1f52e43a8f1c02-textBadge',
   ),
   'login': (
-    'wrapper': 'wrapper_d4fa29',
     'characterBackground': 'eb40697790f5b161-characterBackground',
     // seemingly a parent class for the whole thing
     'artwork': 'eb40697790f5b161-artwork',
@@ -639,9 +612,6 @@ $classes: (
     'qrCodeOverlay': 'e16417fd9812ee39-qrCodeOverlay',
     
     'accountsList': '_920b86c5b761e645-list',
-    
-    'addAccountNav': 'navRow__86e92',
-    // appears when adding acc while logged in
   ),
   'os': (
     'win': 'platform-win',
@@ -673,16 +643,11 @@ $classes: (
       // on <svg> tag. child <mask> with similar stuff again
       // <rect>
       'pointerEvents': '_44b0c28be7879b7b-pointerEvents',
-
       // on <rect> usually relates to status
-      'speaking': 'avatarSpeaking__44b0c',
-      // appears in the sidebar server panel when you're speaking
       'decoration': '_44b0c28be7879b7b-avatarDecoration',
-
       // appears under wrapper for people with avatar decorations
       // unsure where both of these classes are
       'pointer': '_44b0c28be7879b7b-pointer',
-      'status': 'status_c51b4e',
     ),
 
   'button': (
@@ -694,8 +659,6 @@ $classes: (
     'lookLink': '_201d5e8a3c09670a-lookLink',
     'lookBlank': '_201d5e8a3c09670a-lookBlank',
     // no combos with colors
-    'icon': 'buttonIcon__6e3f1',
-    // found at top of channel you can edit, before first message. not in the same line as the others
     'spinner': '_201d5e8a3c09670a-spinner',
     'spinnerItem': '_201d5e8a3c09670a-spinnerItem',
     // i don't know where this is in comparison to everything else. it's likely on the same element as path-lhsLSV
@@ -768,10 +731,8 @@ $classes: (
     'root': 'bfe55a0aaaf62375-root',
     'idle': 'bfe55a0aaaf62375-idle',
     // applied when screen sharing and not hovered, hides controls (and children of)
-    'gradientBackground': 'gradientBackground__11664',
-    'gradientSphere': 'sphere__11664',
     'pulseGradient': '_116642f293ef6ec6-pulseGradient',
-    // both above are seen in empty vc
+    // seen in empty vc
     'voiceCallWrapper': 'a21736575ea33af0-voiceCallWrapper',
     // paired with rootChild
     'transition': 'c8dbe9074540e86d-transition',
@@ -822,7 +783,6 @@ $classes: (
     // said drop down arrow
     'contextMenuCaret': 'f1ceaca61b18918e-contextMenuCaret',
     // the ^ symbol
-    'caretTransition': 'transition__5fbe9',
     'centerButton': 'f1ceaca61b18918e-centerButton',
     'centerButtonIcon': 'f1ceaca61b18918e-centerIcon',
     'caretOpen': 'f1ceaca61b18918e-open',
@@ -866,7 +826,6 @@ $classes: (
     'tileOverlay': 'overlay_ba4b17',
     'tileOverlayTitle': '_2f4f7eb58b61c328-overlayTitle',
     'tileOverlayTitleText': '_2f4f7eb58b61c328-overlayTitleText',
-    'tileStatusContainer': 'statusContainer__2f4f7',
     'tileStatus': '_2f4f7eb58b61c328-status',
     'tileVideo': '_48b20dfd18726df7-video',
     'tileVideoContain': '_48b20dfd18726df7-videoContain',
@@ -881,7 +840,6 @@ $classes: (
     'liveQualityIndicator': '_30845ecfafc292c8-liveQualityIndicator',
     'lowQualityWarningIcon': '_14990c2ebe5e1ba0-warningIcon',
     'watchStreamButton': 'cta_a3a802',
-    'inviteButton': 'buttonColor__7b3e8',
 
     'channelChatWrapper': 'cb9592ad77576717-channelChatWrapper',
     // side chat
@@ -1021,7 +979,6 @@ $classes: (
     // typing... bar
     'chatScrollerNSFW': 'f35c3c1aaf31dfd5-scroller',
     'chatGatedWrapper': 'f35c3c1aaf31dfd5-wrapper',
-    'chatGatedImage': 'image__7184c',
     'chatGatedTitle': '_7184cb7fb4855291-title',
     'chatGatedDescription': '_7184cb7fb4855291-description',
     'chatContentInner': 'f75fb00fb7356cbe-chatContent',
@@ -1087,8 +1044,6 @@ $classes: (
     'chatHeaderH1': '_00de6f6c14b53606-header',
     // h1
     'chatHeaderDesc': '_00de6f6c14b53606-description',
-    'chatHeaderButtons': '_1ee8c9ebb87f56f8-channelSettingButtons',
-    'chatHeaderButton': 'button__6e3f1',
     'emptyChannelIcon': '_00de6f6c14b53606-emptyChannelIcon',
     'chatHeaderMembers': '_1ee8c9ebb87f56f8-members',
 
@@ -1144,16 +1099,15 @@ $classes: (
     'guildBreadcrumbIcon': 'f75fb00fb7356cbe-guildBreadcrumbIcon',
 
     'spoiler': (
-      'content': 'spoilerContent__54ab5',
-      'hidden': 'hidden__54ab5',
-      'container': 'spoilerContainer__54ab5',
-      'innerContainer': 'spoilerInnerContainer__54ab5',
-      'warning': 'spoilerWarning__54ab5',
-      'warningEmbed': 'embed__54ab5',
-      'explicitContentWarning': 'explicitContentWarning__54ab5',
-      'markdownContent': 'spoilerMarkdownContent__54ab5',
-      'obscuredTextContent': 'obscuredTextContent__54ab5',
-      'obscuredTextContentInner': 'obscuredTextContentInner__54ab5',
+      'content': '_299eb87491f4b6d1-spoilerContent',
+      'hidden': '_299eb87491f4b6d1-hidden',
+      'container': '_299eb87491f4b6d1-spoilerContainer',
+      'innerContainer': '_299eb87491f4b6d1-spoilerInnerContainer',
+      'warning': '_299eb87491f4b6d1-spoilerWarning',
+      'explicitContentWarning': '_299eb87491f4b6d1-explicitContentWarning',
+      'markdownContent': '_299eb87491f4b6d1-spoilerMarkdownContent',
+      'obscuredTextContent': '_299eb87491f4b6d1-obscuredTextContent',
+      'obscuredTextContentInner': '_299eb87491f4b6d1-obscuredTextContentInner',
     ),
 
     'chatWelcomeContainer': '_235ca3770d90ab7c-container',
@@ -1259,8 +1213,6 @@ $classes: (
     'matchingPostsRow': 'f369dba7416c67f0-matchingPostsRow',
 
     'empty': '_93db49446403e33e-container',
-    'emptyIcon': 'icon__93db4',
-    'emptyCTA': 'cta__93db4',
 
     'example': (
       // empty forum see examples
@@ -1332,7 +1284,6 @@ $classes: (
           'tag': '_5808f3d86030cee1-tag',
 
           'separator': '_5808f3d86030cee1-separator',
-          'clear': 'clear__5808f',
         ),
       ),
 
@@ -1353,13 +1304,6 @@ $classes: (
         // inline color
         'showMoreText': 'ca49a1898ddc29e3-showMoreText',
         'showMoreIcon': 'ca49a1898ddc29e3-showMoreIcon',
-
-        'modal': (
-          'container': 'container__444a0',
-          'header': 'header__444a0',
-          'content': '_444a0ace30003235-content',
-          'rulesIcon': 'rulesIcon__444a0',
-        ),
       ),
 
     // it's loading in
@@ -1555,13 +1499,10 @@ $classes: (
         'bar': (
             'container': '_34c2c51cfce1632e-container',
             'header': '_34c2c51cfce1632e-header',
-            'button': 'button__34c2c',
-            'buttonInner': 'buttonInner__34c2c',
             'reactButtons': '_34c2c51cfce1632e-reactButtons',
             'addReactButton': '_34c2c51cfce1632e-addReactButton',
             'reactions': '_34c2c51cfce1632e-reactions',
             'buttons': '_34c2c51cfce1632e-buttons',
-            'active': 'active__34c2c',
           ),
       ),
   ),
@@ -1628,9 +1569,6 @@ $classes: (
           'header': '_0b56311ebc6682e2-header',
           // has background, overwritten from different rule
           'innerHeader': '_0b56311ebc6682e2-innerHeader',
-          'returnButton': 'returnButton__0b563',
-          'returnButtonText': 'returnButtonText__0b563',
-          'returnIcon': 'returnIcon__0b563',
           // page container
           'tabBar': '_0b56311ebc6682e2-tabBar',
           'tabBarItem': '_0b56311ebc6682e2-tabBarItem',
@@ -1653,10 +1591,6 @@ $classes: (
 
         'pageBody': '_41ed70e52483df6d-pageBody',
         'pageHeader': '_41ed70e52483df6d-header',
-        'search': 'search__41ed7',
-        'createButton': 'createButton__41ed7',
-        'createButtonInner': 'createButtonInner__41ed7',
-        'createIcon': 'createIcon__41ed7',
         'browser': '_41ed70e52483df6d-browser',
         'scrollerInner': 'e4503acec53c64dd-scrollerInner',
 
@@ -1748,8 +1682,6 @@ $classes: (
     // dunno why there's a typo in the class name
     // similar to class above except different set of text stuff. also not using these classes.
     // Same set
-    'button': 'sortButton__98d1c',
-    'searchBar': 'searchBar__98d1c',
     'searchHeader': '_98d1ce21de5c55ca-searchHeader',
     'searchHeaderContainer': '_98d1ce21de5c55ca-searchHeaderContainer',
     'searchInput': '_98d1ce21de5c55ca-searchInput',
@@ -1808,10 +1740,6 @@ $classes: (
     'inner': '_740174f3d6a2c8fe-inner',
     'sansAttachButton': '_740174f3d6a2c8fe-sansAttachButton',
     // buttons bar
-    'accessoryBar': 'accessoryBar__74017',
-    'accessoryBarLeft': 'accessoryBarLeft__74017',
-    'accessoryBarRight': 'accessoryBarRight__74017',
-    // always on the main bar for some reason
     'uploadInput': '_0923f156a0410684-uploadInput',
     'attachWrapper': '_0923f156a0410684-attachWrapper',
     'attachButton': '_0923f156a0410684-attachButton',
@@ -2090,7 +2018,6 @@ $classes: (
       // download audio/video and edit image button
       'group': '_06ab41fd2ef7af3f-hoverButtonGroup',
       'button': '_06ab41fd2ef7af3f-hoverButton',
-      'selected': 'selected__06ab4',
       'downloadIcon': '_6c706db0523bd9a7-downloadHoverButtonIcon',
     ),
 
@@ -3089,11 +3016,9 @@ $classes: (
         'scroller': '_629e4c86564a4ee7-scroller',
 
         'divider': '_629e4c86564a4ee7-sectionDivider',
-
         // placed above channel list if "Events", "Browse Channels", "Members", "Channels & Roles" etc exist
         // Shared classes with Category and Channel
-        'overflow': 'overflow__82b15',
-        // child for name
+        
         'dragBefore': '_29444ba32c7fbeab-containerDragBefore',
         // used when dragging a channel/category to a place BEFORE it was originally
         'dragAfter': '_29444ba32c7fbeab-containerDragAfter',
@@ -3118,7 +3043,6 @@ $classes: (
 
             // hide/unhide toggle
             'name': '_29444ba32c7fbeab-name',
-
             // shares _13cf1aa56cd732d2-container and text__13cf1 with memberList
             'children': '_29444ba32c7fbeab-children',
             // extra icons
@@ -3163,13 +3087,8 @@ $classes: (
             // why are there so many classes
             'selectedChannel': 'c69b6db0641110f6-selectedChannel',
             // select a channel
-            'typeDefault': 'typeDefault__2ea32',
-            // regular text channels, forums,
             'typeThread': '_2ea32c412048f708-typeThread',
             // in-channel thread or forum thread;
-            'typeVoice': 'typeVoice__2ea32',
-            // voice + stage channels
-            // These "mode" classes change the text and icon color.
             'muted': '_2ea32c412048f708-modeMuted',
             // mute a channel
             'selected': '_2ea32c412048f708-modeSelected',
@@ -3269,7 +3188,6 @@ $classes: (
 
                 'userContent': '_07f9193042954787-content',
 
-                'avatarSpeaking': 'avatarSpeaking__07f91',
                 'userAvatar': '_55bab3f0b2555838-userAvatar',
                 // appears to be related to stage audience stuff
                 'avatar': '_07f9193042954787-avatar',
@@ -3674,15 +3592,11 @@ $classes: (
         'clickableUsername': '_63ed30c16c7151f2-clickableUsername',
         'nickname': '_63ed30c16c7151f2-nickname',
         'userTagUsername': '_63ed30c16c7151f2-userTagUsername',
-        'biteSize': 'biteSize__63ed3',
-        'panel': 'panel__63ed3',
-        'fullSize': 'fullSize__63ed3',
         'nicknameIcons': '_63ed30c16c7151f2-nicknameIcons',
         'usernameRow': '_63ed30c16c7151f2-usernameRow',     
         'usernameContainer': '_63ed30c16c7151f2-container',
         'tags': '_63ed30c16c7151f2-tags',
         'userTag': '_63ed30c16c7151f2-userTag',
-        'pronounsTooltip': 'pronounsTooltip__63ed3',
         'pronouns': '_63ed30c16c7151f2-pronouns',
         'userTagDiscriminator': '_63ed30c16c7151f2-userTagDiscriminator',
         'dotSpacer': '_63ed30c16c7151f2-dotSpacer',     
@@ -3693,26 +3607,15 @@ $classes: (
       // "friends" (click to show tooltip to remove)
       // "more" (click to show tooltip to block, report profile and copy user id)
       // "edit profile"
-      'firendsMoreEditProfileButtons': (
+      'profileButtons': (
           'wrapper': 'da589062f0c96515-wrapper',
-          'biteSize': 'biteSize_da5890',
-          'fullSize': 'fullSize_da5890',
-          'panel': 'panel_da5890',
         ),
-
-      // (!) icon. shared between modal+panel+popout
-      'missingConnection': 'container__23ba6',
 
       // theme the (!) icon with (this)>svg>path{fill}
       // there seems to be a line with things related to the avatars, hense this subcategory.
       // these mostly apply to popout from what i can tell
       'avatar': (
           'avatar': '_75742e4cc9019aeb-avatar',
-          'biteSize': 'biteSize__75742',
-          'fullSize': 'fullSize__75742',
-          'panel': 'panel__75742',
-          'withReactReply': 'withReactReply__75742',
-          'hoisted': 'hoisted__75742',
           'clickable': '_75742e4cc9019aeb-clickable',
           'overlay': '_75742e4cc9019aeb-overlay',
           'focusRing': '_75742e4cc9019aeb-focusRing',
@@ -3737,7 +3640,6 @@ $classes: (
       ),
 
       'playing': (
-        'container': 'toolbarContainer__39ec2',
         'clickableContainer': '_39ec2e3dfb4fd2f2-clickableContainer',
         'card': '_39ec2e3dfb4fd2f2-card',
         'header': '_39ec2e3dfb4fd2f2-header',
@@ -3811,10 +3713,6 @@ $classes: (
         'emptyIconGuilds': '_9d78f306fb3bc112-emptyIconGuilds',
         'emptyIconStreamerMode': '_9d78f306fb3bc112-emptyIconStreamerMode',
         'emptyText': '_9d78f306fb3bc112-emptyText',
-
-        'guildAvatar': 'guildAvatar_aafe31',
-        'guildAvatarWithoutIcon': 'guildAvatarWithoutIcon_aafe31',
-        'guildNick': 'guildNick_aafe31',
           
         'noteTextarea': '_9daaef1a8070429c-textarea',
         ),
@@ -3822,14 +3720,14 @@ $classes: (
       // Go to the DMs of someone while your screen is larger than
       // 1132px wide and you've not disabled the panel via header
       'sidebar': (
-        'body': 'body__486c9',
-        'bodyOverlay': 'overlay__486c9',
+        'body': 'b32ca49f97332e1b-body',
+        'bodyOverlay': 'b32ca49f97332e1b-overlay',
         // used over "about me/member since" container
 
         // encompass both mutual servers and mutual friends
-        'connectionsOverlay': 'overlay_d04d18',
-        'connectionsList': 'list_d04d18',
-        'connectionsDivider': 'divider_d04d18',
+        'connectionsOverlay': '_3b2602e558ef3de0-overlay',
+        'connectionsList': '_3b2602e558ef3de0-list',
+        'connectionsDivider': '_3b2602e558ef3de0-divider',
       ),
 
       // Popoout: click on user in chat or member list
@@ -3890,16 +3788,16 @@ $classes: (
     // collapseable radio
     // within moderation category
     'collapseableRadio': (
-      'container': 'container__6cd3a',
-      'clickable': 'clickableContainer__6cd3a',
-      'backgroundModifierContainer': 'backgroundModifierContainer__6cd3a',
-      'disabled': 'disabled__6cd3a',
-      'noAction': 'noAction__6cd3a',
-      'selected': 'selected__6cd3a',
-      'statusGreen': 'statusGreen__6cd3a',
-      'statusYellow': 'statusYellow__6cd3a',
-      'statusOrange': 'statusOrange__6cd3a',
-      'statusRed': 'statusRed__6cd3a',
+      'container': 'd96a9cdaeeba104e-container',
+      'clickable': 'd96a9cdaeeba104e-clickableContainer',
+      'backgroundModifierContainer': 'd96a9cdaeeba104e-backgroundModifierContainer',
+      'disabled': 'd96a9cdaeeba104e-disabled',
+      'noAction': 'd96a9cdaeeba104e-noAction',
+      'selected': 'd96a9cdaeeba104e-selected',
+      'statusGreen': 'd96a9cdaeeba104e-statusGreen',
+      'statusYellow': 'd96a9cdaeeba104e-statusYellow',
+      'statusOrange': 'd96a9cdaeeba104e-d96a9cdaeeba104e-statusOrange',
+      'statusRed': 'd96a9cdaeeba104e-d96a9cdaeeba104e-statusRed',
 
       'collapseable': '_217b73c8e5e3ff6d-collapseable',
       'collapseableToggled': '_217b73c8e5e3ff6d-toggled',
@@ -3910,8 +3808,6 @@ $classes: (
     'featureBorder': '_65c15724a894a2e0-featureBorder',
     'featureBackground': '_65c15724a894a2e0-background',
 
-    'sectionTitle': 'sectionTitle__7bffb',
-    'children': 'children__7bffb',
     'marginReset': 'fd297e0eff2da25e-marginReset',
     'marginCenterHorz': 'fd297e0eff2da25e-marginCenterHorz',
     'marginTop4': 'fd297e0eff2da25e-marginTop4',
@@ -3925,9 +3821,6 @@ $classes: (
     'marginBottom40': 'fd297e0eff2da25e-marginBottom40',
     'marginBottom60': 'fd297e0eff2da25e-marginBottom60',
     'marginLeft8': 'fd297e0eff2da25e-marginLeft8',
-    'divider': 'divider__46c3b',
-    'description': 'ddd1814f7cd3e6fd-description',
-    'title': 'b717a15017b82443-title',
 
     'closeButtonContainer': 'c2b141c0f80863fb-container',
     'closeButton': 'c2b141c0f80863fb-closeButton',

@@ -138,12 +138,6 @@
 #{c(embeds hoverButton group)} {
   background: cv('shading.popout');
 }
-#{c(embeds hoverButton button)} {
-  &#{c(embeds hoverButton selected)},
-  &:hover {
-    background: transparent;
-  }
-}
 
 // ATTACHMENTS
 #{c(embeds attachment file)} {
