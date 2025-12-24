@@ -279,10 +279,6 @@
     outline: 1px solid cv('color.main');
   }
 }
-#{c(embeds poll secondaryButtonPresentation)} {
-  background: cv('color.main');
-  border: transparent;
-}
 #{c(embeds poll checkbox)} {
   border-width: 1px;
 }

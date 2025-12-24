@@ -963,7 +963,6 @@ $classes: (
     'cozy': 'c19a557985eb7793-cozy',
     'compact': 'c19a557985eb7793-compact',
     'chat': 'f75fb00fb7356cbe-chat',
-    'chatSidebarOpen': 'chatSidebarOpen_d880dc',
     'threadSidebarOpen': 'f75fb00fb7356cbe-threadSidebarOpen',
     'threadSidebarFloating': 'f75fb00fb7356cbe-threadSidebarFloating',
     'subtitleContainer': 'f75fb00fb7356cbe-subtitleContainer',
@@ -1238,12 +1237,8 @@ $classes: (
     'textAreaInner': 'd9be463a3c35b91e-channelTextAreaInner',
 
     'title': 'd9be463a3c35b91e-title',
-    'searchIcon': 'searchIcon_d9be46',
-    'closeIcon': 'closeIcon_d9be46',
     'tagsContainer': 'd9be463a3c35b91e-tagsContainer',
     'moreTagsButton': 'd9be463a3c35b91e-tagsButton',
-    'moreTagsButtonInner': 'tagsButtonInner_d9be46',
-    'submitButton': 'submitButton_d9be46',
 
     'newPostsPopout': 'f369dba7416c67f0-newPostsButton',
 
@@ -1263,8 +1258,6 @@ $classes: (
         'list': 'f369dba7416c67f0-tagList',
         'listInner': 'f369dba7416c67f0-tagListInner',
 
-        'tag': 'tag_f369db',
-        // hover color uses .pill.clickable:not(.disabled) for background. they're in pages
         'tagsButton': 'f369dba7416c67f0-tagsButton',
         // usually the "all" button; clicking it brings up a popout
         'tagsButtonInner': 'f369dba7416c67f0-tagsButtonInner',
@@ -1413,7 +1406,6 @@ $classes: (
       'active': 'f8896c4f6be18f59-active',
       'visible': 'f8896c4f6be18f59-visible',
       'forceShow': 'f8896c4f6be18f59-forceShow',
-      'forceShowLook': 'forceShowLook_f61c73',
       'hideEmoji': 'f8896c4f6be18f59-hideEmoji',
 
       'reaction': 'f8896c4f6be18f59-reaction',
@@ -1528,10 +1520,6 @@ $classes: (
     'newTextAreaError': 'fb64c9a451c49797-channelTextAreaInnerError',
     'newThreadTextArea': 'fb64c9a451c49797-channelTextArea',
     'newThreadTextAreaInner': 'fb64c9a451c49797-channelTextAreaInner',
-
-    // active threads in server
-    'activethreadsContainer': 'container_a8217b',
-    'activethreadsHeader': 'header_a8217b',
   ),
 
   'serverGuide': (
@@ -1586,7 +1574,6 @@ $classes: (
           'image': 'bc0d3515e6cb489a-image',
           'heading': 'bc0d3515e6cb489a-heading',
           'tip': 'bc0d3515e6cb489a-tip',
-          'checkItOut': 'checkItOut_bc0d35',
         ),
 
         'pageBody': '_41ed70e52483df6d-pageBody',
@@ -1598,8 +1585,6 @@ $classes: (
         'uncategorized': 'e4503acec53c64dd-uncategorized',
         // when combined with categoryRow class, removes top padding
         'categoryText': 'e4503acec53c64dd-categoryText',
-        'selectAll': 'selectAll_e4503a',
-        'selectAllCheckbox': 'selectAllCheckbox_e4503a',
 
         'channelRow': 'e4503acec53c64dd-channelRow',
         // background, also one with :hover:not(disabled class)
@@ -1616,8 +1601,6 @@ $classes: (
         'subtitleSeparator': 'e4503acec53c64dd-subtitleSeparator',
         'channelTopic': 'e4503acec53c64dd-topic',
         'channelActions': 'e4503acec53c64dd-channelActions',
-        'viewChannelButton': 'viewChannelButton_e4503a',
-        'checkboxInner': 'checkboxInner_e4503a',
         'channelSeparator': 'e4503acec53c64dd-separator',
         // horizontal line, background
       ),
@@ -1669,7 +1652,6 @@ $classes: (
   'membersPage': (
     'page': 'c791b281f2fedc32-page',
     'header': 'c791b281f2fedc32-header',
-    'scroller': 'scroller_d20375',
     'container': 'c791b281f2fedc32-container',
 
     'tableContainer': '_09a38002c6c2466d-mainTableContainer',
@@ -1793,7 +1775,6 @@ $classes: (
     // usersettings > accessibility > chat input > show send message button
     'sendButtonContainer': 'aa63abf63dbd9cce-buttonContainer',
     'sendButton': 'aa63abf63dbd9cce-button',
-    'sendButtonInner': 'innerButton_aa63ab',
     'sendButtonChild': 'aa63abf63dbd9cce-buttonChild',
     'sendButtonActiveChild': 'aa63abf63dbd9cce-activeButtonChild',
     'sendButtonDisabled': 'aa63abf63dbd9cce-disabled',
@@ -1863,12 +1844,11 @@ $classes: (
 
       // video quest modal
       'video': (
-        'root': 'modalRoot_de2fa0',
-        'background': 'modalBg_de2fa0',
-        'body': 'modalBody_de2fa0',
-        'content': 'modalContent_de2fa0',
-        'header': 'contentHeader_de2fa0',
-        'footer': 'contentFooter_de2fa0',
+        'root': '_4577670752bdbe9c-modalRoot',
+        'background': '_4577670752bdbe9c-modalBg',
+        'body': '_4577670752bdbe9c-modalBody',
+        'content': '_4577670752bdbe9c-modalContent',
+        'footer': '_4577670752bdbe9c-contentFooter',
       ),
     ),
   ),
@@ -1957,24 +1937,6 @@ $classes: (
       'actions': '_72090deda6ab7f6d-actions',
     ),
 
-    'gameInvite': (
-      'gameInviteContainer': 'container__6f250',
-      // class might be wrong.
-      'invite': 'invite__4d3fa',
-      'coverImageWrapper': 'coverImageWrapper__4d3fa',
-      'coverImage': 'coverImage__4d3fa',
-      'coverImageNotActionable': 'coverImageNotActionable__4d3fa',
-      'coverImageActionable': 'coverImageActionable__4d3fa',
-      'coverImageBlurred': 'blurred__4d3fa',
-      'header': 'header__4d3fa',
-      'details': 'details__4d3fa',
-      'state': 'state__4d3fa',
-      'partyStatus': 'partyStatus__4d3fa',
-      'name': 'name__4d3fa',
-      'fullHeight': 'fullHeight__4d3fa',
-      'artwork': 'artwork__4d3fa',
-    ),
-
     'threadSpine': '_9271d23503a01b50-spine',
     'threadContainer': '_9271d23503a01b50-container',
     'threadCTA': '_9271d23503a01b50-cta',
@@ -1988,7 +1950,6 @@ $classes: (
       // overlay when message is playing
       'playButtonContainer': 'a8e786485f0c32f8-playButtonContainer',
       'playIcon': 'a8e786485f0c32f8-playIcon',
-      'oldPlayIconSpacing': 'oldPlayIconSpacing_a8e786',
       'waveform': 'a8e786485f0c32f8-waveform',
       'duration': 'a8e786485f0c32f8-duration',
       'reducedMotion': 'a8e786485f0c32f8-reducedMotion',
@@ -2028,18 +1989,12 @@ $classes: (
       'container': '_0be773cf1443f34f-container',
       'bottomBar': '_0be773cf1443f34f-bottomBar',
       // contains detailsText and usually secondary action
-      'buttonPresentation': 'buttonPresentation__0be77',
-      // bg-c card-secondary-bg
       'detailsText': '_0be773cf1443f34f-detailsText',
-      'detailsTextButton': 'detailsTextButton__0be77',
-      // button lookBlank colorBrand grow; clicking shows who voted. check modals > pollVotes
       'header': '_0be773cf1443f34f-header',
-      'interactive': 'interactive__0be77',
       'prompt': '_0be773cf1443f34f-prompt',
       'question': '_0be773cf1443f34f-question',
       // child to header, also contains default color (header primary), font scaling, text md medium and default color (text normal; overwritten)
       'secondaryAction': '_0be773cf1443f34f-secondaryAction',
-      'secondaryButtonPresentation': 'secondaryButtonPresentation__0be77',
       'tertiaryAction': '_0be773cf1443f34f-tertiaryAction',
 
       // answers seem to be in their own group for some reason
@@ -2057,9 +2012,7 @@ $classes: (
       'emoji': '_4c5209741d147f1b-emoji',
       // optional emoji that gets placed before label
       'label': '_4c5209741d147f1b-label',
-      'selected': '_4c5209741d147f1b-selected',      
-      'voteCount': 'voteCount__4c520',
-      'voteCountButton': 'voteCountButton__4c520',
+      'selected': '_4c5209741d147f1b-selected',     
       'votePercentageBar': '_4c5209741d147f1b-votePercentageBar',
       // a span with style width: $percentage%. has background color -- THIS IS USED ON ANSWERS WITHOUT VOTES [style:"width: 0%;"]
       'votesData': '_4c5209741d147f1b-votesData',
@@ -2087,7 +2040,6 @@ $classes: (
         'victorAnswer': 'f69538e19b6eaacd-victorAnswer',
         'victorAnswerText': 'f69538e19b6eaacd-victorAnswerText',
         'victorIcon': 'f69538e19b6eaacd-victorAnswer',
-        'button': 'button_f69538',
       ),
     ),
 
@@ -2119,14 +2071,13 @@ $classes: (
       'bubble': 'b26b790fd1005393-bubble',
     ),
   'error': (
-    'page': 'errorPage_a57b28',
+    'page': '_01b8da2711bed5ad-errorPage',
     'wrapper': '_61a6bac39bf12a0c-wrapper',
     'flexWrapper': '_61a6bac39bf12a0c-flexWrapper',
     'image': '_61a6bac39bf12a0c-image',
     'text': '_61a6bac39bf12a0c-text',
     'title': '_61a6bac39bf12a0c-title',
     'note': '_61a6bac39bf12a0c-note',
-    'buttons': 'buttons_a57b28',
   ),
   'friends': (
     'container': '_133bf5eea8e33a34-container',
@@ -2154,8 +2105,6 @@ $classes: (
     'addFriendHeader': '_94b083577c5dbbb3-header',
     'addFriendTitle': '_94b083577c5dbbb3-title',
     // h2
-    'addFriendEmptyState': 'emptyState__94b08',
-    // below the grid which was hit with a display none
     'addFriendInputWrapper': '_72ba79a5dfa2ce86-addFriendInputWrapper',
     'addFriendInput': '_72ba79a5dfa2ce86-input',
 
@@ -2192,7 +2141,6 @@ $classes: (
     'activeNowAvatar': '_00943886e1cf89d1-headerAvatar',
 
     'explorePublicHeader': 'a145951f2e72a285-header',
-    'explorePublicTitle': 'title_a14595',
     'explorePublicGrid': 'a145951f2e72a285-grid',
     'explorePublicContainer': 'a145951f2e72a285-container',
     'explorePublicIcon': 'a145951f2e72a285-icon',
@@ -2255,7 +2203,7 @@ $classes: (
     'card': 'fcbddd55b8b335a1-productCardContainer',
     'cardContentInner': 'fcbddd55b8b335a1-productCardContentContainer',
     'cardPreviewContainer': 'fcbddd55b8b335a1-productPreviewContainer',
-    'cardPreview': 'productPreview_dec3d3',
+    'cardPreview': '_00f8b4dc8de546cc-productPreview',
     'cardheaderContainer': 'fcbddd55b8b335a1-headerContainer',
     'cardGradient': 'fcbddd55b8b335a1-footerGradient',
     'cardFooter': 'fcbddd55b8b335a1-footerContainer',
@@ -2263,7 +2211,7 @@ $classes: (
     // filter
     'filterBar': '_1187745e085c713e-filterBar',
     'filterSection': '_1187745e085c713e-filterSection',
-    '_1187745e085c713e-filterTitle': 'filterTitle',
+    'filterTitle' : '_1187745e085c713e-filterTitle',
     'filterColorRow': '_1187745e085c713e-colorSwatchRow',
     'filterColor': '_1187745e085c713e-circle',
     'filterColorToggled': '_1187745e085c713e-circleToggled',
@@ -2308,7 +2256,7 @@ $classes: (
       'title': (
           'container': 'c38106a3f0c3ca76-title',
           // parent class
-          'title': 'title__85643',
+          'title': 'edbb22df99c39831-title',
           // parent to an SVG icon (friends list, dms) or the server icon along with the name
           // In the different areas:
           // DMs, Friends list, Nitro and Shop all contain the same as above with the amount of paths changing. DMs = 1 path, Friends+Shop = 2 path, Nitro = 3 path.
@@ -2318,11 +2266,7 @@ $classes: (
           //
           // Server:
           // title > div .serverIcon (here) [style$="background-image: url(...)"] + div
-          'serverIcon': 'guildIcon__85643',
-
-          // other classes
-          'icon': 'icon__85643',
-          // does not get applied to svgs, unsure on usage.
+          'serverIcon': 'edbb22df99c39831-guildIcon',
         ),
       // appears on left, probably contains mac os close/min/fullscreen buttons; cannot test as not on mac
       'leading': (
@@ -2331,7 +2275,6 @@ $classes: (
       // appears on right, contains inbox, help link and windows min/max/close buttons
       'trailing': (
           'container': 'c38106a3f0c3ca76-trailing',
-          'recentsIcon': 'recentsIcon_c99c29',
           // inbox icon
           // for the help link, target #{c(topBar trailing container)}>a[href="https://support.discord.com"]
           'button': '_85643a485899904b-button',
@@ -5786,8 +5729,6 @@ $classes: (
         'entry': '_94ab20c3000a29ab-entry',
         'entryIcon': '_94ab20c3000a29ab-entryIcon',
         'entryInner': '_94ab20c3000a29ab-entryInner',
-
-        'footer': 'footer__3d3b0',
       ),
 
     // Ctrl+N or click the green + at the bottom of the server list
@@ -5826,13 +5767,11 @@ $classes: (
 
       // alternate second screen "Join a server" - click already have an invite button
       'joinAServerHeader': '_991a00423f3b43a4-header',
-      'joinAServerInput': 'input__991a0',
       'joinServerExample': '_991a00423f3b43a4-sampleLink',
       'joinServerRowContainer': '_991a00423f3b43a4-rowContainer',
       // used as pointer to discovery
       'joinServerRowText': '_991a00423f3b43a4-rowText',
       'joinServerRowArrow': '_991a00423f3b43a4-rowArrow',
-      'joinServerBackButton': 'backButton_b917ac',
     ),
 
     // Upload a file. That's really all there is to it.
@@ -5934,27 +5873,6 @@ $classes: (
         'crossBlurple': 'crossBlurple_bce2e6',
       ),
 
-      'modify': (
-        'modal': 'uploadModal_b78547',
-        'file': 'file_b78547',
-        'expandable': 'expandable_b78547',
-        // used with images and gifs
-        'description': 'description_b78547',
-        'filename': 'filename_b78547',
-        'comment': 'comment_b78547',
-        'label': 'label_b78547',
-        // section header thingy
-        'filenameInputWrapper': 'channelTextAreaUpload_b78547',
-        // it's unique here
-        'optional': 'optional_b78547',
-        // found in css
-        'footer': 'footer_b78547',
-        'hasSpoilers': 'hasSpoilers_b78547',
-        'footerRightAlign': 'footerRightAlign_b78547',
-        'cancelAllButton': 'cancelAllButton_b78547',
-        // found within css
-      ),
-
       // Line 532 of 2022-09-14: https://canary.discord.com/assets/40532.a635ae389e26e316ec3b.css
       // Line 533 also applies here and anything on that line is mentioned
       'fail': (
@@ -5988,36 +5906,11 @@ $classes: (
 
       'actionButtons': 'cc1819cb49c2d109-actionButtons',
       // paired with base. holds many buttons.
-      'actionButton': 'actionButton_cc1819',
-      // individual button. paired with actionButtonWrapper for some reason. has aira-label.
-      'actionButtonWrapper': 'actionButtonWrapper_cc1819',
-      // parent to actionButtonInner
-      'actionButtonInner': 'actionButtonInner_cc1819',
       
       'closeButton': '_6088c3df6d10c76d-closeButton',
-      'closeButtonInner': 'closeButtonInner__6088c',
-      'messageContents': 'messageContents__6088c',
-      // displayed in topBar
       'timestamp': '_6088c3df6d10c76d-timestamp',
 
-      'group': 'group__5cd44',
-
-      // holds action buttons and wrapper chain
-      'mediaContainerWrapper': 'wrapper_b2eddf',
-      // parent of mediaContainer
-      'mediaContainer': 'mediaContainer_b2eddf',
-      // parent of mediaWrapper
-      'mediaWrapper': 'mediaWrapper_b2eddf',
-      // parent of innerWrapper
-      'innerWrapper': 'innerWrapper_b2eddf',
-      // parent of imageWrapperZoom and imageWrapperParent (same element)
-      'imageWrapperZoom': 'wrapper_a22bfd',
-      // class named so as it has a zoomed class with same suffix. paired with imageWrapperParent... why are there so many wrappers.
-      'zoomed': 'zoomed_a22bfd',
-      // click on image
-      'imageWrapperParent': 'wrapper__091cf',
-      // paired with imageWrapperZoom. parent to imageWrapperInner
-      'imageWrapperInner': 'af017ab847f75d02-imageWrapper',
+      'imageWrapper': 'af017ab847f75d02-imageWrapper',
       // WHY ARE THERE SO MANY WRAPPERS. parent to loadingOverlay
       'loadingOverlay': 'af017ab847f75d02-loadingOverlay',
       // parent to the img element.
@@ -6063,16 +5956,12 @@ $classes: (
 
       'boost': (
         'content': 'a8c622117370c730-content',
-        'quantityIconWrapper': 'iconWrapper__96f95',
-        'quantityIcon': 'icon__96f95',
         'quantityValue': '_96f95c174d3b94a0-value',
         'upsellFooter': '_5e07c67f3bc3bdd9-upsellFooter',
       ),
     ),
 
     'poll': (
-      'container': 'container__53cea',
-
       'create': (
         'expressionPickerButton': '_7b84894a962b7eda-expressionPickerButton',
         'expressionPickerIconDefault': '_7b84894a962b7eda-expressionPickerIconDefault',
@@ -6672,9 +6561,6 @@ $classes: (
   // These classes may be paired with another though.
   // Shit definitely needs sorting.
   'other': (
-      'developerPortalCtaWrapper': 'developerPortalCtaWrapper_bf485f',
-      // Random stuff found while attempting to convert ClearVision 6 to this class format. Comments show where the selector is used.
-      // This category **WILL** be removed over time and without warning.
       'cv': (
           'bdSettingsSidebar': '#bd-settings-sidebar',
           // src/injectors/bd/sidebar.scss
