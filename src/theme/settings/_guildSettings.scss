@@ -197,12 +197,6 @@
 #{c(guildSettings subs avatarConnector)} {
   border-color: cv('shading.cardAlt') !important;
 }
-#{c(guildSettings subs viewServerButton)} {
-  background: cv('color.main');
-  &:hover {
-    background: cv('color.hover');
-  }
-}
 
 // SERVER BOOST
 #{c(guildSettings boost tierCard)} {

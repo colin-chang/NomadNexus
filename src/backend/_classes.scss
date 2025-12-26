@@ -903,8 +903,6 @@ $classes: (
     'buttonWithTextInnerContainer': 'buttonWithTextInnerContainer_fcb27c',
     'buttonWithTextIcon': 'buttonWithTextIcon_fcb27c',
     'buttonSpacing': 'buttonSpacing_fcb27c',
-    // right
-    'rightTrayIcon': 'rightTrayIcon__722ff',
 
     'participants': '_9c309f82892ed3cd-participants',
     // children usually are tileContainer and tileBaseContainer
@@ -2192,12 +2190,12 @@ $classes: (
     'filter': '_1feb0fca744244ab-filterBar',
 
     // loading
-    'loadingCardSkeleton': 'skeleton__72fa0',
-    'loadingBanner': 'bannerBody__72fa0',
-    'loadingCardBody': 'cardBody__72fa0',
-    'loadingCardContent': 'cardAvatar__72fa0' 'cardTitle__72fa0' 'cardDescription__72fa0' 'cardSummary__72fa0',
-    'loadingFeaturedSkeleton': 'skeleton__08415',
-    'loadingFeaturedBody': 'skeletonBody__08415',
+    'loadingCardSkeleton': 'e4f643832afbf3d3-productSkeletonCardContainer',
+    'loadingCardSkeletonAnimation': 'e4f643832afbf3d3-pulseAnimation',
+    'loadingCardContent': 'e4f643832afbf3d3-productSkeletonContent',
+    'loadingCardText': 'e4f643832afbf3d3-productSkeletonText',
+    'loadingFeaturedSkeleton': '_084152b107f71237-featuredBlockSkeleton',
+    'loadingFeaturedLogo': '_084152b107f71237-featuredBlockSkeletonLogo',
 
     // cards
     'card': 'fcbddd55b8b335a1-productCardContainer',
@@ -2720,7 +2718,6 @@ $classes: (
     'bottomButtonContainer': '_650eb104245d257b-tutorialContainer',
     'bottomButton': '_5bc7ed9d4097f6b5-circleIconButton',
     'bottomButtonSelected': '_5bc7ed9d4097f6b5-selected',
-    'bottomButtonDisabled': 'disabled__5bc7e',
     'bottomButtonIcon': '_5bc7ed9d4097f6b5-circleIcon',
     'lowerBadge': 'cc5dd25190031396-lowerBadge',
     'upperBadge': 'cc5dd25190031396-upperBadge',
@@ -3811,7 +3808,6 @@ $classes: (
     ),
 
     'profiles': (
-      'uploadImageOption': 'option__54675',
       'bioTextAreaContainer': '_6a919231d4bdfd4f-bioTextAreaContainer',
       'bioTextArea': '_6a919231d4bdfd4f-bioTextArea',
       'profileContainer': 'container_ba7f98',
@@ -3834,7 +3830,6 @@ $classes: (
       'decoration': (
         'gridItem': 'dfa67d97f51bb0c5-decorationGridItem',
         'gridItemSelected': 'dfa67d97f51bb0c5-selected',
-        'lockIconBadge': 'iconBadge_dfa67d',
         'preview': '_51743c06a2d65fd0-decorationPreview',
         'previewSmall': '_51743c06a2d65fd0-smallDecorationPreviewsContainer',
         'previewUpsell': '_51743c06a2d65fd0-shopPreviewContainer',
@@ -3852,7 +3847,6 @@ $classes: (
       'effect': (
         'gridItem': 'b4019af268c3fab7-effectGridItem',
         'gridItemSelected': 'b4019af268c3fab7-selected',
-        'lockIconBadge': 'lockBadge_b4019a',
         'description': '_92e520562ba50998-effectDescriptionNoGradient',
         'descriptionUpsell': '_92e520562ba50998-effectDescriptionBorderWithGradient',
         'descriptionContainer': '_92e520562ba50998-effectDescriptionContainer',
@@ -3883,16 +3877,14 @@ $classes: (
       'row': '_0624fc41b766635c-row',
     ),
 
-    'authedApps': (
-      'card': 'authedApp__50a54',
-      'permission': '_50a5493e9d9cc496-permission',
-      'permissionCheck': '_50a5493e9d9cc496-permissionCheckmark',
-      
+    'authedApps': (      
       // authed app redesign experiment
       'app': '_50a5493e9d9cc496-authedAppV2',
       'header': '_50a5493e9d9cc496-headerV2',
       'detailsContainer': '_50a5493e9d9cc496-appDetailsContainer',
-      'detailsSection': '_50a5493e9d9cc496-appDetailsSection',
+      'detailsSection': '_50a5493e9d9cc496-appDetailsSection',      
+      'permission': '_50a5493e9d9cc496-permission',
+      'permissionCheck': '_50a5493e9d9cc496-permissionCheckmark',
       'actionMenuButton': 'd84e0fd1f07926c7-actionMenuButton',
     ),
 
@@ -3904,15 +3896,13 @@ $classes: (
       'sessionIcon': '_803f2f55621144fb-sessionIcon',
       'sessionInfo': '_803f2f55621144fb-sessionInfo',
       'sessionInfoRow': '_803f2f55621144fb-sessionInfoRow',
-      'sessionsOther': 'otherSessions__803f2',
       'sessionMoreButton': '_803f2f55621144fb-sessionMoreButton',
       'sessionsLegacy': '_803f2f55621144fb-legacySession',
       'sessionsLogOutAllButton': '_803f2f55621144fb-logOutAllButton',
     ),
 
     'connections': (
-      'connectContainer': 'connectContainer_c7f964',
-      'connectHeader': 'connectHeader_c7f964',
+      'connectTopContainer': '_5a8382cf5c9d77df-container',
       'connectionsContainer': 'c7f964e7e0fc8b47-connectionsContainer',
       'accountButtonInner': 'c7f964e7e0fc8b47-accountButtonInner',
       'accountWrapper': 'c7f964e7e0fc8b47-accountAddWrapper',
@@ -3920,9 +3910,6 @@ $classes: (
 
       // click the rightward chevron ">"
       'modal': (
-        'container': 'container__750de',
-        'header': 'header__750de',
-        'title': 'title__750de',
         'connectionsContainer': '_750deea9823265e4-connectionsContainer',
         'accountButton': '_750deea9823265e4-accountBtn',
         'accountButtonInner': '_750deea9823265e4-accountBtnInner',
@@ -3938,12 +3925,11 @@ $classes: (
 
     'nitro': (
       // no nitro
+      'giftButton': '_82222a56733eb223-giftButton',
       'perkCard': 'b62c4e4ee0e62730-perkCard',
       'footerWrapper': '_70f7f6541f6f031e-wrapper',
-      'footerWrapperInner': 'innerWrapperV1__70f7f',
       'footerWrapperBase': '_70f7f6541f6f031e-innerWrapperBase',
       'footerSubButton': '_70f7f6541f6f031e-subButton',
-      'footerGiftButton': 'giftButton_b322b1',
 
       // with nitro
       'premiumtierCard': 'a45ed3bc8a11b547-tierCard',
@@ -3956,8 +3942,8 @@ $classes: (
       'giftImage': 'a45ed3bc8a11b547-giftImage',
       'giftInfo': 'a45ed3bc8a11b547-giftInfo',
       'giftText': 'a45ed3bc8a11b547-giftText',
-      'giftButton': 'a45ed3bc8a11b547-giftCardButton',
-      'giftButtonColor': 'a45ed3bc8a11b547-giftCardButtonColor',
+      'giftCardButton': 'a45ed3bc8a11b547-giftCardButton',
+      'giftCardButtonColor': 'a45ed3bc8a11b547-giftCardButtonColor',
     ),
 
     'boost': (
@@ -3970,7 +3956,6 @@ $classes: (
       'recognitionCard': '_744fffb886c6f25b-boosterRecognitionCard',
       'FAQ': '_744fffb886c6f25b-faq',
 
-      'transferSearch': 'selectSearch__39466',
       'transerSelectGuild': '_39466562bae551de-selectGuild',
       'transerSelectGuildIcon': '_39466562bae551de-selectGuildIcon',
       'transferButton': '_39466562bae551de-selectGuildPseudoCta',
@@ -3992,14 +3977,12 @@ $classes: (
     ),
 
     'billing': (
+      'descriptionWrapper': '_43963ae61224cded-descriptionWrapper',
       'defaultIndicator': '_43963ae61224cded-defaultIndicator',
       'premiumIndicator': '_43963ae61224cded-premiumIndicator',
-      'description': 'description__43963',
-      'descriptionWrapper': '_43963ae61224cded-descriptionWrapper',
+      'subText': '_43963ae61224cded-subText',
       'paymentPane': '_01014d2e38bd7c76-paymentPane',
-      'paginator': 'paginator__01014',
       'bottomDivider': '_01014d2e38bd7c76-bottomDivider',
-      'hoverablePayment': 'hoverablePayment_e9cb00',
       'payment': 'e9cb00d6250845ad-payment',
       'expandedInfo': 'e9cb00d6250845ad-expandedInfo',
       'codeRedemptionRedirect': 'a706ba33cbeb179a-codeRedemptionRedirect',
@@ -4008,7 +3991,6 @@ $classes: (
     'appearance': (
       'preview': '_3e443c6b2569044a-preview',
 
-      'themesPresets': 'presets__67a11',
       'themesBasicSelectors': 'fbfab602fa801e7a-basicThemeSelectors',
       'themesSelectorContainer': '_36dee59b8fa89219-themeSelectionContainer',
       'themesSelection': '_36dee59b8fa89219-themeSelection',
@@ -4023,7 +4005,6 @@ $classes: (
       'themesLightOverlay': '_36dee59b8fa89219-lightOverlay',
       'themesDarkOverlay': '_36dee59b8fa89219-darkOverlay',
 
-      'themesFeatureBorder': 'featureBorder_fbfab6',
       'themesHeader': '_67a117a74ffaf557-header',
       // "Colour", nitro icon, try etc
       'themesHeadings': '_67a117a74ffaf557-headings',
@@ -4053,7 +4034,7 @@ $classes: (
 
       'soundButton': '_84bad078060c37c1-soundButtonSettingContainer',
 
-      'cameraWrapper': 'cameraWrapper_d41d5f',
+      'cameraWrapper': '_11e1f74ed34823b2-cameraWrapper',
       'backgroundOption': '_53965a42989baf13-backgroundOption',
       'backgroundOptionRing': '_53965a42989baf13-backgroundOptionRing',
       'backgroundOptionInner': '_53965a42989baf13-backgroundOptionInner',
@@ -4346,7 +4327,6 @@ $classes: (
       'earningsPreviewContainer': '_02e4c53e15067b10-earningsPreviewContainer',
       'avatarCard': '_02e4c53e15067b10-avatarCard',
       'avatarConnector': '_02e4c53e15067b10-verticalConnector' '_02e4c53e15067b10-horizontalConnector',
-      'viewServerButton': 'viewServerButton__2485e',
     ),
 
     'boost': (
