@@ -3482,9 +3482,6 @@ $classes: (
     'green': 'c36707910f687430-tooltipGreen',
     'yellow': 'tooltipYellow_c36707',
 
-    'dialogWrapper': 'dialogWrapper_b1f768',
-    // hover on server icon
-
     // different css lines
     'stageListenerPill': 'b1f768426adf64d9-stageListenerPill',
   ),
@@ -5000,10 +4997,7 @@ $classes: (
       'messageGroup': 'e8b59c4b335dd2fc-messageGroupWrapper',
       'messageCozy': 'e8b59c4b335dd2fc-messageGroupCozy',
       'actionButtons': 'e8b59c4b335dd2fc-actionButtons',
-      'jumpButton': 'jumpButton_e8b59c',
-      'loading': 'loading_e8b59c',
-      'loadingVisible': 'visible_e8b59c',
-      'remove': 'closeIcon_e8b59c',
+      'buttonContainer': 'e8b59c4b335dd2fc-buttonContainer',
 
       // no pins
       'emptyPlaceholder': 'e8b59c4b335dd2fc-emptyPlaceholder',
@@ -5019,19 +5013,11 @@ $classes: (
 
     'inbox': (
       'popout': '_957962c2bd49881b-recentMentionsPopout',
+      'container': 'fc561d3c125f6a2f-container',
       'header': 'ab66419eae73260f-header',
       'tabBar': 'ab66419eae73260f-tabBar',
       'tab': 'ab66419eae73260f-tab',
-      'tabActive': 'active_f0cd33',
       'controls': 'ab66419eae73260f-controls',
-      'button': 'button__06eda',
-      'primary': '_06eda958b510be67-primary',
-      'secondary': '_06eda958b510be67-secondary',
-      // background secondary, hover primary
-      'tertiary': '_06eda958b510be67-tertiary',
-      // background tertiary, hover floating
-      'buttonDisabled': 'disabled__06eda',
-      'size32': '_06eda958b510be67-size32',
       'channelHeader': '_35a7ecf3aba351b2-channelHeader',
       'guildIcon': '_35a7ecf3aba351b2-guildIcon',
       'dmIcon': '_35a7ecf3aba351b2-dmIcon',
@@ -5055,7 +5041,6 @@ $classes: (
       'friendRequestsButton': '_523aa09e59621644-friendRequestsButton',
 
       'forYou': (
-        'container': 'fc561d3c125f6a2f-container',
         'bodyContainer': '_0f7115b4703f7b3a-container',
         'avatarContainer': 'db811b930f9884ca-container',
         'avatarMask': 'db811b930f9884ca-mask',
@@ -5067,23 +5052,20 @@ $classes: (
       'mentions': (
         'scroller': '_957962c2bd49881b-scroller',
         'container': '_957962c2bd49881b-container',
-        'close': 'closeButton__95796',
         'messageContainer': '_957962c2bd49881b-messageContainer',
         'message': '_957962c2bd49881b-message',
         'scrollingFooterWrap': 'e8b59c4b335dd2fc-scrollingFooterWrap',
       ),
 
       'unread': (
-        'popout': 'container__2692d',
         'scroller': '_2692d04af6567ec8-scroller',
         'tutorial': '_2692d04af6567ec8-tutorial',
         // "Stay up to date with the latest messages"
         'tutorialIcon': '_2692d04af6567ec8-tutorialIcon',
         'channel': '_427f0273a157ab7a-channel',
         'mentionBadge': '_35a7ecf3aba351b2-badge',
-        'markRead': 'markReadButton__427f0',
-        'collapseButton': 'collapseButton__427f0',
-        'collapsed': 'collapsed__427f0',
+        'collapseButton': '_35a7ecf3aba351b2-collapseButton',
+        'collapsed': '_35a7ecf3aba351b2-collapsed',
         'messages': '_1ccd1ba5cb2270c2-messages',
         'messageContainer': '_1ccd1ba5cb2270c2-messageContainer',
         'jumpButton': '_1ccd1ba5cb2270c2-jumpButton',
@@ -5106,7 +5088,6 @@ $classes: (
         'threadIcon': 'd9c8822889d1d4a1-threadIcon',
         'title': 'd9c8822889d1d4a1-title',
         'divider': 'd9c8822889d1d4a1-divider',
-        'searchBox': 'searchBox_d9c882',
         'spacer': 'd9c8822889d1d4a1-spacer',
         'createButton': 'd9c8822889d1d4a1-createButton',
         'closeIcon': 'd9c8822889d1d4a1-closeIcon',
@@ -5138,12 +5119,12 @@ $classes: (
     
     // @everyone with a larger server
     'mentionWarning': (
-      'popout': 'contentWarningPopout_be95d0',
-      'body': 'body_be95d0',
-      'animation': 'animation_be95d0',
-      'content': 'content_be95d0',
-      'header': 'header_be95d0',
-      'footer': 'footer_be95d0',
+      'popout': 'd2eed6166a4ad770-contentWarningPopout',
+      'body': 'd2eed6166a4ad770-body',
+      'animation': 'd2eed6166a4ad770-animation',
+      'content': 'd2eed6166a4ad770-content',
+      'header': 'd2eed6166a4ad770-header',
+      'footer': 'd2eed6166a4ad770-footer',
     ),
 
     // Click either an Emoji or a Sticker within chat
@@ -5161,16 +5142,9 @@ $classes: (
       // contains background-image
     ),
 
-    // click on guild tag beside user name
-    'guildTag': (
-      'spinner': 'spinnerContainer__86bf6',
-      'container': 'container__86bf6',
-    ),
-
     'streamPreview': (
       'popout': '_6da2d8abf659f945-streamPreview',
       'previewContainer': '_6da2d8abf659f945-previewContainer',
-      'watchButton': 'watchButton__6da2d',
     ),
 
     'vcPreview': (
@@ -5222,95 +5196,30 @@ $classes: (
       'bottom': 'faf9c0f0be1b8685-animatorBottom',
     ),
 
-    // When creating a new channel
-    'createChannel': (
-      // different line for some reason
-      'searchBar': 'searchBar__3e00d',
-
-      // make a private channel and click next
-      // more -- i cannot remember how to pull this up.
-      'modal': 'modal_ac72c6',
-      'modalContent': 'modalContent_ac72c6',
-      'modalFooter': 'modalFooter_ac72c6',
-      'footer': 'footer_ac72c6',
-      'description': 'description_ac72c6',
-      'name': 'name_ac72c6',
-      'type': 'type_ac72c6',
-      'icon': 'icon_ac72c6',
-      'error': 'error_ac72c6',
-      'header': 'header_ac72c6',
-      'title': 'title_ac72c6',
-      'subtitle': 'subtitle_ac72c6',
-      'subtitleIcon': 'subtitleIcon_ac72c6',
-      'closeButton': 'closeButton_ac72c6',
-      'sectionTitle': 'sectionTitle_ac72c6',
-      'clone': 'clone_ac72c6',
-      'permissionsTitle': 'permissionsTitle_ac72c6',
-      'background': 'background_ac72c6',
-      'foreground': 'foreground_ac72c6',
-      'inputWrapper': 'inputWrapper_ac72c6',
-      'inputInner': 'inputInner_ac72c6',
-      'inputPrefix': 'inputPrefix_ac72c6',
-      'switchIcon': 'switchIcon_ac72c6',
-      'channelTypeDescription': 'channelTypeDescription_ac72c6',
-      'storeChannelOptionSelector': 'storeChannelOptionSelector_ac72c6',
-      'username': 'username_ac72c6',
-      'emptyRoles': 'emptyRoles_ac72c6',
-      'owner': 'owner_ac72c6',
-      'addMembersContainer': 'addMembersContainer_ac72c6',
-      'addMemberError': 'addMemberError_ac72c6',
-      'createError': 'createError_ac72c6',
-      'channelNameNote': 'channelNameNote_ac72c6',
-      'radioLabelName': 'radioLabelName_ac72c6',
-      'radioLabelDescription': 'radioLabelDescription_ac72c6',
-      'newBadge': 'newBadge_ac72c6',
-      'radioBar': 'radioBar_ac72c6',
-      'radioBarLabel': 'radioBarLabel_ac72c6',
-      'radioBarIcon': 'radioBarIcon_ac72c6',
-      'radioItemName': 'radioItemName_ac72c6',
-    ),
-
-    // When creating a new event
-    'createEvent': (
-      'container': 'container_f2ceaa',
-      'progressBar': 'progressBar_f2ceaa',
-      // tab at top, unselected
-      'progressBarSelected': 'selectedProgressBar_f2ceaa',
-      // above selected
-      'stepContainer': 'stepContainer_f2ceaa',
-
-      'textInput': 'textInput__97cfe',
-      // different line for some reason
-      'previewCard': 'f7034805b8d6babc-previewCard',
-    ),
-
     // In a server with pending/active events, click "x Event(s)" at the top of the sidebar
-    'eventsList': (
+    'events': (
       'header': 'd0b769b126b63b86-header',
       'content': 'd0b769b126b63b86-content',
       'icon': 'd0b769b126b63b86-icon',
       // if cihld of iconButton, it's the close button
       'divider': 'd0b769b126b63b86-divider',
-      'button': 'button_d0b769',
       'iconButton': 'd0b769b126b63b86-iconButton',
-    ),
 
-    // Within modal above, click an event
-    // two major rules apply to this modal
-    'eventFull': (
-      'modal': 'root__4325e',
-      'banner': '_4325e98657f9a511-banner',
-      'container': '_4325e98657f9a511-container',
-      'contentContainer': 'contentContainer__4325e',
-      'footer': 'footer__4325e',
-    ),
+      'statusContainer': '_290218226e53085c-eventStatusContainer',
+      'isRecurring': '_290218226e53085c-isRecurring',
+      // events that repeat every week
+      'statusLabel': '_290218226e53085c-eventStatusLabel',
 
-    // When reading an event, either in preview modal or list modal
-    'eventCard': (
+      // main page      
       'card': '_8826425bb0684b12-card',
-      'header': '_4efb4560fd616a25-container',
-      'guildIcon': 'guildIcon__88264',
       'rsvpCount': 'b5010be6beaa8120-rsvpCount',
+
+      // Within modal above, click an event
+      'eventinfo': (
+        'tabContainer': '_4efb4560fd616a25-container',
+        'banner': '_4325e98657f9a511-banner',
+        'container': '_4325e98657f9a511-container',
+      ),
     ),
 
     // Clicking on an invite in your browser while not signed in and being redirect to the app
@@ -5320,7 +5229,6 @@ $classes: (
       'contentWrapper': '_9b0f44488203477c-contentWrapper',
       'inviteSplash': '_9b0f44488203477c-inviteSplash',
       // has style for background image
-      'scroller': 'scroller_ed5743',
       'headerContainer': 'fa285ee86b386220-container',
       // houses guild icon, guild name, online/total count
       'guildIcon': 'fa285ee86b386220-guildIcon',
@@ -5332,14 +5240,6 @@ $classes: (
       'pillIconOnline': '_921c50dc4baa4b4f-pillIconOnline',
       'pillMessage': 'pillMessage_b83a05',
       'pillIconTotal': '_921c50dc4baa4b4f-pillIconTotal',
-      // edit notification button
-      'editProfileContainer': 'editProfileContainer__42179',
-    ),
-
-    // Click "Invite People" in the server header dropdown
-    'inviteOthers': (
-      'scroller': 'scroller__67dba',
-      'footer': 'footer__67dba',
     ),
 
     // "Time Out" on another user
@@ -5350,17 +5250,6 @@ $classes: (
       // there are many more classes in the group below
       'selectorButton': '_0907c3e69b3b62a9-selectorButton',
       'selectorButtonSelected': '_0907c3e69b3b62a9-selectorButtonSelected',
-    ),
-
-    'ban': (
-      'radioItem': 'radioItemStyles__837b7',
-      'otherReasonClickable': 'banReasonOtherClickable__837b7',
-    ),
-
-    // Click the x next to a pinned message OR pin a message WITHOUT holding shift
-    // Not to be confused with pinned; this isn't a dropdown
-    'pin': (
-      'message': 'message__89466',
     ),
 
     // Get an incoming call
@@ -5430,12 +5319,6 @@ $classes: (
       'footer': 'b962dc319e969a3f-footer',
       'submitButton': 'b962dc319e969a3f-submitButton',
       'formItem': 'b962dc319e969a3f-formItem',
-      'resendButton': 'resendButton_b962dc',
-      'confirmation': 'confirmation_b962dc',
-      'confirmationContent': 'confirmationContent_b962dc',
-      'confirmationButtonRow': 'confirmationButtonRow_b962dc',
-      'confirmationButton': 'confirmationButton_b962dc',
-      'confirmationButtonColumn': 'confirmationButtonColumn_b962dc',
       'notice': 'b962dc319e969a3f-notice',
       'rejectionReasonLabel': 'rejectionReasonLabel_b962dc',
       'rejectionReason': 'rejectionReason_b962dc',
@@ -5454,13 +5337,18 @@ $classes: (
     ),
 
     'screenshare': (
+      'root': '_7f7273e3e762eb9d-root',
+      'header': '_7f7273e3e762eb9d-header',
+      'content': '_7f7273e3e762eb9d-content',
+      'footer': '_7f7273e3e762eb9d-footer',
+      'footerContent': '_7f7273e3e762eb9d-footerContent',
+
       // selector pills
       'pillContainer': '_9e06aaa5aecd6e3e-pillContainer',
       'pillItem': '_9e06aaa5aecd6e3e-pillItem',
       'pillItemSelected': '_9e06aaa5aecd6e3e-pillItemSelected',
 
       'source': 'febe194135dcdd22-source',
-      'sourceSelected': 'selectedSource_febe1',
       'sourcePreviewContainer': 'febe194135dcdd22-sourcePreviewContainer',
       'sourcePreview': 'febe194135dcdd22-sourcePreview',
       'sourceOverlayCTA': 'febe194135dcdd22-sourceOverlayCTA',
@@ -5475,40 +5363,37 @@ $classes: (
       'optionContainer': '_949ab4d1e52789e8-optionContainer',
     ),
 
-    // On a message with reactions, right click and click "Show reactions"
-    'reactions': (
-      'modal': 'container_cc2dff',
-      'sidebar': 'scroller_cc2dff',
-      'default': 'reactionDefault_cc2dff',
-      'selected': 'reactionSelected_cc2dff',
-      'reactors': 'reactors_cc2dff',
-    ),
-
     // Ctrl+K or Ctrl+T to open (CMD on Mac)
     'quickswitcher': (
-      'container': 'container_ac6cb0',
       'modal': 'ac6cb02cd15b4b3b-quickswitcher',
       'search': 'ac6cb02cd15b4b3b-input',
       'scroller': 'ac6cb02cd15b4b3b-scroller',      
       'result': '_71961da99d37ac57-result',
-      'ping': 'wrapper_dc0b29',
     ),
 
-    // Quickly join and leave a server for a modal with this to show up
-    // Will show up if you select anything but happy in the "How'd x go?" rating modal
-    // You'll also have to have not clicked the "don't show me this again" box
-    'problemInfo': (
+
+    // Stay within a voice channel/call or run an activity to show this up
+    // You'll also have to have not ticked the "don't show me this again" box
+    // All of this is done within the base-modal header
+    'rating': (
+      'headerContainer': '_6c12c295172334d8-headerContainer',
+      'body': '_6c12c295172334d8-ratingBody',      
       'section': '_6c12c295172334d8-problemInfo',
+
+      'ratingSelector': '_5c58ba104cdd0a54-ratingSelector',
+      'emojis': '_5c58ba104cdd0a54-emojis',
+      'emojiContainer': '_5c58ba104cdd0a54-emojiContainer',
+      'emoji': '_5c58ba104cdd0a54-emoji',
+      'emojiSelected': '_5c58ba104cdd0a54-selected',
+      'sad': '_5c58ba104cdd0a54-sadFace',
+      'neutral': '_5c58ba104cdd0a54-neutralFace',
+      'happy': '_5c58ba104cdd0a54-happyFace',
+      
+      // Will show up if you select anything but happy in the "How'd x go?" rating modal
       'root': '_66e7e7f9b4da60b0-root',
       'option': '_66e7e7f9b4da60b0-option',
       'text': '_66e7e7f9b4da60b0-text',
       'caret': '_66e7e7f9b4da60b0-caret',
-    ),
-
-    // Submit feedback in above
-    'submitFeedback': (
-      // literally on own rule for no margin
-      'title': 'title__62160',
     ),
 
     // Get timed out. Use an alt to time you out. Best not to attempt it on any non-private servers
@@ -5536,47 +5421,6 @@ $classes: (
       'icon': '_3fde7e375925af75-icon',
     ),
 
-    // Click on a banned user under the bans tab in server settings
-    'bannedUser': (
-      'modal': 'bannedUserModal_a73dc3',
-      'header': 'header_a73dc3',
-      'username': 'userUsername_a73dc3',
-      'discrim': 'userDiscrim_a73dc3',
-      'content': 'content_a73dc3',
-      // contains reason
-      'reasonHeader': 'reasonHeader_a73dc3',
-      'footer': 'footer_a73dc3',
-    ),
-
-    // Change Nickname of another user in a server
-    // These could apply to friends.
-  'nicknameChange': (
-    'modalContent': 'modalContent__9522a',
-    'card': 'card__9522a',
-    'warningText': 'warning__9522a',
-    'itemGroup': 'itemGroup__9522a',
-    // used for "Nickname" title
-    'disabled': 'disabled__9522a',
-    'nickError': 'nickError__9522a',
-    'reset': 'reset__9522a',
-
-    // friends nickname. they don't seem to overlap in retrospect.
-    'friends': (
-        'description': 'description_d9ee11',
-        'input': 'input_d9ee11',
-        'reset': 'reset_d9ee11',
-      ),
-    ),
-
-    // Within server settings, click "members" and then "prune" at the top
-    // aka "purge"
-    'prune': (
-        'pruneDetails': 'pruneDetails_ce3fe1',
-        'role': 'role_ce3fe1',
-        'content': 'content_bad290',
-        'spacing': 'spacing_bad290',
-      ),
-
     // Create Group DM
     // classes could be used elsewhere; all classes ripped from two rules, both nowhere near each other
     // Click the plus in the header of the private messages sidebar
@@ -5585,7 +5429,6 @@ $classes: (
         'popout': 'cba5926a3ea0ad97-popout',
         'searchBar': 'cba5926a3ea0ad97-searchBar',
         'searchBarComponent': 'searchBarComponent_cba592',
-        'addButton': 'addButton_cba592',
         'subtitleWarning': 'subtitleWarning_cba592',
         'scroller': 'cba5926a3ea0ad97-scroller',
         'mobileToolsContainer': 'cba5926a3ea0ad97-mobileToolsContainer',
@@ -5598,7 +5441,6 @@ $classes: (
         'noFriends': 'noFriends_cba592',
         'partyFull': 'partyFull_cba592',
         'noResults': 'cba5926a3ea0ad97-noResults',
-        'footerSeparator': 'footerSeparator_e6af9c',
         'footer': 'cba5926a3ea0ad97-footer',
         'selectExistingFormHeader': 'cba5926a3ea0ad97-selectExistingFormHeader',
         'confirmChannelItemContainer': 'cba5926a3ea0ad97-confirmChannelItemContainer',
@@ -5615,76 +5457,17 @@ $classes: (
         'browser': '_9a792ca8df2a06f0-browser',
       ),
 
-    // Stay within a voice channel/call or run an activity to show this up
-    // You'll also have to have not ticked the "don't show me this again" box
-    // All of this is done within the base-modal header
-    'rating': (
-        'headerContainer': '_6c12c295172334d8-headerContainer',
-        'body': '_6c12c295172334d8-ratingBody',
-        'ratingSelector': 'ratingsSelector__6c12c',
-        'emojis': 'emojis__6c12c',
-        'emoji': 'emoji__6c12c',
-        'emojiSelected': 'selected__6c12c',
-        'sad': 'emojiSad__6c12c',
-        'neutral': 'emojiNeutral__6c12c',
-        'happy': 'emojiHappy__6c12cb',
-      ),
-
-    // Click the rocket within the chat bar or
-    // Click the rocket within the panel within the voice panel
-    'activities': (
-        'root': 'root__52f07',
-
-        'shelfTopBackground': 'shelfTopBackground__52f07',
-        // also on fg class
-        'shelfTopForeground': 'shelfTopForeground__52f07',
-
-        // z index only
-        'header': 'modalHeader__52f07',
-        'shelfTitle': 'activityShelfTitle__52f07',
-        'closeButton': 'modalCloseButton__52f07',
-
-        'divider': 'modalDivider__52f07',
-
-        'slideContainerSquished': 'slideContentOuterContainerSquished__52f07',
-        'slideContainerTall': 'slideContentOuterContainerTall__52f07',
-        'scrollContainer': 'scrollContainer__35455',
-
-        'scrollBackgroundContainer': 'scrollBackgroundContainer__35455',
-
-        'scrollSection': '!scrollSection-HnJkHK',
-        'nitroCTAContainer': '!tierCtaContainer-f-B1mz',
-        'shelf': '!shelf-3D6g4D',
-        'item': '!activityItem-1Z9CTr',
-        'image': '!activityImage-3308Ih',
-        'video': '!activityVideo-3VVUcy',
-        // also has image class, has anim and pos. duplicated as child with video tag rather than div
-        'overlayBadge': '!overlayBadge-2HAW2N',
-        'badgeContainer': '!badgeContainer-2a1nPp',
-        'textContainer': '!activityTextContainer-2l4Dnr',
-        // body of item
-        'tagsContainer': '!activityTagsContainer-2tHK0W',
-        'tag': '!activityTag-3C3YK5',
-
-        'footer': '!footer-yVEuwO',
-      ),
+    
 
     // Change your avatar (or banner w/ nitro) or a server's icon
     'avatarUpload': (
-        'header': 'modalHeader_edf440',
-        'title': 'modalTitle_edf440',
-        'closeButton': 'modalCloseButton_edf440',
         'content': 'edf4408c2c04bc10-modalContent',
-        'imagePickerContainer': 'imagePickerContainer_edf440',
-        'optionBox': 'optionBox_edf440',
-        'text': 'optionBoxText_edf440',
-        'description': 'optionBoxDescription_edf440',
-        'contentCircle': 'contentCircle_edf440',
-        'uploadIcon': 'uploadIcon_edf440',
+        'option': 'edf4408c2c04bc10-option',
+        'imageUploadOption': 'edf4408c2c04bc10-imageUploadOption',
         'gifGrid': 'edf4408c2c04bc10-gifGrid',
         'gif': 'edf4408c2c04bc10-gif',
-        'gifIconContainer': 'gifIconContainer_edf440',
-        'gifIcon': 'gifIcon_edf440',
+        'iconAndLabel': 'edf4408c2c04bc10-optionIconAndLabel',
+        'text': ' edf4408c2c04bc10-optionLabelText',
 
         // Gif Picker
         // no nitro preview thing
@@ -5701,9 +5484,6 @@ $classes: (
           ),
         // Picker itself, uses the main gif modal as children classes
         'gifPicker': (
-            'header': 'modalHeader__6c39d',
-            'titleCase': 'titleCase__6c39d',
-            'closeButton': 'modalCloseButton__6c39d',
             'picker': '_6c39d2934561b275-gifPicker',
             'loadingOverlay': '_6c39d2934561b275-loadingOverlay',
             'spinner': '_6c39d2934561b275-spinner',
@@ -5793,7 +5573,6 @@ $classes: (
         'modalIn': 'b7854763c4a57c63-uploadModalIn',
 
         'modal': 'b7854763c4a57c63-uploadDropModal',
-        'error': 'error_b78547',
         // upload a folder to get this to appear
         // "pops" are in another (sub) category
         'bgScale': 'b7854763c4a57c63-bgScale',
