@@ -60,11 +60,6 @@
   &#{c(guildList bottomButtonSelected)} {
     background: cv('color.main');
   }
-  &:hover {
-    &:not(#{c(guildList bottomButtonDisabled)}) {
-      background: cv('color.hover');
-    }
-  }
 }
 
 // NEW MENTION
