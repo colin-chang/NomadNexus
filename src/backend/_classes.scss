@@ -2519,11 +2519,11 @@ $classes: (
 
     // video quest modal
     'video': (
-      'root': 'modalRoot__45776',
-      'background': 'modalBg__45776',
-      'body': 'modalBody__45776',
-      'content': 'modalContent__45776',
-      'footer': 'contentFooter__45776',
+      'root': 'modalRoot__8fb25',
+      'background': 'modalBg__8fb25',
+      'body': 'modalBody__8fb25',
+      'content': 'modalContent__8fb25',
+      'footer': 'contentFooter__8fb25',
     ),
   ),
 
@@ -4961,15 +4961,10 @@ $classes: (
       // contains background-image
     ),
 
-    'streamPreview': (
-      'popout': 'streamPreview__6da2d',
-      'previewContainer': 'previewContainer__6da2d',
-    ),
-
     'vcPreview': (
-      // hover private vc with members playing games/listening to spotify
-      'popout': 'container__4e30a',
-      'peopleContainer': 'container_b1bfd4',
+      // hover vc with members
+      'popout': 'popover_d6f39b',
+      'streamPreview': 'previewContainer__0489e',
     ),
   ),
 
