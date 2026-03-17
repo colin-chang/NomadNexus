@@ -9,7 +9,8 @@
 // CHANNELS BACKGROUND
 #{c(sidebar list)} {
   border-top-left-radius: 10px;
-  border: none;
+  border: none; 
+  backdrop-filter: none; // vanilla has blur(0) that breaks transparent bgs
 }
 #{c(sidebar server container)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.2));
