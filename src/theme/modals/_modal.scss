@@ -1,12 +1,36 @@
 @use 'backend' as *;
 
+// NomadNexus: frosted glass modals
 #{c(modals root)} {
-  background: cv('shading.modal');
-  border: none;
-  box-shadow: none;
+  @include glass;
+  border-radius: 8px;
+  overflow: hidden;
 }
 #{c(modals header)},
 #{c(modals body)},
 #{c(modals footer)} {
   background: transparent;
+}
+
+// Backdrop scrim for modal layer
+[class*='layerContainer_'] [class*='layer_'] > div:not([class]):has(> [role='dialog']) {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+// Event creation / fullscreen modal override
+[class*='root_'][class*='fullscreenOnMobile_'] {
+  background: cv('glass.bgOpaque');
+}
+
+// NomadNexus: light theme modals
+:is(#{c(main themeLight)}) {
+  #{c(modals root)} {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(16px) saturate(1.6);
+    -webkit-backdrop-filter: blur(16px) saturate(1.6);
+    border: 1px solid rgba(208, 215, 222, 0.5);
+    box-shadow: 0 8px 32px rgba(36, 41, 47, 0.10);
+  }
 }

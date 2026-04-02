@@ -5,7 +5,7 @@
   background: transparent;
 }
 
-// PROFILE LOADING
+// PROFILE LOADING — NomadNexus: frosted glass
 #{c(popouts loading popout)} {
-  background: cv('shading.popout');
+  @include glass;
 }

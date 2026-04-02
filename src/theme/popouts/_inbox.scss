@@ -1,8 +1,8 @@
 @use 'backend' as *;
 
-// SHARED
+// SHARED — NomadNexus: frosted glass inbox
 #{c(popouts inbox popout)} {
-  background: cv('shading.popout');
+  @include glass-scrim;
   box-shadow: none;
 }
 #{c(popouts inbox header)} {

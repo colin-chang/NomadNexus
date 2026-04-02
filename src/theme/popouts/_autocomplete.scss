@@ -1,14 +1,22 @@
 @use 'backend' as *;
 
+// NomadNexus: frosted glass autocomplete
 #{c(popouts autocomplete popout)} {
-  background: cv('shading.popout');
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   box-shadow: none;
+  --background-surface-high: transparent;
+  --background-modifier-hover: transparent;
+  --background-modifier-selected: rgba(255, 255, 255, 0.08);
+  --background-modifier-active: rgba(255, 255, 255, 0.08);
+  --background-surface-overlay: transparent;
 }
 #{c(popouts autocomplete clickable)} {
   &[aria-disabled=false] {
     #{c(popouts autocomplete base)} {
       &:hover {
-        background: cv('color.hover');
+        background: rgba(255, 255, 255, 0.08);
       }
     }
   }
@@ -31,5 +39,25 @@
   &,
   &:hover {
     background: cv('color.main');
+  }
+}
+
+// NomadNexus: light theme autocomplete
+:is(#{c(main themeLight)}) {
+  #{c(popouts autocomplete popout)} {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(14px) saturate(1.5);
+    -webkit-backdrop-filter: blur(14px) saturate(1.5);
+    --background-modifier-selected: rgba(0, 0, 0, 0.06);
+    --background-modifier-active: rgba(0, 0, 0, 0.06);
+  }
+  #{c(popouts autocomplete clickable)} {
+    &[aria-disabled=false] {
+      #{c(popouts autocomplete base)} {
+        &:hover {
+          background: rgba(0, 0, 0, 0.06);
+        }
+      }
+    }
   }
 }

@@ -19,6 +19,16 @@
 }
 #{c(modals quickswitcher result)} {
   &[aria-selected=true] {
-    background: cv('color.hover')
+    background: cv('color.hover');
+  }
+}
+
+// NomadNexus: light theme quick switcher — white text on selected
+:is(#{c(main themeLight)}) {
+  #{c(modals quickswitcher result)} {
+    &[aria-selected=true] {
+      color: #ffffff;
+      * { color: #ffffff; }
+    }
   }
 }

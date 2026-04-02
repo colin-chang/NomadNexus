@@ -1,7 +1,8 @@
 @use 'backend' as *;
 
+// NomadNexus: frosted glass search
 #{c(popouts search container)} {
-  background: cv('shading.popout');
+  @include glass-scrim;
   border: none;
 }
 

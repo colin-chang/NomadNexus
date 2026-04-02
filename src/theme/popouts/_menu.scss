@@ -1,13 +1,27 @@
 @use 'backend' as *;
 
+// NomadNexus: frosted glass context menu (using ::before pseudo approach)
 #{c(popouts menus menu)} {
-  background: cv('shading.popout');
-  border: none;
+  @include glass-pseudo;
   border-radius: 5px;
+}
+// Light theme: no backdrop-filter, opaque bg
+:is(#{c(main themeLight)}) {
+  #{c(popouts menus menu)} {
+    background: rgba(245, 246, 250, 0.92);
+    border: 1px solid rgba(208, 215, 222, 0.5);
+    box-shadow: 0 8px 32px rgba(36, 41, 47, 0.10);
+    &::before {
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+    }
+  }
 }
 #{c(popouts menus colorDefault)} {
   &#{c(popouts menus itemFocused)} {
     background-color: cv('color.hover');
+    color: #ffffff;
+    svg { color: #ffffff; fill: #ffffff; }
   }
   &:active {
     &:not(#{c(popouts menus itemHideInteraction)}) {

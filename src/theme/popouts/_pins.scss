@@ -1,8 +1,8 @@
 @use 'backend' as *;
 
+// NomadNexus: frosted glass pins
 #{c(popouts pins popout)} {
-  background: cv('shading.popout');
-  box-shadow: none;
+  @include glass;
 }
 #{c(popouts pins header)},
 #{c(popouts pins footer)} {

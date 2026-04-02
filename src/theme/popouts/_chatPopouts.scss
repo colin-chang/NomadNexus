@@ -1,28 +1,25 @@
 @use 'backend' as *;
 
-// EMOJI & STICKER INFO / NEW MEMBER POPOUT
+// EMOJI & STICKER INFO / NEW MEMBER POPOUT — NomadNexus: glass
 #{c(popouts emojiStickerPopout container)} {
-  background: cv('shading.popout');
-  box-shadow: none;
+  @include glass;
   backdrop-filter: none;
 }
 #{c(popouts emojiStickerPopout guildSection)} {
   background: transparent;
 }
 
-// STICKER SUGGESTION - right click in chat input and hover on suggestions
+// STICKER SUGGESTION
 #{c(popouts stickerSuggestion background)} {
-  background: cv('shading.popout');
-  border: none;
+  @include glass;
   &::after {
-    border-top-color: cv('shading.popout');
+    border-top-color: cv('glass.bg');
   }
 }
 
 // MENTION WARNING
 #{c(popouts mentionWarning popout)} {
-  background: cv('shading.popout');
-  box-shadow: none;
+  @include glass;
 }
 :is(#{c(main themeDark)}, #{c(main themeLight)}) {
   #{c(popouts mentionWarning footer)} {
@@ -32,7 +29,7 @@
 
 // VC PREVIEW
 #{c(popouts vcPreview popout)} {
-  background: cv('shading.popout');
+  @include glass;
 }
 #{c(popouts vcPreview streamPreview)} {
   background: transparent;

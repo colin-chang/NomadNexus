@@ -8,11 +8,11 @@
     }
   }
 }
+// NomadNexus: frosted glass dropdown
 #{c(popouts dropdown popout)} {
   &,
   &#{c(popouts dropdown positionTop)} {
-    background: cv('shading.popout');
-    border: none;
+    @include glass;
   }
 }
 #{c(popouts dropdown option)} {
@@ -44,7 +44,7 @@
   }
 }
 #{c(popouts dropdown dropdown)} {
-  background-color: cv('shading.popout');
+  @include glass-opaque;
 }
 
 #{c(popouts dropdown listBoxItem)} {
