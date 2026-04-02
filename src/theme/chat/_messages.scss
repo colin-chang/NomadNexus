@@ -14,6 +14,15 @@
   color: cv('text.strong');
 }
 
+// NomadNexus: light theme bot tags & badges
+:is(#{c(main themeLight)}) {
+  [class*='botTag_'],
+  [class*='roleIcon_'] {
+    background: rgba(76, 143, 214, 0.12);
+    color: cv('color.main');
+  }
+}
+
 // EDITING
 #{c(chat operations)} {
   a {

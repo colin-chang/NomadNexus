@@ -149,3 +149,21 @@
     color:var(--control-critical-primary-text-default);
   }
 }
+
+// NomadNexus: light theme — white text on filled buttons
+:is(#{c(main themeLight)}) {
+  #{c(button lookFilled)} {
+    color: #ffffff;
+  }
+  // Preserve semantic colors on critical secondary
+  #{c(button new criticalSecondary)} {
+    color: var(--control-critical-secondary-text-default);
+    &:hover { color: var(--control-critical-secondary-text-hover); }
+    &:active { color: var(--control-critical-secondary-text-active); }
+  }
+  // Add friend selected state
+  [class*='addFriend_'][class*='selected_'],
+  [class*='addFriend_'][class*='selected_'] span {
+    color: #ffffff;
+  }
+}
