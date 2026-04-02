@@ -8,6 +8,10 @@ select,
 textarea,
 ::placeholder {
   font-family: cv('font.main');
+  font-weight: 450;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 // CODE
@@ -19,4 +23,48 @@ code {
 ::selection {
   background: cv('color.main');
   color: cv('text.normal');
+}
+
+// NomadNexus: light theme selection
+:is(#{c(main themeLight)}) {
+  ::selection {
+    background: rgba(76, 143, 214, 0.28);
+    color: #24292f;
+  }
+}
+
+// NomadNexus: text stroke for message content
+[class*='messageContent'],
+[class*='markup'] {
+  -webkit-text-stroke: 0.15px rgba(0, 0, 0, 0.8);
+}
+
+:is(#{c(main themeDark)}, #{c(main themeDarker)}, #{c(main themeMidnight)}) {
+  [class*='messageContent'],
+  [class*='markup'] {
+    -webkit-text-stroke: 0.15px rgba(255, 255, 255, 1);
+  }
+}
+
+// NomadNexus: message line height
+[class*='messageContent']:not([class*='repliedTextContent_'] *):not([class*='repliedTextContent_']),
+[class*='markup']:not(pre):not(code):not([class*='repliedTextContent_'] *):not([class*='repliedTextContent_']) {
+  line-height: 1.45;
+}
+
+// Reply preview — compact line height
+[class*='repliedTextContent_'] [class*='markup'],
+[class*='repliedTextContent_'] [class*='messageContent'] {
+  line-height: 1.375;
+}
+
+// NomadNexus: hyperlink colors
+[class*='messageContent'] a,
+[class*='markup'] a {
+  color: cv('color.main');
+  text-decoration: none;
+  &:hover {
+    color: cv('color.hover');
+    text-decoration: underline;
+  }
 }

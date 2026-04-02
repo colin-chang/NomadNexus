@@ -167,3 +167,20 @@
   z-index: -1;
   border-radius: 999px 0 0 999px;
 }
+
+// NomadNexus: light theme channel selected state
+:is(#{c(main themeLight)}) {
+  #{c(sidebar server channels wrapper)} {
+    &#{c(sidebar server channels selected)} {
+      #{c(sidebar server channels link)} {
+        &::before {
+          background: rgba(76, 143, 214, 0.13);
+        }
+      }
+      #{c(sidebar server channels name)},
+      #{c(sidebar server channels icon)} {
+        color: #ffffff;
+      }
+    }
+  }
+}

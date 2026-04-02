@@ -81,3 +81,24 @@
     background: cv('color.main');
   }
 }
+
+// NomadNexus: light theme guild styling
+:is(#{c(main themeLight)}) {
+  #{c(guildList guildIcon)} {
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.08));
+  }
+  #{c(guildList pillItem)} {
+    background-color: #3c4451;
+  }
+  #{c(guildList bottomButton)} {
+    background-color: rgba(60, 68, 81, 0.12);
+    color: #3c4451;
+    &:hover:not(#{c(guildList bottomButtonDisabled)}) {
+      background: cv('color.hover');
+      color: cv('text.strong');
+    }
+  }
+  [class*='folderIconWrapper'] {
+    background-color: rgba(60, 68, 81, 0.15);
+  }
+}

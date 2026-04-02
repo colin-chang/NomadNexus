@@ -1,34 +1,44 @@
 @use 'backend' as *;
 
-// SCROLLBAR
-#{c(scroller auto)} {
-  &::-webkit-scrollbar {
-    width: 14px;
+// NomadNexus: thin scrollbar, transparent by default, visible on hover
+:is(#{c(scroller auto)}, #{c(scroller thin)}) {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  &:hover {
+    scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
   }
-  &::-webkit-scrollbar-thumb,
-  &::-webkit-scrollbar-track {
-    border: 3px solid transparent;
-    border-radius: 7px;
+
+  &::-webkit-scrollbar {
+    width: 3px;
   }
   &::-webkit-scrollbar-track {
     background: transparent;
   }
-}
-#{c(scroller thin)} {
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-  &::-webkit-scrollbar-thumb,
-  &::-webkit-scrollbar-track {
-    border: 3px solid transparent;
-    border-radius: 5px;
-  }
-}
-:is(#{c(scroller auto)}, #{c(scroller thin)}) {
   &::-webkit-scrollbar-thumb {
-    background-color: cv('color.main');
-    &:active {
-      background-color: cv('color.hover');
+    background-color: transparent;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  &:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  &::-webkit-scrollbar-thumb:active {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+// Light theme scrollbar
+:is(#{c(main themeLight)}) {
+  :is(#{c(scroller auto)}, #{c(scroller thin)}) {
+    scrollbar-color: transparent transparent;
+    &:hover {
+      scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+    }
+    &:hover::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+    &::-webkit-scrollbar-thumb:active {
+      background-color: rgba(0, 0, 0, 0.3);
     }
   }
 }

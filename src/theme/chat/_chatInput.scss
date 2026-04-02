@@ -64,3 +64,10 @@
     border-top-color: cv('shading.popout');
   }
 }
+
+// NomadNexus: light theme chat input
+:is(#{c(main themeLight)}) {
+  #{c(chatForm channelTextArea)} {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}

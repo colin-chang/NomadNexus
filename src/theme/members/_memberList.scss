@@ -181,3 +181,16 @@
     filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
   }
 }
+
+// NomadNexus: light theme selected member — white text
+:is(#{c(main themeLight)}) {
+  #{c(memberList selected)} {
+    #{c(memberList nameContainer)} {
+      -webkit-text-fill-color: #ffffff;
+    }
+    #{c(memberList activityText)},
+    strong {
+      color: #ffffff;
+    }
+  }
+}

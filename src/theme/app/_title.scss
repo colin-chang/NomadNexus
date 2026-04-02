@@ -9,3 +9,14 @@
   gap: 0;
   margin: 0 6px;
 }
+
+// NomadNexus: remove leading pseudo-elements and fieldset borders
+[class*='leading_'] {
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+fieldset {
+  border: none;
+}

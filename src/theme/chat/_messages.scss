@@ -28,21 +28,114 @@
   }
 }
 
-// CODEBLOCK
+// CODEBLOCK — NomadNexus: GitHub Dark style
 #{c(hljs hljs)} {
-  background: cv('shading.card');
-  border: 1px solid var(--border-normal);
+  background: #0d1117;
+  border: 1px solid #30363d;
 }
 #{c(chat markup)} {
   code {
-    background: cv('shading.card');
-    // INLINE
+    // INLINE — GitHub Dark
     &#{c(chat codeInline)} {
-      border:none;
-      background: hsl(from cv('shading.card') h s calc(100 - l) / calc(alpha * 0.5));
-      padding: 2px 6px
+      border: none;
+      background: rgba(110, 118, 129, 0.4);
+      color: #e6edf3;
+      border-radius: 6px;
+      padding: 0.15em 0.35em;
+      font-size: 85%;
     }
   }
+  // CODE BLOCK CONTAINER
+  pre {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 85%;
+    margin: 0.25rem 0;
+    padding: 0;
+    code,
+    .hljs {
+      display: block;
+      background: transparent;
+      border: 0;
+      margin: 0;
+      padding: 12px;
+      color: #c9d1d9;
+      line-height: 1.45;
+    }
+    ::selection {
+      background: #264f78;
+      color: #e6edf3;
+    }
+  }
+}
+
+// NomadNexus: GitHub Dark syntax highlighting
+.hljs-comment,
+.hljs-quote { color: #8b949e; }
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst { color: #ff7b72; }
+.hljs-string,
+.hljs-doctag { color: #a5d6ff; }
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable { color: #79c0ff; }
+.hljs-type,
+.hljs-built_in,
+.hljs-class .hljs-title { color: #ffa657; }
+.hljs-function .hljs-title,
+.hljs-title.function_ { color: #d2a8ff; }
+.hljs-attribute,
+.hljs-name,
+.hljs-selector-class { color: #7ee787; }
+
+// NomadNexus: light theme code blocks — GitHub Light
+:is(#{c(main themeLight)}) {
+  #{c(hljs hljs)} {
+    background: #f6f8fa;
+    border-color: #d0d7de;
+  }
+  #{c(chat markup)} {
+    code#{c(chat codeInline)} {
+      background: rgba(175, 184, 193, 0.2);
+      color: #24292f;
+      border: 1px solid rgba(175, 184, 193, 0.4);
+    }
+    pre {
+      background: #f6f8fa;
+      border-color: #d0d7de;
+      code,
+      .hljs {
+        color: #24292f;
+      }
+      ::selection {
+        background: #b6d4f7;
+      }
+    }
+  }
+  // GitHub Light syntax highlighting
+  .hljs-comment,
+  .hljs-quote { color: #6e7781; }
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-subst { color: #cf222e; }
+  .hljs-string,
+  .hljs-doctag { color: #0a3069; }
+  .hljs-number,
+  .hljs-literal,
+  .hljs-variable,
+  .hljs-template-variable { color: #0550ae; }
+  .hljs-type,
+  .hljs-built_in,
+  .hljs-class .hljs-title { color: #953800; }
+  .hljs-function .hljs-title,
+  .hljs-title.function_ { color: #8250df; }
+  .hljs-attribute,
+  .hljs-name,
+  .hljs-selector-class { color: #116329; }
 }
 
 // REPLY
@@ -60,6 +153,23 @@
   #{c(chat replied spineHovered)} {
     opacity: 1;
   }
+}
+
+// NomadNexus: fix reply text clipping
+[class*='repliedMessage_'] {
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}
+[class*='repliedTextPreview_'] {
+  min-width: 0;
+  flex: 1 1 0%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+[class*='repliedTextContent_'] {
+  display: contents;
 }
 
 // EXECUTE COMMAND

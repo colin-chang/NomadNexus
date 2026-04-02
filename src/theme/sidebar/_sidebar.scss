@@ -6,3 +6,19 @@
     display: none;
   }
 }
+
+// NomadNexus: light theme sidebar overlay for frosted appearance
+:is(#{c(main themeLight)}) {
+  #{c(sidebar sidebar)} {
+    position: relative;
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.38);
+      pointer-events: none;
+      z-index: 1;
+    }
+  }
+}

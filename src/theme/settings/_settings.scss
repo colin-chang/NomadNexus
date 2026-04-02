@@ -91,3 +91,10 @@
 #{c(settings colorPickerPopout)} {
   background: cv('shading.popout');
 }
+
+// NomadNexus: dark theme content panel contrast
+:is(#{c(main themeDark)}, #{c(main themeDarker)}, #{c(main themeMidnight)}) {
+  [class*='sidebar_'] ~ [class*='contentRegion'] {
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
