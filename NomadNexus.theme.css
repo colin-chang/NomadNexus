@@ -1,16 +1,15 @@
 /**
- * @name ClearVision V7
- * @author ClearVision Team
- * @version 7.0.1
- * @description Highly customizable theme for BetterDiscord and Vencord.
- * @source https://github.com/ClearVision/ClearVision-v7
- * @website https://clearvision.github.io
- * @invite dHaSxn3
+ * @name NomadNexus
+ * @author Colin Chang
+ * @version 1.0.0
+ * @description Frosted glass Discord theme for BetterDiscord and Vencord.
+ * @source https://github.com/ColinChangCC/NomadNexus
+ * @website https://colinchangcc.github.io/NomadNexus
  */
 /* IMPORT CSS */
-@import url("https://clearvision.github.io/ClearVision-v7/main.css");
-@import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
-@import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
+@import url("https://colinchangcc.github.io/NomadNexus/main.css");
+@import url("https://colinchangcc.github.io/NomadNexus/betterdiscord.css");
+@import url("https://colinchangcc.github.io/NomadNexus/vencord.css");
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
