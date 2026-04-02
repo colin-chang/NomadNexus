@@ -25,6 +25,19 @@
   filter: cv('bg.app.filter');
   z-index: -1;
 }
+// NomadNexus: light theme frosted overlay — gradient is applied directly on the
+// element instead of via --background-image to avoid multi-layer var() parsing issues.
+:is(#{c(main themeLight)}) #{c(main bg)} {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 1)
+    ),
+    cv('bg.app.img') cv('bg.app.pos')/cv('bg.app.size') no-repeat !important;
+  background-attachment: cv('bg.app.attach');
+}
 
 // LOADING
 #{c(loading container)} {

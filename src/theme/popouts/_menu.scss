@@ -5,47 +5,48 @@
   @include glass-pseudo;
   border-radius: 5px;
 }
-// Light theme: no backdrop-filter, opaque bg
-:is(#{c(main themeLight)}) {
-  #{c(popouts menus menu)} {
-    background: rgba(245, 246, 250, 0.92);
-    border: 1px solid rgba(208, 215, 222, 0.5);
-    box-shadow: 0 8px 32px rgba(36, 41, 47, 0.10);
-    &::before {
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
-    }
-  }
-}
 #{c(popouts menus colorDefault)} {
   &#{c(popouts menus itemFocused)} {
     background-color: cv('color.hover');
-    color: #ffffff;
-    svg { color: #ffffff; fill: #ffffff; }
+    color: #ffffff !important;
+    // All text content — primary and secondary labels
+    * { color: #ffffff !important; }
+    // SVG icons: set both color and fill to cover all rendering modes
+    svg, svg path, svg circle, svg rect, svg use {
+      color: #ffffff !important;
+      fill: #ffffff !important;
+    }
+    // Preserve radio indicator — outer ring must stay transparent to show selection state
+    #{c(radio standaloneIndicator)} {
+      #{c(radio base)}, #{c(radio fill)} {
+        fill: none !important;
+      }
+    }
   }
   &:active {
     &:not(#{c(popouts menus itemHideInteraction)}) {
       background-color: cv('color.main');
-    }    
+      color: #ffffff !important;
+      * { color: #ffffff !important; }
+      svg, svg path, svg circle, svg rect { color: #ffffff !important; fill: #ffffff !important; }
+    }
     #{c(popouts menus label)} {
-      color: var(--interactive-text-active);
+      color: #ffffff !important;
     }
   }
 }
 #{c(popouts menus colorDanger)} {
   &#{c(popouts menus itemFocused)} {
     background-color: cv('color.danger');
-    &:not(#{c(popouts menus checkboxContainer)}) {
-      // discord does it this way
-      path {
-        fill: var(--interactive-text-active);
-      }
-    }
+    color: #ffffff !important;
+    * { color: #ffffff !important; }
+    svg, svg path, svg circle, svg rect { color: #ffffff !important; fill: #ffffff !important; }
   }
   &:active {
     &:not(#{c(popouts menus itemHideInteraction)}) {
       background-color: cv('color.danger');
-      color: var(--interactive-text-active);
+      color: #ffffff !important;
+      * { color: #ffffff !important; }
     }
   }
 }
@@ -53,7 +54,19 @@
 #{c(popouts menus item)} {
   &#{c(popouts menus itemFocused)} {
     #{c(popouts menus label)} {
-      color: var(--interactive-text-active);
+      color: #ffffff !important;
+    }
+  }
+}
+
+// Light theme: radio ring uses dark --icon-strong by default; override to white when focused
+:is(#{c(main themeLight)}) #{c(popouts menus colorDefault)}#{c(popouts menus itemFocused)} {
+  #{c(radio standaloneIndicator)} {
+    #{c(radio base)}, #{c(radio fill)} {
+      stroke: #ffffff !important;
+    }
+    #{c(radio dot)} {
+      fill: #ffffff !important;
     }
   }
 }

@@ -61,14 +61,20 @@
   background: hsl(from var(--custom-role-label-color) h s l/.2);
 }
 
-// NomadNexus: light theme chat area — transparent for background visibility
+// NomadNexus: light theme chat area
 :is(#{c(main themeLight)}) {
   #{c(chat chat)} {
     background: rgba(255, 255, 255, 0);
   }
+  // Chat scroller — slight white tint for readability distinction
+  #{c(chat chatContentInner)},
+  #{c(chat chatScrollerNSFW)} {
+    background: rgba(255, 255, 255, 0.22);
+  }
+  // Member list — mid-tone matching channel list range
   [class*='membersWrap_'],
   aside[class*='members'] {
-    background: rgba(242, 244, 248, 0.1);
+    background: rgba(234, 236, 245, 0.45);
   }
 }
 

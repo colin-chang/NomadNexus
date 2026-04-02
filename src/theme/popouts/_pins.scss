@@ -1,8 +1,8 @@
 @use 'backend' as *;
 
-// NomadNexus: frosted glass pins
+// NomadNexus: frosted glass pins (glass-scrim matches inbox popout style)
 #{c(popouts pins popout)} {
-  @include glass;
+  @include glass-scrim;
 }
 #{c(popouts pins header)},
 #{c(popouts pins footer)} {

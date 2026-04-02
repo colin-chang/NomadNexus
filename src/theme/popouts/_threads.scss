@@ -1,7 +1,7 @@
 @use 'backend' as *;
 
 #{c(popouts threads popoutBrowser)} {
-  background-color: cv('shading.popout');
+  @include glass-scrim;
   box-shadow: none;
 }
 #{c(popouts threads header)} {
@@ -26,7 +26,7 @@
 
 // HOVER CHANNEL POPOUT
 #{c(popouts threads channelPopout)} {
-  background-color: cv('shading.popout');
+  @include glass;
 }
 
 

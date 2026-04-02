@@ -9,12 +9,15 @@
   &[data-selected] {
     :is(#{c(radio base)}, #{c(radio fill)}) {
       fill: none;
-      stroke:cv('icon.strong')
+      stroke: cv('icon.strong');
+    }
+    &[data-selected='true'] #{c(radio dot)} {
+      fill: cv('icon.strong');
     }
     &:not([data-disabled]):hover {
       :is(#{c(radio base)}, #{c(radio fill)}) {
         fill: none;
-        stroke: cv('icon.strong')
+        stroke: cv('icon.strong');
       }
     }
   }

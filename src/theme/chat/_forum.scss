@@ -7,7 +7,7 @@
 // HEADER
 #{c(forums header)} {
   background: cv('shading.input.bg');
-  border: 2px solid cv('shading.input.border');
+  border: 1px solid cv('shading.input.border');
   #{c(input input)} {
     background: none;
     box-shadow: none;
@@ -19,7 +19,7 @@
 }
 #{c(forums matchingPostsRow)} {
   background: cv('shading.input.bg');
-  border: 2px solid cv('shading.input.border');
+  border: 1px solid cv('shading.input.border');
   border-top: 1px solid var(--border-subtle);
 }
 
@@ -50,7 +50,7 @@
   :is(#{c(main themeDark)}, #{c(main themeLight)}) &#{c(pages tags selected)} {
     background: cv('color.main');
     border-color: cv('color.main');
-    color: var(--interactive-text-active);
+    color: #ffffff;
     &:not(#{c(pages tags disabled)}) {
       &:hover {
         background: cv('color.hover');
@@ -85,15 +85,14 @@
 
 // CARD
 :is(#{c(forums grid card)}, #{c(forums list card)}) {
-  // might need theme-dark/light in the future
-  background: cv('shading.card');
+  background: var(--glass-bg-scrim);
   border: 2px solid transparent;
   &:hover {
-    background: cv('shading.card');
+    background: var(--glass-bg-scrim);
     border-color: cv('color.hover');
   }
   &:is(#{c(forums grid isOpen)}, #{c(forums list isOpen)}) {
-    background: cv('shading.card');
+    background: var(--glass-bg-scrim);
     border-color: cv('color.main');
   }
 }
@@ -114,16 +113,29 @@
 }
 #{c(forums chat header icon)} {
   path {
-    fill: var(--interactive-icon-active);
+    fill: white;
   }
 }
 #{c(forums chat bar container)} {
-  background: transparent;
-  border: none;
+  @include glass;
+  border-radius: 8px;
+}
+// The outer glass container provides the visual treatment; reset the inner text area
+#{c(forums textArea)} {
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 // EMPTY
 #{c(forums empty)} {
+  background: transparent;
+}
+
+// GETTING STARTED CHECKLIST (container_a68543 / stepContainer_a68543 not yet in class map)
+.container_a68543 {
+  background: var(--glass-bg-scrim);
+}
+.stepContainer_a68543 {
   background: transparent;
 }
 

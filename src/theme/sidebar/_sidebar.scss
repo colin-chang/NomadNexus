@@ -7,16 +7,17 @@
   }
 }
 
-// NomadNexus: light theme sidebar overlay for frosted appearance
+// NomadNexus: light theme sidebar — mid-tone base, reduced overlay for panel distinction
 :is(#{c(main themeLight)}) {
   #{c(sidebar sidebar)} {
+    background: rgba(236, 238, 246, 0.50);
     position: relative;
     &:after {
       display: block;
       content: '';
       position: absolute;
       inset: 0;
-      background: rgba(255, 255, 255, 0.38);
+      background: rgba(255, 255, 255, 0.20);
       pointer-events: none;
       z-index: 1;
     }

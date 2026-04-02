@@ -2,9 +2,9 @@
 
 // NomadNexus: frosted glass autocomplete
 #{c(popouts autocomplete popout)} {
-  background: rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: var(--glass-bg-scrim);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   box-shadow: none;
   --background-surface-high: transparent;
   --background-modifier-hover: transparent;
@@ -42,21 +42,46 @@
   }
 }
 
-// NomadNexus: light theme autocomplete
+// NomadNexus: light theme autocomplete (matching original custom.css §26)
 :is(#{c(main themeLight)}) {
+  // Selected slash command category — white label + icon
+  // selected__1a58a is a grandchild of categoryHeader_d1405b — CSS vars set on it
+  // cannot affect ancestor header__14245 (text) or sibling-uncle headerLabel__.
+  // Must set vars on the common ancestor (categoryHeader) using :has().
+  #{c(popouts autocomplete categoryHeader)}:has(#{c(popouts autocomplete categorySelected)}) {
+    --text-default: #ffffff;
+    --interactive-text-default: #ffffff;
+  }
   #{c(popouts autocomplete popout)} {
     background: rgba(255, 255, 255, 0.88);
     backdrop-filter: blur(14px) saturate(1.5);
     -webkit-backdrop-filter: blur(14px) saturate(1.5);
-    --background-modifier-selected: rgba(0, 0, 0, 0.06);
-    --background-modifier-active: rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(208, 215, 222, 0.7);
+    box-shadow: 0 4px 20px rgba(36, 41, 47, 0.08);
+    --background-modifier-selected: rgba(36, 41, 47, 0.06);
+    --background-modifier-active: rgba(36, 41, 47, 0.06);
   }
   #{c(popouts autocomplete clickable)} {
+    // Hover: same solid brand color as keyboard selection
+    &[aria-disabled=false]:hover {
+      background: cv('color.main');
+      color: #ffffff !important;
+      * { color: #ffffff !important; }
+      svg, svg path, svg circle { fill: #ffffff !important; }
+    }
     &[aria-disabled=false] {
       #{c(popouts autocomplete base)} {
-        &:hover {
-          background: rgba(0, 0, 0, 0.06);
-        }
+        &:hover { background: transparent; }
+      }
+    }
+    // Selected: brand color on row container to avoid left/right gap artifacts
+    &[aria-selected='true'] {
+      background: cv('color.hover');
+      #{c(popouts autocomplete base)} {
+        background: transparent;
+        color: #ffffff !important;
+        * { color: #ffffff !important; }
+        svg, svg path, svg circle { color: #ffffff !important; fill: #ffffff !important; }
       }
     }
   }

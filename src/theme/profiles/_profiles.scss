@@ -39,27 +39,16 @@
 #{c(profile outer)} {
   border: none;
   &:not(#{c(profile customTheme)}) {
-    @include glass-dense;
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
+    background: transparent;
     border-radius: 10px;
     overflow: hidden;
     #{c(profile inner)} {
-      background: transparent;
+      @include glass;
     }
   }
 }
 #{c(profile overlay)} {
   background-color: cv('shading.card');
-}
-
-// NomadNexus: light theme profile popout
-:is(#{c(main themeLight)}) {
-  #{c(profile outer)}:not(#{c(profile customTheme)}) {
-    background: cv('glass.bgDense');
-    border: 1px solid cv('glass.borderColor');
-    box-shadow: cv('glass.shadow');
-  }
 }
 
 // STATUS

@@ -9,3 +9,34 @@
 #{c(popouts loading popout)} {
   @include glass;
 }
+
+// NomadNexus: light theme — general glass for all popouts and overlay layers
+// Covers: notification settings, user info popout, APP launcher, search panels, etc.
+:is(#{c(main themeLight)}) {
+  // Generic popout containers
+  [class*='popout']:not([class*='messagesPopoutWrap_']):not([class*='messagesPopout_']):not([class*='recentMentionsPopout']):not([class*='popoutText_']):not([class*='popoutBottom_']),
+  // Mana-component overlay layers (APP launcher, search panel, etc.)
+  [class*='layerContainer'] [class*='layer'] > div[data-mana-component]:not([class*='messagesPopout_']) {
+    background: cv('glass.bg');
+    backdrop-filter: cv('glass.blur');
+    -webkit-backdrop-filter: cv('glass.blur');
+    border: 1px solid cv('glass.borderColor');
+    box-shadow: cv('glass.shadow');
+  }
+
+  // User profile popout card (animates in from side)
+  :is(
+    [class*='animatorLeft_'],
+    [class*='animatorRight_'],
+    [class*='fade_']
+  ) [role='dialog'] > [class*='outer_'],
+  [role='dialog'] > [class*='outer_'][class*='theme-light'] {
+    background: cv('glass.bgDense') !important;
+    backdrop-filter: blur(0px) !important;
+    -webkit-backdrop-filter: blur(0px) !important;
+    border: 1px solid cv('glass.borderColor') !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    box-shadow: 0 8px 40px rgba(36, 41, 47, 0.16) !important;
+  }
+}

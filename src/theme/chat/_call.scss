@@ -55,3 +55,8 @@
 #{c(call quickSelectPopout)} {
   background: cv('shading.popout')
 }
+
+// VOICE CONNECTION DEBUG / DETAILS POPOUT
+#{c(other cv connectionDebugPopout)} {
+  @include glass-scrim;
+}

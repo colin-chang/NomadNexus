@@ -4,47 +4,47 @@
 }
 
 @mixin glass {
-  background: cv('glass.bg');
-  backdrop-filter: cv('glass.blur');
-  -webkit-backdrop-filter: cv('glass.blur');
-  border: 1px solid cv('glass.borderColor');
-  box-shadow: cv('glass.shadow');
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border-color);
+  box-shadow: var(--glass-shadow);
 }
 
 @mixin glass-dense {
-  background: cv('glass.bgDense');
-  backdrop-filter: cv('glass.blur');
-  -webkit-backdrop-filter: cv('glass.blur');
-  border: 1px solid cv('glass.borderColor');
-  box-shadow: cv('glass.shadow');
+  background: var(--glass-bg-dense);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border-color);
+  box-shadow: var(--glass-shadow);
 }
 
 @mixin glass-scrim {
-  background: cv('glass.bgScrim');
-  backdrop-filter: cv('glass.blur');
-  -webkit-backdrop-filter: cv('glass.blur');
+  background: var(--glass-bg-scrim);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
 }
 
 @mixin glass-opaque {
-  background: cv('glass.bgOpaque');
-  border: 1px solid cv('glass.borderColor');
-  box-shadow: cv('glass.shadow');
+  background: var(--glass-bg-opaque);
+  border: 1px solid var(--glass-border-color);
+  box-shadow: var(--glass-shadow);
 }
 
 // For context menus where backdrop-filter creates containing block issues
 // that break position: fixed on sub-menus
 @mixin glass-pseudo {
   position: relative;
-  background: cv('glass.bgScrim');
-  border: 1px solid cv('glass.borderColor');
-  box-shadow: cv('glass.shadow');
+  background: var(--glass-bg-scrim);
+  border: 1px solid var(--glass-border-color);
+  box-shadow: var(--glass-shadow);
   &::before {
     content: '';
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    backdrop-filter: cv('glass.blur');
-    -webkit-backdrop-filter: cv('glass.blur');
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
     pointer-events: none;
     z-index: -1;
   }

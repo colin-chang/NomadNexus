@@ -18,7 +18,7 @@
 
 // TOOLTIP
 #{c(chat reactions tooltip tooltip)} {
-  background: cv('shading.popout');
+  @include glass;
 }
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {
   #{c(chat reactions tooltip button)} {

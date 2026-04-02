@@ -4,6 +4,7 @@
 #{c(main appLayer)} {
   background-color: transparent;
 }
+
 #{c(settings contentRegion)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
 }
@@ -92,9 +93,9 @@
   background: cv('shading.popout');
 }
 
-// NomadNexus: dark theme content panel contrast
+// NomadNexus: dark theme content panel contrast (lighter than sidebar)
 :is(#{c(main themeDark)}, #{c(main themeDarker)}, #{c(main themeMidnight)}) {
   [class*='sidebar_'] ~ [class*='contentRegion'] {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.14);
   }
 }

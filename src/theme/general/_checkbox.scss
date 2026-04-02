@@ -9,3 +9,16 @@
     }
   }
 }
+
+// Light theme: keep transparent background, show dark tick for visibility
+:is(#{c(main themeLight)}) {
+  #{c(checkbox option)}[data-selected] {
+    &,
+    &:hover:not([data-disabled]) {
+      #{c(checkbox tick)} {
+        stroke: cv('color.main');
+        color: cv('color.main');
+      }
+    }
+  }
+}

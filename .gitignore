@@ -109,3 +109,5 @@ public-unminified/
 docs/
 archive/
 .DS_Store
+.github/
+.claude

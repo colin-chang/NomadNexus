@@ -11,19 +11,22 @@
 
 // NomadNexus: light theme settings sidebar
 :is(#{c(main themeLight)}) {
-  [class*='sidebar__'] [class*='input__'] {
+  [class*='sidebar__'] [class*='input__']:not([class*='searchBarContainer'] *) {
     background: rgba(255, 255, 255, 0.6);
     color: #24292f;
   }
   [class*='sidebar__'] [class*='item_'][class*='active_'] > [class*='itemContent_'],
   [class*='sidebar__'] [class*='item_'][class*='active_'] > [class*='itemContent_'] > div,
-  [class*='sidebar__'] [class*='item_'][class*='active_'] > [class*='itemContent_'] svg {
+  [class*='sidebar__'] [class*='item_'][class*='active_'] > [class*='itemContent_'] svg,
+  [class*='sidebar__'] [class*='item_'][class*='active_'] > [class*='itemContent_'] svg path {
     color: #ffffff;
+    fill: #ffffff;
   }
   // Discover page selected nav item
   [class*='navItem_'][class*='selected_'],
-  [class*='navItem_'][class*='selected_'] :is(svg, [class*='navItemIcon_']) {
+  [class*='navItem_'][class*='selected_'] :is(svg, [class*='navItemIcon_']),
+  [class*='navItem_'][class*='selected_'] svg path {
     color: #ffffff;
-    fill: currentColor;
+    fill: #ffffff;
   }
 }

@@ -25,6 +25,8 @@ Based on [ClearVision v7](https://github.com/ClearVision/ClearVision-v7) by the 
 #### Light mode
 ![Light mode](previews/theme_light.jpg)
 
+> Note: All images used in this theme are sourced from the internet. If there is any copyright infringement, please contact the author to have them removed immediately. Thank you for your feedback.
+
 ## Installing
 
 ### BetterDiscord

@@ -41,7 +41,7 @@
 
 // NOISE CANCELLATION
 #{c(sidebar panel voice noiseCancellation popout)} {
-  background: cv('shading.popout');
+  @include glass-scrim;
 }
 
 // QUEST

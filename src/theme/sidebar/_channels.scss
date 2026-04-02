@@ -168,18 +168,30 @@
   border-radius: 999px 0 0 999px;
 }
 
-// NomadNexus: light theme channel selected state
+// NomadNexus: light theme channel selected state — use solid accent color
+// matching dark theme behavior for consistent visual weight
 :is(#{c(main themeLight)}) {
   #{c(sidebar server channels wrapper)} {
     &#{c(sidebar server channels selected)} {
       #{c(sidebar server channels link)} {
         &::before {
-          background: rgba(76, 143, 214, 0.13);
+          background: var(--hsl-channel-selected-bg);
         }
       }
       #{c(sidebar server channels name)},
       #{c(sidebar server channels icon)} {
         color: #ffffff;
+        svg, svg path { fill: #ffffff; color: #ffffff; }
+      }
+      // All icons in selected channel row — text and fill both white
+      svg, svg path,
+      [class*='actionIcon'],
+      [class*='actionIcon'] svg,
+      [class*='actionIcon'] svg path,
+      [class*='children'] svg,
+      [class*='children'] svg path {
+        color: #ffffff;
+        fill: #ffffff;
       }
     }
   }

@@ -32,8 +32,13 @@
   }
 }
 
-// CONTENT
-#{c(userSettings content)},
+// CONTENT — slightly lighter than sidebar for visual distinction
+#{c(userSettings content)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.15));
+}
+:is(#{c(main themeLight)}) #{c(userSettings content)} {
+  background: var(--glass-bg-scrim);
+}
 #{c(userSettings contentHeader)} {
   background: transparent;
 }
@@ -42,6 +47,9 @@
 #{c(userSettings account profileCard)} {
   background: cv('shading.card');
 }
+:is(#{c(main themeLight)}) [class*='accountProfileCard'] {
+  background: var(--glass-bg);
+}
 #{c(userSettings account badgeList)},
 #{c(userSettings account fieldBackground)},
 #{c(userSettings account fieldList)} {
@@ -49,8 +57,10 @@
 }
 
 // ACCOUNT STANDING
-#{c(userSettings account standing container)},
-#{c(userSettings account standing avatarBackground)} {
+// Reset card background — our cardPrimary rule sets --__card-accent-color to hsl-card-shading,
+// which overrides Discord's own transparent value on this element.
+#{c(userSettings account standing container)} {
+  --__card-accent-color: transparent;
   background: transparent;
 }
 

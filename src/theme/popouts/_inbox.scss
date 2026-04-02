@@ -1,8 +1,19 @@
 @use 'backend' as *;
 
 // SHARED — NomadNexus: frosted glass inbox
+// Outer inbox container (wraps all tabs)
 #{c(popouts inbox popout)} {
   @include glass-scrim;
+  box-shadow: none;
+}
+// Mentions tab content carries BOTH .messagesPopoutWrap_e8b59c (pins) and
+// .recentMentionsPopout__95796 (inbox). The pins rule adds glass + border.
+// Compound selector (0,2,0) beats the pins single-class rule (0,1,0).
+#{c(popouts pins popout)}#{c(popouts inbox popout)} {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
   box-shadow: none;
 }
 #{c(popouts inbox header)} {
@@ -19,7 +30,7 @@
 }
 #{c(popouts inbox emptyIcon)} {
   background: cv('color.main');
-  color: var(--interactive-icon-active);
+  color: #ffffff;
 }
 #{c(popouts inbox jumpButton)} {
   background: cv('color.main');

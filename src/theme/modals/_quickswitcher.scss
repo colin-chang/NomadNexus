@@ -1,7 +1,13 @@
 @use 'backend' as *;
 
+// Quick Switcher result list — override global [role='listbox'] opaque-bg rule
+#{c(modals quickswitcher modal)} [role='listbox'] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
 #{c(modals quickswitcher scroller)} {
-  background: transparent;  
+  background: transparent;
   &::-webkit-scrollbar {
     width: 10px;
   }
@@ -11,7 +17,7 @@
 }
 #{c(modals quickswitcher search)} {
   background: cv('shading.input.bg');
-  border: 2px solid cv('shading.input.border');
+  border: 1px solid cv('shading.input.border');
   &:focus-within {
     border-color: cv('color.main');
     box-shadow: 0 0 2px 0 cv('color.main');
@@ -23,12 +29,13 @@
   }
 }
 
-// NomadNexus: light theme quick switcher — white text on selected
+// NomadNexus: light theme quick switcher — white text + icons on selected
 :is(#{c(main themeLight)}) {
   #{c(modals quickswitcher result)} {
     &[aria-selected=true] {
       color: #ffffff;
       * { color: #ffffff; }
+      svg, svg path { fill: #ffffff; color: #ffffff; }
     }
   }
 }

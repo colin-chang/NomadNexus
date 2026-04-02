@@ -117,15 +117,17 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 // overides discord defaults
 :is(#{c(main themeLight)}, #{c(main themeDark)} #{c(main themeLight)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
+  // NomadNexus: light theme uses a different background image
+  --background-image: url(https://raw.githubusercontent.com/colin-chang/NomadNexus/refs/heads/master/images/taylor.jpg);
   --background-shading: rgba(252, 252, 252, 0.3);
   --card-shading: rgba(252, 252, 252, 0.3);
-  --popout-shading: rgba(252, 252, 252, 0.7);
-  --modal-shading: rgba(252, 252, 252, 0.5);
-  --input-shading: rgba(0, 0, 0, 0.3);
+  --popout-shading: rgba(255, 255, 255, 0.55);
+  --modal-shading: rgba(255, 255, 255, 0.45);
+  --input-shading: rgba(0, 0, 0, 0.05);
   // ALSO EDITABLE
   --normal-text: #36363c;
   --muted-text: #75757e;
-  // NomadNexus: frosted glass tokens (Light)
+  // NomadNexus: frosted glass tokens (Light) — matching original custom.css
   --glass-bg: rgba(255, 255, 255, 0.78);
   --glass-bg-dense: rgba(255, 255, 255, 0.92);
   --glass-bg-opaque: rgba(245, 246, 250, 0.94);
@@ -135,7 +137,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --glass-panel-bg: #ffffff;
   --glass-blur: blur(20px) saturate(1.8);
 
-  // NomadNexus: light theme panel backgrounds (semi-transparent for frosted appearance)
+  // NomadNexus: light theme panel backgrounds (matching original custom.css)
   --background-tertiary: rgba(240, 242, 246, 0.82);
   --background-secondary: rgba(245, 246, 250, 0.76);
   --background-primary: rgba(255, 255, 255, 0.62);

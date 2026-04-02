@@ -3,7 +3,7 @@
 #{c(slider slider)} {
   #{c(slider bar)},
   #{c(slider markDash)} {
-    background: cv('shading.card');
+    background-color: var(--slider-track-background);
   }
   #{c(slider barFill)} {
     background: cv('color.main');

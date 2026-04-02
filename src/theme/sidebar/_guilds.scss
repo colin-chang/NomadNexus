@@ -82,23 +82,63 @@
   }
 }
 
-// NomadNexus: light theme guild styling
+// NomadNexus: light theme guild styling (matching original custom.css §23)
 :is(#{c(main themeLight)}) {
+  // Guild bar background — subtle tint for panel separation
+  #{c(guildList wrapper)} {
+    background: rgba(210, 214, 222, 0.2);
+  }
   #{c(guildList guildIcon)} {
-    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.08));
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.18));
   }
   #{c(guildList pillItem)} {
     background-color: #3c4451;
   }
+  // Home button icon — dark color for visibility against light background
+  #{c(guildList homeWrapper)} {
+    background-color: rgba(60, 68, 81, 0.28);
+    > svg {
+      color: #3c4451;
+      fill: #3c4451;
+    }
+  }
+  #{c(guildList iconWrapper)} {
+    &:hover {
+      #{c(guildList homeWrapper)} {
+        background-color: cv('color.hover');
+        > svg { color: #ffffff; fill: #ffffff; }
+      }
+    }
+    &#{c(guildList selected)} {
+      #{c(guildList homeWrapper)} {
+        background-color: cv('color.main');
+        > svg { color: #ffffff; fill: #ffffff; }
+      }
+    }
+  }
+  // Bottom buttons (Add Server, Discover)
   #{c(guildList bottomButton)} {
     background-color: rgba(60, 68, 81, 0.12);
     color: #3c4451;
+    svg { color: #3c4451; fill: #3c4451; }
     &:hover:not(#{c(guildList bottomButtonDisabled)}) {
       background: cv('color.hover');
-      color: cv('text.strong');
+      color: #ffffff;
+      svg { color: #ffffff; fill: #ffffff; }
+    }
+    &#{c(guildList bottomButtonSelected)} {
+      color: #ffffff;
+      svg { color: #ffffff; fill: #ffffff; }
     }
   }
+  // Folder backgrounds & server acronym
+  [class*='expandedFolderBackground'],
   [class*='folderIconWrapper'] {
     background-color: rgba(60, 68, 81, 0.15);
+  }
+  [class*='acronym'] {
+    background: rgba(60, 68, 81, 0.14);
+    color: #3c4451;
+    font-weight: 600;
   }
 }

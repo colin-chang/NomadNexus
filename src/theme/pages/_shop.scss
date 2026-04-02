@@ -68,3 +68,23 @@
 #{c(shop tab)}:hover {
   border-bottom: 2px solid cv('color.main');
 }
+
+// Dark theme overrides
+:is(#{c(main themeDark)}, #{c(main themeDarker)}, #{c(main themeMidnight)}) {
+  #{c(shop orbCard)} {
+    background: rgba(20, 22, 28, 0.88) !important;
+  }
+}
+
+// Light theme overrides
+:is(#{c(main themeLight)}) {
+  // selected theme tag: blue fill + white text
+  #{c(shop filterThemeToggled)} {
+    background: cv('color.main');
+    color: #ffffff;
+  }
+  // orb/task card panel: raise opacity so it's not too transparent
+  #{c(shop orbCard)} {
+    background: rgba(255, 255, 255, 0.88) !important;
+  }
+}

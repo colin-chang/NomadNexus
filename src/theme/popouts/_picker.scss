@@ -106,3 +106,24 @@
     background: cv('color.main');
   }
 }
+
+// NomadNexus: light theme — white text/icon on active/selected elements
+:is(#{c(main themeLight)}) {
+  // Active nav tab (GIF / Sticker / Emoji)
+  #{c(popouts expressionPicker navButtonActive)} {
+    color: #ffffff;
+  }
+  // Selected emoji category icon
+  #{c(popouts expressionPicker emoji defaultCategorySelected)} {
+    svg, svg path {
+      fill: #ffffff;
+    }
+  }
+  // Selected sticker category icon
+  #{c(popouts expressionPicker sticker categoryGenericSelected)},
+  #{c(popouts expressionPicker sticker firstPartyCategorySelected)} {
+    svg, svg path {
+      fill: #ffffff;
+    }
+  }
+}

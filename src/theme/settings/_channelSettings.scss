@@ -1,5 +1,10 @@
 @use 'backend' as *;
 
+// NomadNexus: frosted glass wrapper — scoped to channel settings only
+[data-layer='CHANNEL_SETTINGS'] #{c(settings standardSidebarView)} {
+  @include glass-scrim;
+}
+
 // PERMISSIONS
 #{c(channelSettings permissions card)} {
   &,
@@ -39,6 +44,16 @@
   border-left: 1px solid cv('shading.cardAlt');
   &#{c(channelSettings permissions permSelected)} {
     background-color: hsl(from cv('color.success') h s l/.6);
+  }
+}
+
+// NomadNexus: light theme — selected item white text
+// Overrides Discord native: .selected_xx.item_xx { color: var(--text-strong) }
+// Covers both sidebar nav items and role/user list items in channel settings
+:is(#{c(main themeLight)}) [data-layer='CHANNEL_SETTINGS'] {
+  [class*='item_'][class*='selected_'],
+  [class*='item_'][class*='selected_']:hover {
+    color: #ffffff;
   }
 }
 

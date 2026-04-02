@@ -8,6 +8,13 @@
     }
   }
 }
+// NomadNexus: listbox dropdowns border/shadow
+// Exclude search container: it is itself the listbox and uses glass-scrim instead.
+[role='listbox']:not(#{c(popouts search container)}) {
+  border: 1px solid cv('glass.borderColor') !important;
+  box-shadow: cv('glass.shadow') !important;
+}
+
 // NomadNexus: frosted glass dropdown
 #{c(popouts dropdown popout)} {
   &,
@@ -53,18 +60,60 @@
     outline: none;
     background: cv('color.main');
   }
+  &[aria-selected='true'] {
+    background: cv('color.main');
+  }
 }
 
-// NomadNexus: light theme bot dropdown styling
+// NomadNexus: light theme dropdown styling
 :is(#{c(main themeLight)}) {
   [class*='container_a16aea'] {
-    background: rgba(255, 255, 255, 0.85);
-    border: 1px solid rgba(175, 184, 193, 0.5);
-    border-radius: 8px;
+    background: transparent;
+    border: none;
     box-shadow: none;
   }
   [class*='value_a16aea'],
   [class*='singleValue_'] {
     color: #24292f;
+  }
+  // Selected option in bot dropdowns
+  [class*='option_a16aea'][aria-selected='true'] :is([class*='label'], strong, [class*='selectedIcon']) {
+    color: #ffffff !important;
+  }
+  // Selected item in React-Select / standard dropdowns
+  #{c(popouts dropdown option)}[aria-selected='true'] {
+    color: #ffffff !important;
+    * { color: #ffffff !important; }
+    svg, svg path, svg circle { fill: #ffffff !important; color: #ffffff !important; }
+    // Selected checkmark — dark circle, white tick (currentColor stays #fff from * rule)
+    svg[class*='selectedIcon'] circle { fill: #3c4451 !important; }
+  }
+  // Keyboard-focused listbox item
+  #{c(popouts dropdown listBoxItem)} {
+    #{c(popouts dropdown listBox)}:not(:focus-within) &[data-focus-visible=true],
+    #{c(main keyboardMode)} &:focus {
+      color: #ffffff !important;
+      * { color: #ffffff !important; }
+      svg, svg path { fill: #ffffff !important; color: #ffffff !important; }
+    }
+    &[aria-selected='true'] {
+      color: #ffffff !important;
+      * { color: #ffffff !important; }
+      svg, svg path, svg circle { fill: #ffffff !important; color: #ffffff !important; }
+      svg[class*='selectedIcon'] circle { fill: #3c4451 !important; }
+    }
+  }
+  // [role="listbox"] selected item (language selector, etc.)
+  [role='listbox'] [role='option'][aria-selected='true'],
+  [role='listbox'] [aria-selected='true'] {
+    background: cv('color.main') !important;
+    color: #ffffff !important;
+    * { color: #ffffff !important; }
+    svg, svg path { fill: #ffffff !important; color: #ffffff !important; }
+    svg[class*='selectedIcon'] circle { fill: #3c4451 !important; }
+  }
+  // listbox selected item background — needs !important to beat Discord's .theme-light specificity
+  #{c(popouts dropdown listBoxItem)}[aria-selected='true'] {
+    background: cv('color.main') !important;
   }
 }

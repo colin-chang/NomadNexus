@@ -182,15 +182,41 @@
   }
 }
 
-// NomadNexus: light theme selected member — white text
+// NomadNexus: light theme selected member — comprehensive white text
+// Matching original custom.css §29 — override all text-related CSS vars
 :is(#{c(main themeLight)}) {
   #{c(memberList selected)} {
+    --username-color: #ffffff;
+    --header-primary: #ffffff;
+    --text-normal: #ffffff;
+    --interactive-active: #ffffff;
+    --interactive-normal: #ffffff;
+    --member-nick-color: #ffffff;
+
     #{c(memberList nameContainer)} {
       -webkit-text-fill-color: #ffffff;
+      text-shadow: none;
     }
     #{c(memberList activityText)},
     strong {
       color: #ffffff;
+      text-shadow: none;
+    }
+    // Bot tag inside selected member
+    [class*='botTag_'],
+    [class*='botTag_'] * {
+      color: #ffffff;
+      -webkit-text-fill-color: #ffffff;
+      text-shadow: none;
+    }
+    // All SVG icons in selected member row
+    svg, svg path,
+    [class*='ownerIcon_'] svg,
+    [class*='ownerIcon_'] svg path,
+    [class*='icon_'] svg,
+    [class*='icon_'] svg path {
+      color: #ffffff;
+      fill: #ffffff;
     }
   }
 }
