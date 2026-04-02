@@ -1,9 +1,10 @@
 {
-  "name": "clearvision",
-  "description": "Highly customisable theme for BetterDiscord and Vencord.",
+  "name": "nomadnexus",
+  "description": "Frosted glass Discord theme for BetterDiscord and Vencord.",
   "license": "Apache-2.0",
-  "author": "ClearVision Team",
+  "author": "Colin Chang",
   "contributors": [
+    "ClearVision Team (original ClearVision v7)",
     "LeafyLuigi",
     "Leozard"
   ],
