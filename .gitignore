@@ -105,4 +105,7 @@ typings/
 
 # Manually held back
 public-unminified/
-screenshots/
+
+docs/
+archive/
+.DS_Store

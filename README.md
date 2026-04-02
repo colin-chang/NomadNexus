@@ -18,6 +18,13 @@ Based on [ClearVision v7](https://github.com/ClearVision/ClearVision-v7) by the 
 - macOS-optimized system font stack + Maple Mono NF CN for code
 - Consistent styling for modals, popouts, context menus, and overlays
 
+## Preview
+#### Dark mode
+![Dark mode](previews/theme_dark.jpg)
+
+#### Light mode
+![Light mode](previews/theme_light.jpg)
+
 ## Installing
 
 ### BetterDiscord
