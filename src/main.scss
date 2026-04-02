@@ -134,6 +134,43 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --glass-shadow: 0 8px 32px rgba(36, 41, 47, 0.10);
   --glass-panel-bg: #ffffff;
   --glass-blur: blur(20px) saturate(1.8);
+
+  // NomadNexus: light theme panel backgrounds (semi-transparent for frosted appearance)
+  --background-tertiary: rgba(240, 242, 246, 0.82);
+  --background-secondary: rgba(245, 246, 250, 0.76);
+  --background-primary: rgba(255, 255, 255, 0.62);
+  --background-secondary-alt: rgba(242, 244, 248, 0.78);
+  --channeltextarea-background: rgba(255, 255, 255, 0.70);
+
+  // NomadNexus: light theme text colors (GitHub Light inspired)
+  --text-normal: #24292f;
+  --interactive-normal: #57606a;
+  --text-muted: #6e7781;
+  --header-primary: #24292f;
+  --header-secondary: #57606a;
+  --channels-default: #57606a;
+  --interactive-hover: #24292f;
+  --interactive-active: var(--hsl-main-color);
+  --interactive-active-selected: #ffffff;
+
+  // NomadNexus: brand experiment color ramp (accent blue)
+  --brand-experiment: var(--hsl-main-color);
+  --brand-experiment-100: rgba(76, 143, 214, 0.08);
+  --brand-experiment-130: rgba(76, 143, 214, 0.10);
+  --brand-experiment-160: rgba(76, 143, 214, 0.12);
+  --brand-experiment-200: rgba(76, 143, 214, 0.14);
+  --brand-experiment-230: rgba(76, 143, 214, 0.16);
+  --brand-experiment-260: rgba(76, 143, 214, 0.18);
+  --brand-experiment-300: rgba(76, 143, 214, 0.20);
+  --brand-experiment-330: rgba(76, 143, 214, 0.22);
+  --brand-experiment-360: rgba(76, 143, 214, 0.25);
+  --brand-experiment-400: rgba(76, 143, 214, 0.28);
+  --brand-experiment-430: rgba(76, 143, 214, 0.32);
+  --brand-experiment-460: rgba(76, 143, 214, 0.36);
+  --brand-experiment-500: rgba(76, 143, 214, 0.40);
+  --brand-experiment-530: rgba(76, 143, 214, 0.46);
+  --brand-experiment-560: rgba(76, 143, 214, 0.52);
+  --brand-experiment-600: rgba(76, 143, 214, 0.58);
 }
 
 /* Ash Theme */

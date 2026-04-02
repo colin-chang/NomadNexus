@@ -8,3 +8,22 @@
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
   padding: 20px 8px 60px 20px;
 }
+
+// NomadNexus: light theme settings sidebar
+:is(#{c(main themeLight)}) {
+  [class*='sidebar__'] [class*='input__'] {
+    background: rgba(255, 255, 255, 0.6);
+    color: #24292f;
+  }
+  [class*='sidebar__'] [class*='item_'][class*='active_'] > [class*='itemContent_'],
+  [class*='sidebar__'] [class*='item_'][class*='active_'] > [class*='itemContent_'] > div,
+  [class*='sidebar__'] [class*='item_'][class*='active_'] > [class*='itemContent_'] svg {
+    color: #ffffff;
+  }
+  // Discover page selected nav item
+  [class*='navItem_'][class*='selected_'],
+  [class*='navItem_'][class*='selected_'] :is(svg, [class*='navItemIcon_']) {
+    color: #ffffff;
+    fill: currentColor;
+  }
+}

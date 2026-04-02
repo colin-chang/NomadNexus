@@ -85,3 +85,18 @@
     }
   }
 }
+
+// NomadNexus: light theme DM selected — white text/icons
+:is(#{c(main themeLight)}) {
+  #{c(sidebar private interactive)}#{c(sidebar private selected)} {
+    [class*='name_'],
+    [class*='nameAndDecorators_'],
+    [class*='nameAndDecorators_'] * {
+      color: #ffffff;
+    }
+    [class*='closeButton_'],
+    [class*='closeButton_'] svg {
+      color: #ffffff;
+    }
+  }
+}
