@@ -63,8 +63,9 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   // other stuff that the theme sets
 
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
-  --main-color: #2780e6;
-  --hover-color: #1e63b3;
+  // NomadNexus: GitHub-inspired color palette
+  --main-color: #4c8fd6;
+  --hover-color: #2266b0;
   --success-color: #43b581;
   --warning-color: #fff;
   --danger-color: #982929;
@@ -76,7 +77,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --offline-color: #808080;
 
   --background-shading-percent: 100%;
-  --background-image: url(https://clearvision.github.io/images/sapphire.jpg);
+  --background-image: url(https://raw.githubusercontent.com/ColinChangCC/NomadNexus/master/images/sky.jpg);
   --background-position: center;
   --background-size: cover;
   --background-attachment: fixed;
@@ -84,7 +85,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 
   --user-popout-image: var(--background-image);
   --user-popout-position: var(--background-position);
-  --user-popout-size:  var(--background-size);
+  --user-popout-size: var(--background-size);
   --user-popout-attachment: var(--background-attachment);
   --user-popout-filter: var(--background-filter);
 
@@ -97,8 +98,9 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --home-icon: url(https://clearvision.github.io/icons/discord.svg);
   --home-size: cover;
 
-  --main-font: 'gg sans', Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --code-font: Consolas, 'gg mono', 'Liberation Mono', Menlo, Courier, monospace;
+  // NomadNexus: custom font stacks
+  --main-font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'gg sans', Whitney, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --code-font: 'Maple Mono NF CN', Consolas, 'gg mono', 'Liberation Mono', Menlo, Courier, monospace;
 
   --channel-normal: var(--interactive-text-default);
   --channel-muted: var(--interactive-muted); 
@@ -123,6 +125,15 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   // ALSO EDITABLE
   --normal-text: #36363c;
   --muted-text: #75757e;
+  // NomadNexus: frosted glass tokens (Light)
+  --glass-bg: rgba(255, 255, 255, 0.78);
+  --glass-bg-dense: rgba(255, 255, 255, 0.92);
+  --glass-bg-opaque: rgba(245, 246, 250, 0.94);
+  --glass-bg-scrim: rgba(255, 255, 255, 0.60);
+  --glass-border-color: rgba(208, 215, 222, 0.5);
+  --glass-shadow: 0 8px 32px rgba(36, 41, 47, 0.10);
+  --glass-panel-bg: #ffffff;
+  --glass-blur: blur(20px) saturate(1.8);
 }
 
 /* Ash Theme */
@@ -136,6 +147,15 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   // ALSO EDITABLE
   --normal-text: #d8d8db;
   --muted-text: #aeaeb4;
+  // NomadNexus: frosted glass tokens (Ash)
+  --glass-bg: rgba(20, 22, 28, 0.72);
+  --glass-bg-dense: rgba(20, 22, 28, 0.82);
+  --glass-bg-opaque: rgba(20, 22, 28, 0.90);
+  --glass-bg-scrim: rgba(20, 22, 28, 0.50);
+  --glass-border-color: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
+  --glass-panel-bg: #1a1c23;
+  --glass-blur: blur(20px) saturate(1.4);
 }
 
 /* Dark Theme */
@@ -149,6 +169,15 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   // ALSO EDITABLE
   --normal-text: #fbfbfb;
   --muted-text: #94949c;
+  // NomadNexus: frosted glass tokens (Dark)
+  --glass-bg: rgba(20, 22, 28, 0.78);
+  --glass-bg-dense: rgba(20, 22, 28, 0.88);
+  --glass-bg-opaque: rgba(20, 22, 28, 0.94);
+  --glass-bg-scrim: rgba(20, 22, 28, 0.55);
+  --glass-border-color: rgba(255, 255, 255, 0.10);
+  --glass-shadow: 0 8px 40px rgba(0, 0, 0, 0.40);
+  --glass-panel-bg: #1a1c23;
+  --glass-blur: blur(20px) saturate(1.4);
 }
 
 /* Onyx Theme */
@@ -162,4 +191,13 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   // ALSO EDITABLE
   --normal-text: #dcdcde;
   --muted-text: #86868e;
+  // NomadNexus: frosted glass tokens (Onyx)
+  --glass-bg: rgba(20, 22, 28, 0.88);
+  --glass-bg-dense: rgba(20, 22, 28, 0.94);
+  --glass-bg-opaque: rgba(20, 22, 28, 0.97);
+  --glass-bg-scrim: rgba(20, 22, 28, 0.70);
+  --glass-border-color: rgba(255, 255, 255, 0.12);
+  --glass-shadow: 0 8px 40px rgba(0, 0, 0, 0.50);
+  --glass-panel-bg: #111318;
+  --glass-blur: blur(20px) saturate(1.4);
 }

@@ -139,6 +139,17 @@ $cv: (
           filter: var(--user-modal-filter),
         )
     ),
+  // FROSTED GLASS DESIGN SYSTEM
+  glass: (
+      bg: var(--glass-bg),
+      bgDense: var(--glass-bg-dense),
+      bgOpaque: var(--glass-bg-opaque),
+      bgScrim: var(--glass-bg-scrim),
+      borderColor: var(--glass-border-color),
+      shadow: var(--glass-shadow),
+      blur: var(--glass-blur),
+      panelBg: var(--glass-panel-bg),
+    ),
   // HOME BUTTON - BUTTON ABOVE YOUR SERVERS
   home: (
       icon: var(--home-icon),
