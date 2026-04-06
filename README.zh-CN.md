@@ -1,5 +1,3 @@
-<center>
-
 # Nomad Nexus
 
 **一款面向 BetterDiscord 和 Vencord 的毛玻璃风格 Discord 主题。**
@@ -14,8 +12,6 @@
 ![深色模式](assets/previews/theme_dark.jpg)
 
 ![浅色模式](assets/previews/theme_light.jpg)
-
-</center>
 
 ---
 

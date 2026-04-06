@@ -1,5 +1,3 @@
-<center>
-
 # Nomad Nexus
 
 **A frosted glass Discord theme for BetterDiscord and Vencord.**
@@ -14,8 +12,6 @@
 ![Dark mode](assets/previews/theme_dark.jpg)
 
 ![Light mode](assets/previews/theme_light.jpg)
-
-</center>
 
 ---
 
