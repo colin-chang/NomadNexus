@@ -1,5 +1,3 @@
-<center>
-
 # Nomad Nexus
 
 **A frosted glass Discord theme for BetterDiscord and Vencord.**
@@ -14,8 +12,6 @@
 ![Dark mode](assets/previews/theme_dark.jpg)
 
 ![Light mode](assets/previews/theme_light.jpg)
-
-</center>
 
 ---
 
@@ -49,7 +45,7 @@
 In **Settings → Vencord → Themes**, add the following URL:
 
 ```text
-https://github.com/colin-chang/NomadNexus/releases/latest/download/NomadNexus-Vencord.css
+https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@1.0.0/NomadNexus-Vencord.css
 ```
 
 #### Option B — Local file

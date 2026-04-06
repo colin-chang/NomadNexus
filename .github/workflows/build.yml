@@ -79,7 +79,7 @@ jobs:
           cp -r /tmp/dist-output/. .
 
           git add -A
-          git commit -m "dist: $TAG"
+          git commit -m "release $TAG"
           git tag "$TAG"
           git push origin versions
           git push origin "$TAG"

@@ -1,5 +1,3 @@
-<center>
-
 # Nomad Nexus
 
 **一款面向 BetterDiscord 和 Vencord 的毛玻璃风格 Discord 主题。**
@@ -14,8 +12,6 @@
 ![深色模式](assets/previews/theme_dark.jpg)
 
 ![浅色模式](assets/previews/theme_light.jpg)
-
-</center>
 
 ---
 
@@ -49,7 +45,7 @@
 在 **设置 → Vencord → 主题** 中，添加以下 URL：
 
 ```text
-https://github.com/colin-chang/NomadNexus/releases/latest/download/NomadNexus-Vencord.css
+https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@1.0.0/NomadNexus-Vencord.css
 ```
 
 #### 方式二 — 本地文件

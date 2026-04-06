@@ -15,7 +15,7 @@
     "build": "sass src:dist --load-path=src --style=compressed --no-source-map && postcss dist/*.css -d dist/ -u autoprefixer --no-map && sass templates:dist --load-path=src --style=expanded --no-source-map",
     "test": "sass src:test --load-path=src --style=expanded --no-source-map && sass templates:test --load-path=src --style=expanded --no-source-map",
     "format": "prettier --write .",
-    "version": "node scripts/sync-version.js && git add src/start/_index.scss"
+    "version": "node scripts/sync-version.js"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
