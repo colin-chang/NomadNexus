@@ -31,6 +31,19 @@
   }
 }
 
+// Light theme: force white text on the main-color selected background.
+// !important is required to override Discord's inline style="color: var(--interactive-text-active)"
+:is(#{c(main themeLight)}) :is(#{c(tab topPill)}, #{c(tab side)}) {
+  #{c(tab themed)}#{c(tab item)}#{c(tab selected)} {
+    &,
+    &:hover {
+      color: #ffffff !important;
+      * { color: #ffffff !important; }
+      svg, svg path { fill: #ffffff !important; color: #ffffff !important; }
+    }
+  }
+}
+
 
 // SIDE TAB HEADER
 // mainly in settings

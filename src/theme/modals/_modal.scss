@@ -19,11 +19,13 @@
 // Uses same glass tokens as standard modals for visual consistency.
 [class*='root_'][class*='fullscreenOnMobile_'] {
   @include glass-important;
-  // Fix: radio button indicator SVG clips left edge inside event creation modal
-  [class*='container_'] {
-    overflow: visible;
-    padding-left: 4px;
-  }
+}
+// Fix: radio button indicator SVG clips left edge inside event creation modal.
+// Scoped to container__03b47 only — broader [class*='container_'] would also match
+// create-server modal wrappers and cause content to overflow the modal border.
+[class*='root_'][class*='fullscreenOnMobile_'] [class*='container__03b47'] {
+  overflow: visible;
+  padding-left: 4px;
 }
 
 // NomadNexus: fix modal body padding — Discord subtracts --space-16 from padding-right
@@ -31,6 +33,7 @@
 [class*='has-webkit-scrollbar'] [class*='bodyInner_'] {
   padding-right: var(--custom-modal-padding);
 }
+
 
 // NomadNexus: light theme modals
 :is(#{c(main themeLight)}) {

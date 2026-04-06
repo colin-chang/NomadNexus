@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 // Copyright 2026 Colin Chang. Based on ClearVision v7 by ClearVision Team (Apache-2.0).
+@use 'start' as *;
 @use 'backend' as *;
 
 // SIDEBAR
@@ -243,7 +244,7 @@
 
 // VOICE & VIDEO
 #{c(userSettings voice notchesContainer)} {
-  mask-image: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@master/assets/icons/pill.svg);
+  mask-image: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@#{$version}/assets/icons/pill.svg);
   background: cv('color.main') !important; // inline
 }
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {

@@ -2,15 +2,34 @@ name: Release
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - master
 
 permissions:
   contents: write
 
 jobs:
+  detect:
+    name: Detect Version
+    runs-on: ubuntu-latest
+    outputs:
+      raw: ${{ steps.v.outputs.raw }}
+      tag: ${{ steps.v.outputs.tag }}
+    steps:
+      - name: Extract version from commit message
+        id: v
+        run: |
+          MSG="${{ github.event.head_commit.message }}"
+          RAW=$(echo "$MSG" | grep -oP 'v?\d+\.\d+\.\d+' | head -1)
+          if [ -n "$RAW" ]; then
+            echo "raw=$RAW" >> $GITHUB_OUTPUT
+            echo "tag=${RAW#v}" >> $GITHUB_OUTPUT
+          fi
+
   release:
     name: Build & Release
+    needs: detect
+    if: needs.detect.outputs.tag != ''
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,5 +49,37 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ needs.detect.outputs.raw }}
           generate_release_notes: true
-          files: dist/*.css
+          files: |
+            dist/NomadNexus-Vencord.css
+            dist/NomadNexus-BetterDiscord.theme.css
+
+      - name: Deploy dist to versions branch
+        run: |
+          TAG="${{ needs.detect.outputs.tag }}"
+
+          # 保存编译产物到临时目录
+          cp -r dist /tmp/dist-output
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 切换到或创建 versions 分支
+          git fetch origin versions 2>/dev/null || true
+          if git ls-remote --exit-code origin versions >/dev/null 2>&1; then
+            git checkout versions
+          else
+            git checkout --orphan versions
+          fi
+
+          # 清空当前内容（含未追踪的 node_modules、dist 等），替换为 dist 产物
+          git rm -rf . --quiet
+          git clean -fdx
+          cp -r /tmp/dist-output/. .
+
+          git add -A
+          git commit -m "dist: $TAG"
+          git tag "$TAG"
+          git push origin versions
+          git push origin "$TAG"

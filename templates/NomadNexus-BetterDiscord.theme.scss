@@ -31,7 +31,7 @@
   --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
   /* APP BACKGROUND */
   --background-shading-percent: 100%; /* app background shading amount (0 for complete smoothness) [default: 100%] */
-  --background-image: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@v#{$version}/assets/images/sky.jpg); /* app background image (link must be HTTPS)*/
+  --background-image: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@#{$version}/assets/images/sky.jpg); /* app background image (link must be HTTPS)*/
   --background-position: center; /* app background position [default: center] */
   --background-size: cover; /* app background size (px) [default: cover] */
   --background-attachment: fixed; /* app background attachment [default: fixed] */
@@ -49,7 +49,7 @@
   --user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
   --user-modal-filter: var(--background-filter); /* user modal background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
   /* HOME ICON */
-  --home-icon: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@v#{$version}/assets/icons/discord.svg); /* home button icon (link must be HTTPS)*/
+  --home-icon: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@#{$version}/assets/icons/discord.svg); /* home button icon (link must be HTTPS)*/
   --home-size: cover; /* home button icon size (px) [default:cover] */
   /* FONTS */
   --main-font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'gg sans', Whitney, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: -apple-system, BlinkMacSystemFont, SF Pro Text, gg sans, Whitney, Segoe UI, Roboto, Helvetica, Arial, sans-serif] */
@@ -69,7 +69,7 @@
 /* THEME SPECIFIC SHADING */
 /* LIGHT THEME */
 :is(.theme-light, .theme-dark .theme-light) {
-  --background-image: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@v#{$version}/assets/images/taylor.jpg); /* light theme background image */
+  --background-image: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@#{$version}/assets/images/taylor.jpg); /* light theme background image */
   --background-shading: rgba(252, 252, 252, 0.3); /* app background shading color [default: rgba(252, 252, 252, 0.3)] */
   --card-shading: rgba(252, 252, 252, 0.3); /* cards background shading color [default: rgba(252, 252, 252, 0.3)] */
   --popout-shading: rgba(255, 255, 255, 0.55); /* popouts background shading color [default: rgba(255, 255, 255, 0.55)] */

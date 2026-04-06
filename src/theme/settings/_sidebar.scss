@@ -17,10 +17,11 @@
     background: rgba(255, 255, 255, 0.6);
     color: #24292f;
   }
-  [class*='sidebar__'] [class*='item_'][class*='active_'] > [class*='itemContent_'],
-  [class*='sidebar__'] [class*='item_'][class*='active_'] > [class*='itemContent_'] > div,
-  [class*='sidebar__'] [class*='item_'][class*='active_'] > [class*='itemContent_'] svg,
-  [class*='sidebar__'] [class*='item_'][class*='active_'] > [class*='itemContent_'] svg path {
+  // active_ = older Discord class, selected_ = current Discord class; cover both
+  [class*='sidebar__'] [class*='item_']:is([class*='active_'], [class*='selected_']) > [class*='itemContent_'],
+  [class*='sidebar__'] [class*='item_']:is([class*='active_'], [class*='selected_']) > [class*='itemContent_'] > div,
+  [class*='sidebar__'] [class*='item_']:is([class*='active_'], [class*='selected_']) > [class*='itemContent_'] svg,
+  [class*='sidebar__'] [class*='item_']:is([class*='active_'], [class*='selected_']) > [class*='itemContent_'] svg path {
     color: #ffffff;
     fill: #ffffff;
   }

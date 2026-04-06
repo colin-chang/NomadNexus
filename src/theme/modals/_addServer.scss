@@ -10,6 +10,13 @@
   }
 }
 
+// scrollbar-width:thin in Chromium can be ~8px, consuming Discord's default 8px padding-right.
+// Double-class specificity (0,2,0) beats Discord's single-class padding-right rule.
+#{c(modals body)}#{c(modals addServer createServerTemplatesList)},
+#{c(modals body)}#{c(modals addServer tellUsMoreOptionsList)} {
+  padding-right: 14px;
+}
+
 // PLUS ICON
 #{c(modals addServer customiseIconContainer)} {
   circle {
