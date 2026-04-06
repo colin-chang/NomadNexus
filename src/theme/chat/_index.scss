@@ -10,4 +10,4 @@
 @forward 'bars';
 @forward 'reactions';
 @forward 'search';
-// @forward 'hljs';
+// @forward 'hljs'; // Disabled: 232-language label feature adds significant bundle size

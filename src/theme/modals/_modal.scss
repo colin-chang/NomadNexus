@@ -18,11 +18,7 @@
 // !important is required to win the cascade (mirrors original custom.css approach).
 // Uses same glass tokens as standard modals for visual consistency.
 [class*='root_'][class*='fullscreenOnMobile_'] {
-  background: cv('glass.bg') !important;
-  backdrop-filter: cv('glass.blur') !important;
-  -webkit-backdrop-filter: cv('glass.blur') !important;
-  border: 1px solid cv('glass.borderColor') !important;
-  box-shadow: cv('glass.shadow') !important;
+  @include glass-important;
   // Fix: radio button indicator SVG clips left edge inside event creation modal
   [class*='container_'] {
     overflow: visible;
@@ -55,10 +51,6 @@
   }
   // Event creation / fullscreen modal
   [class*='root_'][class*='fullscreenOnMobile_'] {
-    background: cv('glass.bg') !important;
-    backdrop-filter: cv('glass.blur') !important;
-    -webkit-backdrop-filter: cv('glass.blur') !important;
-    border: 1px solid cv('glass.borderColor') !important;
-    box-shadow: cv('glass.shadow') !important;
+    @include glass-important;
   }
 }

@@ -19,8 +19,8 @@
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
-  --main-color: #2780e6; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
-  --hover-color: #1e63b3; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+  --main-color: #4c8fd6; /* main accent color (hex, rgb or hsl) [default: #4c8fd6] */
+  --hover-color: #2266b0; /* hover accent color (hex, rgb or hsl) [default: #2266b0] */
   --success-color: #43b581; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
   --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
   /* STATUS COLORS */
@@ -52,8 +52,8 @@
   --home-icon: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@v#{$version}/assets/icons/discord.svg); /* home button icon (link must be HTTPS) */
   --home-size: cover; /* home button icon size (px) [default:cover] */
   /* FONTS */
-  --main-font: 'gg sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
-  --code-font: Consolas, 'gg mono', 'Liberation Mono', Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+  --main-font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'gg sans', Whitney, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: -apple-system, BlinkMacSystemFont, SF Pro Text, gg sans, Whitney, Segoe UI, Roboto, Helvetica, Arial, sans-serif] */
+  --code-font: 'Maple Mono NF CN', Consolas, 'gg mono', 'Liberation Mono', Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Maple Mono NF CN, Consolas, gg mono, Liberation Mono, Menlo, Courier, monospace] */
   /* CHANNEL COLORS */
   --channel-normal: var(--interactive-text-default); /* channel text color [default: var(--interactive-text-default)] */
   --channel-muted: var(--interactive-muted); /* muted channel text color [default: var(--interactive-muted)] */
@@ -69,13 +69,23 @@
 /* THEME SPECIFIC SHADING */
 /* LIGHT THEME */
 :is(.theme-light, .theme-dark .theme-light) {
+  --background-image: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@v#{$version}/assets/images/taylor.jpg); /* light theme background image */
   --background-shading: rgba(252, 252, 252, 0.3); /* app background shading color [default: rgba(252, 252, 252, 0.3)] */
   --card-shading: rgba(252, 252, 252, 0.3); /* cards background shading color [default: rgba(252, 252, 252, 0.3)] */
-  --popout-shading: rgba(252, 252, 252, 0.7); /* popouts background shading color [default: rgba(252, 252, 252, 0.7)] */
-  --modal-shading: rgba(252, 252, 252, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
-  --input-shading: rgba(0, 0, 0, 0.3); /* inputs background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --popout-shading: rgba(255, 255, 255, 0.55); /* popouts background shading color [default: rgba(255, 255, 255, 0.55)] */
+  --modal-shading: rgba(255, 255, 255, 0.45); /* modals background shading color [default: rgba(255, 255, 255, 0.45)] */
+  --input-shading: rgba(0, 0, 0, 0.05); /* inputs background shading color [default: rgba(0, 0, 0, 0.05)] */
   --normal-text: #36363c; /* text color [default: #36363c] */
   --muted-text: #75757e; /* muted text color [default: #75757e] */
+  /* FROSTED GLASS */
+  --glass-bg: rgba(255, 255, 255, 0.78); /* glass background [default: rgba(255, 255, 255, 0.78)] */
+  --glass-bg-dense: rgba(255, 255, 255, 0.92); /* dense glass background [default: rgba(255, 255, 255, 0.92)] */
+  --glass-bg-opaque: rgba(245, 246, 250, 0.94); /* opaque glass background [default: rgba(245, 246, 250, 0.94)] */
+  --glass-bg-scrim: rgba(255, 255, 255, 0.60); /* scrim glass background [default: rgba(255, 255, 255, 0.60)] */
+  --glass-border-color: rgba(208, 215, 222, 0.5); /* glass border color [default: rgba(208, 215, 222, 0.5)] */
+  --glass-shadow: 0 8px 32px rgba(36, 41, 47, 0.10); /* glass box shadow [default: 0 8px 32px rgba(36, 41, 47, 0.10)] */
+  --glass-panel-bg: #ffffff; /* glass panel background [default: #ffffff] */
+  --glass-blur: blur(20px) saturate(1.8); /* glass blur filter [default: blur(20px) saturate(1.8)] */
 }
 
 /* ASH THEME */
@@ -87,6 +97,15 @@
   --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
   --normal-text: #d8d8db; /* text color [default: #d8d8db] */
   --muted-text: #aeaeb4; /* muted text color [default: #aeaeb4] */
+  /* FROSTED GLASS */
+  --glass-bg: rgba(20, 22, 28, 0.72); /* glass background [default: rgba(20, 22, 28, 0.72)] */
+  --glass-bg-dense: rgba(20, 22, 28, 0.82); /* dense glass background [default: rgba(20, 22, 28, 0.82)] */
+  --glass-bg-opaque: rgba(20, 22, 28, 0.90); /* opaque glass background [default: rgba(20, 22, 28, 0.90)] */
+  --glass-bg-scrim: rgba(20, 22, 28, 0.50); /* scrim glass background [default: rgba(20, 22, 28, 0.50)] */
+  --glass-border-color: rgba(255, 255, 255, 0.08); /* glass border color [default: rgba(255, 255, 255, 0.08)] */
+  --glass-shadow: 0 8px 40px rgba(0, 0, 0, 0.35); /* glass box shadow [default: 0 8px 40px rgba(0, 0, 0, 0.35)] */
+  --glass-panel-bg: #1a1c23; /* glass panel background [default: #1a1c23] */
+  --glass-blur: blur(20px) saturate(1.4); /* glass blur filter [default: blur(20px) saturate(1.4)] */
 }
 
 /* DARK THEME */
@@ -94,10 +113,19 @@
   --background-shading: rgba(0, 0, 0, 0.6); /* app background shading color [default: rgba(0, 0, 0, 0.6)] */
   --card-shading: rgba(0, 0, 0, 0.3); /* cards background shading color [default: rgba(0, 0, 0, 0.3)] */
   --popout-shading: rgba(0, 0, 0, 0.7); /* popouts background shading color [default: rgba(0, 0, 0, 0.7)] */
-  --modal-shading: rgba(0, 0, 0, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --modal-shading: rgba(0, 0, 0, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.5)] */
   --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
   --normal-text: #fbfbfb; /* text color [default: #fbfbfb] */
   --muted-text: #94949c; /* muted text color [default: #94949c] */
+  /* FROSTED GLASS */
+  --glass-bg: rgba(20, 22, 28, 0.78); /* glass background [default: rgba(20, 22, 28, 0.78)] */
+  --glass-bg-dense: rgba(20, 22, 28, 0.88); /* dense glass background [default: rgba(20, 22, 28, 0.88)] */
+  --glass-bg-opaque: rgba(20, 22, 28, 0.94); /* opaque glass background [default: rgba(20, 22, 28, 0.94)] */
+  --glass-bg-scrim: rgba(20, 22, 28, 0.55); /* scrim glass background [default: rgba(20, 22, 28, 0.55)] */
+  --glass-border-color: rgba(255, 255, 255, 0.10); /* glass border color [default: rgba(255, 255, 255, 0.10)] */
+  --glass-shadow: 0 8px 40px rgba(0, 0, 0, 0.40); /* glass box shadow [default: 0 8px 40px rgba(0, 0, 0, 0.40)] */
+  --glass-panel-bg: #1a1c23; /* glass panel background [default: #1a1c23] */
+  --glass-blur: blur(20px) saturate(1.4); /* glass blur filter [default: blur(20px) saturate(1.4)] */
 }
 
 /* ONYX THEME */
@@ -109,6 +137,15 @@
   --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
   --normal-text: #dcdcde; /* text color [default: #dcdcde] */
   --muted-text: #86868e; /* muted text color [default: #86868e] */
+  /* FROSTED GLASS */
+  --glass-bg: rgba(20, 22, 28, 0.88); /* glass background [default: rgba(20, 22, 28, 0.88)] */
+  --glass-bg-dense: rgba(20, 22, 28, 0.94); /* dense glass background [default: rgba(20, 22, 28, 0.94)] */
+  --glass-bg-opaque: rgba(20, 22, 28, 0.97); /* opaque glass background [default: rgba(20, 22, 28, 0.97)] */
+  --glass-bg-scrim: rgba(20, 22, 28, 0.70); /* scrim glass background [default: rgba(20, 22, 28, 0.70)] */
+  --glass-border-color: rgba(255, 255, 255, 0.12); /* glass border color [default: rgba(255, 255, 255, 0.12)] */
+  --glass-shadow: 0 8px 40px rgba(0, 0, 0, 0.50); /* glass box shadow [default: 0 8px 40px rgba(0, 0, 0, 0.50)] */
+  --glass-panel-bg: #111318; /* glass panel background [default: #111318] */
+  --glass-blur: blur(20px) saturate(1.4); /* glass blur filter [default: blur(20px) saturate(1.4)] */
 }
 
 /* ADD ADDITIONAL CSS BELOW HERE */

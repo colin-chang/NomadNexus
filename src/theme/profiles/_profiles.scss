@@ -79,7 +79,7 @@
 // POPOUT SEND MESSAGE
 #{c(profile customTheme)} {
   #{c(chatForm channelTextAreaInline)} {
-    background: var(--user-profile-note-background-focus);;
+    background: var(--user-profile-note-background-focus);
     box-shadow: 0 0 0 2px var(--user-profile-border);
     &:focus-within {
       box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
@@ -99,7 +99,7 @@
     margin-top: 2px;
     border-color: cv('shading.input.border');
     background: cv('shading.input.bg');
-    &:focus:focus,
+    &:focus,
     &:focus:hover {
       background: cv('shading.input.bg');
       border-color: cv('color.main');

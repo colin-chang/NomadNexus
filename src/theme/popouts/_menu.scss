@@ -7,17 +7,20 @@
   @include glass-pseudo;
   border-radius: 5px;
 }
+
+// Shared white-on-color pattern for active/focused menu items
+@mixin menu-active-text($bg-color) {
+  background-color: $bg-color;
+  color: #ffffff !important;
+  * { color: #ffffff !important; }
+  svg, svg path, svg circle, svg rect { color: #ffffff !important; fill: #ffffff !important; }
+}
+
 #{c(popouts menus colorDefault)} {
   &#{c(popouts menus itemFocused)} {
-    background-color: cv('color.hover');
-    color: #ffffff !important;
-    // All text content — primary and secondary labels
-    * { color: #ffffff !important; }
-    // SVG icons: set both color and fill to cover all rendering modes
-    svg, svg path, svg circle, svg rect, svg use {
-      color: #ffffff !important;
-      fill: #ffffff !important;
-    }
+    @include menu-active-text(cv('color.hover'));
+    // SVG use elements also need override in focused state
+    svg use { color: #ffffff !important; fill: #ffffff !important; }
     // Preserve radio indicator — outer ring must stay transparent to show selection state
     #{c(radio standaloneIndicator)} {
       #{c(radio base)}, #{c(radio fill)} {
@@ -27,10 +30,7 @@
   }
   &:active {
     &:not(#{c(popouts menus itemHideInteraction)}) {
-      background-color: cv('color.main');
-      color: #ffffff !important;
-      * { color: #ffffff !important; }
-      svg, svg path, svg circle, svg rect { color: #ffffff !important; fill: #ffffff !important; }
+      @include menu-active-text(cv('color.main'));
     }
     #{c(popouts menus label)} {
       color: #ffffff !important;
@@ -39,16 +39,11 @@
 }
 #{c(popouts menus colorDanger)} {
   &#{c(popouts menus itemFocused)} {
-    background-color: cv('color.danger');
-    color: #ffffff !important;
-    * { color: #ffffff !important; }
-    svg, svg path, svg circle, svg rect { color: #ffffff !important; fill: #ffffff !important; }
+    @include menu-active-text(cv('color.danger'));
   }
   &:active {
     &:not(#{c(popouts menus itemHideInteraction)}) {
-      background-color: cv('color.danger');
-      color: #ffffff !important;
-      * { color: #ffffff !important; }
+      @include menu-active-text(cv('color.danger'));
     }
   }
 }
@@ -74,7 +69,9 @@
 }
 
 // STATUS PICKER
-// inline styles
+// FRAGILE: These selectors match Discord's exact inline style values.
+// If Discord changes the RGB values, these will silently break.
+// No reliable alternative exists for targeting inline background-color.
 #{c(popouts menus status)} {
   &[style='background-color: rgb(132, 133, 141);'] {
     background-color: cv('color.offline') !important;
