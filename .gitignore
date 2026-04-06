@@ -35,7 +35,7 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-public/
+dist/
 test/
 
 # Dependency directories
@@ -104,10 +104,7 @@ typings/
 .tern-port
 
 # Manually held back
-public-unminified/
-
 docs/
 archive/
-.DS_Store
-.github/
 .claude
+.DS_Store

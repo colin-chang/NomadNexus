@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+// Copyright 2026 Colin Chang. Based on ClearVision v7 by ClearVision Team (Apache-2.0).
 @use "start" as *;
 /**
  * @name #{$themeName} for Vencord
@@ -6,6 +8,8 @@
  * @description #{$desc} #{$desc_vc}
  * @source #{$src}
  * @website #{$website}
+ * @license Apache-2.0
+ * #{$upstream}
  */
 
 /* IMPORT CSS */
@@ -27,7 +31,7 @@
   --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
   /* APP BACKGROUND */
   --background-shading-percent: 100%; /* app background shading amount (0 for complete smoothness) [default: 100%] */
-  --background-image: url(https://clearvision.github.io/images/sapphire.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
+  --background-image: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@v#{$version}/assets/images/sky.jpg); /* app background image (link must be HTTPS) */
   --background-position: center; /* app background position [default: center] */
   --background-size: cover; /* app background size (px) [default: cover] */
   --background-attachment: fixed; /* app background attachment [default: fixed] */
@@ -45,7 +49,7 @@
   --user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
   --user-modal-filter: var(--background-filter); /* user modal background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
   /* HOME ICON */
-  --home-icon: url(https://clearvision.github.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
+  --home-icon: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@v#{$version}/assets/icons/discord.svg); /* home button icon (link must be HTTPS) */
   --home-size: cover; /* home button icon size (px) [default:cover] */
   /* FONTS */
   --main-font: 'gg sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */

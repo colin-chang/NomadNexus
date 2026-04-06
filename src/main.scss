@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+// Copyright 2026 Colin Chang. Based on ClearVision v7 by ClearVision Team (Apache-2.0).
 @use 'start' as *;
 
 // Import Functions, Variables, Mixins and Class list functionality.
@@ -77,7 +79,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --offline-color: #808080;
 
   --background-shading-percent: 100%;
-  --background-image: url(https://raw.githubusercontent.com/colin-chang/NomadNexus/refs/heads/master/images/sky.jpg);
+  --background-image: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@v#{$version}/assets/images/sky.jpg);
   --background-position: center;
   --background-size: cover;
   --background-attachment: fixed;
@@ -95,7 +97,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --user-modal-attachment: var(--background-attachment);
   --user-modal-filter: var(--background-filter);
 
-  --home-icon: url(https://clearvision.github.io/icons/discord.svg);
+  --home-icon: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@v#{$version}/assets/icons/discord.svg);
   --home-size: cover;
 
   // NomadNexus: custom font stacks
@@ -118,7 +120,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 :is(#{c(main themeLight)}, #{c(main themeDark)} #{c(main themeLight)}) {
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
   // NomadNexus: light theme uses a different background image
-  --background-image: url(https://raw.githubusercontent.com/colin-chang/NomadNexus/refs/heads/master/images/taylor.jpg);
+  --background-image: url(https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@v#{$version}/assets/images/taylor.jpg);
   --background-shading: rgba(252, 252, 252, 0.3);
   --card-shading: rgba(252, 252, 252, 0.3);
   --popout-shading: rgba(255, 255, 255, 0.55);

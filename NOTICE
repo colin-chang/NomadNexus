@@ -1,7 +1,13 @@
 NomadNexus Discord Theme
 Copyright 2026 Colin Chang
 
-This project is based on ClearVision v7
+This product is a derivative work based on ClearVision v7.
 Copyright 2024 ClearVision Team
 https://github.com/ClearVision/ClearVision-v7
 Licensed under the Apache License, Version 2.0
+
+All source files in src/ and templates/ have been modified from the original
+ClearVision v7 codebase or are new additions by Colin Chang. Modified and new
+files are identified by SPDX headers at the top of each file.
+
+A copy of the Apache License 2.0 is included in the LICENSE file.

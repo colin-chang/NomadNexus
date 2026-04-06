@@ -1,13 +1,16 @@
+// SPDX-License-Identifier: Apache-2.0
+// Copyright 2026 Colin Chang. Based on ClearVision v7 by ClearVision Team (Apache-2.0).
 // These get left in a nice, neat location.
 $version: '1.0.0';
 $themeName: 'NomadNexus';
 $author: 'Colin Chang';
-$desc: 'Frosted glass Discord theme';
+$desc: 'Discord, but beautiful. An elegant theme by a-nomad studio for BetterDiscord & Vencord.';
 $desc_bd: 'for BetterDiscord.';
 $desc_vc: 'for Vencord.';
 $desc_generic: 'for BetterDiscord and Vencord.';
 $src: 'https://github.com/colin-chang/NomadNexus';
-$website: 'https://colinchangcc.github.io/NomadNexus';
+$website: 'https://github.com/colin-chang/NomadNexus/releases/download/v#{$version}';
+$upstream: 'Based on ClearVision v7 by ClearVision Team — https://github.com/ClearVision/ClearVision-v7';
 $invite: '';
 
 $main_import: 'main.css'; // Base import filename
