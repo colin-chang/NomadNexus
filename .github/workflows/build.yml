@@ -62,8 +62,16 @@ jobs:
           # 保存编译产物到临时目录
           cp -r dist /tmp/dist-output
 
+          # 保存 assets 中的 images 和 icons 目录
+          mkdir -p /tmp/assets-output
+          cp -r assets/images /tmp/assets-output/images
+          cp -r assets/icons /tmp/assets-output/icons
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 丢弃 npm install 产生的本地改动（如 package-lock.json）
+          git reset --hard HEAD
 
           # 切换到或创建 versions 分支
           git fetch origin versions 2>/dev/null || true
@@ -77,6 +85,11 @@ jobs:
           git rm -rf . --quiet
           git clean -fdx
           cp -r /tmp/dist-output/. .
+
+          # 同步 assets/images 和 assets/icons 目录
+          mkdir -p assets
+          cp -r /tmp/assets-output/images assets/images
+          cp -r /tmp/assets-output/icons assets/icons
 
           git add -A
           git commit -m "release $TAG"

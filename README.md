@@ -45,7 +45,7 @@
 In **Settings → Vencord → Themes**, add the following URL:
 
 ```text
-https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@1.0.0/NomadNexus-Vencord.css
+https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@1.0.1/NomadNexus-Vencord.css
 ```
 
 #### Option B — Local file
