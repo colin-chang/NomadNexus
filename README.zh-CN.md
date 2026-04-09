@@ -45,7 +45,7 @@
 在 **设置 → Vencord → 主题** 中，添加以下 URL：
 
 ```text
-https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@1.0.1/NomadNexus-Vencord.css
+https://cdn.jsdelivr.net/gh/colin-chang/NomadNexus@1.0.2/NomadNexus-Vencord.css
 ```
 
 #### 方式二 — 本地文件

@@ -51,7 +51,7 @@ code {
 // NomadNexus: message line height
 [class*='messageContent']:not([class*='repliedTextContent_'] *):not([class*='repliedTextContent_']),
 [class*='markup']:not(pre):not(code):not([class*='repliedTextContent_'] *):not([class*='repliedTextContent_']) {
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 // Reply preview — compact line height
